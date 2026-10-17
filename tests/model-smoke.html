@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Camera model smoke test</title>
+<body style="font:16px system-ui;padding:30px;background:#14221b;color:#e5e9dd">
+<h1>Local camera models</h1>
+<p>Loads the bundled models and runs each on a blank frame. No camera or microphone is used.</p>
+<button id="run">Test models</button><pre id="result">Ready</pre>
+<script type="module">
+import {FilesetResolver, HandLandmarker, FaceLandmarker} from '../vendor/mediapipe/vision_bundle.mjs';
+document.querySelector('#run').onclick = async () => {
+  const result = document.querySelector('#result'), button = document.querySelector('#run');
+  button.disabled = true; result.textContent = 'Loading…';
+  try {
+    const files = await FilesetResolver.forVisionTasks('../vendor/mediapipe/wasm');
+    const canvas = document.createElement('canvas'); canvas.width = 320; canvas.height = 240;
+    canvas.getContext('2d').fillRect(0, 0, 320, 240);
+    for (const [name, Type, model, extra] of [
+      ['Hands', HandLandmarker, 'hand_landmarker.task', {numHands:2}],
+      ['Face', FaceLandmarker, 'face_landmarker.task', {numFaces:1,outputFaceBlendshapes:true}]
+    ]) {
+      const task = await Type.createFromOptions(files, {baseOptions:{modelAssetPath:'../vendor/mediapipe/' + model,delegate:'CPU'},runningMode:'VIDEO',...extra});
+      const data = task.detectForVideo(canvas, performance.now());
+      result.textContent += '\nPASS: ' + name + ' model loaded and processed a frame (' + (data.landmarks || data.faceLandmarks).length + ' detections).';
+      task.close();
+    }
+    result.textContent += '\nPASS: all local runtime assets work.';
+  } catch(e) { result.textContent += '\nFAIL: ' + e.message; }
+  finally { button.disabled = false; }
+};
+</script></body></html>

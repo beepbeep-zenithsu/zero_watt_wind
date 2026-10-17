@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Offline voice test</title>
+<body style="font:16px system-ui;padding:30px;background:#14221b;color:#e5e9dd">
+<h1>Offline voice recognition test</h1>
+<p>Tests the real microphone processing path with a generated voice recording. No microphone permission or online speech service is used.</p>
+<button id="run">Test offline voice</button><pre id="result" style="white-space:pre-wrap">Ready</pre>
+<iframe id="app" title="Simulation under test" src="../" style="width:100%;height:260px;border:1px solid #62745d"></iframe>
+<script src="../offline-voice.js"></script>
+<script>
+// The engine's assets resolve from the application root, just like index.html.
+const base=document.createElement('base');base.href=new URL('../',location.href);document.head.append(base);
+document.querySelector('#run').onclick=async()=>{
+  const button=document.querySelector('#run'),out=document.querySelector('#result');button.disabled=true;
+  const ac=new AudioContext(), abort=new AbortController();let voice,timeout;
+  try{
+    await ac.resume();
+    const response=await fetch('tests/voice-command.wav');const audio=await ac.decodeAudioData(await response.arrayBuffer());
+    const destination=ac.createMediaStreamDestination();
+    let received;const final=new Promise(resolve=>received=resolve);
+    voice=await LocalVoice.start({stream:destination.stream,audioContext:ac,signal:abort.signal,
+      onStatus:t=>out.textContent=t,onPartial:t=>{if(t)out.textContent='Recognising: '+t;},
+      onFinal:t=>{if(t){out.textContent='Heard: '+t;received(t);}},onError:e=>{out.textContent='FAIL: '+e.message;}});
+    const source=ac.createBufferSource();source.buffer=audio;source.connect(destination);source.start();
+    const text=await Promise.race([final,new Promise((_,reject)=>timeout=setTimeout(()=>reject(new Error('No final transcript after 25 seconds')),25000))]);
+    const app=document.querySelector('#app').contentWindow;
+    if(!app.JARVIS)throw new Error('Simulation has not loaded yet. Try the test again.');
+    const handled=app.JARVIS.command(text),wind=app.ZW.state().p.wind;
+    out.textContent='Heard: '+text+'\nWind speed: '+wind+' m/s\n'+(handled&&wind===7.5?'PASS: real offline speech changed the simulation to 7.5 m/s.':'FAIL: unexpected command result');
+  }catch(e){out.textContent='FAIL: '+e.message;}
+  finally{clearTimeout(timeout);abort.abort();voice?.stop();await ac.close();button.disabled=false;}
+};
+</script></body></html>

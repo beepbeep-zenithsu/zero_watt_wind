@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101915">
+<title>ZeroWatt Wind — Field Simulation</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jarvis.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="ZeroWatt Wind home"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M17 3C31 3 32 22 17 17 2 12 3 31 17 31M3 17C3 3 22 2 17 17 12 32 31 31 31 17"/></svg><span>ZeroWatt<span> Wind</span></span></a>
+  <div class="top-links"><button class="quiet" id="reference-open">Prototype ↗</button></div>
+</header>
+<main>
+  <section class="console">
+    <div class="application-menu" role="tablist" aria-label="Select application">
+      <button id="air-tab" class="application active" role="tab" aria-selected="true" data-mode="air"><span class="app-icon">↗</span><span class="app-text"><small>APPLICATION 01</small><strong>Building ventilation</strong><em>Wind-driven fans clear stale air from a room</em></span></button>
+      <button id="water-tab" class="application" role="tab" aria-selected="false" tabindex="-1" data-mode="water"><span class="app-icon">≈</span><span class="app-text"><small>APPLICATION 02</small><strong>Pond aeration</strong><em>Wind-driven paddle wheel adds oxygen to water</em></span></button>
+    </div>
+    <div id="faces">
+      <article id="air-face" class="app-face" role="tabpanel" aria-labelledby="air-tab"></article>
+      <article id="water-face" class="app-face" role="tabpanel" aria-labelledby="water-tab" hidden></article>
+    </div>
+  </section>
+</main>
+<dialog id="reference-dialog">
+  <div class="dialog-heading"><div><p class="eyebrow">THE STARTING POINT</p><h2>From your workbench.</h2></div><button class="dialog-close quiet" aria-label="Close prototype">✕</button></div>
+  <div class="reference-grid"><img src="assets/prototype-white.jpg" alt="White spiral turbine, right-angle bevel gears and fan on black and white supports"><img src="assets/prototype-black.jpg" alt="Black spiral rotor driving the prototype shafts and fan"></div>
+  <div class="reference-videos"><div><h3>Working prototype</h3><video src="assets/prototype-motion.mp4" poster="assets/prototype-black.jpg" controls playsinline preload="none"></video></div><div><h3>Project film</h3><video src="assets/project-film.mp4" poster="assets/prototype-white.jpg" controls playsinline preload="none"></video></div></div>
+</dialog>
+<noscript>This simulation requires JavaScript.</noscript>
+<script src="model.js"></script>
+<script src="app.bundle.js"></script>
+<script src="offline-voice.js"></script>
+<script src="jarvis.js"></script>
+</body>
+</html>

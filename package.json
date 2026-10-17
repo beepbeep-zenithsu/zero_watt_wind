@@ -1,0 +1,16 @@
+{
+  "name": "zerowatt-wind",
+  "private": true,
+  "version": "8.0.0",
+  "scripts": {
+    "start": "node serve.js",
+    "build": "esbuild app.js --bundle --minify --format=iife --outfile=app.bundle.js",
+    "get-models": "node get-models.js",
+    "test": "node --test tests/*.test.cjs",
+    "get-voice-model": "node get-voice-model.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.1.0"
+  }
+}
