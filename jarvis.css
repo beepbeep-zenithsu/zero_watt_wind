@@ -79,3 +79,5 @@
 
 .jv-lang{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;color:#b2bfad;font-size:11px;margin-bottom:8px}
 .jv-lang select{background:#1f2c24;color:#e5e9dd;border:1px solid #3d5142;border-radius:6px;padding:4px 6px;font:11px system-ui,sans-serif}
+#jv-camview.on{background:#3d5a37;border-color:#9bc26a;color:#e6f3c8}
+.jv-cam[hidden]{display:none}

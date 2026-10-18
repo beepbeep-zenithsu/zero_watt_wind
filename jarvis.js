@@ -19,24 +19,31 @@ const B = {                              // base values at 100% sensitivity (the
   pinchOn: .5, pinchOff: .75,           // thumb-to-index distance (palm units): closed below pinchOn, open above pinchOff
   pinchHold: 60,                        // ms a pinch must last (two camera frames also count, so slow cameras still click)
   dwellMs: 1000, dwellMove: 45,         // hover-to-click: hold the ring still over a button this long (ms), wobble allowed (px)
-  zoomVel: .008, zoomGain: 1.2,         // finger open/close speed that starts a zoom, and how strong the zoom is
+  zoomRate: .9, zoomPoseMs: 220,        // zoom speed (log units per second) while the hand pose is held, and how long a pose must be steady before it counts
   swipeDist: .25, swipeWindow: 450, swipeLock: 1600,   // fraction of the camera width, ms
   scrollGain: 1.2, scrollDead: .008, invertScroll: false,
   adjustGain: 1.2, stepEvery: .09,      // two-finger slide: slider sensitivity / distance per step for dropdowns
   marginX: .12, marginY: .10,           // the inner part of the camera image that maps to the whole screen
   // face
-  yawOn: .13, yawOff: .07, yawHold: 250, // head turn needed to flip the window (ratio), and how long (ms) it must be held
-  // blowing through the lips raises the wind speed
-  blowOn: .65, blowOff: .35, blowHold: 650, blowMax: 2000,
-  blowRate: 3.5                         // m/s of wind added per second of full blowing
+  yawOn: .085, yawOff: .045, yawHold: 110, // head turn needed to flip the window (ratio, about 10 degrees), and how long (ms) it must be held
+  yawFlick: 1.1, yawCool: 450,          // a quick flick of this many 'yawOn' units within 400 ms also counts; minimum gap between two flips (ms)
+  // head tilt (ear towards shoulder) changes the wind speed: tilt right = faster, tilt left = slower
+  tiltOn: 11, tiltOff: 6, tiltFull: 26, // degrees away from your own upright position
+  tiltHold: 300, tiltMax: 3000, tiltRate: 3.2,  // ms to hold before it starts, longest single push (ms), m/s of wind per second at a firm tilt
+  // blowing through the lips raises the wind speed. The MICROPHONE decides; puckered lips (camera, optional) only make it more sensitive.
+  blowOn: .35, blowOff: .2,             // lip-shape score that counts as 'lips puckered' (starting / keeping going)
+  blowHold: 240, blowGap: 160,          // ms of steady breath sound before the wind starts rising, and the dropout (ms) that is bridged while blowing
+  blowRate: 3,                          // m/s of wind added per second of blowing. Always the same, however hard you blow (the value STAYS when you stop)
+  blowCalib: 10                         // microphone readings (about 0.8 s) used to measure the room noise first
 };
 const T = {...B};
 let sens = .6; try { sens = clamp(+localStorage.getItem('jv-sens') || .6, .2, 1.5); } catch (e) {}
 function applySens() {                  // lower sensitivity = bigger / faster movement needed
   const k = sens;
-  T.zoomVel = B.zoomVel/k; T.zoomGain = B.zoomGain*k; T.swipeDist = clamp(B.swipeDist/k, .15, .6);
+  T.swipeDist = clamp(B.swipeDist/k, .15, .6);
   T.scrollGain = B.scrollGain*k; T.scrollDead = B.scrollDead/k; T.adjustGain = B.adjustGain*k; T.stepEvery = B.stepEvery/k;
-  T.yawOn = clamp(B.yawOn/Math.sqrt(k), .09, .3); T.yawOff = Math.min(T.yawOn*.5, B.yawOff);
+  T.yawOn = clamp(B.yawOn/Math.sqrt(k), .065, .2); T.yawOff = Math.min(T.yawOn*.55, B.yawOff);
+  T.tiltOn = clamp(B.tiltOn/Math.sqrt(k), 8, 20); T.tiltOff = T.tiltOn*.55; T.tiltFull = T.tiltOn + 15;
 }
 applySens();
 // the real mouse / keyboard always wins: while it is being used, hand gestures pause so they never fight it
@@ -113,6 +120,7 @@ root.innerHTML =
    '</div>' +
    '<button class="jv-all" id="jv-all">ACTIVATE ALL</button>' +
    '<div class="jv-cam" id="jv-cam"><video muted playsinline></video><canvas width="320" height="240"></canvas><div class="jv-cam-off">CAMERA OFF</div></div>' +
+   '<button class="jv-all" id="jv-camview" aria-pressed="true">CAMERA PICTURE: SHOWN — click to hide</button>' +
    '<div class="jv-rows">' +
     '<div class="jv-row"><b>VOICE</b><span id="jv-heard">—</span></div>' +
     '<div class="jv-row"><b>MIC</b><div><div class="jv-meter" id="jv-miclevel" role="meter" aria-label="Microphone input level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="jv-micfill"></i></div><span id="jv-micstate" style="display:block;margin-top:6px">off</span></div></div>' +
@@ -122,12 +130,13 @@ root.innerHTML =
    '</div>' +
    '<form id="jv-form" autocomplete="off"><input id="jv-input" placeholder="Type a command, e.g. increase the wind speed" aria-label="Type a command"></form>' +
    '<button class="jv-all" id="jv-mic-test">CHECK MICROPHONE · 8 SECONDS</button>' +
-   '<label class="jv-lang">Voice engine <select id="jv-voice-engine"><option value="offline">Offline English</option><option value="browser">Browser speech service</option></select></label>' +
-   '<label class="jv-lang">Voice language <select id="jv-lang"><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option><option value="en-IN">English (India)</option></select></label>' +
+   '<label class="jv-lang">Voice engine <select id="jv-voice-engine"><option value="offline">Offline English (recommended)</option><option value="auto">Online with offline fallback</option><option value="browser">Browser speech service</option></select></label>' +
+   '<label class="jv-lang">Voice language <select id="jv-lang"><option value="mix">English ⇄ বাংলা (auto-switch)</option><option value="bn-BD">বাংলা (Bangladesh)</option><option value="en-IN">English (India)</option><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option></select></label>' +
    '<label class="jv-sens">Gesture sensitivity <b id="jv-sens-val"></b><input type="range" id="jv-sens" min="20" max="150" step="5" aria-label="Gesture sensitivity"></label>' +
    '<label class="jv-check"><input type="checkbox" id="jv-dwell" checked> Hover to click (hold the ring still on a button for 1 s)</label>' +
    '<label class="jv-check"><input type="checkbox" id="jv-speak"> Spoken replies (headphones recommended)</label>' +
-   '<label class="jv-check"><input type="checkbox" id="jv-enable-blow"> Enable lip gesture to raise wind (optional)</label>' +
+   '<label class="jv-check"><input type="checkbox" id="jv-tilt"> Head tilt changes wind — tilt right = faster, tilt left = slower</label>' +
+   '<label class="jv-check"><input type="checkbox" id="jv-enable-blow"> Blow to raise wind (microphone only — no camera needed; speed stays when you stop)</label>' +
    '<button class="jv-all" id="jv-center">Recenter face — look straight</button>' +
    '<button class="jv-all" id="jv-stop">STOP ALL CONTROLS</button>' +
    '<details id="jv-help"><summary>WHAT CAN I SAY / DO?</summary>' +
@@ -141,12 +150,12 @@ root.innerHTML =
      '<li><code>fit to screen</code>, <code>exit</code>, <code>close up</code>, <code>pause</code>, <code>play</code>, <code>flow off</code>, <code>reset camera</code>, <code>reset</code></li>' +
      '<li><code>zoom in / out</code>, <code>rotate left / right</code>, <code>scroll down / up</code>, <code>brake on / off</code>, <code>change the wind sensor</code>, <code>pick rugged parts</code></li>' +
     '</ul>' +
-    '<h4>FACE</h4><ul><li>Just face the screen. Turn your head left or right and hold for a moment to switch windows, then face the screen again. Use Recenter if needed.</li><li>Wind stays unchanged by default. Optional lip gesture: enable the checkbox, pucker for a moment, then relax. Each hold raises wind for at most two seconds. This detects lip shape, not real airflow. Keep it off while talking.</li></ul>' +
+    '<h4>FACE</h4><ul><li><b>Change scenario:</b> face the screen for a second, then turn your head a little (about 10°). <b>Turn right = next scenario, turn left = back to the previous one.</b> Come back to the centre between turns. It works while the blow option is on, too.</li><li><b>Wind speed:</b> tilt your head (ear towards shoulder) and hold for a moment — <b>right = faster, left = slower</b>. Tilt back upright to stop. Untick the tilt option if you do not want it.</li><li>Talking, smiling and sitting still never change anything. Use <b>Recenter</b> if you change your sitting position. Blow option: tick it and stay quiet for one second while the room noise is measured, then blow toward the microphone (puckered lips work best; with Face on, they also make it more sensitive). The wind speed rises at a fixed, steady rate for as long as you blow — however hard — and <b>stays</b> where you stop (use the slider or Reset to lower it). Talking, humming and silence never change it.</li></ul>' +
     '<h4>MOUSE</h4><ul><li>The mouse and keyboard always have priority: hand gestures pause for about 2 seconds whenever you use them.</li></ul>' +
     '<h4>HAND (one or two hands)</h4><ul>' +
      '<li><b>Cursor</b> follows your index fingertip.</li>' +
      '<li><b>Easiest click:</b> point the green ring at a button and keep it still for 1 second (a ring fills up). <b>Or pinch</b> thumb + index together for a moment, then separate them before the next click. Hold and move to drag a slider or rotate the 3D view. A pinch on a dropdown selects its next option.</li>' +
-     '<li>Over the 3D scene: <b>open hand → close gradually</b> = zoom out; <b>close → open</b> = zoom in. Keep thumb and index apart.</li>' +
+     '<li><b>Zoom:</b> aim at the scene and <b>hold index + middle fingers up, still, for half a second</b> until the ring says ZOOM READY. Then <b>open your hand (4 fingers up) = zoom in</b>, <b>curl your fingers = zoom out</b>, and one or two fingers = hold still. Zoom runs at a steady speed only while you hold the pose, so it never drifts. Pinch to finish (it also ends after 2.5 seconds). The − / + buttons always work.</li>' +
      '<li><b>Open palm, quick swipe</b> left / right = switch window.</li>' +
      '<li><b>Open palm, move</b> up / down = scroll.</li>' +
      '<li><b>Index + middle finger</b> over a control: hold still for half a second until the blue highlight appears, then slide left / right to adjust. Lower your fingers to release.</li>' +
@@ -227,7 +236,7 @@ function numberWords(text) {
 
 // aliases (longest first) -> slider key.  mode: which application has the slider
 const VARS = [
-  ['wind speed', 'wind'], ['speed of the wind', 'wind'], ['wind velocity', 'wind'], ['wind', 'wind'],
+  ['wind speed', 'wind'], ['speed of the wind', 'wind'], ['wind velocity', 'wind'], ['wind strength', 'wind'], ['wind', 'wind'], ['speed', 'wind'], ['strength', 'wind'], ['blow', 'wind'], ['blowing', 'wind'], ['airspeed', 'wind'],
   ['air temperature', 'ambient'], ['ambient temperature', 'ambient'], ['outside temperature', 'ambient'], ['air temp', 'ambient'], ['temperature', 'ambient'], ['temp', 'ambient'], ['heat', 'ambient'],
   ['rain intensity', 'rain'], ['rainfall', 'rain'], ['rain', 'rain'], ['intensity', 'rain'],
   ['rotor diameter', 'diameter'], ['rotor size', 'diameter'], ['rotor', 'diameter'], ['diameter', 'diameter'],
@@ -248,8 +257,128 @@ const HW = [
   [/wind sensor|anemometer/, 'windSensor'], [/co2|carbon dioxide|air quality sensor/, 'qualitySensor'], [/oxygen probe|oxygen sensor|dissolved oxygen/, 'qualitySensor'],
   [/rain sensor/, 'envSensor'], [/temperature probe|water probe/, 'envSensor'], [/microcontroller|micro controller|mcu|controller/, 'mcu'], [/enclosure|housing|box/, 'enclosure']
 ];
-const INC = /\b(increase|increased|raise|boost|higher|more|up|add|bump|faster|stronger|hotter|warmer|bigger|larger|grow|plus|ramp|heavier|rise|climb|extend)\b/;
-const DEC = /\b(decrease|decreased|reduce|lower|lessen|less|drop|down|cut|diminish|slower|cooler|colder|minus|subtract|smaller|shrink|fewer|remove|calm|weaker|lighter|dim|fall|decline)\b/;
+const INC = /\b(increase|increased|raise|boost|higher|more|up|add|bump|faster|stronger|hotter|warmer|bigger|larger|grow|plus|ramp|heavier|rise|climb|extend|harder|quicker|accelerate|speed up|amplify|crank|enhance|intensify|strengthen|upgrade|heighten|elevate|lift|hike|swell|greater)\b/;
+const DEC = /\b(decrease|decreased|reduce|lower|lessen|less|drop|down|cut|diminish|slower|cooler|colder|minus|subtract|smaller|shrink|fewer|remove|calm|weaker|lighter|dim|fall|decline|slow|weaken|soften|ease|decelerate|trim|low|softer|gentler|milder|reduced)\b/;
+
+/* ---------------------------------------------------------------------
+   UNDERSTANDING ACCENTS, SYNONYMS AND BANGLA
+   Before a phrase is parsed, every word is mapped to the plain English command word it means:
+   Bangla script (বাতাস বাড়াও), romanised Bangla (batas barao), common mis-hearings of an
+   accented speaker (wine/win/when -> wind) and spelling-close words (mansoon -> monsoon).
+   --------------------------------------------------------------------- */
+const nfc = s => s.normalize('NFC').replace(/[\u200c\u200d]/g, '');
+const toAsciiDigits = s => s.replace(/[০-৯]/g, d => '০১২৩৪৫৬৭৮৯'.indexOf(d));
+const LEX = Object.create(null);
+function L(canon, words) { for (const w of words.split(/\s+/)) if (w) LEX[nfc(w)] = canon; }
+// --- the things being controlled
+L('wind', 'বাতাস বাতাসের বাতাসে বাতাসটা হাওয়া হাওয়ার হাওয়াটা বায়ু বায়ুর উইন্ড উইণ্ড batas batash bataser batasher batase hawa hawar haoa bayu uind wynd');
+L('speed', 'গতি গতির গতিবেগ বেগ বেগে স্পিড স্পীড জোর goti gotir gotibeg gati gatir bego spid spead jor');
+L('rain', 'বৃষ্টি বৃষ্টির বৃষ্টিপাত বৃষ্টিতে বর্ষণ রেইন brishti bristi brishtir bristir brishtipat bristipat borshon');
+L('temperature', 'তাপমাত্রা তাপমাত্রার টেম্পারেচার তাপ tapmatra tapomatra tapmatrar temparature temperatur');
+L('hotter heat', 'গরম গরমে gorom gorome'); L('colder heat', 'ঠান্ডা ঠাণ্ডা thanda thanDa');
+L('diameter', 'ব্যাস ব্যাসের byash'); L('gear', 'গিয়ার গিয়ারের giyar'); L('ratio', 'অনুপাত onupat anupat');
+L('room', 'ঘর ঘরের কক্ষ রুম ghor ghorer kokkho kokkhe'); L('people', 'মানুষ মানুষের লোক লোকজন জন manush manusher lok lokjon');
+L('pond', 'পুকুর পুকুরের পুকুরে দিঘি pukur pukure pukurer pukhur dighi'); L('aeration', 'এয়ারেশন eration');
+L('building', 'ভবন ভবনের ভবনে বিল্ডিং দালান বাড়ি bhobon bhaban bhabon bhobone dalan bari bildin');
+L('ventilation', 'ভেন্টিলেশন বায়ুচলাচল bayuchalachal bayuchalachol ventilesion');
+L('window', 'জানালা জানালার জানালাটা উইন্ডো উইণ্ডো janala janla janalar windo windu'); L('scene', 'দৃশ্য দৃশ্যটা drishyo drisso');
+L('flow', 'প্রবাহ প্রবাহের probaho prabaho probah'); L('camera', 'ক্যামেরা ক্যামেরার kyamera'); L('view', 'ভিউ');
+L('screen', 'স্ক্রিন পর্দা পর্দায় porda skrin'); L('fullscreen', 'ফুলস্ক্রিন ফুল্স্ক্রিন'); L('simulation', 'সিমুলেশন simulesion');
+L('condition', 'অবস্থা অবস্থায় পরিস্থিতি কন্ডিশন কেস obostha obosthay poristhiti kes');
+L('monsoon', 'বর্ষা বর্ষাকাল মৌসুমি মৌসুমী মনসুন borsha borshakal mausumi mousumi'); L('cyclone', 'ঘূর্ণিঝড় ঘূর্ণিঝড়ে সাইক্লোন ghurnijhor ghurnijhar saiklon siklon cyklon ciclone');
+L('storm', 'ঝড় ঝড়ের jhor jhar jhorer'); L('heatwave', 'তাপপ্রবাহ হিটওয়েভ tapprobaho tapprobah hitwave');
+L('brake', 'ব্রেক ব্রেকের breek brek'); L('sensor', 'সেন্সর sensar senshor'); L('help', 'সাহায্য হেল্প sahajyo sahajjo');
+// --- what to do
+L('increase', 'বাড়াও বাড়ান বাড়ানো বাড়া বাড়ে বাড়িয়ে বাড়ুক বৃদ্ধি বেশি বেশী আরও আরো আরেকটু উঠাও তোলো তুলুন ইনক্রিজ ইনক্রীজ barao baraw barau baran barano bara bariye bariyo beshi besi beshe aro aaro arektu briddhi bridhi inkrij inkris uthao tolo tulo boro');
+L('decrease', 'কমাও কমান কমানো কমা কম কমে কমিয়ে কমিয়ো কমুক হ্রাস নামাও নামান নামানো নামিয়ে ডিক্রিজ ডিক্রীজ komao komaw komau koman komano koma kom kome komiye komiyo komuk hras namao naman namano namiye dikrij dikris');
+L('down', 'নিচে নীচে নিচু niche nich nichu'); L('up', 'উপরে উপর ওপরে ওপর upore upor oupore opore');
+L('faster', 'জোরে জোরসে জোরালো দ্রুত তাড়াতাড়ি jore zore joray joresh druto'); L('slower', 'ধীরে ধীর আস্তে ধীরগতি dhire dhir dhiro aste ashte');
+L('set', 'সেট রাখো রাখুন রাখেন রাখ rakho rakhun rakhen');
+L('switch', 'বদলাও বদলান বদলে বদলানো পাল্টাও পাল্টান পাল্টে পাল্টানো পরিবর্তন সুইচ bodlao bodlan bodle bodlano boddle paltao paltan palte paltano poriborton porivortan suich');
+L('change', 'চেঞ্জ'); L('other', 'অন্য অন্যটা অন্যটি অপর অপরটা onno onnota onnoti oporta');
+L('next', 'পরের পরবর্তী পরেরটা porer porerta porobortti'); L('previous', 'আগের আগেরটা পূর্ববর্তী ager agerta');
+L('pause', 'থামো থামাও থামান থামুন থাম থেমে থামাই থামা থমকাও স্থির thamo thamao thaman thamun tham thamen ruko rukho sthir');
+L('play', 'চালাও চালান চালিয়ে চালাই চলুক চলো শুরু প্লে chalao chalan chaliye chalaw chalau cholo cholok shuru suru shuro');
+L('on', 'চালু chalu'); L('off', 'বন্ধ বন্ধের bondho bondo bondhu bandho bondh bandh');
+L('zoom', 'জুম জুমের jum joom zum'); L('closer', 'কাছে কাছাকাছি kache kachakachi'); L('farther', 'দূরে দূরের dure durer');
+L('rotate', 'ঘোরাও ঘোরান ঘুরাও ঘুরান ঘুরো ঘোরো ঘুরিয়ে ঘোরিয়ে ঘোরানো ghorao ghoran ghurao ghuran ghuro ghoro ghurie ghoriye ghuriye');
+L('left', 'বামে বাম বাঁয়ে বাঁ বাঁদিকে baame bame bam baam bayen baye bamdike'); L('right', 'ডানে ডান ডানদিকে dane dan daan dandike');
+L('scroll', 'স্ক্রল স্ক্রোল scrol skrol'); L('reset', 'রিসেট রিস্টার্ট পুনরায় ডিফল্ট risett riset punoray default');
+L('exit', 'বের বেরিয়ে বেরোও বেরিয়ো ber beriye berao beriyao'); L('sleep', 'ঘুমাও ঘুমান ghumao ghuman'); L('mute', 'চুপ চুপচাপ chup');
+L('maximum', 'সর্বোচ্চ সর্বাধিক sorbocco sorboccho sorbadhik'); L('minimum', 'সর্বনিম্ন sorbonimno'); L('full', 'পুরো puro');
+// --- spoken Bangla numbers become English number words, which the number parser already understands
+L('', 'করো করুন করেন কর কোরো করে কোরে কইরা দাও দিন দেন দিয়ে দে একটু এখন এবার এটা ওটা এই ওই টা টি ভাই দয়া দিকে koro korun koren kor kore kori dao din den diye ektu ekhon ebar eta ota ei oi bhai doya dike');
+L('zero', 'শূন্য শুন্য shunno sunno'); L('one', 'এক ek'); L('two', 'দুই দুটি দুটো dui duto duti dwi'); L('three', 'তিন তিনটি তিনটা tin tinta');
+L('four', 'চার চারটি char charta'); L('five', 'পাঁচ পাচ পাঁচটি panch pach paanch'); L('six', 'ছয় ছয়টি choy chhoy chhoi choi');
+L('seven', 'সাত সাতটি shat saat'); L('eight', 'আট আটটি aat aath'); L('nine', 'নয় নয়টি noy nou'); L('ten', 'দশ dosh dos');
+L('eleven', 'এগারো এগার egaro'); L('twelve', 'বারো baro baaro'); L('thirteen', 'তেরো তের tero tera'); L('fourteen', 'চৌদ্দ choudda choddo');
+L('fifteen', 'পনেরো পনের ponero'); L('sixteen', 'ষোল sholo'); L('seventeen', 'সতেরো সতের shotero sotero'); L('eighteen', 'আঠারো আঠার atharo');
+L('nineteen', 'উনিশ unish'); L('twenty', 'বিশ bish'); L('thirty', 'ত্রিশ trish tirish'); L('forty', 'চল্লিশ challish'); L('fifty', 'পঞ্চাশ ponchash');
+L('sixty', 'ষাট'); L('seventy', 'সত্তর shottor'); L('eighty', 'আশি ashi'); L('ninety', 'নব্বই nobboi'); L('hundred', 'শত একশো একশ shoto eksho');
+L('point', 'দশমিক doshomik dosomik'); L('sade', 'সাড়ে sade sare'); L('1.5', 'দেড় der'); L('2.5', 'আড়াই arai');
+L('first', 'প্রথম prothom'); L('second', 'দ্বিতীয় ditiyo'); L('third', 'তৃতীয় tritiyo'); L('fourth', 'চতুর্থ chaturtho'); L('fifth', 'পঞ্চম ponchom');
+// multi-word Bangla expressions, matched before single words (spaces on both sides are required)
+const PHRASES = [
+  [/(?<= )(?:ঠিক|thik) (?:কর(?:ো|ুন|েন)?|kor(?:o|un|en)?)(?= )/g, 'set'],
+  [/(?<= )(?:সবচেয়ে|সবচেয়ে|sobcheye) (?:বেশি|বেশী|beshi)(?= )/g, 'maximum'], [/(?<= )(?:সবচেয়ে|sobcheye) (?:কম|kom)(?= )/g, 'minimum'],
+  [/(?<= )(?:গরম|gorom) (?:রাত|raat|rat)(?= )/g, 'hot night'],
+  [/(?<= )(?:শোনা|শুনো|শুনতে|shona|shuno) (?:বন্ধ|bondho|bondo)(?= )/g, 'stop listening'],
+  [/(?<= )(?:জুম|jum|zoom) (?:ইন|in)(?= )/g, 'zoom in'], [/(?<= )(?:জুম|jum|zoom) (?:আউট|aut|out)(?= )/g, 'zoom out'],
+  [/(?<= )(?:ফিট|fit) (?:টু |to )?(?:স্ক্রিন|পর্দা|screen|porda)(?= )/g, 'fit screen'],
+  [/(?<= )(?:বন্ধ|bondho|bondo) (?:কর(?:ো|ুন)?|koro|korun)(?= )/g, 'off'], [/(?<= )(?:চালু|chalu) (?:কর(?:ো|ুন)?|koro|korun)(?= )/g, 'on']
+];
+const bnSuffix = ['গুলো', 'গুলি', 'টার', 'টির', 'টা', 'টি', 'ের', 'কে', 'তে', 'য়', 'ে', 'র', 'ও', 'ই'];
+function stemBn(tok) { for (const s of bnSuffix) if (tok.length > s.length + 1 && tok.endsWith(s)) { const r = LEX[tok.slice(0, -s.length)]; if (r !== undefined) return r; } return null; }
+// words that are already right: never "corrected" by fuzzy matching
+const TARGETS = ('wind speed increase decrease temperature ambient rain rainfall intensity rotor diameter gear ratio reduction room volume occupants occupancy people crowd background ventilation duct pressure pond water oxygen demand units boats turbines prototypes building aeration window application switch change toggle flip next previous other another different monsoon cyclone storm hurricane typhoon heatwave canyon sheltered breeze rooftop park night condition conditions case scenario environment weather pattern profile steady constant gusts lull repeating sensor anemometer microcontroller enclosure housing probe mounting brake rugged parts hardware sensors zoom rotate orbit spin scroll pause freeze resume continue play reset camera view fullscreen screen maximize minimize expand exit leave close quit listening sleep help commands panel closeup flow airflow streamlines maximum minimum highest lowest raise reduce lower boost faster slower stronger weaker higher hotter cooler colder warmer bigger smaller larger shrink heavier lighter simulation prototype left right top bottom upward downward scene strength accelerate').split(' ');
+const KEEP = new Set([...TARGETS, ...'the and for with this that then than from into over what when where which while about also just only some very much many more less well here there been have has had does did can could would should will may might shall are was were not yes okay hey please jarvis start stop hold wait halt then now back side home open show hide down upon like want need make give take turn look move come goes going went them they their your mine ours ones zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred point first second third fourth fifth closer nearer farther further enlarge normal field wide near far full upward downward slow quick quicker amplify crank enhance intensify strengthen weaken soften ease decelerate trim lessen heighten elevate lift hike upgrade begin proceed run said'.split(' '), ...(INC.source + ' ' + DEC.source).match(/[a-z]{3,}/g)]);
+const nrm = s => s.replace(/ph/g, 'f').replace(/ck/g, 'k').replace(/[cq]/g, 'k').replace(/x/g, 'ks').replace(/z/g, 'j').replace(/v/g, 'w').replace(/(.)\1+/g, '$1');
+const POOL = [], poolSeen = new Set();
+for (const w of TARGETS) if (w.length >= 4) { const n = nrm(w); if (!poolSeen.has(n)) { poolSeen.add(n); POOL.push([n, w, false]); } }
+for (const k in LEX) if (/^[a-z]{4,}$/.test(k) && LEX[k]) { const n = nrm(k); if (!poolSeen.has(n)) { poolSeen.add(n); POOL.push([n, LEX[k], true]); } }
+function editDistance(a, b) {          // Damerau-Levenshtein: a swapped pair of letters counts as one mistake
+  const m = a.length, n = b.length, d = Array.from({length: m + 1}, (_, i) => [i, ...Array(n).fill(0)]);
+  for (let j = 1; j <= n; j++) d[0][j] = j;
+  for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) {
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+  }
+  return d[m][n];
+}
+function fuzzyWord(tok) {              // the nearest command word, if it is close enough (looser for longer words)
+  const n = nrm(tok), len = n.length, maxd = len <= 5 ? 1 : len <= 8 ? 2 : 3; let best = null, bd = 99;
+  for (const [pn, canon, bangla] of POOL) {
+    const lim = bangla ? (len >= 6 ? 1 : 0) : maxd;      // Bangla spellings vary, but short ones must not swallow English words ("nice" is not "niche")
+    if (pn[0] !== n[0] || Math.abs(pn.length - len) > lim) continue;
+    const d = editDistance(n, pn); if (d <= lim && d < bd) { bd = d; best = canon; }
+  }
+  return best;
+}
+// mis-hearings that are safe in any sentence
+const MIS = {spit: 'speed', sped: 'speed', spid: 'speed', speeds: 'speed', increas: 'increase', incris: 'increase', increased: 'increase', decrees: 'decrease', decreased: 'decrease',
+  rein: 'rain', rane: 'rain', zoon: 'zoom', zum: 'zoom', joom: 'zoom', paws: 'pause', pawz: 'pause', poz: 'pause', pose: 'pause', recent: 'reset', reseat: 'reset', break: 'brake', brick: 'brake',
+  routed: 'rotate', mansoon: 'monsoon', munsoon: 'monsoon', monsun: 'monsoon', sicklone: 'cyclone', psyclone: 'cyclone', hitwave: 'heatwave', windo: 'window'};
+// mis-hearings that only make sense next to another command word ("when speed", "bond volume", "rotate lift")
+const CTX_CMD = new Set('speed increase decrease set up down more less faster slower higher lower raise reduce volume aeration pattern type size intensity'.split(' '));
+const CTX = {wind: 'win when wine wend wand wing wined winds', rain: 'ring rang', pond: 'bond pound pawn pone', pattern: 'pattern', gusts: 'just gas gast gus', steady: 'study stady', left: 'lift laughed lef', right: 'write rite ride'};
+const CTX_MAP = {}; for (const k in CTX) for (const w of CTX[k].split(' ')) CTX_MAP[w] = k;
+function canonWord(tok) {
+  if (/^[\d.\-]+$/.test(tok)) return tok;
+  if (tok in LEX) return LEX[tok];
+  if (/[ঀ-৿]/.test(tok)) { const s = stemBn(tok); return s === null ? tok : s; }
+  if (KEEP.has(tok)) return tok;
+  if (tok in MIS) return MIS[tok];
+  if (tok.length >= 4) { const f = fuzzyWord(tok); if (f) return f; }
+  return tok;
+}
+function canon(t) {
+  let s = ' ' + nfc(t).split(' ').filter(Boolean).join(' ') + ' ';
+  for (const [re, rep] of PHRASES) s = s.replace(re, rep);
+  let out = s.trim().split(' ').filter(Boolean).map(canonWord).filter(w => w !== '').join(' ').split(' ').filter(Boolean);
+  const cmd = out.some(w => CTX_CMD.has(w)), turn = out.some(w => /^(rotate|turn|look|scroll|orbit|spin)$/.test(w));
+  out = out.map(w => { const c = CTX_MAP[w]; if (!c || c === 'pattern') return w; if (c === 'left' || c === 'right') return turn ? c : w; if (c === 'gusts' || c === 'steady') return out.includes('pattern') || out.includes('type') ? c : w; return cmd ? c : w; });
+  return out.join(' ');
+}
 
 function findVar(t) {
   const mode = ZW().mode();
@@ -269,17 +398,19 @@ function findUnits(t) {
   return null;
 }
 
-function parse(raw) {
+function parseText(raw, useCanon) {
+  raw = toAsciiDigits(nfc(raw));
   let t = raw.toLowerCase().replace(/(\d),(\d)/g, '$1.$2').replace(/(\d)\.(?=\d)/g, '$1DECIMAL')
-    .replace(/[.,!?'"]/g, ' ').replace(/DECIMAL/g, '.').replace(/(?<=[a-z])-(?=[a-z])/g, ' ').replace(/\s+/g, ' ').trim();
-  t = t.replace(/^(hey |ok |okay |hi )?(jarvis|jarvas|service|travis) ?/, '').replace(/^(please|can you|could you|would you) /, '').replace(/ please$/, '').trim();
+    .replace(/[.,!?'"।॥‘’“”]/g, ' ').replace(/DECIMAL/g, '.').replace(/(?<=[a-z])-(?=[a-z])/g, ' ').replace(/\s+/g, ' ').trim();
+  t = t.replace(/^(hey |ok |okay |hi |hello )?(jarvis|jarvas|jarvice|jarvish|jarbis|jervis|garvis|charvis|service|travis|jar vis|জারভিস|জার্ভিস|জারভিছ) ?/, '').replace(/^(please|can you|could you|would you) /, '').replace(/ please$/, '').trim();
   t = t.replace(/\b(wine|wend|winds|wynd)\b/g, 'wind').replace(/\b(increases|increasing)\b/g, 'increase').replace(/\b(decreases|decreasing|reduces|reducing|lowers|lowering)\b/g, 'decrease');
   // Offline English may transcribe the short imperative "set" as "said".
   t = t.replace(/^said (?=(the )?(wind|rain|air|water|room|pond|rotor|gear|occupants|people|units|boats|oxygen|background|duct)\b)/, 'set ')
     .replace(/\b(when|win) speed\b/g, 'wind speed');
-  t = numberWords(t); t = t.replace(/\bco 2\b/g, 'co2').replace(/\bheat wave\b/g, 'heatwave').replace(/\bclose[- ]up\b/g, 'closeup').replace(/\bfull screen\b/g, 'fullscreen');
+  if (useCanon) t = canon(t);
+  t = numberWords(t).replace(/\bsade (\d+(?:\.\d+)?)\b/g, (m, n) => String(+n + .5)); t = t.replace(/\bco 2\b/g, 'co2').replace(/\bheat wave\b/g, 'heatwave').replace(/\bclose[- ]up\b/g, 'closeup').replace(/\bfull screen\b/g, 'fullscreen');
   if (!t) return null;
-  const num = (t.match(/-?\d+(\.\d+)?/) || [])[0], has = r => r.test(t);
+  const num = (t.match(/-?\d+(\.\d+)?/) || [])[0], has = r => r.test(t), both = (a, b) => has(new RegExp('\\b(?:' + a + ')\\b.*\\b(?:' + b + ')\\b|\\b(?:' + b + ')\\b.*\\b(?:' + a + ')\\b'));   // both words, in either order (Bangla puts the verb last)
 
   /* --- assistant control --- */
   if (has(/^(stop listening|mute|go to sleep|sleep|be quiet)$/)) return () => { setVoice(false); return 'Voice control off'; };
@@ -289,7 +420,7 @@ function parse(raw) {
 
   /* --- screen / view tools --- */
   const fitBtn = () => $('[data-tool="fit"]', face()), fitOn = () => fitBtn().getAttribute('aria-pressed') === 'true' || !!document.fullscreenElement || !!$('.viewport.expanded', face());
-  if (has(/\b(fit|fits)\b.*\bscreen\b|\bfullscreen\b|\bmaximi[sz]e\b|\bexpand\b|\bfill the screen\b/) && !has(/\b(exit|leave|close|minimi[sz]e|quit|stop)\b/))
+  if ((both('fit|fits', 'screen') || has(/\bfullscreen\b|\bmaximi[sz]e\b|\bexpand\b|\bfill the screen\b/)) && !has(/\b(exit|leave|close|minimi[sz]e|quit|stop|off)\b/))
     return () => { if (fitOn()) return 'Already fitted to the screen'; fitBtn().click(); return 'Fitting to screen'; };
   if (has(/^(exit|escape|quit|leave|close|minimi[sz]e|go back|back|normal|shrink)( fullscreen| the screen| screen| full screen| view)?$/) || has(/\b(exit|leave|close|stop|quit)\b.*\b(fullscreen|fit)\b/) || has(/\b(exit|leave)\b/))
     return () => {
@@ -304,29 +435,29 @@ function parse(raw) {
   };
   if (has(/\b(reset|home|centre|center|default)\b.*\b(camera|view)\b|\b(camera|view)\b.*\breset\b|^home$/)) return () => { $('[data-tool="home"]', face()).click(); return 'Camera reset'; };
   if (has(/^(reset|reset all|reset everything|reset conditions|reset the conditions|start over|defaults)$/)) return () => { $('[data-reset]', face()).click(); return 'Conditions reset'; };
-  if (has(/\b(pause|freeze|stop the simulation|stop simulation|hold)\b/) && !has(/listening/)) return () => { const b = $('[data-tool="pause"]', face()); if (b.getAttribute('aria-pressed') !== 'true') b.click(); return 'Paused'; };
-  if (has(/\b(play|resume|continue|unpause|start the simulation|start simulation)\b/)) return () => { const b = $('[data-tool="pause"]', face()); if (b.getAttribute('aria-pressed') === 'true') b.click(); return 'Playing'; };
+  if ((has(/\b(pause|freeze|stop the simulation|stop simulation|hold|halt|standstill)\b/) || has(/^(stop|wait)$/) || both('simulation|sim', 'off|stop')) && !has(/listening/)) return () => { const b = $('[data-tool="pause"]', face()); if (b.getAttribute('aria-pressed') !== 'true') b.click(); return 'Paused'; };
+  if (has(/\b(play|resume|continue|unpause|start|begin|proceed|run)\b/) || both('simulation|sim', 'on')) return () => { const b = $('[data-tool="pause"]', face()); if (b.getAttribute('aria-pressed') === 'true') b.click(); return 'Playing'; };
   if (has(/\b(flow|flows|airflow|streamlines?)\b/) && !has(/\b(increase|decrease|set)\b/)) return () => {
     const b = $('[data-tool="flows"]', face()), on = b.getAttribute('aria-pressed') === 'true', want = has(/\b(off|hide|disable|stop)\b/) ? false : has(/\b(on|show|enable|start)\b/) ? true : !on;
     if (want !== on) b.click(); return want ? 'Flow on' : 'Flow off';
   };
-  if (has(/\bzoom\b/)) return () => { animate(has(/\bout\b|\bback\b|\bwider\b|\baway\b/) ? 1.035 : .965, 0, has(/\b(lot|max|fully|all the way)\b/) ? 40 : 18); return has(/\bout\b|\bback\b|\bwider\b|\baway\b/) ? 'Zooming out' : 'Zooming in'; };
-  if (has(/\b(rotate|orbit|turn|spin|look)\b.*\b(left|right|up|down)\b/)) return () => {
+  if (has(/\b(zoom|closer|nearer|enlarge|farther|further)\b/)) return () => { const out = has(/\bout\b|\bback\b|\bwider\b|\baway\b|\bfarther\b|\bfurther\b/); animate(out ? 1.035 : .965, 0, has(/\b(lot|max|fully|all the way)\b/) ? 40 : 18); return out ? 'Zooming out' : 'Zooming in'; };
+  if (both('rotate|orbit|turn|spin|look', 'left|right|up|down')) return () => {
     const d = has(/\bleft\b/) ? [-.04, 0] : has(/\bright\b/) ? [.04, 0] : has(/\bup\b/) ? [0, .02] : [0, -.02]; animate(1, d, 16, true); return 'Rotating'; };
   if (has(/\bscroll\b/)) return () => { const up = has(/\b(up|top|upward)\b/); scrollBy(up ? -1 : 1, has(/\b(top|bottom|end)\b/) ? 8 : .7); return up ? 'Scrolling up' : 'Scrolling down'; };
   if (has(/\bbrake\b/)) return () => { const el = $('[data-toggle="brake"]', face()), want = has(/\b(off|release|disengage|free)\b/) ? false : true; if (el.checked !== want) el.click(); return want ? 'Brake on' : 'Brake off'; };
-  if (has(/\b(rugged|robust|suggest|recommend|best)\b.*\b(parts|hardware|sensors?)\b|\bpick rugged\b/)) return () => { $('[data-suggest]', face()).click(); return 'Rugged parts selected'; };
+  if (both('rugged|robust|suggest|recommend|best', 'parts|hardware|sensors?') || has(/\bpick rugged\b/)) return () => { $('[data-suggest]', face()).click(); return 'Rugged parts selected'; };
   if (has(/\b(open|show)\b.*\bprototype\b/)) return () => { $('#reference-open').click(); return 'Prototype'; };
 
   /* --- windows --- */
-  if (has(/\b(next|previous|other|another|different|switch|flip|change|toggle)\b.*\b(window|application|app|tab|page|screen)\b/) && !has(/fit|full/))
+  if (both('next|previous|other|another|different|switch|flip|change|toggle|swap|shift|opposite', 'window|application|app|tab|page|screen|scene|mode|side') && !has(/fit|full|zoom|rotate|wind pattern|wind type|sensor|case|condition/))
     return () => 'Window: ' + flipWindow(has(/previous/) ? -1 : 1);
-  if (has(/\bbuilding\b|\bventilation\b/) && !has(/background/) && !findVar(t)) return () => { if (ZW().mode() !== 'air') flipWindow(); return 'Building ventilation'; };
+  if (has(/\bbuilding\b|\bventilation\b|\bhouse\b|\bindoors?\b/) && !has(/background/) && !findVar(t)) return () => { if (ZW().mode() !== 'air') flipWindow(); return 'Building ventilation'; };
   if (has(/\bbuilding ventilation\b/)) return () => { if (ZW().mode() !== 'air') flipWindow(); return 'Building ventilation'; };
-  if (has(/\b(pond aeration|aeration)\b/) || (has(/\bpond\b/) && !has(/volume|size/) && !has(/\b(increase|decrease|set)\b/))) return () => { if (ZW().mode() !== 'water') flipWindow(); return 'Pond aeration'; };
+  if (has(/\b(pond aeration|aeration)\b/) || (has(/\b(pond|fish|paddle)\b/) && !has(/volume|size/) && !has(/\b(increase|decrease|set)\b/)) || (has(/\bwater\b/) && !findVar(t) && !has(/\b(increase|decrease|set)\b/))) return () => { if (ZW().mode() !== 'water') flipWindow(); return 'Pond aeration'; };
 
   /* --- wind pattern / type --- */
-  if (has(/\b(pattern|type|profile|kind)\b/) && has(/\bwind\b|\bpattern\b|\bprofile\b/) && !has(/sensor/)) return () => {
+  if (has(/\b(pattern|type|profile|kind)\b/) && has(/\bwind\b|\bpattern\b|\bprofile\b/) && !has(/sensor/) && !both('increase|decrease', 'wind speed')) return () => {
     const sel = $('[data-param-select="profile"]', face());
     const named = [['steady', /steady|constant/], ['gusts', /gust/], ['lull', /lull|repeating/], ['storm', /storm/]].find(([, r]) => r.test(t));
     if (named) { const i = [...sel.options].findIndex(o => o.value === named[0]); sel.selectedIndex = i; sel.dispatchEvent(new Event('change', {bubbles: true})); return 'Wind pattern: ' + sel.options[i].text; }
@@ -361,26 +492,44 @@ function parse(raw) {
   };
 
   /* --- sliders: increase / decrease / set / max / min --- */
-  const v = findVar(t);
+  let v = findVar(t);
+  const words = t.split(' ').filter(Boolean);
+  // short commands with no named control ("faster", "increase", "more", "বাড়াও") mean the wind speed
+  if (!v && words.length <= 4 && (has(/\b(increase|raise|more|faster|stronger|higher|boost|bump|accelerate|harder|quicker)\b/) || has(/\b(decrease|reduce|less|slower|weaker|lower|calm|slow|weaken)\b/))) v = {key: 'wind', alias: 'wind'};
   if (v) {
     if (v.wrongMode) return () => (v.wrongMode === 'air' ? 'That control is in Building ventilation' : 'That control is in Pond aeration');
     const [label, min, max, step, unit] = ZW().definitions[v.key];
-    return () => {
+    const aliasWords = new Set((v.alias || '').split(' ')), fillers = /^(the|to|at|is|a|of|value|now|level|me|my|on|as|be|it|for)$/;
+    const justNameAndNumber = !!num && words.every(w => /^-?\d+(\.\d+)?$/.test(w) || aliasWords.has(w) || fillers.test(w));   // "wind 8", "wind speed to 8"
+    const plan = (cur, st) => {
+      if (has(/\b(max|maximum|maximise|maximize|highest|full|top)\b/) && !num) return max;
+      if (has(/\b(min|minimum|minimise|minimize|lowest|zero|none|off)\b/) && !num) return min;
+      if (num && has(/\bby\b/)) return cur + (has(DEC) && !has(INC) ? -1 : 1)*+num;
+      if (num && (has(/\b(set|make|change)\b/) || ((has(INC) || has(DEC)) && has(/\b(to|at)\b/)))) return +num;
+      if (num && (has(INC) || has(DEC))) return cur + (has(DEC) ? -1 : 1)*+num;
+      if (justNameAndNumber) return +num;
+      if (has(DEC) && !has(INC)) return cur - st;
+      if (has(INC)) return cur + st;
+      return null;
+    };
+    const fn = () => {
       const el = $('[data-param="' + v.key + '"]', face()); if (!el) return 'That control is not available here';
-      const cur = +el.value, st = STEP[v.key] || (max - min)/10; let target;
-      if (has(/\b(max|maximum|maximise|maximize|highest|full|top)\b/) && !num) target = max;
-      else if (has(/\b(min|minimum|minimise|minimize|lowest|zero|none|off)\b/) && !num) target = min;
-      else if (num && has(/\bby\b/)) target = cur + (has(DEC) && !has(INC) ? -1 : 1)*+num;
-      else if (num && (has(/\b(set|make|change)\b/) || ((has(INC) || has(DEC)) && has(/\b(to|at)\b/)))) target = +num;
-      else if (num && (has(INC) || has(DEC))) target = cur + (has(DEC) ? -1 : 1)*+num;
-      else if (has(DEC) && !has(INC)) target = cur - st;
-      else if (has(INC)) target = cur + st;
-      else return 'Say increase, decrease, or set ' + label.toLowerCase() + ' to a number';
+      const target = plan(+el.value, STEP[v.key] || (max - min)/10);
+      if (target === null) return 'Say increase, decrease, or set ' + label.toLowerCase() + ' to a number';
       const got = setRange(el, target);
       return (label + ' ' + fmtNum(got, step) + ' ' + (UNIT_SAY[v.key] || unit.replace(': 1', 'to 1'))).trim();
     };
+    fn.weak = plan(0, 1) === null;               // only a hint would come back: another reading of the same sentence may be better
+    return fn;
   }
   return null;
+}
+// An accented or Bangla sentence is read twice (translated to command words, and as heard); the better match wins.
+function parse(raw) {
+  let a = null, b = null;
+  try { a = parseText(raw, true); } catch (e) { console.error('JARVIS parse error', e); }
+  try { b = parseText(raw, false); } catch (e) { console.error('JARVIS parse error', e); }
+  return [a, b].find(f => f && !f.weak) || a || b || null;
 }
 
 /* ---- little animations used by voice "zoom" and "rotate" ---- */
@@ -407,7 +556,7 @@ function scrollBy(dir, amount = .7, x, y) {
 function runCommand(text) {
   heardEl.textContent = '“' + text + '”';
   let fn = null; try { fn = parse(text); } catch (e) { console.error('JARVIS parse error', e); }
-  if (!fn) { heardEl.textContent = '“' + text + '” — not understood'; toast('Not understood: ' + text, true); return false; }
+  if (!fn) { heardEl.textContent = '“' + text + '” — not understood. Try: “wind faster”, “wind 8”, “pond”, “বাতাস বাড়াও”'; toast('Not understood: ' + text, true); return false; }
   let msg; try { msg = fn(); } catch (e) { console.error('JARVIS command error', e); toast('Could not do that', true); return false; }
   if (msg) { toast(msg); say(msg); }
   return true;
@@ -442,14 +591,27 @@ async function micMeterStart(stream) {
   const an = micCtx.createAnalyser(); an.fftSize = 1024;
   const source = micCtx.createMediaStreamSource(stream), mute = micCtx.createGain(); mute.gain.value = 0;
   source.connect(an); an.connect(mute); mute.connect(micCtx.destination);
-  const buf = new Float32Array(an.fftSize), started = performance.now(); let lastSound = started;
+  const buf = new Float32Array(an.fftSize), started = performance.now(); let lastSound = started, mutedSince = 0, recovered = 0;
+  const track = stream.getAudioTracks?.()[0];
+  if (track) { track.addEventListener('mute', () => { mutedSince = mutedSince || performance.now(); }); track.addEventListener('unmute', () => { mutedSince = 0; lastSound = performance.now(); }); }
   micTimer = setInterval(() => {
     an.getFloatTimeDomainData(buf); let sum = 0; for (const x of buf) sum += x*x;
-    const rms = Math.sqrt(sum/buf.length), level = Math.min(100, Math.round(rms*500));
+    const rms = Math.sqrt(sum/buf.length), level = Math.min(100, Math.round(rms*500)), now = performance.now();
     micFill.style.width = level + '%'; $('#jv-miclevel', root).setAttribute('aria-valuenow', String(level));
-    if (rms > .004) lastSound = performance.now();
-    const track = stream.getAudioTracks?.()[0];
-    micSay(track?.muted ? 'Microphone is muted by the device' : performance.now() - lastSound > 3500 ? 'No input detected — check your selected microphone or mute switch' : 'Input ' + level + '% · ' + (level > 2 ? 'audio detected' : 'quiet — speak to test'));
+    if (rms > .004) lastSound = now;
+    // track.muted flickers true for a moment while the browser starts the device, so only trust it when it stays true AND no audio is arriving
+    const flagged = !!track && (track.muted || track.readyState === 'ended' || track.enabled === false);
+    if (flagged && !mutedSince) mutedSince = now; if (!flagged) mutedSince = 0;
+    const audioFlowing = now - lastSound < 1500;
+    const stuck = flagged && !audioFlowing && now - mutedSince > 1500;
+    if (stuck && voiceOn && now - recovered > 15000 && now - mutedSince > 4000) {      // one automatic retry: grab the microphone again
+      recovered = now; toast('Microphone went silent — reconnecting…', true);
+      setVoice(false); setTimeout(() => setVoice(true), 400); return;
+    }
+    micSay(track?.readyState === 'ended' ? 'Microphone disconnected — plug it in or pick another one, then turn Voice off and on'
+      : stuck ? 'Microphone is blocked or muted by the device — press your keyboard mic key, check Windows Settings › Privacy › Microphone, then turn Voice off and on'
+      : now - lastSound > 3500 ? 'No input detected — check your selected microphone or mute switch'
+      : 'Input ' + level + '% · ' + (level > 2 ? 'audio detected' : 'quiet — speak to test'));
   }, 90);
 }
 async function micState() {            // ask for the microphone first so a refusal is visible instead of silent
@@ -463,15 +625,22 @@ async function micState() {            // ask for the microphone first so a refu
   } catch (e) { return {state: e?.name === 'NotFoundError' ? 'none' : e?.name === 'NotReadableError' ? 'busy' : 'blocked'}; }
   finally { clearTimeout(timer); }
 }
-let voiceLang = 'en-US';
-try { const saved = localStorage.getItem('jv-lang'), nav = navigator.language || ''; voiceLang = saved || ([...langEl.options].some(o => o.value === nav) ? nav : 'en-US'); } catch (e) {}
-langEl.value = [...langEl.options].some(o => o.value === voiceLang) ? voiceLang : 'en-US'; voiceLang = langEl.value;
+let voiceLang = 'mix', mixLang = 'en-IN';
+try { const saved = localStorage.getItem('jv-lang'); if (saved && [...langEl.options].some(o => o.value === saved)) voiceLang = saved; } catch (e) {}
+langEl.value = voiceLang;
+const sessionLang = () => voiceLang === 'mix' ? mixLang : voiceLang;
 langEl.addEventListener('change', () => { voiceLang = langEl.value; try { localStorage.setItem('jv-lang', voiceLang); } catch (e) {} if (voiceOn) { try { rec && rec.abort(); } catch (e) {} } });
-langEl.disabled = true;
+langEl.disabled = engineEl.value === 'offline';
 engineEl.addEventListener('change', () => {
   setVoice(false); langEl.disabled = engineEl.value === 'offline';
-  heardEl.textContent = engineEl.value === 'offline' ? 'Offline English selected. Turn Voice on; the first model load takes a moment.' : 'Browser speech service selected. It may need internet access. Turn Voice on.';
+  heardEl.textContent = engineEl.value === 'offline' ? 'Offline English selected (English only, no Bangla). Turn Voice on; the first model load takes a moment.' : 'Online speech service selected (understands accents and Bangla; needs internet). Turn Voice on.';
 });
+function autoFallback(why) {            // Auto engine: the online service is not usable, so continue with the offline English model
+  if (engineEl.value !== 'auto') return false;
+  setVoice(false); engineEl.value = 'offline'; langEl.disabled = true;
+  toast('Online speech unavailable — using offline English', true); heardEl.textContent = 'Online speech unavailable (' + why + '). Switched to Offline English. Bangla needs the online service.';
+  setTimeout(() => setVoice(true), 150); return true;
+}
 function voiceFailure(label, message) {
   setVoice(false); setModeUi('voice', 'err', label); heardEl.textContent = message; micSay(label.toLowerCase());
 }
@@ -491,10 +660,11 @@ $('#jv-mic-test', root).addEventListener('click', async () => {
   } catch (e) { if (session === voiceSession) voiceFailure('MIC ERROR', e.message); }
 });
 async function setVoice(on) {
-  if (!on) { voiceSession++; voiceOn = voiceBusy = false; clearTimeout(recRetry); voiceAbort?.abort(); voiceAbort = null; localVoice?.stop(); localVoice = null; const old = rec; rec = null; try { old && old.abort(); } catch (e) {} micMeterStop(); micSay('off'); setModeUi('voice', '', 'OFF'); return; }
+  if (!on) { stopBreath(); voiceSession++; voiceOn = voiceBusy = false; clearTimeout(recRetry); voiceAbort?.abort(); voiceAbort = null; localVoice?.stop(); localVoice = null; const old = rec; rec = null; try { old && old.abort(); } catch (e) {} micMeterStop(); micSay('off'); setModeUi('voice', '', 'OFF'); return; }
   if (voiceOn || voiceBusy) return;
+  stopBreath(); $('#jv-enable-blow', root).checked=false;
   if (!window.isSecureContext || location.protocol === 'file:') { toast('Open http://localhost:5500 or an HTTPS link', true); heardEl.textContent = 'Run START-SERVER.bat, then open http://localhost:5500. Shared links need HTTPS.'; return; }
-  const offline = engineEl.value === 'offline';
+  const offline = engineEl.value === 'offline' || (engineEl.value === 'auto' && !SR);
   if (!offline && !SR) { setModeUi('voice', 'err', 'N/A'); toast('Select Offline English for this browser', true); heardEl.textContent = 'Browser speech service is unavailable. Select Voice engine → Offline English, then turn Voice on.'; return; }
   const session = ++voiceSession; voiceBusy = true; setModeUi('voice', 'busy', 'LOADING');
   try { prepareMicAudio(); } catch (e) { voiceFailure('AUDIO ERROR', e.message); return; }
@@ -532,8 +702,11 @@ function startRec() {
   if (!voiceOn || rec) return;
   const r = rec = new SR(), done = new Set(), session = voiceSession; let started = performance.now(), lastError = '';
   const current = () => voiceOn && rec === r && session === voiceSession;
-  r.lang = voiceLang; r.continuous = true; r.interimResults = true; r.maxAlternatives = 4;
-  const fire = (i, alts) => { if (!current() || done.has(i)) return; done.add(i); const clean = alts.filter(t => !isEcho(t)); if (clean.length) runCommand(clean.find(safeParse) || clean[0]); };
+  r.lang = sessionLang(); r.continuous = true; r.interimResults = true; r.maxAlternatives = 5;
+  const fire = (i, alts) => { if (!current() || done.has(i)) return; done.add(i); const clean = alts.filter(t => !isEcho(t)); if (!clean.length) return;
+    const ok = runCommand(clean.find(safeParse) || clean[0]);
+    if (!ok && voiceLang === 'mix') { mixLang = mixLang === 'en-IN' ? 'bn-BD' : 'en-IN'; setTimeout(() => { if (rec === r) { try { r.abort(); } catch (e) {} } }, 0); }   // not understood: try the other language next
+  };
   r.onstart = () => { if (!current()) return; started = performance.now(); micSay('listening — say one command, then pause'); };
   r.onaudiostart = () => { if (current()) micSay('engine hears the microphone'); };
   r.onspeechstart = () => { if (current()) micSay('speech detected…'); };
@@ -553,9 +726,9 @@ function startRec() {
     if (!current()) return;
     lastError = e.error;
     micSay('engine error: ' + e.error);
-    if (e.error === 'not-allowed' || e.error === 'service-not-allowed') { voiceOn = false; setModeUi('voice', 'err', 'BLOCKED'); heardEl.textContent = 'Microphone / speech service blocked. Allow the microphone for this page (lock icon in the address bar). Voice works in Chrome and Edge only.'; }
+    if (e.error === 'not-allowed') { voiceOn = false; setModeUi('voice', 'err', 'BLOCKED'); heardEl.textContent = 'Microphone / speech service blocked. Allow the microphone for this page (lock icon in the address bar). Voice works in Chrome and Edge only.'; }
     else if (e.error === 'audio-capture') { voiceOn = false; setModeUi('voice', 'err', 'NO MIC'); heardEl.textContent = 'No microphone found.'; }
-    else if (e.error === 'network') { voiceFailure('SERVICE', 'Browser speech service returned network. The microphone may still work. Select Voice engine → Offline English, then turn Voice on.'); return; }
+    else if (e.error === 'network' || e.error === 'service-not-allowed') { if (autoFallback(e.error)) return; voiceFailure('SERVICE', 'Browser speech service returned network. The microphone may still work. Select Voice engine → Offline English, then turn Voice on.'); return; }
     else if (e.error === 'language-not-supported') { voiceOn = false; setModeUi('voice', 'err', 'LANGUAGE'); heardEl.textContent = 'Choose another voice language and turn Voice on again.'; }
     if (!voiceOn) micMeterStop();
   };                                             // "no-speech" and "aborted" are normal: the session simply restarts below
@@ -563,7 +736,7 @@ function startRec() {
     if (rec !== r || session !== voiceSession) return;
     rec = null; if (!voiceOn) return;
     const quick = performance.now() - started < 1500 && lastError !== 'no-speech'; recErrs = quick ? recErrs + 1 : 0;
-    if (recErrs > 6) { voiceFailure('SERVICE', 'Browser speech service ended repeatedly (' + (lastError || 'no error provided') + '). Select Voice engine → Offline English, then turn Voice on.'); return; }
+    if (recErrs > 6) { if (autoFallback('session kept ending')) return; voiceFailure('SERVICE', 'Browser speech service ended repeatedly (' + (lastError || 'no error provided') + '). Select Voice engine → Offline English, then turn Voice on.'); return; }
     recRetry = setTimeout(startRec, quick ? Math.min(3000, 400*recErrs) : 200);
   };
   try { r.start(); } catch (e) { rec = null; voiceOn = false; micMeterStop(); setModeUi('voice', 'err', 'FAILED'); heardEl.textContent = 'Speech engine could not start: ' + e.message + '. Try Voice again in Chrome or Edge.'; }
@@ -607,18 +780,39 @@ async function startCamera() {
   cam.pending = openCamera();
   try { return await cam.pending; } finally { cam.pending = null; }
 }
+let camGen = 0;                         // bumped on every close, so a camera that finishes opening AFTER you switched it off is shut again
 async function openCamera() {
+  const gen = camGen;
   try {
-    cam.stream = await navigator.mediaDevices.getUserMedia({video: {width: {ideal: 320}, height: {ideal: 240}, frameRate: {ideal: 30}, facingMode: 'user'}, audio: false});
+    const stream = await navigator.mediaDevices.getUserMedia({video: {width: {ideal: 320}, height: {ideal: 240}, frameRate: {ideal: 30}, facingMode: 'user'}, audio: false});
+    if (gen !== camGen) { stream.getTracks().forEach(t => t.stop()); return false; }
+    cam.stream = stream;
     cam.video.srcObject = cam.stream; previewVideo.srcObject = cam.stream; await cam.video.play(); previewVideo.play().catch(() => {});
     cam.on = true; cam.last = -1; $('#jv-cam', root).classList.add('on'); cam.raf = requestAnimationFrame(loop); return true;
-  } catch (e) { console.error(e); toast('Camera blocked or unavailable', true); return false; }
+  } catch (e) { console.error(e); if (gen === camGen) toast('Camera blocked or unavailable', true); return false; }
+}
+function closeCamera() {                // really releases the camera (the light goes off)
+  camGen++; lighten(false);
+  cam.stream?.getTracks().forEach(t => t.stop()); cam.stream = null; cam.on = false; cancelAnimationFrame(cam.raf);
+  cam.video.srcObject = previewVideo.srcObject = null; $('#jv-cam', root).classList.remove('on'); ctx.clearRect(0, 0, overlay.width, overlay.height);
 }
 function stopCameraIfIdle() {
-  if (handsOn || faceOn || $$('.jv-mode.busy', root).some(b => b.dataset.jv !== 'voice') || !cam.on) { if (!camActive()) lighten(false); return; }
-  lighten(false);
-  cam.stream?.getTracks().forEach(t => t.stop()); cam.on = false; cancelAnimationFrame(cam.raf); cam.video.srcObject = previewVideo.srcObject = null; $('#jv-cam', root).classList.remove('on'); ctx.clearRect(0, 0, overlay.width, overlay.height);
+  if (handsOn || faceOn || $$('.jv-mode.busy', root).some(b => b.dataset.jv !== 'voice')) { if (!camActive()) lighten(false); return; }
+  closeCamera();                        // nothing needs it: release it, and cancel a camera that is still opening
 }
+/* Camera picture button: shows or hides the live camera picture in the control panel. The camera itself keeps running,
+   so hand and face gestures work exactly the same with the picture hidden (a separate hidden video feeds the models). */
+const camViewBtn = $('#jv-camview', root), camBox = $('#jv-cam', root);
+let camShown = true; try { camShown = localStorage.getItem('jv-camview') !== 'hidden'; } catch (e) {}
+function setCamView(show, save = true) {
+  camShown = !!show; camBox.hidden = !camShown;
+  camViewBtn.textContent = camShown ? 'CAMERA PICTURE: SHOWN — click to hide' : 'CAMERA PICTURE: HIDDEN — click to show';
+  camViewBtn.setAttribute('aria-pressed', String(camShown)); camViewBtn.classList.toggle('on', camShown);
+  if (camShown) previewVideo.play?.().catch(() => {});
+  if (save) try { localStorage.setItem('jv-camview', camShown ? 'shown' : 'hidden'); } catch (e) {}
+}
+camViewBtn.addEventListener('click', () => setCamView(!camShown));
+setCamView(camShown, false);
 
 let handsOn = false, faceOn = false, handLm = null, faceLm = null, handsRequest = 0, faceRequest = 0;
 async function setHands(on) {
@@ -646,10 +840,10 @@ let lastInfer = 0, cycle = 0, cost = 0;
 const camActive = () => handsOn || faceOn;
 function loop() {                          // models run on the main thread: use at most ~20% of it, hands and face take turns, and back right off while the mouse is in use
   if (!cam.on) return;
-  const v = cam.video, now = performance.now(), gap = mouseBusy() ? 350 : Math.max(50, cost*4);
+  const v = cam.video, now = performance.now(), gap = mouseBusy() && handsOn ? 350 : Math.max(40, cost*3);
   if (v.readyState >= 2 && v.currentTime !== cam.last && now - lastInfer >= gap) {
     cam.last = v.currentTime; lastInfer = now; cycle++;
-    const both = handsOn && faceOn, doFace = faceOn && faceLm && (!both || cycle % 3 === 0), doHands = handsOn && handLm && (!both || cycle % 3 !== 0), t0 = performance.now();
+    const both = handsOn && faceOn, doFace = faceOn && faceLm && (!both || cycle % 2 === 0), doHands = handsOn && handLm && (!both || cycle % 2 !== 0), t0 = performance.now();   // hands and face take equal turns, so a head turn is seen quickly
     try {
       if (doHands) { ctx.clearRect(0, 0, overlay.width, overlay.height); const r = handLm.detectForVideo(v, now); processHands(r.landmarks || [], now); drawHands(r.landmarks || []); }
       if (doFace) { const r = faceLm.detectForVideo(v, now + .5); processFace(r.faceLandmarks || [], now, r.faceBlendshapes && r.faceBlendshapes[0] && r.faceBlendshapes[0].categories); }
@@ -665,17 +859,50 @@ function drawHands(list) {
 }
 
 /* =====================================================================
-   FACE GESTURE: turn the head right / left -> flip the window
+   FACE GESTURE: turn the head right / left -> next / previous scenario
    ===================================================================== */
-let faceArmed = false, faceYaw = 0, faceSince = 0, faceLast = 0, faceNeutral = null, faceSamples = [], faceTurn = 0, faceLost = 0;
-let blowing = false, blowAcc = 0, blowSet = -1, blowLevel = 0, blowLast = 0, blowSince = 0, blowStarted = 0, blowReady = false;
-function resetBlow() { blowing = false; blowLevel = blowLast = blowSince = blowStarted = 0; blowReady = false; blowFill.style.width = '0%'; blowEl.textContent = 'Lip gesture off — wind stays unchanged'; }
-function resetFace() { faceArmed = false; faceYaw = faceSince = faceLast = faceTurn = faceLost = 0; faceNeutral = null; faceSamples = []; resetBlow(); }
-$('#jv-enable-blow', root).addEventListener('change', () => { resetBlow(); try { faceLm?.setOptions({outputFaceBlendshapes: $('#jv-enable-blow', root).checked}); } catch (e) {} });
+let faceArmed = false, faceYaw = 0, faceSince = 0, faceLast = 0, faceNeutral = null, faceSamples = [], faceTurn = 0, faceLost = 0, faceFlipAt = 0, faceFlipSide = 0, faceHist = [], faceRearm = 0;
+let tiltNeutral = null, tiltSamples = [], faceTilt = 0, tiltCand = 0, tiltSince = 0, tiltActive = false, tiltDir = 0, tiltStart = 0, tiltReady = false, tiltAcc = 0, tiltSet = -1;
+let blowing = false, blowAcc = 0, blowSet = -1, blowSince = 0, blowLastHit = 0, blowTick = 0, blowTarget = null;
+let breathInput=null, breathAbort=null, breathRequest=0, breathFloor=0, breathCount=0, breathTicks=0, breathMouth=0, breathMouthAt=0;
+function resetBlow() {                    // stops blowing but KEEPS the wind speed you reached
+  blowing=false;blowTarget=null;blowSince=blowLastHit=blowTick=0;
+  blowFill.style.width='0%';
+}
+function stopBreath(){
+  if(breathInput||breathAbort){micFill.style.width='0%';$('#jv-miclevel',root).setAttribute('aria-valuenow','0');micSay('off');}
+  breathRequest++;breathAbort?.abort();breathAbort=null;breathInput?.stop();breathInput=null;
+  breathFloor=breathCount=breathTicks=breathMouth=breathMouthAt=0;resetBlow();
+}
+async function startBreath(){
+  setVoice(false);const request=++breathRequest;breathAbort=new AbortController();
+  breathFloor=breathCount=breathTicks=0;
+  blowEl.textContent='Allow the microphone, then stay quiet for one second';
+  try{
+    if(!window.BreathInput)throw new Error('Missing breath-input.js. Reload the updated app.');
+    const input=await window.BreathInput.start({signal:breathAbort.signal,onSample:sample=>{
+      if(request!==breathRequest)return;
+      const level=Math.min(100,Math.round(sample.rms*500));micFill.style.width=level+'%';$('#jv-miclevel',root).setAttribute('aria-valuenow',String(level));
+      micSay('Breath microphone · '+level+'%');
+      try{processBlow(sample,sample.at??performance.now());}catch(e){console.error('JARVIS blow error',e);}
+    },onError:e=>{if(request===breathRequest){stopBreath();$('#jv-enable-blow',root).checked=false;blowEl.textContent=e.message;}}});
+    if(request!==breathRequest){input.stop();return;}breathInput=input;
+  }catch(e){if(request===breathRequest){stopBreath();$('#jv-enable-blow',root).checked=false;blowEl.textContent='Breath microphone: '+e.message;}}
+}
+function resetFace() { faceArmed = false; faceYaw = faceSince = faceLast = faceTurn = faceLost = faceFlipAt = faceFlipSide = faceRearm = 0; faceNeutral = null; faceSamples = []; faceHist = []; faceTilt = 0; tiltNeutral = null; tiltSamples = []; tiltCand = tiltSince = tiltDir = tiltStart = 0; tiltActive = false; tiltReady = false; tiltSet = -1; breathMouth = breathMouthAt = 0; }
+$('#jv-enable-blow', root).addEventListener('change', () => {
+  const on=$('#jv-enable-blow',root).checked;
+  if(on)startBreath();else{stopBreath();micMeterStop();}
+  try { faceLm?.setOptions({outputFaceBlendshapes: on}); } catch (e) {}
+});
 $('#jv-center', root).addEventListener('click', () => { resetFace(); faceEl.textContent = faceOn ? 'Look at the screen' : 'Enable Face first'; });
 function yawOf(lm) {                      // 0 = looking straight, about +-0.5 = fully turned
   const nose = lm[1], l = lm[234], r = lm[454], w = r.x - l.x;
   return Math.abs(w) < 1e-4 ? 0 : (nose.x - (l.x + r.x)/2)/w;
+}
+function rollOf(lm) {                     // head tilt in degrees; positive = YOUR right ear towards your right shoulder (camera sees you mirrored)
+  const l = lm[234], r = lm[454], dx = r.x - l.x;
+  return Math.abs(dx) < 1e-4 ? 0 : -Math.atan2(r.y - l.y, dx)*180/Math.PI;
 }
 function blowScore(cats) {                // 0..1 from the face model's mouth blendshapes: puckered / rounded lips or puffed cheeks
   if (!cats) return 0;
@@ -683,57 +910,107 @@ function blowScore(cats) {                // 0..1 from the face model's mouth bl
   const smile = (g('mouthSmileLeft') + g('mouthSmileRight'))/2;
   return clamp(Math.max(g('cheekPuff')*1.6, g('mouthPucker')*.8 + g('mouthFunnel')*.5) - smile*.5, 0, 1);
 }
-function processBlow(cats, now) {
-  if (!$('#jv-enable-blow', root).checked) { resetBlow(); return; }
-  if (mouseBusy() || voiceOn || performance.now() < speakUntil || faceNeutral === null || Math.abs(faceYaw) > T.yawOff) {
-    resetBlow(); blowEl.textContent = voiceOn ? 'Turn Voice off to use the lip gesture' : 'Relax and look straight'; return;
+function noteMouth(cats, now) { breathMouth = blowScore(cats); breathMouthAt = now; }   // camera: how puckered the lips are (optional helper)
+/* One microphone reading (every ~80 ms). Blowing = steady, noisy (not voice-like) sound clearly above the room noise.
+   While it lasts the wind rises at a FIXED rate (T.blowRate), whatever the loudness, so the result is repeatable.
+   Puckered lips seen by the camera lower the loudness needed; lips alone never change anything. */
+function processBlow(sample, now) {
+  if (!$('#jv-enable-blow', root).checked) return;
+  if (voiceOn || voiceBusy || now < speakUntil) { resetBlow(); return; }
+  const el = $('[data-param="wind"]', face()); if (!el) return;
+  const rms = sample.rms; breathTicks++;
+  if (breathCount < T.blowCalib) {                                   // learn the room noise first (a loud room is accepted after ~3 s)
+    if (rms < .06 || breathTicks > 40) { breathFloor = (breathFloor*breathCount + Math.min(rms, .06))/(breathCount + 1); breathCount++; }
+    blowEl.textContent = 'Stay quiet for a second — measuring the room noise'; return;
   }
-  if (blowLast && now - blowLast > 600) resetBlow();
-  const dt = blowLast ? Math.min(.25, (now - blowLast)/1000) : .05; blowLast = now;
-  blowLevel = blowLevel*.5 + blowScore(cats)*.5; blowFill.style.width = Math.round(blowLevel*100) + '%';
-  const el = $('[data-param="wind"]', face());
-  if (blowLevel < T.blowOff) { blowing = false; blowSince = 0; blowReady = true; }
-  if (!blowing && blowReady && blowLevel > T.blowOn && el) {
+  const floor = clamp(breathFloor, .002, .04);
+  const lips = now - breathMouthAt < 700 && breathMouth > (blowing ? T.blowOff : T.blowOn);
+  const onLevel = lips ? Math.max(.015, floor*3) : Math.max(.03, floor*6), offLevel = lips ? Math.max(.01, floor*2) : Math.max(.015, floor*3);
+  const hit = sample.periodicity < .5 && rms > (blowing ? offLevel : onLevel);   // noisy air, not a voice or a hum, and clearly louder than the room
+  if (hit) blowLastHit = now;
+  else if (!blowing && rms < floor*2.5 + .004) breathFloor = breathFloor*.98 + rms*.02;    // keep following the room noise while quiet
+  const active = blowLastHit > 0 && now - blowLastHit <= T.blowGap;
+  blowFill.style.width = Math.round(clamp(blowing ? 1 : rms/onLevel, 0, 1)*100) + '%';
+  if (!blowing) {                                                       // starting needs breath sound NOW, kept up for blowHold ms (a short puff or click does nothing)
+    if (!hit) { if (!active) { blowSince = 0; blowEl.textContent = 'Ready — pucker your lips and blow toward the microphone'; } return; }
     blowSince = blowSince || now;
-    if (now - blowSince >= T.blowHold) { blowing = true; blowStarted = now; blowAcc = +el.value; blowSet = blowAcc; blowReady = false; }
-  } else if (blowLevel <= T.blowOn) blowSince = 0;
-  if (blowing && now - blowStarted >= T.blowMax) blowing = false;
-  if (!blowing || !el) { blowEl.textContent = !blowReady ? 'Relax your lips to rearm' : blowSince ? 'Hold lip gesture…' : 'Pucker and hold to raise wind'; return; }
-  if (Math.abs(+el.value - blowSet) > .25) blowAcc = +el.value;            // someone moved the slider meanwhile: continue from there
-  const power = clamp((blowLevel - T.blowOff)/(1 - T.blowOff), 0, 1);
-  blowAcc = clamp(blowAcc + T.blowRate*(.35 + .65*power)*dt, +el.min, +el.max);
-  blowSet = setRange(el, blowAcc); blowEl.textContent = 'Blowing → wind ' + blowSet.toFixed(1) + ' m/s';
+    if (now - blowSince < T.blowHold) { blowEl.textContent = 'Breath detected… keep blowing'; return; }
+    blowing = true; blowTarget = el; blowAcc = blowSet = +el.value; blowTick = now;
+  }
+  if (!active) {                                                        // the breath ended: the wind stays where it got to
+    const shown = +el.value; resetBlow(); blowSince = 0;
+    blowEl.textContent = 'Released — wind stays at ' + shown.toFixed(1) + ' m/s. Blow again to raise it more'; return;
+  }
+  if (el !== blowTarget) { blowTarget = el; blowAcc = blowSet = +el.value; }     // the window was switched while blowing
+  if (Math.abs(+el.value - blowSet) > .3) blowAcc = +el.value;           // you moved the slider by hand: continue from there
+  const dt = Math.min(.15, Math.max(0, (now - blowTick)/1000)); blowTick = now;
+  blowAcc = clamp(blowAcc + T.blowRate*dt, +el.min, +el.max); blowSet = setRange(el, blowAcc);
+  blowEl.textContent = 'Blowing → ' + blowSet.toFixed(1) + ' m/s · stop blowing to keep it';
+}
+const sideName = v => v > 0 ? 'left' : 'right';     // the camera sees you mirrored: a positive reading means YOU turned to your left
+function doFlip(now, side) {
+  faceArmed = false; faceSince = 0; faceTurn = 0; faceFlipAt = now; faceFlipSide = side; faceRearm = 0; faceHist = [];
+  const dir = side > 0 ? -1 : 1;                   // side > 0 = you turned to YOUR left (camera is mirrored): left = back, right = next scenario
+  const m = stepCase(dir); faceEl.textContent = 'Scenario → ' + m; toast('Scenario: ' + m); say(m);
+}
+function processTilt(now, dt) {
+  const el = $('[data-param="wind"]', face()), box = $('#jv-tilt', root);
+  if (!box.checked || !el || $('#jv-enable-blow',root).checked) { tiltActive = false; tiltCand = tiltSince = 0; return false; }
+  const t = faceTilt, a = Math.abs(t);
+  if (Math.abs(faceYaw) > T.yawOn*.9) { tiltActive = false; tiltCand = tiltSince = 0; return false; }   // a head turn is in progress: never mix the two
+  if (a < T.tiltOff) { tiltReady = true; tiltCand = tiltSince = 0; if (tiltActive) tiltActive = false; return false; }
+  if (!tiltActive) {
+    if (!tiltReady || a < T.tiltOn) { if (a < T.tiltOn) tiltCand = tiltSince = 0; return a >= T.tiltOn && !tiltReady ? 'tilt back upright first' : false; }
+    const dir = Math.sign(t);
+    if (tiltCand !== dir) { tiltCand = dir; tiltSince = now; }
+    if (now - tiltSince < T.tiltHold) return 'Tilt ' + (dir > 0 ? 'right' : 'left') + '… keep going';
+    tiltActive = true; tiltDir = dir; tiltStart = now; tiltAcc = +el.value; tiltSet = tiltAcc; tiltReady = false;
+  }
+  if (Math.sign(t) !== tiltDir || a < T.tiltOn*.6 || now - tiltStart >= T.tiltMax) { tiltActive = false; tiltCand = tiltSince = 0; return now - tiltStart >= T.tiltMax ? 'tilt back upright to push again' : false; }
+  if (Math.abs(+el.value - tiltSet) > .25) tiltAcc = +el.value;            // someone moved the slider meanwhile: continue from there
+  const power = clamp((a - T.tiltOn)/Math.max(1, T.tiltFull - T.tiltOn), 0, 1);
+  tiltAcc = clamp(tiltAcc + tiltDir*T.tiltRate*(.4 + .6*power)*dt/1000, +el.min, +el.max);
+  tiltSet = setRange(el, tiltAcc);
+  return (tiltDir > 0 ? 'Tilt right → wind ' : 'Tilt left → wind ') + tiltSet.toFixed(1) + ' m/s';
 }
 function processFace(faces, now, cats) {
-  if (!faces.length) { faceLost = faceLost || now; if (now - faceLost > 2500) { resetFace(); } faceEl.textContent = 'No face — look at the screen'; return; }
+  if (!faces.length) { resetFace(); breathMouth=0; faceEl.textContent = 'No face — look at the screen'; return; }
   faceLost = 0;
   if (faceLast && now - faceLast > 3000) resetFace();
   const dt = faceLast ? Math.min(400, now - faceLast) : 100; faceLast = now;
-  const raw = yawOf(faces[0]);
-  // Auto-calibration: the first moment a face is seen counts as "looking at the screen"; no holding still needed.
+  const raw = yawOf(faces[0]), rawTilt = rollOf(faces[0]);
+  // Auto-calibration: the first moment a face is seen counts as "looking at the screen" and "head upright".
   if (faceNeutral === null) {
-    faceSamples.push(raw);
-    if (faceSamples.length >= 4) { faceNeutral = mean(faceSamples); faceSamples = []; faceArmed = true; faceYaw = 0; faceEl.textContent = 'Ready — turn your head left or right'; }
+    faceSamples.push(raw); tiltSamples.push(rawTilt);
+    if (faceSamples.length >= 4) { faceNeutral = mean(faceSamples); tiltNeutral = mean(tiltSamples); faceSamples = []; tiltSamples = []; faceArmed = true; faceYaw = 0; faceTilt = 0; tiltReady = true; faceEl.textContent = 'Ready — turn head right = next scenario, left = back'; }
     else faceEl.textContent = 'Starting…';
     return;
   }
-  faceYaw += (raw - faceNeutral - faceYaw)*(1 - Math.exp(-dt/90));
-  yawDot.style.left = (50 + clamp(faceYaw/.35, -1, 1)*46) + '%';
+  faceYaw += (raw - faceNeutral - faceYaw)*(1 - Math.exp(-dt/80));
+  faceTilt += (rawTilt - tiltNeutral - faceTilt)*(1 - Math.exp(-dt/110));
+  yawDot.style.left = (50 - clamp(faceYaw/.3, -1, 1)*46) + '%';     // the preview is mirrored, so the dot follows YOUR turn
   const a = Math.abs(faceYaw);
-  if (a < T.yawOff) faceNeutral += (raw - faceNeutral)*Math.min(1, dt/6000);          // slowly follow small posture changes
-  if (mouseBusy() || document.hidden) { faceSince = faceTurn = 0; faceEl.textContent = 'Mouse in use'; return; }
-  if (faceArmed) {
-    faceEl.textContent = a > T.yawOn*.6 ? 'Turning ' + (faceYaw > 0 ? 'right' : 'left') + '…' : 'Ready — turn your head left or right';
+  if (a < T.yawOff && Math.abs(faceTilt) < T.tiltOff) { faceNeutral += (raw - faceNeutral)*Math.min(1, dt/6000); tiltNeutral += (rawTilt - tiltNeutral)*Math.min(1, dt/6000); }   // slowly follow small posture changes
+  if (document.hidden) { faceSince = faceTurn = 0; return; }           // (the mouse no longer blocks face gestures)
+    faceHist.push({t: now, y: faceYaw}); while (faceHist.length > 1 && now - faceHist[0].t > 400) faceHist.shift();
+  const tiltMsg = processTilt(now, dt), tilting = tiltActive || Math.abs(faceTilt) > T.tiltOn*.8;
+  if (!faceArmed) {                                                     // rearm: come most of the way back, OR sweep to the other side
+    const back = a < T.yawOff;
+    if (back) { faceRearm = faceRearm || now; if (now - faceRearm >= 250) { faceArmed = true; faceRearm = 0; faceSince = 0; faceTurn = 0; } } else faceRearm = 0;
+  }
+  if (faceArmed && !tilting && !blowing) {
+    const side = Math.sign(faceYaw), moved = faceHist.length > 1 ? faceYaw - faceHist[0].y : 0;
+    const flick = a > T.yawOn*.8 && Math.sign(moved) === side && Math.abs(moved) > T.yawOn*T.yawFlick;
+    let held = false;
     if (a > T.yawOn) {
-      if (faceTurn !== Math.sign(faceYaw)) { faceSince = 0; faceTurn = Math.sign(faceYaw); }
-      faceSince = faceSince || now;
-      if (now - faceSince >= T.yawHold) { faceArmed = false; faceSince = 0; const dir = faceYaw > 0 ? 1 : -1; const m = flipWindow(dir); faceEl.textContent = 'Switched → ' + m + ' · face the screen again'; toast('Window: ' + m); say(m); }
-    } else faceSince = 0;
-  } else if (a < T.yawOff) {
-    faceSince = faceSince || now;
-    if (now - faceSince >= 200) { faceArmed = true; faceSince = 0; faceEl.textContent = 'Ready — turn your head left or right'; }
-  } else faceSince = 0;
-  processBlow(cats, now);
+      if (faceTurn !== side) { faceSince = 0; faceTurn = side; }
+      faceSince = faceSince || now; held = now - faceSince >= T.yawHold;
+    } else { faceSince = 0; faceTurn = 0; }
+    faceEl.textContent = a > T.yawOn*.6 ? 'Turning ' + sideName(faceYaw) + '…' : 'Ready — turn head right = next scenario, left = back';
+    if (now - faceFlipAt > T.yawCool && (held || flick)) { doFlip(now, side); return; }
+  } else if (!faceArmed) faceEl.textContent = 'Switched → face the screen to rearm';
+  if (tiltMsg) faceEl.textContent = tiltMsg;
+  noteMouth(cats, now);
 }
 
 /* =====================================================================
@@ -747,7 +1024,8 @@ function newSlot() {
   return {el, wrist: {x: 0, y: 0}, sx: null, sy: null, pinch: false, pinchSince: 0, pinchReady: false, pinchFrames: 0, pinchAim: null, dwell: null, prevE: null, v: [0, 0, 0, 0], hist: [], prevC: null, drag: null, lock: null, acc: 0, prevP: null, peaceSince: 0, scrollV: 0, hover: null, pose: '—'};
 }
 function clearHands() { for (const h of hands) { releaseHand(h); h.el.remove(); } hands.length = 0; }
-function releaseHand(h) { h.pinch = false; h.pinchSince = 0; h.pinchFrames = 0; h.dwell = null; h.el.style.setProperty('--dwell', 0); h.el.classList.remove('dwell'); h.pinchReady = false; h.pinchAim = null; h.drag = null; h.peaceSince = 0; unlock(h); if (h.hover) { h.hover.classList.remove('jv-hover'); h.hover = null; } }
+function resetHandZoom(h){h.zoomActive=null;h.zoomArmSince=0;h.zoomPose=0;h.zoomPoseSince=0;h.zoomLast=0;}
+function releaseHand(h) { resetHandZoom(h); h.pinch = false; h.pinchSince = 0; h.pinchFrames = 0; h.dwell = null; h.el.style.setProperty('--dwell', 0); h.el.classList.remove('dwell'); h.pinchReady = false; h.pinchAim = null; h.drag = null; h.peaceSince = 0; unlock(h); if (h.hover) { h.hover.classList.remove('jv-hover'); h.hover = null; } }
 function unlock(h) { if (h.lock) { h.lock.box.classList.remove('jv-lock'); h.lock = null; } h.acc = 0; h.prevP = null; }
 
 function analyze(lm, AR) {
@@ -826,19 +1104,35 @@ function updateHand(h, lm, now, AR) {
   const peace = a.ext[0] && a.ext[1] && !a.ext[2] && !a.ext[3] && a.pinchD > .8 && !wantPinch;
   const openPalm = a.nExt >= 3 && a.pinchD > .8 && !peace && !wantPinch;
   const point = a.ext[0] && !a.ext[1] && !a.ext[2] && !a.ext[3] && !wantPinch;
-  /* --- finger open/close speed: zoom only over the scene --- */
-  const yieldM = mouseBusy(), dtf = h.prevT ? clamp((now - h.prevT)/33, .5, 12) : 1; h.prevT = now;   // dtf: camera frames' worth of time since the last update
+  /* --- ZOOM. Hold two fingers still over the scene for half a second to ARM it ("ZOOM READY").
+         After that the hand POSE decides, never hand movement, so nothing can drift or zoom by itself:
+           open hand (3-4 fingers up)  = zoom IN at a steady speed
+           curled fingers (fist-like)  = zoom OUT at a steady speed
+           one or two fingers          = hold still
+         A pose must stay steady for a moment before it counts. Pinch, move the hand away, or wait 2.5 s to leave zoom mode. --- */
+  const yieldM = mouseBusy(), dtf = h.prevT ? clamp((now - h.prevT)/33, .5, 12) : 1; h.prevT = now;
   let zooming = false;
   const overScene = h.sx != null && document.elementFromPoint(h.sx, h.sy)?.tagName === 'CANVAS';
-  if (h.prevE && !yieldM && !wantPinch && !h.pinch && a.pinchD > .7 && overScene && !h.lock && !peace) {
-    const de = a.e.map((e, i) => (e - h.prevE[i])/dtf); h.v = h.v.map((v, i) => v*.7 + de[i]*.3);
-    const allUp = h.v.every(v => v > T.zoomVel*.6) && Math.max(...h.v) > T.zoomVel, allDown = h.v.every(v => v < -T.zoomVel*.6) && Math.min(...h.v) < -T.zoomVel;
-    if ((allUp || allDown) && scene()) { zooming = true; lastZoom = now; const m = mean(de); scene().zoomBy(Math.exp(-m*T.zoomGain*dtf)); }   // opening = zoom in, closing = zoom out
-  } else h.v = [0, 0, 0, 0];
+  const canZoom = overScene && !yieldM && !wantPinch && !h.pinch && !h.lock && a.pinchD > (h.zoomActive ? .6 : .8);
+  if (!canZoom || (h.zoomActive && (h.zoomActive !== scene() || now - h.zoomIdle > 2500 || Math.hypot(lm[0].x - h.zoomWrist.x, lm[0].y - h.zoomWrist.y) > .15))) resetHandZoom(h);
+  if (canZoom && peace && !h.zoomActive) {
+    if (!h.zoomArmSince || Math.hypot(lm[0].x - h.zoomWrist.x, lm[0].y - h.zoomWrist.y) > .025) { h.zoomArmSince = now; h.zoomWrist = {...lm[0]}; }
+    if (now - h.zoomArmSince >= 500) { h.zoomActive = scene(); h.zoomIdle = now; h.zoomPose = 0; h.zoomPoseSince = now; h.zoomLast = now; }
+  } else if (!peace && !h.zoomActive) h.zoomArmSince = 0;
+  if (h.zoomActive) {
+    const want = a.nExt >= 3 ? 1 : a.nExt === 0 ? -1 : 0;           // 1 = zoom in, -1 = zoom out, 0 = hold
+    if (want !== h.zoomPose) { h.zoomPose = want; h.zoomPoseSince = now; h.zoomLast = now; }
+    if (peace) h.zoomIdle = now;
+    if (want !== 0 && now - h.zoomPoseSince >= T.zoomPoseMs) {
+      const sec = clamp((now - h.zoomLast)/1000, 0, .12); h.zoomLast = now;
+      scene().zoomBy(Math.exp(-want*T.zoomRate*sec)); zooming = true; lastZoom = h.zoomIdle = now;
+    }
+  }
   h.prevE = a.e;
   /* --- cursor --- */
   const anchor = peace ? mid(lm[8], lm[12]) : lm[8];
   let [tx, ty] = toScreen(anchor.x, anchor.y);
+  if (h.zoomActive && h.sx != null) { tx=h.sx; ty=h.sy; }
   if (wantPinch && h.pinchReady && !h.pinchAim) h.pinchAim = {x: h.sx ?? tx, y: h.sy ?? ty, tipX: tx, tipY: ty};
   if (wantPinch && h.pinchAim) {
     const p = h.pinchAim;
@@ -851,7 +1145,7 @@ function updateHand(h, lm, now, AR) {
   if (yieldM) {                                                 // the real mouse / keyboard is in use: hands step aside
     releaseHand(h); h.prevE = a.e; h.prevC = {x: cx, y: cy}; h.hist.length = 0; h.scrollV = 0; h.pose = 'MOUSE IN USE'; h.el.className = 'jv-cursor yield'; $('b', h.el).textContent = h.pose; return;
   }
-  h.pose = h.pinch || wantPinch ? 'PINCH' : peace ? 'TWO FINGERS' : zooming ? 'ZOOM' : openPalm ? 'OPEN PALM' : point ? 'POINT' : a.nExt === 0 ? 'FIST' : 'HAND';
+  h.pose = h.pinch || wantPinch ? 'PINCH' : h.zoomActive ? (zooming ? (h.zoomPose > 0 ? 'ZOOM IN' : 'ZOOM OUT') : 'ZOOM READY') : h.zoomArmSince ? 'HOLD TO ZOOM' : peace ? 'TWO FINGERS' : openPalm ? 'OPEN PALM' : point ? 'POINT' : a.nExt === 0 ? 'FIST' : 'HAND';
   h.el.className = 'jv-cursor' + (h.pinch ? ' pinch' : '') + (peace ? ' two' : '') + (openPalm ? ' open' : ''); $('b', h.el).textContent = h.pose;
   /* --- hover highlight (the cursor layer has pointer-events:none, so elementFromPoint sees through it) --- */
   const under = document.elementFromPoint(h.sx, h.sy), hov = !peace && under ? under.closest(INTERACTIVE) : null, mark = hov && hov.tagName !== 'CANVAS' ? hov : null;
@@ -892,7 +1186,7 @@ function updateHand(h, lm, now, AR) {
   } else { h.peaceSince = 0; h.peaceTarget = null; if (h.lock) unlock(h); }
 
   /* --- open palm: swipe = switch window, vertical move = scroll --- */
-  if (openPalm && !zooming && now - lastZoom > 250) {
+  if (openPalm && !h.zoomActive && !zooming && now - lastZoom > 250) {
     h.hist.push({t: now, x: cx, y: cy}); while (h.hist.length && now - h.hist[0].t > T.swipeWindow) h.hist.shift();
     const o = h.hist[0];
     if (o && now - lastSwipe > T.swipeLock) {
@@ -926,11 +1220,11 @@ $('#jv-all', root).addEventListener('click', async () => {
 });
 function stopAll() { setVoice(false); setHands(false); setFace(false); clearInterval(anim); if ('speechSynthesis' in window) speechSynthesis.cancel(); speakUntil = 0; toast('All controls stopped'); }
 $('#jv-stop', root).addEventListener('click', stopAll);
-document.addEventListener('visibilitychange', () => { if (document.hidden) { clearHands(); resetFace(); if (voiceOn || voiceBusy) setVoice(false); } });
+document.addEventListener('visibilitychange', () => { if (document.hidden) { clearHands(); resetFace(); if (voiceOn || voiceBusy || breathAbort) setVoice(false); } });
 window.addEventListener('pagehide', stopAll);
 $('#jv-form', root).addEventListener('submit', e => { e.preventDefault(); const i = $('#jv-input', root); if (i.value.trim()) runCommand(i.value.trim()); i.value = ''; });
 document.addEventListener('keydown', e => { if (e.key === 'j' && e.altKey) { e.preventDefault(); toggleHud(); } });
 
 // small debug / test hook
-window.JARVIS = {command: runCommand, parse, feedHands: (list, now, ar) => { if (ar) { Object.defineProperty(cam.video, 'videoWidth', {value: 640, configurable: true}); Object.defineProperty(cam.video, 'videoHeight', {value: 480, configurable: true}); } processHands(list, now); }, feedFace: processFace, hands, T, toggleHud};
+window.JARVIS = {command: runCommand, parse, feedHands: (list, now, ar) => { if (ar) { Object.defineProperty(cam.video, 'videoWidth', {value: 640, configurable: true}); Object.defineProperty(cam.video, 'videoHeight', {value: 480, configurable: true}); } processHands(list, now); }, feedFace: processFace, hands, T, toggleHud, canon};
 })();

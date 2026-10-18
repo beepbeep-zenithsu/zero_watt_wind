@@ -17,7 +17,7 @@ water: [
  {id:'rain', name:'Monsoon', glyph:'☂', weather:'rain', environment:'park', p:{wind:7, profile:'gusts', pond:150, temp:26, oxygenDemand:.4, rain:.8, ambient:29}},
  {id:'storm', name:'Storm surge', glyph:'ϟ', weather:'storm', environment:'park', p:{wind:19, profile:'storm', pond:180, temp:27, oxygenDemand:.35, rain:1, ambient:27}}
 ]};
-const definitions = {wind:['Wind speed',0,30,.1,'m/s'], diameter:['Rotor diameter',.3,2,.1,'m'], units:['Installed units',1,10,1,''], ratio:['Gear reduction',1,5,.5,': 1'],
+const definitions = {wind:['Wind speed',0,60,.1,'m/s'], diameter:['Rotor diameter',.3,2,.1,'m'], units:['Installed units',1,10,1,''], ratio:['Gear reduction',1,5,.5,': 1'],
  ambient:['Air temperature',10,55,1,'°C'], rain:['Rain intensity',0,1,.1,''], room:['Room volume',30,500,10,'m³'], people:['Occupants',0,30,1,''], backgroundACH:['Background ventilation',.2,2,.1,'ACH'], pressure:['Duct pressure',5,80,1,'Pa'],
  pond:['Pond volume',20,500,10,'m³'], temp:['Water temperature',10,30,.5,'°C'], oxygenDemand:['Oxygen demand',0,1,.05,'mg/L/h']};
 const steppers = {units:['ZeroWatt units on the roof', 1, 10], boats:['Boats on the pond', 1, 6], upb:['ZeroWatt units per boat', 1, 2]};
@@ -49,7 +49,7 @@ function dropdown(mode, key) {
 
 function create(mode) {
   const first = scenarios[mode][0];
-  const s = states[mode] = {mode, scenario:first, p:{...M.defaults, ...first.p}, t:0, running:!reduced, flows:true, view:'field', scene:null, hw:null, current:null};
+  const s = states[mode] = {mode, scenario:first, p:{...M.defaults, ...first.p}, t:0, running:!reduced, flows:true, view:'field', doorOpen:false, scene:null, hw:null, current:null};
   const root = s.root = $('#' + mode + '-face');
   const air = mode === 'air';
   root.innerHTML =
@@ -66,7 +66,6 @@ function create(mode) {
    '<div class="controls-divider"></div><div class="control-title">THE PROTOTYPE</div>' + ['diameter', 'ratio'].map(k => slider(mode, k, s.p)).join('') +
    '<label class="switch-control" for="' + mode + '-brake">Manual shaft brake<input id="' + mode + '-brake" data-toggle="brake" type="checkbox"></label>' +
    '<div class="controls-divider"></div><div class="control-title">' + (air ? 'THE BUILDING' : 'THE POND') + '</div>' + (air ? ['room', 'people', 'backgroundACH', 'pressure'] : ['pond', 'temp', 'oxygenDemand']).map(k => slider(mode, k, s.p)).join('') +
-   (air ? '<p class="hw-note">Background ventilation opens the side windows. The minimum includes leakage with the panes closed; blue particles show incoming air.</p>' : '') +
    '<div class="controls-divider"></div><div class="control-title">SENSORS &amp; MICROCONTROLLER</div>' +
    hwKeys.map(k => dropdown(mode, k)).join('') +
    '<button class="suggest" data-suggest>Pick rugged parts for this case</button>' +
@@ -74,8 +73,10 @@ function create(mode) {
   '</aside>' +
   '<div class="scene-area"><div class="viewport"><div class="loading">ASSEMBLING…</div>' +
    '<div class="vp-left"><select data-scenario-select aria-label="Environment">' + scenarios[mode].map(v => '<option value="' + v.id + '">' + v.glyph + '  ' + v.name + '</option>').join('') + '</select></div>' +
-   '<div class="vp-tools"><button data-tool="pause" aria-pressed="false" aria-label="Pause">Pause</button><button data-tool="flows" aria-pressed="true">Flow</button><button data-tool="view" aria-pressed="false">Close-up</button><button data-tool="home" aria-label="Reset camera">⌂</button><button data-tool="fit" aria-pressed="false" title="Fit the simulation to the whole screen (Esc to exit)">⛶ Fit to screen</button></div>' +
+   '<div class="vp-tools"><button data-tool="pause" aria-pressed="false" aria-label="Pause">Pause</button><button data-tool="flows" aria-pressed="true">Flow</button><button data-tool="view" aria-pressed="false">Close-up</button><button data-tool="fit" aria-pressed="false" title="Fit the simulation to the whole screen (Esc to exit)">⛶ Fit to screen</button></div>' +
    '<div class="readouts"><div class="readout" data-status-box><span class="readout-label">STATUS</span><strong data-status>—</strong></div></div>' +
+   '<div class="vp-navigation">' +
+   '<div class="vp-camera">' + (air ? '<button data-tool="door" aria-pressed="false">Open door</button>' : '') + '<button data-tool="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button data-tool="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button data-tool="home" aria-label="Reset camera">Reset view</button></div></div>' +
   '</div></div></div></section>';
   bind(s); recompute(s); return s;
 }
@@ -95,7 +96,10 @@ function bind(s) {
     const k = b.dataset.tool;
     if (k === 'pause') { s.running = !s.running; b.setAttribute('aria-pressed', !s.running); b.textContent = s.running ? 'Pause' : 'Play'; }
     if (k === 'flows') { s.flows = !s.flows; s.scene?.setFlows(s.flows); b.setAttribute('aria-pressed', s.flows); }
-    if (k === 'view') { s.view = s.view === 'field' ? 'bench' : 'field'; s.scene?.setView(s.view); b.setAttribute('aria-pressed', s.view === 'bench'); }
+    if (k === 'view') { s.view = s.view === 'field' ? 'bench' : 'field'; s.scene?.setView(s.view); b.setAttribute('aria-pressed', s.view === 'bench'); const door = $('[data-tool="door"]', root); if (door) door.disabled = s.view === 'bench'; }
+    if (k === 'door') { s.doorOpen = !s.doorOpen; s.scene?.setDoorOpen(s.doorOpen); b.setAttribute('aria-pressed', s.doorOpen); b.textContent = s.doorOpen ? 'Close door' : 'Open door'; }
+    if (k === 'zoom-out') s.scene?.zoomBy(1.2);
+    if (k === 'zoom-in') s.scene?.zoomBy(1/1.2);
     if (k === 'home') s.scene?.setView(s.view);
     if (k === 'fit') toggleFit(s);
   }));
@@ -148,15 +152,14 @@ function renderHW(s) {
   }).join('');
   const cls = hw.protectionText === 'ARMED' ? '' : hw.protectionText.startsWith('NO ') ? 'warn' : 'bad';
   el.innerHTML = '<div class="hw-head"><span>STORM PROTECTION</span><b class="' + cls + '">' + hw.protectionText + '</b></div>' +
-    (rows || '<div class="hw-note">Pick a wind sensor and a microcontroller above to arm the storm brake, then test them in a harsh case.</div>');
+    (rows || '<div class="hw-note">Pick sensors and a microcontroller above to test their performance in each weather case.</div>');
 }
 
 /* ---------- plain-language status line in the scene ---------- */
 function statusText(s, v) {
   const hw = s.hw, p = s.p;
   if (p.brake) return ['BRAKE ON', 'alert'];
-  if (v.wind >= p.cutout) return ['SHUT DOWN · TOO WINDY', 'alert'];
-  if (v.wind >= p.stormCutout) return hw.protection ? ['STORM BRAKE', 'alert'] : ['NO STORM PROTECTION', 'bad'];
+  if (v.wind >= p.stormCutout) return ['RUNNING · HIGH WIND', 'alert'];
   if (hw.damper) return ['RAIN DAMPER ON', 'alert'];
   if (hw.alerts && (s.mode === 'air' ? v.co2 > p.co2Target : v.do < p.doTarget)) return [s.mode === 'air' ? 'FRESH AIR NEEDED' : 'OXYGEN LOW', 'alert'];
   if (v.shaft <= 0) return ['WAITING FOR WIND', ''];

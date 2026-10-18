@@ -123,7 +123,9 @@
   /* ---------- steady-state physics ---------- */
   function mechanical(p, v, protectedFlag) {
     const available = 0.5*1.225*Math.PI*p.diameter*p.diameter/4*v*v*v*p.units;
-    const stopped = p.brake || v >= p.cutout || (protectedFlag && v >= p.stormCutout);
+    // Demonstration mode: wind keeps driving the rotor across the full slider range.
+    // Only the explicit manual shaft brake stops it; hardware ratings still report separately.
+    const stopped = !!p.brake;
     const shaft = v < p.cutin || stopped ? 0 : Math.min(available*p.cp*p.drive, p.ratedPower*p.units);
     const rpm = shaft > 0 ? v*p.tsr/(Math.PI*p.diameter)*60 : 0;
     return {available, shaft, rpm, outputRPM:rpm/p.ratio, torque:rpm > 0 ? shaft/(rpm*2*Math.PI/60) : 0, stopped};
@@ -151,7 +153,7 @@
   }
   function sweep(p, hw, n) {
     n = n || 60; const out = [];
-    for (let i = 0; i <= n; i++) out.push(steady(p, 30*i/n, hw));
+    for (let i = 0; i <= n; i++) out.push(steady(p, 60*i/n, hw));
     return out;
   }
   return {defaults, hardware, find, liveWind, peakWind, mechanical, saturation, steady, sweep, evaluateHardware};

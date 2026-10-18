@@ -7,6 +7,14 @@ import * as T from './vendor/three.module.js';
    spiral rotor -> shaft on double-plate stands -> bevel pair (90 deg) -> fan (air) or paddle wheel (water). */
 
 const MAX_UNITS = 12, MAX_PEOPLE = 30, MAX_FISH = 8, PITCH_X = 4.9, PITCH_Z = 5.6;
+const spinCap = (w, dt) => Math.min(w <= 8 ? w : 8 + (w - 8)*.35, 30, dt > 0 ? .6/dt : 30);   // rad/s -> rad/s, never more than ~0.6 rad per frame
+/* Visual rotor speed (rad/s) as a function of wind speed (m/s). One smooth, always-rising curve:
+   - turns clearly even in a light breeze (about 4.7 rad/s = 0.75 rev/s at 1 m/s, 7 rad/s at 2.8 m/s),
+   - keeps climbing at every step up to the 60 m/s slider limit, where it reaches its fastest (SPIN_MAX),
+   - fades to a standstill only as the wind itself falls to zero.
+   The rotor idles below the electrical cut-in speed (no power is delivered there - that is still the model's job). */
+export const SPIN_MAX = 24, SPIN_WIND_MAX = 60, SPIN_EXP = .4;
+export const spinTarget = w => { const v = clamp(w, 0, SPIN_WIND_MAX); return SPIN_MAX*Math.pow(v/SPIN_WIND_MAX, SPIN_EXP)*smooth(0, .4, v); };
 // pond: units ride on pontoon boats. Deck level sits just above the waterline, the drive steps down through a second bevel pair so the paddle wheel hangs deep in the water.
 const WSHAFT_Y = 2.0, WHEEL_Y = .35, WHEEL_R = 1.6, BOAT_S = .5, BOAT_PITCH = 6.6, MAX_BOATS = 6, MAX_UPB = 2, DECK_DROP = .14, WHEEL_Z = 3.4;
 const BOAT_FOOT = 3.6, BOAT_R = 2.0;   // hull length (world units) and collision-circle radius
@@ -58,6 +66,7 @@ export class FieldScene {
       cloud: this.mat('#b4c3b3', .9, 0), leafPiece: this.mat('#6f8f4a', .8, 0), twig: this.mat('#4a3d2c', .8, 0),
       glass: new T.MeshStandardMaterial({color:'#9ac8b8', transparent:true, opacity:.28, roughness:.12, side:T.DoubleSide}),
       win: new T.MeshStandardMaterial({color:'#b8e0d0', transparent:true, opacity:.34, roughness:.1, side:T.DoubleSide, emissive:'#000000'}),
+      shellGlass: new T.MeshStandardMaterial({color:'#b8d6c9', transparent:true, opacity:.13, roughness:.2, side:T.DoubleSide, depthWrite:false}),
       led: new T.MeshStandardMaterial({color:'#6fe08a', emissive:'#2fbf5a', emissiveIntensity:1.2}),
       cross: new T.MeshStandardMaterial({color:'#2fae63', emissive:'#12562f', emissiveIntensity:.6, roughness:.5}), pontoon: this.mat('#f1efe6', .45, .02),
       brake: new T.MeshStandardMaterial({color:'#e0503f', emissive:'#6a1a10', roughness:.4}),
@@ -368,16 +377,36 @@ export class FieldScene {
     if (this.mode === 'air') this.buildRoomShell(); else this.buildPondShell();
     this.buildTrees();
   }
-  // the original cutaway building: floor, side and back walls, open front, windows, occupants, desk
+  // Enclosed teaching model: transparent walls and roof keep the whole interior visible.
   buildRoomShell() {
     const S = this.shell, m = this.mats, W = this.roomW, D = this.roomD, n = this.count;
+    const glassBox = (w,h,d,x,y,z) => { const o = this.box(w,h,d,m.shellGlass,S,x,y,z); o.castShadow = false; return o; };
     this.box(W + .6, FLOOR_TOP, D + .6, m.concrete, S, 0, FLOOR_TOP/2, 0);
-    this.box(W, WALL_H, .16, m.cream, S, 0, FLOOR_TOP + WALL_H/2, -D/2);
-    // roof covers the back of the building and the prototype bases; the front stays open as a cutaway
-    let roofEnd = -D/2 + 1;
-    for (let i = 0; i < n; i++) roofEnd = Math.max(roofEnd, this.unitPos(i).z + 1.4);
-    const z0 = -D/2 - .1, z1 = roofEnd;
-    this.box(W + .4, .2, z1 - z0, m.concrete, S, 0, 3.6, (z0 + z1)/2);
+    glassBox(W, WALL_H, .16, 0, FLOOR_TOP + WALL_H/2, -D/2).name = 'back-wall';
+    // Complete roof with real exhaust openings around the prototype curbs.
+    const roofShape = new T.Shape();
+    roofShape.moveTo(-W/2-.2,-D/2-.2); roofShape.lineTo(W/2+.2,-D/2-.2); roofShape.lineTo(W/2+.2,D/2+.2); roofShape.lineTo(-W/2-.2,D/2+.2); roofShape.closePath();
+    for (let i=0;i<n;i++) { const q=this.unitPos(i), hole=new T.Path(); hole.absarc(q.x+AX,-q.z,.45,0,Math.PI*2,true); roofShape.holes.push(hole); }
+    const roof = this.mesh(new T.ExtrudeGeometry(roofShape,{depth:.2,bevelEnabled:false,curveSegments:32}),m.shellGlass,S,0,3.5,0);
+    roof.rotation.x=-Math.PI/2; roof.castShadow=false; roof.name='full-roof';
+    for (const side of [-1,1]) {
+      this.box(W+.3,.12,.12,m.white,S,0,3.56,side*D/2);
+      this.box(.12,.12,D+.3,m.white,S,side*W/2,3.56,0);
+      for (const end of [-1,1]) this.box(.12,WALL_H,.12,m.white,S,side*W/2,FLOOR_TOP+WALL_H/2,end*D/2);
+    }
+    // Front wall is built around a doorway, so the hinged door opens to the outside.
+    const doorW=1.05, doorH=2.25, hingeX=W/2-1.9, rightX=hingeX+doorW, front=D/2;
+    glassBox(hingeX+W/2,WALL_H,.16,(-W/2+hingeX)/2,FLOOR_TOP+WALL_H/2,front).name='front-wall-left';
+    glassBox(W/2-rightX,WALL_H,.16,(rightX+W/2)/2,FLOOR_TOP+WALL_H/2,front).name='front-wall-right';
+    glassBox(doorW,WALL_H-doorH,.16,hingeX+doorW/2,FLOOR_TOP+doorH+(WALL_H-doorH)/2,front);
+    for (const x of [hingeX,rightX]) this.box(.08,doorH,.22,m.white,S,x,FLOOR_TOP+doorH/2,front);
+    this.box(doorW+.08,.08,.22,m.white,S,hingeX+doorW/2,FLOOR_TOP+doorH,front);
+    this.doorPivot=new T.Group(); this.doorPivot.name='entrance-door'; this.doorPivot.position.set(hingeX,FLOOR_TOP,front); S.add(this.doorPivot);
+    const door=this.box(doorW-.08,doorH-.06,.06,m.win,this.doorPivot,doorW/2,doorH/2,0); door.castShadow=false;
+    for (const x of [.04,doorW-.04]) this.box(.06,doorH,.08,m.wood,this.doorPivot,x,doorH/2,0);
+    for (const y of [.04,doorH-.04]) this.box(doorW,.08,.08,m.wood,this.doorPivot,doorW/2,y,0);
+    this.sphere(.055,m.gold,this.doorPivot,doorW-.16,1.05,.1);
+    this.setDoorOpen(!!this.doorOpen);
     // desk and monitor
     const dx = -W/2 + 1.35;
     this.box(1.5, .08, .8, m.wood, S, dx, .95, 0);
@@ -388,10 +417,10 @@ export class FieldScene {
     for (const side of [-1, 1]) for (let k = 0; k < nW; k++) {
       const cell = D/nW, w = cell*.7, zc = -D/2 + (k + .5)*cell;
       const x = side*W/2, pier = (cell - w)/2;
-      this.box(.16, sill - FLOOR_TOP, cell, m.cream, S, x, (sill + FLOOR_TOP)/2, zc);
-      this.box(.16, FLOOR_TOP + WALL_H - top, cell, m.cream, S, x, (top + FLOOR_TOP + WALL_H)/2, zc);
+      glassBox(.16, sill - FLOOR_TOP, cell, x, (sill + FLOOR_TOP)/2, zc);
+      glassBox(.16, FLOOR_TOP + WALL_H - top, cell, x, (top + FLOOR_TOP + WALL_H)/2, zc);
       for (const end of [-1, 1]) {
-        this.box(.16, windowH, pier, m.cream, S, x, sill + windowH/2, zc + end*(w/2 + pier/2));
+        glassBox(.16, windowH, pier, x, sill + windowH/2, zc + end*(w/2 + pier/2));
         this.box(.24, windowH + .12, .08, m.white, S, x, sill + windowH/2, zc + end*w/2);
         this.box(.24, .08, w, m.white, S, x, end < 0 ? sill : top, zc);
       }
@@ -404,14 +433,9 @@ export class FieldScene {
       this.box(.08, windowH, .04, m.white, piv, 0, 0, w/2);
       this.panes.push({piv, sign: -side, x, zc, width:w, y:sill + windowH/2});
     }
-    // community-clinic details from the poster: waiting-room desks with seated occupants, health cross, door, plants, fresh-air louvre
-    const cols = Math.max(2, Math.floor((W - 1.4)/.85)), rows = Math.ceil(MAX_PEOPLE/cols), zS = -D/2 + 1.0, zE = D/2 - 1.6, step = rows > 1 ? Math.max(1.05, (zE - zS)/(rows - 1)) : 0;
+    // Seated occupants and clinic details, with no long benches across the room.
+    const cols = Math.max(2, Math.floor((W - 1.4)/.85)), rows = Math.ceil(MAX_PEOPLE/cols), zS = -D/2 + 1.0, zE = D/2 - 1.6, step = rows > 1 ? (zE - zS)/(rows - 1) : 0;
     const xs = c => -W/2 + .9 + c*(W - 1.8)/Math.max(1, cols - 1), F = FLOOR_TOP;
-    for (let r = 0; r < rows; r++) {
-      const z = zS + r*step;
-      this.box(W - 1.2, .06, .5, m.wood, S, 0, F + .76, z + .55);
-      for (const lx of [-W/2 + .8, W/2 - .8]) this.box(.06, .74, .4, m.dark, S, lx, F + .37, z + .55);
-    }
     for (let k = 0; k < MAX_PEOPLE; k++) {
       const c = k % cols, r = Math.floor(k/cols), g = new T.Group(); g.position.set(xs(c), F, zS + r*step); S.add(g); this.people.push(g);
       this.box(.4, .05, .4, m.dark, g, 0, .46, 0); this.box(.4, .4, .05, m.dark, g, 0, .72, -.2);                         // chair
@@ -420,14 +444,12 @@ export class FieldScene {
     }
     const bz = -D/2 + .1;
     this.box(1.15, 1.15, .03, m.white, S, -W/2 + 2.4, F + 2.1, bz); this.box(.78, .2, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02); this.box(.2, .78, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02);   // health cross
-    this.box(.95, 2.1, .05, m.wood, S, W/2 - 1.3, F + 1.05, bz); this.sphere(.04, m.gold, S, W/2 - 1.62, F + 1.0, bz + .05);                                                   // door
     for (const px of [W/2 - .55, -W/2 + .5]) { this.cyl(.17, .32, m.trunk, S, px, F + .16, -D/2 + .6); for (let j = 0; j < 3; j++) this.sphere(.2 - j*.03, m.leaf2, S, px + (j - 1)*.08, F + .5 + j*.18, -D/2 + .6); }  // plants
     for (let j = 0; j < 5; j++) this.box(.04, .07, .95, m.white, S, -W/2 + .12, F + .45 + j*.15, -D/2 + 1.6);              // fresh-air louvre low on the side wall
     // canyon blocks (environment option) and the path
     this.canyon = new T.Group(); S.add(this.canyon);
     for (const k of [-1, 1]) this.canyonBlock(this.canyon, k*(W/2 + 6), 0);
     this.box(W + 8, .12, 1.3, m.path, S, 0, .06, D/2 + 2.6);
-    this.parkBench(S, W/2 + 2.2, D/2 + 1.2);
   }
   // the original pond: basin with rim, timber walkway and deck, fish, reeds, ripples
   // pontoon boat hull in unit-local coordinates (bow +z, deck top at y = 0, waterline at y = -DECK_DROP)
@@ -662,6 +684,7 @@ export class FieldScene {
     this.cameraPosition();
   }
   setFlows(on) { this.flows = on; }
+  setDoorOpen(on) { this.doorOpen=!!on; if (this.doorPivot) this.doorPivot.rotation.y=on ? -Math.PI*.58 : 0; }
   zoomBy(f) { this.distance = T.MathUtils.clamp(this.distance*f, 4, 40); this.cameraPosition(); }              // f < 1 zooms in, f > 1 zooms out
   orbitBy(dAngle, dElev = 0) { this.angle += dAngle; this.elevation = T.MathUtils.clamp(this.elevation + dElev, .05, 1.35); this.cameraPosition(); }
   cameraPosition() { this.camera.position.set(this.target.x + Math.sin(this.angle)*Math.cos(this.elevation)*this.distance, this.target.y + Math.sin(this.elevation)*this.distance, this.target.z + Math.cos(this.angle)*Math.cos(this.elevation)*this.distance); this.camera.lookAt(this.target); }
@@ -713,13 +736,20 @@ export class FieldScene {
     const anim = running ? dt : 0; this.time += anim; const t = this.time;
     const wind = sample.wind, rain = this.rainAmt, haze = this.haze;
 
-    // rotating machinery: speed follows the simulated rotor
-    const rot = sample.rpm*Math.PI*2/60*anim*.35;
+    // rotating machinery: the rotor follows the wind with a little inertia, so it speeds up and slows down smoothly
+    // (also when the wind is raised by blowing, the slider or a gust) instead of jumping between values.
+    const braked = !!(sample.stopped || p.brake);
+    const want = braked ? 0 : spinTarget(wind);
+    if (this.spinW === undefined) this.spinW = 0;
+    if (dt > 0) this.spinW += (want - this.spinW)*(1 - Math.exp(-dt/(braked ? .25 : .45)));
+    const w = Math.min(this.spinW, dt > 0 ? .5/dt : SPIN_MAX);              // never more than ~0.5 rad per frame, so slow frames cannot make it look backwards
+    const rot = w*anim;
+    const gearRot = Math.min(w, dt > 0 ? .15/dt : SPIN_MAX)*anim;            // gear teeth are 0.31 rad apart: past ~0.15 rad per frame they would appear to stall or reverse
     this.rotors.forEach(o => o.rotation.x += rot);
-    this.gears.forEach(o => o.g.rotation.x += rot*o.sign);
+    this.gears.forEach(o => o.g.rotation.x += gearRot*o.sign);
     this.fans.forEach(o => o.rotation.z += rot/p.ratio);
     this.vfans.forEach(o => o.rotation.y -= rot/p.ratio);
-    if (this.sensors && this.sensors.cupSpin) this.sensors.cupSpin.rotation.y += anim*wind*.8;
+    if (this.sensors && this.sensors.cupSpin) this.sensors.cupSpin.rotation.y += spinCap(wind*.8, dt)*anim;
     // brake collars: red for the manual brake, amber for storm lock
     const stopped = !!sample.stopped;
     this.units.forEach((u, i) => { const show = i < this.count && !bench && (p.brake || stopped); u.brake.visible = show; if (show) u.brake.material = p.brake ? this.mats.brake : this.mats.storm; });

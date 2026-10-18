@@ -8,6 +8,7 @@ function fixture({offline=false, localStart, audioContext, dwell=false} = {}) {
   const dom = new JSDOM('<body><div id="faces"><div id="air"><div class="viewport"><canvas></canvas></div></div><div id="water"><div class="viewport"></div></div></div><button id="target">Test</button></body>', {url:'http://localhost:5500', runScripts:'outside-only', pretendToBeVisual:true});
   const w = dom.window, d = w.document;
   let clock = 10000, target = d.querySelector('#target'), clicks = 0, switches = 0, zooms = 0;
+  const zoomFactors=[];
   const timers = new Map(); let timerId = 0;
   w.setTimeout = (fn, ms) => { const id = ++timerId; timers.set(id, {fn, at:clock + ms}); return id; };
   w.clearTimeout = id => timers.delete(id);
@@ -31,10 +32,12 @@ function fixture({offline=false, localStart, audioContext, dwell=false} = {}) {
       input.getBoundingClientRect = () => ({left:100, right:900, top:200, bottom:230, width:800});
       label.append(input); root.append(label);
     }
-    states[mode] = {root, p, scene:{zoomBy(){zooms++;},orbitBy(){}}};
+    states[mode] = {root, p, scene:{zoomBy(f){zooms++;zoomFactors.push(f);},orbitBy(){}}};
   }
   let mode = 'air';
-  w.ZW = {state:() => states[mode], mode:() => mode, states, definitions:defs, switchMode(next){mode = next; switches++;}};
+  const scenarios = {air:[{id:'a1'},{id:'a2'},{id:'a3'}], water:[{id:'w1'},{id:'w2'},{id:'w3'}]};
+  for (const m of ['air','water']) { states[m].scenario = scenarios[m][0]; states[m].mode = m; }
+  w.ZW = {state:() => states[mode], mode:() => mode, states, definitions:defs, scenarios, switchMode(next){mode = next;}, selectScenario(st, id){ st.scenario = scenarios[st.mode].find(v => v.id === id); switches++; }};
   d.elementFromPoint = () => target; target.addEventListener('click', () => clicks++);
   const recs = [];
   w.SpeechRecognition = class {
@@ -52,7 +55,7 @@ function fixture({offline=false, localStart, audioContext, dwell=false} = {}) {
   d.querySelector('#jv-dwell').checked = dwell;
   if (!offline) { const engine=d.querySelector('#jv-voice-engine'); engine.value='browser'; engine.dispatchEvent(new w.Event('change')); }
   return {w,d,states,recs,tracks,api:w.JARVIS, get clicks(){return clicks;}, get switches(){return switches;},get zooms(){return zooms;},
-    get now(){return clock;}, wind:() => states.air.p.wind,
+    zoomFactors, get now(){return clock;}, wind:() => states.air.p.wind,
     target(el){target = el;}, tick(ms){clock += ms; for (const [id,t] of [...timers]) if (t.at <= clock) {if(t.every)t.at=clock+t.every;else timers.delete(id); t.fn();}},
     hands(lm, ms=100){clock += ms; w.JARVIS.feedHands(lm ? [lm] : [], clock);},
     face(yaw=0, cats=[], ms=100){clock += ms; w.JARVIS.feedFace(yaw === null ? [] : [faceMesh(yaw)], clock, cats);},
@@ -79,13 +82,13 @@ test('face control never changes wind by default, including speaking-like lip sh
   const f = fixture(); calibrate(f); for(let i=0;i<600;i++) f.face(0,pucker);
   assert.equal(f.wind(),4.5); assert.equal(f.switches,0); f.close();
 });
-test('optional lip gesture requires a hold, stops after two seconds and requires release', () => {
+test('blow option: puckered lips alone (no breath sound) never raise the wind, and nothing resets it', () => {
   const f = fixture(); calibrate(f); const box=f.d.querySelector('#jv-enable-blow'); box.click();
   for(let i=0;i<8;i++) f.face();
-  for(let i=0;i<4;i++) f.face(0,pucker); assert.equal(f.wind(),4.5);
-  for(let i=0;i<40;i++) f.face(0,pucker); const raised=f.wind(); assert.ok(raised>4.5 && raised<13);
-  for(let i=0;i<100;i++) f.face(0,pucker); assert.equal(f.wind(),raised);
-  box.click(); for(let i=0;i<20;i++) f.face(0,pucker); assert.equal(f.wind(),raised); f.close();
+  for(let i=0;i<80;i++) f.face(0,pucker); assert.equal(f.wind(),4.5);
+  f.states.air.p.wind=9; f.d.querySelector('[data-param="wind"]').value=9;
+  for(let i=0;i<40;i++) f.face(); assert.equal(+f.d.querySelector('[data-param="wind"]').value,9,'a raised speed is never restored by itself');
+  box.click(); for(let i=0;i<20;i++) f.face(0,pucker); assert.equal(+f.d.querySelector('[data-param="wind"]').value,9); f.close();
 });
 test('head turn switches once per hold and rearms only at centre', () => {
   const f=fixture(); calibrate(f); for(let i=0;i<30;i++) f.face(.4);
@@ -226,6 +229,35 @@ test('hover-to-click clicks a button once after about a second and not again unt
 });
 test('a quick two-frame pinch clicks even on a slow camera', () => {
   const f=fixture(); f.hands(hand()); f.hands(hand(true),30); f.hands(hand(true),30); assert.equal(f.clicks,1); f.close();
+});
+
+function thumbHand(direction) {
+  const lm=hand();
+  lm[6].y=.72; lm[8].y=.81;
+  lm[2]={x:.65,y:.72,z:0}; lm[4]={x:.65,y:.72-direction*.22,z:0};
+  return lm;
+}
+function openHand(){const lm=hand();for(const t of [12,16,20])lm[t].y=.32;return lm;}
+function curledHand(){const lm=hand();lm[8].y=.81;return lm;}
+function arm(f){f.target(f.d.querySelector('canvas'));for(let i=0;i<9;i++)f.hands(hand(false,true));}
+test('zoom only starts after holding two fingers still over the scene, then open hand zooms in and curled fingers zoom out',()=>{
+  const f=fixture(); f.target(f.d.querySelector('canvas'));
+  for(let i=0;i<10;i++){f.hands(openHand());f.hands(curledHand());}
+  assert.equal(f.zooms,0,'open/close movement alone never zooms');
+  arm(f); assert.equal(f.zooms,0,'arming itself does not zoom');
+  for(let i=0;i<10;i++)f.hands(openHand());
+  assert.ok(f.zoomFactors.length>0); assert.ok(f.zoomFactors.every(v=>v<1),'open hand zooms in');
+  f.zoomFactors.length=0; for(let i=0;i<10;i++)f.hands(curledHand());
+  assert.ok(f.zoomFactors.length>0); assert.ok(f.zoomFactors.every(v=>v>1),'curled fingers zoom out');
+  const n=f.zooms; for(let i=0;i<10;i++)f.hands(hand()); assert.equal(f.zooms,n,'one finger holds still');
+  assert.equal(f.clicks,0); assert.equal(f.wind(),4.5); f.close();
+});
+test('zoom mode ends by itself after a few idle seconds and needs arming again',()=>{
+  const f=fixture(); arm(f); for(let i=0;i<30;i++)f.hands(hand()); // 3 s of one finger
+  const n=f.zooms; for(let i=0;i<10;i++)f.hands(openHand()); assert.equal(f.zooms,n); f.close();
+});
+test('zoom needs the scene under the cursor',()=>{
+  const f=fixture(); for(let i=0;i<9;i++)f.hands(hand(false,true)); for(let i=0;i<10;i++)f.hands(openHand()); assert.equal(f.zooms,0); f.close();
 });
 test('face switch works right after the face appears, without holding still to calibrate', () => {
   const f=fixture(); for(let i=0;i<5;i++) f.face(); for(let i=0;i<6;i++) f.face(.3); assert.equal(f.switches,1); f.close();

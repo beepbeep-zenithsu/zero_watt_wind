@@ -24,7 +24,7 @@ Use one hand first, in good light, about 40–80 cm from the camera. Keep the wh
 | Change a dropdown | Point at it and pinch once to select its next option. Repeat to cycle through the choices. |
 | Switch building / pond | With an open palm, sweep horizontally across the camera view. |
 | Scroll | With an open palm, move up or down. |
-| Zoom | Put the ring over the 3D scene. Keep thumb and index apart; slowly open your fingers to zoom in or close them to zoom out. |
+| Zoom | Put the ring over the 3D scene and hold index + middle fingers up, still, for half a second until the ring says ZOOM READY. Then **open your hand (4 fingers up) to zoom in**, **curl your fingers to zoom out**; one or two fingers hold still. It zooms at a steady speed only while you keep the pose, so it never drifts on its own. Pinch to finish (it also ends after 2.5 seconds). The − / + buttons always work. |
 | Fine adjustment | Hold index and middle fingers up over a control for half a second, until it gets a blue outline. Slide sideways. Lower your fingers to release. Small movements are ignored. |
 
 Start each click with fingers apart. If a hand enters the picture already pinched, it will not click until you release and pinch again. This prevents accidental clicks after tracking is lost.
@@ -34,13 +34,13 @@ If you see **MOUSE IN USE**, stop moving the mouse or typing and wait two second
 ## Face control
 
 1. Turn **Face** on and look straight ahead, staying still for about one second. The status changes from calibration to ready.
-2. Turn your head noticeably left or right and hold for about half a second to switch between building ventilation and pond aeration.
+2. Turn your head a little (about 10°) and hold for a moment: **turn right = next scenario, turn left = back to the previous scenario.** Come back to the centre between turns.
 3. Return to the centre and pause briefly before turning again. Holding your head turned causes just one switch.
 4. Click **Recenter face — look straight** if your seating position changes. After your face leaves and returns, look straight again for calibration.
 
 **Face control does not change wind speed by default.** Talking, smiling, or sitting still should leave the wind setting alone.
 
-The optional **Enable lip gesture to raise wind** checkbox recognises a lip shape, not actual blowing or airflow. To try it, turn Voice off, enable the checkbox, relax your lips first, then pucker and hold for roughly a second. Wind increases for at most two seconds per hold. Relax to rearm. Keep this option off during normal use and conversation. It is always off when the page first loads.
+Tick **Blow to raise wind**, relax your lips, then pucker and blow toward the microphone. The wind speed rises while you blow (harder blowing = faster rise) and **stays where you stop**. Use the slider, tilt, or Reset to lower it. Lip shape alone never changes the wind; real breath sound is required.
 
 ## Voice control
 
@@ -48,7 +48,7 @@ Leave **Voice engine** set to **Offline English** and turn **Voice** on. Wait fo
 
 To check the input separately, click **CHECK MICROPHONE · 8 SECONDS** and speak. The MIC bar shows an input percentage and reports silence or a device mute. The check releases the microphone automatically after eight seconds; it does not run commands. **STOP ALL CONTROLS** ends it immediately. Audio startup failures now appear as errors instead of leaving a motionless bar with a misleading “mic OK” message.
 
-The building has framed side windows with actual wall openings. **Background ventilation** opens the hinged panes; blue particles enter through those openings. At the minimum setting the panes close, while the model retains 0.2 ACH for leakage.
+The building has a full transparent roof and four transparent walls, so the occupants and fan remain visible from outside. The long benches have been removed. **Open door / Close door** swings the front entrance through a real opening; its state stays selected when the room size changes. The door is a visual demonstration; the airflow calculation still uses the background ventilation setting and turbine output. Framed side windows have actual wall openings. **Background ventilation** opens the hinged panes; blue particles enter through those openings. At the minimum setting the panes close, while the model retains 0.2 ACH for leakage. **− / +** and **Reset view** provide camera controls in both applications.
 
 Offline English processes your microphone audio locally in a browser worker. It does not use Chrome's online speech-recognition service, an API key, or internet access. Keep `offline-voice.js` and `vendor/vosk/` in the extracted folder. The ZIP is larger because it contains the speech model.
 
