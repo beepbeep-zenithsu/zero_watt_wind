@@ -46,6 +46,10 @@ The optional **Enable lip gesture to raise wind** checkbox recognises a lip shap
 
 Leave **Voice engine** set to **Offline English** and turn **Voice** on. Wait for “Offline English ready”; the first model load can take a moment. Check that the MIC bar moves when you speak. Speak one English command clearly and then pause. The VOICE row previews what is heard; a command runs once the speech engine finishes the utterance.
 
+To check the input separately, click **CHECK MICROPHONE · 8 SECONDS** and speak. The MIC bar shows an input percentage and reports silence or a device mute. The check releases the microphone automatically after eight seconds; it does not run commands. **STOP ALL CONTROLS** ends it immediately. Audio startup failures now appear as errors instead of leaving a motionless bar with a misleading “mic OK” message.
+
+The building has framed side windows with actual wall openings. **Background ventilation** opens the hinged panes; blue particles enter through those openings. At the minimum setting the panes close, while the model retains 0.2 ACH for leakage.
+
 Offline English processes your microphone audio locally in a browser worker. It does not use Chrome's online speech-recognition service, an API key, or internet access. Keep `offline-voice.js` and `vendor/vosk/` in the extracted folder. The ZIP is larger because it contains the speech model.
 
 **Browser speech service** is an optional alternative. Only for that engine, pick **English (India)**, **English (US)**, or **English (UK)** to suit your accent. This engine may require internet and an available browser service. The language selector is disabled for Offline English because that bundled model is English.
@@ -90,7 +94,7 @@ Regression checks: `npm install`, then `npm test`. The tests cover idle wind, fa
 
 To verify the bundled camera runtime without using a camera, visit `http://localhost:5500/tests/model-smoke.html` and click **Test models**. Both models should report PASS.
 
-For a real offline speech test without a microphone, visit `http://localhost:5500/tests/voice-smoke.html` and click **Test offline voice**. It feeds a generated speech recording through the audio processing pipeline and real recognizer, then checks that the command sets the simulation's wind speed to 7.5 m/s.
+For a real offline speech test without a microphone, visit `http://localhost:5500/tests/voice-smoke.html` and click **Test offline voice**. It activates the actual Voice button with a generated recording, checks that the MIC bar moves and the real recognizer changes wind to 7.5 m/s, then verifies that stopping resets the meter and releases the input. The generated stream substitution exists only in the diagnostic iframe.
 
 The unit tests use simulated landmarks and speech events; the smoke tests use the real models. Actual recognition quality still depends on your camera, lighting, microphone, accent and browser; try the controls on those devices before demonstrating them. The optional browser speech service also depends on service availability and often internet access.
 

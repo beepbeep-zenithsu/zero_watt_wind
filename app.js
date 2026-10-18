@@ -66,6 +66,7 @@ function create(mode) {
    '<div class="controls-divider"></div><div class="control-title">THE PROTOTYPE</div>' + ['diameter', 'ratio'].map(k => slider(mode, k, s.p)).join('') +
    '<label class="switch-control" for="' + mode + '-brake">Manual shaft brake<input id="' + mode + '-brake" data-toggle="brake" type="checkbox"></label>' +
    '<div class="controls-divider"></div><div class="control-title">' + (air ? 'THE BUILDING' : 'THE POND') + '</div>' + (air ? ['room', 'people', 'backgroundACH', 'pressure'] : ['pond', 'temp', 'oxygenDemand']).map(k => slider(mode, k, s.p)).join('') +
+   (air ? '<p class="hw-note">Background ventilation opens the side windows. The minimum includes leakage with the panes closed; blue particles show incoming air.</p>' : '') +
    '<div class="controls-divider"></div><div class="control-title">SENSORS &amp; MICROCONTROLLER</div>' +
    hwKeys.map(k => dropdown(mode, k)).join('') +
    '<button class="suggest" data-suggest>Pick rugged parts for this case</button>' +

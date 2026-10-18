@@ -4,13 +4,16 @@ const {JSDOM} = require('jsdom');
 const fs = require('node:fs');
 const source = fs.readFileSync(require('node:path').join(__dirname, '..', 'jarvis.js'), 'utf8');
 
-function fixture({offline=false, localStart} = {}) {
+function fixture({offline=false, localStart, audioContext, dwell=false} = {}) {
   const dom = new JSDOM('<body><div id="faces"><div id="air"><div class="viewport"><canvas></canvas></div></div><div id="water"><div class="viewport"></div></div></div><button id="target">Test</button></body>', {url:'http://localhost:5500', runScripts:'outside-only', pretendToBeVisual:true});
   const w = dom.window, d = w.document;
   let clock = 10000, target = d.querySelector('#target'), clicks = 0, switches = 0, zooms = 0;
   const timers = new Map(); let timerId = 0;
   w.setTimeout = (fn, ms) => { const id = ++timerId; timers.set(id, {fn, at:clock + ms}); return id; };
-  w.clearTimeout = id => timers.delete(id); w.setInterval = () => 0; w.clearInterval = () => {};
+  w.clearTimeout = id => timers.delete(id);
+  w.setInterval = (fn, ms) => { const id = ++timerId; timers.set(id, {fn, at:clock + ms, every:ms}); return id; };
+  w.clearInterval = id => timers.delete(id);
+  if (audioContext) w.AudioContext = audioContext;
   w.requestAnimationFrame = () => 0; w.performance.now = () => clock;
   w.HTMLCanvasElement.prototype.getContext = () => ({clearRect(){}});
   w.HTMLMediaElement.prototype.play = async () => {};
@@ -46,10 +49,11 @@ function fixture({offline=false, localStart} = {}) {
   }}});
   if (localStart) w.LocalVoice = {start:localStart};
   w.eval(source);
+  d.querySelector('#jv-dwell').checked = dwell;
   if (!offline) { const engine=d.querySelector('#jv-voice-engine'); engine.value='browser'; engine.dispatchEvent(new w.Event('change')); }
   return {w,d,states,recs,tracks,api:w.JARVIS, get clicks(){return clicks;}, get switches(){return switches;},get zooms(){return zooms;},
     get now(){return clock;}, wind:() => states.air.p.wind,
-    target(el){target = el;}, tick(ms){clock += ms; for (const [id,t] of [...timers]) if (t.at <= clock) {timers.delete(id); t.fn();}},
+    target(el){target = el;}, tick(ms){clock += ms; for (const [id,t] of [...timers]) if (t.at <= clock) {if(t.every)t.at=clock+t.every;else timers.delete(id); t.fn();}},
     hands(lm, ms=100){clock += ms; w.JARVIS.feedHands(lm ? [lm] : [], clock);},
     face(yaw=0, cats=[], ms=100){clock += ms; w.JARVIS.feedFace(yaw === null ? [] : [faceMesh(yaw)], clock, cats);},
     async voice(){d.querySelector('[data-jv="voice"]').click(); for(let i=0;i<8;i++) await Promise.resolve();},
@@ -180,4 +184,49 @@ test('cancelling offline model loading cannot reactivate voice', async () => {
   await f.voice(); f.d.querySelector('#jv-stop').click(); assert.equal(signal.aborted,true);
   finish({stop(){stopped=true;}}); for(let i=0;i<10;i++) await Promise.resolve();
   assert.equal(stopped,true); assert.equal(f.d.querySelector('[data-jv="voice"] span').textContent,'OFF'); f.close();
+});
+
+function testAudio() {
+  const audio={amplitude:0,closed:false,created:0};
+  audio.Context=class {
+    constructor(){audio.created++;this.state='running';this.destination={};}
+    resume(){return Promise.resolve();}
+    close(){audio.closed=true;return Promise.resolve();}
+    createMediaStreamSource(){return {connect(){}};}
+    createGain(){return {gain:{value:1},connect(){}};}
+    createAnalyser(){return {fftSize:1024,connect(){},getFloatTimeDomainData(buf){buf.fill(audio.amplitude);}};}
+  };
+  return audio;
+}
+test('microphone check measures sound, detects silence, and releases input after eight seconds',async()=>{
+  const audio=testAudio(),f=fixture({audioContext:audio.Context});
+  f.d.querySelector('#jv-mic-test').click();
+  assert.equal(audio.created,1,'audio is activated before awaiting permission');
+  for(let i=0;i<12;i++)await Promise.resolve();
+  const meter=f.d.querySelector('#jv-miclevel');
+  f.tick(100);assert.equal(meter.getAttribute('aria-valuenow'),'0');
+  audio.amplitude=.1;f.tick(100);assert.equal(meter.getAttribute('aria-valuenow'),'50');
+  assert.match(f.d.querySelector('#jv-micstate').textContent,/audio detected/);
+  audio.amplitude=0;f.tick(4000);assert.match(f.d.querySelector('#jv-micstate').textContent,/No input detected/);
+  f.tick(4000);assert.equal(meter.getAttribute('aria-valuenow'),'0');
+  assert.ok(audio.closed&&f.tracks.every(t=>t.stopped));assert.equal(f.recs.length,0);f.close();
+});
+test('audio setup failures are visible and release the microphone',async()=>{
+  const audio=testAudio();audio.Context.prototype.createAnalyser=()=>{throw new Error('Audio device unavailable');};
+  const f=fixture({audioContext:audio.Context});await f.voice();
+  assert.equal(f.recs.length,0);assert.ok(f.tracks.every(t=>t.stopped));
+  assert.match(f.d.querySelector('#jv-heard').textContent,/Audio device unavailable/);f.close();
+});
+
+test('hover-to-click clicks a button once after about a second and not again until the ring leaves', () => {
+  const f=fixture({dwell:true}); for(let i=0;i<5;i++) f.hands(hand()); assert.equal(f.clicks,0);
+  for(let i=0;i<20;i++) f.hands(hand()); assert.equal(f.clicks,1);
+  for(let i=0;i<60;i++) f.hands(hand()); assert.equal(f.clicks,1);
+  const other=f.d.createElement('button'); f.d.body.append(other); f.target(other); for(let i=0;i<20;i++) f.hands(hand()); assert.equal(f.clicks,1); f.close();
+});
+test('a quick two-frame pinch clicks even on a slow camera', () => {
+  const f=fixture(); f.hands(hand()); f.hands(hand(true),30); f.hands(hand(true),30); assert.equal(f.clicks,1); f.close();
+});
+test('face switch works right after the face appears, without holding still to calibrate', () => {
+  const f=fixture(); for(let i=0;i<5;i++) f.face(); for(let i=0;i<6;i++) f.face(.3); assert.equal(f.switches,1); f.close();
 });

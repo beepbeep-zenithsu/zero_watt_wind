@@ -1,31 +1,38 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><title>Offline voice test</title>
 <body style="font:16px system-ui;padding:30px;background:#14221b;color:#e5e9dd">
 <h1>Offline voice recognition test</h1>
-<p>Tests the real microphone processing path with a generated voice recording. No microphone permission or online speech service is used.</p>
+<p>Tests the actual Voice button, live MIC bar, offline speech engine and simulation with a generated voice recording. No microphone permission or online speech service is used.</p>
 <button id="run">Test offline voice</button><pre id="result" style="white-space:pre-wrap">Ready</pre>
 <iframe id="app" title="Simulation under test" src="../" style="width:100%;height:260px;border:1px solid #62745d"></iframe>
-<script src="../offline-voice.js"></script>
 <script>
 // The engine's assets resolve from the application root, just like index.html.
 const base=document.createElement('base');base.href=new URL('../',location.href);document.head.append(base);
 document.querySelector('#run').onclick=async()=>{
   const button=document.querySelector('#run'),out=document.querySelector('#result');button.disabled=true;
-  const ac=new AudioContext(), abort=new AbortController();let voice,timeout;
+  const ac=new AudioContext();let app,originalGetUserMedia,timer,maxLevel=0,source;
+  const waitFor=async(check,ms)=>{const end=performance.now()+ms;while(performance.now()<end){if(check())return;await new Promise(r=>setTimeout(r,100));}throw new Error('Timed out: '+out.textContent);};
   try{
     await ac.resume();
     const response=await fetch('tests/voice-command.wav');const audio=await ac.decodeAudioData(await response.arrayBuffer());
     const destination=ac.createMediaStreamDestination();
-    let received;const final=new Promise(resolve=>received=resolve);
-    voice=await LocalVoice.start({stream:destination.stream,audioContext:ac,signal:abort.signal,
-      onStatus:t=>out.textContent=t,onPartial:t=>{if(t)out.textContent='Recognising: '+t;},
-      onFinal:t=>{if(t){out.textContent='Heard: '+t;received(t);}},onError:e=>{out.textContent='FAIL: '+e.message;}});
-    const source=ac.createBufferSource();source.buffer=audio;source.connect(destination);source.start();
-    const text=await Promise.race([final,new Promise((_,reject)=>timeout=setTimeout(()=>reject(new Error('No final transcript after 25 seconds')),25000))]);
-    const app=document.querySelector('#app').contentWindow;
+    app=document.querySelector('#app').contentWindow;
     if(!app.JARVIS)throw new Error('Simulation has not loaded yet. Try the test again.');
-    const handled=app.JARVIS.command(text),wind=app.ZW.state().p.wind;
-    out.textContent='Heard: '+text+'\nWind speed: '+wind+' m/s\n'+(handled&&wind===7.5?'PASS: real offline speech changed the simulation to 7.5 m/s.':'FAIL: unexpected command result');
+    const doc=app.document,voiceButton=doc.querySelector('[data-jv="voice"]'),meter=doc.querySelector('#jv-miclevel');
+    doc.querySelector('#jv-stop').click(); app.ZW.selectScenario(app.ZW.state(),'breeze');
+    originalGetUserMedia=app.navigator.mediaDevices.getUserMedia;
+    // Only this diagnostic iframe substitutes a generated stream for the microphone.
+    app.navigator.mediaDevices.getUserMedia=async()=>destination.stream;
+    doc.querySelector('#jv-orb').click(); voiceButton.click();
+    timer=setInterval(()=>{maxLevel=Math.max(maxLevel,+meter.getAttribute('aria-valuenow'));out.textContent=doc.querySelector('#jv-heard').textContent;},90);
+    await waitFor(()=>voiceButton.classList.contains('on'),95000);
+    source=ac.createBufferSource();source.buffer=audio;source.connect(destination);source.start();
+    await waitFor(()=>app.ZW.state().p.wind===7.5,25000);
+    clearInterval(timer);
+    const text=doc.querySelector('#jv-heard').textContent,wind=app.ZW.state().p.wind;
+    doc.querySelector('#jv-stop').click();
+    const reset=+meter.getAttribute('aria-valuenow')===0,didStop=destination.stream.getTracks().every(t=>t.readyState==='ended');
+    out.textContent='Heard: '+text+'\nWind speed: '+wind+' m/s\nMIC bar peak: '+maxLevel+'%\nMeter reset: '+reset+'; microphone released: '+didStop+'\n'+(maxLevel>0&&reset&&didStop?'PASS: Voice button → moving MIC bar → real offline speech → wind 7.5 m/s → clean stop.':'FAIL: microphone meter or cleanup did not work');
   }catch(e){out.textContent='FAIL: '+e.message;}
-  finally{clearTimeout(timeout);abort.abort();voice?.stop();await ac.close();button.disabled=false;}
+  finally{clearInterval(timer);app?.document.querySelector('#jv-stop')?.click();if(originalGetUserMedia)app.navigator.mediaDevices.getUserMedia=originalGetUserMedia;source?.disconnect();await ac.close();button.disabled=false;}
 };
 </script></body></html>

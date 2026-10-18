@@ -63,6 +63,7 @@
 .jv-cursor.two{border-color:#86cabb;background:#86cabb22;box-shadow:0 0 18px #86cabb88;border-radius:12px}
 .jv-cursor.two i,.jv-cursor.two b{background:#86cabb;color:#86cabb}.jv-cursor.two b{background:#0f1812e0}
 .jv-cursor.open{border-style:dashed}
+.jv-cursor.dwell::after{content:'';position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#c5dd9a calc(var(--dwell,0)*360deg),transparent 0);-webkit-mask:radial-gradient(circle,transparent 58%,#000 60%);mask:radial-gradient(circle,transparent 58%,#000 60%)}
 .jv-cursor.yield{opacity:.22;box-shadow:none}
 .jv-ripple{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2px solid #c5dd9a;animation:jvripple .5s ease-out forwards}
 @keyframes jvripple{to{transform:scale(4);opacity:0}}

@@ -16,15 +16,16 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v)), mean = a => a.reduce((s,
    --------------------------------------------------------------------- */
 const B = {                              // base values at 100% sensitivity (the slider in the panel scales them)
   // hand
-  pinchOn: .38, pinchOff: .62,          // separate press/release thresholds prevent chatter
-  pinchHold: 100,                       // time based, independent of inference frame rate
+  pinchOn: .5, pinchOff: .75,           // thumb-to-index distance (palm units): closed below pinchOn, open above pinchOff
+  pinchHold: 60,                        // ms a pinch must last (two camera frames also count, so slow cameras still click)
+  dwellMs: 1000, dwellMove: 45,         // hover-to-click: hold the ring still over a button this long (ms), wobble allowed (px)
   zoomVel: .008, zoomGain: 1.2,         // finger open/close speed that starts a zoom, and how strong the zoom is
   swipeDist: .25, swipeWindow: 450, swipeLock: 1600,   // fraction of the camera width, ms
   scrollGain: 1.2, scrollDead: .008, invertScroll: false,
   adjustGain: 1.2, stepEvery: .09,      // two-finger slide: slider sensitivity / distance per step for dropdowns
   marginX: .12, marginY: .10,           // the inner part of the camera image that maps to the whole screen
   // face
-  yawOn: .19, yawOff: .09, yawHold: 350, // head turn needed to flip the window (ratio), and how long (ms) it must be held
+  yawOn: .13, yawOff: .07, yawHold: 250, // head turn needed to flip the window (ratio), and how long (ms) it must be held
   // blowing through the lips raises the wind speed
   blowOn: .65, blowOff: .35, blowHold: 650, blowMax: 2000,
   blowRate: 3.5                         // m/s of wind added per second of full blowing
@@ -35,12 +36,12 @@ function applySens() {                  // lower sensitivity = bigger / faster m
   const k = sens;
   T.zoomVel = B.zoomVel/k; T.zoomGain = B.zoomGain*k; T.swipeDist = clamp(B.swipeDist/k, .15, .6);
   T.scrollGain = B.scrollGain*k; T.scrollDead = B.scrollDead/k; T.adjustGain = B.adjustGain*k; T.stepEvery = B.stepEvery/k;
-  T.yawOn = clamp(B.yawOn/Math.sqrt(k), .14, .34); T.yawOff = Math.min(T.yawOn*.5, B.yawOff);
+  T.yawOn = clamp(B.yawOn/Math.sqrt(k), .09, .3); T.yawOff = Math.min(T.yawOn*.5, B.yawOff);
 }
 applySens();
 // the real mouse / keyboard always wins: while it is being used, hand gestures pause so they never fight it
 let mouseUntil = 0;
-['pointermove', 'pointerdown', 'wheel', 'keydown'].forEach(ev => window.addEventListener(ev, e => { if (e.isTrusted) mouseUntil = performance.now() + 1800; }, {passive: true, capture: true}));
+['pointermove', 'pointerdown', 'wheel', 'keydown'].forEach(ev => window.addEventListener(ev, e => { if (e.isTrusted) mouseUntil = performance.now() + 1000; }, {passive: true, capture: true}));
 const mouseBusy = () => performance.now() < mouseUntil;
 
 /* ---------------------------------------------------------------------
@@ -114,15 +115,17 @@ root.innerHTML =
    '<div class="jv-cam" id="jv-cam"><video muted playsinline></video><canvas width="320" height="240"></canvas><div class="jv-cam-off">CAMERA OFF</div></div>' +
    '<div class="jv-rows">' +
     '<div class="jv-row"><b>VOICE</b><span id="jv-heard">—</span></div>' +
-    '<div class="jv-row"><b>MIC</b><div><div class="jv-meter"><i id="jv-micfill"></i></div><span id="jv-micstate" style="display:block;margin-top:6px">off</span></div></div>' +
+    '<div class="jv-row"><b>MIC</b><div><div class="jv-meter" id="jv-miclevel" role="meter" aria-label="Microphone input level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="jv-micfill"></i></div><span id="jv-micstate" style="display:block;margin-top:6px">off</span></div></div>' +
     '<div class="jv-row"><b>HAND</b><span id="jv-hand">—</span></div>' +
     '<div class="jv-row"><b>FACE</b><div><div class="jv-yaw"><i id="jv-yawdot"></i></div><span id="jv-face" style="display:block;margin-top:6px">—</span></div></div>' +
     '<div class="jv-row"><b>BLOW</b><div><div class="jv-meter"><i id="jv-blowfill"></i></div><span id="jv-blow" style="display:block;margin-top:6px">—</span></div></div>' +
    '</div>' +
    '<form id="jv-form" autocomplete="off"><input id="jv-input" placeholder="Type a command, e.g. increase the wind speed" aria-label="Type a command"></form>' +
+   '<button class="jv-all" id="jv-mic-test">CHECK MICROPHONE · 8 SECONDS</button>' +
    '<label class="jv-lang">Voice engine <select id="jv-voice-engine"><option value="offline">Offline English</option><option value="browser">Browser speech service</option></select></label>' +
    '<label class="jv-lang">Voice language <select id="jv-lang"><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option><option value="en-IN">English (India)</option></select></label>' +
    '<label class="jv-sens">Gesture sensitivity <b id="jv-sens-val"></b><input type="range" id="jv-sens" min="20" max="150" step="5" aria-label="Gesture sensitivity"></label>' +
+   '<label class="jv-check"><input type="checkbox" id="jv-dwell" checked> Hover to click (hold the ring still on a button for 1 s)</label>' +
    '<label class="jv-check"><input type="checkbox" id="jv-speak"> Spoken replies (headphones recommended)</label>' +
    '<label class="jv-check"><input type="checkbox" id="jv-enable-blow"> Enable lip gesture to raise wind (optional)</label>' +
    '<button class="jv-all" id="jv-center">Recenter face — look straight</button>' +
@@ -138,11 +141,11 @@ root.innerHTML =
      '<li><code>fit to screen</code>, <code>exit</code>, <code>close up</code>, <code>pause</code>, <code>play</code>, <code>flow off</code>, <code>reset camera</code>, <code>reset</code></li>' +
      '<li><code>zoom in / out</code>, <code>rotate left / right</code>, <code>scroll down / up</code>, <code>brake on / off</code>, <code>change the wind sensor</code>, <code>pick rugged parts</code></li>' +
     '</ul>' +
-    '<h4>FACE</h4><ul><li>Look straight for one second to calibrate. Turn and hold your head left or right to switch windows. Return to centre before another turn. Use Recenter if needed.</li><li>Wind stays unchanged by default. Optional lip gesture: enable the checkbox, pucker for a moment, then relax. Each hold raises wind for at most two seconds. This detects lip shape, not real airflow. Keep it off while talking.</li></ul>' +
+    '<h4>FACE</h4><ul><li>Just face the screen. Turn your head left or right and hold for a moment to switch windows, then face the screen again. Use Recenter if needed.</li><li>Wind stays unchanged by default. Optional lip gesture: enable the checkbox, pucker for a moment, then relax. Each hold raises wind for at most two seconds. This detects lip shape, not real airflow. Keep it off while talking.</li></ul>' +
     '<h4>MOUSE</h4><ul><li>The mouse and keyboard always have priority: hand gestures pause for about 2 seconds whenever you use them.</li></ul>' +
     '<h4>HAND (one or two hands)</h4><ul>' +
      '<li><b>Cursor</b> follows your index fingertip.</li>' +
-     '<li>Begin with thumb and index apart. Point the green ring at a control, then <b>pinch</b> thumb + index briefly to click. Separate them before the next click. Hold and move to drag a slider or rotate the 3D view. A pinch on a dropdown selects its next option.</li>' +
+     '<li><b>Easiest click:</b> point the green ring at a button and keep it still for 1 second (a ring fills up). <b>Or pinch</b> thumb + index together for a moment, then separate them before the next click. Hold and move to drag a slider or rotate the 3D view. A pinch on a dropdown selects its next option.</li>' +
      '<li>Over the 3D scene: <b>open hand → close gradually</b> = zoom out; <b>close → open</b> = zoom in. Keep thumb and index apart.</li>' +
      '<li><b>Open palm, quick swipe</b> left / right = switch window.</li>' +
      '<li><b>Open palm, move</b> up / down = scroll.</li>' +
@@ -414,16 +417,40 @@ function runCommand(text) {
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 let rec = null, voiceOn = false, voiceBusy = false, recErrs = 0, voiceSession = 0, recRetry = 0, localVoice = null, voiceAbort = null;
 const safeParse = a => { try { return !!parse(a); } catch (e) { return false; } };
-let micStream = null, micCtx = null, micTimer = 0;
+let micStream = null, micCtx = null, micTimer = 0, micTestTimer = 0;
 const micSay = t => { micEl.textContent = t; };
-function micMeterStop() { clearInterval(micTimer); if (micStream) micStream.getTracks().forEach(t => t.stop()); micStream = null; try { micCtx && micCtx.close(); } catch (e) {} micCtx = null; micFill.style.width = '0%'; }
-function micMeterStart(stream) {          // live level bar: proves the browser really receives your microphone
-  micMeterStop(); micStream = stream;
-  try {
-    micCtx = new (window.AudioContext || window.webkitAudioContext)(); if (micCtx.resume) micCtx.resume();
-    const an = micCtx.createAnalyser(); an.fftSize = 512; micCtx.createMediaStreamSource(stream).connect(an); const buf = new Uint8Array(an.fftSize);
-    micTimer = setInterval(() => { an.getByteTimeDomainData(buf); let m = 0; for (const x of buf) m = Math.max(m, Math.abs(x - 128)); micFill.style.width = Math.min(100, m/128*300) + '%'; }, 90);
-  } catch (e) {}
+function micMeterStop() {
+  clearInterval(micTimer); clearTimeout(micTestTimer);
+  if (micStream) micStream.getTracks().forEach(t => t.stop()); micStream = null;
+  try { micCtx?.close()?.catch(() => {}); } catch (e) {} micCtx = null;
+  micFill.style.width = '0%'; $('#jv-miclevel', root).setAttribute('aria-valuenow', '0');
+  $('#jv-mic-test', root).textContent = 'CHECK MICROPHONE · 8 SECONDS';
+}
+function prepareMicAudio() {
+  // Run during the button click, before awaiting permission, to preserve audio activation.
+  micMeterStop();
+  const Audio = window.AudioContext || window.webkitAudioContext;
+  if (!Audio) return; // The optional browser speech service can still work without a meter.
+  micCtx = new Audio();
+  micCtx.resume().catch(e => micSay('Audio could not start: ' + e.message));
+}
+async function micMeterStart(stream) {
+  micStream = stream;
+  if (!micCtx) { micSay('Input level unavailable: Web Audio is unsupported'); return; }
+  await micCtx.resume();
+  if (micCtx.state !== 'running') throw new Error('Audio is suspended. Click Voice off and on to resume it.');
+  const an = micCtx.createAnalyser(); an.fftSize = 1024;
+  const source = micCtx.createMediaStreamSource(stream), mute = micCtx.createGain(); mute.gain.value = 0;
+  source.connect(an); an.connect(mute); mute.connect(micCtx.destination);
+  const buf = new Float32Array(an.fftSize), started = performance.now(); let lastSound = started;
+  micTimer = setInterval(() => {
+    an.getFloatTimeDomainData(buf); let sum = 0; for (const x of buf) sum += x*x;
+    const rms = Math.sqrt(sum/buf.length), level = Math.min(100, Math.round(rms*500));
+    micFill.style.width = level + '%'; $('#jv-miclevel', root).setAttribute('aria-valuenow', String(level));
+    if (rms > .004) lastSound = performance.now();
+    const track = stream.getAudioTracks?.()[0];
+    micSay(track?.muted ? 'Microphone is muted by the device' : performance.now() - lastSound > 3500 ? 'No input detected — check your selected microphone or mute switch' : 'Input ' + level + '% · ' + (level > 2 ? 'audio detected' : 'quiet — speak to test'));
+  }, 90);
 }
 async function micState() {            // ask for the microphone first so a refusal is visible instead of silent
   if (!navigator.mediaDevices?.getUserMedia) return {state: 'timeout'};
@@ -433,7 +460,7 @@ async function micState() {            // ask for the microphone first so a refu
       .then(st => { if (expired) { st.getTracks().forEach(t => t.stop()); return null; } return st; });
     const st = await Promise.race([request, new Promise(r => { timer = setTimeout(() => { expired = true; r(null); }, 12000); })]);
     return st ? {state: 'ok', stream: st} : {state: 'timeout'};
-  } catch (e) { return {state: e && e.name === 'NotFoundError' ? 'none' : 'blocked'}; }
+  } catch (e) { return {state: e?.name === 'NotFoundError' ? 'none' : e?.name === 'NotReadableError' ? 'busy' : 'blocked'}; }
   finally { clearTimeout(timer); }
 }
 let voiceLang = 'en-US';
@@ -448,6 +475,21 @@ engineEl.addEventListener('change', () => {
 function voiceFailure(label, message) {
   setVoice(false); setModeUi('voice', 'err', label); heardEl.textContent = message; micSay(label.toLowerCase());
 }
+$('#jv-mic-test', root).addEventListener('click', async () => {
+  if (voiceOn || voiceBusy) { toast('The MIC bar is already monitoring your input'); return; }
+  if (micStream) { setVoice(false); return; }
+  setVoice(false); const session = voiceSession;
+  try {
+    prepareMicAudio(); voiceBusy = true;
+    const mic = await micState();
+    if (session !== voiceSession) { mic.stream?.getTracks().forEach(t => t.stop()); return; }
+    if (!mic.stream) throw new Error(mic.state === 'busy' ? 'Microphone is busy in another application.' : mic.state === 'none' ? 'No microphone found.' : 'Allow microphone access for this page, then try again.');
+    await micMeterStart(mic.stream); voiceBusy = false;
+    heardEl.textContent = 'Microphone check: speak now. Voice recognition is off.';
+    $('#jv-mic-test', root).textContent = 'STOP MICROPHONE CHECK';
+    micTestTimer = setTimeout(() => { micMeterStop(); micSay('Check finished — turn Voice on to use commands'); }, 8000);
+  } catch (e) { if (session === voiceSession) voiceFailure('MIC ERROR', e.message); }
+});
 async function setVoice(on) {
   if (!on) { voiceSession++; voiceOn = voiceBusy = false; clearTimeout(recRetry); voiceAbort?.abort(); voiceAbort = null; localVoice?.stop(); localVoice = null; const old = rec; rec = null; try { old && old.abort(); } catch (e) {} micMeterStop(); micSay('off'); setModeUi('voice', '', 'OFF'); return; }
   if (voiceOn || voiceBusy) return;
@@ -455,21 +497,23 @@ async function setVoice(on) {
   const offline = engineEl.value === 'offline';
   if (!offline && !SR) { setModeUi('voice', 'err', 'N/A'); toast('Select Offline English for this browser', true); heardEl.textContent = 'Browser speech service is unavailable. Select Voice engine → Offline English, then turn Voice on.'; return; }
   const session = ++voiceSession; voiceBusy = true; setModeUi('voice', 'busy', 'LOADING');
+  try { prepareMicAudio(); } catch (e) { voiceFailure('AUDIO ERROR', e.message); return; }
   const mic = await micState();
   if (session !== voiceSession) { mic.stream?.getTracks().forEach(t => t.stop()); return; }
-  if (mic.state === 'none' || mic.state === 'blocked') {
-    voiceBusy = false;
-    setModeUi('voice', 'err', mic.state === 'none' ? 'NO MIC' : 'BLOCKED'); toast(mic.state === 'none' ? 'No microphone found' : 'Microphone blocked', true);
-    heardEl.textContent = mic.state === 'none' ? 'No microphone found.' : 'Microphone blocked — click the lock icon in the address bar and allow Microphone, then switch Voice on again.'; micSay('blocked'); return;
+  if (['none', 'blocked', 'busy'].includes(mic.state)) {
+    voiceFailure(mic.state === 'none' ? 'NO MIC' : mic.state === 'busy' ? 'MIC BUSY' : 'BLOCKED', mic.state === 'none' ? 'No microphone found.' : mic.state === 'busy' ? 'Microphone is busy or unavailable. Close other microphone apps and try again.' : 'Microphone blocked — allow Microphone in the browser site permissions, then switch Voice on again.'); return;
   }
   if (offline && !mic.stream) { voiceFailure('NO MIC', 'Microphone permission is still pending. Allow it, then turn Voice on again.'); return; }
-  if (mic.stream) { micMeterStart(mic.stream); micSay('mic OK — speak, the bar should move'); } else micSay('mic permission pending');
+  if (mic.stream) {
+    try { await micMeterStart(mic.stream); } catch (e) { if (session === voiceSession) voiceFailure('AUDIO ERROR', e.message); return; }
+    if (session !== voiceSession) return;
+  } else micSay('mic permission pending');
   if (offline) {
     voiceAbort = new AbortController();
     try {
       if (!window.LocalVoice) throw new Error('Missing offline-voice.js. Extract the complete updated ZIP.');
       const local = await window.LocalVoice.start({stream:mic.stream, audioContext:micCtx, signal:voiceAbort.signal,
-        onStatus: text => { if (session === voiceSession) { heardEl.textContent = text; micSay(text); } },
+        onStatus: text => { if (session === voiceSession) heardEl.textContent = text; },
         onPartial: text => { if (voiceOn && session === voiceSession && text) heardEl.textContent = '… ' + text; },
         onFinal: text => { if (voiceOn && session === voiceSession && text.trim() && !isEcho(text)) runCommand(text); },
         onError: e => { if (session === voiceSession) voiceFailure('ERROR', 'Offline voice: ' + e.message); }
@@ -545,7 +589,7 @@ async function makeLandmarker(kind) {
         try {
           const opts = {baseOptions: {modelAssetPath: src[kind], delegate}, runningMode: 'VIDEO'};
           const lm = kind === 'hand' ? await mod.HandLandmarker.createFromOptions(files, {...opts, numHands: 2, minHandDetectionConfidence: .5, minHandPresenceConfidence: .5, minTrackingConfidence: .5})
-                                     : await mod.FaceLandmarker.createFromOptions(files, {...opts, numFaces: 1, outputFaceBlendshapes: true});
+                                     : await mod.FaceLandmarker.createFromOptions(files, {...opts, numFaces: 1, outputFaceBlendshapes: !!document.getElementById('jv-enable-blow')?.checked});
           mpOrder = [si, ...mpOrder.filter(i => i !== si)]; return lm;
         } catch (e) { lastErr = e; }
       }
@@ -595,7 +639,7 @@ async function setFace(on) {
   if (request !== faceRequest) { stopCameraIfIdle(); return; }
   try { faceLm = faceLm || await makeLandmarker('face'); } catch (e) { console.error(e); if (request !== faceRequest) return; setModeUi('face', 'err', 'FAILED'); faceEl.textContent = 'Could not load the face model (needs internet once, or run npm run get-models).'; toast('Face model failed to load', true); stopCameraIfIdle(); return; }
   if (request !== faceRequest) { stopCameraIfIdle(); return; }
-  faceOn = true; resetFace(); lighten(true); setModeUi('face', 'on', 'ON'); faceEl.textContent = 'Look straight for one second';
+  faceOn = true; resetFace(); lighten(true); setModeUi('face', 'on', 'ON'); faceEl.textContent = 'Look at the screen, then turn your head';
 }
 
 let lastInfer = 0, cycle = 0, cost = 0;
@@ -623,12 +667,12 @@ function drawHands(list) {
 /* =====================================================================
    FACE GESTURE: turn the head right / left -> flip the window
    ===================================================================== */
-let faceArmed = false, faceYaw = 0, faceSince = 0, faceLast = 0, faceNeutral = null, faceSamples = [], faceTurn = 0;
+let faceArmed = false, faceYaw = 0, faceSince = 0, faceLast = 0, faceNeutral = null, faceSamples = [], faceTurn = 0, faceLost = 0;
 let blowing = false, blowAcc = 0, blowSet = -1, blowLevel = 0, blowLast = 0, blowSince = 0, blowStarted = 0, blowReady = false;
 function resetBlow() { blowing = false; blowLevel = blowLast = blowSince = blowStarted = 0; blowReady = false; blowFill.style.width = '0%'; blowEl.textContent = 'Lip gesture off — wind stays unchanged'; }
-function resetFace() { faceArmed = false; faceYaw = faceSince = faceLast = faceTurn = 0; faceNeutral = null; faceSamples = []; resetBlow(); }
-$('#jv-enable-blow', root).addEventListener('change', resetBlow);
-$('#jv-center', root).addEventListener('click', () => { resetFace(); faceEl.textContent = faceOn ? 'Look straight for one second' : 'Enable Face first'; });
+function resetFace() { faceArmed = false; faceYaw = faceSince = faceLast = faceTurn = faceLost = 0; faceNeutral = null; faceSamples = []; resetBlow(); }
+$('#jv-enable-blow', root).addEventListener('change', () => { resetBlow(); try { faceLm?.setOptions({outputFaceBlendshapes: $('#jv-enable-blow', root).checked}); } catch (e) {} });
+$('#jv-center', root).addEventListener('click', () => { resetFace(); faceEl.textContent = faceOn ? 'Look at the screen' : 'Enable Face first'; });
 function yawOf(lm) {                      // 0 = looking straight, about +-0.5 = fully turned
   const nose = lm[1], l = lm[234], r = lm[454], w = r.x - l.x;
   return Math.abs(w) < 1e-4 ? 0 : (nose.x - (l.x + r.x)/2)/w;
@@ -661,30 +705,33 @@ function processBlow(cats, now) {
   blowSet = setRange(el, blowAcc); blowEl.textContent = 'Blowing → wind ' + blowSet.toFixed(1) + ' m/s';
 }
 function processFace(faces, now, cats) {
-  if (!faces.length) { resetFace(); faceEl.textContent = 'No face — look straight when you return'; return; }
-  if (faceLast && now - faceLast > 900) resetFace();
-  const dt = faceLast ? now - faceLast : 100; faceLast = now;
+  if (!faces.length) { faceLost = faceLost || now; if (now - faceLost > 2500) { resetFace(); } faceEl.textContent = 'No face — look at the screen'; return; }
+  faceLost = 0;
+  if (faceLast && now - faceLast > 3000) resetFace();
+  const dt = faceLast ? Math.min(400, now - faceLast) : 100; faceLast = now;
   const raw = yawOf(faces[0]);
+  // Auto-calibration: the first moment a face is seen counts as "looking at the screen"; no holding still needed.
   if (faceNeutral === null) {
-    if (faceSamples.length && Math.abs(raw - faceSamples[0].yaw) > .06) faceSamples = [];
-    faceSamples.push({yaw: raw, t: now}); faceEl.textContent = 'Calibrating — look straight and hold still';
-    if (now - faceSamples[0].t >= 900) { faceNeutral = mean(faceSamples.map(s => s.yaw)); faceArmed = true; faceSamples = []; faceEl.textContent = 'Centered — ready'; }
+    faceSamples.push(raw);
+    if (faceSamples.length >= 4) { faceNeutral = mean(faceSamples); faceSamples = []; faceArmed = true; faceYaw = 0; faceEl.textContent = 'Ready — turn your head left or right'; }
+    else faceEl.textContent = 'Starting…';
     return;
   }
-  faceYaw += (raw - faceNeutral - faceYaw)*(1 - Math.exp(-dt/160));
-  yawDot.style.left = (50 + clamp(faceYaw/.5, -1, 1)*46) + '%';
+  faceYaw += (raw - faceNeutral - faceYaw)*(1 - Math.exp(-dt/90));
+  yawDot.style.left = (50 + clamp(faceYaw/.35, -1, 1)*46) + '%';
   const a = Math.abs(faceYaw);
-  if (mouseBusy() || document.hidden) { faceSince = faceTurn = 0; faceArmed = false; resetBlow(); faceEl.textContent = 'Mouse in use — return to centre'; return; }
+  if (a < T.yawOff) faceNeutral += (raw - faceNeutral)*Math.min(1, dt/6000);          // slowly follow small posture changes
+  if (mouseBusy() || document.hidden) { faceSince = faceTurn = 0; faceEl.textContent = 'Mouse in use'; return; }
   if (faceArmed) {
-    faceEl.textContent = a > T.yawOn*.6 ? 'Turning ' + (faceYaw > 0 ? 'right' : 'left') + '…' : 'Straight';
+    faceEl.textContent = a > T.yawOn*.6 ? 'Turning ' + (faceYaw > 0 ? 'right' : 'left') + '…' : 'Ready — turn your head left or right';
     if (a > T.yawOn) {
       if (faceTurn !== Math.sign(faceYaw)) { faceSince = 0; faceTurn = Math.sign(faceYaw); }
       faceSince = faceSince || now;
-      if (now - faceSince >= T.yawHold && !mouseBusy()) { faceArmed = false; faceSince = 0; const dir = faceYaw > 0 ? 1 : -1; const m = flipWindow(dir); faceEl.textContent = 'Turned ' + (dir > 0 ? 'right' : 'left') + ' → flipped'; toast('Window: ' + m); say(m); }
+      if (now - faceSince >= T.yawHold) { faceArmed = false; faceSince = 0; const dir = faceYaw > 0 ? 1 : -1; const m = flipWindow(dir); faceEl.textContent = 'Switched → ' + m + ' · face the screen again'; toast('Window: ' + m); say(m); }
     } else faceSince = 0;
   } else if (a < T.yawOff) {
     faceSince = faceSince || now;
-    if (now - faceSince >= T.yawHold) { faceArmed = true; faceSince = 0; faceEl.textContent = 'Straight — ready'; }
+    if (now - faceSince >= 200) { faceArmed = true; faceSince = 0; faceEl.textContent = 'Ready — turn your head left or right'; }
   } else faceSince = 0;
   processBlow(cats, now);
 }
@@ -697,15 +744,15 @@ let lastSwipe = 0, lastZoom = 0;
 const INTERACTIVE = 'button,select,input,label,a,summary,canvas,[role=tab]';
 function newSlot() {
   const el = document.createElement('div'); el.className = 'jv-cursor'; el.innerHTML = '<i></i><b></b>'; cursorsHost.append(el);
-  return {el, wrist: {x: 0, y: 0}, sx: null, sy: null, pinch: false, pinchSince: 0, pinchReady: false, pinchAim: null, prevE: null, v: [0, 0, 0, 0], hist: [], prevC: null, drag: null, lock: null, acc: 0, prevP: null, peaceSince: 0, scrollV: 0, hover: null, pose: '—'};
+  return {el, wrist: {x: 0, y: 0}, sx: null, sy: null, pinch: false, pinchSince: 0, pinchReady: false, pinchFrames: 0, pinchAim: null, dwell: null, prevE: null, v: [0, 0, 0, 0], hist: [], prevC: null, drag: null, lock: null, acc: 0, prevP: null, peaceSince: 0, scrollV: 0, hover: null, pose: '—'};
 }
 function clearHands() { for (const h of hands) { releaseHand(h); h.el.remove(); } hands.length = 0; }
-function releaseHand(h) { h.pinch = false; h.pinchSince = 0; h.pinchReady = false; h.pinchAim = null; h.drag = null; h.peaceSince = 0; unlock(h); if (h.hover) { h.hover.classList.remove('jv-hover'); h.hover = null; } }
+function releaseHand(h) { h.pinch = false; h.pinchSince = 0; h.pinchFrames = 0; h.dwell = null; h.el.style.setProperty('--dwell', 0); h.el.classList.remove('dwell'); h.pinchReady = false; h.pinchAim = null; h.drag = null; h.peaceSince = 0; unlock(h); if (h.hover) { h.hover.classList.remove('jv-hover'); h.hover = null; } }
 function unlock(h) { if (h.lock) { h.lock.box.classList.remove('jv-lock'); h.lock = null; } h.acc = 0; h.prevP = null; }
 
 function analyze(lm, AR) {
   const D = (a, b) => Math.hypot((a.x - b.x)*AR, a.y - b.y);
-  const palm = D(lm[0], lm[9]) || .1, tips = [8, 12, 16, 20], pips = [6, 10, 14, 18];
+  const palm = Math.max(D(lm[0], lm[9]), D(lm[5], lm[17])*1.15) || .1, tips = [8, 12, 16, 20], pips = [6, 10, 14, 18];
   const e = tips.map(t => D(lm[t], lm[0])/palm);                                  // finger extension in palm units (about 1 curled ... 2 stretched)
   const ext = tips.map((t, i) => D(lm[t], lm[0]) > D(lm[pips[i]], lm[0])*1.12);
   return {e, ext, nExt: ext.filter(Boolean).length, pinchD: D(lm[4], lm[8])/palm, palm};
@@ -774,10 +821,10 @@ function updateHand(h, lm, now, AR) {
   const cx = 1 - lm[9].x, cy = lm[9].y;                        // palm centre, mirrored so right = right
   if (h.prevT && now - h.prevT > 600) { releaseHand(h); h.prevE = null; h.hist.length = 0; h.prevC = null; }
   // A pinch always wins over zoom, even while fingers curl to make the pinch.
-  const wantPinch = a.pinchD < (h.pinch || h.pinchSince ? T.pinchOff : T.pinchOn) && (h.pinch || a.e[0] > .75);
-  if (a.pinchD > T.pinchOff) h.pinchReady = true;
-  const peace = a.ext[0] && a.ext[1] && !a.ext[2] && !a.ext[3] && a.pinchD > .7 && !wantPinch;
-  const openPalm = a.nExt >= 3 && a.pinchD > .7 && !peace && !wantPinch;
+  const wantPinch = a.pinchD < (h.pinch || h.pinchSince ? T.pinchOff : T.pinchOn);
+  if (a.pinchD > T.pinchOn*1.3) h.pinchReady = true;       // fingers have been apart since the last click
+  const peace = a.ext[0] && a.ext[1] && !a.ext[2] && !a.ext[3] && a.pinchD > .8 && !wantPinch;
+  const openPalm = a.nExt >= 3 && a.pinchD > .8 && !peace && !wantPinch;
   const point = a.ext[0] && !a.ext[1] && !a.ext[2] && !a.ext[3] && !wantPinch;
   /* --- finger open/close speed: zoom only over the scene --- */
   const yieldM = mouseBusy(), dtf = h.prevT ? clamp((now - h.prevT)/33, .5, 12) : 1; h.prevT = now;   // dtf: camera frames' worth of time since the last update
@@ -811,17 +858,27 @@ function updateHand(h, lm, now, AR) {
   if (mark !== h.hover) { h.hover?.classList.remove('jv-hover'); h.hover = mark; mark?.classList.add('jv-hover'); }
 
   /* --- pinch: click / drag --- */
-  if (wantPinch && h.pinchReady) h.pinchSince = h.pinchSince || now;
-  else h.pinchSince = 0;
-  if (!h.pinch && h.pinchSince && now - h.pinchSince >= T.pinchHold) {
+  if (wantPinch && h.pinchReady) { h.pinchSince = h.pinchSince || now; h.pinchFrames++; }
+  else { h.pinchSince = 0; h.pinchFrames = 0; }
+  if (!h.pinch && h.pinchSince && (now - h.pinchSince >= T.pinchHold || h.pinchFrames >= 2)) {
     h.pinch = true; h.pinchReady = false; unlock(h); clickAt(h, h.sx, h.sy);
     if (h.pinchAim) { const tip = toScreen(lm[8].x, lm[8].y); h.pinchAim.tipX = tip[0]; h.pinchAim.tipY = tip[1]; }
   }
-  if (!wantPinch) { h.pinch = false; h.pinchSince = 0; h.pinchAim = null; h.drag = null; }
+  if (!wantPinch) { h.pinch = false; h.pinchSince = 0; h.pinchFrames = 0; h.pinchAim = null; h.drag = null; }
   if (h.pinch && h.drag) {
     if (h.drag.type === 'range') dragRange(h.drag.el, h.sx);
     else if (h.drag.type === 'orbit' && scene()) { scene().orbitBy(-(h.sx - h.drag.x)*.007, (h.sy - h.drag.y)*.005); h.drag.x = h.sx; h.drag.y = h.sy; }
   }
+
+  /* --- hover to click: keep the ring still over a button for about a second (buttons, tabs, tick boxes only) --- */
+  const dwellOn = $('#jv-dwell', root).checked, dwellEl = dwellOn && !wantPinch && !h.pinch && !peace && !openPalm && !zooming && !h.lock && under ? under.closest('button,a,summary,[role=tab],label.switch-control,input[type=checkbox]') : null;
+  if (dwellEl && !dwellEl.disabled && !dwellEl.closest('#jv-panel .jv-head')) {
+    if (!h.dwell || h.dwell.el !== dwellEl || Math.hypot(h.sx - h.dwell.x, h.sy - h.dwell.y) > T.dwellMove) h.dwell = {el: dwellEl, x: h.sx, y: h.sy, since: now, done: h.dwell && h.dwell.el === dwellEl && h.dwell.done};
+    if (!h.dwell.done) {
+      const f = clamp((now - h.dwell.since)/T.dwellMs, 0, 1); h.el.style.setProperty('--dwell', f); h.el.classList.add('dwell');
+      if (f >= 1) { h.dwell.done = true; h.el.classList.remove('dwell'); h.el.style.setProperty('--dwell', 0); clickAt(h, h.sx, h.sy); }
+    } else { h.el.classList.remove('dwell'); }
+  } else { h.dwell = null; h.el.classList.remove('dwell'); h.el.style.setProperty('--dwell', 0); }
 
   /* --- two fingers: slide to change the variable under the cursor --- */
   if (peace && !h.pinch) {

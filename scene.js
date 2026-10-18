@@ -9,6 +9,7 @@ import * as T from './vendor/three.module.js';
 const MAX_UNITS = 12, MAX_PEOPLE = 30, MAX_FISH = 8, PITCH_X = 4.9, PITCH_Z = 5.6;
 // pond: units ride on pontoon boats. Deck level sits just above the waterline, the drive steps down through a second bevel pair so the paddle wheel hangs deep in the water.
 const WSHAFT_Y = 2.0, WHEEL_Y = .35, WHEEL_R = 1.6, BOAT_S = .5, BOAT_PITCH = 6.6, MAX_BOATS = 6, MAX_UPB = 2, DECK_DROP = .14, WHEEL_Z = 3.4;
+const BOAT_FOOT = 3.6, BOAT_R = 2.0;   // hull length (world units) and collision-circle radius
 const POND_BACK = 1.2, POND_Y = .16, WATER_Y = .95, SHAFT_Y = 1.55;
 const FLOOR_TOP = .3, WALL_H = 3.2, ROOF_TOP = 3.7;
 const BEVEL_R = .5, BEVEL_N = 20, AX = 1.02;   // equal miter gears: pitch radius, teeth, x of the point where both shaft axes cross
@@ -28,7 +29,7 @@ export class FieldScene {
     this.debris = []; this.puddles = []; this.hazes = []; this.water = null; this.canyon = null;
     this.flows = true; this.haze = 0; this.rainAmt = 0; this.storm = false; this.night = false; this.flashT = 0; this.lightT = 3; this.layoutKey = '';
     this.roomW = 6; this.roomD = 6; this.pondL = 9; this.pondW = 5; this.sensors = null;
-    this.boats = 1; this.upb = 1; this.mount = 'boat'; this.boatGroups = []; this.boatPose = []; this.boatTheta = []; this.lanes = []; this.laneOf = []; this.pondZc = 6; this.benchBoat = null;
+    this.boats = 1; this.upb = 1; this.mount = 'boat'; this.boatGroups = []; this.boatPose = []; this.boatTheta = []; this.boatSim = []; this.lanes = []; this.laneOf = []; this.pondZc = 6; this.benchBoat = null;
 
     this.renderer = new T.WebGLRenderer({antialias:true, alpha:false, powerPreference:'low-power'});
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
@@ -346,10 +347,14 @@ export class FieldScene {
     } else {
       const boats = clamp(Math.round(p.boats), 1, MAX_BOATS), upb = clamp(Math.round(p.upb), 1, MAX_UPB), mount = p.mount === 'anchored' ? 'anchored' : 'boat';
       this.boats = boats; this.upb = upb; this.mount = mount; this.count = boats*upb;
-      const bw = upb*BOAT_PITCH*BOAT_S, A = Math.max(6, p.pond*.55), lanes = boats > 3 ? 2 : 1;
-      const Lneed = mount === 'anchored' ? boats*(bw + 2) + 8 : 20 + boats*2.4 + upb*3, Wneed = mount === 'anchored' ? 12 : (lanes === 2 ? 26 : 16);
-      this.pondL = clamp(Math.max(Lneed, Math.sqrt(A*1.5)), 14, 48);
-      this.pondW = clamp(Math.max(Wneed, A/this.pondL), 11, 30);
+      // Pond volume sets the drawn surface area (about 1 m deep): 20 m³ is a small pond, 500 m³ a large one.
+      // Boats need room to move without touching, so a crowded pond is only enlarged as far as the boats require.
+      const bw = upb*BOAT_PITCH*BOAT_S, Avol = 150 + (clamp(p.pond, 20, 500) - 20)*(1100/480);
+      let A = Avol, Lmin = 14, Wmin = 11;
+      if (mount === 'anchored') { Lmin = Math.max(Lmin, boats*(bw + 2) + 8); Wmin = 12; }
+      else { const perBoat = (bw + 1.5)*(BOAT_FOOT + 1.5)*3; A = Math.max(A, boats*perBoat); Wmin = Math.max(Wmin, bw + 6); }
+      this.pondL = clamp(Math.max(Math.sqrt(A*1.6), Lmin), 14, 70);
+      this.pondW = clamp(Math.max(A/this.pondL, Wmin), 11, 34);
       this.extent = Math.max(this.pondL, this.pondW*1.3);
       key = ['water', boats, upb, mount, this.pondL.toFixed(2), this.pondW.toFixed(2)].join('|');
     }
@@ -367,8 +372,6 @@ export class FieldScene {
   buildRoomShell() {
     const S = this.shell, m = this.mats, W = this.roomW, D = this.roomD, n = this.count;
     this.box(W + .6, FLOOR_TOP, D + .6, m.concrete, S, 0, FLOOR_TOP/2, 0);
-    this.box(.16, WALL_H, D, m.cream, S, -W/2, FLOOR_TOP + WALL_H/2, 0);
-    this.box(.16, WALL_H, D, m.cream, S, W/2, FLOOR_TOP + WALL_H/2, 0);
     this.box(W, WALL_H, .16, m.cream, S, 0, FLOOR_TOP + WALL_H/2, -D/2);
     // roof covers the back of the building and the prototype bases; the front stays open as a cutaway
     let roofEnd = -D/2 + 1;
@@ -380,13 +383,26 @@ export class FieldScene {
     this.box(1.5, .08, .8, m.wood, S, dx, .95, 0);
     for (const [lx, lz] of [[-.65, -.32], [.65, -.32], [-.65, .32], [.65, .32]]) this.box(.07, .9, .07, m.dark, S, dx + lx, .45, lz);
     this.box(.5, .32, .035, m.dark, S, dx - .1, 1.25, -.12);
-    // windows on both side walls; opening follows background ventilation
-    const nW = Math.max(1, Math.floor(D/2.6));
+    // Build the walls around real openings, rather than hiding glass behind a solid wall.
+    const nW = Math.max(1, Math.floor(D/2.6)), sill = 1.05, windowH = 1.5, top = sill + windowH;
     for (const side of [-1, 1]) for (let k = 0; k < nW; k++) {
       const cell = D/nW, w = cell*.7, zc = -D/2 + (k + .5)*cell;
-      const piv = new T.Group(); piv.position.set(side*(W/2 + .1), 1.8, zc - w/2); S.add(piv);
-      const pane = new T.Mesh(new T.BoxGeometry(.05, 1.5, w), m.win); pane.position.set(0, 0, w/2); piv.add(pane);
-      this.panes.push({piv, sign: side});
+      const x = side*W/2, pier = (cell - w)/2;
+      this.box(.16, sill - FLOOR_TOP, cell, m.cream, S, x, (sill + FLOOR_TOP)/2, zc);
+      this.box(.16, FLOOR_TOP + WALL_H - top, cell, m.cream, S, x, (top + FLOOR_TOP + WALL_H)/2, zc);
+      for (const end of [-1, 1]) {
+        this.box(.16, windowH, pier, m.cream, S, x, sill + windowH/2, zc + end*(w/2 + pier/2));
+        this.box(.24, windowH + .12, .08, m.white, S, x, sill + windowH/2, zc + end*w/2);
+        this.box(.24, .08, w, m.white, S, x, end < 0 ? sill : top, zc);
+      }
+      const piv = new T.Group(); piv.name = 'ventilation-window'; piv.position.set(x, sill + windowH/2, zc - w/2); S.add(piv);
+      this.box(.05, windowH - .12, w - .12, m.win, piv, 0, 0, w/2);
+      for (const end of [-1, 1]) {
+        this.box(.08, windowH, .06, m.dark, piv, 0, 0, end < 0 ? .03 : w - .03);
+        this.box(.08, .06, w, m.dark, piv, 0, end*(windowH/2 - .03), w/2);
+      }
+      this.box(.08, windowH, .04, m.white, piv, 0, 0, w/2);
+      this.panes.push({piv, sign: -side, x, zc, width:w, y:sill + windowH/2});
     }
     // community-clinic details from the poster: waiting-room desks with seated occupants, health cross, door, plants, fresh-air louvre
     const cols = Math.max(2, Math.floor((W - 1.4)/.85)), rows = Math.ceil(MAX_PEOPLE/cols), zS = -D/2 + 1.0, zE = D/2 - 1.6, step = rows > 1 ? Math.max(1.05, (zE - zS)/(rows - 1)) : 0;
@@ -458,25 +474,87 @@ export class FieldScene {
       const side = i % 2 ? 1 : -1, x = side*(L/2 + 1.0 + (i >> 2)*.4), z = POND_BACK + .8 + ((i >> 1) % 4)*(W - 1.6)/3, h = 1.0 + (i % 3)*.3;
       this.cyl(.02, h, m.reed, S, x, -.3 + h/2, z); this.cyl(.06, .25, m.cattail, S, x, -.3 + h - .12, z);
     }
-    // boats: one hull group per boat; moving boats circle the pond on oval lanes, moored boats sit in a row at the deck
-    this.boatGroups = []; this.boatPose = []; this.boatTheta = []; this.lanes = []; this.laneOf = [];
-    const bw = this.upb*BOAT_PITCH*BOAT_S, margin = Math.max(bw/2, 2.2) + 1.2, nl = this.boats > 3 ? 2 : 1;
-    const a0 = Math.max(2, L/2 - margin), b0 = Math.max(1.2, W/2 - margin);
-    this.lanes.push({a: a0, b: b0}); if (nl === 2) this.lanes.push({a: a0*.6, b: Math.max(.8, b0 - (bw + 2.4))});
+    // boats: one hull group per boat; moving boats circulate around the pond and steer around each other, moored boats sit in a row at the deck
+    const prevSim = this.boatSim, pL = this._simL, pW = this._simW;
+    this.boatGroups = []; this.boatPose = []; this.boatTheta = []; this.boatSim = []; this.lanes = []; this.laneOf = [];
+    const bw = this.upb*BOAT_PITCH*BOAT_S, nl = this.boats > 3 ? 2 : 1;
+    this.lanes = nl === 2 ? [.88, .5] : [.8];
     for (let b = 0; b < this.boats; b++) {
       const bg = new T.Group(); S.add(bg); this.buildHull(bg, this.upb); this.boatGroups.push(bg);
       const lane = b % nl, k = Math.floor(b/nl), cnt = Math.ceil((this.boats - lane)/nl);
       this.laneOf.push(lane); this.boatTheta.push(k/cnt*Math.PI*2 + lane*.9); this.boatPose.push({x:0, z:zc, ry:0, heave:0});
+      const ax = Math.max(1, L/2 - this.boatMargin()), bz = Math.max(1, W/2 - this.boatMargin()), th = this.boatTheta[b], ro = this.lanes[lane];
+      let st = {x: ro*ax*Math.cos(th), z: zc + ro*bz*Math.sin(th), h: Math.atan2(-ax*Math.sin(th), bz*Math.cos(th))};
+      if (prevSim && prevSim.length === this.boats && pL && pW) { const o = prevSim[b]; st = {x: o.x*L/pL, z: zc + (o.z - (POND_BACK + pW/2))*W/pW, h: o.h}; }   // keep boats where they were when the pond is resized
+      this.boatSim.push(st);
       if (this.mount === 'anchored') {                                                   // mooring posts on the rim in front of each boat
         const x = (b - (this.boats - 1)/2)*(bw + 2);
         for (const dx of [-bw*.3, bw*.3]) this.cyl(.1, 1.1, m.trunk, S, x + dx, 1.35, POND_BACK - .05);
       }
     }
+    this._simL = L; this._simW = W;
+    if (this.mount === 'boat') for (let i = 0; i < 40; i++) this.separateBoats();       // start with no overlaps
     this.poseBoats(0);
     this.canyon = new T.Group(); S.add(this.canyon);
     for (const k of [-1, 1]) this.canyonBlock(this.canyon, k*(L/2 + 6.5), zc);
     this.box(L + 8, .12, 1.3, m.path, S, 0, .06, POND_BACK + W + 2.6);
     this.parkBench(S, L/2 - 1.2, POND_BACK + W + 1.9);
+  }
+  // ---- boat traffic: every boat is a set of circles along its width; they are pushed apart so boats can never pass through each other ----
+  boatMargin() { return Math.max(this.upb*BOAT_PITCH*BOAT_S/2, BOAT_R) + .6; }
+  boatCircles(q) {
+    const w = this.upb*BOAT_PITCH*BOAT_S, off = Math.max(0, w/2 - BOAT_R), n = off > .05 ? 2 : 1, c = Math.cos(q.h), sn = Math.sin(q.h), out = [];
+    for (let i = 0; i < n; i++) { const o = n === 1 ? 0 : (i ? off : -off); out.push({x: q.x + o*c, z: q.z - o*sn}); }
+    return out;
+  }
+  separateBoats() {
+    const L = this.pondL, W = this.pondW, z0 = POND_BACK, S = this.boatSim, n = S.length, R = BOAT_R, gap = .25;
+    for (let pass = 0; pass < 3; pass++) {
+      for (let a = 0; a < n; a++) for (let b = a + 1; b < n; b++) {
+        const ca = this.boatCircles(S[a]), cb = this.boatCircles(S[b]);
+        for (const u of ca) for (const v of cb) {
+          let dx = v.x - u.x, dz = v.z - u.z, d = Math.hypot(dx, dz); const need = 2*R + gap;
+          if (d >= need) continue;
+          if (d < 1e-4) { dx = Math.cos(a*2.4 + b); dz = Math.sin(a*2.4 + b); d = 1; }
+          const push = (need - d)/2, nx = dx/d, nz = dz/d;
+          S[a].x -= nx*push; S[a].z -= nz*push; S[b].x += nx*push; S[b].z += nz*push;
+        }
+      }
+      for (const q of S) {                                  // keep every circle inside the basin
+        const cs = this.boatCircles(q);
+        for (const c of cs) {
+          const dxp = c.x - (L/2 - R - .15), dxn = (-L/2 + R + .15) - c.x;
+          if (dxp > 0) q.x -= dxp; else if (dxn > 0) q.x += dxn;
+          const dzp = c.z - (z0 + W - R - .15), dzn = (z0 + R + .15) - c.z;
+          if (dzp > 0) q.z -= dzp; else if (dzn > 0) q.z += dzn;
+        }
+      }
+    }
+  }
+  stepBoats(dt, speed) {
+    const L = this.pondL, W = this.pondW, zc = this.pondZc, S = this.boatSim, m = this.boatMargin(), ax = Math.max(1, L/2 - m), bz = Math.max(1, W/2 - m);
+    const R = BOAT_R, look = 2*R + 3.2;
+    if (speed <= 0) { this.separateBoats(); return; }
+    for (let b = 0; b < S.length; b++) {
+      const q = S[b], dx = q.x, dz = q.z - zc, ro = this.lanes[this.laneOf[b]] ?? .8;
+      // circulate counter-clockwise around the pond, drifting back to this boat's own lane
+      let tx = -(ax/bz)*dz, tz = (bz/ax)*dx; const tl = Math.hypot(tx, tz) || 1; tx /= tl; tz /= tl;
+      const rho = Math.hypot(dx/ax, dz/bz), nx0 = -dx/(ax*ax), nz0 = -dz/(bz*bz), nl = Math.hypot(nx0, nz0) || 1;
+      const pull = clamp((rho - ro)*2.2, -1.2, 1.2);
+      let vx = tx + pull*nx0/nl, vz = tz + pull*nz0/nl;
+      // steer away from boats that are close
+      for (let o = 0; o < S.length; o++) {
+        if (o === b) continue;
+        for (const u of this.boatCircles(q)) for (const v of this.boatCircles(S[o])) {
+          const ex = u.x - v.x, ez = u.z - v.z, d = Math.hypot(ex, ez);
+          if (d < look && d > 1e-4) { const w = (1 - d/look)*2.4; vx += ex/d*w; vz += ez/d*w; }
+        }
+      }
+      const want = Math.atan2(vx, vz); let diff = want - q.h; diff = Math.atan2(Math.sin(diff), Math.cos(diff));
+      const rate = 1.4*dt; q.h += clamp(diff, -rate, rate);
+      q.x += Math.sin(q.h)*speed*dt; q.z += Math.cos(q.h)*speed*dt;
+    }
+    this.separateBoats();
   }
   // hull centre pose for every boat (moving: oval lanes, heading along the lane; moored: fixed row, bow to the pond)
   poseBoats(t) {
@@ -484,7 +562,7 @@ export class FieldScene {
     for (let b = 0; b < this.boats; b++) {
       const P = this.boatPose[b], amp = (.012 + .05*this.rainAmt + (this.storm ? .06 : 0))*1; P.heave = Math.sin(t*1.4 + b*1.9)*amp;
       if (this.mount === 'anchored') { P.x = (b - (this.boats - 1)/2)*(bw + 2); P.z = POND_BACK + 3.3; P.ry = 0; }
-      else { const ln = this.lanes[this.laneOf[b]] || this.lanes[0], th = this.boatTheta[b]; P.x = ln.a*Math.cos(th); P.z = this.pondZc + ln.b*Math.sin(th); P.ry = Math.atan2(-ln.a*Math.sin(th), ln.b*Math.cos(th)); }
+      else { const q = this.boatSim[b]; if (q) { P.x = q.x; P.z = q.z; P.ry = q.h; } }
       const g = this.boatGroups[b]; if (!g) continue;
       const f = this.unitFrame(b*this.upb);
       g.position.set(f.ox, f.hy, f.oz); g.rotation.set(0, P.ry, 0); g.scale.setScalar(s);
@@ -701,7 +779,7 @@ export class FieldScene {
 
     // pond boats: drift around the oval lanes (faster in more wind); moored boats just bob
     if (!air && !bench && this.boatGroups.length) {
-      if (this.mount === 'boat') { const sp = running ? (.5 + wind*.09) : 0; this.boatTheta.forEach((th, b) => { const ln = this.lanes[this.laneOf[b]] || this.lanes[0]; this.boatTheta[b] = th + dt*sp/Math.max(1.5, (ln.a + ln.b)/2); }); }
+      if (this.mount === 'boat') this.stepBoats(dt, running ? (.5 + wind*.09) : 0);
       this.poseBoats(t); this.placeUnits();
     }
     // exhaust: room air is drawn up through each fan, out through the roof opening and away above the roof
@@ -714,11 +792,14 @@ export class FieldScene {
     }
     this.stackGeo.attributes.position.needsUpdate = true;
     this.stackPts.visible = air && sample.airflow > 0 && this.flows && !bench;
-    const ach = clamp((p.backgroundACH - .2)/1.8, 0, 1), ventN = air ? Math.round(ach*this.ventN) : 0;
+    const ach = clamp((p.backgroundACH - .2)/1.8, 0, 1), ventN = air ? Math.max(4, Math.round(p.backgroundACH/2*this.ventN)) : 0;
     this.vent.visible = ventN > 0 && this.flows && !bench; this.ventGeo.setDrawRange(0, ventN);
     if (ventN > 0) {
-      const va = this.ventGeo.attributes.position.array, W = this.roomW, D = this.roomD;
-      for (let i = 0; i < this.ventN; i++) { const s = this.ventSeed[i], side = i % 2 ? 1 : -1, k = (s[0] + t*(.4 + ach)*.6) % 1; va[i*3] = side*(W/2 + 1.6 - k*2.2); va[i*3+1] = .7 + s[1]*2.2; va[i*3+2] = (s[2] - .5)*D*.85; }
+      const va = this.ventGeo.attributes.position.array;
+      for (let i = 0; i < this.ventN; i++) {
+        const s = this.ventSeed[i], pn = this.panes[i % this.panes.length], side = Math.sign(pn.x), k = (s[0] + t*(.4 + ach)*.6) % 1;
+        va[i*3] = pn.x + side*(1.2 - k*2.4); va[i*3+1] = pn.y + (s[1] - .5)*1.1; va[i*3+2] = pn.zc + (s[2] - .5)*pn.width*.7;
+      }
       this.ventGeo.attributes.position.needsUpdate = true;
     }
 
