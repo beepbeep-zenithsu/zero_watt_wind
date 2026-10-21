@@ -1,0 +1,95 @@
+{
+  "note": "Offline geometry counts, not measured GPU draw calls or FPS. All scenarios load real GLBs through the r180 loader.",
+  "cases": [
+    {
+      "mode": "air",
+      "weather": "clear",
+      "visibleMeshDrawUpperBound": 644,
+      "triangles": 1176498,
+      "instances": 4001,
+      "fog": 0.0013262002743484225,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "air",
+      "weather": "heat",
+      "visibleMeshDrawUpperBound": 640,
+      "triangles": 1232810,
+      "instances": 3997,
+      "fog": 0.0018,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "air",
+      "weather": "rain",
+      "visibleMeshDrawUpperBound": 650,
+      "triangles": 1233090,
+      "instances": 4007,
+      "fog": 0.003026200274348422,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "air",
+      "weather": "storm",
+      "visibleMeshDrawUpperBound": 660,
+      "triangles": 1232850,
+      "instances": 4017,
+      "fog": 0.0061262002743484225,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "air",
+      "weather": "night",
+      "visibleMeshDrawUpperBound": 632,
+      "triangles": 1230162,
+      "instances": 3989,
+      "fog": 0.0026262002743484224,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "water",
+      "weather": "clear",
+      "visibleMeshDrawUpperBound": 471,
+      "triangles": 1219224,
+      "instances": 3903,
+      "fog": 0.0013262002743484225,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "water",
+      "weather": "heat",
+      "visibleMeshDrawUpperBound": 461,
+      "triangles": 1240384,
+      "instances": 3893,
+      "fog": 0.0018,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "water",
+      "weather": "rain",
+      "visibleMeshDrawUpperBound": 485,
+      "triangles": 1241224,
+      "instances": 3917,
+      "fog": 0.003026200274348422,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "water",
+      "weather": "storm",
+      "visibleMeshDrawUpperBound": 481,
+      "triangles": 1240424,
+      "instances": 3913,
+      "fog": 0.0061262002743484225,
+      "cloudMinAltitude": 62
+    },
+    {
+      "mode": "water",
+      "weather": "night",
+      "visibleMeshDrawUpperBound": 453,
+      "triangles": 1237736,
+      "instances": 3885,
+      "fog": 0.0026262002743484224,
+      "cloudMinAltitude": 62
+    }
+  ]
+}

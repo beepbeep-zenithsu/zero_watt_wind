@@ -1,0 +1,8 @@
+
+> zerowatt-wind@8.0.0 build
+> esbuild app.js --bundle --minify --format=iife --outfile=app.bundle.js
+
+
+  app.bundle.js  671.2kb
+
+Done in 166ms

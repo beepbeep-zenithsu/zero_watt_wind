@@ -1,0 +1,149 @@
+{
+  "generator": "Blender 5.2.2 LTS",
+  "coordinates": "glTF Y-up; authored Three.js coordinates converted once by V",
+  "assets": {
+    "rotor": {
+      "axis": "x",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 3,
+      "triangles": 13972,
+      "bytes": 342904
+    },
+    "bevel": {
+      "axis": "x",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 2,
+      "triangles": 4672,
+      "bytes": 121736
+    },
+    "fan": {
+      "axis": "y",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 2,
+      "triangles": 6640,
+      "bytes": 161872
+    },
+    "paddle": {
+      "axis": "z",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 3,
+      "triangles": 9684,
+      "bytes": 266688
+    },
+    "bearing-frame": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 3,
+      "triangles": 1160,
+      "bytes": 55124
+    },
+    "bearing": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 2,
+      "triangles": 956,
+      "bytes": 27376
+    },
+    "workspace": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 5,
+      "triangles": 1404,
+      "bytes": 102068
+    },
+    "service-wall": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 4,
+      "triangles": 1512,
+      "bytes": 110156
+    },
+    "tree": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 3,
+      "triangles": 17576,
+      "bytes": 379084
+    },
+    "shore": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 4,
+      "triangles": 2080,
+      "bytes": 128980
+    },
+    "chair": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 3,
+      "triangles": 1188,
+      "bytes": 43840
+    },
+    "controller": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 4,
+      "triangles": 2280,
+      "bytes": 87608
+    },
+    "fan-shroud": {
+      "axis": null,
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "meshes": 2,
+      "triangles": 4816,
+      "bytes": 117180
+    }
+  }
+}

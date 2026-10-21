@@ -1,0 +1,30 @@
+✔ Blender neighborhood and detailed site are installed in both applications (759.7102ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (126.7524ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (897.8849ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (384.5693ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (1027.5033ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (1707.1791ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (1952.2903ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (250.6891ms)
+✔ wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly (17.8917ms)
+✔ PV and battery are finite; empty night system stops and full battery curtails surplus (7.3947ms)
+✔ assistance requires timed verification; battery recovery has separate hysteresis (4.7761ms)
+✔ actual Blender GLB loads with finite geometry, all pivots and the intended shaft origins (627.0171ms)
+✔ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (4676.5263ms)
+✔ sun tracking aligns the module normal and keeps the roof rack anchored (193.7966ms)
+✔ Monsoon operates solely on wind regardless of battery, sunlight and assistance policy (5.9651ms)
+✔ advanced exhaust clears the roof and the entrance supports an enclosed interior view (199.4939ms)
+ZeroWatt: original geometry retained for workspace: Failed to parse URL from assets/zw-upgrade/workspace.glb
+ZeroWatt: original geometry retained for chair: Failed to parse URL from assets/zw-upgrade/chair.glb
+ZeroWatt: original geometry retained for site-seated-person: Failed to parse URL from assets/environment/site-seated-person.glb
+ZeroWatt: original geometry retained for site-canyon-tower: Failed to parse URL from assets/environment/site-canyon-tower.glb
+✔ window apertures remain clear of opaque walls as the building changes size (254.2284ms)
+✔ the full enclosure closes the entrance and roof while the hinged door opens a real passage (71.193ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7623.6651

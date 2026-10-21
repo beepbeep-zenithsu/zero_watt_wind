@@ -1,0 +1,95 @@
+<string>:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+BlenderMCP addon registered
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+20:11:01 | INFO: Starting glTF 2.0 export
+20:11:01 | INFO: Extracting primitive: Cylinder.006
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.007
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.014
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.015
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Sphere.010
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Sphere.011
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Sphere.004
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.004
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.002
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cone
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.001
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Sphere.006
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.003
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.012
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.004
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.005
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cylinder.020
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Extracting primitive: Cube.006
+20:11:01 | INFO: Primitives created: 1
+20:11:01 | INFO: Finished glTF 2.0 export in 0.17473125457763672 s
+
+20:11:02 | INFO: Starting glTF 2.0 export
+20:11:02 | INFO: Extracting primitive: Cylinder.028
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.029
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.036
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.037
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Sphere.031
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Sphere.032
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Sphere.025
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.026
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.008
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cone.001
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.007
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.022
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Sphere.027
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.009
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.034
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.010
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.011
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cylinder.042
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Extracting primitive: Cube.012
+20:11:02 | INFO: Primitives created: 1
+20:11:02 | INFO: Finished glTF 2.0 export in 0.06942892074584961 s
+00:06.109  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:06.109  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:06.125  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\rafiu\.thumbnails\large\blender_2972_245ec0e6600ca6aa8b18188390e23dbc.png.png"
+
+Info: Saved as "city-people.blend"
+CITY_PEOPLE_READY {"site-pedestrian": {"meshes": 19, "triangles": 7436, "bytes": 251800}, "site-seated-person": {"meshes": 19, "triangles": 7436, "bytes": 249492}}
+BlenderMCP addon unregistered
+
+Blender quit

@@ -1,0 +1,338 @@
+[
+  {
+    "path": "app.js",
+    "kind": "modified source",
+    "bytes": 21903,
+    "sha256": "dcb5bfe908ac39a8135a0cbfc0cd4f77d7783b3d681825ac95b432a03c17213e"
+  },
+  {
+    "path": "index.html",
+    "kind": "modified source",
+    "bytes": 3063,
+    "sha256": "39f9d91f9b5f0c022129d209d137fd09172b0685c50e76536033b516d8ff3934"
+  },
+  {
+    "path": "package.json",
+    "kind": "modified source",
+    "bytes": 673,
+    "sha256": "deeacd14516c1f66b67b834af21c71b0b02ecab7945a76d4373cc5c19394bce9"
+  },
+  {
+    "path": "scene.js",
+    "kind": "modified source",
+    "bytes": 75413,
+    "sha256": "5321e01e76fa21cfe811bbbb665ec34baa00773adb57b2f5ceb1ab8f0450183c"
+  },
+  {
+    "path": "premium-assets.js",
+    "kind": "modified pre-existing untracked source",
+    "bytes": 211,
+    "sha256": "15f5bdeea24f9e2156296caab57e9d3d10ca3beb1a3a7e784e3c0208de0baa3a"
+  },
+  {
+    "path": "upgrade.css",
+    "kind": "new source",
+    "bytes": 11584,
+    "sha256": "64c72c9435d3f0ac7898bb37c90fae049e162e0fbe867b10f55854dbaad0e09c"
+  },
+  {
+    "path": "src/graphics/assets.js",
+    "kind": "new source",
+    "bytes": 2860,
+    "sha256": "469bf576108dc06fb8993b6c9bbf177016af06e4caa21c368cf9e2bea285d1b0"
+  },
+  {
+    "path": "src/graphics/site.js",
+    "kind": "new source",
+    "bytes": 4846,
+    "sha256": "9af18f61c5e89c767a1b4a71d34f2f3b9355e9cfb3d38b66fb841e8d6c839cc3"
+  },
+  {
+    "path": "src/graphics/surfaces.js",
+    "kind": "new source",
+    "bytes": 4366,
+    "sha256": "4f1a6995c74bc3ac6aa2c810beceb3dfd5559a44972ad05d375e7e55ad36763c"
+  },
+  {
+    "path": "src/graphics/ventilation-vfx.js",
+    "kind": "new source",
+    "bytes": 6567,
+    "sha256": "7049997b1b499f7abf594ec49d2842208334ca9b727acd063b22f1bc7dbc4e3a"
+  },
+  {
+    "path": "src/graphics/camera.js",
+    "kind": "new source",
+    "bytes": 1001,
+    "sha256": "e0013a13f2b402078b0fd895baf2ceb2212df4b9f92f59f04ba3e59d9af2605c"
+  },
+  {
+    "path": "scripts/blender/build_assets.py",
+    "kind": "new source",
+    "bytes": 16958,
+    "sha256": "bba440ef909e58b3b1f223df3bb212b051c177e4f3c391697c89398e52a21ba5"
+  },
+  {
+    "path": "scripts/blender/render_review.py",
+    "kind": "new source",
+    "bytes": 3992,
+    "sha256": "aacdb52d62f34824760519dd890a36b0d430780cacba39527bc6bf9b6e768f02"
+  },
+  {
+    "path": "scripts/blender/validate_library.py",
+    "kind": "new source",
+    "bytes": 866,
+    "sha256": "2f116d2fdc3307611454b593614cc4daf3e8b9b8ab7c9e8aeea300fd7dec3da2"
+  },
+  {
+    "path": "tools/run-blender.cjs",
+    "kind": "new source",
+    "bytes": 518,
+    "sha256": "c1b229f44b847dce19b0c1e1668ff4eedaeccf86e28b2615859a5d2bbbcf1aa9"
+  },
+  {
+    "path": "tools/verify-graphics.cjs",
+    "kind": "new source",
+    "bytes": 9300,
+    "sha256": "bf1314bfc601a69da119ad4398bc6d20a06bc74f5046c236c75fc43e3113a23d"
+  },
+  {
+    "path": "tools/deliver-sources.cjs",
+    "kind": "new source",
+    "bytes": 2733,
+    "sha256": "fac8bb818dc78baec72263f02c72ddb7d8ce9de93819453c3c0b93c996fbc91d"
+  },
+  {
+    "path": "tests/graphics.test.cjs",
+    "kind": "new source",
+    "bytes": 5087,
+    "sha256": "764d50679194e5c5e36e4c0cb3d5c1358a9dfdbec1b9be98b42718e2b7b2e74b"
+  },
+  {
+    "path": "tests/ui.test.cjs",
+    "kind": "new source",
+    "bytes": 5559,
+    "sha256": "5439800936adb10594f6cc79d9b140b2ba1ae09d83723cfdabb3c35a696e41fa"
+  },
+  {
+    "path": "tests/ventilation.test.cjs",
+    "kind": "new source",
+    "bytes": 4264,
+    "sha256": "8af3d8a608d02faac54440f1c42cd4e83d5ddff9b473f981d9e52e1cf2a27416"
+  },
+  {
+    "path": "vendor/addons/loaders/GLTFLoader.js",
+    "kind": "new source",
+    "bytes": 114755,
+    "sha256": "979269c237f704ffa4a37d3800ec21f237c017e40f8e28b1cd7accf5b2377574"
+  },
+  {
+    "path": "vendor/addons/utils/BufferGeometryUtils.js",
+    "kind": "new source",
+    "bytes": 35555,
+    "sha256": "748066188940e858e5d48985866e84a6e6691fc31776ea59d9d89c1a7f6fe6cd"
+  },
+  {
+    "path": "vendor/addons/environments/RoomEnvironment.js",
+    "kind": "new source",
+    "bytes": 4915,
+    "sha256": "b6e43ff42b72e50af7505e143fcc44b1201f9ae28fe932816b3c2c53d77c9494"
+  },
+  {
+    "path": "assets/zw-upgrade/bearing-frame.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 55124,
+    "sha256": "b84da406d6bc1360eafe827d5883bdc94a20a83ecaeb4c090352e040d4993624"
+  },
+  {
+    "path": "assets/zw-upgrade/bearing.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 27376,
+    "sha256": "fe5d52dd9bd617fad630a117149898a116019e400c9fe5b2d3d395590d9e494c"
+  },
+  {
+    "path": "assets/zw-upgrade/bevel.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 121736,
+    "sha256": "dab5a7da8cd2336d3b4b216a5d3c3e5e3b780f1aa2bb65668cbad55161203bdb"
+  },
+  {
+    "path": "assets/zw-upgrade/chair.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 43840,
+    "sha256": "6fabac63b61632a4ca4fb46560ef1f545c31e3b3f0f4d94edb9e1bff373dc60a"
+  },
+  {
+    "path": "assets/zw-upgrade/controller.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 87608,
+    "sha256": "e737937310bd5a1211d0b3c26f3bc57a35beaba9dca5af7ff9ccbc548f8c4aeb"
+  },
+  {
+    "path": "assets/zw-upgrade/fan-shroud.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 117180,
+    "sha256": "9ae36ea3213b9a5fb482f1bb46a63e93b8d1ff15f727ca7be6ae8ae1e7cc30fe"
+  },
+  {
+    "path": "assets/zw-upgrade/fan.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 161872,
+    "sha256": "dfe4bbe9ebd83fe7c6f28b4ad8b50376b1334d7ae3fdad67e3242ceb22032da6"
+  },
+  {
+    "path": "assets/zw-upgrade/manifest.json",
+    "kind": "generated manifest",
+    "bytes": 2478,
+    "sha256": "7a4cc7c36facd43c54e43096b4b65a87c0f3d4732113b7862a54190f7105cb35"
+  },
+  {
+    "path": "assets/zw-upgrade/paddle.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 266688,
+    "sha256": "3bcc312f19dab31f9e4b6b732f6284f468f9fdffd08ef674a479e02731b30814"
+  },
+  {
+    "path": "assets/zw-upgrade/rotor.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 342904,
+    "sha256": "7f4390cc332ef791d438edc0a77a9b5dd1533a8e8853c55776b0bababf077eca"
+  },
+  {
+    "path": "assets/zw-upgrade/service-wall.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 110156,
+    "sha256": "d2eae3b07f411a77ad44f90eeffaa5810db6a8664b300ad68ca6aedde04d19c3"
+  },
+  {
+    "path": "assets/zw-upgrade/shore.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 128980,
+    "sha256": "1feba0d65481a3f76318cf4ef9bff8666a17262058c585d8a3a12ec705f8b086"
+  },
+  {
+    "path": "assets/zw-upgrade/tree.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 379084,
+    "sha256": "fd0b7df3c23d0af6dbd983b9a27a967b0411d518f488178297031b0c41a5faaf"
+  },
+  {
+    "path": "assets/zw-upgrade/workspace.glb",
+    "kind": "Blender runtime asset",
+    "bytes": 102068,
+    "sha256": "fcb195bad8969d91bb23c4587ba5e84a374be67d2497fba61e5b02960adc112d"
+  },
+  {
+    "path": "assets/zw-upgrade/zerowatt-library.blend",
+    "kind": "Blender editable source",
+    "bytes": 940779,
+    "sha256": "1c32abef8c33a4cf7fa7104bfc1bec6a2503966e038f7a2f1151393221ad5a73"
+  },
+  {
+    "path": "app.bundle.js",
+    "kind": "generated production bundle",
+    "bytes": 687298,
+    "sha256": "af059d418964bac9131567936f910da6343386843c343e388ac24c88b0f28ef9"
+  },
+  {
+    "path": "docs/upgrade/air-blender-review.png",
+    "kind": "Blender geometry review render",
+    "bytes": 1448446,
+    "sha256": "9a8ed563cd7a0e651a8552352b8116407735c380868051db9764fb8cba731f8d"
+  },
+  {
+    "path": "docs/upgrade/air-machinery-blender-review.png",
+    "kind": "Blender geometry review render",
+    "bytes": 1055563,
+    "sha256": "8b8ecccc6c9d2f95cc56f9163ad05d12f1811fee7746168a06ece2c5568ccae9"
+  },
+  {
+    "path": "docs/upgrade/asset-validation.json",
+    "kind": "documentation or verification output",
+    "bytes": 4182,
+    "sha256": "6223af7f69f256c67b3565f7f51c84e5e4ae975672607522bf1ec0644918eb99"
+  },
+  {
+    "path": "docs/upgrade/blend-validation.json",
+    "kind": "documentation or verification output",
+    "bytes": 116,
+    "sha256": "a8288c97d7a704afc35451ebc42831b3095429faf5e6648eb06704427907d10a"
+  },
+  {
+    "path": "docs/upgrade/blend-validation.log",
+    "kind": "documentation or verification output",
+    "bytes": 376,
+    "sha256": "fce661bacd9bf08df8789f03cf9498fe0827be9e36bb8ccc2d7b012909081844"
+  },
+  {
+    "path": "docs/upgrade/blender-generation.log",
+    "kind": "documentation or verification output",
+    "bytes": 8049,
+    "sha256": "1aab8db097e94b56098bbdfe313f1c781686aa5f62a9467d3d2bb3bc68339d8b"
+  },
+  {
+    "path": "docs/upgrade/blender-review.log",
+    "kind": "documentation or verification output",
+    "bytes": 1231,
+    "sha256": "fc652fd9487da28c8f848a75932336484ee4d24dc28c0e360c85df921220e5a1"
+  },
+  {
+    "path": "docs/upgrade/build-results.log",
+    "kind": "documentation or verification output",
+    "bytes": 152,
+    "sha256": "f9f2ece9315d00639ce9a0d59bbab49c73fe7c657f59fb48ebbae4a4af2d2086"
+  },
+  {
+    "path": "docs/upgrade/calculation-baseline.json",
+    "kind": "documentation or verification output",
+    "bytes": 115297,
+    "sha256": "5c19ec56188d9204045b1f966255aba8b3745fdcc84c027ec8d26bdd733387ac"
+  },
+  {
+    "path": "docs/upgrade/integration.log",
+    "kind": "documentation or verification output",
+    "bytes": 3762,
+    "sha256": "f6af39e850606fb4a3bec231c40af15659327be3e1f1fef58cb6671c5d4a8d54"
+  },
+  {
+    "path": "docs/upgrade/README.md",
+    "kind": "documentation or verification output",
+    "bytes": 12002,
+    "sha256": "241fa5616b2a8f8aba8cf535a906d4635b4ce6b97083b42b0085c7f6cd6e67c8"
+  },
+  {
+    "path": "docs/upgrade/scene-verification.json",
+    "kind": "documentation or verification output",
+    "bytes": 3498,
+    "sha256": "2eb7ef52af041bb7a09955e07047a3bdf94aace646f40911d52ecdac45c4abe2"
+  },
+  {
+    "path": "docs/upgrade/test-results.log",
+    "kind": "documentation or verification output",
+    "bytes": 5025,
+    "sha256": "ff959efcf4bf70375b3f1a613d2f430feb198bdb0d954563bcdebb3ae6d69caf"
+  },
+  {
+    "path": "docs/upgrade/THIRD-PARTY.md",
+    "kind": "documentation or verification output",
+    "bytes": 1047,
+    "sha256": "eb3f8e7f40288f285d41767f17035d3ee106bd04741d04360a037385dc75f132"
+  },
+  {
+    "path": "docs/upgrade/VENTILATION-IMPLEMENTATION.md",
+    "kind": "documentation or verification output",
+    "bytes": 8277,
+    "sha256": "d46840c21f329b64c48ed0f41ace8d8cb99abce718f31bbe11502aeddf09323c"
+  },
+  {
+    "path": "docs/upgrade/water-blender-review.png",
+    "kind": "Blender geometry review render",
+    "bytes": 1151474,
+    "sha256": "f6aac59c71f3fe721c25f81c37d336091fdf813164a9f9c2b8aa26ea9e8ed182"
+  },
+  {
+    "path": "docs/upgrade/water-machinery-blender-review.png",
+    "kind": "Blender geometry review render",
+    "bytes": 1109868,
+    "sha256": "10f2e1a2825d4c7db06cc2aeca6b0c2b4b0baa97752ffe24bb56534ec29c369d"
+  }
+]

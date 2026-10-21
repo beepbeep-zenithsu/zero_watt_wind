@@ -122,7 +122,7 @@ test('two-finger adjustment ignores small neutral jitter and releases immediatel
 });
 test('commands preserve decimals, spoken numbers, relative changes and limits', () => {
   const f=fixture();
-  for(const [command, expected] of [['set the wind speed to 7.5',7.5],['Jarvis increase wind speed',9.5],['decrease wind speed by two point five',7],['set wind to thirty',30],['increase wind',30],['set wind to zero',0],['set wind to point five',.5],['increase wind 2',2.5],['wind speed 12',2.5]]) {
+  for(const [command, expected] of [['set the wind speed to 7.5',7.5],['Jarvis increase wind speed',9.5],['decrease wind speed by two point five',7],['set wind to thirty',30],['increase wind',30],['set wind to zero',0],['set wind to point five',.5],['increase wind 2',2.5],['wind speed 12',12]]) {
     assert.equal(f.api.command(command),true,command); assert.equal(f.wind(),expected,command);
   }
   f.api.command('set room volume to one hundred and fifty'); assert.equal(f.states.air.p.room,150);

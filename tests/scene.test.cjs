@@ -29,12 +29,12 @@ test('the full enclosure closes the entrance and roof while the hinged door open
   s.buildRoomShell(); s.shell.updateMatrixWorld(true);
   const doorway=()=>new T.Raycaster(new T.Vector3(2.6,1.6,4),new T.Vector3(0,0,-1),0,1.5).intersectObjects(s.shell.children,true);
   assert.ok(doorway().length,'closed door seals the front entrance');
-  s.setDoorOpen(true); s.shell.updateMatrixWorld(true);
+  s.setDoorOpen(true);for(let i=0;i<60;i++)s.advanceDoor(.05);s.shell.updateMatrixWorld(true);
   assert.equal(doorway().length,0,'door pivots clear of the entrance');
   const roof=s.shell.getObjectByName('full-roof');
   assert.ok(new T.Raycaster(new T.Vector3(0,5,2.7),new T.Vector3(0,-1,0),0,2).intersectObject(roof).length,'roof covers the previously open front');
   assert.equal(new T.Raycaster(new T.Vector3(1.35,5,-1.8),new T.Vector3(0,-1,0),0,2).intersectObject(roof).length,0,'roof exhaust remains open');
   s.shell.clear(); s.panes=[]; s.people=[]; s.roomW=10; s.buildRoomShell();
   assert.equal(s.doorOpen,true); assert.ok(s.doorPivot.rotation.y<0,'door state survives layout rebuilding');
-  s.setDoorOpen(false); assert.equal(s.doorPivot.rotation.y,0);
+  s.setDoorOpen(false);for(let i=0;i<60;i++)s.advanceDoor(.05);assert.equal(s.doorPivot.rotation.y,0);
 });

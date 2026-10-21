@@ -1,0 +1,16 @@
+✔ Blender neighborhood and detailed site are installed in both applications (767.5319ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (285.821ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (800.7643ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (718.5581ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (1247.4084ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (2232.1106ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (2704.9584ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (323.3019ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9664.8671

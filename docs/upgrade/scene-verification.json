@@ -1,0 +1,186 @@
+{
+  "kind": "Offline scene/asset integration; no WebGL or browser",
+  "cases": [
+    {
+      "mode": "air",
+      "count": 1,
+      "weather": "clear",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 1,
+      "weather": "heat",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 1,
+      "weather": "rain",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 1,
+      "weather": "storm",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 10,
+      "weather": "clear",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 10,
+      "weather": "heat",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 10,
+      "weather": "rain",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "air",
+      "count": 10,
+      "weather": "storm",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 1,
+      "weather": "clear",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 1,
+      "weather": "night",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 1,
+      "weather": "rain",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 1,
+      "weather": "storm",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 12,
+      "weather": "clear",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 12,
+      "weather": "night",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 12,
+      "weather": "rain",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    },
+    {
+      "mode": "water",
+      "count": 12,
+      "weather": "storm",
+      "pause": true,
+      "closeup": true,
+      "mounting": true,
+      "loaded": true
+    }
+  ],
+  "snapshots": {
+    "air": {
+      "visibleMeshObjects": 296,
+      "visibleTriangles": 196730,
+      "materialBatches": 65
+    },
+    "air-machinery": {
+      "visibleMeshObjects": 59,
+      "visibleTriangles": 42252,
+      "materialBatches": 36
+    },
+    "water": {
+      "visibleMeshObjects": 236,
+      "visibleTriangles": 245878,
+      "materialBatches": 50
+    },
+    "water-machinery": {
+      "visibleMeshObjects": 83,
+      "visibleTriangles": 54400,
+      "materialBatches": 35
+    }
+  },
+  "assetsLoaded": [
+    "rotor",
+    "bearing-frame",
+    "bearing",
+    "bevel",
+    "fan",
+    "fan-shroud",
+    "paddle",
+    "controller",
+    "workspace",
+    "chair",
+    "tree",
+    "service-wall",
+    "shore"
+  ]
+}

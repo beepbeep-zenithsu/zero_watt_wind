@@ -1,0 +1,77 @@
+
+> zerowatt-wind@8.0.0 test
+> node --test tests/*.test.cjs
+
+✔ engineering source hash and all 84 representative outputs match the pre-upgrade baseline (18.1717ms)
+✔ every exported GLB loads through the actual r180 loader with finite geometry and expected axes (152.3468ms)
+✔ water uses stable GPU deformation and responds to weather without changing simulation state (25.078ms)
+✔ asset replacement preserves the animated parent transform and shared resources survive layout disposal (5.1287ms)
+✔ face control never changes wind by default, including speaking-like lip shapes (581.9739ms)
+✔ blow option: puckered lips alone (no breath sound) never raise the wind, and nothing resets it (171.4105ms)
+✔ head turn switches once per hold and rearms only at centre (107.4155ms)
+✔ resting hands cannot change wind; pinch clicks once until released (152.0786ms)
+✔ tracking begins pinched and tracking loss cannot generate phantom clicks (58.0403ms)
+✔ pinch drags sliders and releases without repeated clicks (74.8176ms)
+✔ two-finger adjustment ignores small neutral jitter and releases immediately (123.9253ms)
+✖ commands preserve decimals, spoken numbers, relative changes and limits (99.1509ms)
+✔ common offline mishearing of set is limited to a command at the start (53.0584ms)
+✔ speech previews do not execute; each final result executes once (76.5404ms)
+✔ lip gesture cannot change wind while voice is active (106.4113ms)
+✔ stop cancels a pending microphone permission request (49.7663ms)
+✔ speech restarts after a normal end and ignores an old session after stop (52.2119ms)
+✔ blocked speech service releases the microphone and reports the error (49.8825ms)
+✔ browser service network failure preserves its cause and points to offline voice (40.643ms)
+✔ normal no-speech timeouts do not accumulate startup failures (36.6063ms)
+✔ offline voice is the default and only final utterances change the app (46.7635ms)
+✔ cancelling offline model loading cannot reactivate voice (47.6659ms)
+✔ microphone check measures sound, detects silence, and releases input after eight seconds (46.0014ms)
+✔ audio setup failures are visible and release the microphone (48.7798ms)
+✔ hover-to-click clicks a button once after about a second and not again until the ring leaves (116.9116ms)
+✔ a quick two-frame pinch clicks even on a slow camera (51.1373ms)
+✔ zoom only starts after holding two fingers still over the scene, then open hand zooms in and curled fingers zoom out (78.2704ms)
+✔ zoom mode ends by itself after a few idle seconds and needs arming again (72.8797ms)
+✔ zoom needs the scene under the cursor (50.8564ms)
+✔ face switch works right after the face appears, without holding still to calibrate (42.9243ms)
+✔ offline engine forwards audio, previews and finals, and disconnects everything on stop (142.1343ms)
+✔ aborting model load terminates the worker and rejects startup (34.5963ms)
+✔ bad offline models report failure and terminate their worker (14.6918ms)
+ZeroWatt: original geometry retained for workspace: Failed to parse URL from assets/zw-upgrade/workspace.glb
+ZeroWatt: original geometry retained for chair: Failed to parse URL from assets/zw-upgrade/chair.glb
+✔ window apertures remain clear of opaque walls as the building changes size (362.1074ms)
+✔ the full enclosure closes the entrance and roof while the hinged door opens a real passage (81.0028ms)
+✔ all original inputs and weather cases remain usable; readouts reflect real model outputs (2210.5572ms)
+✔ maximum installations, manual brake, keyboard tabs and reduced-motion initial pause are preserved (604.7892ms)
+✔ ventilation paths use model flow, stop powered trails at zero output, and preserve background exchange (420.4793ms)
+✔ all intake paths cross actual window apertures and exhaust paths follow each installed fan (292.4391ms)
+✔ camera movement eases while paused, settles to the target, and frames portrait inspection views (190.8836ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 39
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4847.8167
+
+✖ failing tests:
+
+test at tests\jarvis.test.cjs:123:1
+✖ commands preserve decimals, spoken numbers, relative changes and limits (99.1509ms)
+  AssertionError [ERR_ASSERTION]: wind speed 12
+  
+  12 !== 2.5
+  
+      at TestContext.<anonymous> (G:\new_8\zerowatt-wind-v8\tests\jarvis.test.cjs:126:63)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 12,
+    expected: 2.5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

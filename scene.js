@@ -1,4 +1,12 @@
 import * as T from './vendor/three.module.js';
+import { upgradeRotor } from './premium-assets.js';
+import {upgradePart, addAsset, retireShell, assetStatus} from './src/graphics/assets.js';
+import {installReflections, createWaterMaterial, updateWater, applySurfaceDetail,applyVentilationMaterials} from './src/graphics/surfaces.js';
+import {dressArchitecture, dressLandscape} from './src/graphics/site.js';
+import {buildCity,updateCity} from './src/graphics/city.js';
+import {personLook} from './src/graphics/people.js';
+import {VentilationVFX, updateVentilationLabels} from './src/graphics/ventilation-vfx.js';
+import {advanceCamera,viewDistance} from './src/graphics/camera.js';
 
 /* ZeroWatt Wind - 3D field scene.
    Geometry is reconstructed from the supplied photographs (not imported CAD).
@@ -32,6 +40,7 @@ export class FieldScene {
     this.host = host; this.mode = mode;
     this.angle = .8; this.elevation = .42; this.distance = 13; this.target = new T.Vector3(0, 2, 0);
     this.view = 'field'; this.time = 0; this.count = 1; this.extent = 12;
+    this.reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
     this.rotors = []; this.rotorGroups = []; this.gears = []; this.fans = []; this.vfans = []; this.units = [];
     this.trees = []; this.fish = []; this.rings = []; this.rainRings = []; this.people = []; this.panes = [];
     this.debris = []; this.puddles = []; this.hazes = []; this.water = null; this.canyon = null;
@@ -39,20 +48,22 @@ export class FieldScene {
     this.roomW = 6; this.roomD = 6; this.pondL = 9; this.pondW = 5; this.sensors = null;
     this.boats = 1; this.upb = 1; this.mount = 'boat'; this.boatGroups = []; this.boatPose = []; this.boatTheta = []; this.boatSim = []; this.lanes = []; this.laneOf = []; this.pondZc = 6; this.benchBoat = null;
 
-    this.renderer = new T.WebGLRenderer({antialias:true, alpha:false, powerPreference:'low-power'});
-    this.renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
+    this.compactGraphics = matchMedia('(max-width: 760px)').matches || (navigator.hardwareConcurrency || 8) < 5;
+    this.renderer = new T.WebGLRenderer({antialias:true, alpha:false, powerPreference:'high-performance'});
+    this.renderer.setPixelRatio(Math.min(devicePixelRatio, this.compactGraphics ? 1.25 : 1.7));
     this.renderer.shadowMap.enabled = true; this.renderer.shadowMap.type = T.PCFSoftShadowMap;
-    this.renderer.outputColorSpace = T.SRGBColorSpace; this.renderer.toneMapping = T.ACESFilmicToneMapping; this.renderer.toneMappingExposure = 1.15;
+    this.renderer.outputColorSpace = T.SRGBColorSpace; this.renderer.toneMapping = T.AgXToneMapping; this.renderer.toneMappingExposure = .92;
     this.renderer.domElement.setAttribute('aria-label', mode === 'air' ? 'Interactive 3D rooftop ventilation with the wind prototype driving fans into a room' : 'Interactive 3D pond aerator with the wind prototype driving a paddle wheel');
     this.renderer.domElement.setAttribute('role', 'img'); this.renderer.domElement.tabIndex = 0;
     host.prepend(this.renderer.domElement);
 
     this.scene = new T.Scene(); this.scene.background = new T.Color('#839e88'); this.scene.fog = new T.FogExp2('#839e88', .02);
-    this.camera = new T.PerspectiveCamera(38, 1, .1, 240);
+    this.camera = new T.PerspectiveCamera(38, 1, .1, 600);
     this.hemi = new T.HemisphereLight('#e8f3da', '#263b2c', 2.4); this.scene.add(this.hemi);
+    if(mode==='air'){this.hemi.color.set('#deebf1');this.hemi.groundColor.set('#454d43');}
     this.sun = new T.DirectionalLight('#fff1cb', 3.2); this.sun.position.set(-8, 14, 9); this.sun.castShadow = true;
-    this.sun.shadow.mapSize.set(2048, 2048); this.sun.shadow.bias = -.0008; this.sun.shadow.normalBias = .03; this.scene.add(this.sun);
-    const fill = new T.DirectionalLight('#b5d3cd', 1); fill.position.set(7, 6, -7); this.scene.add(fill);
+    this.sun.shadow.mapSize.setScalar(this.compactGraphics ? 1024 : 2048); this.sun.shadow.bias = -.00015; this.sun.shadow.normalBias = .018;this.sun.shadow.radius=3; this.scene.add(this.sun);
+    const fill = this.fill = new T.DirectionalLight('#c7dce6', .65); fill.position.set(7, 6, -7); this.scene.add(fill);
     this.roomLight = new T.PointLight('#ffd89a', 0, 16, 1.5); this.roomLight.position.set(0, 2.7, 0); this.scene.add(this.roomLight);
     this.flashLight = new T.PointLight('#e8f2ff', 0, 140, 1.2); this.scene.add(this.flashLight);
 
@@ -61,7 +72,7 @@ export class FieldScene {
       concrete: this.mat('#8d9b87'), cream: this.mat('#ddd8bd'), wood: this.mat('#b99f78'), gold: this.mat('#c9ae75', .5, .4),
       cream2: this.mat('#c9b48a'), dark: this.mat('#1e3029'), trunk: this.mat('#655d42'), leaf: this.mat('#4d6945'), leaf2: this.mat('#5d7c4f'),
       skin: this.mat('#cfb894'), shirtA: this.mat('#6e8e80'), shirtB: this.mat('#89966a'), path: this.mat('#d5cdb0'),
-      water: new T.MeshStandardMaterial({color:'#2a7e7e', roughness:.22, metalness:.3, transparent:true, opacity:.66, side:T.DoubleSide, depthWrite:false}), fish: this.mat('#b79b61', .6, 0), fishTail: this.mat('#9d8b5a', .6, 0),
+      water: createWaterMaterial(), fish: this.mat('#b79b61', .6, 0), fishTail: this.mat('#9d8b5a', .6, 0),
       reed: this.mat('#5e7b3e'), cattail: this.mat('#6b4f2c'), plank: this.mat('#7e8062'), basin: this.mat('#3f5a52'),
       cloud: this.mat('#b4c3b3', .9, 0), leafPiece: this.mat('#6f8f4a', .8, 0), twig: this.mat('#4a3d2c', .8, 0),
       glass: new T.MeshStandardMaterial({color:'#9ac8b8', transparent:true, opacity:.28, roughness:.12, side:T.DoubleSide}),
@@ -77,6 +88,9 @@ export class FieldScene {
       haze: new T.MeshBasicMaterial({color:'#fff3d2', transparent:true, opacity:0, depthWrite:false, side:T.DoubleSide, fog:false})
     };
     this.hazeMat = this.mats.haze;
+    this.surfaceNormal = applySurfaceDetail(this.mats);
+    if(mode==='air')applyVentilationMaterials(this.mats);
+    this.reflectionTarget = installReflections(this.scene, this.renderer);
 
     this.env = new T.Group(); this.scene.add(this.env);          // surroundings, weather, sky
     this.shell = new T.Group(); this.scene.add(this.shell);      // building or pond (layout dependent)
@@ -85,6 +99,7 @@ export class FieldScene {
     this.table = new T.Group(); this.table.visible = false; this.scene.add(this.table);
 
     this.buildStatic(); this.buildTable(); this.buildUnits(); this.buildFx();
+    if(mode==='air')this.ventilationVFX=new VentilationVFX(this);
     this.bind(); this.resize();
     this.resizeObserver = new ResizeObserver(() => this.resize()); this.resizeObserver.observe(host);
     this.cameraPosition();
@@ -117,17 +132,18 @@ export class FieldScene {
   /* ---------------- static surroundings ---------------- */
   buildStatic() {
     const E = this.env;
-    this.box(260, .15, 260, this.mat('#637c60'), E, 0, -.4, 0);
-    // distant buildings (original scene)
-    for (let i = 0; i < 7; i++) {
-      const x = (i-3)*5.4, z = -13 - Math.abs(i-3)*.8, h = 2.4 + (i*7%5)*1.3, b = new T.Group(); E.add(b);
-      this.box(3.1, h, 2.8, this.mat(['#758477', '#85937d', '#a4ac91'][i%3]), b, x, h/2 - .3, z);
-      this.box(3.25, .15, 2.95, this.mats.concrete, b, x, h - .2, z);
-      for (let f = 0; f < Math.floor(h/.9); f++) for (let n = 0; n < 3; n++) this.box(.44, .4, .025, this.mat('#435d54'), b, x - .9 + n*.9, .5 + f*.9, z + 1.42);
+    const terrain = new T.PlaneGeometry(260, 260, 80, 80);
+    const groundPositions = terrain.attributes.position;
+    for(let i=0;i<groundPositions.count;i++) {
+      const x=groundPositions.getX(i), z=groundPositions.getY(i);
+      groundPositions.setZ(i, .055*Math.sin(x*.31)*Math.cos(z*.24));
     }
+    terrain.computeVertexNormals();
+    const ground=this.mesh(terrain, this.mat('#87918d',.98,0), E,0,-.34,0);
+    ground.rotation.x=-Math.PI/2; ground.castShadow=false;
     // clouds (drift with the wind)
     this.clouds = new T.Group(); E.add(this.clouds);
-    for (let i = 0; i < 9; i++) { const c = new T.Group(); c.position.set(-14 + i*3.6, 12 + (i%3)*.6, -24 + (i%2)*2); this.clouds.add(c); const s = new T.Mesh(new T.SphereGeometry(1, 16, 12), this.mats.cloud); s.scale.set(2.2, .5, 1.1); c.add(s); }
+    for (let i = 0; i < 9; i++) { const c = new T.Group(); c.position.set(-84 + i*21, 62 + (i%3)*5, -85 + (i%2)*30); this.clouds.add(c); const s = new T.Mesh(new T.SphereGeometry(1, 16, 12), this.mats.cloud); s.scale.set(10, 1.3, 4.2); c.add(s); }
     // night sky
     const sp = new Float32Array(500*3);
     for (let i = 0; i < 500; i++) { const th = Math.random()*Math.PI*2, ph = Math.random()*Math.PI*.42, r = 150; sp[i*3] = Math.cos(th)*Math.cos(ph)*r; sp[i*3+1] = Math.sin(ph)*r; sp[i*3+2] = Math.sin(th)*Math.cos(ph)*r; }
@@ -143,7 +159,7 @@ export class FieldScene {
     // rain puddles (appear as it rains)
     const pg = new T.CircleGeometry(1, 28); pg.rotateX(-Math.PI/2);
     const spots = [[-10, 2, 1.1], [-8.5, -5, .8], [9, -6, 1.3], [10.5, 4.5, .9], [7, 9.5, 1.2], [-13, 6, 1.0], [-3, 11.5, .9], [2.5, -10.5, 1.1], [-12, -11, 1.2], [14, -1, .8]];
-    for (const [x, z, s] of spots) { const m = new T.Mesh(pg, this.mats.puddle); m.position.set(x, .03, z); m.userData = {base: s, th: .05 + Math.random()*.4}; m.visible = false; E.add(m); this.puddles.push(m); }
+    for (const [x, z, s] of spots) { const m = new T.Mesh(pg, this.mats.puddle); m.position.set(x, -.27, z);m.rotation.y=x*.73; m.userData = {base: s, th: .05 + Math.random()*.4}; m.visible = false; E.add(m); this.puddles.push(m); }
     // windsock: points downwind; it fills with wind and droops in lulls
     const ws = new T.Group(); ws.position.set(-10.5, 0, -7.5); E.add(ws);
     this.cyl(.05, 4.2, this.mats.white, ws, 0, 2.1, 0);
@@ -161,7 +177,7 @@ export class FieldScene {
     this.benchSlab = this.box(9, .25, 4.2, this.mats.slab, this.table, -.5, .775, .2);   // the roof, see-through, so the fan under it shows
     for (let i = 0; i < 14; i++) this.box(.02, .005, 8, this.mat('#b19d73'), this.table, -6.5 + i, .01, 1.4);
     if (this.mode === 'water') {   // pond close-up: one boat floating in a tank so the deep paddle wheel can be seen under the surface
-      this.benchWater = new T.Mesh(new T.BoxGeometry(14, 1.5, 9), this.mats.water); this.benchWater.position.set(0, -.75, 0); this.benchWater.renderOrder = 2; this.scene.add(this.benchWater); this.benchWater.visible = false;
+      this.benchWater = new T.Mesh(new T.BoxGeometry(14, 1.5, 9), this.mats.water.clone()); this.benchWater.position.set(0, -.75, 0); this.benchWater.renderOrder = 2; this.scene.add(this.benchWater); this.benchWater.visible = false;
       this.benchBoat = new T.Group(); this.benchBoat.position.set(-AX, DECK_DROP, -1.2); this.scene.add(this.benchBoat); this.buildHull(this.benchBoat, 1); this.benchBoat.visible = false;
     }
   }
@@ -178,13 +194,18 @@ export class FieldScene {
       this.mesh(geo, dark ? this.mats.black : this.mats.white, spin);
     }
     this.cyl(.12, 1.9, this.mats.white, spin, 0, 0, 0, 'x'); this.cyl(.26, .2, this.mats.white, spin, .85, 0, 0, 'x');
+    if (!dark) upgradeRotor(spin);
     return g;
   }
   stand(parent, x, z, h, rotY, plateMat, baseMat) {
     const s = new T.Group(); s.position.set(x, 0, z); s.rotation.y = rotY; parent.add(s);
-    this.box(.8, .12, .95, baseMat, s, 0, .06, 0);
-    for (const dz of [-.17, .17]) this.box(.1, h, .09, plateMat, s, 0, h/2 + .1, dz);
-    this.box(.1, .22, .52, plateMat, s, 0, h + .02, 0);
+    const frame=new T.Group();s.add(frame);
+    this.box(.8, .12, .95, baseMat, frame, 0, .06, 0);
+    for (const dz of [-.17, .17]) this.box(.1, h, .09, plateMat, frame, 0, h/2 + .1, dz);
+    this.box(.1, .22, .52, plateMat, frame, 0, h + .02, 0);
+    upgradePart(frame, 'bearing-frame', {scale:[1,h+.1,1]});
+    // Only the frame changes height; the sealed cartridge remains circular.
+    addAsset(s, 'bearing', [0,h+.1,0]);
     return s;
   }
   collar(parent, x, y, z, axis, dark) { this.cyl(.26, .13, dark ? this.mats.black : this.mats.white, parent, x, y, z, axis); this.cyl(.17, .17, dark ? this.mats.white : this.mats.black, parent, x, y, z, axis); }
@@ -209,10 +230,12 @@ export class FieldScene {
     const cone = this.mesh(new T.CylinderGeometry(R - delta - len, R - delta, len, 40), this.mats.white, spin, len/2, 0, 0); cone.rotation.z = -Math.PI/2;
     this.cyl(.13, .3, this.mats.white, spin, -.15, 0, 0, 'x');
     const teeth = this.mesh(this.teethGeo, this.mats.white, spin); teeth.rotation.x = phase;
+    upgradePart(spin, 'bevel', {rotation:[phase,0,0]});
     return orient;
   }
   buildUnits() {
     this.teethGeo = this.buildTeeth(); this.toothUnit = this.toothGeo(1, 20, .08);   // spur profile, scaled per unit
+    this.teethGeo.userData.sharedStatic = true; this.toothUnit.userData.sharedStatic = true;
     const R = BEVEL_R, W = this.mats.white, K = this.mats.black;
     for (let i = 0; i < MAX_UNITS; i++) {
       const g = new T.Group(); this.unitRoot.add(g); const Y = this.mode === 'air' ? SHAFT_Y : WSHAFT_Y, u = {g}; this.units.push(u);
@@ -237,8 +260,11 @@ export class FieldScene {
       // exhaust fan hangs under the ceiling inside a round duct; the grille bars show the duct pressure setting
       const fs = new T.Group(); fs.position.set(AX, -.4, 0); A.add(fs); this.vfans.push(fs); this.cyl(.12, .16, W, fs, 0, 0, 0);
       for (let k = 0; k < 6; k++) { const bl = new T.Group(); bl.rotation.y = k*Math.PI/3; fs.add(bl); const b = this.box(.62, .016, .2, W, bl, .45, 0, 0); b.rotation.x = .4; }
-      this.mesh(new T.CylinderGeometry(.88, .88, .3, 40, 1, true), this.mats.duct, A, AX, -.35, 0);
-      for (const y of [-.2, -.5]) { const rim = this.mesh(new T.TorusGeometry(.88, .03, 8, 40), W, A, AX, y, 0); rim.rotation.x = Math.PI/2; }
+      upgradePart(fs, 'fan');
+      const housing=new T.Group();housing.position.set(AX,-.35,0);A.add(housing);
+      this.mesh(new T.CylinderGeometry(.88, .88, .3, 40, 1, true), this.mats.duct, housing);
+      for (const y of [-.15, .15]) { const rim = this.mesh(new T.TorusGeometry(.88, .03, 8, 40), W, housing, 0, y, 0); rim.rotation.x = Math.PI/2; }
+      if(this.mode==='air')upgradePart(housing,'fan-shroud');
       this.box(1.76, .03, .05, W, A, AX, -.24, 0); this.box(.05, .03, 1.76, W, A, AX, -.24, 0); this.collar(A, AX, -.24, 0, 'y', true);
       u.bars = []; for (let k = 0; k < 10; k++) { const zz = (k - 4.5)*.17, len = 2*Math.sqrt(Math.max(.01, .88*.88 - zz*zz)), bar = this.box(len, .03, .04, this.mats.dark, A, AX, -.5, zz); bar.visible = false; u.bars.push(bar); }
 
@@ -264,6 +290,7 @@ export class FieldScene {
         for (const z of [-.62, .62]) this.box(.09, RR - .2, .07, K, arm, 0, (RR + .2)/2, z);          // spokes hub -> rim
         this.box(.08, .62, 1.4, this.mats.cream, arm, 0, RR, 0);                                       // radial paddle vane, dips deep into the water
       }
+      upgradePart(pd, 'paddle');
       Wt.visible = false;
       if (i === 0) this.buildSensors(g, Y);                                        // sensors are shown on the first unit
     }
@@ -309,8 +336,10 @@ export class FieldScene {
     this.box(.26, .16, .2, this.mats.steel, rainHead, 0, .02, 0);             // bracket touches joint and plate
     this.box(.46, .06, .36, this.mats.black, rainHead, 0, .11, 0);
     const temp = new T.Group(); temp.position.set(AX - 1.2, 0, 5.0); P.add(temp); S.temp = temp; this.box(.25, .16, .16, this.mats.black, temp, 0, .3, 0); this.cyl(.03, 1.4, this.mats.steel, temp, 0, -.4, 0); this.sphere(.07, this.mats.black, temp, 0, -1.1, 0);
-    const mc = new T.Group(); mc.position.set(-2.7, this.mode === 'air' ? 1.0 : .75, this.mode === 'air' ? 1.4 : .9); P.add(mc); S.mcu = mc; this.cyl(.05, 1.0, this.mats.steel, mc, 0, -.55, 0); this.box(.7, .5, .35, this.mats.black, mc);
-    S.mcuLed = this.mesh(new T.SphereGeometry(.05, 12, 8), this.mats.led.clone(), mc, .22, .15, .19); this.box(.4, .22, .01, this.mat('#2e5d44', .5, .2), mc, -.05, -.02, .18);
+    const mc = new T.Group(); mc.position.set(-2.7, this.mode === 'air' ? 1.0 : .75, this.mode === 'air' ? 1.4 : .9); P.add(mc); S.mcu = mc; this.cyl(.05, 1.0, this.mats.steel, mc, 0, -.55, 0);
+    const controller=new T.Group();mc.add(controller);this.box(.7,.5,.35,this.mats.black,controller);
+    if(this.mode==='air')upgradePart(controller,'controller');
+    S.mcuLed = this.mesh(new T.SphereGeometry(.035, 12, 8), this.mats.led.clone(), mc, .22, .15, .195);
     const enc = new T.Group(); enc.position.copy(mc.position); P.add(enc); S.enclosure = enc; this.box(.9, .7, .5, this.mats.glass, enc);
     for (const k of ['cup', 'ultra', 'hall', 'co2', 'doProbe', 'rain', 'temp', 'mcu', 'enclosure']) S[k].visible = false;
     S.mast.visible = false;
@@ -368,14 +397,17 @@ export class FieldScene {
       key = ['water', boats, upb, mount, this.pondL.toFixed(2), this.pondW.toFixed(2)].join('|');
     }
     if (key !== this.layoutKey) { this.layoutKey = key; this.buildShell(); }
-    const R = Math.max(12, this.extent*.7), sc = this.sun.shadow.camera;
+    const R = Math.max(44, this.extent*.7), sc = this.sun.shadow.camera;
     sc.left = -R; sc.right = R; sc.top = R; sc.bottom = -R; sc.far = Math.max(60, R*4); sc.updateProjectionMatrix();
     this.sun.position.set(-R*.6, R*1.1, R*.75);
   }
   buildShell() {
-    this.shell.clear(); this.trees = []; this.fish = []; this.rings = []; this.rainRings = []; this.people = []; this.panes = []; this.water = null;
+    retireShell(this.shell, Object.values(this.mats)); this.trees = []; this.fish = []; this.rings = []; this.rainRings = []; this.people = []; this.panes = []; this.water = null;
     if (this.mode === 'air') this.buildRoomShell(); else this.buildPondShell();
     this.buildTrees();
+    if (this.mode === 'air') dressArchitecture(this);
+    dressLandscape(this);
+    buildCity(this);
   }
   // Enclosed teaching model: transparent walls and roof keep the whole interior visible.
   buildRoomShell() {
@@ -407,11 +439,14 @@ export class FieldScene {
     for (const y of [.04,doorH-.04]) this.box(doorW,.08,.08,m.wood,this.doorPivot,doorW/2,y,0);
     this.sphere(.055,m.gold,this.doorPivot,doorW-.16,1.05,.1);
     this.setDoorOpen(!!this.doorOpen);
+    this.doorPivot.rotation.y=this.doorTarget;
     // desk and monitor
     const dx = -W/2 + 1.35;
-    this.box(1.5, .08, .8, m.wood, S, dx, .95, 0);
-    for (const [lx, lz] of [[-.65, -.32], [.65, -.32], [-.65, .32], [.65, .32]]) this.box(.07, .9, .07, m.dark, S, dx + lx, .45, lz);
-    this.box(.5, .32, .035, m.dark, S, dx - .1, 1.25, -.12);
+    const desk = new T.Group(); desk.position.x=dx; S.add(desk);
+    this.box(1.5, .08, .8, m.wood, desk, 0, .95, 0);
+    for (const [lx, lz] of [[-.65, -.32], [.65, -.32], [-.65, .32], [.65, .32]]) this.box(.07, .61, .07, m.dark, desk, lx, .62, lz);
+    this.box(.5, .32, .035, m.dark, desk, -.1, 1.25, -.12);
+    upgradePart(desk,'workspace');
     // Build the walls around real openings, rather than hiding glass behind a solid wall.
     const nW = Math.max(1, Math.floor(D/2.6)), sill = 1.05, windowH = 1.5, top = sill + windowH;
     for (const side of [-1, 1]) for (let k = 0; k < nW; k++) {
@@ -438,9 +473,13 @@ export class FieldScene {
     const xs = c => -W/2 + .9 + c*(W - 1.8)/Math.max(1, cols - 1), F = FLOOR_TOP;
     for (let k = 0; k < MAX_PEOPLE; k++) {
       const c = k % cols, r = Math.floor(k/cols), g = new T.Group(); g.position.set(xs(c), F, zS + r*step); S.add(g); this.people.push(g);
-      this.box(.4, .05, .4, m.dark, g, 0, .46, 0); this.box(.4, .4, .05, m.dark, g, 0, .72, -.2);                         // chair
-      this.cyl(.15, .52, k % 2 ? m.shirtB : m.shirtA, g, 0, .76, 0); this.sphere(.13, m.skin, g, 0, 1.13, 0);               // seated torso and head
-      for (const dx of [-.08, .08]) { this.cyl(.05, .42, m.dark, g, dx, .53, .2, 'z'); this.cyl(.045, .44, m.dark, g, dx, .27, .41); }   // thighs and shins
+      const chair=new T.Group();g.add(chair);
+      this.box(.4, .05, .4, m.dark, chair, 0, .46, 0); this.box(.4, .4, .05, m.dark, chair, 0, .72, -.2);
+      upgradePart(chair,'chair');
+      const person=new T.Group();g.add(person);
+      this.cyl(.15,.52,k%2?m.shirtB:m.shirtA,person,0,.76,0);this.sphere(.13,m.skin,person,0,1.13,0);
+      for(const dx of [-.08,.08]){this.cyl(.05,.42,m.dark,person,dx,.53,.2,'z');this.cyl(.045,.44,m.dark,person,dx,.27,.41);}
+      upgradePart(person,'site-seated-person',{appearance:personLook(k)});
     }
     const bz = -D/2 + .1;
     this.box(1.15, 1.15, .03, m.white, S, -W/2 + 2.4, F + 2.1, bz); this.box(.78, .2, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02); this.box(.2, .78, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02);   // health cross
@@ -449,7 +488,7 @@ export class FieldScene {
     // canyon blocks (environment option) and the path
     this.canyon = new T.Group(); S.add(this.canyon);
     for (const k of [-1, 1]) this.canyonBlock(this.canyon, k*(W/2 + 6), 0);
-    this.box(W + 8, .12, 1.3, m.path, S, 0, .06, D/2 + 2.6);
+    for(let i=0;i<3;i++)this.box(1.45,.10,.34,m.concrete,S,W/2-1.375,-.10+i*.15,D/2+1.15-i*.34);
   }
   // the original pond: basin with rim, timber walkway and deck, fish, reeds, ripples
   // pontoon boat hull in unit-local coordinates (bow +z, deck top at y = 0, waterline at y = -DECK_DROP)
@@ -464,10 +503,20 @@ export class FieldScene {
       }
       this.box(4.9, .1, 1.0, m.wood, parent, xo + AX, -.05, 5.0);                          // bow beam carries the front wheel support
       for (const z of [-.6, 1.6]) this.box(4.9, .08, .14, m.black, parent, xo + AX, -.18, z + .2);
+      for(const side of [-1,1]){
+        // Flotation straps, flanges and fasteners move with the actual hull.
+        const px=xo+AX+side*2.15;
+        for(const z of [.3,3.9]){
+          this.mesh(new T.TorusGeometry(.405,.024,6,24),m.steel,parent,px,-.46,z);
+          this.box(.10,.16,.24,m.steel,parent,px,-.04,z);
+        }
+      }
     }
     this.box(upb*BOAT_PITCH, .1, 3.4, m.wood, parent, 0, -.05, .7);                          // stern deck: rotor stands, gears, electronics, rear wheel support
     for (let k = 0; k < 8; k++) this.box(upb*BOAT_PITCH, .012, .03, m.plank, parent, 0, .002, -.9 + k*.43);
     this.box(upb*BOAT_PITCH, .14, .06, m.pontoon, parent, 0, .08, -1.0);                      // stern rail
+    for(const side of [-1,1])for(const z of [-.66,2.03])addAsset(parent,'site-deck-cleat',[side*(upb*BOAT_PITCH/2-.42),.015,z]);
+    addAsset(parent,'site-lifebuoy',[upb*BOAT_PITCH/2-.65,.025,.70]);
   }
   // the pond: deep basin, timber shore deck, fish, reeds; units ride on pontoon boats (moving, or moored)
   buildPondShell() {
@@ -479,8 +528,15 @@ export class FieldScene {
     this.box(.24, 1.38, W + .24, m.concrete, S, -L/2 - .12, .39, zc);
     this.box(.24, 1.38, W + .24, m.concrete, S, L/2 + .12, .39, zc);
     this.box(L + .5, 1.38, .24, m.concrete, S, 0, .39, POND_BACK - .12);
+    const caps=[];
+    for(const side of [-1,1])for(let x=-L/2;x<L/2;x+=.75)caps.push([x+.36,1.105,zc+side*(W/2+.12),.71,.39]);
+    for(const side of [-1,1])for(let z=-W/2;z<W/2;z+=.75)caps.push([side*(L/2+.12),1.105,zc+z+.36,.39,.71]);
+    const coping=new T.InstancedMesh(new T.BoxGeometry(1,.075,1),m.path,caps.length),cap=new T.Object3D();
+    coping.name='Jointed pond coping stones';coping.castShadow=coping.receiveShadow=true;
+    caps.forEach(([x,y,z,w,d],i)=>{cap.position.set(x,y,z);cap.scale.set(w,1,d);cap.updateMatrix();coping.setMatrixAt(i,cap.matrix);});S.add(coping);
     this.water = new T.Mesh(new T.PlaneGeometry(L, W, Math.max(16, Math.round(L*2)), Math.max(10, Math.round(W*2))), m.water);
     this.water.rotation.x = -Math.PI/2; this.water.position.set(0, WATER_Y, zc); this.water.receiveShadow = true; this.water.renderOrder = 2; S.add(this.water);
+    m.water.userData.waterUniforms.zwSize.value.set(L,W);
     // paddle ripples (three per unit) and rain rings
     for (let i = 0; i < MAX_UNITS*3; i++) { const r = new T.Mesh(new T.TorusGeometry(.25 + (i%3)*.35, .012, 6, 50), m.ripple); r.rotation.x = -Math.PI/2; r.visible = false; S.add(r); this.rings.push(r); }
     for (let i = 0; i < 16; i++) { const r = new T.Mesh(new T.RingGeometry(.12, .16, 20), m.ripple); r.rotation.x = -Math.PI/2; r.position.set((Math.random() - .5)*L*.9, WATER_Y + .015, POND_BACK + .3 + Math.random()*(W - .6)); r.userData.seed = Math.random(); r.visible = false; S.add(r); this.rainRings.push(r); }
@@ -488,6 +544,7 @@ export class FieldScene {
     for (let i = 0; i < MAX_FISH; i++) {
       const g = new T.Group(); const body = new T.Mesh(new T.SphereGeometry(.14, 12, 8), m.fish); body.scale.set(2, .55, .7); g.add(body);
       const tail = new T.Mesh(new T.ConeGeometry(.16, .23, 3), m.fishTail); tail.rotation.z = Math.PI/2; tail.position.x = -.3; g.add(tail);
+      upgradePart(g,'site-fish');
       g.userData.home = {x: -L/2 + 1.2 + (i%4)*(L - 2.4)/3, z: POND_BACK + 1 + (Math.floor(i/4) + .5)*(W - 2)/2};
       g.position.set(g.userData.home.x, .55, g.userData.home.z); S.add(g); this.fish.push(g);
     }
@@ -519,7 +576,6 @@ export class FieldScene {
     this.poseBoats(0);
     this.canyon = new T.Group(); S.add(this.canyon);
     for (const k of [-1, 1]) this.canyonBlock(this.canyon, k*(L/2 + 6.5), zc);
-    this.box(L + 8, .12, 1.3, m.path, S, 0, .06, POND_BACK + W + 2.6);
     this.parkBench(S, L/2 - 1.2, POND_BACK + W + 1.9);
   }
   // ---- boat traffic: every boat is a set of circles along its width; they are pushed apart so boats can never pass through each other ----
@@ -591,12 +647,19 @@ export class FieldScene {
     }
   }
   canyonBlock(parent, x, z) {
-    this.box(2.4, 9, 6, this.mat('#65776b'), parent, x, 4.5, z);
-    for (let y = 0; y < 8; y++) for (let k = 0; k < 4; k++) this.box(.03, .42, .6, this.mat('#456158'), parent, x - Math.sign(x)*1.22, .6 + y, z - 2.1 + k*1.3);
+    const tower=addAsset(parent,'site-canyon-tower',[x,-.15,z]);
+    tower.name='Detailed urban canyon tower';
+    tower.userData.assetReady=tower.userData.assetReady.then(ready=>{
+      if(ready)tower.traverse(o=>{
+        if(o.isMesh&&o.material.name==='Limestone render'){
+          o.material=o.material.clone();o.material.userData.sharedAsset=false;o.material.color.set(x<0?'#b6bca9':'#c7ac94');
+          o.material.normalMap=this.surfaceNormal;o.material.normalScale.set(.12,.12);
+        }
+      });return ready;
+    });
   }
   parkBench(parent, x, z) {
-    this.box(1.6, .12, .5, this.mat('#95845c'), parent, x, .7, z); this.box(1.6, .45, .1, this.mat('#95845c'), parent, x, 1.0, z + .25);
-    for (const dx of [-.65, .65]) this.box(.08, .5, .4, this.mats.dark, parent, x + dx, .4, z);
+    addAsset(parent,'site-bench',[x,-.18,z],[1,1,1],[0,Math.PI,0]);
   }
   buildTrees() {
     const S = this.shell; let spots;
@@ -607,6 +670,8 @@ export class FieldScene {
       this.cyl(.12, 1.7, this.mats.trunk, tree, 0, .85, 0);
       for (let j = 0; j < 3; j++) { const leaf = this.sphere(.72 - j*.12, j % 2 ? this.mats.leaf2 : this.mats.leaf, tree, j === 1 ? .3 : 0, 1.8 + j*.48, 0); leaf.scale.y = 1.25; }
       this.trees.push(tree);
+      tree.userData.cityHome=tree.position.clone();
+      upgradePart(tree, 'tree', {scale:[1+(this.trees.length%3)*.14,1+(this.trees.length%2)*.2,1]});
     }
   }
 
@@ -632,6 +697,7 @@ export class FieldScene {
 
   /* ---------------- environment, layout and view ---------------- */
   setEnvironment(s, p) {
+    const previousLayout=this.layoutKey,previousDiameter=this._framingDiameter,previousEnvironment=this.scenario?.environment;
     this.settings = p; this.scenario = s;
     this.storm = s.weather === 'storm'; this.night = s.weather === 'night';
     this.rainAmt = clamp(p.rain, 0, 1);
@@ -646,13 +712,21 @@ export class FieldScene {
     const bars = Math.round(clamp(p.pressure/8, 1, 10));
     this.units.forEach(u => u.bars.forEach((bar, k) => bar.visible = air && k < bars));
     if (this.canyon) this.canyon.visible = s.environment === 'canyon';
+    for(let i=0;i<this.trees.length;i++){
+      const tree=this.trees[i],canyon=s.environment==='canyon';
+      if(tree.userData.cityHome)tree.position.copy(tree.userData.cityHome);
+      tree.visible=!canyon||(this.mode==='air'?i%3===0:Math.abs(tree.position.z-this.pondZc)>4.5);
+      if(canyon&&this.mode==='air'&&tree.visible)tree.position.z=this.roomD/2+2.1;
+    }
     if (this.water) {
       const c = this.mats.water.color, t = clamp((p.temp - 10)/20, 0, 1);
-      c.set('#1f6f86').lerp(new T.Color('#4a8f78'), t).multiplyScalar(1 - .25*p.oxygenDemand);
+      c.set('#3d6c72').lerp(new T.Color('#527b68'), t).multiplyScalar(1 - .15*p.oxygenDemand);
       if (this.night) c.multiplyScalar(.55);
       if (this.storm) c.lerp(new T.Color('#3f6d64'), .4);
     }
     this.placeUnits(); this.applyView();
+    if(this.mode==='air'&&this._cameraPose&&!this.cameraUser&&(previousLayout!==this.layoutKey||previousDiameter!==p.diameter||previousEnvironment!==s.environment))this.setView(this.view);
+    this._framingDiameter=p.diameter;
   }
   applyView() {
     const bench = this.view === 'bench';
@@ -676,31 +750,72 @@ export class FieldScene {
   }
   setView(view) {
     this.view = view; this.applyView();
-    if (view === 'bench') { if (this.mode === 'air') { this.target.set(-.5, 1.0, .5); this.distance = 8.5; this.angle = .75; this.elevation = .3; } else { this.target.set(0, .8, 1.4); this.distance = 11; this.angle = .95; this.elevation = .3; } this.scene.background.set('#c9d3c0'); this.scene.fog.color.set('#c9d3c0'); }
+    if (view === 'bench') { if (this.mode === 'air') { this.target.set(-.5, 2.05, .5); this.distance = 9.6; this.angle = .75; this.elevation = .3; } else { this.target.set(0, .8, 1.4); this.distance = 11; this.angle = .95; this.elevation = .3; } this.scene.background.set('#d0dcd6'); this.scene.fog.color.set('#d0dcd6'); }
     else {
-      if (this.mode === 'air') this.target.set(0, 1.9, 0); else this.target.set(0, .9, this.pondZc);
-      this.distance = clamp(12 + this.extent*.5, 12, 36); this.angle = .8; this.elevation = .42;
+      if (this.mode === 'air') this.target.set(0, 2.3, -.3); else this.target.set(0, .9, this.pondZc);
+      this.distance = clamp(12 + this.extent*.5, 12, 36); this.angle = .8; this.elevation = this.mode==='air'?.46:.42;
+      if(this.mode==='air'&&this.scenario?.environment==='canyon'){this.angle=.25;this.elevation=.40;}
+      if(view==='flow' && this.mode==='air'){this.target.set(0,2.1,-.4);this.angle=.67;this.elevation=.24;this.distance=Math.max(14,this.extent*1.6);}
     }
+    if(this.mode==='air')this.distance=viewDistance(this,this.distance);
+    if(this.mode==='air'&&view==='bench')this.distance=Math.min(this.maxDistance,this.distance*(1+.6*Math.max(0,(this.settings?.diameter||1)-1)));
+    if(view==='city'){this.target.set(0,4,this.mode==='air'?0:this.pondZc);this.angle=.50;this.elevation=.72;this.distance=145;this.maxDistance=260;}
+    this.cameraUser=false;
+    if(this.host.dataset)this.host.dataset.sceneView=view;
     this.cameraPosition();
   }
+  inspectPart(name) {
+    if(name==='rotor'){this.setView('bench');return;}
+    this.setView('flow');
+    if(name==='intake'){
+      const pn=this.panes.find(p=>p.x>0)||this.panes[0];
+      if(pn)this.target.set(pn.x*.55,1.9,pn.zc);
+    } else {const q=this.unitPos(0);this.target.set(q.x+1.02,3.6,q.z);}
+    this.distance=viewDistance(this,Math.max(11,this.extent));this.cameraPosition();
+  }
   setFlows(on) { this.flows = on; }
-  setDoorOpen(on) { this.doorOpen=!!on; if (this.doorPivot) this.doorPivot.rotation.y=on ? -Math.PI*.58 : 0; }
-  zoomBy(f) { this.distance = T.MathUtils.clamp(this.distance*f, 4, 40); this.cameraPosition(); }              // f < 1 zooms in, f > 1 zooms out
-  orbitBy(dAngle, dElev = 0) { this.angle += dAngle; this.elevation = T.MathUtils.clamp(this.elevation + dElev, .05, 1.35); this.cameraPosition(); }
-  cameraPosition() { this.camera.position.set(this.target.x + Math.sin(this.angle)*Math.cos(this.elevation)*this.distance, this.target.y + Math.sin(this.elevation)*this.distance, this.target.z + Math.cos(this.angle)*Math.cos(this.elevation)*this.distance); this.camera.lookAt(this.target); }
-  resize() { const w = this.host.clientWidth, h = this.host.clientHeight; if (w && h) { this.renderer.setSize(w, h, false); this.camera.aspect = w/h; this.camera.updateProjectionMatrix(); } }
+  setDoorOpen(on) {
+    this.doorOpen=!!on;this.doorTarget=on?-Math.PI*.58:0;
+    this.host?.dispatchEvent?.(new CustomEvent('door-change',{detail:{open:this.doorOpen}}));
+  }
+  advanceDoor(dt){
+    if(!this.doorPivot)return;
+    this.doorPivot.rotation.y+=((this.doorTarget||0)-this.doorPivot.rotation.y)*(1-Math.exp(-Math.min(dt,.1)*9));
+    if(Math.abs(this.doorPivot.rotation.y-(this.doorTarget||0))<.001)this.doorPivot.rotation.y=this.doorTarget||0;
+  }
+  pickDoor(clientX,clientY){
+    if(this.mode!=='air'||!this.doorPivot||this.view==='bench')return false;
+    const r=this.renderer.domElement.getBoundingClientRect();
+    this.scene.updateMatrixWorld(true);
+    const ray=new T.Raycaster();ray.setFromCamera(new T.Vector2((clientX-r.left)/r.width*2-1,-(clientY-r.top)/r.height*2+1),this.camera);
+    const hit=ray.intersectObject(this.shell,true).find(h=>{
+      for(let o=h.object;o;o=o.parent)if(!o.visible)return false;
+      return true;
+    });
+    for(let o=hit?.object;o;o=o.parent)if(o===this.doorPivot){this.setDoorOpen(!this.doorOpen);return true;}
+    return false;
+  }
+  zoomBy(f) { this.cameraUser=true;this.distance = T.MathUtils.clamp(this.distance*f, 4, this.maxDistance||40); this.cameraPosition(); }
+  orbitBy(dAngle, dElev = 0) { this.cameraUser=true;this.angle += dAngle; this.elevation = T.MathUtils.clamp(this.elevation + dElev, this.minElevation??.05, 1.35); this.cameraPosition(); }
+  cameraPosition(snap=false) { advanceCamera(this,0,snap||!this._cameraPose); }
+  resize() { const w = this.host.clientWidth, h = this.host.clientHeight; if (w && h) { const old=this.camera.aspect;this.renderer.setSize(w, h, false); this.camera.aspect = w/h; this.camera.updateProjectionMatrix();if(this.mode==='air'&&this.settings&&!this.cameraUser&&Math.abs(old-w/h)>.1)this.setView(this.view); } }
   bind() {
-    const c = this.renderer.domElement; this.pointers = new Map(); let old = null, dist = 0;
-    c.addEventListener('pointerdown', e => { this.pointers.set(e.pointerId, [e.clientX, e.clientY]); c.setPointerCapture(e.pointerId); old = [e.clientX, e.clientY]; dist = 0; });
+    const c = this.renderer.domElement; this.pointers = new Map(); let old = null, dist = 0,clickStart=null,dragged=false;
+    c.addEventListener('pointerdown', e => { this.cameraUser=true;this.pointers.set(e.pointerId, [e.clientX, e.clientY]); c.setPointerCapture(e.pointerId); old = [e.clientX, e.clientY]; dist = 0;
+      if(this.pointers.size===1){clickStart=[e.clientX,e.clientY];dragged=false;}else dragged=true;
+    });
     c.addEventListener('pointermove', e => { if (!this.pointers.has(e.pointerId)) return; this.pointers.set(e.pointerId, [e.clientX, e.clientY]);
-      if (this.pointers.size === 2) { const a = [...this.pointers.values()]; const d = Math.hypot(a[0][0] - a[1][0], a[0][1] - a[1][1]); if (dist) this.distance = T.MathUtils.clamp(this.distance*dist/d, 4, 40); dist = d; }
-      else if (old) { this.angle -= (e.clientX - old[0])*.007; this.elevation = T.MathUtils.clamp(this.elevation + (e.clientY - old[1])*.005, .05, 1.35); }
+      if(clickStart&&Math.hypot(e.clientX-clickStart[0],e.clientY-clickStart[1])>5)dragged=true;
+      if (this.pointers.size === 2) { const a = [...this.pointers.values()]; const d = Math.hypot(a[0][0] - a[1][0], a[0][1] - a[1][1]); if (dist&&d>0) this.distance = T.MathUtils.clamp(this.distance*dist/d, 4, this.maxDistance||40); dist = d; }
+      else if (old) { this.angle -= (e.clientX - old[0])*.007; this.elevation = T.MathUtils.clamp(this.elevation + (e.clientY - old[1])*.005, this.minElevation??.05, 1.35); }
       old = [e.clientX, e.clientY]; this.cameraPosition(); });
-    for (const ev of ['pointerup', 'pointercancel', 'lostpointercapture']) c.addEventListener(ev, e => { this.pointers.delete(e.pointerId); old = null; dist = 0; });
-    c.addEventListener('wheel', e => { e.preventDefault(); this.distance = T.MathUtils.clamp(this.distance*Math.exp(e.deltaY*.001), 4, 40); this.cameraPosition(); }, {passive:false});
+    c.addEventListener('pointerup',e=>{if(clickStart&&!dragged&&this.pointers.size===1)this.pickDoor(e.clientX,e.clientY);});
+    for (const ev of ['pointerup', 'pointercancel', 'lostpointercapture']) c.addEventListener(ev, e => { this.pointers.delete(e.pointerId); old = null; dist = 0;clickStart=null; });
+    c.addEventListener('wheel', e => { e.preventDefault(); this.zoomBy(Math.exp(e.deltaY*.001)); }, {passive:false});
     c.addEventListener('keydown', e => { if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-', 'Home'].includes(e.key)) { e.preventDefault();
-      if (e.key === 'ArrowLeft') this.angle -= .12; if (e.key === 'ArrowRight') this.angle += .12; if (e.key === 'ArrowUp') this.elevation = Math.min(1.35, this.elevation + .08); if (e.key === 'ArrowDown') this.elevation = Math.max(.05, this.elevation - .08);
-      if (e.key === '+') this.distance = Math.max(4, this.distance - 1); if (e.key === '-') this.distance = Math.min(40, this.distance + 1); if (e.key === 'Home') this.setView(this.view); this.cameraPosition(); } });
+      this.cameraUser=true;
+      if (e.key === 'ArrowLeft') this.angle -= .12; if (e.key === 'ArrowRight') this.angle += .12; if (e.key === 'ArrowUp') this.elevation = Math.min(1.35, this.elevation + .08); if (e.key === 'ArrowDown') this.elevation = Math.max(this.minElevation??.05, this.elevation - .08);
+      if (e.key === '+') this.distance = Math.max(4, this.distance - 1); if (e.key === '-') this.distance = Math.min(this.maxDistance||40, this.distance + 1); if (e.key === 'Home') this.setView(this.view); this.cameraPosition(); } });
   }
 
   /* ---------------- weather events ---------------- */
@@ -712,21 +827,29 @@ export class FieldScene {
     this.flashLight.position.set(x, 14, z); this.flashT = .25;
   }
   applySky(fl) {
-    if (this.view === 'bench') return;
+    if (this.view === 'bench') {
+      this.sun.intensity=3; this.hemi.intensity=1.8; this.fill.intensity=.65;
+      this.sun.color.set('#fff1dd');this.scene.environmentIntensity=.45;
+      this.roomLight.intensity=0;
+      return;
+    }
     const r = this.rainAmt, h = this.haze, c = this._sky || (this._sky = new T.Color()), tmp = this._tmp || (this._tmp = new T.Color());
-    c.set(this.night ? '#1b2e37' : '#839e88');
-    c.lerp(tmp.set(this.storm ? '#3a5452' : '#6c8478'), r*.8);
+    c.set(this.night ? '#162934' : '#b6cbd0');
+    c.lerp(tmp.set(this.storm ? '#485e64' : '#8b9fa2'), r*.8);
     if (this.storm) c.lerp(tmp.set('#2f4543'), .45);
-    c.lerp(tmp.set('#bfae7a'), h*.6);
+    c.lerp(tmp.set('#d6c6a3'), h*.32);
     if (fl > 0) c.lerp(tmp.set('#e4efff'), fl*.6);
     this.scene.background.copy(c); this.scene.fog.color.copy(c);
-    this.scene.fog.density = (this.storm ? .04 : this.night ? .03 : .02) + h*.012 + r*.008;
-    this.sun.intensity = this.night ? .35 : Math.max(.9, 3.2 - 1.6*r - .6*h) * (this.storm ? .5 : 1);
-    this.sun.color.set(this.night ? '#8ebdce' : '#fff1cb').lerp(tmp.set('#ffcf8f'), h*.8);
-    this.hemi.intensity = this.night ? 1.1 : this.storm ? 1.5 : 2.4;
+    this.scene.fog.density = (this.storm ? .006 : this.night ? .0025 : .0012) + h*.001 + r*.002;
+    this.sun.intensity = this.night ? .18 : Math.max(.6, 3.3 - 2.3*r - .3*h) * (this.storm ? .55 : 1);
+    this.sun.color.set(this.night ? '#94b9da' : '#fff1dd').lerp(tmp.set('#ffe0b3'), h*.35);
+    this.hemi.intensity = this.night ? .23 : this.storm ? .52 : .55;
+    this.fill.intensity = this.night ? .08 : .18;
+    this.scene.environmentIntensity = this.night ? .10 : this.storm ? .40 : .80;
     this.mats.cloud.color.set(this.night ? '#2b3c44' : this.storm ? '#4a5d5a' : r > .3 ? '#7f9188' : '#b4c3b3');
     this.clouds.visible = !this.night; this.stars.visible = this.night; this.moon.visible = this.night;
-    this.roomLight.intensity = this.mode === 'air' && this.night ? 7 : 0;
+    this.roomLight.intensity = this.mode === 'air' ? (this.night?9:this.storm?3.5:2.2) : 0;
+    if (this.siteLamps) this.siteLamps.forEach(l => l.intensity=this.night ? 3 : 0);
   }
 
   /* ---------------- per-frame animation ---------------- */
@@ -734,6 +857,8 @@ export class FieldScene {
     if (!this.settings || !sample) return;
     const p = this.settings, air = this.mode === 'air', bench = this.view === 'bench';
     const anim = running ? dt : 0; this.time += anim; const t = this.time;
+    advanceCamera(this,dt);
+    this.advanceDoor(dt);
     const wind = sample.wind, rain = this.rainAmt, haze = this.haze;
 
     // rotating machinery: the rotor follows the wind with a little inertia, so it speeds up and slows down smoothly
@@ -763,7 +888,7 @@ export class FieldScene {
     this.sockPivot.rotation.z = -(1 - infl)*1.35 + Math.sin(t*(5 + wind))*.05*(.3 + infl);
 
     // clouds drift with the wind
-    this.clouds.children.forEach(c => { c.position.x += anim*(.2 + wind*.12); if (c.position.x > 32) c.position.x -= 64; });
+    this.clouds.children.forEach(c => { c.position.x += anim*(.2 + wind*.12); if (c.position.x > 115) c.position.x -= 230; });
 
     // rain streaks and puddles (rain intensity setting)
     const rainN = Math.round(rain*700);
@@ -792,6 +917,7 @@ export class FieldScene {
     const fl = this.flashT > 0 ? Math.min(1, this.flashT/.25) : 0;
     this.flashLight.intensity = fl*90; this.bolt.visible = fl > .05 && !bench;
     this.applySky(fl);
+    updateCity(this,anim);
 
     // heat haze (ambient temperature): shimmering bands and rising particles
     this.hazeMat.opacity = haze*.07;
@@ -800,7 +926,7 @@ export class FieldScene {
     if (heatN > 0) { const a = this.heatGeo.attributes.position.array; for (let i = 0; i < heatN; i++) { const s = this.heatSeed[i], k = (s[0] + t*.08) % 1; a[i*3] = (s[1] - .5)*26 + Math.sin(t*.9 + i)*.5; a[i*3+1] = .3 + k*6; a[i*3+2] = (s[2] - .5)*18; } this.heatGeo.attributes.position.needsUpdate = true; }
 
     // wind streaks across the scene
-    const flowOn = this.flows && wind > 0 && !bench; this.flow.visible = flowOn;
+    const flowOn = this.flows && wind > 0 && !bench && !this.ventilationVFX; this.flow.visible = flowOn;
     if (flowOn) {
       const a = this.flowGeo.attributes.position.array, base = air ? 1.2 : .9;
       for (let i = 0; i < this.flowN; i++) { const s = this.flowSeed[i], u = (s[0] + t*Math.min(wind, 25)*.03) % 1; a[i*3] = -18 + u*36; a[i*3+1] = base + s[1]*(air ? 3.6 : 2.2); a[i*3+2] = (s[2] - .5)*(air ? 14 : 10); }
@@ -813,6 +939,7 @@ export class FieldScene {
       this.poseBoats(t); this.placeUnits();
     }
     // exhaust: room air is drawn up through each fan, out through the roof opening and away above the roof
+    if(!this.ventilationVFX){
     const sa = this.stackGeo.attributes.position.array, fF = clamp(sample.airflow/700, .2, 1), yb = FLOOR_TOP + 1.5, yt = ROOF_TOP + 1.5, kf = (ROOF_TOP - .4 - yb)/(yt - yb);
     for (let i = 0; i < MAX_UNITS*this.stackN; i++) {
       const ui = Math.floor(i/this.stackN), s = this.stackSeed[i];
@@ -821,9 +948,9 @@ export class FieldScene {
       sa[i*3] = q.x + AX + Math.cos(ang)*rad; sa[i*3+1] = yb + k*(yt - yb); sa[i*3+2] = q.z + Math.sin(ang)*rad;
     }
     this.stackGeo.attributes.position.needsUpdate = true;
-    this.stackPts.visible = air && sample.airflow > 0 && this.flows && !bench;
+    this.stackPts.visible = air && sample.airflow > 0 && this.flows && !bench && !this.ventilationVFX;
     const ach = clamp((p.backgroundACH - .2)/1.8, 0, 1), ventN = air ? Math.max(4, Math.round(p.backgroundACH/2*this.ventN)) : 0;
-    this.vent.visible = ventN > 0 && this.flows && !bench; this.ventGeo.setDrawRange(0, ventN);
+    this.vent.visible = ventN > 0 && this.flows && !bench && !this.ventilationVFX; this.ventGeo.setDrawRange(0, ventN);
     if (ventN > 0) {
       const va = this.ventGeo.attributes.position.array;
       for (let i = 0; i < this.ventN; i++) {
@@ -831,6 +958,7 @@ export class FieldScene {
         va[i*3] = pn.x + side*(1.2 - k*2.4); va[i*3+1] = pn.y + (s[1] - .5)*1.1; va[i*3+2] = pn.zc + (s[2] - .5)*pn.width*.7;
       }
       this.ventGeo.attributes.position.needsUpdate = true;
+    }
     }
 
     // pond: paddle splash and aeration bubbles, ripples, rain rings, fish
@@ -861,12 +989,10 @@ export class FieldScene {
       const yT = gasp ? WATER_Y - .12 : .68; o.position.y += (yT - o.position.y)*Math.min(1, dt*2);
       o.rotation.y = Math.sin(t*.25 + ph) > 0 ? Math.PI : 0;
     });
-    // water surface waves: calm in clear weather, rough in rain and storms
-    if (this.water && !bench) {
-      const a = this.water.geometry.attributes.position.array, amp = .018 + .05*rain + wind*.0025 + (this.storm ? .09 : 0);
-      for (let i = 0; i < a.length; i += 3) a[i+2] = Math.sin(a[i]*2.2 + t*1.6)*Math.cos(a[i+1]*2.8 + t)*amp;
-      this.water.geometry.attributes.position.needsUpdate = true; this.water.geometry.computeVertexNormals();
-    }
+    // Vertex displacement and analytic normals run on the GPU in the same render loop.
+    updateWater(this.mats.water,t,rain,wind,this.storm);
+    if(this.ventilationVFX){this.ventilationVFX.update(anim,sample);this.camera.updateMatrixWorld();updateVentilationLabels(this);}
+    this.host.dataset.assets = assetStatus.failed.size ? 'fallback' : assetStatus.loaded.size ? 'ready' : 'loading';
 
     if (this.host.dataset.graphics !== 'lost') this.renderer.render(this.scene, this.camera);
   }

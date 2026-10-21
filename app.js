@@ -1,4 +1,5 @@
 import {FieldScene} from './scene.js';
+import {installHybrid} from './src/advanced/hybrid-ui.js';
 const M = window.WindModel, $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 /* ---------- environments (harsh cases included) ---------- */
@@ -40,7 +41,7 @@ function slider(mode, key, p) {
 }
 function stepper(key, p) {
   const [label] = steppers[key];
-  return '<div class="stepper"><span class="stepper-label">' + label + '</span><div class="stepper-ctl"><button type="button" data-dec="' + key + '" aria-label="Fewer">−</button><output data-step-out="' + key + '">' + p[key] + '</output><button type="button" data-inc="' + key + '" aria-label="More">+</button></div></div>';
+  return '<div class="stepper"><span class="stepper-label">' + label + '</span><div class="stepper-ctl"><button type="button" data-dec="' + key + '" aria-label="Fewer ' + label.toLowerCase() + '">−</button><output data-step-out="' + key + '">' + p[key] + '</output><button type="button" data-inc="' + key + '" aria-label="More ' + label.toLowerCase() + '">+</button></div></div>';
 }
 function dropdown(mode, key) {
   const list = hwLists(mode)[key];
@@ -73,16 +74,27 @@ function create(mode) {
   '</aside>' +
   '<div class="scene-area"><div class="viewport"><div class="loading">ASSEMBLING…</div>' +
    '<div class="vp-left"><select data-scenario-select aria-label="Environment">' + scenarios[mode].map(v => '<option value="' + v.id + '">' + v.glyph + '  ' + v.name + '</option>').join('') + '</select></div>' +
-   '<div class="vp-tools"><button data-tool="pause" aria-pressed="false" aria-label="Pause">Pause</button><button data-tool="flows" aria-pressed="true">Flow</button><button data-tool="view" aria-pressed="false">Close-up</button><button data-tool="fit" aria-pressed="false" title="Fit the simulation to the whole screen (Esc to exit)">⛶ Fit to screen</button></div>' +
-   '<div class="readouts"><div class="readout" data-status-box><span class="readout-label">STATUS</span><strong data-status>—</strong></div></div>' +
+   '<div class="vp-tools"><button data-tool="pause" aria-pressed="' + !s.running + '" aria-label="' + (s.running ? 'Pause' : 'Play') + '">' + (s.running ? 'Pause' : 'Play') + '</button><button data-tool="flows" aria-pressed="true">Flow</button>' + (air ? '<button data-tool="flow-view" aria-pressed="false" title="Inspect intake and exhaust paths inside the building">Air paths</button>' : '') + '<button data-tool="view" aria-pressed="false">Close-up</button><button data-tool="fit" aria-pressed="false" title="Fit the simulation to the whole screen (Esc to exit)">⛶ Fit to screen</button></div>' +
+   (air ? '<div class="scene-heading"><span>BUILDING VENTILATION</span><strong>Wind in. Fresh air out.</strong></div>' +
+   '<div class="scene-annotations" aria-label="Inspect the ventilation system">' +
+   '<button class="scene-callout rotor-callout" data-scene-anchor="rotor" data-inspect="rotor" title="Inspect the spiral rotor and mechanical drive"><i>01</i> Wind capture</button>' +
+   '<button class="scene-callout intake-callout" data-scene-anchor="intake" data-inspect="intake" title="Inspect fresh air entering the room"><i>02</i> Fresh-air intake</button>' +
+   '<button class="scene-callout exhaust-callout" data-scene-anchor="exhaust" data-inspect="exhaust" title="Inspect warm air leaving through the fan"><i>03</i> Exhaust</button></div>' +
+   '<div class="flow-key" aria-label="Airflow visualization legend"><span><i class="intake-dot"></i>Incoming air</span><span><i class="exhaust-dot"></i>Exhaust air</span><span><i class="drive-dot"></i>Mechanical transfer</span><small>Illustrative paths · driven by live model values</small></div>' : '') +
+   '<div class="scene-caption"><span>WIND → ROTOR → TRANSMISSION → ' + (air ? 'VENTILATION' : 'AERATION') + '</span><span>Drag to orbit · Scroll to zoom</span></div>' +
    '<div class="vp-navigation">' +
-   '<div class="vp-camera">' + (air ? '<button data-tool="door" aria-pressed="false">Open door</button>' : '') + '<button data-tool="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button data-tool="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button data-tool="home" aria-label="Reset camera">Reset view</button></div></div>' +
+   '<div class="vp-camera">' + (air ? '<button data-tool="door" aria-pressed="false">Open door</button>' : '') + '<button data-tool="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button data-tool="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button data-tool="city">City view</button><button data-tool="home" aria-label="Reset camera">Reset view</button></div></div>' +
   '</div></div></div></section>';
   bind(s); recompute(s); return s;
 }
 
 function bind(s) {
   const root = s.root;
+  $('.viewport',root).addEventListener('door-change',e=>{
+    if(s.ventilationMode==='advanced')return;
+    s.doorOpen=e.detail.open;const b=$('[data-tool="door"]',root);
+    if(b){b.setAttribute('aria-pressed',s.doorOpen);b.textContent=s.doorOpen?'Close door':'Open door';}
+  });
   $$('[data-scenario]', root).forEach(b => b.addEventListener('click', () => selectScenario(s, b.dataset.scenario)));
   $('[data-scenario-select]', root).addEventListener('change', e => selectScenario(s, e.target.value));
   $$('[data-param]', root).forEach(el => el.addEventListener('input', () => { s.p[el.dataset.param] = Number(el.value); recompute(s); }));
@@ -94,15 +106,28 @@ function bind(s) {
   $('[data-reset]', root).addEventListener('click', () => selectScenario(s, s.scenario.id));
   $$('[data-tool]', root).forEach(b => b.addEventListener('click', () => {
     const k = b.dataset.tool;
-    if (k === 'pause') { s.running = !s.running; b.setAttribute('aria-pressed', !s.running); b.textContent = s.running ? 'Pause' : 'Play'; }
-    if (k === 'flows') { s.flows = !s.flows; s.scene?.setFlows(s.flows); b.setAttribute('aria-pressed', s.flows); }
-    if (k === 'view') { s.view = s.view === 'field' ? 'bench' : 'field'; s.scene?.setView(s.view); b.setAttribute('aria-pressed', s.view === 'bench'); const door = $('[data-tool="door"]', root); if (door) door.disabled = s.view === 'bench'; }
+    if (k === 'pause') { s.running = !s.running; b.setAttribute('aria-pressed', !s.running); b.textContent = s.running ? 'Pause' : 'Play'; b.setAttribute('aria-label',s.running ? 'Pause' : 'Play'); }
+    if (k === 'flows') { s.flows = !s.flows; s.scene?.setFlows(s.flows); b.setAttribute('aria-pressed', s.flows);$('.viewport',root).dataset.flows=s.flows?'on':'off'; }
+    if (k === 'view') setSceneView(s,s.view==='bench'?'field':'bench');
+    if (k === 'flow-view') setSceneView(s,s.view==='flow'?'field':'flow');
     if (k === 'door') { s.doorOpen = !s.doorOpen; s.scene?.setDoorOpen(s.doorOpen); b.setAttribute('aria-pressed', s.doorOpen); b.textContent = s.doorOpen ? 'Close door' : 'Open door'; }
     if (k === 'zoom-out') s.scene?.zoomBy(1.2);
     if (k === 'zoom-in') s.scene?.zoomBy(1/1.2);
-    if (k === 'home') s.scene?.setView(s.view);
+    if (k === 'home') setSceneView(s,'field');
+    if (k === 'city') setSceneView(s,'city');
     if (k === 'fit') toggleFit(s);
   }));
+  $$('[data-inspect]',root).forEach(b=>b.addEventListener('click',()=>{
+    setSceneView(s,b.dataset.inspect==='rotor'?'bench':'flow');s.scene?.inspectPart(b.dataset.inspect);
+  }));
+}
+
+function setSceneView(s,view) {
+  s.view=view;s.scene?.setView(view);
+  $('[data-tool="view"]',s.root).setAttribute('aria-pressed',view==='bench');
+  $('[data-tool="flow-view"]',s.root)?.setAttribute('aria-pressed',view==='flow');
+  const door=$('[data-tool="door"]',s.root);if(door)door.disabled=view==='bench';
+  const host=$('.viewport',s.root);host.dataset.sceneView=view;
 }
 
 /* ---------- fit the simulation window to the whole screen ---------- */
@@ -116,6 +141,7 @@ function setExpanded(s, on) { const vp = $('.viewport', s.root); vp.classList.to
 function afterFit(s) {
   const vp = $('.viewport', s.root), on = document.fullscreenElement === vp || vp.classList.contains('expanded');
   const b = $('[data-tool="fit"]', s.root); b.setAttribute('aria-pressed', on); b.textContent = on ? '✕ Exit full screen' : '⛶ Fit to screen';
+  const advanced=$('[data-hy-action="fit"]',s.root);if(advanced){advanced.setAttribute('aria-pressed',on);advanced.textContent=on?'✕ Exit full screen':'⛶ Full screen';}
   requestAnimationFrame(() => s.scene?.resize()); setTimeout(() => s.scene?.resize(), 150);
 }
 document.addEventListener('fullscreenchange', () => { for (const k in states) afterFit(states[k]); });
@@ -139,6 +165,7 @@ function recompute(s) {
   $$('[data-toggle]', s.root).forEach(el => el.checked = s.p[el.dataset.toggle]);
   $$('[data-hw]', s.root).forEach(el => el.value = s.p[el.dataset.hw]);
   s.scene?.setEnvironment(s.scenario, s.p); s.scene?.setHardware(s.hw, s.p);
+  if(s.ventilationMode==='advanced')s.hybrid?.applyEnvironment();
   renderHW(s); refresh(s);
 }
 
@@ -155,21 +182,8 @@ function renderHW(s) {
     (rows || '<div class="hw-note">Pick sensors and a microcontroller above to test their performance in each weather case.</div>');
 }
 
-/* ---------- plain-language status line in the scene ---------- */
-function statusText(s, v) {
-  const hw = s.hw, p = s.p;
-  if (p.brake) return ['BRAKE ON', 'alert'];
-  if (v.wind >= p.stormCutout) return ['RUNNING · HIGH WIND', 'alert'];
-  if (hw.damper) return ['RAIN DAMPER ON', 'alert'];
-  if (hw.alerts && (s.mode === 'air' ? v.co2 > p.co2Target : v.do < p.doTarget)) return [s.mode === 'air' ? 'FRESH AIR NEEDED' : 'OXYGEN LOW', 'alert'];
-  if (v.shaft <= 0) return ['WAITING FOR WIND', ''];
-  return ['RUNNING', ''];
-}
 function refresh(s) {
-  const v = s.current = M.steady(s.p, M.liveWind(s.p, s.t), s.hw);
-  const [txt, cls] = statusText(s, v), box = $('[data-status-box]', s.root);
-  $('[data-status]', s.root).textContent = txt;
-  box.classList.toggle('alert', cls === 'alert'); box.classList.toggle('bad', cls === 'bad');
+  s.current = M.steady(s.p, M.liveWind(s.p, s.t), s.hw);
 }
 
 function ensureScene(s) {
@@ -193,6 +207,7 @@ function switchMode(mode) {
 }
 
 for (const mode of ['air', 'water']) create(mode);
+installHybrid(states.air,{recompute,toggleFit,setSceneView});
 $$('[data-mode]').forEach(b => { b.addEventListener('click', () => switchMode(b.dataset.mode)); b.addEventListener('keydown', e => { if (['ArrowLeft', 'ArrowRight'].includes(e.key)) { e.preventDefault(); const mode = active === 'air' ? 'water' : 'air'; switchMode(mode); $('#' + mode + '-tab').focus(); } }); });
 const dlg = $('#reference-dialog'); $('#reference-open').addEventListener('click', () => dlg.showModal());
 $('.dialog-close', dlg).addEventListener('click', () => dlg.close());
@@ -203,9 +218,10 @@ switchMode('air');
 function frame(now) {
   const dt = Math.min(.1, (now - lastFrame)/1000 || 0); lastFrame = now; const s = states[active], running = s.running && !document.hidden && !dlg.open;
   if (running) s.t += dt;
-  uiElapsed += dt; if (uiElapsed > .1) { refresh(s); uiElapsed = 0; }
+  if(s.ventilationMode==='advanced')s.hybrid.tick(dt,running);
+  uiElapsed += dt; if (uiElapsed > .1) { refresh(s);if(s.ventilationMode==='advanced')s.hybrid.render(); uiElapsed = 0; }
   s.current = M.steady(s.p, M.liveWind(s.p, s.t), s.hw);
-  if (!document.hidden) s.scene?.render(dt, s.current, running);
+  if (!document.hidden) s.scene?.render(dt*(s.ventilationMode==='advanced'?s.hybrid.p.speed:1), s.current, running);
   requestAnimationFrame(frame);
 }
 requestAnimationFrame(frame);

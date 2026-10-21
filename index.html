@@ -5,17 +5,21 @@
 <title>ZeroWatt Wind — Field Simulation</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="jarvis.css">
+<link rel="stylesheet" href="upgrade.css">
+<link rel="stylesheet" href="hybrid.css">
+<link rel="stylesheet" href="car-showcase.css">
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="#" aria-label="ZeroWatt Wind home"><img src="assets/zerowatt-logo.jpg" alt="ZeroWatt Wind logo" width="76" height="92"><span>ZeroWatt<span> Wind</span><small>Harvest the wind. Deliver the motion.</small></span></a>
-  <div class="top-links"><button class="quiet" id="reference-open">Prototype ↗</button></div>
+  <div class="top-links"><button class="quiet" id="cars-open" aria-haspopup="dialog">Cars</button> <button class="quiet" id="reference-open">Prototype ↗</button></div>
 </header>
 <main>
+  <div class="lab-heading"><div><p>WIND FIRST. REAL POSSIBILITY.</p><h1>Let the wind do the work.</h1></div><span>Interactive engineering lab <i aria-hidden="true"></i></span></div>
   <section class="console">
     <div class="application-menu" role="tablist" aria-label="Select application">
-      <button id="air-tab" class="application active" role="tab" aria-selected="true" data-mode="air"><span class="app-icon">↗</span><span class="app-text"><small>APPLICATION 01</small><strong>Building ventilation</strong><em>Wind-driven fans clear stale air from a room</em></span></button>
-      <button id="water-tab" class="application" role="tab" aria-selected="false" tabindex="-1" data-mode="water"><span class="app-icon">≈</span><span class="app-text"><small>APPLICATION 02</small><strong>Pond aeration</strong><em>Wind-driven paddle wheel adds oxygen to water</em></span></button>
+      <button id="air-tab" class="application active" role="tab" aria-controls="air-face" aria-selected="true" data-mode="air"><span class="app-icon">↗</span><span class="app-text"><small>APPLICATION 01</small><strong>Building ventilation</strong><em>Wind-driven fans clear stale air from a room</em></span></button>
+      <button id="water-tab" class="application" role="tab" aria-controls="water-face" aria-selected="false" tabindex="-1" data-mode="water"><span class="app-icon">≈</span><span class="app-text"><small>APPLICATION 02</small><strong>Pond aeration</strong><em>Wind-driven paddle wheel adds oxygen to water</em></span></button>
     </div>
     <div id="faces">
       <article id="air-face" class="app-face" role="tabpanel" aria-labelledby="air-tab"></article>
@@ -34,5 +38,6 @@
 <script src="offline-voice.js"></script>
 <script src="breath-input.js"></script>
 <script src="jarvis.js"></script>
+<script src="car-showcase.bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,146 @@
+
+> zerowatt-wind@8.0.0 assets:build
+> node tools/run-blender.cjs scripts/blender/build_assets.py
+
+G:\new_8\zerowatt-wind-v8\scripts\blender\build_assets.py:29: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+BlenderMCP addon registered
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:39:23 | INFO: Starting glTF 2.0 export
+22:39:23 | INFO: Extracting primitive: Cone.003
+22:39:23 | INFO: Primitives created: 1
+22:39:23 | INFO: Extracting primitive: Cylinder
+22:39:23 | INFO: Primitives created: 1
+22:39:23 | INFO: Extracting primitive: Hydroformed spiral blade
+22:39:23 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.15245342254638672 s
+
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Cone.018
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cone.017
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.020119190216064453 s
+
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Cone.026
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cone.025
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.021628618240356445 s
+
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Torus.001
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cone.033
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Formed concave paddle
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.02830028533935547 s
+
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Cube.001
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cylinder.038
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cube.002
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.018683433532714844 s
+
+Warning: No mesh data to join
+Warning: No mesh data to join
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Torus.005
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cone.056
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Finished glTF 2.0 export in 0.016366004943847656 s
+
+Warning: No mesh data to join
+Warning: No mesh data to join
+Warning: No mesh data to join
+22:39:24 | INFO: Starting glTF 2.0 export
+22:39:24 | INFO: Extracting primitive: Cube.006
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cube.015
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cube.013
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cube.005
+22:39:24 | INFO: Primitives created: 1
+22:39:24 | INFO: Extracting primitive: Cube.010
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Finished glTF 2.0 export in 0.026080846786499023 s
+
+Warning: No mesh data to join
+Warning: No mesh data to join
+22:39:25 | INFO: Starting glTF 2.0 export
+22:39:25 | INFO: Extracting primitive: Cube.019
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Extracting primitive: Cube.018
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Extracting primitive: Cube.020
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Extracting primitive: Cube.027
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Finished glTF 2.0 export in 0.022870779037475586 s
+
+22:39:25 | INFO: Starting glTF 2.0 export
+22:39:25 | INFO: Extracting primitive: Cylinder.040
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Extracting primitive: Willow leaf sprays
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Extracting primitive: Willow leaf sprays.001
+22:39:25 | INFO: Primitives created: 1
+22:39:25 | INFO: Finished glTF 2.0 export in 0.03884553909301758 s
+
+22:39:26 | INFO: Starting glTF 2.0 export
+22:39:26 | INFO: Extracting primitive: Cone.057
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Icosphere
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Tapered reed leaf
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cylinder.050
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Finished glTF 2.0 export in 0.022465229034423828 s
+
+22:39:26 | INFO: Starting glTF 2.0 export
+22:39:26 | INFO: Extracting primitive: Cone.062
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cube.032
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cylinder.070
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Finished glTF 2.0 export in 0.016595125198364258 s
+
+Warning: No mesh data to join
+22:39:26 | INFO: Starting glTF 2.0 export
+22:39:26 | INFO: Extracting primitive: Cone.071
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cube.034
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cube.035
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Cube.033
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Finished glTF 2.0 export in 0.03254199028015137 s
+
+Warning: No mesh data to join
+22:39:26 | INFO: Starting glTF 2.0 export
+22:39:26 | INFO: Extracting primitive: Torus.006
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Extracting primitive: Rolled ventilator casing
+22:39:26 | INFO: Primitives created: 1
+22:39:26 | INFO: Finished glTF 2.0 export in 0.0200498104095459 s
+00:07.359  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:07.359  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:07.390  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\rafiu\.thumbnails\large\blender_17400_8a29814ecb09b71dcf42e7b1d4ac86b6.png.png"
+
+Info: Saved as "zerowatt-library.blend"
+ZEROWATT_ASSETS_READY {"rotor": {"axis": "x", "origin": [0, 0, 0], "meshes": 3, "triangles": 13972, "bytes": 342904}, "bevel": {"axis": "x", "origin": [0, 0, 0], "meshes": 2, "triangles": 4672, "bytes": 121736}, "fan": {"axis": "y", "origin": [0, 0, 0], "meshes": 2, "triangles": 6640, "bytes": 161872}, "paddle": {"axis": "z", "origin": [0, 0, 0], "meshes": 3, "triangles": 9684, "bytes": 266688}, "bearing-frame": {"axis": null, "origin": [0, 0, 0], "meshes": 3, "triangles": 1160, "bytes": 55124}, "bearing": {"axis": null, "origin": [0, 0, 0], "meshes": 2, "triangles": 956, "bytes": 27376}, "workspace": {"axis": null, "origin": [0, 0, 0], "meshes": 5, "triangles": 1404, "bytes": 102068}, "service-wall": {"axis": null, "origin": [0, 0, 0], "meshes": 4, "triangles": 1512, "bytes": 110156}, "tree": {"axis": null, "origin": [0, 0, 0], "meshes": 3, "triangles": 17576, "bytes": 379084}, "shore": {"axis": null, "origin": [0, 0, 0], "meshes": 4, "triangles": 2080, "bytes": 128980}, "chair": {"axis": null, "origin": [0, 0, 0], "meshes": 3, "triangles": 1188, "bytes": 43840}, "controller": {"axis": null, "origin": [0, 0, 0], "meshes": 4, "triangles": 2280, "bytes": 87608}, "fan-shroud": {"axis": null, "origin": [0, 0, 0], "meshes": 2, "triangles": 4816, "bytes": 117180}}
+BlenderMCP addon unregistered
+
+Blender quit

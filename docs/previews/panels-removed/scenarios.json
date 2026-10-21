@@ -1,0 +1,100 @@
+[
+  [
+    "basic",
+    "Basic ventilation",
+    [
+      [
+        "breeze",
+        "Rooftop breeze",
+        "4.5 m/s · clear daylight"
+      ],
+      [
+        "canyon",
+        "Urban canyon",
+        "Sheltered building setting"
+      ],
+      [
+        "heat",
+        "Heatwave",
+        "Hot, hazy conditions"
+      ],
+      [
+        "rain",
+        "Monsoon",
+        "Rain and stronger wind"
+      ],
+      [
+        "storm",
+        "Cyclone",
+        "Storm wind and heavy rain"
+      ]
+    ]
+  ],
+  [
+    "advanced",
+    "Advanced hybrid",
+    [
+      [
+        "wind",
+        "Adequate wind",
+        "Wind drive · motor off"
+      ],
+      [
+        "hybrid",
+        "Weak wind",
+        "Wind with motor assistance"
+      ],
+      [
+        "electric",
+        "No wind",
+        "Solar / battery ventilation"
+      ],
+      [
+        "protected",
+        "Low battery",
+        "Motor protection · wind still available"
+      ],
+      [
+        "night",
+        "Night operation",
+        "No wind · battery-supported ventilation"
+      ],
+      [
+        "fault",
+        "Protection fault",
+        "Motor inhibited · wind drive available"
+      ]
+    ]
+  ],
+  [
+    "pond",
+    "Pond aeration",
+    [
+      [
+        "breeze",
+        "Park breeze",
+        "Clear daylight"
+      ],
+      [
+        "lull",
+        "Sheltered lull",
+        "Gentle, intermittent wind"
+      ],
+      [
+        "night",
+        "Hot night",
+        "Night lighting"
+      ],
+      [
+        "rain",
+        "Monsoon",
+        "Rain over the pond"
+      ],
+      [
+        "storm",
+        "Storm surge",
+        "Storm wind and rain"
+      ]
+    ]
+  ]
+]

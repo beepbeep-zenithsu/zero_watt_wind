@@ -4,10 +4,17 @@
   "version": "8.0.0",
   "scripts": {
     "start": "node serve.js",
-    "build": "esbuild app.js --bundle --minify --format=iife --outfile=app.bundle.js",
+    "build": "esbuild app.js --bundle --minify --format=iife --outfile=app.bundle.js && esbuild car-showcase.js --bundle --minify --format=iife --outfile=car-showcase.bundle.js",
     "get-models": "node get-models.js",
     "test": "node --test tests/*.test.cjs",
-    "get-voice-model": "node get-voice-model.js"
+    "get-voice-model": "node get-voice-model.js",
+    "preview": "node serve.js",
+    "assets:build": "node tools/run-blender.cjs scripts/blender/build_assets.py",
+    "assets:hybrid": "node tools/run-blender.cjs scripts/blender/build_hybrid.py",
+    "assets:environment": "node tools/build-environment.cjs",
+    "verify:graphics": "node tools/verify-graphics.cjs",
+    "assets:cars": "powershell -ExecutionPolicy Bypass -File tools/prepare-cars.ps1",
+    "assets:review": "node tools/run-blender.cjs scripts/blender/render_review.py"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
