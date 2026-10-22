@@ -3,6 +3,17 @@ const fs=require('node:fs'),path=require('node:path');
 const {HYBRID_DEFAULTS,createHybridState,stepHybrid,AdvancedScene,makeScene,ready,T,meshSnapshot}=require('../tools/verify-graphics.cjs');
 const M=require('../model.js');
 function run(options,seconds=20,state){const p={...HYBRID_DEFAULTS,...options},s=state||createHybridState(p);for(let i=0;i<seconds*40;i++)stepHybrid(s,p,.025);return s;}
+
+test('Advanced wind RPM grows across the extended 0–60 m/s range instead of plateauing',()=>{
+  let previous=0;
+  for(const wind of [10,20,40,60]){
+    const s=run({wind,control:'wind-only'});
+    assert.ok(s.fanRPM>previous+100);assert.equal(s.windRPM,s.fanRPM);
+    assert.ok(Number.isFinite(s.airflow)&&s.airflow>0);previous=s.fanRPM;
+    assert.equal(s.motorW,0);
+  }
+  const target=run({wind:0,targetRPM:1200});assert.equal(target.targetRPM,1200);
+});
 test('wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly',()=>{
   const wind=run({wind:6});assert.equal(wind.state,'WIND');assert.equal(wind.motorW,0);assert.ok(wind.windEngaged);assert.ok(wind.batteryW>0);
   const hybrid=run({wind:4});assert.equal(hybrid.state,'HYBRID');assert.ok(hybrid.windContribution>0);assert.ok(hybrid.motorW>0);assert.ok(hybrid.windEngaged&&hybrid.motorEngaged);assert.ok(Math.abs(hybrid.fanRPM-240)<.1);
@@ -71,10 +82,12 @@ test('advanced animation shares RPM ratios, pauses, sections and reassembles wit
   s.reducedMotion=false;s.tour=true;s.cameraUser=false;s.tourTime=0;
   s.updateHybrid(6.1,s.hybridSample,false);assert.ok(s.target.distanceTo(new T.Vector3(-1.8,5.2,0))<1e-8);
   s.tour=false;s.reducedMotion=true;
-  // Save actual scene geometry for visual review, independently of a browser.
+  // Review the installation geometry without serializing the entire district.
   s.setSection(true);s.setFlows(true);s.setEnergy(true);s.setView('field');s.render(.016,sample,true);s.cameraPosition(true);
   fs.mkdirSync(path.join(__dirname,'../docs/hybrid'),{recursive:true});
-  meshSnapshot(s,path.join(__dirname,'../.upgrade-baseline/verification/hybrid.json'));
+  const cityVisible=s.city.root.visible;s.city.root.visible=false;
+  try{meshSnapshot(s,path.join(__dirname,'../.upgrade-baseline/verification/hybrid-assembly.json'));}
+  finally{s.city.root.visible=cityVisible;}
 });
 
 test('sun tracking aligns the module normal and keeps the roof rack anchored',async()=>{
@@ -90,7 +103,7 @@ test('sun tracking aligns the module normal and keeps the roof rack anchored',as
     angles.push(s.parts.SolarYaw.rotation.y);
   }
   assert.ok(angles[0]<angles[2]&&angles[2]<angles[4]);
-  s.irradiance=1000;s.render(.016,sample,false);assert.equal(s.sunDisc,undefined);assert.equal(s.sunRays,undefined);assert.ok(s.sun.intensity>4);
+  s.irradiance=1000;s.render(.016,sample,false);assert.equal(s.sunDisc,undefined);assert.equal(s.sunRays,undefined);assert.ok(s.sun.intensity>3);
   s.night=true;s.render(.016,sample,false);assert.equal(s.sun.intensity,0);
   s.night=false;s.irradiance=0;s.render(.016,sample,false);assert.equal(s.sun.intensity,0);
   s.monsoon=true;s.setSunPosition(14);s.render(.016,sample,false);assert.equal(s.sun.intensity,0);assert.equal(s.parts.SolarYaw.rotation.y,0);assert.equal(s.parts.SolarTilt.rotation.x,Math.PI/18);

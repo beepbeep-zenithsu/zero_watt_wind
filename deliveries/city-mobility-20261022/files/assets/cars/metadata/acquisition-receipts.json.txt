@@ -1,0 +1,50 @@
+[
+  {
+    "id": "jaguar-e-type",
+    "model": "Jaguar E_TYPE",
+    "author": "Nommoc",
+    "creatorUrl": "https://sketchfab.com/3d-models/32aa25ea6e1b40f395b2aff33ca0a279",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "provider": "Allen Institute Objaverse",
+    "providerUrl": "https://huggingface.co/datasets/allenai/objaverse",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-144/32aa25ea6e1b40f395b2aff33ca0a279.glb",
+    "authenticated": false,
+    "downloadedDate": "2026-10-22",
+    "file": "jaguar-e-type-nommoc.glb",
+    "bytes": 7560280,
+    "sha256": "9ababf1542c24a0676cc9dfda6fd822516492088c4af41d840677fc3b95dbf3b"
+  },
+  {
+    "id": "porsche-taycan",
+    "model": "2020 Porsche Taycan",
+    "author": "martin002",
+    "creatorUrl": "https://sketchfab.com/3d-models/875072396ef541e3b106152e6dea6978",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "provider": "Allen Institute Objaverse",
+    "providerUrl": "https://huggingface.co/datasets/allenai/objaverse",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-014/875072396ef541e3b106152e6dea6978.glb",
+    "authenticated": false,
+    "downloadedDate": "2026-10-22",
+    "file": "porsche-taycan-martin.glb",
+    "bytes": 12153756,
+    "sha256": "b93347425d0c30c55647742dc77d0a4e9bec7ec8c423a8214a655928a213d0c6"
+  },
+  {
+    "id": "de-tomaso-p72",
+    "model": "Low Poly Car - De Tomaso P72 2020",
+    "author": "ROH3D",
+    "creatorUrl": "https://sketchfab.com/3d-models/ab85c302e652492196b600ee1eb7106a",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "provider": "Allen Institute Objaverse",
+    "providerUrl": "https://huggingface.co/datasets/allenai/objaverse",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-122/ab85c302e652492196b600ee1eb7106a.glb",
+    "authenticated": false,
+    "downloadedDate": "2026-10-22",
+    "file": "de-tomaso-p72.glb",
+    "bytes": 3326156,
+    "sha256": "cc55ceab81ed64ee03f05becc35e9357b4361c77a0277ca1c3ce7d5c226018f1"
+  }
+]

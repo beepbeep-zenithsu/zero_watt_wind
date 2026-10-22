@@ -1,50 +1,56 @@
-# Car integration progress
+# ZeroWatt Wind v8 — whole-city movement checkpoint
 
-Last updated: 2026-10-21 (Checkpoint 2)
+Updated: 2026-10-22 (Asia/Dhaka).
 
-## Completed
-- Task 0: Inspected project. Build is `esbuild` (app.js to app.bundle.js); Three.js is vendored; GLTFLoader has no Draco decoder, so GLBs must not use Draco.
-- Task 1: Car showcase viewer, catalog, `scripts/blender/prepare_car.py`, `tools/prepare-cars.ps1`.
-- Task 2: Runtime traffic fleet. `src/cars/traffic-fleet.js` loads and caches 3 LOD GLBs per car, builds a THREE.LOD per moving car (shared geometry/materials), and hides the original instanced car only when its premium model has loaded. `city.js` calls `attachTrafficFleet` and `placeFleetCar`. Road-following, speed, spawning and collision logic (`traffic.js`) is untouched.
+Current user scope: use the three installed cars throughout the city; stop additional car sourcing. The earlier five-car research below is archived context, not unfinished work for this request. Latest source, browser images and timings: docs/cars/CITY-MOBILITY.md and docs/cars/citywide-browser-review.json.
 
-## Traffic behaviour
-- 8 moving cars, car i uses model i % 8 (lane 0: E-Type, Roma, Battista, Elva; lane 1: Taycan, McLaren GT, P72, Evija).
-- LOD distances 0 / 38 / 95 m (hysteresis 0.12) in `src/cars/car-catalog.js`. LOD2 casts no shadow.
-- Missing LOD0 file: the original sedan/crossover stays. Missing LOD1/LOD2: nearest finer level reused.
-- Parked static sedans/crossovers beside the road are NOT traffic and are unchanged.
-- Known limitation: premium models have no wheel spin or steering (merged meshes).
+## Delivered in the working website
 
-## Files
-Delivered, REPLACE: `src/graphics/city.js`, `src/cars/car-catalog.js`, `CAR_INTEGRATION_PROGRESS.md`.
-Delivered, CREATE: `src/cars/traffic-fleet.js`, `tests/fleet.test.cjs`.
-Earlier deliveries: `index.html`, `package.json`, `car-showcase.js`, `car-showcase.css`, `scripts/blender/prepare_car.py`, `tools/prepare-cars.ps1`.
-Awaiting delivery: Blender LOD script, PowerShell LOD driver, `package.json` script.
-After copying files run `npm run build` (regenerates `app.bundle.js`).
+- All 36 moving traffic cars use actual Jaguar E-Type, Porsche Taycan and De Tomaso P72 meshes. Every one of the 12 routes carries all three types, covering every street segment between all nine blocks. Three validated LODs and one packed Blender source per type remain included.
+- Actual downloads required no accounts. Exact creator UIDs were matched to the Allen Institute's public Objaverse archive, and each creator's CC-BY 4.0 listing was verified. Source URLs, hashes, modification notices and website credits are included under assets/cars/.
+- Thirty-six cars, 24 cyclists and 80 pedestrians are distributed throughout the city. Pedestrians follow a connected graph of 64 pavement corners, choose destinations in other parts of town and use marked crossings at all 16 junctions. Protected walking phases and shared reservations keep conflicting vehicles stopped; pedestrians queue with spacing and pause briefly for gestures.
+- Retained 120 Hz integration, bounded jerk, eased steering/heading and weather/pause behavior. Dry-weather cruise is now 8.4 m/s for cars (30 km/h), 5 m/s for bicycles (18 km/h), and 1.75–2.11 m/s for walkers. FIFO junction requests prevent cyclist starvation; exit-space checks prevent cars blocking junctions. Render poses predict only the fractional step between simulation ticks to avoid repeated poses on high-refresh displays.
+- Added a Blender commuter bicycle with an actual seated rider, hands on the bars, named wheel/crank/pedal/leg parts and per-person colors. Wheels and pedals follow travelled distance; two-link leg motion keeps the feet on the pedals. Cyclists stop pedalling when stopped. The asset has 12,300 triangles and 32 shared material meshes, instanced across ten riders.
+- Moved the computer desk into the rear corner. Exactly one occupant is assigned to the computer when occupancy is nonzero, facing the screen. Waiting seats exclude the whole workstation/operator area. Up to 30 people fit in the smallest room without intersecting the desk or each other. Plants were moved clear of the workstation and seating.
+- Car rendering is instanced per type/part/active LOD, with independently spinning/steering wheels. Arc-length tables replace spline evaluation in the physics loop. Rider poses, matrices, colors and bounds are reused; hidden fallback car batches skip updates. Shared contact shadows ground animated populations without drawing every limb into the sun map. Night lamps remain instanced.
+- Added website/model credit links and preserved the original body meshes and UVs. Jaguar paint/normals were refined; the untextured white Taycan materials were restored using semantic PBR materials and its normals refined.
 
-## Required GLB output (per car id)
-`assets/cars/traffic/<id>-lod0.glb`, `-lod1.glb`, `-lod2.glb` (nose +Z, wheels on y=0, length in metres, no Draco).
+## Actual installed fleet
 
-## Asset sources
-No model has been selected or downloaded. No URL or licence is verified (authoring sandbox has no internet).
-
-| Car | Model URL | Licence | Status |
+| Model | Creator | Source license | LOD triangles |
 |---|---|---|---|
-| Jaguar E-Type | none | none | Pending |
-| Porsche Taycan | none | none | Pending |
-| Ferrari Roma | none | none | Pending |
-| McLaren GT | none | none | Pending |
-| Automobili Pininfarina Battista | none | none | Pending |
-| De Tomaso P72 | none | none | Pending |
-| McLaren Elva | none | none | Pending |
-| Lotus Evija | none | none | Pending |
+| Jaguar E_TYPE | Nommoc | CC-BY 4.0 | 58,196 / 15,516 / 3,877 |
+| 2020 Porsche Taycan | martin002 | CC-BY 4.0 | 58,196 / 15,515 / 3,871 |
+| Low Poly Car - De Tomaso P72 2020 | ROH3D | CC-BY 4.0 | 21,495 / 15,518 / 3,877 |
 
-## Testing status
-- Verified in sandbox: `tests/fleet.test.cjs` passes (2 tests: catalog shape, LOD resource sharing); `city.js` imports in Node.
-- NOT run: existing suite (needs `npm install`, esbuild missing in sandbox), browser rendering, FPS, draw calls, triangles, memory, Blender. All performance results UNVERIFIED.
-- Local test: `npm install`, `npm run build`, `npm test`, `npm start`, open browser console, check `console.warn` lines for missing models.
+Exact current export sizes, hashes and texture limits are in assets/cars/traffic/<id>.report.json and docs/cars/installed-asset-validation.json. Editable, packed .blend files are included alongside the GLBs. Manifest inputs point to these portable sources, so the installed cars rebuild from the delivery without downloading originals again.
 
-## Next task
-Task 3: `scripts/blender/make_traffic_lods.py` (headless: import prepared car, make LOD0/1/2 via decimation, texture caps 1024/512/256, export GLB) plus `tools/make-traffic-lods.ps1` and an `npm` script. Then Task 4: verify model sources and licences.
+The earlier Jaguar restoration scan was rejected in favor of Nommoc's complete authored car. The earlier Mikhail Hamanovich Taycan candidate was unavailable in the public archive; the installed Taycan is martin002's exact car. These artist/UID changes are explicit in the source records.
 
-## Resume in another Claude account
-Upload the project ZIP with these files applied plus this document, and say: "Resume from CAR_INTEGRATION_PROGRESS.md, do the Next task."
+## Archived sourcing research — outside the current request
+
+Ferrari Roma, McLaren GT, Pininfarina Battista, McLaren Elva and Lotus Evija remain uninstalled. Searches covered creator pages, Objaverse/Hugging Face, the university S3D3C collection, GitHub, RD Studio and several model marketplaces. No cleared account-free files were found for these five. Game-derived assets, no-license GTA repositories and sources prohibiting redistribution were not used.
+
+The user has explicitly chosen to use the three available types and stop searching. Earlier findings remain in assets/cars/SOURCES.md for provenance; missing model names are never applied to different meshes.
+
+## Verification
+
+- npm run build passed for both bundles.
+- npm test passed 76/76, including all 36 real replacements, every street segment, 12 car/bike routes, four minutes of protected pedestrian crossings, high-refresh continuity, shared buffers and active LOD counts, car spacing, signal restart, weather/pause behavior, rider articulation and 30-person workstation clearance.
+- Actual nine vehicle GLBs passed independent hash, geometry, world-bounds, grounding, decoder, texture-size and embedded-credit validation.
+- Blender 5.2.2 LTS was actually run headlessly for source inspection, disconnected wheel extraction, material refinement, LOD exports, the rider asset and final visual reviews. No Blender MCP was used.
+- The separate original technical-fixture LOD regression also passed through the real GLTFLoader. It is not presented as any of the requested cars and is excluded from the ZIP.
+- Blender review images show the actual installed car GLBs, the actual room layout at 30 occupants and the bicycle/rider. These are geometry/PBR reviews, not browser screenshots.
+- A real headless Edge/WebGL review checks basic, pond and advanced scenes, weather variants and actual website mode switches. Browser images, GPU and frame/draw measurements are recorded in docs/cars/citywide-browser-review.json. Timings apply to that machine and viewport. Offline geometry tests use placeholder image decoding; the browser renders actual textures.
+
+## Previous work preserved
+
+Advanced wind remains 0–60 m/s, target fan control 80–1200 RPM, with the live RPM display and uncapped cubic wind-power model. Sunlight, solar tracking, Monsoon wind-only operation, door opening/entering, pond dynamics, model.js calculations, detailed city/canyon/skyline and voice/hand/face systems remain intact. Regression tests cover the previous mode controls and engineering behavior.
+
+## Complete delivery and resume
+
+Complete updated text files and binary asset links: deliveries/citywide-traffic-20261022/DELIVERY.md. Full project: ZeroWatt-Premium-City.zip. Previous full ZIP: checkpoints/city-before-citywide-20261022.zip. The previous progress document is retained in the new delivery folder.
+
+Run npm run build, npm test and npm start; open http://127.0.0.1:5500/ . Vehicle sources/credits: assets/cars/SOURCES.md. Rebuild commands: docs/cars/TRAFFIC-PIPELINE.md. Cyclist regeneration: node tools/run-blender.cjs scripts/blender/build_city_cyclists.py .
+
+The current scope uses the three available types. No additional source hunt or account is needed. Preserve the city movement, source credits and corner workstation in subsequent changes.

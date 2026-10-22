@@ -1,0 +1,40 @@
+# Whole-city traffic and pedestrian movement
+
+The city contains **36 real cars, 24 cycling riders and 80 pedestrians** in basic ventilation, advanced ventilation and pond scenes. Only the installed Jaguar E-Type, Porsche Taycan and De Tomaso P72 are used. Each of the 12 vehicle circuits carries all three car types. Routes cover every street segment between all nine city blocks, including the four corner blocks. No additional car sourcing is part of this update.
+
+People travel through a connected network of 64 pavement corners, choose destinations in other parts of town, and cross at painted zebra crossings. All 16 junctions support crossings. The 40-second signal cycle includes a protected nine-second walking phase after vehicle clearance. An occupied crossing keeps conflicting vehicles stopped until people reach the pavement. Walkers queue with spacing, step down/up the curb and make brief conversational gestures. All populations pause with the simulation.
+
+Dry-weather cruise targets are 8.4 m/s for cars (30 km/h), 5 m/s for bicycles (18 km/h), and 1.75–2.11 m/s for walkers. Curves, queues, signals, rain and storms reduce speed. Signals cause deliberate stops. FIFO reservations prevent a continually arriving car stream from starving cyclists; vehicles also check exit space before entering a junction.
+
+The 120 Hz simulation uses cached arc-length route tables. Render poses predict only the fraction of a step remaining between simulation ticks, preserving smooth motion on high-refresh displays. Car parts are instanced by type/LOD with individual wheel spin and front-wheel steering. Geometry, textures, matrices, rider poses and clothing colors are reused. Animated batches retain conservative bounds and shared contact shadows. Hidden fallback vehicles skip animation work. This reduces repeated CPU work and draw overhead without removing the population.
+
+The corner workstation remains reserved for one seated operator. Other seats stay clear of the desk up to 30 occupants, including the minimum room size.
+
+## Verification and browser images
+
+Build and all 76 tests pass. The suite covers every street segment, four minutes of pedestrian travel across all 16 junctions, vehicle/pedestrian reservations, actual car loading, stable instance buffers, high-refresh continuity, pause/weather behavior and desk clearance.
+
+[Real browser timing and mode-switch results](citywide-browser-review.json) records the test GPU, frame intervals, render work, triangles and draw calls for basic, pond and advanced scenes. Results apply to the test machine and viewport; they do not guarantee identical performance on other hardware. The isolated timing scene renders the production classes and real textures; the final smoke test also switches modes in the actual website.
+
+- [City in sunlight](citywide-clear.png)
+- [City in rain](citywide-rain.png)
+- [City at night](citywide-night.png)
+- [Pond city](citywide-water-clear.png)
+- [Advanced city](citywide-advanced-clear.png)
+- [Advanced city in rain](citywide-advanced-rain.png)
+- [Installed Blender car review](installed-cars-review.png)
+- [30-person workstation review](workstation-review.png)
+
+## Source and rebuild
+
+- `src/graphics/people.js`: pavement graph, destinations, protected crossings and walking animation.
+- `src/graphics/road-network.js`: twelve routes and shared reservations.
+- `src/graphics/motion-route.js`: cached arc-length sampling.
+- `src/graphics/traffic.js`: acceleration, signals, fair reservations, exit clearance and render poses.
+- `src/graphics/cyclists.js`: cycling traffic and pedal/leg articulation.
+- `src/graphics/mobility-shadows.js`: shared moving contact shadows.
+- `src/cars/traffic-fleet.js`: instanced actual cars, active LODs, wheels and lamps.
+- `src/graphics/assets.js`: shared transforms and stable dynamic buffers.
+- `src/graphics/occupant-layout.js`: workstation and seating clearance.
+
+Run `npm run build`, `npm test`, then `npm start`. Preserve [model credits and licenses](../../assets/cars/SOURCES.md). Editable Blender car/rider assets remain in `assets/`. The browser check is `node tools/review-citywide-browser.cjs`; it requires Playwright, Edge/Chromium and the local server at port 5500. No external accounts or downloads are needed to run the city.

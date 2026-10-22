@@ -1,0 +1,152 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 4,
+  "createdAt": "2021-09-01T02:12:34.994004",
+  "embedUrl": "https://sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/embed",
+  "faceCount": 125527,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 67,
+  "name": "Jaguar E_TYPE",
+  "publishedAt": "2021-09-01T02:19:02.531767",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "jaguar",
+      "slug": "jaguar",
+      "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+    },
+    {
+      "name": "car",
+      "slug": "car",
+      "uri": "https://api.sketchfab.com/v3/tags/car"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "cd5daf077235461eae963ad4731da69b",
+        "width": 1920,
+        "height": 1080,
+        "size": 256119,
+        "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/2bc7f8a9024641a38e4c2ce39d633131.jpeg"
+      },
+      {
+        "uid": "d2134f4b794e42c28ae9885a5ad6f617",
+        "width": 1024,
+        "height": 576,
+        "size": 48175,
+        "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/ff75d57d85c3403291efc14a41f1546a.jpeg"
+      },
+      {
+        "uid": "5b708977f38d4957bebdd542b00d66d5",
+        "width": 720,
+        "height": 405,
+        "size": 23676,
+        "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/1adbf079c35a438aa8e831f1b14c76a3.jpeg"
+      },
+      {
+        "uid": "ae57bd7d2f5c4f6c9f34a64fe06ddac3",
+        "width": 256,
+        "height": 144,
+        "size": 4413,
+        "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/cbb19cde54f0476b979bf30a1b4ae8f6.jpeg"
+      },
+      {
+        "uid": "920e0fda380c471bae8f5fd82ffd4bb7",
+        "width": 64,
+        "height": 36,
+        "size": 1079,
+        "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/ffe4d80ca01a49dfbba54cb989c012d6.jpeg"
+      }
+    ]
+  },
+  "uid": "32aa25ea6e1b40f395b2aff33ca0a279",
+  "uri": "https://api.sketchfab.com/v3/models/32aa25ea6e1b40f395b2aff33ca0a279",
+  "user": {
+    "uid": "d3f0906c9eca4e77baaa16eb612c737a",
+    "username": "kikumi",
+    "displayName": "Nommoc",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/kikumi",
+    "avatar": {
+      "uid": "3d125e0affc34928a1315dc92dde2157",
+      "uri": "https://api.sketchfab.com/v3/avatars/3d125e0affc34928a1315dc92dde2157",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 3065,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/c52fe80cb711455b8d42127432092d56.png"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 5483,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/813384095c8b4d128e765931da27f668.png"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 14986,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/3b699070bebd440c984fe3c520e1230e.png"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 11005,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/d5b9e975723f470bb6ec8e45a26dadcd.png"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/d3f0906c9eca4e77baaa16eb612c737a"
+  },
+  "vertexCount": 59344,
+  "viewCount": 4277,
+  "viewerUrl": "https://sketchfab.com/3d-models/jaguar-e-type-32aa25ea6e1b40f395b2aff33ca0a279",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "Jaguar E_TYPE by Blender 2.93",
+  "price": null,
+  "downloadCount": 1371,
+  "editorUrl": "https://sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2022-07-20T18:33:20.782147",
+  "pbrType": null,
+  "textureCount": 1,
+  "materialCount": 7
+}

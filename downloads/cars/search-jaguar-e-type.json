@@ -1,0 +1,4371 @@
+{
+  "cursors": {
+    "next": "24",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&q=jaguar+e+type&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/32aa25ea6e1b40f395b2aff33ca0a279",
+      "uid": "32aa25ea6e1b40f395b2aff33ca0a279",
+      "name": "Jaguar E_TYPE",
+      "staffpickedAt": null,
+      "viewCount": 4277,
+      "likeCount": 67,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-32aa25ea6e1b40f395b2aff33ca0a279",
+      "embedUrl": "https://sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2021-09-01T02:19:02.531767",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "cd5daf077235461eae963ad4731da69b",
+            "size": 256119,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/2bc7f8a9024641a38e4c2ce39d633131.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d2134f4b794e42c28ae9885a5ad6f617",
+            "size": 48175,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/ff75d57d85c3403291efc14a41f1546a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5b708977f38d4957bebdd542b00d66d5",
+            "size": 23676,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/1adbf079c35a438aa8e831f1b14c76a3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ae57bd7d2f5c4f6c9f34a64fe06ddac3",
+            "size": 4413,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/cbb19cde54f0476b979bf30a1b4ae8f6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "920e0fda380c471bae8f5fd82ffd4bb7",
+            "size": 1079,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/32aa25ea6e1b40f395b2aff33ca0a279/thumbnails/57dee74b7a884912b5be5c0b5a038db0/ffe4d80ca01a49dfbba54cb989c012d6.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d3f0906c9eca4e77baaa16eb612c737a",
+        "username": "kikumi",
+        "displayName": "Nommoc",
+        "profileUrl": "https://sketchfab.com/kikumi",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3d125e0affc34928a1315dc92dde2157",
+          "images": [
+            {
+              "size": 3065,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/c52fe80cb711455b8d42127432092d56.png",
+              "height": 32
+            },
+            {
+              "size": 5483,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/813384095c8b4d128e765931da27f668.png",
+              "height": 48
+            },
+            {
+              "size": 14986,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/3b699070bebd440c984fe3c520e1230e.png",
+              "height": 90
+            },
+            {
+              "size": 11005,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/d5b9e975723f470bb6ec8e45a26dadcd.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d3f0906c9eca4e77baaa16eb612c737a"
+      },
+      "description": "Jaguar E_TYPE by Blender 2.93",
+      "faceCount": 125527,
+      "createdAt": "2021-09-01T02:12:34.994004",
+      "vertexCount": 59344,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 7560280,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 125527,
+          "vertexCount": 178652
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 2607026,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 125527,
+          "vertexCount": 178652
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2911675,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4644602,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/dee1eae5e83641d3b3740048ef5f78ac",
+      "uid": "dee1eae5e83641d3b3740048ef5f78ac",
+      "name": "1963 Jaguar E-Type Lightweight",
+      "staffpickedAt": null,
+      "viewCount": 1771,
+      "likeCount": 66,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-dee1eae5e83641d3b3740048ef5f78ac",
+      "embedUrl": "https://sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-07-30T07:10:06.590045",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "british",
+          "slug": "british",
+          "uri": "https://api.sketchfab.com/v3/tags/british"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "lightweight",
+          "slug": "lightweight",
+          "uri": "https://api.sketchfab.com/v3/tags/lightweight"
+        },
+        {
+          "name": "motorsports",
+          "slug": "motorsports",
+          "uri": "https://api.sketchfab.com/v3/tags/motorsports"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "britian",
+          "slug": "britian",
+          "uri": "https://api.sketchfab.com/v3/tags/britian"
+        },
+        {
+          "name": "motorcar",
+          "slug": "motorcar",
+          "uri": "https://api.sketchfab.com/v3/tags/motorcar"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "jaguar-cars",
+          "slug": "jaguar-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar-cars"
+        },
+        {
+          "name": "british-car",
+          "slug": "british-car",
+          "uri": "https://api.sketchfab.com/v3/tags/british-car"
+        },
+        {
+          "name": "jaguar-e-type-lowdrag-coupe",
+          "slug": "jaguar-e-type-lowdrag-coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar-e-type-lowdrag-coupe"
+        },
+        {
+          "name": "jaguar-e-type",
+          "slug": "jaguar-e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar-e-type"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "8c19d14992704d83b25a4b3696f2ebc1",
+            "size": 138243,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/thumbnails/828b29f4805643f7bffced84c7bfe9dc/9cbec8c92d7c4a458b6a22ad5e9ae18b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "8e6bb9900f16405e8f52d0dd4a36c934",
+            "size": 48875,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/thumbnails/828b29f4805643f7bffced84c7bfe9dc/d27f4d682d5b47488747f92169769816.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "2a3b94d436d44b09b6b805d9eb1e05d0",
+            "size": 29380,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/thumbnails/828b29f4805643f7bffced84c7bfe9dc/75cf1dd70aeb4bfe9231edce8fbd6ff4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ef18bdbd8f694dc2b2fe5711f415d2ea",
+            "size": 6617,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/thumbnails/828b29f4805643f7bffced84c7bfe9dc/a4ac610cb6ba469a81dd5ce04bfa87b4.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "160b5b91d26e410eb75c0dd5de3f5fa5",
+            "size": 1418,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/dee1eae5e83641d3b3740048ef5f78ac/thumbnails/828b29f4805643f7bffced84c7bfe9dc/d0f430c82de6497f8852a0e3d4c19841.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18c9b8a5047746e7b944294c7ba35dc4",
+        "username": "outpiston",
+        "displayName": "OUTPISTON",
+        "profileUrl": "https://sketchfab.com/outpiston",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6509b6c75faf498bb9d55c0e81927c17",
+          "images": [
+            {
+              "size": 1391,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/d4bcee40eeca4bab90ccd9afc9ee270a.png",
+              "height": 32
+            },
+            {
+              "size": 2512,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/da5d4104086446579e0016343471a985.png",
+              "height": 48
+            },
+            {
+              "size": 6460,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/23b7891b0f2144958054b0d0eed27dcd.png",
+              "height": 90
+            },
+            {
+              "size": 7357,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/01feb0c03b974583b05bc69a191b4459.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18c9b8a5047746e7b944294c7ba35dc4"
+      },
+      "description": "* Year: 1963\n* Model: E-Type Lightweight\n* Body Style: 2-door Coupe\n* Class: Sports-Car\n* Manufacturer: Jaguar\n* -\n* Engine: 3.8 Liter XK Inline-6\n* Aspiration: Natural\n* Transmission: 4-speed Manual\n* Power Output: 340 Horsepower\n* Torque: 314 lb-ft\n* Drivetrain: Front Engine, Rear Wheel Drive\n* -\n* Top Speed: 162 mph\n* Curb Weight: 1009 kg",
+      "faceCount": 33893,
+      "createdAt": "2025-07-30T06:57:38.657281",
+      "vertexCount": 21215,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 2608756,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 33893,
+          "vertexCount": 32210
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 1765403,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 33893,
+          "vertexCount": 32210
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3612944,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1378612,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d526aafcb857434284b1a432993a77cf",
+      "uid": "d526aafcb857434284b1a432993a77cf",
+      "name": "1963 Jaguar E-Type (XK-E) Series 1 4.2",
+      "staffpickedAt": null,
+      "viewCount": 3025,
+      "likeCount": 113,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d526aafcb857434284b1a432993a77cf",
+      "embedUrl": "https://sketchfab.com/models/d526aafcb857434284b1a432993a77cf/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-26T17:29:46.907322",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "1963",
+          "slug": "1963",
+          "uri": "https://api.sketchfab.com/v3/tags/1963"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "jaguar-e-type",
+          "slug": "jaguar-e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar-e-type"
+        },
+        {
+          "name": "forza-horizon",
+          "slug": "forza-horizon",
+          "uri": "https://api.sketchfab.com/v3/tags/forza-horizon"
+        },
+        {
+          "name": "xk-e",
+          "slug": "xk-e",
+          "uri": "https://api.sketchfab.com/v3/tags/xk-e"
+        },
+        {
+          "name": "series-1",
+          "slug": "series-1",
+          "uri": "https://api.sketchfab.com/v3/tags/series-1"
+        },
+        {
+          "name": "e-type-series-1",
+          "slug": "e-type-series-1",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type-series-1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4ddbc9d2e3234adeaab417d8618f7b49",
+            "size": 356811,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d526aafcb857434284b1a432993a77cf/thumbnails/67b2ea565c4340818222ac3cfb0f6797/747acf2113e34af9ab3c76ac11f2065b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f12d1c40bdb642c9b34dcb249669f4ef",
+            "size": 64646,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d526aafcb857434284b1a432993a77cf/thumbnails/67b2ea565c4340818222ac3cfb0f6797/96c0da62fa074f9088681a80dc5775de.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0fd4a112cca340b093eb6355b2338f8c",
+            "size": 38123,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d526aafcb857434284b1a432993a77cf/thumbnails/67b2ea565c4340818222ac3cfb0f6797/1ae03d34aaeb4bde8e7d43020309e84d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a49cd2f74dfc4a58be8074736d3f8cd8",
+            "size": 8230,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d526aafcb857434284b1a432993a77cf/thumbnails/67b2ea565c4340818222ac3cfb0f6797/01f5372835e3400e8c8f26fd925ff08a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a6aabe3e89214b1b957e984dd70323d3",
+            "size": 1538,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d526aafcb857434284b1a432993a77cf/thumbnails/67b2ea565c4340818222ac3cfb0f6797/a7af02ab82e147c6af678c6ef1cd46cd.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://www.beverlyhillscarclub.com/galleria_images/16414/16414_main_f.jpg)\n\nThe Jaguar E-Type, or the Jaguar XK-E for the North American market, is a British front mid-engined sports car that was manufactured by Jaguar Cars Ltd from 1961 to 1974. Its sleek appearance, advanced technologies, high performance, and competitive pricing established it as an icon.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a Forza Horizon 3d model\n\nCredits: https://p3dm.ru/xfsearch/Forza+Motorsport+3/",
+      "faceCount": 178363,
+      "createdAt": "2025-10-26T16:40:02.529080",
+      "vertexCount": 106409,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 11,
+          "size": 9829208,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 178333,
+          "vertexCount": 148734
+        },
+        "gltf": {
+          "textureCount": 11,
+          "size": 5872794,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 178333,
+          "vertexCount": 148734
+        },
+        "source": {
+          "textureCount": null,
+          "size": 15146066,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6246640,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/360f0fd69faf49c7b299b7ad6671ef00",
+      "uid": "360f0fd69faf49c7b299b7ad6671ef00",
+      "name": "Jaguar E Type | www.vecarz.com",
+      "staffpickedAt": null,
+      "viewCount": 2144,
+      "likeCount": 53,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-360f0fd69faf49c7b299b7ad6671ef00",
+      "embedUrl": "https://sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/embed",
+      "commentCount": 2,
+      "isDownloadable": false,
+      "publishedAt": "2025-01-05T08:12:36.387020",
+      "tags": [
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "etype",
+          "slug": "etype",
+          "uri": "https://api.sketchfab.com/v3/tags/etype"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6488577ba4fe4985a7581c6b4ddfe8e2",
+            "size": 144213,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/thumbnails/b3fa999c9d22486ba172c8726de16922/0a5c1f75e9584e9fa25ff817052b0f37.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7b93cab4e5264641bf29d4ea637f1b6d",
+            "size": 28060,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/thumbnails/b3fa999c9d22486ba172c8726de16922/9c0f687b45dc4837b0b7224c524efe92.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7ecdcb0a98404b5db6b25f3f82e5d639",
+            "size": 15508,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/thumbnails/b3fa999c9d22486ba172c8726de16922/e5b34683c68f4020b99aa619eb46d206.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "24e929bdaa0b487a824ca1908e1ad772",
+            "size": 3123,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/thumbnails/b3fa999c9d22486ba172c8726de16922/d523928e563b40489858e3e9692791d9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4d8e1b0f0f3749738f62d63a697a62be",
+            "size": 926,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/360f0fd69faf49c7b299b7ad6671ef00/thumbnails/b3fa999c9d22486ba172c8726de16922/1d794261d7c54159a0a21d0eed9cdd98.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f3128e66b434556a831444e846717c0",
+        "username": "heynic",
+        "displayName": "vecarz",
+        "profileUrl": "https://sketchfab.com/heynic",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f6949765a609461a9ea0f49cd8c10ceb",
+          "images": [
+            {
+              "size": 1105,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/1221ccac1fe045ec988d66a62b34c77a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1429,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/c1f0ffdc59bd40dca2923ed8ac647069.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2633,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/bbab7000d79c4db6a541270a50aadb4d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2879,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/de9c7937570941a78862b19cf07b9ee5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f3128e66b434556a831444e846717c0"
+      },
+      "description": "showcase website: https://www.vecarz.com/blog/jaguar-e-type-4-2-1967\n\nThis is an exhilarating E-Type model, with sleek, flowing lines that seem to say, “I’m the embodiment of speed and passion.” But as you grip the wheel, you can’t help but laugh, “The polygons on this windshield must be fewer than the cars I drew in elementary school!” The low-poly modeling makes this E-Type look like it just drove out of a PS1 game, awkwardly stepping into the modern 3D world.  \n\nEven if the windshield seems pixelated, the long hood and iconic curvy rear still captivate. This car feels like a British gentleman in a worn-out suit – frayed but effortlessly charming. Fixing it might be tough, but as they say, “People don’t buy cars with logic; they buy them with passion.”  \n\nNo matter how Minecraft-like that windshield is, I’d still take it for a spin. The E-Type will always be worth the adventure.\n![](https://cdn.prod.website-files.com/65d4bfc10f577ede0713402d/677d357a2f985543df2de2d4_EtypeBanner.jpg)",
+      "faceCount": 32714,
+      "createdAt": "2025-01-05T07:04:16.722572",
+      "vertexCount": 20817,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5670ebba9bbb4e42b9ce3ff5f37b743c",
+      "uid": "5670ebba9bbb4e42b9ce3ff5f37b743c",
+      "name": "Jaguar E Type 1963 | www.vecarz.com",
+      "staffpickedAt": null,
+      "viewCount": 3020,
+      "likeCount": 136,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5670ebba9bbb4e42b9ce3ff5f37b743c",
+      "embedUrl": "https://sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-08-16T16:25:38.879895",
+      "tags": [
+        {
+          "name": "q",
+          "slug": "q",
+          "uri": "https://api.sketchfab.com/v3/tags/q"
+        },
+        {
+          "name": "d",
+          "slug": "d",
+          "uri": "https://api.sketchfab.com/v3/tags/d"
+        },
+        {
+          "name": "z",
+          "slug": "z",
+          "uri": "https://api.sketchfab.com/v3/tags/z"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "e",
+          "slug": "e",
+          "uri": "https://api.sketchfab.com/v3/tags/e"
+        },
+        {
+          "name": "j",
+          "slug": "j",
+          "uri": "https://api.sketchfab.com/v3/tags/j"
+        },
+        {
+          "name": "c",
+          "slug": "c",
+          "uri": "https://api.sketchfab.com/v3/tags/c"
+        },
+        {
+          "name": "f1",
+          "slug": "f1",
+          "uri": "https://api.sketchfab.com/v3/tags/f1"
+        },
+        {
+          "name": "i",
+          "slug": "i",
+          "uri": "https://api.sketchfab.com/v3/tags/i"
+        },
+        {
+          "name": "m",
+          "slug": "m",
+          "uri": "https://api.sketchfab.com/v3/tags/m"
+        },
+        {
+          "name": "t",
+          "slug": "t",
+          "uri": "https://api.sketchfab.com/v3/tags/t"
+        },
+        {
+          "name": "x",
+          "slug": "x",
+          "uri": "https://api.sketchfab.com/v3/tags/x"
+        },
+        {
+          "name": "b",
+          "slug": "b",
+          "uri": "https://api.sketchfab.com/v3/tags/b"
+        },
+        {
+          "name": "u",
+          "slug": "u",
+          "uri": "https://api.sketchfab.com/v3/tags/u"
+        },
+        {
+          "name": "bull",
+          "slug": "bull",
+          "uri": "https://api.sketchfab.com/v3/tags/bull"
+        },
+        {
+          "name": "g",
+          "slug": "g",
+          "uri": "https://api.sketchfab.com/v3/tags/g"
+        },
+        {
+          "name": "f",
+          "slug": "f",
+          "uri": "https://api.sketchfab.com/v3/tags/f"
+        },
+        {
+          "name": "s",
+          "slug": "s",
+          "uri": "https://api.sketchfab.com/v3/tags/s"
+        },
+        {
+          "name": "y",
+          "slug": "y",
+          "uri": "https://api.sketchfab.com/v3/tags/y"
+        },
+        {
+          "name": "p",
+          "slug": "p",
+          "uri": "https://api.sketchfab.com/v3/tags/p"
+        },
+        {
+          "name": "o",
+          "slug": "o",
+          "uri": "https://api.sketchfab.com/v3/tags/o"
+        },
+        {
+          "name": "v",
+          "slug": "v",
+          "uri": "https://api.sketchfab.com/v3/tags/v"
+        },
+        {
+          "name": "l",
+          "slug": "l",
+          "uri": "https://api.sketchfab.com/v3/tags/l"
+        },
+        {
+          "name": "r",
+          "slug": "r",
+          "uri": "https://api.sketchfab.com/v3/tags/r"
+        },
+        {
+          "name": "type",
+          "slug": "type",
+          "uri": "https://api.sketchfab.com/v3/tags/type"
+        },
+        {
+          "name": "k",
+          "slug": "k",
+          "uri": "https://api.sketchfab.com/v3/tags/k"
+        },
+        {
+          "name": "redbull",
+          "slug": "redbull",
+          "uri": "https://api.sketchfab.com/v3/tags/redbull"
+        },
+        {
+          "name": "a",
+          "slug": "a",
+          "uri": "https://api.sketchfab.com/v3/tags/a"
+        },
+        {
+          "name": "n",
+          "slug": "n",
+          "uri": "https://api.sketchfab.com/v3/tags/n"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "h",
+          "slug": "h",
+          "uri": "https://api.sketchfab.com/v3/tags/h"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "2013",
+          "slug": "2013",
+          "uri": "https://api.sketchfab.com/v3/tags/2013"
+        },
+        {
+          "name": "w",
+          "slug": "w",
+          "uri": "https://api.sketchfab.com/v3/tags/w"
+        },
+        {
+          "name": "1963",
+          "slug": "1963",
+          "uri": "https://api.sketchfab.com/v3/tags/1963"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "vecarz",
+          "slug": "vecarz",
+          "uri": "https://api.sketchfab.com/v3/tags/vecarz"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1b2ba202d9044ab283a4ff151b51e056",
+            "size": 169775,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/thumbnails/a803812c16054d3eb5b4ae51ede204b0/a74971b22d714f9886fe1268a5b5bc72.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ab99e10599a84ad290d9d707e6bf4673",
+            "size": 35860,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/thumbnails/a803812c16054d3eb5b4ae51ede204b0/518b4b6a9a164245be861aff41c806b7.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7d4c1464d1e2468390d31a84124b43cf",
+            "size": 18737,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/thumbnails/a803812c16054d3eb5b4ae51ede204b0/569b644129b249b6b3fe1b3f5a4bfa22.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "31e915f7b4b34818b400b2b7a8748578",
+            "size": 3303,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/thumbnails/a803812c16054d3eb5b4ae51ede204b0/b096c17a580d4cf38ac49ce2d3d4bc52.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "cb387e7ad2904ee1bc2066b6e0c2832f",
+            "size": 942,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5670ebba9bbb4e42b9ce3ff5f37b743c/thumbnails/a803812c16054d3eb5b4ae51ede204b0/74f232142b7e41fd99e9c7538ec077b3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f3128e66b434556a831444e846717c0",
+        "username": "heynic",
+        "displayName": "vecarz",
+        "profileUrl": "https://sketchfab.com/heynic",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f6949765a609461a9ea0f49cd8c10ceb",
+          "images": [
+            {
+              "size": 1105,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/1221ccac1fe045ec988d66a62b34c77a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1429,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/c1f0ffdc59bd40dca2923ed8ac647069.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2633,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/bbab7000d79c4db6a541270a50aadb4d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2879,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/de9c7937570941a78862b19cf07b9ee5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f3128e66b434556a831444e846717c0"
+      },
+      "description": "credit[OUTPISTON] https://sketchfab.com/outpiston",
+      "faceCount": 33893,
+      "createdAt": "2025-07-30T08:28:52.642100",
+      "vertexCount": 21215,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 3821820,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 33893,
+          "vertexCount": 32210
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 2977837,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 33893,
+          "vertexCount": 32210
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8286013,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1262195,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6166040af7cf406f8f9146c45e3cecc9",
+      "uid": "6166040af7cf406f8f9146c45e3cecc9",
+      "name": "Jaguar E Type",
+      "staffpickedAt": null,
+      "viewCount": 1818,
+      "likeCount": 20,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6166040af7cf406f8f9146c45e3cecc9",
+      "embedUrl": "https://sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2016-12-14T10:30:04.526434",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "substancevehicle",
+          "slug": "substancevehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/substancevehicle"
+        },
+        {
+          "name": "substancegameart",
+          "slug": "substancegameart",
+          "uri": "https://api.sketchfab.com/v3/tags/substancegameart"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4a837580783a44afadbb55bc2cc8511d",
+            "size": 1036,
+            "width": 50,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/50x50.jpeg",
+            "height": 50
+          },
+          {
+            "uid": "b1783f64bb99409ca64e898baccf9d8c",
+            "size": 2356,
+            "width": 100,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/100x100.jpeg",
+            "height": 100
+          },
+          {
+            "uid": "015325f79d504c97926caa39801860e6",
+            "size": 6247,
+            "width": 200,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/200x200.jpeg",
+            "height": 200
+          },
+          {
+            "uid": "a7a9184adfcc4fb2b0be5fb2be9e624c",
+            "size": 11245,
+            "width": 448,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/448x252.jpeg",
+            "height": 252
+          },
+          {
+            "uid": "4daf6321f9d347de9fdbdc77006cb919",
+            "size": 19575,
+            "width": 640,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/640x360.jpeg",
+            "height": 360
+          },
+          {
+            "uid": "84f5ae3035a5444fa6841bc2659a5176",
+            "size": 32399,
+            "width": 864,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/864x486.jpeg",
+            "height": 486
+          },
+          {
+            "uid": "bf3f5445818d4776b49b4d0e4ec9e83c",
+            "size": 42886,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4fa6c4f7d8214b4c9e1282c549d5fe33",
+            "size": 78854,
+            "width": 1440,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/1440x810.jpeg",
+            "height": 810
+          },
+          {
+            "uid": "594bdae2a0bf44fdb2e52f4d9f61ef57",
+            "size": 131283,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6166040af7cf406f8f9146c45e3cecc9/thumbnails/27c83e438c0a420aa6f490a2ccf247ea/1920x1080.jpeg",
+            "height": 1080
+          }
+        ]
+      },
+      "user": {
+        "uid": "5111ba03826d4212b3f3cc976ec026c7",
+        "username": "dom_littler",
+        "displayName": "dom_littler",
+        "profileUrl": "https://sketchfab.com/dom_littler",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/861e450638044ba69c009f2b0bf2e8c9",
+          "images": [
+            {
+              "size": 4402,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/861e450638044ba69c009f2b0bf2e8c9/c5725b39563c48e483e56eb55b016aec.jpeg",
+              "height": 100
+            },
+            {
+              "size": 3803,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/861e450638044ba69c009f2b0bf2e8c9/b33e0cd7bac94a09a13a9dc19c18609e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1532,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/861e450638044ba69c009f2b0bf2e8c9/b3b2b907cfa2419e919bda1bfb416e0c.jpeg",
+              "height": 48
+            },
+            {
+              "size": 960,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/861e450638044ba69c009f2b0bf2e8c9/1c555e910068405d87c92781e1ee5146.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5111ba03826d4212b3f3cc976ec026c7"
+      },
+      "description": "I’ve been wanting to practice my vehicle art for a while, i love all things mechanical and the E Type is such a distinctive shape. Still learning to use Substance Painter.",
+      "faceCount": 44006,
+      "createdAt": "2016-12-14T10:28:52.869544",
+      "vertexCount": 23638,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1a843d6163194c2580ba4dac1c7d54c6",
+      "uid": "1a843d6163194c2580ba4dac1c7d54c6",
+      "name": "1971 Jaguar E-Type Series 3 V12 Roadster",
+      "staffpickedAt": null,
+      "viewCount": 2027,
+      "likeCount": 94,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1a843d6163194c2580ba4dac1c7d54c6",
+      "embedUrl": "https://sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-19T04:08:09.413122",
+      "tags": [
+        {
+          "name": "roadster",
+          "slug": "roadster",
+          "uri": "https://api.sketchfab.com/v3/tags/roadster"
+        },
+        {
+          "name": "1971",
+          "slug": "1971",
+          "uri": "https://api.sketchfab.com/v3/tags/1971"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "v12",
+          "slug": "v12",
+          "uri": "https://api.sketchfab.com/v3/tags/v12"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "series-3",
+          "slug": "series-3",
+          "uri": "https://api.sketchfab.com/v3/tags/series-3"
+        },
+        {
+          "name": "racing-master",
+          "slug": "racing-master",
+          "uri": "https://api.sketchfab.com/v3/tags/racing-master"
+        },
+        {
+          "name": "jagiar-e-type",
+          "slug": "jagiar-e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/jagiar-e-type"
+        },
+        {
+          "name": "e-type-series-3",
+          "slug": "e-type-series-3",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type-series-3"
+        },
+        {
+          "name": "e-type-v12",
+          "slug": "e-type-v12",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type-v12"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f38a11abd7044df0b43b3fb95f67f264",
+            "size": 358786,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/thumbnails/1f7fad6f8f044e0eabbfff440648ac69/e4638e4c9e054c76be8256414c6f3619.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "25c3b7d7ccce4c14818205a318fdf0ed",
+            "size": 62535,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/thumbnails/1f7fad6f8f044e0eabbfff440648ac69/6c7df53b860e4d49843bba7bcc8d15a3.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f1bf959106a148e1a3f1631a3a5189f6",
+            "size": 36697,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/thumbnails/1f7fad6f8f044e0eabbfff440648ac69/ca1e5686b5664bf98c3d122cf0350179.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "be98f42493654ddeabdff483b301ac6f",
+            "size": 8025,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/thumbnails/1f7fad6f8f044e0eabbfff440648ac69/7310ffdde9cd4136aed95b581e2d4683.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d0890eb5bef0463b860df7dc9ac39909",
+            "size": 1610,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1a843d6163194c2580ba4dac1c7d54c6/thumbnails/1f7fad6f8f044e0eabbfff440648ac69/9e7771e9ce5840d5aad00e2921bb7e51.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://images.collectingcars.com/021202/mainimage.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85)\n\nA new 5.3 L 12-cylinder Jaguar V12 engine was introduced, with uprated brakes and standard power steering. The short wheelbase FHC body style was discontinued and the V12 was available only as a convertible and 2+2 coupé. The convertible used the longer-wheelbase 2+2 floorplan. It is easily identifiable by the large cross-slatted front grille, flared wheel arches and a badge on the rear that proclaims it to be a V12. There were also a very limited number of 4.2 litre six-cylinder Series 3 E-Types built. These were featured in the initial sales literature. It is believed these are the rarest of all E-Types of any remaining.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a Racing Master 3d model\n\nCredits: ACMP Discord Server https://discord.gg/acmp",
+      "faceCount": 310143,
+      "createdAt": "2025-10-19T03:50:55.063889",
+      "vertexCount": 177499,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 24,
+          "size": 16865708,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 310133,
+          "vertexCount": 231729
+        },
+        "gltf": {
+          "textureCount": 24,
+          "size": 7955217,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 310133,
+          "vertexCount": 231729
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14604391,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9762142,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a5a36c72610c47548d2f6de6baaea6fe",
+      "uid": "a5a36c72610c47548d2f6de6baaea6fe",
+      "name": "[Blue Archive] Jaguar E-Type Convertible",
+      "staffpickedAt": null,
+      "viewCount": 2840,
+      "likeCount": 100,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a5a36c72610c47548d2f6de6baaea6fe",
+      "embedUrl": "https://sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-20T16:18:03.142136",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "convertible-car",
+          "slug": "convertible-car",
+          "uri": "https://api.sketchfab.com/v3/tags/convertible-car"
+        },
+        {
+          "name": "blue-archive",
+          "slug": "blue-archive",
+          "uri": "https://api.sketchfab.com/v3/tags/blue-archive"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "64d8bb915a10469e8464fc89fa68ecdd",
+            "size": 95683,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/thumbnails/32f20ee7e7794d6b91c14cadec47a67b/6f253811cc2041b09c0aee3348c13fa5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4c8647c9e37e4a4d9ebf91c58ccaca09",
+            "size": 33979,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/thumbnails/32f20ee7e7794d6b91c14cadec47a67b/279ec76009614257b21ace433ed0467b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "706bbdf6c9434614a0f0cb5d85edf79a",
+            "size": 20184,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/thumbnails/32f20ee7e7794d6b91c14cadec47a67b/c19e250c9f7e41f38e1fae8b2862f7ae.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3415d99b9e254e46b5fbf6015a13dcca",
+            "size": 4506,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/thumbnails/32f20ee7e7794d6b91c14cadec47a67b/acc34465353c45588ad38474bacf181a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c55da1499ecf483e93fb7c9cbfaa893c",
+            "size": 1164,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a5a36c72610c47548d2f6de6baaea6fe/thumbnails/32f20ee7e7794d6b91c14cadec47a67b/ae9fb7fc1e854d9e8cf61018d440bece.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5835904f1a1d432a9fb5a92d34340e54",
+        "username": "VuckyZ123",
+        "displayName": "VuckyZ",
+        "profileUrl": "https://sketchfab.com/VuckyZ123",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3bd539e72cf946d98ad22af346e9b9e2",
+          "images": [
+            {
+              "size": 1136,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/ce0329facff645a0ba7de6476acd9f9b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1691,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/90f32a79e40646f3858e8cb0efa262f7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3712,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/446fb29026214c10bb8ab3bae27c2734.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4188,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/66fb5392052a4764ae5320acba4f8293.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5835904f1a1d432a9fb5a92d34340e54"
+      },
+      "description": "model from: https://steamcommunity.com/sharedfiles/filedetails/?id=3535613147",
+      "faceCount": 64983,
+      "createdAt": "2026-01-20T15:57:13.512533",
+      "vertexCount": 35278,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 23,
+          "size": 3686020,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 64981,
+          "vertexCount": 46915
+        },
+        "gltf": {
+          "textureCount": 23,
+          "size": 2640212,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 64981,
+          "vertexCount": 46915
+        },
+        "source": {
+          "textureCount": null,
+          "size": 25436094,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2252770,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c0a45fa0ea31442788a36be00c2e115c",
+      "uid": "c0a45fa0ea31442788a36be00c2e115c",
+      "name": "Lightweight Jaguar E Type",
+      "staffpickedAt": null,
+      "viewCount": 2067,
+      "likeCount": 42,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c0a45fa0ea31442788a36be00c2e115c",
+      "embedUrl": "https://sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2020-11-09T21:35:09.399683",
+      "tags": [
+        {
+          "name": "faro",
+          "slug": "faro",
+          "uri": "https://api.sketchfab.com/v3/tags/faro"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "classiccars",
+          "slug": "classiccars",
+          "uri": "https://api.sketchfab.com/v3/tags/classiccars"
+        },
+        {
+          "name": "etype",
+          "slug": "etype",
+          "uri": "https://api.sketchfab.com/v3/tags/etype"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "173a041f15bb47bf9629f852ca2c0ace",
+            "size": 360054,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/08318f0ea05540d68fa8dde96471c58c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ca6ec743209242269ca358f7d5aa439e",
+            "size": 92529,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/3f6614a3529349b185c92bed378f0fe7.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3a7c41a63f6b4e288e03d6fad9ca7dfb",
+            "size": 46773,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/8e6467bd03e447a89332fc459f328c81.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c664ad28601044d1bfc7f131c5c03f58",
+            "size": 7284,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/a0643a0ce5c64aa18dfcd0f4c32a335f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7c8f7d39766a4dff8704252b0d5661f0",
+            "size": 1089,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/3deb2935f06a4f21a9fa83d848700331.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "07507e20f809462abea4eb1ecb58a085",
+        "username": "NickRussill",
+        "displayName": "Nick Russill",
+        "profileUrl": "https://sketchfab.com/NickRussill",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6cecf02a96174ebbbbec15787456489a",
+          "images": [
+            {
+              "size": 696,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/5fca0ffa47f047b1bd720bc5e83ea7fd.jpeg",
+              "height": 32
+            },
+            {
+              "size": 976,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/2bdc72fd01af403f83541baf785121e0.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2169,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/3fef4f17a00d4162a076f4836efb1914.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2484,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/2cfe07233a4442b09a0d97cb70d78474.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/07507e20f809462abea4eb1ecb58a085"
+      },
+      "description": "W.F. Wins project car in progress at Heynes Restoration.\n\nModel created using 244 photographs taken with a Fujifilm X-T4\n\nModel created with ContextCapture. www.bentley.com",
+      "faceCount": 2870015,
+      "createdAt": "2020-11-09T21:30:57.396143",
+      "vertexCount": 1604790,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 191908588,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2870013,
+          "vertexCount": 1858493
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 157111608,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2870013,
+          "vertexCount": 1858493
+        },
+        "source": {
+          "textureCount": null,
+          "size": 158514416,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 74925680,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f6bc0d99747d4abfba1b1a9bb63b0daf",
+      "uid": "f6bc0d99747d4abfba1b1a9bb63b0daf",
+      "name": "Jaguar E Type Series 3 | www.vecarz.com",
+      "staffpickedAt": null,
+      "viewCount": 1616,
+      "likeCount": 42,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f6bc0d99747d4abfba1b1a9bb63b0daf",
+      "embedUrl": "https://sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2024-12-01T12:21:08.911320",
+      "tags": [
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "best",
+          "slug": "best",
+          "uri": "https://api.sketchfab.com/v3/tags/best"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "beautiful",
+          "slug": "beautiful",
+          "uri": "https://api.sketchfab.com/v3/tags/beautiful"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "etype",
+          "slug": "etype",
+          "uri": "https://api.sketchfab.com/v3/tags/etype"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "233c82a0f84c4b609f2a442547c901fe",
+            "size": 144327,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/thumbnails/285d8d5c906a4714b74a239a877fb634/8b70995b371a46799bceee9f8f760701.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "fdaf46646a32421697549f916d5792bd",
+            "size": 46848,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/thumbnails/285d8d5c906a4714b74a239a877fb634/4751f6b2fb3a4805bbdf9207184d4a15.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9f92a897143f4fb1ad5aa40e8ec3f3bb",
+            "size": 26578,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/thumbnails/285d8d5c906a4714b74a239a877fb634/84d441ef9bbb457c842b5cc971bdf5b3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "46690cbef85b464b8b7f7056996adaa2",
+            "size": 5176,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/thumbnails/285d8d5c906a4714b74a239a877fb634/b98d5cd4019744b6a598736eb06da863.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d43a087ea1ce4170aff47dfd7b5d0a2e",
+            "size": 1214,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f6bc0d99747d4abfba1b1a9bb63b0daf/thumbnails/285d8d5c906a4714b74a239a877fb634/3fb548f48f0441869c5218973e60b38f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f3128e66b434556a831444e846717c0",
+        "username": "heynic",
+        "displayName": "vecarz",
+        "profileUrl": "https://sketchfab.com/heynic",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f6949765a609461a9ea0f49cd8c10ceb",
+          "images": [
+            {
+              "size": 1105,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/1221ccac1fe045ec988d66a62b34c77a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1429,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/c1f0ffdc59bd40dca2923ed8ac647069.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2633,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/bbab7000d79c4db6a541270a50aadb4d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2879,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/de9c7937570941a78862b19cf07b9ee5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f3128e66b434556a831444e846717c0"
+      },
+      "description": "Showcase: https://www.vecarz.com/cars/jaguar-e-type-1972\nShowcase website: www.vecarz.com\n\n=========================\n\nThank you [menarzuw] for build and sharing this beautiful model: https://sketchfab.com/3d-models/jaguar-high-poly-d3b9a8c5e6bc4ba3818bead275c53ecf\nplease download on his website, Thank you!",
+      "faceCount": 543196,
+      "createdAt": "2024-12-01T09:34:42.437097",
+      "vertexCount": 294158,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9c5c7ba8e13c4f009c8261b7c7ee79ac",
+      "uid": "9c5c7ba8e13c4f009c8261b7c7ee79ac",
+      "name": "Jaguar-e-type",
+      "staffpickedAt": null,
+      "viewCount": 871,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9c5c7ba8e13c4f009c8261b7c7ee79ac",
+      "embedUrl": "https://sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2021-01-09T10:58:12.150928",
+      "tags": [
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4b1743580bc14b9eb4b8238b3ec61b01",
+            "size": 229733,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/thumbnails/7b34abbf34e64b6da856e83efe91afd9/c6329290d904414087ac0534d725799a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e42afd2cc86b4785b5075f705856b23a",
+            "size": 61544,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/thumbnails/7b34abbf34e64b6da856e83efe91afd9/8c81747ebaa448198d41b685cfbc88de.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "193219d688e949829fd2ec8109d6f061",
+            "size": 28725,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/thumbnails/7b34abbf34e64b6da856e83efe91afd9/dd98d828bcbf4c0eba39631330c898da.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d4f17b7613fc4d82a08df55f813a1d23",
+            "size": 4038,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/thumbnails/7b34abbf34e64b6da856e83efe91afd9/e98cd4a943de4fe8a06ceafc0a1d3ee8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "64b1056555984bae9bc62cbb28809225",
+            "size": 673,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9c5c7ba8e13c4f009c8261b7c7ee79ac/thumbnails/7b34abbf34e64b6da856e83efe91afd9/7db73153bd924b75996e3f70abe50f59.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "95b00a35253c4a29bdc41258a8496ad8",
+        "username": "3DDomino",
+        "displayName": "3DDomino",
+        "profileUrl": "https://sketchfab.com/3DDomino",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/42b52a6c00c149d0979e84506edd7f19",
+          "images": [
+            {
+              "size": 621,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/42b52a6c00c149d0979e84506edd7f19/d802282e8b214749aa8013b221f25d0a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 899,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/42b52a6c00c149d0979e84506edd7f19/a01f5a9c2ae442489b69e0b865766376.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1766,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/42b52a6c00c149d0979e84506edd7f19/86a91ce179b944e8ba3d0eb62cf767d4.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1990,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/42b52a6c00c149d0979e84506edd7f19/0a270fb803884dfeab5c08316164a04b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/95b00a35253c4a29bdc41258a8496ad8"
+      },
+      "description": "Jaguar-e-type 3d model",
+      "faceCount": 591498,
+      "createdAt": "2021-01-09T10:51:18.786150",
+      "vertexCount": 302941,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 20856708,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 591496,
+          "vertexCount": 425512
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 11620118,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 591496,
+          "vertexCount": 425512
+        },
+        "source": {
+          "textureCount": null,
+          "size": 24775330,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4159787,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/27325ee6808d48fe827b78335c91df44",
+      "uid": "27325ee6808d48fe827b78335c91df44",
+      "name": "Jaguar E- Type 1961",
+      "staffpickedAt": null,
+      "viewCount": 2088,
+      "likeCount": 48,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-27325ee6808d48fe827b78335c91df44",
+      "embedUrl": "https://sketchfab.com/models/27325ee6808d48fe827b78335c91df44/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2023-07-28T02:21:12.168391",
+      "tags": [
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "cardesign",
+          "slug": "cardesign",
+          "uri": "https://api.sketchfab.com/v3/tags/cardesign"
+        },
+        {
+          "name": "classiccar",
+          "slug": "classiccar",
+          "uri": "https://api.sketchfab.com/v3/tags/classiccar"
+        },
+        {
+          "name": "britishcar",
+          "slug": "britishcar",
+          "uri": "https://api.sketchfab.com/v3/tags/britishcar"
+        },
+        {
+          "name": "vintagecar",
+          "slug": "vintagecar",
+          "uri": "https://api.sketchfab.com/v3/tags/vintagecar"
+        },
+        {
+          "name": "jaguaretype",
+          "slug": "jaguaretype",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguaretype"
+        },
+        {
+          "name": "carperformance",
+          "slug": "carperformance",
+          "uri": "https://api.sketchfab.com/v3/tags/carperformance"
+        },
+        {
+          "name": "carenthusiast",
+          "slug": "carenthusiast",
+          "uri": "https://api.sketchfab.com/v3/tags/carenthusiast"
+        },
+        {
+          "name": "carhistory",
+          "slug": "carhistory",
+          "uri": "https://api.sketchfab.com/v3/tags/carhistory"
+        },
+        {
+          "name": "iconicdesign",
+          "slug": "iconicdesign",
+          "uri": "https://api.sketchfab.com/v3/tags/iconicdesign"
+        },
+        {
+          "name": "automotiveicon",
+          "slug": "automotiveicon",
+          "uri": "https://api.sketchfab.com/v3/tags/automotiveicon"
+        },
+        {
+          "name": "genevamotorshow",
+          "slug": "genevamotorshow",
+          "uri": "https://api.sketchfab.com/v3/tags/genevamotorshow"
+        },
+        {
+          "name": "automotiveheritage",
+          "slug": "automotiveheritage",
+          "uri": "https://api.sketchfab.com/v3/tags/automotiveheritage"
+        },
+        {
+          "name": "carculture",
+          "slug": "carculture",
+          "uri": "https://api.sketchfab.com/v3/tags/carculture"
+        },
+        {
+          "name": "jaguarxke",
+          "slug": "jaguarxke",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguarxke"
+        },
+        {
+          "name": "jaguarxke1961",
+          "slug": "jaguarxke1961",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguarxke1961"
+        },
+        {
+          "name": "collectiblecar",
+          "slug": "collectiblecar",
+          "uri": "https://api.sketchfab.com/v3/tags/collectiblecar"
+        },
+        {
+          "name": "malcolmsayer",
+          "slug": "malcolmsayer",
+          "uri": "https://api.sketchfab.com/v3/tags/malcolmsayer"
+        },
+        {
+          "name": "1960scars",
+          "slug": "1960scars",
+          "uri": "https://api.sketchfab.com/v3/tags/1960scars"
+        },
+        {
+          "name": "carmanufacturing",
+          "slug": "carmanufacturing",
+          "uri": "https://api.sketchfab.com/v3/tags/carmanufacturing"
+        },
+        {
+          "name": "automotivelegacy",
+          "slug": "automotivelegacy",
+          "uri": "https://api.sketchfab.com/v3/tags/automotivelegacy"
+        },
+        {
+          "name": "cartransmission",
+          "slug": "cartransmission",
+          "uri": "https://api.sketchfab.com/v3/tags/cartransmission"
+        },
+        {
+          "name": "carsuspension",
+          "slug": "carsuspension",
+          "uri": "https://api.sketchfab.com/v3/tags/carsuspension"
+        },
+        {
+          "name": "carhandling",
+          "slug": "carhandling",
+          "uri": "https://api.sketchfab.com/v3/tags/carhandling"
+        },
+        {
+          "name": "carvariants",
+          "slug": "carvariants",
+          "uri": "https://api.sketchfab.com/v3/tags/carvariants"
+        },
+        {
+          "name": "classiccarmarket",
+          "slug": "classiccarmarket",
+          "uri": "https://api.sketchfab.com/v3/tags/classiccarmarket"
+        },
+        {
+          "name": "classiccarshow",
+          "slug": "classiccarshow",
+          "uri": "https://api.sketchfab.com/v3/tags/classiccarshow"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "db646c73570041d1b331a17e68cce81b",
+            "size": 97347,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/27325ee6808d48fe827b78335c91df44/thumbnails/b2265cbcf425472eb0a1f6905b3cdf45/a8d8d7c97e57490d8b78aba2d215e85e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "917070a2dc354fb0978ee8d18f6ef5db",
+            "size": 32299,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/27325ee6808d48fe827b78335c91df44/thumbnails/b2265cbcf425472eb0a1f6905b3cdf45/3dec8efe74d64f1985b7bf6e028ab3cc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5fb01aa5e07a4e7fb899db787221f0cf",
+            "size": 18742,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/27325ee6808d48fe827b78335c91df44/thumbnails/b2265cbcf425472eb0a1f6905b3cdf45/8d3c700fd9ba41c694400af21a66b9aa.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "71132821dd2e485f81f71e7c96fa221a",
+            "size": 4222,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/27325ee6808d48fe827b78335c91df44/thumbnails/b2265cbcf425472eb0a1f6905b3cdf45/20ad212340934ccaa2b2e05d1396a354.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6921fbb8f54349f49b77a6ff7109631f",
+            "size": 1084,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/27325ee6808d48fe827b78335c91df44/thumbnails/b2265cbcf425472eb0a1f6905b3cdf45/6fc963ddc01a4283b4fb9577b98a895c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "46f9e883bb434ce4a90df00437e6428c",
+        "username": "zizian",
+        "displayName": "zizian",
+        "profileUrl": "https://sketchfab.com/zizian",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f41c629f9c4f4f638b07a0cb691004fe",
+          "images": [
+            {
+              "size": 1058,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f41c629f9c4f4f638b07a0cb691004fe/82fce5551e1245a3ae11a525a233ad49.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1467,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f41c629f9c4f4f638b07a0cb691004fe/ab1d76561e71434d92912715186276c6.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2921,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f41c629f9c4f4f638b07a0cb691004fe/ea6126ab0b4f4ebfad4364bb868dd028.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3298,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f41c629f9c4f4f638b07a0cb691004fe/d209152191b8464bbfefd34a37db835e.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/46f9e883bb434ce4a90df00437e6428c"
+      },
+      "description": "Could you please consider liking and subscribing to my account. Your support would mean a lot to me. Thank you!",
+      "faceCount": 118759,
+      "createdAt": "2023-07-27T20:11:48.286157",
+      "vertexCount": 66126,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 30339324,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 118634,
+          "vertexCount": 251768
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 9650661,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 118634,
+          "vertexCount": 251768
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8565830,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5617367,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cfa954c9b36b432c88db44194e293f7a",
+      "uid": "cfa954c9b36b432c88db44194e293f7a",
+      "name": "Jaguar E-Type",
+      "staffpickedAt": null,
+      "viewCount": 971,
+      "likeCount": 14,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cfa954c9b36b432c88db44194e293f7a",
+      "embedUrl": "https://sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-05-13T15:53:25.497482",
+      "tags": [
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "retro",
+          "slug": "retro",
+          "uri": "https://api.sketchfab.com/v3/tags/retro"
+        },
+        {
+          "name": "british",
+          "slug": "british",
+          "uri": "https://api.sketchfab.com/v3/tags/british"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "70ties",
+          "slug": "70ties",
+          "uri": "https://api.sketchfab.com/v3/tags/70ties"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "60ties",
+          "slug": "60ties",
+          "uri": "https://api.sketchfab.com/v3/tags/60ties"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e6286c360d284b11b2e281266eb5abf6",
+            "size": 281817,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/thumbnails/ff55a6cd16cf485abc08ae2248fdc4fe/864bb22b7e7c44089037122d6067b99c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "bfb37801d2da421d988819c0911a69e0",
+            "size": 45904,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/thumbnails/ff55a6cd16cf485abc08ae2248fdc4fe/6ee2fe19f47946e38ddc0afb0cacc180.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "57f2a80de6e34310bf870fd66487670b",
+            "size": 26499,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/thumbnails/ff55a6cd16cf485abc08ae2248fdc4fe/0b31900be0c14ab680717aa13a8066c6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3e5298e3c5c8453d9ccdaefda276ae40",
+            "size": 5864,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/thumbnails/ff55a6cd16cf485abc08ae2248fdc4fe/96fa7120501240e98ee311b4fc9fc4cc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "655fbc7ef1ff4a15b33c1aefadba5d8f",
+            "size": 1290,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cfa954c9b36b432c88db44194e293f7a/thumbnails/ff55a6cd16cf485abc08ae2248fdc4fe/ede543fc180040f9a3191890758ff01a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b741b2e8f4524c2ab6a72dd36c9b2b46",
+        "username": "NETRUNNER_pl",
+        "displayName": "NETRUNNER_pl",
+        "profileUrl": "https://sketchfab.com/NETRUNNER_pl",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/be5eb83a05454a9887b9ed607df86689",
+          "images": [
+            {
+              "size": 6849,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/be5eb83a05454a9887b9ed607df86689/0dcaf1e2563e460ca109adc48cda9164.jpeg",
+              "height": 100
+            },
+            {
+              "size": 5556,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/be5eb83a05454a9887b9ed607df86689/332f203feb14405296a96f2e316e366e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1182,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/be5eb83a05454a9887b9ed607df86689/fec903af7ddd497e87114fa12b20006a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 758,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/be5eb83a05454a9887b9ed607df86689/d1b14b3606004bae8baa3173b5166399.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b741b2e8f4524c2ab6a72dd36c9b2b46"
+      },
+      "description": "**Jaguar E-Type**<br/>\nLowpoly model of british sports car from 60-ties and 70-ties<br/>\n<br/>\nThe Jaguar E-Type is a British sports car that was manufactured by Jaguar Cars Ltd between 1961 and 1974. Its combination of beauty, high performance, and competitive pricing established the model as an icon of the motoring world. The E-Type's claimed 150 mph (241 km/h) top speed, sub-7-second 0 to 60 mph (97 km/h) acceleration, unitary construction, disc brakes, rack-and-pinion steering, and independent front and rear suspension distinguished the car and spurred industry-wide changes.No ladder frame chassis, as was common at the time, was needed and as such the first cars weighed only 1315 kg (2900 lb).\n<br/><br/>\n3 cars in set: Basic model + flat shaded model + tuned version. Each with own texture.<br/>\n<br/>\n*Check also my other aircrafts and cars*<br/>\n[Patreon with monthly free model](https://www.patreon.com/user?u=84074894)",
+      "faceCount": 12328,
+      "createdAt": "2022-05-13T15:34:06.029604",
+      "vertexCount": 9446,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 2108560,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 12328,
+          "vertexCount": 17482
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 1548877,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 12328,
+          "vertexCount": 17482
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5110207,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 828090,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "783b685da9bf457d81e829fa283f3567",
+        "label": "Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/62b644782ab24efb9c027cc46bbdc6fb",
+      "uid": "62b644782ab24efb9c027cc46bbdc6fb",
+      "name": "J'Cougar I-Type",
+      "staffpickedAt": null,
+      "viewCount": 606,
+      "likeCount": 21,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-62b644782ab24efb9c027cc46bbdc6fb",
+      "embedUrl": "https://sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2022-07-08T16:31:42.953276",
+      "tags": [
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "classic",
+          "slug": "classic",
+          "uri": "https://api.sketchfab.com/v3/tags/classic"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "sims4",
+          "slug": "sims4",
+          "uri": "https://api.sketchfab.com/v3/tags/sims4"
+        },
+        {
+          "name": "sims",
+          "slug": "sims",
+          "uri": "https://api.sketchfab.com/v3/tags/sims"
+        },
+        {
+          "name": "classic-car",
+          "slug": "classic-car",
+          "uri": "https://api.sketchfab.com/v3/tags/classic-car"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "etype",
+          "slug": "etype",
+          "uri": "https://api.sketchfab.com/v3/tags/etype"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0d7969bd72ea4f2296cacbfc2e8876ef",
+            "size": 100120,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/thumbnails/45374a098862464f9d3b867a5c3cbbf5/46c0433d86b34fa4b0757afe0c1ad9be.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c7d0cd49d3a54cf2af240f022532e68f",
+            "size": 33261,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/thumbnails/45374a098862464f9d3b867a5c3cbbf5/aa8c4f47ce304f119c2fc40d1462140d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f3637ee80a3240c9a29f80e0a428be33",
+            "size": 20167,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/thumbnails/45374a098862464f9d3b867a5c3cbbf5/48403e4be60a48e184c56e871c5a0067.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "29889cc8d34147179bcc2ee8cef4111b",
+            "size": 4628,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/thumbnails/45374a098862464f9d3b867a5c3cbbf5/d058ba0c804040a79376c1d42132e503.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ccefe275f5e04a7893373198330dd73f",
+            "size": 1194,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/62b644782ab24efb9c027cc46bbdc6fb/thumbnails/45374a098862464f9d3b867a5c3cbbf5/4d61843bfdf048e0af86f2117539bb53.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c67f4867600a4d0eb66fbdbece2ae03f",
+        "username": "yudhamfr",
+        "displayName": "Yudha Mfr",
+        "profileUrl": "https://sketchfab.com/yudhamfr",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8865b0300ec14642952184c9dbe5fc97",
+          "images": [
+            {
+              "size": 553,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/b4a5b300f588441d880b3f7d891e5b2a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 731,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/07577d3b00b9422a885fb4445f366bb4.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1376,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/6490fc38290e4ef09f1cfcb699b5350e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1594,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/5dc82292d661449fa0a9e8b089a12dd7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c67f4867600a4d0eb66fbdbece2ae03f"
+      },
+      "description": "Jaguar E-type sims 4 style, inspired by jaguar E-type roadster.\n\nLow poly\n3dsmax",
+      "faceCount": 7811,
+      "createdAt": "2022-07-08T16:18:21.573802",
+      "vertexCount": 4512,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 2909520,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 7811,
+          "vertexCount": 8990
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 2599779,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 7811,
+          "vertexCount": 8990
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13801261,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2796329,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8c53321301234400b70975fa6abb5e5d",
+      "uid": "8c53321301234400b70975fa6abb5e5d",
+      "name": "Jaguar E-Type Lightweight GT",
+      "staffpickedAt": null,
+      "viewCount": 918,
+      "likeCount": 26,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8c53321301234400b70975fa6abb5e5d",
+      "embedUrl": "https://sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2024-09-01T17:12:35.907505",
+      "tags": [
+        {
+          "name": "british",
+          "slug": "british",
+          "uri": "https://api.sketchfab.com/v3/tags/british"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "gameasset-art",
+          "slug": "gameasset-art",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset-art"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "jaguar-cars",
+          "slug": "jaguar-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar-cars"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c7cbbbed2b454628b5c911489dece970",
+            "size": 329132,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/thumbnails/2194e42a579b43d18e3d8985cdbca157/0b544aec48b34edfa490883d03042052.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5998cb1724d947248ea1126c7a3b5a0f",
+            "size": 34242,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/thumbnails/2194e42a579b43d18e3d8985cdbca157/65aafa8ee37d4730926790da631ffde1.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4dce08a514024ec6972b0543a5f0d55c",
+            "size": 19398,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/thumbnails/2194e42a579b43d18e3d8985cdbca157/f8086226ead84dfe920c1cbf308417b8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "70aa649943ed445dbb5b4020ee1bcc23",
+            "size": 4490,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/thumbnails/2194e42a579b43d18e3d8985cdbca157/6196c464b9894eaea05e995b3d29b946.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bc80476d1e4c43d2b2aea2eb73aa9cc6",
+            "size": 1184,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8c53321301234400b70975fa6abb5e5d/thumbnails/2194e42a579b43d18e3d8985cdbca157/a22f5bba16504369a84254b818a2ff3f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b66c47d1c01840dfb34097260ce26868",
+        "username": "m17pro",
+        "displayName": "M17pro",
+        "profileUrl": "https://sketchfab.com/m17pro",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/979233370adc4c94ad4ee6f8feb3e135",
+          "images": [
+            {
+              "size": 989,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/979233370adc4c94ad4ee6f8feb3e135/f2c74f80afc7416fb34db5db99cfcb7e.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1363,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/979233370adc4c94ad4ee6f8feb3e135/455588332757466f9b6e5865f4f34aab.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3066,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/979233370adc4c94ad4ee6f8feb3e135/06bef34386dd4119ac3bfa20117451cd.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3487,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/979233370adc4c94ad4ee6f8feb3e135/8e54dc38c412442e9952a21d5ad0e1d7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b66c47d1c01840dfb34097260ce26868"
+      },
+      "description": "Optimised for game asset and Unreal Engine.",
+      "faceCount": 95675,
+      "createdAt": "2024-09-01T16:57:36.831692",
+      "vertexCount": 51011,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 40554264,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 95675,
+          "vertexCount": 76092
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 37672441,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 95675,
+          "vertexCount": 76092
+        },
+        "source": {
+          "textureCount": null,
+          "size": 86264696,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6341625,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d3b9a8c5e6bc4ba3818bead275c53ecf",
+      "uid": "d3b9a8c5e6bc4ba3818bead275c53ecf",
+      "name": "jaguar high poly",
+      "staffpickedAt": null,
+      "viewCount": 3868,
+      "likeCount": 88,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d3b9a8c5e6bc4ba3818bead275c53ecf",
+      "embedUrl": "https://sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2023-09-08T16:59:28.686541",
+      "tags": [
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "retro",
+          "slug": "retro",
+          "uri": "https://api.sketchfab.com/v3/tags/retro"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "retrocar",
+          "slug": "retrocar",
+          "uri": "https://api.sketchfab.com/v3/tags/retrocar"
+        },
+        {
+          "name": "retrofuturism",
+          "slug": "retrofuturism",
+          "uri": "https://api.sketchfab.com/v3/tags/retrofuturism"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "73c99b1ab8ae4ab5a587b6d3939d0ec1",
+            "size": 230316,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/thumbnails/5493e363382c42c7934dabffdb2dcc8c/c8a934808418497a944a687d218f2859.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7091fcce43a5445eb5fa9fc6d0134ac7",
+            "size": 51452,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/thumbnails/5493e363382c42c7934dabffdb2dcc8c/cb6e16282d784976b97965104012e780.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "853c42a8f5a64e63b5b0a07183b65fc2",
+            "size": 28242,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/thumbnails/5493e363382c42c7934dabffdb2dcc8c/e5f2ca94f4c24e1bb0d182a9b7363e64.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "82eb2dcfffaa4837843fefd6d32c071e",
+            "size": 5450,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/thumbnails/5493e363382c42c7934dabffdb2dcc8c/075fdec825ad4b25ab4b2177c087bd15.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5f0ea8c264aa4c01b92ec8a4fcdddfc5",
+            "size": 1205,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d3b9a8c5e6bc4ba3818bead275c53ecf/thumbnails/5493e363382c42c7934dabffdb2dcc8c/ef024e519b5048c197784b85c5b88891.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e6c64f10b2714d7db0a84f369de75ba1",
+        "username": "menarzuw",
+        "displayName": "menarzuw",
+        "profileUrl": "https://sketchfab.com/menarzuw",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/780719a712d247f58346eee843c42086",
+          "images": [
+            {
+              "size": 968,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/780719a712d247f58346eee843c42086/ed1b697dafbb4094988504d205884265.png",
+              "height": 32
+            },
+            {
+              "size": 1325,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/780719a712d247f58346eee843c42086/4955c3a4d12e4e20a2c287e5153fea0d.png",
+              "height": 48
+            },
+            {
+              "size": 2352,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/780719a712d247f58346eee843c42086/3a347e1509c4444d82647990481b2c00.png",
+              "height": 90
+            },
+            {
+              "size": 2514,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/780719a712d247f58346eee843c42086/4e2f341e5fab419888ab0662fbb5cda0.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e6c64f10b2714d7db0a84f369de75ba1"
+      },
+      "description": "**The Jaguar E-type is a two-door, two-seater sports car that was produced by Jaguar Cars from 1961 to 1975. It is considered one of the most beautiful and iconic cars ever made.**\n\nA high-polygon retro Jaguar E-type car would have a very detailed exterior. The curves of the body would be smooth and flowing, and the details such as the headlights, taillights, and grill would be very sharp and pronounced. The car would also have a realistic paint job, with the option of a variety of colors.\n\nThe interior of the car would also be very detailed. The seats would be made of high-quality leather, and the dashboard would be made of wood or metal. The car would also have a variety of features, such as a sunroof, air conditioning, and a sound system.\n\nThe engine of the car would be a powerful V8 engine, and the car would be capable of reaching speeds of over 200 mph. The car would also have a responsive handling, making it a joy to drive.",
+      "faceCount": 543656,
+      "createdAt": "2023-09-08T16:43:23.374477",
+      "vertexCount": 293871,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 18743640,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 543196,
+          "vertexCount": 355875
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 8826771,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 543196,
+          "vertexCount": 355875
+        },
+        "source": {
+          "textureCount": null,
+          "size": 19728018,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9264830,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c722e175f91240a88eec2d777b6d503f",
+      "uid": "c722e175f91240a88eec2d777b6d503f",
+      "name": "Formula E  [Jaguar I Type-4]",
+      "staffpickedAt": null,
+      "viewCount": 9543,
+      "likeCount": 150,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c722e175f91240a88eec2d777b6d503f",
+      "embedUrl": "https://sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2023-06-02T17:04:57.778456",
+      "tags": [
+        {
+          "name": "formula",
+          "slug": "formula",
+          "uri": "https://api.sketchfab.com/v3/tags/formula"
+        },
+        {
+          "name": "e",
+          "slug": "e",
+          "uri": "https://api.sketchfab.com/v3/tags/e"
+        },
+        {
+          "name": "4",
+          "slug": "4",
+          "uri": "https://api.sketchfab.com/v3/tags/4"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "racecar",
+          "slug": "racecar",
+          "uri": "https://api.sketchfab.com/v3/tags/racecar"
+        },
+        {
+          "name": "prix",
+          "slug": "prix",
+          "uri": "https://api.sketchfab.com/v3/tags/prix"
+        },
+        {
+          "name": "grandprix",
+          "slug": "grandprix",
+          "uri": "https://api.sketchfab.com/v3/tags/grandprix"
+        },
+        {
+          "name": "formulae",
+          "slug": "formulae",
+          "uri": "https://api.sketchfab.com/v3/tags/formulae"
+        },
+        {
+          "name": "i-type",
+          "slug": "i-type",
+          "uri": "https://api.sketchfab.com/v3/tags/i-type"
+        },
+        {
+          "name": "formula-e",
+          "slug": "formula-e",
+          "uri": "https://api.sketchfab.com/v3/tags/formula-e"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "1",
+          "slug": "1",
+          "uri": "https://api.sketchfab.com/v3/tags/1"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "e-prix",
+          "slug": "e-prix",
+          "uri": "https://api.sketchfab.com/v3/tags/e-prix"
+        },
+        {
+          "name": "eprix",
+          "slug": "eprix",
+          "uri": "https://api.sketchfab.com/v3/tags/eprix"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f49cf48f8e4c45448ade975f1760cb0a",
+            "size": 105342,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/thumbnails/5c3010769c214675a6e590b2fdce3644/ab441ffd3ab14f5c8a4ca84b1c2e40f3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "37bc38db9c0a48db8819866e1c337b7e",
+            "size": 37032,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/thumbnails/5c3010769c214675a6e590b2fdce3644/e7430b830484496fa51cee5e3be8e9e8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1ecfa8c33aee48898404e6482ccdeccc",
+            "size": 22343,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/thumbnails/5c3010769c214675a6e590b2fdce3644/af71d9aa47de48159577745dffa5f019.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "866adf63e80745b99f2f85e886259b02",
+            "size": 5056,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/thumbnails/5c3010769c214675a6e590b2fdce3644/67bfa479b34f4ba180cb00d1224a79c1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f62e315a573f4b808e6efb402f4af4f0",
+            "size": 1157,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c722e175f91240a88eec2d777b6d503f/thumbnails/5c3010769c214675a6e590b2fdce3644/02f5fd869c544f3e9504e5cca2366ad3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "126bfe4b4fb74df2a0d6fd1aefd7655b",
+        "username": "3dblender_1",
+        "displayName": "3dblender_1",
+        "profileUrl": "https://sketchfab.com/3dblender_1",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8998240ae18b452f9d11ff5102d24f21",
+          "images": [
+            {
+              "size": 1191,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8998240ae18b452f9d11ff5102d24f21/fb97880b21224c50b9003c874e190f49.png",
+              "height": 32
+            },
+            {
+              "size": 2106,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8998240ae18b452f9d11ff5102d24f21/4d1c09d04a5446368fd0116ff8283321.png",
+              "height": 48
+            },
+            {
+              "size": 5691,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8998240ae18b452f9d11ff5102d24f21/028465686afd4cba833ecda52f39b3a6.png",
+              "height": 90
+            },
+            {
+              "size": 6750,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8998240ae18b452f9d11ff5102d24f21/99290f9ce0b640219a99c4ea2d04444c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/126bfe4b4fb74df2a0d6fd1aefd7655b"
+      },
+      "description": "This is a model of the **Formula-E Jaguar I Type-4 {GEN 2}**........\n\nMODEL HAS SEPARATE WHEEL MESHES for all 4 tyres : ]\n\nCredits for steering wheel model to https://sketchfab.com/chladomj   -   model- https://skfb.ly/6X66N\n\nCredits for brake disk and capiler to https://sketchfab.com/vladivpg    -   model- https://skfb.ly/6Xy8o\n\nMade in blender.....",
+      "faceCount": 296711,
+      "createdAt": "2023-06-02T13:51:47.488942",
+      "vertexCount": 154581,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 18730660,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 295806,
+          "vertexCount": 395520
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 7971826,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 295806,
+          "vertexCount": 395520
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8421142,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 10227679,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f6f9613ee703423993da451e02680954",
+      "uid": "f6f9613ee703423993da451e02680954",
+      "name": "Jaguar E-type",
+      "staffpickedAt": null,
+      "viewCount": 869,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f6f9613ee703423993da451e02680954",
+      "embedUrl": "https://sketchfab.com/models/f6f9613ee703423993da451e02680954/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2019-06-21T00:26:04.402830",
+      "tags": [
+        {
+          "name": "rift",
+          "slug": "rift",
+          "uri": "https://api.sketchfab.com/v3/tags/rift"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "oculus",
+          "slug": "oculus",
+          "uri": "https://api.sketchfab.com/v3/tags/oculus"
+        },
+        {
+          "name": "vr",
+          "slug": "vr",
+          "uri": "https://api.sketchfab.com/v3/tags/vr"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "gravetysketchvr",
+          "slug": "gravetysketchvr",
+          "uri": "https://api.sketchfab.com/v3/tags/gravetysketchvr"
+        },
+        {
+          "name": "etype",
+          "slug": "etype",
+          "uri": "https://api.sketchfab.com/v3/tags/etype"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "be4bf82d61de4a4bb6e31a4d665904d7",
+            "size": 232309,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f6f9613ee703423993da451e02680954/thumbnails/5855c3ede7fc4203a11817a25a3f4542/052ce3d76c2a4dd089c95e9a2c6069d9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "499bc527dfe24b2a952b582e9fabab39",
+            "size": 44132,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f6f9613ee703423993da451e02680954/thumbnails/5855c3ede7fc4203a11817a25a3f4542/9cc48974d7254505824adca9d426740b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e582cd258d9d481abedc95e706515f9f",
+            "size": 25494,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f6f9613ee703423993da451e02680954/thumbnails/5855c3ede7fc4203a11817a25a3f4542/0f6206e703ff495b9d0b7d2ab252109f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2957893bd5414156ad17e143107381bf",
+            "size": 5271,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f6f9613ee703423993da451e02680954/thumbnails/5855c3ede7fc4203a11817a25a3f4542/11eebacb1ec5461ba31ffe56104899bc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "0d44fff6491f4acfa6f2d526de88fb94",
+            "size": 969,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f6f9613ee703423993da451e02680954/thumbnails/5855c3ede7fc4203a11817a25a3f4542/89a1a8ed35424bafbac88e9040c7cf61.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c8bb97bf05ff4a99ae6f5d8fc7e8ab84",
+        "username": "nourdin",
+        "displayName": "nourdin",
+        "profileUrl": "https://sketchfab.com/nourdin",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f30f77a31c8243bbbd4bafe425776d83",
+          "images": [
+            {
+              "size": 796,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f30f77a31c8243bbbd4bafe425776d83/d4ef9e194f6b44cc92e797f18ebcfa1d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1148,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f30f77a31c8243bbbd4bafe425776d83/ef3a045f23f3417eb77a5f24a3aabdd3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2312,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f30f77a31c8243bbbd4bafe425776d83/7179d44a9a524778afc5eb92d87edc19.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2626,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f30f77a31c8243bbbd4bafe425776d83/458d9745a5c5458aabd85f432de071b8.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c8bb97bf05ff4a99ae6f5d8fc7e8ab84"
+      },
+      "description": "Made in Gravity Sketch VR with Oculus Rift.",
+      "faceCount": 493374,
+      "createdAt": "2019-06-21T00:09:12.030192",
+      "vertexCount": 131205,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cb108c5f14554857818cef42112f3ea6",
+      "uid": "cb108c5f14554857818cef42112f3ea6",
+      "name": "J'Cougar I-Type Drag",
+      "staffpickedAt": null,
+      "viewCount": 291,
+      "likeCount": 11,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cb108c5f14554857818cef42112f3ea6",
+      "embedUrl": "https://sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2022-07-09T12:20:22.517771",
+      "tags": [
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "drag",
+          "slug": "drag",
+          "uri": "https://api.sketchfab.com/v3/tags/drag"
+        },
+        {
+          "name": "classic",
+          "slug": "classic",
+          "uri": "https://api.sketchfab.com/v3/tags/classic"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "racecar",
+          "slug": "racecar",
+          "uri": "https://api.sketchfab.com/v3/tags/racecar"
+        },
+        {
+          "name": "sims4",
+          "slug": "sims4",
+          "uri": "https://api.sketchfab.com/v3/tags/sims4"
+        },
+        {
+          "name": "sims",
+          "slug": "sims",
+          "uri": "https://api.sketchfab.com/v3/tags/sims"
+        },
+        {
+          "name": "classic-car",
+          "slug": "classic-car",
+          "uri": "https://api.sketchfab.com/v3/tags/classic-car"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "93f1984faab344888b03cfaf2a2c701d",
+            "size": 112853,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/thumbnails/f6d1111e814543f582f818e5351f2128/78c3df80addf426aa28f35d4fe885f00.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "1277e1c2843348e782dc18a86b085acc",
+            "size": 39718,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/thumbnails/f6d1111e814543f582f818e5351f2128/0d51be9a60c2431eadafc449c3e8402f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3574bc7b785b4681a526f32fd0f6a6db",
+            "size": 23884,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/thumbnails/f6d1111e814543f582f818e5351f2128/495407020a8c4edb9579c2811502a02e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a0cd7a1b9dc14cf29f6f6a952f65ebda",
+            "size": 5458,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/thumbnails/f6d1111e814543f582f818e5351f2128/7216947f8fba428588197ef575b47c46.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c1fc9b05e7024c8b8cc07100345e8e1c",
+            "size": 1285,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cb108c5f14554857818cef42112f3ea6/thumbnails/f6d1111e814543f582f818e5351f2128/f4bb79da10294ae8a4c5e9b8ffd6a3bd.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c67f4867600a4d0eb66fbdbece2ae03f",
+        "username": "yudhamfr",
+        "displayName": "Yudha Mfr",
+        "profileUrl": "https://sketchfab.com/yudhamfr",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8865b0300ec14642952184c9dbe5fc97",
+          "images": [
+            {
+              "size": 553,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/b4a5b300f588441d880b3f7d891e5b2a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 731,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/07577d3b00b9422a885fb4445f366bb4.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1376,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/6490fc38290e4ef09f1cfcb699b5350e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1594,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8865b0300ec14642952184c9dbe5fc97/5dc82292d661449fa0a9e8b089a12dd7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c67f4867600a4d0eb66fbdbece2ae03f"
+      },
+      "description": "Jaguar E-type sims 4 style, inspired by jaguar E-type roadster.\n.\nLow poly\n3dsmax",
+      "faceCount": 7555,
+      "createdAt": "2022-07-09T12:09:35.868764",
+      "vertexCount": 4163,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 1839104,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 7555,
+          "vertexCount": 8474
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 1543251,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 7555,
+          "vertexCount": 8474
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13703584,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1811614,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/713d137cc972417e8bea104a8dd81fe8",
+      "uid": "713d137cc972417e8bea104a8dd81fe8",
+      "name": "[Driver: San Francisco] Jaguar E-Type",
+      "staffpickedAt": null,
+      "viewCount": 639,
+      "likeCount": 26,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-713d137cc972417e8bea104a8dd81fe8",
+      "embedUrl": "https://sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-25T13:56:57.823304",
+      "tags": [
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "cef6bfb5b5c042ab967a2d457beaf445",
+            "size": 131861,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/thumbnails/28ebec673aaa41afa6c1105850edaf07/0f5419d49e504075b01d2e6ae86773c5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a5a22ad6353349ad8e6f4063c6b815c5",
+            "size": 45895,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/thumbnails/28ebec673aaa41afa6c1105850edaf07/3c9c9335f6224135bc2163194314c347.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "911e5d2b51a84e7e8cc05177debfbbb8",
+            "size": 27339,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/thumbnails/28ebec673aaa41afa6c1105850edaf07/7a3f91e78dc948c4a802a1feb816453f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "13a538049252415eaa4db515225767b1",
+            "size": 6282,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/thumbnails/28ebec673aaa41afa6c1105850edaf07/a70919449b6045649b5b42643c42127b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8e894d97ea174dffa84a526b1dd492fb",
+            "size": 1397,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/713d137cc972417e8bea104a8dd81fe8/thumbnails/28ebec673aaa41afa6c1105850edaf07/ede34af94a6144308e550c83946ad1ac.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5835904f1a1d432a9fb5a92d34340e54",
+        "username": "VuckyZ123",
+        "displayName": "VuckyZ",
+        "profileUrl": "https://sketchfab.com/VuckyZ123",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3bd539e72cf946d98ad22af346e9b9e2",
+          "images": [
+            {
+              "size": 1136,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/ce0329facff645a0ba7de6476acd9f9b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1691,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/90f32a79e40646f3858e8cb0efa262f7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3712,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/446fb29026214c10bb8ab3bae27c2734.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4188,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/66fb5392052a4764ae5320acba4f8293.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5835904f1a1d432a9fb5a92d34340e54"
+      },
+      "description": "model ripped by: The Unpunished on discord. \n\ntexture rip by me",
+      "faceCount": 15145,
+      "createdAt": "2026-01-25T13:48:36.877328",
+      "vertexCount": 10084,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 1620568,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 15145,
+          "vertexCount": 13998
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 1219010,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 15145,
+          "vertexCount": 13998
+        },
+        "source": {
+          "textureCount": null,
+          "size": 7111950,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1215114,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/70f1861ec2dc46a1847c163b649d7dd2",
+      "uid": "70f1861ec2dc46a1847c163b649d7dd2",
+      "name": "Autodelic",
+      "staffpickedAt": null,
+      "viewCount": 751,
+      "likeCount": 47,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-70f1861ec2dc46a1847c163b649d7dd2",
+      "embedUrl": "https://sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2019-05-04T17:52:55.694220",
+      "tags": [
+        {
+          "name": "wheel",
+          "slug": "wheel",
+          "uri": "https://api.sketchfab.com/v3/tags/wheel"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "rubber",
+          "slug": "rubber",
+          "uri": "https://api.sketchfab.com/v3/tags/rubber"
+        },
+        {
+          "name": "colorful",
+          "slug": "colorful",
+          "uri": "https://api.sketchfab.com/v3/tags/colorful"
+        },
+        {
+          "name": "psychedelic",
+          "slug": "psychedelic",
+          "uri": "https://api.sketchfab.com/v3/tags/psychedelic"
+        },
+        {
+          "name": "low-poly-model",
+          "slug": "low-poly-model",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly-model"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "plastic",
+          "slug": "plastic",
+          "uri": "https://api.sketchfab.com/v3/tags/plastic"
+        },
+        {
+          "name": "steel",
+          "slug": "steel",
+          "uri": "https://api.sketchfab.com/v3/tags/steel"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a2813cfed11046efbe7ab4c666c54ab6",
+            "size": 40898,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/thumbnails/cac0dffd6ad3492f8c335dea3bb058bf/f8da9321edfe4537916029697f43a9f4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ba30cd5223084b7c815bc896a40346c1",
+            "size": 357743,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/thumbnails/cac0dffd6ad3492f8c335dea3bb058bf/4ac9d42f70754507bd1220500c399bbe.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ab8e19fb2215408f8eaf19e31a59cc7c",
+            "size": 76572,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/thumbnails/cac0dffd6ad3492f8c335dea3bb058bf/29deda3b6b7c47419d132055072fba73.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "78ffa6f259a745e8862612e6a022e8e3",
+            "size": 6999,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/thumbnails/cac0dffd6ad3492f8c335dea3bb058bf/86a0365cce804dd88477f1409d0c2a07.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "74e9f21e5e0e4c01a130cdede2df1b08",
+            "size": 1059,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/70f1861ec2dc46a1847c163b649d7dd2/thumbnails/cac0dffd6ad3492f8c335dea3bb058bf/9eafe9a900a94948bba63fea98b70444.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a8c454996bd740be9a8374b4ed38b472",
+        "username": "ghilby",
+        "displayName": "Glennosaurus",
+        "profileUrl": "https://sketchfab.com/ghilby",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e288c1c5281b4d5fb0e11e8fe74342c7",
+          "images": [
+            {
+              "size": 1126,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e288c1c5281b4d5fb0e11e8fe74342c7/764c8d4fdcf342939ee79a28bb14e433.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1564,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e288c1c5281b4d5fb0e11e8fe74342c7/74f7ded6dd1d42039ef7e133c6f8e4ff.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2954,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e288c1c5281b4d5fb0e11e8fe74342c7/fb4bf32408574f0ebeda93db3629d282.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3305,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e288c1c5281b4d5fb0e11e8fe74342c7/5876dc7b94464d658b18e2a4978bcd91.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a8c454996bd740be9a8374b4ed38b472"
+      },
+      "description": "Took inspiration from the sports cars of the 60's and 70's jaguar E-type in particular\n Modelled in Maya 2018, textured in Substance Painter 2",
+      "faceCount": 9306,
+      "createdAt": "2019-05-04T17:17:54.473190",
+      "vertexCount": 4861,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e26c0a10c0e34befbca258e244d4070a",
+      "uid": "e26c0a10c0e34befbca258e244d4070a",
+      "name": "Jaguar e type",
+      "staffpickedAt": null,
+      "viewCount": 1351,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e26c0a10c0e34befbca258e244d4070a",
+      "embedUrl": "https://sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2018-03-23T12:54:58.072013",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "oldcar",
+          "slug": "oldcar",
+          "uri": "https://api.sketchfab.com/v3/tags/oldcar"
+        },
+        {
+          "name": "clasic",
+          "slug": "clasic",
+          "uri": "https://api.sketchfab.com/v3/tags/clasic"
+        },
+        {
+          "name": "jaguaretype",
+          "slug": "jaguaretype",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguaretype"
+        },
+        {
+          "name": "clasiccar",
+          "slug": "clasiccar",
+          "uri": "https://api.sketchfab.com/v3/tags/clasiccar"
+        },
+        {
+          "name": "hardsurfacing",
+          "slug": "hardsurfacing",
+          "uri": "https://api.sketchfab.com/v3/tags/hardsurfacing"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "maya2018",
+          "slug": "maya2018",
+          "uri": "https://api.sketchfab.com/v3/tags/maya2018"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "sports-fitness"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f0118a7dadd04ca4b61f2fecec688012",
+            "size": 72545,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/thumbnails/b32e4abe8f934494ae9d0711abefaa5b/5e5cc2e0dd034c2da71df11cd4fa63a5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "34d0cceee23f48239b25296bcee666e1",
+            "size": 20670,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/thumbnails/b32e4abe8f934494ae9d0711abefaa5b/c01d284183314349a50c0af0661c245c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "09bfb95c3e1a4ec3913fe99d7cd8273c",
+            "size": 12423,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/thumbnails/b32e4abe8f934494ae9d0711abefaa5b/749cb99cddc346669085ae0ead5ca695.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "77345184420a4a8cab2011f13d04a979",
+            "size": 3089,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/thumbnails/b32e4abe8f934494ae9d0711abefaa5b/d55661713328403c825bf53e487e7ea2.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e1cdbfe68d2f4e3a84873430ea0a02df",
+            "size": 664,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e26c0a10c0e34befbca258e244d4070a/thumbnails/b32e4abe8f934494ae9d0711abefaa5b/ac2b4f36fa6f44a9919d43ca0db1ecc7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0772bd5072484f49b287a2362a0dc092",
+        "username": "juanjofedz",
+        "displayName": "juanjofedz",
+        "profileUrl": "https://sketchfab.com/juanjofedz",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/01789553e12e406b80c7687d8931f31f",
+          "images": [
+            {
+              "size": 634,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/01789553e12e406b80c7687d8931f31f/20c64baae54647a6a5cd3365c208b9c8.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1040,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/01789553e12e406b80c7687d8931f31f/a1dfa17c644a4ef0908cfe37a1e1e21a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3232,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/01789553e12e406b80c7687d8931f31f/eba5095bfaa4475a8c9a4b8eedd869f8.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3928,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/01789553e12e406b80c7687d8931f31f/a8558a04accd420380668e178212824e.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0772bd5072484f49b287a2362a0dc092"
+      },
+      "description": "Model made in Maya of a jaguar e type.\nModelo realizado en Maya del jaguar e type.",
+      "faceCount": 878400,
+      "createdAt": "2018-03-23T12:14:20.246224",
+      "vertexCount": 441784,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5f0f3559bc2e44009f6eabdcdaee900e",
+      "uid": "5f0f3559bc2e44009f6eabdcdaee900e",
+      "name": "Jaguar E-type tuner",
+      "staffpickedAt": null,
+      "viewCount": 358,
+      "likeCount": 7,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5f0f3559bc2e44009f6eabdcdaee900e",
+      "embedUrl": "https://sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2021-01-05T20:05:03.886240",
+      "tags": [
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "tuner",
+          "slug": "tuner",
+          "uri": "https://api.sketchfab.com/v3/tags/tuner"
+        },
+        {
+          "name": "e-type",
+          "slug": "e-type",
+          "uri": "https://api.sketchfab.com/v3/tags/e-type"
+        },
+        {
+          "name": "old-timer",
+          "slug": "old-timer",
+          "uri": "https://api.sketchfab.com/v3/tags/old-timer"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "afa0541998cf453d8ca26f28d5e55b54",
+            "size": 260911,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/thumbnails/28090cd7e58b4ddd95aa45ff7fb05125/db8e0f2b387b4d9e9e2475e3173b84a9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "611cc87d12814aa1a80a517ef6ba1e60",
+            "size": 55428,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/thumbnails/28090cd7e58b4ddd95aa45ff7fb05125/1e6c8427dab94cda9f22f785fe9fa551.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c94306bb0d8b454da6121af1e6eb1454",
+            "size": 31183,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/thumbnails/28090cd7e58b4ddd95aa45ff7fb05125/7a6e24f1f86548f8b9fee01098f398d7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4df2d19dee8043cb9bc55271b4da9470",
+            "size": 6318,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/thumbnails/28090cd7e58b4ddd95aa45ff7fb05125/dc1a36e9d380453aaf15277eeb3ed416.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b7616a221ca94ef68e2e3ba301f56f85",
+            "size": 980,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5f0f3559bc2e44009f6eabdcdaee900e/thumbnails/28090cd7e58b4ddd95aa45ff7fb05125/0ac5b9799d79403c90bf8b3c4fc8fb50.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "cfd030e5abee44f39f4fb3af7277e13c",
+        "username": "glenn.janssens13",
+        "displayName": "Glenn J. (aka Bluefluffy Fusky)",
+        "profileUrl": "https://sketchfab.com/glenn.janssens13",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d3ded6dd179e4684b9ef28f69ef92025",
+          "images": [
+            {
+              "size": 5032,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d3ded6dd179e4684b9ef28f69ef92025/6f567a1d63ea43b98d4764fe164ecafa.png",
+              "height": 32
+            },
+            {
+              "size": 7533,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d3ded6dd179e4684b9ef28f69ef92025/46f17e1c8b0c462b8fb5a65ccd7aafa5.png",
+              "height": 48
+            },
+            {
+              "size": 17560,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d3ded6dd179e4684b9ef28f69ef92025/8f2b7cc8b191484ab5fb042afdab7e29.png",
+              "height": 90
+            },
+            {
+              "size": 20579,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d3ded6dd179e4684b9ef28f69ef92025/8faa802cbe8d47188dbbf3d6349a775c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/cfd030e5abee44f39f4fb3af7277e13c"
+      },
+      "description": "Custom tuner version i made real quick for lols",
+      "faceCount": 2436402,
+      "createdAt": "2021-01-05T16:54:33.965572",
+      "vertexCount": 1224515,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 63362248,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 2436400,
+          "vertexCount": 1389692
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 33101031,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 2436400,
+          "vertexCount": 1389692
+        },
+        "source": {
+          "textureCount": null,
+          "size": 52054142,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13318280,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/2f0d87f2481045e2ab453d4b249b5932",
+      "uid": "2f0d87f2481045e2ab453d4b249b5932",
+      "name": "Jaguar Type E",
+      "staffpickedAt": null,
+      "viewCount": 648,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-2f0d87f2481045e2ab453d4b249b5932",
+      "embedUrl": "https://sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2021-11-24T16:23:28.727695",
+      "tags": [
+        {
+          "name": "type",
+          "slug": "type",
+          "uri": "https://api.sketchfab.com/v3/tags/type"
+        },
+        {
+          "name": "jaguar",
+          "slug": "jaguar",
+          "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "898ecdbfa72940bab033439d2f997ac7",
+            "size": 157444,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/thumbnails/717ab5cb6a494a7d8e356974b1dbb395/8cb749c11b8c4b1981789e837c434755.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a450807f200342a8b2dde09df2f919f5",
+            "size": 32880,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/thumbnails/717ab5cb6a494a7d8e356974b1dbb395/68309ab6c29f418ab18331162b4e90a8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6deacc7e1d8f4b42ac557ec69e360a4f",
+            "size": 17366,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/thumbnails/717ab5cb6a494a7d8e356974b1dbb395/9a8c1b15352646508c068d1206fc2405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4a9a168be2e04615b6e3dce0bb53a440",
+            "size": 3538,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/thumbnails/717ab5cb6a494a7d8e356974b1dbb395/4554aae05b854a84bfe84c091d7bc5f2.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "75c5c2bcf72949788e398312b74c46c1",
+            "size": 984,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/2f0d87f2481045e2ab453d4b249b5932/thumbnails/717ab5cb6a494a7d8e356974b1dbb395/722b411a953a4f96ab5dbe4ef3cfa662.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "839d1f5db64d4cf88f86c9d173d09ea3",
+        "username": "lesateliers3d_officiel",
+        "displayName": "L'Atelier 5D",
+        "profileUrl": "https://sketchfab.com/lesateliers3d_officiel",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/743686a657044bffae4a82e90b16e675",
+          "images": [
+            {
+              "size": 1376,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/743686a657044bffae4a82e90b16e675/bc2f66e270af4d4499d92662b8eb3b9a.png",
+              "height": 32
+            },
+            {
+              "size": 1999,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/743686a657044bffae4a82e90b16e675/1c931898f24546f08538a205b788d390.png",
+              "height": 48
+            },
+            {
+              "size": 3682,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/743686a657044bffae4a82e90b16e675/085e7aeb0c1b4a39a7f533f7d3097c81.png",
+              "height": 90
+            },
+            {
+              "size": 4118,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/743686a657044bffae4a82e90b16e675/f54d6dc2707a4991b300e67ea811e0c1.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/839d1f5db64d4cf88f86c9d173d09ea3"
+      },
+      "description": "The Jaguar E-Type, or the Jaguar XK-E for the North American market, is a British sports car that was manufactured by Jaguar Cars Ltd between 1961 and 1974. Its combination of beauty, high performance, and competitive pricing established the model as an icon of the motoring world. The E-Type's claimed 150 mph (241 km/h) top speed, sub-7-second 0 to 60 mph (97 km/h) acceleration, unitary construction, disc brakes, rack-and-pinion steering, and independent front and rear suspension distinguished the car and spurred industry-wide changes. The E-Type was based on Jaguar's D-Type racing car, which had won the 24 Hours of Le Mans for three consecutive years beginning in 1955, and employed what was, for the early 1960s, a novel racing design principle, with a front subframe carrying the engine, front suspension and front bodywork bolted directly to the body tub. No ladder frame chassis, as was common at the time, was needed and as such the first cars weighed only 1315 kg (2900 lb).",
+      "faceCount": 290384,
+      "createdAt": "2021-11-23T13:20:50.526531",
+      "vertexCount": 151755,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 45594556,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 290384,
+          "vertexCount": 237037
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 38440806,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 290384,
+          "vertexCount": 237037
+        },
+        "source": {
+          "textureCount": null,
+          "size": 23764924,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 22694343,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+$ErrorActionPreference='Stop'
+$projectPath=[System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+$deliveryPath=Join-Path $projectPath 'ZeroWatt-Premium-City.zip'
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+Add-Type -AssemblyName System.IO.Compression
+$stream=[System.IO.File]::Open($deliveryPath,[System.IO.FileMode]::Create)
+$archive=[System.IO.Compression.ZipArchive]::new($stream,[System.IO.Compression.ZipArchiveMode]::Create,$false)
+try {
+  $files=Get-ChildItem -LiteralPath $projectPath -Recurse -File -Force | Where-Object {
+    $relative=$_.FullName.Substring($projectPath.Length+1)
+    $relative -notmatch '^(node_modules|\.git|\.upgrade-baseline|checkpoints|downloads)(\\|/)' -and
+    $relative -notmatch '(^|[\\/])__pycache__([\\/]|$)' -and
+    $_.Extension -notin '.zip','.partial','.tmp' -and $_.Name -notmatch '\.blend[0-9]+$'
+  }
+  foreach($file in $files){
+    $relative=$file.FullName.Substring($projectPath.Length+1).Replace('\','/')
+    [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,$file.FullName,"ZeroWatt-City/$relative",'Optimal') | Out-Null
+  }
+}finally{$archive.Dispose();$stream.Dispose()}
+$check=[System.IO.Compression.ZipFile]::OpenRead($deliveryPath)
+try {
+  foreach($required in @('index.html','app.bundle.js','CITY_UPGRADE_PROGRESS.md','HYBRID-GUIDE.md','assets/environment/city-vehicles.blend','assets/environment/city-people.blend','assets/environment/city-bicycle.blend','assets/environment/site-library.blend','assets/hybrid/hybrid-assembly.blend','src/graphics/traffic.js')){
+    if(!$check.GetEntry("ZeroWatt-City/$required")){throw "Missing archive entry: $required"}
+  }
+  foreach($required in @('CAR_INTEGRATION_PROGRESS.md','src/cars/installed-fleet.js','assets/cars/traffic-sources.json','assets/cars/SOURCES.md','scripts/blender/make_traffic_lods.py','tools/make-traffic-lods.ps1','tools/validate-traffic-assets.cjs','docs/cars/TRAFFIC-PIPELINE.md')){
+    if(!$check.GetEntry("ZeroWatt-City/$required")){throw "Missing traffic pipeline entry: $required"}
+  }
+  [PSCustomObject]@{Path=$deliveryPath;Files=$check.Entries.Count;Bytes=(Get-Item -LiteralPath $deliveryPath).Length}
+}finally{$check.Dispose()}

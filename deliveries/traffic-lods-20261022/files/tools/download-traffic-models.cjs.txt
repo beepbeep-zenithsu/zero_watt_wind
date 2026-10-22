@@ -1,0 +1,57 @@
+/* Official Sketchfab API only. Never downloads viewer caches or saves credentials.
+   node tools/download-traffic-models.cjs --metadata-only
+   SKETCHFAB_ACCESS_TOKEN (OAuth) must be supplied locally for actual downloads. */
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const {Readable} = require('node:stream');
+const {pipeline} = require('node:stream/promises');
+const root = path.resolve(__dirname, '..');
+const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/cars/traffic-sources.json'), 'utf8'));
+const args = process.argv.slice(2), metadataOnly = args.includes('--metadata-only');
+const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
+const metadataDir = path.join(root, 'assets/cars/metadata');
+const downloadDir = path.join(root, 'downloads/cars');
+const token = process.env.SKETCHFAB_ACCESS_TOKEN;
+async function api(url, authenticated = false) {
+  const response = await fetch(url, {headers: authenticated ? {Authorization: `Bearer ${token}`} : {}, signal: AbortSignal.timeout(60000)});
+  if (!response.ok) throw new Error(response.status === 401 ? 'Official download requires a Sketchfab account/API token.' : `Official API returned HTTP ${response.status}`);
+  return response.json();
+}
+async function run() {
+  if (only && !manifest.cars.some(c=>c.id===only)) throw new Error('Unknown car id: ' + only);
+  fs.mkdirSync(metadataDir, {recursive:true});
+  const result = [];
+  for (const car of manifest.cars.filter(c => !only || c.id === only)) {
+    try {
+      if (!car.source?.uid) throw new Error('No redistribution-cleared source selected.');
+      const source = car.source;
+      const metadata = await api(`https://api.sketchfab.com/v3/models/${source.uid}`);
+      fs.writeFileSync(path.join(metadataDir, `${car.id}.json`), JSON.stringify(metadata, null, 2) + '\n');
+      if (metadataOnly) {result.push({id:car.id,status:'metadata-saved',license:metadata.license?.url}); continue;}
+      if (!source.verified) throw new Error('Source provenance must be reviewed before downloading.');
+      const license = metadata.license?.url?.replace('http:', 'https:');
+      if (license !== source.licenseUrl) throw new Error('Current source license differs from the recorded license.');
+      if (!metadata.isDownloadable) throw new Error('Creator has disabled downloads.');
+      if (!token) throw new Error('SKETCHFAB_ACCESS_TOKEN is absent; official download requires OAuth authentication.');
+      const links = await api(`https://api.sketchfab.com/v3/models/${source.uid}/download`, true);
+      const item = links.glb || links.gltf;
+      if (!item?.url || new URL(item.url).protocol !== 'https:') throw new Error('API supplied no supported HTTPS download.');
+      fs.mkdirSync(downloadDir, {recursive:true});
+      const response = await fetch(item.url, {signal:AbortSignal.timeout(300000)});
+      if (!response.ok) throw new Error(`Asset download returned HTTP ${response.status}`);
+      const ext = links.glb === item ? '.glb' : '.zip';
+      const file = path.join(downloadDir, car.id + ext);
+      if (fs.existsSync(file)) throw new Error('Source file already exists; preserve it and inspect before replacing.');
+      const partial = file + '.partial';
+      await pipeline(Readable.fromWeb(response.body), fs.createWriteStream(partial, {flags:'wx'}));
+      fs.renameSync(partial, file);
+      const sha256 = crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+      fs.writeFileSync(file + '.receipt.json', JSON.stringify({id:car.id,source:source.url,license,sha256,bytes:fs.statSync(file).size,downloadedAt:new Date().toISOString()}, null, 2) + '\n');
+      result.push({id:car.id,status:'downloaded',file:path.relative(root,file),sha256});
+    } catch (error) {result.push({id:car.id,status:'blocked',reason:error.message});}
+  }
+  console.log(JSON.stringify(result, null, 2));
+  if (result.some(r => r.status === 'blocked')) process.exitCode = 1;
+}
+run().catch(error => {console.error(error.message);process.exitCode=1;});

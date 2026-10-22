@@ -1,8 +1,11 @@
 import * as T from '../../vendor/three.module.js';
 import {addAssetInstances} from './assets.js';
-import {prepareTraffic,advanceTraffic,signalState} from './traffic.js';
+import {prepareTraffic,advanceTraffic,signalState,TRAFFIC_CRUISE} from './traffic.js';
 import {personLook,buildPedestrians,pedestrianPoses} from './people.js';
-import {attachTrafficFleet,placeFleetCar} from '../cars/traffic-fleet.js';
+import {attachTrafficFleet,placeFleetCar,flushTrafficFleet} from '../cars/traffic-fleet.js';
+import {roadNetwork,seedRoadUsers} from './road-network.js';
+import {buildCyclists,updateCyclists} from './cyclists.js';
+import {buildMobilityShadows,updateMobilityShadows} from './mobility-shadows.js';
 
 const ROAD=9.6,SIDEWALK=1.65;
 const carColors=['#4c7c92','#ddd4bd','#9d4e3e','#596b55','#b4bdc0','#d6ae53'];
@@ -13,14 +16,6 @@ function boxes(parent,name,values,material){
   values.forEach(([x,y,z,w,h,d],i)=>{p.position.set(x,y,z);p.scale.set(w,h,d);p.updateMatrix();mesh.setMatrixAt(i,p.matrix);});
   parent.add(mesh);return mesh;
 }
-function loop(rx,rz,reverse=false){
-  const pts=[],radius=4;
-  for(const [x,z,start] of [[rx-radius,rz-radius,0],[-rx+radius,rz-radius,Math.PI/2],[-rx+radius,-rz+radius,Math.PI],[rx-radius,-rz+radius,Math.PI*1.5]]){
-    for(let j=0;j<=8;j++){const a=start+j*Math.PI/16;pts.push(new T.Vector3(x+radius*Math.cos(a),0,z+radius*Math.sin(a)));}
-  }
-  if(reverse)pts.reverse();
-  return new T.CatmullRomCurve3(pts,true,'centripetal');
-}
 
 /** Layout follows the installation footprint, including the largest pond/roof. */
 export function buildCity(s){
@@ -29,6 +24,8 @@ export function buildCity(s){
   const hx=W/2+10.3,hz=D/2+10.3,rx=hx+ROAD/2,rz=hz+ROAD/2;
   const xs=[-rx-28,-rx,rx,rx+28],zs=[-rz-28,-rz,rz,rz+28];
   const city=s.city={root,hx,hz,rx,rz,zc,batches:[],cars:[],lighting:null,signalPhase:null};
+  city.network=roadNetwork(xs,zs);
+  city.motionBounds=new T.Box3(new T.Vector3(xs[0]-8,-1,zs[0]-8),new T.Vector3(xs[3]+8,5,zs[3]+8));
   root.userData.parcel={width:W,depth:D,hx,hz,rx,rz};
   const road=s.mat('#353d40',.95,0),curb=s.mat('#b4b9b6',.9,0),paving=s.mat('#a6aba9',.93,0);
   road.normalMap=paving.normalMap=s.surfaceNormal||null;road.normalScale.set(.14,.14);paving.normalScale.set(.09,.09);
@@ -58,7 +55,7 @@ export function buildCity(s){
     for(let x=a+1;x<b-1;x+=3.3)for(const side of [-1,1])dashes.push([x,-.166,z+side*2.35,1.3,.008,.065]);
     for(const side of [-1,1])centerLines.push([(a+b)/2,-.165,z+side*.13,b-a,.008,.035]);
   }
-  for(const x of [-rx,rx])for(const z of [-rz,rz])for(const side of [-1,1])for(let k=-5;k<=5;k++){
+  for(const x of xs)for(const z of zs)for(const side of [-1,1])for(let k=-5;k<=5;k++){
     crossings.push([x+side*(ROAD/2+.90),-.162,z+k*.66,1.55,.010,.32]);
     crossings.push([x+k*.66,-.161,z+side*(ROAD/2+.90),.32,.010,1.55]);
   }
@@ -132,12 +129,12 @@ export function buildCity(s){
   }
   // Pavement details repeat in batches, keeping the district affordable to render.
   const signalPoses=[[],[]];
-  for(const x of [-rx,rx])for(const z of [-rz,rz]){
+  for(const x of xs)for(const z of zs){
     for(const sx of [-1,1])for(const sz of [-1,1]){
       const px=x+sx*(ROAD/2+.65),pz=z+sz*(ROAD/2+.65);
       put('site-street-lamp',[px,-.09,pz],Math.atan2(-sx,-sz));
       signalPoses[sx===sz?0:1].push({position:[px,-.09,pz],rotation:sx===sz?(sz>0?Math.PI:0):(sx>0?-Math.PI/2:Math.PI/2)});
-      put('site-pedestrian',[px+sx*.75,-.09,pz+sz*.65],Math.atan2(-sx,-sz),.92+(sx+sz+2)*.025);
+      if(Math.abs(x)===rx&&Math.abs(z)===rz)put('site-pedestrian',[px+sx*.75,-.09,pz+sz*.65],Math.atan2(-sx,-sz),.92+(sx+sz+2)*.025);
     }
   }
   for(const side of [-1,1]){
@@ -156,21 +153,22 @@ export function buildCity(s){
     put('site-pedestrian',[side*4+.65,-.09,side*(rz+ROAD/2+.8)],side<0?0:Math.PI);
     put('site-pedestrian',[side*4-.65,-.09,side*(rz+ROAD/2+.8)],side<0?0:Math.PI);
   }
+  poses.set('site-pedestrian',Array.from({length:80},(_,i)=>({...personLook(i),position:[0,-.09,0],scale:.94+(i%4)*.025})));
   for(const [name,values] of poses){
-    const batch=addAssetInstances(root,name,values,{lighting:true,surfaceNormal:s.surfaceNormal});city.batches.push(batch);
+    const batch=addAssetInstances(root,name,values,{lighting:true,surfaceNormal:s.surfaceNormal,motionBounds:name==='site-pedestrian'?city.motionBounds:null});city.batches.push(batch);
     if(name==='site-pedestrian'){city.walkers=batch;buildPedestrians(city,values);}
     if(name.startsWith('site-apartment')||name==='site-shopfront'||name==='site-canyon-tower'||name==='site-distant-block'||name.startsWith('site-skyline'))batch.userData.cityBuildings=true;
   }
   city.signals=signalPoses.map(values=>addAssetInstances(root,'site-traffic-signal',values,{lighting:true}));
-  city.paths=[loop(rx-1.25,rz-1.25),loop(rx+1.25,rz+1.25,true)];
-  // Up to 7 moving cars per lane (14 total, replacing the old 8 moving + 6 parked), spaced at least ~14 m apart.
-  const perLane=Math.max(4,Math.min(7,Math.floor(city.paths[0].getLength()/14)));
-  for(let i=0;i<perLane*2;i++)city.cars.push({lane:i%2,phase:Math.floor(i/2)/perLane+(i%2)*.04,color:carColors[i%6]});
+  city.paths=city.network.paths;
+  city.cars=seedRoadUsers(city.paths,city.paths.map(()=>3),i=>({kind:i%2,color:carColors[i%6]}));
   prepareTraffic(city);
-  city.traffic=addAssetInstances(root,'site-city-sedan',city.cars.filter(c=>c.lane===0).map(()=>({position:[0,-.18,0]})),{lighting:true});
-  city.crossovers=addAssetInstances(root,'site-city-crossover',city.cars.filter(c=>c.lane===1).map(()=>({position:[0,-.18,0]})),{lighting:true});
+  city.traffic=addAssetInstances(root,'site-city-sedan',city.cars.filter(c=>c.kind===0).map(()=>({position:[0,-.18,0]})),{lighting:true});
+  city.crossovers=addAssetInstances(root,'site-city-crossover',city.cars.filter(c=>c.kind===1).map(()=>({position:[0,-.18,0]})),{lighting:true});
   city.batches.push(city.traffic,city.crossovers);
+  buildCyclists(city);
   attachTrafficFleet(city);
+  buildMobilityShadows(city);
   city.lights=[];
   for(const [x,z] of [[-rx,rz],[rx,-rz],[-rx,-rz],[rx,rz]]){
     const light=new T.PointLight('#ffe0ae',0,13,2);light.position.set(x,4.6,z);root.add(light);city.lights.push(light);
@@ -180,19 +178,28 @@ export function buildCity(s){
 
 export function updateCity(s,dt){
   const city=s.city;if(!city||city.root.userData.retired)return;
+  city.simulationTime=s.time||0;
   const signals=signalState(s.time||0);city.signalState=signals;
-  const speed=s.storm?1.0:s.rainAmt>.1?2:3.2;
+  const speed=s.storm?TRAFFIC_CRUISE.stormCar:s.rainAmt>.1?TRAFFIC_CRUISE.wetCar:TRAFFIC_CRUISE.car;
   if(!s.reducedMotion)advanceTraffic(city,dt,speed,(axis,car,distance)=>signals[axis]==='green'||(signals[axis]==='amber'&&distance<2.4+car.speed*car.speed/5.2));
-  const poses=city.cars.map(car=>{
+  city.fleet.lamps.visible=!!s.night;
+  const needsFallback=city.cars.some(c=>!c.model);
+  const poses=needsFallback?[]:null;
+  const point=city.carPoint ||= new T.Vector3();
+  for(const car of city.cars){
     const path=city.paths[car.lane];
-    const p=path.getPointAt(car.phase%1),t=path.getTangentAt(car.phase%1);
-    const yaw=Math.atan2(t.x,t.z),premium=placeFleetCar(car,p.x,p.z,yaw);
+    const p=path.getPointAt(car.renderPhase??car.phase,point);
+    const yaw=car.heading,premium=placeFleetCar(car,p.x,p.z,yaw);
     // A car whose premium model is loaded hides its original instance (scale ~0) but keeps the same path and physics.
-    return {position:[p.x,-.18,p.z],rotation:yaw,color:car.color,wheelAngle:car.wheelAngle,steering:car.steering,scale:premium?.00001:1};
-  });
-  city.traffic.setPoses(poses.filter((_,i)=>city.cars[i].lane===0));
-  city.crossovers.setPoses(poses.filter((_,i)=>city.cars[i].lane===1));
+    if(poses)poses.push({position:[p.x,-.18,p.z],rotation:yaw,color:car.color,wheelAngle:car.renderWheelAngle??car.wheelAngle,steering:car.steering,scale:premium?.00001:1});
+  }
+  if(poses){city.traffic.setPoses(poses.filter((_,i)=>city.cars[i].kind===0));city.crossovers.setPoses(poses.filter((_,i)=>city.cars[i].kind===1));}
+  city.traffic.visible=city.cars.some(c=>c.kind===0&&!c.model);
+  city.crossovers.visible=city.cars.some(c=>c.kind===1&&!c.model);
+  flushTrafficFleet(city,s.camera);
+  updateCyclists(city,dt,signals,s.reducedMotion,s.rainAmt>.1,s.storm);
   city.walkers.setPoses(pedestrianPoses(city,dt,s.reducedMotion));
+  updateMobilityShadows(city);
   city.roadMaterial.roughness=.95-.76*(s.rainAmt||0);
   for(const batch of city.batches)for(const material of batch.userData.glowMaterials){
     material.emissiveIntensity=s.night?(material.userData.cityWindow?(material.userData.windowLevel??.20):1.7):.005;

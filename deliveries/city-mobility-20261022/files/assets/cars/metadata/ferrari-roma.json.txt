@@ -1,0 +1,302 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 0,
+  "createdAt": "2024-08-24T18:49:25.876699",
+  "embedUrl": "https://sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/embed",
+  "faceCount": 5998,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 26,
+  "name": "Low Poly Ferrari Roma",
+  "publishedAt": "2024-08-26T10:20:03.589828",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "ferrari",
+      "slug": "ferrari",
+      "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+    },
+    {
+      "name": "cars",
+      "slug": "cars",
+      "uri": "https://api.sketchfab.com/v3/tags/cars"
+    },
+    {
+      "name": "roma",
+      "slug": "roma",
+      "uri": "https://api.sketchfab.com/v3/tags/roma"
+    },
+    {
+      "name": "Free3DModel",
+      "slug": "free3dmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+    },
+    {
+      "name": "Blender-3D",
+      "slug": "blender-3d",
+      "uri": "https://api.sketchfab.com/v3/tags/blender-3d"
+    },
+    {
+      "name": "freedownload",
+      "slug": "freedownload",
+      "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+    },
+    {
+      "name": "blender3dmodel",
+      "slug": "blender3dmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/blender3dmodel"
+    },
+    {
+      "name": "low-poly-model",
+      "slug": "low-poly-model",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly-model"
+    },
+    {
+      "name": "free-download",
+      "slug": "free-download",
+      "uri": "https://api.sketchfab.com/v3/tags/free-download"
+    },
+    {
+      "name": "lowpolymodel",
+      "slug": "lowpolymodel",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpolymodel"
+    },
+    {
+      "name": "low-poly-car",
+      "slug": "low-poly-car",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly-car"
+    },
+    {
+      "name": "freemodel",
+      "slug": "freemodel",
+      "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+    },
+    {
+      "name": "lowpolycar",
+      "slug": "lowpolycar",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpolycar"
+    },
+    {
+      "name": "low-poly-blender",
+      "slug": "low-poly-blender",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly-blender"
+    },
+    {
+      "name": "blender-lowpoly",
+      "slug": "blender-lowpoly",
+      "uri": "https://api.sketchfab.com/v3/tags/blender-lowpoly"
+    },
+    {
+      "name": "free-model",
+      "slug": "free-model",
+      "uri": "https://api.sketchfab.com/v3/tags/free-model"
+    },
+    {
+      "name": "freecar",
+      "slug": "freecar",
+      "uri": "https://api.sketchfab.com/v3/tags/freecar"
+    },
+    {
+      "name": "lowpolycars",
+      "slug": "lowpolycars",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpolycars"
+    },
+    {
+      "name": "low_poly",
+      "slug": "low_poly",
+      "uri": "https://api.sketchfab.com/v3/tags/low_poly"
+    },
+    {
+      "name": "low-poly",
+      "slug": "low-poly",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+    },
+    {
+      "name": "blender",
+      "slug": "blender",
+      "uri": "https://api.sketchfab.com/v3/tags/blender"
+    },
+    {
+      "name": "lowpoly",
+      "slug": "lowpoly",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+    },
+    {
+      "name": "blender3d",
+      "slug": "blender3d",
+      "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+    },
+    {
+      "name": "free",
+      "slug": "free",
+      "uri": "https://api.sketchfab.com/v3/tags/free"
+    },
+    {
+      "name": "lowpolycar3dmodel",
+      "slug": "lowpolycar3dmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpolycar3dmodel"
+    },
+    {
+      "name": "freecardownload",
+      "slug": "freecardownload",
+      "uri": "https://api.sketchfab.com/v3/tags/freecardownload"
+    },
+    {
+      "name": "ferrari-roma",
+      "slug": "ferrari-roma",
+      "uri": "https://api.sketchfab.com/v3/tags/ferrari-roma"
+    },
+    {
+      "name": "freecars",
+      "slug": "freecars",
+      "uri": "https://api.sketchfab.com/v3/tags/freecars"
+    },
+    {
+      "name": "ferrariroma",
+      "slug": "ferrariroma",
+      "uri": "https://api.sketchfab.com/v3/tags/ferrariroma"
+    },
+    {
+      "name": "lowpolycarmodel",
+      "slug": "lowpolycarmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpolycarmodel"
+    },
+    {
+      "name": "freecarmodel",
+      "slug": "freecarmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/freecarmodel"
+    },
+    {
+      "name": "ferrari_roma",
+      "slug": "ferrari_roma",
+      "uri": "https://api.sketchfab.com/v3/tags/ferrari_roma"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "7cef0a42585846b4b75adf874db53803",
+        "width": 1920,
+        "height": 1080,
+        "size": 375314,
+        "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/0989380565714f46b8cebbb5c2ee0fec.jpeg"
+      },
+      {
+        "uid": "dd8ab80c3b9d49248b6b141f877b8140",
+        "width": 1024,
+        "height": 576,
+        "size": 39012,
+        "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/8f65ffd2b90b44408501b2f21bb54a95.jpeg"
+      },
+      {
+        "uid": "105388de73204cd58ee8964670ea9954",
+        "width": 720,
+        "height": 405,
+        "size": 22635,
+        "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/6751155b538a453ab784cdaefc638437.jpeg"
+      },
+      {
+        "uid": "afc45b8b56a34f0dba409f8a0a469b42",
+        "width": 256,
+        "height": 144,
+        "size": 5530,
+        "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/aecb413ad3e0452983e48b8d24c87888.jpeg"
+      },
+      {
+        "uid": "53a805a1f54449a0a850b56356483302",
+        "width": 64,
+        "height": 36,
+        "size": 1315,
+        "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/7019844cde2942909dd5d2bc6fe16484.jpeg"
+      }
+    ]
+  },
+  "uid": "d830f729e0e64450b8dbe0ad16443ea5",
+  "uri": "https://api.sketchfab.com/v3/models/d830f729e0e64450b8dbe0ad16443ea5",
+  "user": {
+    "uid": "fa5ba3816bdd481788d54088a81750d0",
+    "username": "ynesolefru",
+    "displayName": "kulonee",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/ynesolefru",
+    "avatar": {
+      "uid": "c472bdbbffe94bd58021620f73fe9207",
+      "uri": "https://api.sketchfab.com/v3/avatars/c472bdbbffe94bd58021620f73fe9207",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 1146,
+          "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/fdf06fca4fa947069db9beeed96c07ee.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1676,
+          "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/66dc0f7e1ab742e6bc5a7819a7faeb30.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 4037,
+          "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/abcbcc25f3c04ac2a4062d32b1819341.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 4680,
+          "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/2ad4c2d55f384fd3ba22e654c36d3fea.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/fa5ba3816bdd481788d54088a81750d0"
+  },
+  "vertexCount": 4017,
+  "viewCount": 2449,
+  "viewerUrl": "https://sketchfab.com/3d-models/low-poly-ferrari-roma-d830f729e0e64450b8dbe0ad16443ea5",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "* Ferrari Roma (2019).\n* Length: 4656 mm. Width: 1974 mm. Height: 1301 mm.\n* Basic blender materials are used.\n* Look at the model in the game: https://yandex.ru/games/app/312172?utm_source=app_page",
+  "price": null,
+  "downloadCount": 943,
+  "editorUrl": "https://sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2024-08-26T10:20:03.692850",
+  "pbrType": null,
+  "textureCount": 0,
+  "materialCount": 6
+}

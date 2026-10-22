@@ -1,0 +1,234 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "e56c5de1e9344241909de76c5886f551",
+      "name": "Art & Abstract",
+      "slug": "art-abstract",
+      "uri": "https://api.sketchfab.com/v3/categories/e56c5de1e9344241909de76c5886f551",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/876106eddb2a54aa1391eb2f4db0acb2-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/e56c5de1e9344241909de76c5886f551/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/e56c5de1e9344241909de76c5886f551/800x450.png"
+        }
+      ]
+    },
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 25,
+  "createdAt": "2023-02-24T18:51:10.126323",
+  "embedUrl": "https://sketchfab.com/models/000aed7c07034556bc66733d5abb8464/embed",
+  "faceCount": 1742339,
+  "isAgeRestricted": false,
+  "license": {},
+  "likeCount": 882,
+  "name": "McLaren Elva",
+  "publishedAt": "2023-02-24T19:42:19.102513",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "vehicles",
+      "slug": "vehicles",
+      "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+    },
+    {
+      "name": "cars",
+      "slug": "cars",
+      "uri": "https://api.sketchfab.com/v3/tags/cars"
+    },
+    {
+      "name": "mclaren",
+      "slug": "mclaren",
+      "uri": "https://api.sketchfab.com/v3/tags/mclaren"
+    },
+    {
+      "name": "Celebration",
+      "slug": "celebration",
+      "uri": "https://api.sketchfab.com/v3/tags/celebration"
+    },
+    {
+      "name": "blender3dmodel",
+      "slug": "blender3dmodel",
+      "uri": "https://api.sketchfab.com/v3/tags/blender3dmodel"
+    },
+    {
+      "name": "elvas",
+      "slug": "elvas",
+      "uri": "https://api.sketchfab.com/v3/tags/elvas"
+    },
+    {
+      "name": "elva",
+      "slug": "elva",
+      "uri": "https://api.sketchfab.com/v3/tags/elva"
+    },
+    {
+      "name": "freemodel",
+      "slug": "freemodel",
+      "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+    },
+    {
+      "name": "freecar",
+      "slug": "freecar",
+      "uri": "https://api.sketchfab.com/v3/tags/freecar"
+    },
+    {
+      "name": "blender",
+      "slug": "blender",
+      "uri": "https://api.sketchfab.com/v3/tags/blender"
+    },
+    {
+      "name": "vehicle",
+      "slug": "vehicle",
+      "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+    },
+    {
+      "name": "blender3d",
+      "slug": "blender3d",
+      "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+    },
+    {
+      "name": "car",
+      "slug": "car",
+      "uri": "https://api.sketchfab.com/v3/tags/car"
+    },
+    {
+      "name": "free",
+      "slug": "free",
+      "uri": "https://api.sketchfab.com/v3/tags/free"
+    },
+    {
+      "name": "zirodesign",
+      "slug": "zirodesign",
+      "uri": "https://api.sketchfab.com/v3/tags/zirodesign"
+    },
+    {
+      "name": "alisafarpour",
+      "slug": "alisafarpour",
+      "uri": "https://api.sketchfab.com/v3/tags/alisafarpour"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "afed37dca27848ff9bfcc5a2c3e97ed3",
+        "width": 1920,
+        "height": 1080,
+        "size": 348697,
+        "url": "https://media.sketchfab.com/models/000aed7c07034556bc66733d5abb8464/thumbnails/54f93ada7f3c48a599b0b6a9ee02582a/5ceded166ecf482b9039e68b41893452.jpeg"
+      },
+      {
+        "uid": "a57d5227307a4fdcaaac1dfe73640a72",
+        "width": 1024,
+        "height": 576,
+        "size": 63788,
+        "url": "https://media.sketchfab.com/models/000aed7c07034556bc66733d5abb8464/thumbnails/54f93ada7f3c48a599b0b6a9ee02582a/5d98d21c268644d0abf2c0d2467a5836.jpeg"
+      },
+      {
+        "uid": "257fdb28bb8f4d17af5cbe5664aad9e1",
+        "width": 720,
+        "height": 405,
+        "size": 33456,
+        "url": "https://media.sketchfab.com/models/000aed7c07034556bc66733d5abb8464/thumbnails/54f93ada7f3c48a599b0b6a9ee02582a/6a1f4866fcf0471883ed5c129450bec4.jpeg"
+      },
+      {
+        "uid": "458372a482a84d55a0734bd11facfea1",
+        "width": 256,
+        "height": 144,
+        "size": 6743,
+        "url": "https://media.sketchfab.com/models/000aed7c07034556bc66733d5abb8464/thumbnails/54f93ada7f3c48a599b0b6a9ee02582a/7820fc7fd3b14ca080ee1b5d47337227.jpeg"
+      },
+      {
+        "uid": "a8e03b1143664c9f8fb04e8032034201",
+        "width": 64,
+        "height": 36,
+        "size": 1362,
+        "url": "https://media.sketchfab.com/models/000aed7c07034556bc66733d5abb8464/thumbnails/54f93ada7f3c48a599b0b6a9ee02582a/0a79f335d11d4f77b628a3b849158835.jpeg"
+      }
+    ]
+  },
+  "uid": "000aed7c07034556bc66733d5abb8464",
+  "uri": "https://api.sketchfab.com/v3/models/000aed7c07034556bc66733d5abb8464",
+  "user": {
+    "uid": "f480bfc72b2e41ca8d6b710ae9d5b6f0",
+    "username": "zirodesign",
+    "displayName": "ZIRODESIGN",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/zirodesign",
+    "avatar": {
+      "uid": "76cba406342043ae9cc1a7e84db33971",
+      "uri": "https://api.sketchfab.com/v3/avatars/76cba406342043ae9cc1a7e84db33971",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 909,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/b7b868365e4246e28f2bd6035bb77a3f.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1107,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/bb2b225e722e418e9320695cf88f0826.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 2111,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/574e5fdd71b74c2ca1a21a48e2d163a5.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 2402,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/7538a765b9484ea595bc3799df2cee21.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/f480bfc72b2e41ca8d6b710ae9d5b6f0"
+  },
+  "vertexCount": 913982,
+  "viewCount": 41270,
+  "viewerUrl": "https://sketchfab.com/3d-models/mclaren-elva-000aed7c07034556bc66733d5abb8464",
+  "isDownloadable": false,
+  "isProtected": false,
+  "description": "Just a free Mclaren to celebrate nothing :/\n\n*enjoy*\n\n\n**Also u can follow my instagram**\n\n**<a href=\"https://www.instagram.com/zirodesign/\">ZIRODESIGN</a>**",
+  "price": null,
+  "downloadCount": 10877,
+  "editorUrl": "https://sketchfab.com/models/000aed7c07034556bc66733d5abb8464/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2025-03-28T09:29:43.574422",
+  "pbrType": "metalness",
+  "textureCount": 12,
+  "materialCount": 21
+}

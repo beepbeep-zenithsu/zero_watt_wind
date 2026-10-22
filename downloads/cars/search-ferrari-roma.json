@@ -1,0 +1,4820 @@
+{
+  "cursors": {
+    "next": "24",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&q=ferrari+roma&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5eba95eb226a4c08af0eb8c9c0b8fbdb",
+      "uid": "5eba95eb226a4c08af0eb8c9c0b8fbdb",
+      "name": "Proiettile F6 (Stage 3)",
+      "staffpickedAt": "2022-06-28T07:03:13.329464",
+      "viewCount": 4539,
+      "likeCount": 76,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5eba95eb226a4c08af0eb8c9c0b8fbdb",
+      "embedUrl": "https://sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/embed",
+      "commentCount": 7,
+      "isDownloadable": false,
+      "publishedAt": "2022-06-24T16:16:54.166677",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical",
+          "uri": "https://api.sketchfab.com/v3/tags/mechanical"
+        },
+        {
+          "name": "coche",
+          "slug": "coche",
+          "uri": "https://api.sketchfab.com/v3/tags/coche"
+        },
+        {
+          "name": "speed",
+          "slug": "speed",
+          "uri": "https://api.sketchfab.com/v3/tags/speed"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "sportcar",
+          "slug": "sportcar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportcar"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "turismo",
+          "slug": "turismo",
+          "uri": "https://api.sketchfab.com/v3/tags/turismo"
+        },
+        {
+          "name": "italian",
+          "slug": "italian",
+          "uri": "https://api.sketchfab.com/v3/tags/italian"
+        },
+        {
+          "name": "v8",
+          "slug": "v8",
+          "uri": "https://api.sketchfab.com/v3/tags/v8"
+        },
+        {
+          "name": "carro",
+          "slug": "carro",
+          "uri": "https://api.sketchfab.com/v3/tags/carro"
+        },
+        {
+          "name": "scuderia",
+          "slug": "scuderia",
+          "uri": "https://api.sketchfab.com/v3/tags/scuderia"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "auto",
+          "slug": "auto",
+          "uri": "https://api.sketchfab.com/v3/tags/auto"
+        },
+        {
+          "name": "v6",
+          "slug": "v6",
+          "uri": "https://api.sketchfab.com/v3/tags/v6"
+        },
+        {
+          "name": "racecar",
+          "slug": "racecar",
+          "uri": "https://api.sketchfab.com/v3/tags/racecar"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "corsa",
+          "slug": "corsa",
+          "uri": "https://api.sketchfab.com/v3/tags/corsa"
+        },
+        {
+          "name": "conceptcar",
+          "slug": "conceptcar",
+          "uri": "https://api.sketchfab.com/v3/tags/conceptcar"
+        },
+        {
+          "name": "v12",
+          "slug": "v12",
+          "uri": "https://api.sketchfab.com/v3/tags/v12"
+        },
+        {
+          "name": "morello",
+          "slug": "morello",
+          "uri": "https://api.sketchfab.com/v3/tags/morello"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "grandturismo",
+          "slug": "grandturismo",
+          "uri": "https://api.sketchfab.com/v3/tags/grandturismo"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d2dff88b129745d3992152d7650f3b46",
+            "size": 163446,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/thumbnails/9a1821fba7b740a59d4d284b8061e6cc/5a42f258b27a4bc28ecea065a2a3a9d9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7a0179330f964cdeac1e2ac1275b25ee",
+            "size": 61732,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/thumbnails/9a1821fba7b740a59d4d284b8061e6cc/37aab6463fbb42fca83dd8ddaa39ff3b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "82b0863d3111480fbb43ec3fb361395a",
+            "size": 37664,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/thumbnails/9a1821fba7b740a59d4d284b8061e6cc/3fd6669791fd47b7a6838aae0efe80f6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "43ebd39b209f45b887d6d681d0ac5538",
+            "size": 8340,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/thumbnails/9a1821fba7b740a59d4d284b8061e6cc/7378ac7cfb7f4f6b899687cc93369522.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "519ea9808a1e476b871eac092b681d1f",
+            "size": 1570,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5eba95eb226a4c08af0eb8c9c0b8fbdb/thumbnails/9a1821fba7b740a59d4d284b8061e6cc/047dbb3cf9c24ab18ea1531c6a364ac9.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7cd9f237d4754de2bf2b5e8d0b1c0bb6",
+        "username": "scudmorello",
+        "displayName": "Scuderia Morello",
+        "profileUrl": "https://sketchfab.com/scudmorello",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad",
+          "images": [
+            {
+              "size": 1595,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/710af09af0b448e9a6ec0418f68e9bf9.png",
+              "height": 32
+            },
+            {
+              "size": 2585,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/a4d8b6ce57eb475bab2b52f35930e329.png",
+              "height": 48
+            },
+            {
+              "size": 5349,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/174e5d2af74e48fdb644c50db66547fb.png",
+              "height": 90
+            },
+            {
+              "size": 6127,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/d3cd3ac6d06248299fd217aab1f44f11.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7cd9f237d4754de2bf2b5e8d0b1c0bb6"
+      },
+      "description": "@howtodrwcars Thanks for all suggests\n\nBased on *Lamborghini Sian* and *Ferrari Roma*, *Proiettile F6* by *Scuderia Morello* is a hyperSpot car. F6 Boxer Engine inside!\n\nGuys, this one is the last Beta version of Proiettile,  subscribe for more news and PLEASE... give me feedback\n\n**Good feedbacks will be reward (inset the email on comments)**",
+      "faceCount": 264745,
+      "createdAt": "2022-06-24T15:44:06.066714",
+      "vertexCount": 146426,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 11,
+          "size": 57683240,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 264489,
+          "vertexCount": 305178
+        },
+        "gltf": {
+          "textureCount": 11,
+          "size": 28899638,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 264489,
+          "vertexCount": 305178
+        },
+        "source": {
+          "textureCount": null,
+          "size": 233928821,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9933502,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa",
+      "uid": "cbc0c13c0fb54fc8bbfa79a9ff99e3aa",
+      "name": "2020 Ferrari Roma",
+      "staffpickedAt": null,
+      "viewCount": 21166,
+      "likeCount": 363,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cbc0c13c0fb54fc8bbfa79a9ff99e3aa",
+      "embedUrl": "https://sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2024-10-04T05:06:45.108819",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "csr2",
+          "slug": "csr2",
+          "uri": "https://api.sketchfab.com/v3/tags/csr2"
+        },
+        {
+          "name": "ferraridesign",
+          "slug": "ferraridesign",
+          "uri": "https://api.sketchfab.com/v3/tags/ferraridesign"
+        },
+        {
+          "name": "ferrari-roma",
+          "slug": "ferrari-roma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-roma"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "390ef09e43be40f090f2eeb6451cc513",
+            "size": 341235,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/thumbnails/be4adc0e4bf047e185ff1243a43b1b56/b36392478c794319b550da13efa149ea.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d28700e44f9c4865a84c99de4af742ff",
+            "size": 55187,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/thumbnails/be4adc0e4bf047e185ff1243a43b1b56/df5eb6385c514cb49e8aff4abb66f470.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "95f9395c882b45e19c6b7ae7c56efb8c",
+            "size": 32133,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/thumbnails/be4adc0e4bf047e185ff1243a43b1b56/718700f0f48a49cf983b0d61d624518f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2c636f7fe87245a9b48b4dc787520060",
+            "size": 6923,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/thumbnails/be4adc0e4bf047e185ff1243a43b1b56/bc35ae88528a4758b7b9fe8e5558a802.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5355a68b5b834446b980c3e761ac7c4b",
+            "size": 1387,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cbc0c13c0fb54fc8bbfa79a9ff99e3aa/thumbnails/be4adc0e4bf047e185ff1243a43b1b56/6104a44fd9c24b6ba109defee7686e9c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://es.gizmodo.com/app/uploads/2019/11/uhec10fq1klt3fy3ryel.jpg)\n\nThe latest coupé from Maranello features harmonious proportions and elegantly balanced volumes which are very much in line with Ferrari's front-engined grand touring tradition. Timeless and sublimely refined, from a technical point of view the Ferrari Roma introduces a series of unparalleled features that put it at the top of its segment in terms of performance and driving enjoyment.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a CSR2 3d model\n\nCredits: https://vk.com/album-84830094_262202698",
+      "faceCount": 241354,
+      "createdAt": "2024-10-04T04:46:48.207080",
+      "vertexCount": 153164,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 27,
+          "size": 16257384,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 180937
+        },
+        "gltf": {
+          "textureCount": 27,
+          "size": 6207384,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 180937
+        },
+        "source": {
+          "textureCount": null,
+          "size": 22879626,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6060002,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/66e090e0fcc84f898e66a15e7696aa90",
+      "uid": "66e090e0fcc84f898e66a15e7696aa90",
+      "name": "Ferrari Roma 2020",
+      "staffpickedAt": null,
+      "viewCount": 518,
+      "likeCount": 44,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-66e090e0fcc84f898e66a15e7696aa90",
+      "embedUrl": "https://sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2026-08-10T11:26:44.350739",
+      "tags": [
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "visualization",
+          "slug": "visualization",
+          "uri": "https://api.sketchfab.com/v3/tags/visualization"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "photorealistic",
+          "slug": "photorealistic",
+          "uri": "https://api.sketchfab.com/v3/tags/photorealistic"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "detailed",
+          "slug": "detailed",
+          "uri": "https://api.sketchfab.com/v3/tags/detailed"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "italian",
+          "slug": "italian",
+          "uri": "https://api.sketchfab.com/v3/tags/italian"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "v8",
+          "slug": "v8",
+          "uri": "https://api.sketchfab.com/v3/tags/v8"
+        },
+        {
+          "name": "cockpit",
+          "slug": "cockpit",
+          "uri": "https://api.sketchfab.com/v3/tags/cockpit"
+        },
+        {
+          "name": "performance",
+          "slug": "performance",
+          "uri": "https://api.sketchfab.com/v3/tags/performance"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "elegant",
+          "slug": "elegant",
+          "uri": "https://api.sketchfab.com/v3/tags/elegant"
+        },
+        {
+          "name": "premium",
+          "slug": "premium",
+          "uri": "https://api.sketchfab.com/v3/tags/premium"
+        },
+        {
+          "name": "exclusive",
+          "slug": "exclusive",
+          "uri": "https://api.sketchfab.com/v3/tags/exclusive"
+        },
+        {
+          "name": "highperformance",
+          "slug": "highperformance",
+          "uri": "https://api.sketchfab.com/v3/tags/highperformance"
+        },
+        {
+          "name": "luxurycar",
+          "slug": "luxurycar",
+          "uri": "https://api.sketchfab.com/v3/tags/luxurycar"
+        },
+        {
+          "name": "dashboard",
+          "slug": "dashboard",
+          "uri": "https://api.sketchfab.com/v3/tags/dashboard"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "render",
+          "slug": "render",
+          "uri": "https://api.sketchfab.com/v3/tags/render"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "highpoly",
+          "slug": "highpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/highpoly"
+        },
+        {
+          "name": "italiandesign",
+          "slug": "italiandesign",
+          "uri": "https://api.sketchfab.com/v3/tags/italiandesign"
+        },
+        {
+          "name": "grandtourer",
+          "slug": "grandtourer",
+          "uri": "https://api.sketchfab.com/v3/tags/grandtourer"
+        },
+        {
+          "name": "ferrariroma",
+          "slug": "ferrariroma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariroma"
+        },
+        {
+          "name": "forgedwheels",
+          "slug": "forgedwheels",
+          "uri": "https://api.sketchfab.com/v3/tags/forgedwheels"
+        },
+        {
+          "name": "roma2020",
+          "slug": "roma2020",
+          "uri": "https://api.sketchfab.com/v3/tags/roma2020"
+        },
+        {
+          "name": "ferrariroma2020",
+          "slug": "ferrariroma2020",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariroma2020"
+        },
+        {
+          "name": "ferrarigt",
+          "slug": "ferrarigt",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrarigt"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c0a0bad3670946a69ddcbeb83f8e563d",
+            "size": 431508,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/thumbnails/57047b7ee05e4acd943a5273dac21d0a/4a2dd6358f8e403392b71e6e29939ed2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "1fb5f1ecbf5f4b5e89dc10c27fbd6ead",
+            "size": 108615,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/thumbnails/57047b7ee05e4acd943a5273dac21d0a/9be66093a66745f29ad17cc62965d7de.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0144825b72dd4e4ca7d990454c6cf59a",
+            "size": 56814,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/thumbnails/57047b7ee05e4acd943a5273dac21d0a/f6197fb964374ed2b039be8cd44e0f5f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7da146befc8f477d9da4b19b3f6e0639",
+            "size": 9698,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/thumbnails/57047b7ee05e4acd943a5273dac21d0a/00e3e86f0d1b4ceca6b045f0a059777d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ae97e0e8152b429b9900638ddfdf0ea7",
+            "size": 1671,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/66e090e0fcc84f898e66a15e7696aa90/thumbnails/57047b7ee05e4acd943a5273dac21d0a/5e6232e61441446e84038a3085d119d3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "74df30788364447d93dd2c6c9869df28",
+        "username": "VTX_car",
+        "displayName": "VTX",
+        "profileUrl": "https://sketchfab.com/VTX_car",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d87dee1ac5ab436e9f73d3100c6a4bac",
+          "images": [
+            {
+              "size": 1487,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/fb8b89dd24af45e8b0e58813f4c4ae23.png",
+              "height": 32
+            },
+            {
+              "size": 2931,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/4aa873bddfc04b1ab1ff0d4ce9bd3de4.png",
+              "height": 48
+            },
+            {
+              "size": 8876,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/bf4c75654b334524b07cfe3f08945a8a.png",
+              "height": 90
+            },
+            {
+              "size": 10627,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/ccb76827be3b4b2289116a7c7f96c7bf.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/74df30788364447d93dd2c6c9869df28"
+      },
+      "description": "Ferrari Roma 2020 – Ultra Detailed 3D Model",
+      "faceCount": 739737,
+      "createdAt": "2026-08-07T15:39:41.661898",
+      "vertexCount": 430812,
+      "isAgeRestricted": false,
+      "archives": {
+        "source": {
+          "textureCount": null,
+          "size": 98306939,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a51cb170ff7a4af6a10b392cd456dbae",
+      "uid": "a51cb170ff7a4af6a10b392cd456dbae",
+      "name": "2021 Ferrari Roma",
+      "staffpickedAt": null,
+      "viewCount": 2176,
+      "likeCount": 28,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a51cb170ff7a4af6a10b392cd456dbae",
+      "embedUrl": "https://sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2024-05-02T05:32:10.503798",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "32190dab8b034cb4b5890c0ea7f36e79",
+            "size": 422889,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/thumbnails/2b29fa48739642409a0f10e8be1325d1/5480074ea890422ea1872ab1dabdb92d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7849c50e95a24d6aa8ae18adc9f53fe7",
+            "size": 55679,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/thumbnails/2b29fa48739642409a0f10e8be1325d1/998241ce888444979dbbcbe2c95f8408.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "ddbae085257540c0a85570420309bdca",
+            "size": 24924,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/thumbnails/2b29fa48739642409a0f10e8be1325d1/777bb321cd2b4450a367fc2359952508.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "da876ff1c7c64534a0607569b817e895",
+            "size": 4375,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/thumbnails/2b29fa48739642409a0f10e8be1325d1/7fe7c9d59e024a76b0d04aee0880cc11.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "514a224fb62047379a26427a04cb6f11",
+            "size": 1101,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a51cb170ff7a4af6a10b392cd456dbae/thumbnails/2b29fa48739642409a0f10e8be1325d1/3a7bbfcf687b4e2ea7c452fce9dc41b3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "87e69eac1c544291bbaf12251cb9f252",
+        "username": "NazhDesign",
+        "displayName": "Nazh Design ✔",
+        "profileUrl": "https://sketchfab.com/NazhDesign",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bd20831750d64e3485c92af9f7cdcfcf",
+          "images": [
+            {
+              "size": 970,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bd20831750d64e3485c92af9f7cdcfcf/863bdce2334e49a8a09259d7ee497c34.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1156,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bd20831750d64e3485c92af9f7cdcfcf/e5cfe1069b364521a1891d8990e8ee66.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2110,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bd20831750d64e3485c92af9f7cdcfcf/28fb2363d4454fe69af972fb83566c94.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2379,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bd20831750d64e3485c92af9f7cdcfcf/94d9cc18f4634e6691ed293665119688.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/87e69eac1c544291bbaf12251cb9f252"
+      },
+      "description": "2021 Ferrari Roma\nConvert from Skp.",
+      "faceCount": 238588,
+      "createdAt": "2024-05-02T05:31:16.783726",
+      "vertexCount": 136150,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 10301196,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 238588,
+          "vertexCount": 185861
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 4146081,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 238588,
+          "vertexCount": 185861
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5104530,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4983042,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/de5430312c2d4706b919f92bfc14173d",
+      "uid": "de5430312c2d4706b919f92bfc14173d",
+      "name": "ferrari roma mansory",
+      "staffpickedAt": null,
+      "viewCount": 536,
+      "likeCount": 13,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-de5430312c2d4706b919f92bfc14173d",
+      "embedUrl": "https://sketchfab.com/models/de5430312c2d4706b919f92bfc14173d/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-01T22:11:37.751988",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "3d-model",
+          "slug": "3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-model"
+        },
+        {
+          "name": "mansory",
+          "slug": "mansory",
+          "uri": "https://api.sketchfab.com/v3/tags/mansory"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7719c97744d34f20b8170797e63cea2c",
+            "size": 5925,
+            "width": 448,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/448.jpg",
+            "height": 280
+          },
+          {
+            "uid": "a6b20474be7c402db8f8a5a6b9ff4730",
+            "size": 2275,
+            "width": 200,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/200x200.jpg",
+            "height": 200
+          },
+          {
+            "uid": "98095b18341b4f49affb313ad9843d70",
+            "size": 841,
+            "width": 100,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/100x100.jpg",
+            "height": 100
+          },
+          {
+            "uid": "af9d9afad4f1427a8a6e68dffa18c236",
+            "size": 421,
+            "width": 50,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/50x50.jpg",
+            "height": 50
+          },
+          {
+            "uid": "b0855968e7eb4421b1d57761d0f2e2f1",
+            "size": 12257,
+            "width": 640,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+            "height": 400
+          },
+          {
+            "uid": "4cfc787dbb4a4a0190430bca9721c6cf",
+            "size": 28643,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/1024.jpg",
+            "height": 640
+          },
+          {
+            "uid": "bdbd1b7885db45ba959aede0fd468199",
+            "size": 21153,
+            "width": 854,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/854.jpg",
+            "height": 534
+          }
+        ]
+      },
+      "user": {
+        "uid": "8be495637fee4d18afbcc7ebd279499a",
+        "username": "MattDoesBlender",
+        "displayName": "MattDoesBlender",
+        "profileUrl": "https://sketchfab.com/MattDoesBlender",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/aa8d106bdd204331bcbe347caa95b1f0",
+          "images": [
+            {
+              "size": 2685,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/aa8d106bdd204331bcbe347caa95b1f0/bdc1e2dfa8d24691aa16d4610dbed1f5.png",
+              "height": 32
+            },
+            {
+              "size": 5467,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/aa8d106bdd204331bcbe347caa95b1f0/6508b54798994518bcd0049768d53f49.png",
+              "height": 48
+            },
+            {
+              "size": 16760,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/aa8d106bdd204331bcbe347caa95b1f0/c13c85f691f745f48d170085750f8eb1.png",
+              "height": 90
+            },
+            {
+              "size": 20432,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/aa8d106bdd204331bcbe347caa95b1f0/5b232c038677407eae00fd0de776f231.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8be495637fee4d18afbcc7ebd279499a"
+      },
+      "description": "Automotive model - ferrari roma mansory",
+      "faceCount": 1473680,
+      "createdAt": "2025-09-01T22:07:05.474900",
+      "vertexCount": 801037,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 99247168,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1473621,
+          "vertexCount": 969309
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 25978431,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1473621,
+          "vertexCount": 969309
+        },
+        "source": {
+          "textureCount": null,
+          "size": 59550779,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 26479749,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d830f729e0e64450b8dbe0ad16443ea5",
+      "uid": "d830f729e0e64450b8dbe0ad16443ea5",
+      "name": "Low Poly Ferrari Roma",
+      "staffpickedAt": null,
+      "viewCount": 2449,
+      "likeCount": 26,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d830f729e0e64450b8dbe0ad16443ea5",
+      "embedUrl": "https://sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-08-26T10:20:03.589828",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "free3dmodel",
+          "slug": "free3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+        },
+        {
+          "name": "blender-3d",
+          "slug": "blender-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender-3d"
+        },
+        {
+          "name": "freedownload",
+          "slug": "freedownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+        },
+        {
+          "name": "blender3dmodel",
+          "slug": "blender3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3dmodel"
+        },
+        {
+          "name": "low-poly-model",
+          "slug": "low-poly-model",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly-model"
+        },
+        {
+          "name": "free-download",
+          "slug": "free-download",
+          "uri": "https://api.sketchfab.com/v3/tags/free-download"
+        },
+        {
+          "name": "lowpolymodel",
+          "slug": "lowpolymodel",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolymodel"
+        },
+        {
+          "name": "low-poly-car",
+          "slug": "low-poly-car",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly-car"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "lowpolycar",
+          "slug": "lowpolycar",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolycar"
+        },
+        {
+          "name": "low-poly-blender",
+          "slug": "low-poly-blender",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly-blender"
+        },
+        {
+          "name": "blender-lowpoly",
+          "slug": "blender-lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/blender-lowpoly"
+        },
+        {
+          "name": "free-model",
+          "slug": "free-model",
+          "uri": "https://api.sketchfab.com/v3/tags/free-model"
+        },
+        {
+          "name": "freecar",
+          "slug": "freecar",
+          "uri": "https://api.sketchfab.com/v3/tags/freecar"
+        },
+        {
+          "name": "lowpolycars",
+          "slug": "lowpolycars",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolycars"
+        },
+        {
+          "name": "low_poly",
+          "slug": "low_poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low_poly"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "blender3d",
+          "slug": "blender3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "lowpolycar3dmodel",
+          "slug": "lowpolycar3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolycar3dmodel"
+        },
+        {
+          "name": "freecardownload",
+          "slug": "freecardownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freecardownload"
+        },
+        {
+          "name": "ferrari-roma",
+          "slug": "ferrari-roma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-roma"
+        },
+        {
+          "name": "freecars",
+          "slug": "freecars",
+          "uri": "https://api.sketchfab.com/v3/tags/freecars"
+        },
+        {
+          "name": "ferrariroma",
+          "slug": "ferrariroma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariroma"
+        },
+        {
+          "name": "lowpolycarmodel",
+          "slug": "lowpolycarmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolycarmodel"
+        },
+        {
+          "name": "freecarmodel",
+          "slug": "freecarmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freecarmodel"
+        },
+        {
+          "name": "ferrari_roma",
+          "slug": "ferrari_roma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari_roma"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7cef0a42585846b4b75adf874db53803",
+            "size": 375314,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/0989380565714f46b8cebbb5c2ee0fec.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "dd8ab80c3b9d49248b6b141f877b8140",
+            "size": 39012,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/8f65ffd2b90b44408501b2f21bb54a95.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "105388de73204cd58ee8964670ea9954",
+            "size": 22635,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/6751155b538a453ab784cdaefc638437.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "afc45b8b56a34f0dba409f8a0a469b42",
+            "size": 5530,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/aecb413ad3e0452983e48b8d24c87888.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "53a805a1f54449a0a850b56356483302",
+            "size": 1315,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d830f729e0e64450b8dbe0ad16443ea5/thumbnails/43e68e77a7c640eb8e79b602a18eb4d7/7019844cde2942909dd5d2bc6fe16484.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa5ba3816bdd481788d54088a81750d0",
+        "username": "ynesolefru",
+        "displayName": "kulonee",
+        "profileUrl": "https://sketchfab.com/ynesolefru",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c472bdbbffe94bd58021620f73fe9207",
+          "images": [
+            {
+              "size": 1146,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/fdf06fca4fa947069db9beeed96c07ee.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1676,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/66dc0f7e1ab742e6bc5a7819a7faeb30.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4037,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/abcbcc25f3c04ac2a4062d32b1819341.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4680,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c472bdbbffe94bd58021620f73fe9207/2ad4c2d55f384fd3ba22e654c36d3fea.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa5ba3816bdd481788d54088a81750d0"
+      },
+      "description": "* Ferrari Roma (2019).\n* Length: 4656 mm. Width: 1974 mm. Height: 1301 mm.\n* Basic blender materials are used.\n* Look at the model in the game: https://yandex.ru/games/app/312172?utm_source=app_page",
+      "faceCount": 5998,
+      "createdAt": "2024-08-24T18:49:25.876699",
+      "vertexCount": 4017,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 276424,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 5998,
+          "vertexCount": 5935
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 95746,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 5998,
+          "vertexCount": 5935
+        },
+        "source": {
+          "textureCount": null,
+          "size": 189644,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 162244,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0f4132b15d95414b8279e1adbbf727cf",
+      "uid": "0f4132b15d95414b8279e1adbbf727cf",
+      "name": "Ferrari Roma",
+      "staffpickedAt": null,
+      "viewCount": 293,
+      "likeCount": 13,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0f4132b15d95414b8279e1adbbf727cf",
+      "embedUrl": "https://sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2026-05-13T17:00:51.307417",
+      "tags": [
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "high",
+          "slug": "high",
+          "uri": "https://api.sketchfab.com/v3/tags/high"
+        },
+        {
+          "name": "affordable",
+          "slug": "affordable",
+          "uri": "https://api.sketchfab.com/v3/tags/affordable"
+        },
+        {
+          "name": "new",
+          "slug": "new",
+          "uri": "https://api.sketchfab.com/v3/tags/new"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "italian",
+          "slug": "italian",
+          "uri": "https://api.sketchfab.com/v3/tags/italian"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "quality",
+          "slug": "quality",
+          "uri": "https://api.sketchfab.com/v3/tags/quality"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "af865c65e59243648378bf5cfddad475",
+            "size": 251156,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/thumbnails/ec4d0f13b1274181b67da017718fe7d2/d89e9377796b496c887e5ba75de58fc7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "11975966da99435fbac756f4e957aab9",
+            "size": 83085,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/thumbnails/ec4d0f13b1274181b67da017718fe7d2/ba9bf7f407364becababbfbe1d0bfd97.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dd9bd232f5e3409dbfa059a9b49b6bc6",
+            "size": 47782,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/thumbnails/ec4d0f13b1274181b67da017718fe7d2/782feec0dca348f88e0fd4bdc9bec379.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ec3b62c278e94477b11e73118ef22b35",
+            "size": 9311,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/thumbnails/ec4d0f13b1274181b67da017718fe7d2/5f27a9e2357f490bb6f1bbaa795495dc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "232d9d6b8d734800a5cb0d87524f7ddb",
+            "size": 1698,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0f4132b15d95414b8279e1adbbf727cf/thumbnails/ec4d0f13b1274181b67da017718fe7d2/3171815beedb459780d6c26d0ade3797.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5da2907c354d4d4195e3c9d3ed3abdde",
+        "username": "patricars",
+        "displayName": "Patricars",
+        "profileUrl": "https://sketchfab.com/patricars",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7c9f6334dfa44da4a37f84c05e57cc2a",
+          "images": [
+            {
+              "size": 307,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7c9f6334dfa44da4a37f84c05e57cc2a/4faf4ebc71a44ab1b10b1f2113c4f683.png",
+              "height": 32
+            },
+            {
+              "size": 365,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7c9f6334dfa44da4a37f84c05e57cc2a/1a7d0304b1f5411abf58db32d1890063.png",
+              "height": 48
+            },
+            {
+              "size": 572,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7c9f6334dfa44da4a37f84c05e57cc2a/e870a96b4d48493a894362d507c7e3fc.png",
+              "height": 90
+            },
+            {
+              "size": 585,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7c9f6334dfa44da4a37f84c05e57cc2a/c3331585652542719c00a6600a67e5b1.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5da2907c354d4d4195e3c9d3ed3abdde"
+      },
+      "description": "This is a high-quality, realistic 3D model of the Ferrari Roma, created with strong attention to detail and accurate real-world proportions.\n\nThe model is designed for use in renders, animations, visualization projects, and other creative workflows. It is optimized to be clean, detailed, and easy to work with while maintaining a high level of realism.\n\nMade for creators who value quality, precision, and affordability in one asset.\n\nGet the model here: https://payhip.com/b/PYoqr",
+      "faceCount": 241238,
+      "createdAt": "2026-05-02T05:20:22.824506",
+      "vertexCount": 149106,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cd94b053bc8c4883b9ae1c84eb2c1277",
+      "uid": "cd94b053bc8c4883b9ae1c84eb2c1277",
+      "name": "FERRARI ROMA 2020",
+      "staffpickedAt": null,
+      "viewCount": 719,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cd94b053bc8c4883b9ae1c84eb2c1277",
+      "embedUrl": "https://sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-12-29T10:42:01.902002",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "sportcar",
+          "slug": "sportcar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportcar"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "3dcars",
+          "slug": "3dcars",
+          "uri": "https://api.sketchfab.com/v3/tags/3dcars"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "ferrari-roma",
+          "slug": "ferrari-roma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-roma"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9715b526694b45e08d646aa31b472d8e",
+            "size": 55587,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/thumbnails/17331e582fae4c0086bb76d8362953b5/df3fb981b3e34510a93fd0a9223c5b43.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4e2cf5e5341a4664af12d17938636d9f",
+            "size": 18346,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/thumbnails/17331e582fae4c0086bb76d8362953b5/1cf5b6880b3942c19de85e99bcaa70cf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "a2b0fc1304164b17b2e692c83e4cbf69",
+            "size": 10491,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/thumbnails/17331e582fae4c0086bb76d8362953b5/b0b8559fbe484980960acd05038cc2bd.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "feb5987d9bdb424b88de6f198787efc7",
+            "size": 2342,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/thumbnails/17331e582fae4c0086bb76d8362953b5/7e58e88757824033921e36eec7521a8d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "522b7069a74441ee829925cee87b7b7c",
+            "size": 791,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cd94b053bc8c4883b9ae1c84eb2c1277/thumbnails/17331e582fae4c0086bb76d8362953b5/c570479da6e546138d05cf329f33e168.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e79c67e7dae04219894b634b6f5ec419",
+        "username": "dumitrut.narita",
+        "displayName": "dumitrut.narita",
+        "profileUrl": "https://sketchfab.com/dumitrut.narita",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/204538ce19ae45ebbd8336cd02bf263b",
+          "images": [
+            {
+              "size": 1061,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/204538ce19ae45ebbd8336cd02bf263b/ef3b0f6b98394d1aa31e222a3a029911.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1545,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/204538ce19ae45ebbd8336cd02bf263b/9c7036ff788d4fcbbbddc56a18f23190.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3471,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/204538ce19ae45ebbd8336cd02bf263b/d72e676eb9794506b32691448791cbbc.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3892,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/204538ce19ae45ebbd8336cd02bf263b/a3fee7133164428a91fb9eca35532ef8.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e79c67e7dae04219894b634b6f5ec419"
+      },
+      "description": "The Ferrari Roma is known for its classic and sophisticated design, drawing inspiration from Ferrari's iconic GT cars of the past. The sleek and streamlined exterior, along with clean lines and balanced proportions, reflects a sense of timeless elegance.If you want to buy it, contact me: Instagram: 16._vladd \nEmail:alive3dcars@gmail.com",
+      "faceCount": 727388,
+      "createdAt": "2023-12-29T10:40:31.281147",
+      "vertexCount": 383960,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/16b8090824e648e39351d03dd3725af9",
+      "uid": "16b8090824e648e39351d03dd3725af9",
+      "name": "2020-ferrari-roma",
+      "staffpickedAt": null,
+      "viewCount": 49,
+      "likeCount": 5,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-16b8090824e648e39351d03dd3725af9",
+      "embedUrl": "https://sketchfab.com/models/16b8090824e648e39351d03dd3725af9/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-19T06:41:46.626466",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2ccc18539ed84ea9b9cd7a429346b6e9",
+            "size": 52031,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/16b8090824e648e39351d03dd3725af9/thumbnails/c4602eeb57ce4596ab8717253a3c4495/6e0710a82ae9416fbddd80337e8818aa.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "dcd6787f437f42089b53a6c78ec9194f",
+            "size": 17275,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/16b8090824e648e39351d03dd3725af9/thumbnails/c4602eeb57ce4596ab8717253a3c4495/bc56e8b3fb244c3c8ee2f493d326677d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b3142473c0454c2586618367e07ac587",
+            "size": 9877,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/16b8090824e648e39351d03dd3725af9/thumbnails/c4602eeb57ce4596ab8717253a3c4495/81f51a6fcb364901a9d81871a0379d70.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "badecf4b3bff4491973c03cd3d234760",
+            "size": 2327,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/16b8090824e648e39351d03dd3725af9/thumbnails/c4602eeb57ce4596ab8717253a3c4495/ec8d3aa456ca465098f4cf91e73ce816.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c2741480a1cb47a7a6a13889549cddb4",
+            "size": 871,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/16b8090824e648e39351d03dd3725af9/thumbnails/c4602eeb57ce4596ab8717253a3c4495/98867e60de9e487c9f10d2e33c71af19.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "797254d39a0e4c83844f7879abb95bb3",
+        "username": "tangwang920",
+        "displayName": "007",
+        "profileUrl": "https://sketchfab.com/tangwang920",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e782cf2af46b4b37b16971ab81d3f4bb",
+          "images": [
+            {
+              "size": 2542,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/8614778ab59b43a48611f75b59924482.png",
+              "height": 32
+            },
+            {
+              "size": 5430,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/ea78a6977a32409f863c9594b3fc975f.png",
+              "height": 48
+            },
+            {
+              "size": 17665,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/08b878415cb64853a853d0c12cf9ff63.png",
+              "height": 90
+            },
+            {
+              "size": 21537,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/4f16dc1ac74b4d34bd05ee5a2167b841.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/797254d39a0e4c83844f7879abb95bb3"
+      },
+      "description": "The 2020 Ferrari Roma is a front-engine, rear-wheel-drive two-door GT sports car launched by Ferrari. Positioned as an elegant, retro-styled luxury grand tourer, it has become a representative model of the Ferrari brand that balances daily driving pleasure and refined demeanour, thanks to its sleek classic silhouette and formidable performance.",
+      "faceCount": 241354,
+      "createdAt": "2026-08-19T06:36:59.826598",
+      "vertexCount": 153164,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 26,
+          "size": 16141060,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 180937
+        },
+        "gltf": {
+          "textureCount": 26,
+          "size": 6126676,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 180937
+        },
+        "source": {
+          "textureCount": null,
+          "size": 24101798,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6009630,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0fbfd42843524152b5981cd0f056ce0b",
+      "uid": "0fbfd42843524152b5981cd0f056ce0b",
+      "name": "2020_ Ferrari_ Roma_remix",
+      "staffpickedAt": null,
+      "viewCount": 149,
+      "likeCount": 5,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0fbfd42843524152b5981cd0f056ce0b",
+      "embedUrl": "https://sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-01-25T23:57:25.277477",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d9624f35071e4be68780ad52db52cbdc",
+            "size": 57277,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/thumbnails/235e512373344820b1b0379203f4daa4/bb1abd13ece643659bbdb150ae104929.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a9694099852b46a787dad2888d778260",
+            "size": 18521,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/thumbnails/235e512373344820b1b0379203f4daa4/df87a53e07154b829af08224a5aeb82f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f51bd501a5514229aed30104933879a8",
+            "size": 10576,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/thumbnails/235e512373344820b1b0379203f4daa4/3c354004396d43619bec97a2048a46db.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "db2f50e57a7a4c5eadd2cf294bde3606",
+            "size": 2423,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/thumbnails/235e512373344820b1b0379203f4daa4/740d1dd592824b11a8eb5b92abe18b6b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e8495178010e447ea6d1af762e7e4d25",
+            "size": 875,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0fbfd42843524152b5981cd0f056ce0b/thumbnails/235e512373344820b1b0379203f4daa4/3b63f2f47d884333896de0823671f995.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d1a116ec0aef417cabfbdede9e004240",
+        "username": "HiQ3D",
+        "displayName": "HiQ3D",
+        "profileUrl": "https://sketchfab.com/HiQ3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d1a116ec0aef417cabfbdede9e004240"
+      },
+      "description": "\"2020 Ferrari Roma\" (https://skfb.ly/prxwE) by Ddiaz Design is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).",
+      "faceCount": 241354,
+      "createdAt": "2025-01-25T23:53:22.386394",
+      "vertexCount": 153164,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 27,
+          "size": 11546792,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 178973
+        },
+        "gltf": {
+          "textureCount": 27,
+          "size": 5391263,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 241354,
+          "vertexCount": 178973
+        },
+        "source": {
+          "textureCount": null,
+          "size": 6650343,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6105724,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/dc7dd155e51a4582a737a82299e173de",
+      "uid": "dc7dd155e51a4582a737a82299e173de",
+      "name": "Ferrari roma 2020",
+      "staffpickedAt": null,
+      "viewCount": 112,
+      "likeCount": 7,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-dc7dd155e51a4582a737a82299e173de",
+      "embedUrl": "https://sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-04T11:29:08.608133",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4daded93a36e41d28ace672ddbde85c0",
+            "size": 163055,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/thumbnails/e4d0f497b0614ccbb75f8b57484f90e2/927706419e534a75b4689ecf9a382fa4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "33e6820e6a2240a89811df0a1a1817d2",
+            "size": 50878,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/thumbnails/e4d0f497b0614ccbb75f8b57484f90e2/9665c5e778224557ab364fcfd6479fa6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "22c354cf8d334f8998815c148991fe47",
+            "size": 29952,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/thumbnails/e4d0f497b0614ccbb75f8b57484f90e2/544b07a7414542a6b17c8e9626e91236.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "262d3fb47f6249c699a9af41679867d7",
+            "size": 6420,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/thumbnails/e4d0f497b0614ccbb75f8b57484f90e2/4e97d6d718d04cf08e1ed28ac4f8398d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6f0d1bdcb66f475c9d55af747c3700ce",
+            "size": 1337,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/dc7dd155e51a4582a737a82299e173de/thumbnails/e4d0f497b0614ccbb75f8b57484f90e2/77abd8eed2af46a5b187d4dd0e1d3e9a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "606605b51ead4411b079bc98efb8c284",
+        "username": "eslammagdi81",
+        "displayName": "REZ",
+        "profileUrl": "https://sketchfab.com/eslammagdi81",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bbadf8d2b8a54e789923fd0fe5a9b383",
+          "images": [
+            {
+              "size": 1103,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bbadf8d2b8a54e789923fd0fe5a9b383/d38586173ad44e6b953bedc7b3a76746.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1635,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bbadf8d2b8a54e789923fd0fe5a9b383/70271ed07c834c0ab1c254ea20cc4f99.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3916,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bbadf8d2b8a54e789923fd0fe5a9b383/701f41484fb042cca4f6e909c07325b9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4677,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bbadf8d2b8a54e789923fd0fe5a9b383/12997df03e8c406cb64d6cec552a29b9.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/606605b51ead4411b079bc98efb8c284"
+      },
+      "description": "By VTX",
+      "faceCount": 739731,
+      "createdAt": "2026-09-04T11:18:11.489891",
+      "vertexCount": 430808,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 79,
+          "size": 63686480,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 739731,
+          "vertexCount": 523720
+        },
+        "gltf": {
+          "textureCount": 79,
+          "size": 29718730,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 739731,
+          "vertexCount": 523720
+        },
+        "source": {
+          "textureCount": null,
+          "size": 83991580,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 18770484,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/50755b461d644369a1e105ceb87aa01a",
+      "uid": "50755b461d644369a1e105ceb87aa01a",
+      "name": "Ferrari Concept Car",
+      "staffpickedAt": null,
+      "viewCount": 6221,
+      "likeCount": 83,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-50755b461d644369a1e105ceb87aa01a",
+      "embedUrl": "https://sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/embed",
+      "commentCount": 10,
+      "isDownloadable": false,
+      "publishedAt": "2020-01-24T13:32:59.925797",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "purosangue",
+          "slug": "purosangue",
+          "uri": "https://api.sketchfab.com/v3/tags/purosangue"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "530d6e4f2ebb440fa556d1f69c4455af",
+            "size": 297407,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/thumbnails/5a79b7826b2e42c68267f416f8a705a9/f40db61dabec4808a1a73942a111ad60.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0d88cb1b12f24b5c84a0f3730bccbb18",
+            "size": 50070,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/thumbnails/5a79b7826b2e42c68267f416f8a705a9/dbfee637a5ca40d2b9a2c395faa1eb30.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bc9c3ad611c84e34b038a9f35f804b6f",
+            "size": 26016,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/thumbnails/5a79b7826b2e42c68267f416f8a705a9/11f080efe1f94bfd98c90ef6e924b053.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "fd1f1af7474d4ea2b95285d82acb35d3",
+            "size": 5660,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/thumbnails/5a79b7826b2e42c68267f416f8a705a9/85f55a9fc0044fab850fc1b72ceebdfa.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "192e511908a94f338727b2b443061e5c",
+            "size": 1308,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/50755b461d644369a1e105ceb87aa01a/thumbnails/5a79b7826b2e42c68267f416f8a705a9/9e5668e4dca340198b04ce6ee211be45.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2a65ff0e2f2f4b84b7c451f9f458d379",
+        "username": "OneSteven",
+        "displayName": "iSteven",
+        "profileUrl": "https://sketchfab.com/OneSteven",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9be58160741c4b5588fd8ba5b4bccd94",
+          "images": [
+            {
+              "size": 874,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9be58160741c4b5588fd8ba5b4bccd94/b3d2ec050e1b447bb7bdf48762730f59.png",
+              "height": 32
+            },
+            {
+              "size": 1280,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9be58160741c4b5588fd8ba5b4bccd94/57f2d0305be94825bc495b397cdbe6d8.png",
+              "height": 48
+            },
+            {
+              "size": 2332,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9be58160741c4b5588fd8ba5b4bccd94/6b980818bcab4ed2b4def56a5cfbf767.png",
+              "height": 90
+            },
+            {
+              "size": 2353,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9be58160741c4b5588fd8ba5b4bccd94/d6a0b2fd230642c7a06465f46b37b8c7.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2a65ff0e2f2f4b84b7c451f9f458d379"
+      },
+      "description": "Midpoly model of a Ferrari concept car designed by Noah W. Commisioned by Powerhouse Productions for the hit Roblox game, Drive X 🏎️ CARS.",
+      "faceCount": 47520,
+      "createdAt": "2020-01-24T13:10:23.239315",
+      "vertexCount": 26492,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c2a03739b66a4f8ea72e4299338ae443",
+      "uid": "c2a03739b66a4f8ea72e4299338ae443",
+      "name": "Ferrari Roma Spider",
+      "staffpickedAt": null,
+      "viewCount": 212,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c2a03739b66a4f8ea72e4299338ae443",
+      "embedUrl": "https://sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-08-10T17:32:19.632919",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "spider",
+          "slug": "spider",
+          "uri": "https://api.sketchfab.com/v3/tags/spider"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "ia",
+          "slug": "ia",
+          "uri": "https://api.sketchfab.com/v3/tags/ia"
+        },
+        {
+          "name": "tencent",
+          "slug": "tencent",
+          "uri": "https://api.sketchfab.com/v3/tags/tencent"
+        },
+        {
+          "name": "webapp",
+          "slug": "webapp",
+          "uri": "https://api.sketchfab.com/v3/tags/webapp"
+        },
+        {
+          "name": "hunyuan3d",
+          "slug": "hunyuan3d",
+          "uri": "https://api.sketchfab.com/v3/tags/hunyuan3d"
+        },
+        {
+          "name": "ferrariromaspider",
+          "slug": "ferrariromaspider",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariromaspider"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0625eb0d55a3477593cebfa2aeb68baf",
+            "size": 70710,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/thumbnails/5128c58afd10460fb446c6ebba7b6991/6cdf8f42121441cdb2d015482b6a8abb.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3181e72a8bc149b19f8d1e2f4c03c5d0",
+            "size": 23099,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/thumbnails/5128c58afd10460fb446c6ebba7b6991/9fe3896ca82a479db71e6e2dd859cc71.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f3ad11c74ed74a34a43d31fe9ba0fe55",
+            "size": 13199,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/thumbnails/5128c58afd10460fb446c6ebba7b6991/981ab8d9e4544697b90a664cef967a82.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7420fb77987c4286abec2c2a20ef5d02",
+            "size": 2839,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/thumbnails/5128c58afd10460fb446c6ebba7b6991/b4474ea78060412b87750168b9d0ebf9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a028c0fac43a404896a64c0212043713",
+            "size": 939,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c2a03739b66a4f8ea72e4299338ae443/thumbnails/5128c58afd10460fb446c6ebba7b6991/5df492bb67d0426b874cd2c72a739240.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6ff0fd55367a43178135d39fbe1054e6",
+        "username": "MimmoLagonigro",
+        "displayName": "MimmoLagonigro",
+        "profileUrl": "https://sketchfab.com/MimmoLagonigro",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/94c2acd2d77b465da30234f5f00c3bc5",
+          "images": [
+            {
+              "size": 1011,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/94c2acd2d77b465da30234f5f00c3bc5/d0c9e6a9a542462c81f0b7aa18e5b103.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1338,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/94c2acd2d77b465da30234f5f00c3bc5/8350faab9be44efc96cd4f0b20019c1d.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2567,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/94c2acd2d77b465da30234f5f00c3bc5/1e14177871d34b7dab1a872f08838a81.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2947,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/94c2acd2d77b465da30234f5f00c3bc5/dbd06342efa149cea54028d81a4ec8e8.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6ff0fd55367a43178135d39fbe1054e6"
+      },
+      "description": "Ferrari Roma Spider\n\niA webapp\nhttps://lnkd.in/diy6EVBY\n\nTencent Hunyuan 3D multi view:\norto - front, rear, right\n3d - side left",
+      "faceCount": 299969,
+      "createdAt": "2025-08-10T17:26:51.562552",
+      "vertexCount": 149887,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 44426236,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 299969,
+          "vertexCount": 199097
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 38984471,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 299969,
+          "vertexCount": 199097
+        },
+        "source": {
+          "textureCount": null,
+          "size": 73590398,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8756855,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7bb3e9f3140f47acbb3ca01653f86e30",
+      "uid": "7bb3e9f3140f47acbb3ca01653f86e30",
+      "name": "Ferrari Roma Coupe and Spider",
+      "staffpickedAt": null,
+      "viewCount": 188,
+      "likeCount": 7,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7bb3e9f3140f47acbb3ca01653f86e30",
+      "embedUrl": "https://sketchfab.com/models/7bb3e9f3140f47acbb3ca01653f86e30/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-06T08:24:43.354558",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7719c97744d34f20b8170797e63cea2c",
+            "size": 5925,
+            "width": 448,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/448.jpg",
+            "height": 280
+          },
+          {
+            "uid": "a6b20474be7c402db8f8a5a6b9ff4730",
+            "size": 2275,
+            "width": 200,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/200x200.jpg",
+            "height": 200
+          },
+          {
+            "uid": "98095b18341b4f49affb313ad9843d70",
+            "size": 841,
+            "width": 100,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/100x100.jpg",
+            "height": 100
+          },
+          {
+            "uid": "af9d9afad4f1427a8a6e68dffa18c236",
+            "size": 421,
+            "width": 50,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/50x50.jpg",
+            "height": 50
+          },
+          {
+            "uid": "b0855968e7eb4421b1d57761d0f2e2f1",
+            "size": 12257,
+            "width": 640,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+            "height": 400
+          },
+          {
+            "uid": "4cfc787dbb4a4a0190430bca9721c6cf",
+            "size": 28643,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/1024.jpg",
+            "height": 640
+          },
+          {
+            "uid": "bdbd1b7885db45ba959aede0fd468199",
+            "size": 21153,
+            "width": 854,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/854.jpg",
+            "height": 534
+          }
+        ]
+      },
+      "user": {
+        "uid": "714d7e36847a443eaefb5ecacdc16452",
+        "username": "niev",
+        "displayName": "Nieve5677",
+        "profileUrl": "https://sketchfab.com/niev",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2",
+          "images": [
+            {
+              "size": 2543,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/1d5b99bd1f5e4702bd72bf68ff10c818.png",
+              "height": 32
+            },
+            {
+              "size": 5030,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/7a39cd0025e04fce8cda31c50a591f86.png",
+              "height": 48
+            },
+            {
+              "size": 14373,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/38f304c5fe3b48aaa0ecb00fa51d2b6f.png",
+              "height": 90
+            },
+            {
+              "size": 17263,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/e61279dbfc4543d6a50181bd012e868b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/714d7e36847a443eaefb5ecacdc16452"
+      },
+      "description": "",
+      "faceCount": 1427866,
+      "createdAt": "2025-10-06T08:21:52.795658",
+      "vertexCount": 760243,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 73302376,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1427862,
+          "vertexCount": 1777948
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 26900965,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1427862,
+          "vertexCount": 1777948
+        },
+        "source": {
+          "textureCount": null,
+          "size": 31538679,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 17092293,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8360a74b90b3423fa3775d1c8a093cc0",
+      "uid": "8360a74b90b3423fa3775d1c8a093cc0",
+      "name": "Proiettile F6 (Stage 2)",
+      "staffpickedAt": null,
+      "viewCount": 1337,
+      "likeCount": 36,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8360a74b90b3423fa3775d1c8a093cc0",
+      "embedUrl": "https://sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/embed",
+      "commentCount": 2,
+      "isDownloadable": false,
+      "publishedAt": "2022-04-06T07:49:42.137840",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "coche",
+          "slug": "coche",
+          "uri": "https://api.sketchfab.com/v3/tags/coche"
+        },
+        {
+          "name": "speed",
+          "slug": "speed",
+          "uri": "https://api.sketchfab.com/v3/tags/speed"
+        },
+        {
+          "name": "sketch",
+          "slug": "sketch",
+          "uri": "https://api.sketchfab.com/v3/tags/sketch"
+        },
+        {
+          "name": "sportcar",
+          "slug": "sportcar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportcar"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "turismo",
+          "slug": "turismo",
+          "uri": "https://api.sketchfab.com/v3/tags/turismo"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "boxer",
+          "slug": "boxer",
+          "uri": "https://api.sketchfab.com/v3/tags/boxer"
+        },
+        {
+          "name": "italia",
+          "slug": "italia",
+          "uri": "https://api.sketchfab.com/v3/tags/italia"
+        },
+        {
+          "name": "scuderia",
+          "slug": "scuderia",
+          "uri": "https://api.sketchfab.com/v3/tags/scuderia"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "auto",
+          "slug": "auto",
+          "uri": "https://api.sketchfab.com/v3/tags/auto"
+        },
+        {
+          "name": "racecar",
+          "slug": "racecar",
+          "uri": "https://api.sketchfab.com/v3/tags/racecar"
+        },
+        {
+          "name": "hyper",
+          "slug": "hyper",
+          "uri": "https://api.sketchfab.com/v3/tags/hyper"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "cardesign",
+          "slug": "cardesign",
+          "uri": "https://api.sketchfab.com/v3/tags/cardesign"
+        },
+        {
+          "name": "corsa",
+          "slug": "corsa",
+          "uri": "https://api.sketchfab.com/v3/tags/corsa"
+        },
+        {
+          "name": "conceptcar",
+          "slug": "conceptcar",
+          "uri": "https://api.sketchfab.com/v3/tags/conceptcar"
+        },
+        {
+          "name": "corrida",
+          "slug": "corrida",
+          "uri": "https://api.sketchfab.com/v3/tags/corrida"
+        },
+        {
+          "name": "morello",
+          "slug": "morello",
+          "uri": "https://api.sketchfab.com/v3/tags/morello"
+        },
+        {
+          "name": "f6",
+          "slug": "f6",
+          "uri": "https://api.sketchfab.com/v3/tags/f6"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "super",
+          "slug": "super",
+          "uri": "https://api.sketchfab.com/v3/tags/super"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "scuderiamorello",
+          "slug": "scuderiamorello",
+          "uri": "https://api.sketchfab.com/v3/tags/scuderiamorello"
+        },
+        {
+          "name": "sian",
+          "slug": "sian",
+          "uri": "https://api.sketchfab.com/v3/tags/sian"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "69814f63b38c4b2390aee575d06f6fe3",
+            "size": 167683,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/thumbnails/a3434a9b9de94bb587d74ce6df21e42c/ab380950d929406ba67867b97489a6fe.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d6fc5e26fe5742e48dbcabd8e1e41619",
+            "size": 55606,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/thumbnails/a3434a9b9de94bb587d74ce6df21e42c/4574eccf7cd54354b9e3412f9933b734.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9011c2a6a90a4ff9859d03d6cc460491",
+            "size": 32186,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/thumbnails/a3434a9b9de94bb587d74ce6df21e42c/5f332ab58a674321be7dc2a4f727dfe2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "84e030c0c73342ac97ac107712a0e110",
+            "size": 7043,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/thumbnails/a3434a9b9de94bb587d74ce6df21e42c/c1f42191b5914901b07d553fbcce1468.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "cb0e838ceffb43f382577e9cc7f41223",
+            "size": 1491,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8360a74b90b3423fa3775d1c8a093cc0/thumbnails/a3434a9b9de94bb587d74ce6df21e42c/546978ee41734497adc939ef86f15d8a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7cd9f237d4754de2bf2b5e8d0b1c0bb6",
+        "username": "scudmorello",
+        "displayName": "Scuderia Morello",
+        "profileUrl": "https://sketchfab.com/scudmorello",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad",
+          "images": [
+            {
+              "size": 1595,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/710af09af0b448e9a6ec0418f68e9bf9.png",
+              "height": 32
+            },
+            {
+              "size": 2585,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/a4d8b6ce57eb475bab2b52f35930e329.png",
+              "height": 48
+            },
+            {
+              "size": 5349,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/174e5d2af74e48fdb644c50db66547fb.png",
+              "height": 90
+            },
+            {
+              "size": 6127,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0f5c3c8ff9814cca8d8bcbea9b8db3ad/d3cd3ac6d06248299fd217aab1f44f11.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7cd9f237d4754de2bf2b5e8d0b1c0bb6"
+      },
+      "description": "@howtodrwcars Thanks for all suggests\n\nBased on *Lamborghini Sian* and *Ferrari Roma*, *Proiettile F6* by *Scuderia Morello* is a hyperSpot car. F6 Boxer Engine inside!\n\nGuys, this one is the last Beta version of Proiettile,  subscribe for more news and PLEASE... give me feedback\n\n**Good feedbacks will be reward (inset the email on comments)**",
+      "faceCount": 279042,
+      "createdAt": "2022-04-06T07:21:26.977750",
+      "vertexCount": 147520,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 33652820,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 278954,
+          "vertexCount": 297494
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 5244235,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 278954,
+          "vertexCount": 297494
+        },
+        "source": {
+          "textureCount": null,
+          "size": 9232232,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7164892,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e18f32b284f544498c2bad685c3baf9e",
+      "uid": "e18f32b284f544498c2bad685c3baf9e",
+      "name": "Ferrari_Roma",
+      "staffpickedAt": null,
+      "viewCount": 73,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e18f32b284f544498c2bad685c3baf9e",
+      "embedUrl": "https://sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-02-23T13:37:56.663963",
+      "tags": [
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "aa36c7443721445ab16f9b3c444f7861",
+            "size": 141034,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/thumbnails/75f5883d8e774a53b495bdf9caf49f7d/ee6b672ab118406eac31490d94c70afe.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ffbf290fc5a545c5839ca7946e223e31",
+            "size": 30426,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/thumbnails/75f5883d8e774a53b495bdf9caf49f7d/ee13601345f64a1fb8c9bdca9403e9d5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c86db91f591541c2bb7e94090bb9bf86",
+            "size": 15405,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/thumbnails/75f5883d8e774a53b495bdf9caf49f7d/3c2a0c62ceea41cd855e8f25d025772f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1ba0575ebadd4a89b017b963eba22e8b",
+            "size": 3011,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/thumbnails/75f5883d8e774a53b495bdf9caf49f7d/5dd96241219c49ff8bb2fccdf6c2fadc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4b08816285444789a0d3b4f5e8180ce0",
+            "size": 906,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e18f32b284f544498c2bad685c3baf9e/thumbnails/75f5883d8e774a53b495bdf9caf49f7d/d7077857d0754598ba7e26e170e3d805.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c7a0759c7d6b4c40a29a234d5f115968",
+        "username": "osaosa_studio",
+        "displayName": "osaosa_studio",
+        "profileUrl": "https://sketchfab.com/osaosa_studio",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9beab8fc6c0b4e07816eabbf656a4816",
+          "images": [
+            {
+              "size": 1423,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9beab8fc6c0b4e07816eabbf656a4816/67e3db9cc3864773b4cb4573b09dfc5b.png",
+              "height": 32
+            },
+            {
+              "size": 2546,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9beab8fc6c0b4e07816eabbf656a4816/9f3683961a484434bea3506d7d277a0a.png",
+              "height": 48
+            },
+            {
+              "size": 6125,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9beab8fc6c0b4e07816eabbf656a4816/8b78a6408bfd457f9e63149d2b02f0c1.png",
+              "height": 90
+            },
+            {
+              "size": 6967,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9beab8fc6c0b4e07816eabbf656a4816/9781d821d7bd4442915d33a1775d56ad.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c7a0759c7d6b4c40a29a234d5f115968"
+      },
+      "description": "Created in RealityCapture by Capturing Reality from 96 images in 00h:08m:56s.\r\nUse FeatureINK",
+      "faceCount": 300000,
+      "createdAt": "2023-02-23T13:27:23.765370",
+      "vertexCount": 150158,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/b8873d8710044eb7a2a4f65bf00c7df6",
+      "uid": "b8873d8710044eb7a2a4f65bf00c7df6",
+      "name": "2020_ferrari_roma_by_Danny2024",
+      "staffpickedAt": null,
+      "viewCount": 74,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-b8873d8710044eb7a2a4f65bf00c7df6",
+      "embedUrl": "https://sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-12-03T17:30:25.869849",
+      "tags": [
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "danny",
+          "slug": "danny",
+          "uri": "https://api.sketchfab.com/v3/tags/danny"
+        },
+        {
+          "name": "roma",
+          "slug": "roma",
+          "uri": "https://api.sketchfab.com/v3/tags/roma"
+        },
+        {
+          "name": "macchine",
+          "slug": "macchine",
+          "uri": "https://api.sketchfab.com/v3/tags/macchine"
+        },
+        {
+          "name": "ferrariclassic",
+          "slug": "ferrariclassic",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariclassic"
+        },
+        {
+          "name": "ferraridesign",
+          "slug": "ferraridesign",
+          "uri": "https://api.sketchfab.com/v3/tags/ferraridesign"
+        },
+        {
+          "name": "ferrariroma",
+          "slug": "ferrariroma",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrariroma"
+        },
+        {
+          "name": "pervoi",
+          "slug": "pervoi",
+          "uri": "https://api.sketchfab.com/v3/tags/pervoi"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7de8d4b68ca94c19b75883ebde381559",
+            "size": 67201,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/thumbnails/8540edb50b4e4b4abe4e101e2586a094/50e5059b73164513b70223418372e06c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0fb9644a58e146ec81f00ab9d1762f7d",
+            "size": 22219,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/thumbnails/8540edb50b4e4b4abe4e101e2586a094/c8e8557c41564d64a6180e07df8244d4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "293a4c36aa77478a9ff1829f82ee3fc0",
+            "size": 12918,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/thumbnails/8540edb50b4e4b4abe4e101e2586a094/d1c840b388e34134beebfa52dc2eee2d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "31e10c0fb5c045429ef1ac746bdbfc09",
+            "size": 3031,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/thumbnails/8540edb50b4e4b4abe4e101e2586a094/68ca4b8c2ee44249a8ce4a4fe28f40c5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "606d43dd0ef94a7eb24014a536b2f120",
+            "size": 948,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/b8873d8710044eb7a2a4f65bf00c7df6/thumbnails/8540edb50b4e4b4abe4e101e2586a094/f1882b84b80d48e0bd71adcf850891e0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e8727c3433784c39bc955b4057088aa0",
+        "username": "Danny2024",
+        "displayName": "Danny2024",
+        "profileUrl": "https://sketchfab.com/Danny2024",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e8727c3433784c39bc955b4057088aa0"
+      },
+      "description": "> > fatta per voi da*** Danny2024***",
+      "faceCount": 238114,
+      "createdAt": "2024-12-03T17:24:38.169239",
+      "vertexCount": 162692,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 25,
+          "size": 19153264,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 238114,
+          "vertexCount": 206776
+        },
+        "gltf": {
+          "textureCount": 25,
+          "size": 6182928,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 238114,
+          "vertexCount": 206776
+        },
+        "source": {
+          "textureCount": null,
+          "size": 32764147,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7334425,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/770fd539a4cd40e1a38475881a5fa5d8",
+      "uid": "770fd539a4cd40e1a38475881a5fa5d8",
+      "name": "1984 Ferrari 288 GTO",
+      "staffpickedAt": null,
+      "viewCount": 948,
+      "likeCount": 48,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-770fd539a4cd40e1a38475881a5fa5d8",
+      "embedUrl": "https://sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-08T11:45:07.960518",
+      "tags": [
+        {
+          "name": "rome",
+          "slug": "rome",
+          "uri": "https://api.sketchfab.com/v3/tags/rome"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "obj",
+          "slug": "obj",
+          "uri": "https://api.sketchfab.com/v3/tags/obj"
+        },
+        {
+          "name": "1984",
+          "slug": "1984",
+          "uri": "https://api.sketchfab.com/v3/tags/1984"
+        },
+        {
+          "name": "gto",
+          "slug": "gto",
+          "uri": "https://api.sketchfab.com/v3/tags/gto"
+        },
+        {
+          "name": "mashina",
+          "slug": "mashina",
+          "uri": "https://api.sketchfab.com/v3/tags/mashina"
+        },
+        {
+          "name": "besplatno",
+          "slug": "besplatno",
+          "uri": "https://api.sketchfab.com/v3/tags/besplatno"
+        },
+        {
+          "name": "2027",
+          "slug": "2027",
+          "uri": "https://api.sketchfab.com/v3/tags/2027"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "2026",
+          "slug": "2026",
+          "uri": "https://api.sketchfab.com/v3/tags/2026"
+        },
+        {
+          "name": "resinnnn",
+          "slug": "resinnnn",
+          "uri": "https://api.sketchfab.com/v3/tags/resinnnn"
+        },
+        {
+          "name": "res1n",
+          "slug": "res1n",
+          "uri": "https://api.sketchfab.com/v3/tags/res1n"
+        },
+        {
+          "name": "ferrari-288",
+          "slug": "ferrari-288",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-288"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "603f3341cf2c45a488e51ed50ce5bd76",
+            "size": 385863,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/thumbnails/420368d299dc4c73a99893b3267f9b95/6f21d36d8b6d4fca9c260658c4bb7991.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b1831fea556d40fd90b7bb956ac8de70",
+            "size": 66790,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/thumbnails/420368d299dc4c73a99893b3267f9b95/fb20bdad57c74be4bfeb5143088b5254.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9d1924f1a46c4ac493ac1a899b3bd325",
+            "size": 38239,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/thumbnails/420368d299dc4c73a99893b3267f9b95/96cde71bd55342548a28f7ee7bed070e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9cb725834bda42a2b1ac3a99e9fd2e7a",
+            "size": 8005,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/thumbnails/420368d299dc4c73a99893b3267f9b95/9316bf93275e41e789dc38b0d0fccf8d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "db3c92fddf264629befe39a55db1e541",
+            "size": 1506,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/770fd539a4cd40e1a38475881a5fa5d8/thumbnails/420368d299dc4c73a99893b3267f9b95/65768b1cc32d4038853c457bb3fab910.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa2a02628a5b4dfb9d2cb0a8f47c764c",
+        "username": "Res1n",
+        "displayName": "Res1n",
+        "profileUrl": "https://sketchfab.com/Res1n",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc",
+          "images": [
+            {
+              "size": 1127,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/b455fc0ad3724b82ab47192aa34f67c3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1636,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/129434c4e42f4fd3ae38ce8cb7ccd98b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3880,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/e5e170e9516e4f30b7b8ffd962b4f453.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4528,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/0d5ac2e50b0f4c50b3966865ec9f6168.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa2a02628a5b4dfb9d2cb0a8f47c764c"
+      },
+      "description": "*The 1984 Ferrari 288 GTO is an iconic halo supercar built for canceled Group B racing. Powered by a 2.8-liter twin-turbocharged V8 producing 400 horsepower, it reaches 0–60 mph in roughly 4.9 seconds with a top speed of 189 mph. Ferrari produced 272 units between 1984 and 1987.*\n\n**Engineering and Design**\nEngine: Longitudinal 2,855 cc V8 with twin IHI turbochargers and Behr intercoolers.\nBody Construction: Lightweight composite panels utilizing fiberglass, Kevlar, carbon-fiber, and Nomex.\nChassis: Tubular steel frame featuring a longer wheelbase and widened track compared to the 308 GTB.\nInterior: Minimalist, driver-focused cabin with leather trim, classic analog gauges, and a gated manual shifter.\n\n\nCredit: @niev",
+      "faceCount": 899299,
+      "createdAt": "2026-08-08T11:32:33.193221",
+      "vertexCount": 511825,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 28768816,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 899261,
+          "vertexCount": 576061
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 10934416,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 899261,
+          "vertexCount": 576061
+        },
+        "source": {
+          "textureCount": null,
+          "size": 57717008,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14585798,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c3cdf7e309314a5090b1401b55682fe4",
+      "uid": "c3cdf7e309314a5090b1401b55682fe4",
+      "name": "Ferrari Roma",
+      "staffpickedAt": null,
+      "viewCount": 64,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c3cdf7e309314a5090b1401b55682fe4",
+      "embedUrl": "https://sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2024-11-22T11:31:35.877284",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "918c9f5f9e714f8ba63b1b6baac1f702",
+            "size": 57838,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/thumbnails/aa97f4eb308043688b7668a8499e300c/3044c60aed9b4ef29d41c8a0ff7fac94.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2fe62d7c9e94448f8dfce0371d52ea74",
+            "size": 18652,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/thumbnails/aa97f4eb308043688b7668a8499e300c/a37a55f7a7fb4dfe95fb6180ff344bbd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c1992b152b2447c3b78f269df12c3441",
+            "size": 10644,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/thumbnails/aa97f4eb308043688b7668a8499e300c/effb16414c3e46e4ba7db744e97a1cb9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b8ecd7e1967144b0bc73fdad4802ef4c",
+            "size": 2419,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/thumbnails/aa97f4eb308043688b7668a8499e300c/cf61f1c08bfb44d289e15973b338eb9c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "518ba0c354914161898efebf89a1b8b6",
+            "size": 874,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c3cdf7e309314a5090b1401b55682fe4/thumbnails/aa97f4eb308043688b7668a8499e300c/16411e1e661846638b4382a275c3e758.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "89b7009b49ab4ee0b394c586ddeef705",
+        "username": "swiftfixbodyshop",
+        "displayName": "swiftfixbodyshop",
+        "profileUrl": "https://sketchfab.com/swiftfixbodyshop",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/797422eed4644a94ad0b17fe61a62c97",
+          "images": [
+            {
+              "size": 2971,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/797422eed4644a94ad0b17fe61a62c97/327f30af51a34b7092216a29f51ab235.png",
+              "height": 32
+            },
+            {
+              "size": 5612,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/797422eed4644a94ad0b17fe61a62c97/4886213a279d4741849ab7080ab47e91.png",
+              "height": 48
+            },
+            {
+              "size": 14220,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/797422eed4644a94ad0b17fe61a62c97/2fb0fa87b4824815b39b835b3a216401.png",
+              "height": 90
+            },
+            {
+              "size": 16589,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/797422eed4644a94ad0b17fe61a62c97/b4c3b7701758479da1d48416dbc01c14.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/89b7009b49ab4ee0b394c586ddeef705"
+      },
+      "description": "",
+      "faceCount": 241354,
+      "createdAt": "2024-11-22T11:23:35.120240",
+      "vertexCount": 153164,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8f8802b0130e4816ae627dc8953c4e13",
+      "uid": "8f8802b0130e4816ae627dc8953c4e13",
+      "name": "2017 Ferrari J50",
+      "staffpickedAt": null,
+      "viewCount": 267,
+      "likeCount": 30,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8f8802b0130e4816ae627dc8953c4e13",
+      "embedUrl": "https://sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-17T18:10:42.228828",
+      "tags": [
+        {
+          "name": "rome",
+          "slug": "rome",
+          "uri": "https://api.sketchfab.com/v3/tags/rome"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "sportcar",
+          "slug": "sportcar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportcar"
+        },
+        {
+          "name": "mashina",
+          "slug": "mashina",
+          "uri": "https://api.sketchfab.com/v3/tags/mashina"
+        },
+        {
+          "name": "2017",
+          "slug": "2017",
+          "uri": "https://api.sketchfab.com/v3/tags/2017"
+        },
+        {
+          "name": "besplatno",
+          "slug": "besplatno",
+          "uri": "https://api.sketchfab.com/v3/tags/besplatno"
+        },
+        {
+          "name": "2027",
+          "slug": "2027",
+          "uri": "https://api.sketchfab.com/v3/tags/2027"
+        },
+        {
+          "name": "j50",
+          "slug": "j50",
+          "uri": "https://api.sketchfab.com/v3/tags/j50"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "2026",
+          "slug": "2026",
+          "uri": "https://api.sketchfab.com/v3/tags/2026"
+        },
+        {
+          "name": "resinnnn",
+          "slug": "resinnnn",
+          "uri": "https://api.sketchfab.com/v3/tags/resinnnn"
+        },
+        {
+          "name": "res1n",
+          "slug": "res1n",
+          "uri": "https://api.sketchfab.com/v3/tags/res1n"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d45842074c9243819913e7d32d6062b3",
+            "size": 402273,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/thumbnails/8d5a2230bd5d492cad49f7b2c03dee75/f83eda868d9945048b11ff7f0fa6b016.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2454d202c6e74d09932179f347d7a993",
+            "size": 73905,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/thumbnails/8d5a2230bd5d492cad49f7b2c03dee75/f1a10d05b3f84647bb80eedcdbfd4b9b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7f279805e9f54e2abd30546453ed5937",
+            "size": 42215,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/thumbnails/8d5a2230bd5d492cad49f7b2c03dee75/5af5547fed9b43e6b9232003cdc1158b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d1007778bc0042609985f6d088508bc2",
+            "size": 8757,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/thumbnails/8d5a2230bd5d492cad49f7b2c03dee75/2034cefe40d245f091039307cfca5f8b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1aa94497cdf843d3bb61f525bf434dc0",
+            "size": 1553,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8f8802b0130e4816ae627dc8953c4e13/thumbnails/8d5a2230bd5d492cad49f7b2c03dee75/0e5b1f52f23a4d64a980605b38ad9c6c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa2a02628a5b4dfb9d2cb0a8f47c764c",
+        "username": "Res1n",
+        "displayName": "Res1n",
+        "profileUrl": "https://sketchfab.com/Res1n",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc",
+          "images": [
+            {
+              "size": 1127,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/b455fc0ad3724b82ab47192aa34f67c3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1636,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/129434c4e42f4fd3ae38ce8cb7ccd98b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3880,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/e5e170e9516e4f30b7b8ffd962b4f453.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4528,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/0d5ac2e50b0f4c50b3966865ec9f6168.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa2a02628a5b4dfb9d2cb0a8f47c764c"
+      },
+      "description": "*The 2017 Ferrari J50 is an ultra-exclusive, mid-engine targa roadster built in a strictly limited run of only 10 units to celebrate the 50th anniversary of Ferrari in Japan.*\n\n**Key Specifications**\nEngine: 3.9-liter twin-turbocharged V8\nPower: 690 hp (681 bhp / 507 kW)\nTorque: 560 lb-ft (760 Nm)\nDrivetrain: Rear-wheel drive (RWD) with a 7-speed dual-clutch automatic transmission\nPerformance: 0–100 km/h (0–62 mph) in roughly 2.8 seconds; top speed of 335 km/h (208 mph)\n\n**Design & Features**\nBase: Developed by Maranello's Special Projects department using the Ferrari 488 Spider as its foundation.\nBody Style: Features a two-piece carbon-fiber hard targa top that stows behind the seats, harking back to classic Ferrari roadsters of the 1970s and 1980s.\nAero & Styling: Incorporates a futuristic \"helmet visor\" window graphic, a transparent polycarbonate engine cover framed by dual roll hoops, and a jet-afterburner-inspired rear diffuser.\n\n\nCredit: @niev",
+      "faceCount": 1315797,
+      "createdAt": "2026-08-21T19:27:40.585559",
+      "vertexCount": 686913,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 47497232,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1315730,
+          "vertexCount": 808622
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 24245303,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1315730,
+          "vertexCount": 808622
+        },
+        "source": {
+          "textureCount": null,
+          "size": 43997362,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 24979880,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/36865e4d4d21482bb268520aafca1196",
+      "uid": "36865e4d4d21482bb268520aafca1196",
+      "name": "1986 Ferrari Testarossa",
+      "staffpickedAt": null,
+      "viewCount": 863,
+      "likeCount": 42,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-36865e4d4d21482bb268520aafca1196",
+      "embedUrl": "https://sketchfab.com/models/36865e4d4d21482bb268520aafca1196/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-08T16:56:49.275255",
+      "tags": [
+        {
+          "name": "rome",
+          "slug": "rome",
+          "uri": "https://api.sketchfab.com/v3/tags/rome"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "obj",
+          "slug": "obj",
+          "uri": "https://api.sketchfab.com/v3/tags/obj"
+        },
+        {
+          "name": "1986",
+          "slug": "1986",
+          "uri": "https://api.sketchfab.com/v3/tags/1986"
+        },
+        {
+          "name": "mashina",
+          "slug": "mashina",
+          "uri": "https://api.sketchfab.com/v3/tags/mashina"
+        },
+        {
+          "name": "besplatno",
+          "slug": "besplatno",
+          "uri": "https://api.sketchfab.com/v3/tags/besplatno"
+        },
+        {
+          "name": "2027",
+          "slug": "2027",
+          "uri": "https://api.sketchfab.com/v3/tags/2027"
+        },
+        {
+          "name": "testarossa",
+          "slug": "testarossa",
+          "uri": "https://api.sketchfab.com/v3/tags/testarossa"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "ferrari-testarossa",
+          "slug": "ferrari-testarossa",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-testarossa"
+        },
+        {
+          "name": "2026",
+          "slug": "2026",
+          "uri": "https://api.sketchfab.com/v3/tags/2026"
+        },
+        {
+          "name": "resinnnn",
+          "slug": "resinnnn",
+          "uri": "https://api.sketchfab.com/v3/tags/resinnnn"
+        },
+        {
+          "name": "res1n",
+          "slug": "res1n",
+          "uri": "https://api.sketchfab.com/v3/tags/res1n"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5688e77c883145749ba408caeb0ed815",
+            "size": 386147,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/36865e4d4d21482bb268520aafca1196/thumbnails/5ec2441936e84780b427759558c70a95/3c8647aa840c457ca3531b20fd6477b1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "90098fc995b54178ba87c4ea9e167343",
+            "size": 68899,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/36865e4d4d21482bb268520aafca1196/thumbnails/5ec2441936e84780b427759558c70a95/9febdca3974043ddb88aea07a390b238.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "684b6670a1e34723bfcf55915a6d888a",
+            "size": 39345,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/36865e4d4d21482bb268520aafca1196/thumbnails/5ec2441936e84780b427759558c70a95/620e71aa1ab74e7681185f62060f9dc0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "631874a073874804aae58b3130afc18a",
+            "size": 8288,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/36865e4d4d21482bb268520aafca1196/thumbnails/5ec2441936e84780b427759558c70a95/133127e7256541e7a22c09b584f8a98e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "882886dd7ed646a185c259bda64c29b0",
+            "size": 1544,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/36865e4d4d21482bb268520aafca1196/thumbnails/5ec2441936e84780b427759558c70a95/0330ea5e0b3e419a872a0131bf5e833a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa2a02628a5b4dfb9d2cb0a8f47c764c",
+        "username": "Res1n",
+        "displayName": "Res1n",
+        "profileUrl": "https://sketchfab.com/Res1n",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc",
+          "images": [
+            {
+              "size": 1127,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/b455fc0ad3724b82ab47192aa34f67c3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1636,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/129434c4e42f4fd3ae38ce8cb7ccd98b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3880,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/e5e170e9516e4f30b7b8ffd962b4f453.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4528,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/0d5ac2e50b0f4c50b3966865ec9f6168.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa2a02628a5b4dfb9d2cb0a8f47c764c"
+      },
+      "description": "*The legendary 1986 Ferrari Testarossa is powered by a 4.9-liter flat-12 engine producing 385–390 hp. It accelerates from 0 to 100 km/h (0–62 mph) in 5.2 seconds and reaches a top speed of 290 km/h (180 mph). The car features rear-wheel drive and a 5-speed manual transmission.*\n\n**Design & Features**\nStyled by the famous Pininfarina design house.\nIconic side strakes (\"cheese graters\") running along the doors.\nUltra-wide rear track for dramatic, aggressive proportions.\nRetro pop-up headlights.\nDual side-mounted radiators to prevent cabin overheating.\n\n**Engine Specifications**\nType: 48-valve flat-12 (180° V12).\nDisplacement: 4,942 cc.\nPower: 385–390 hp @ 6,300 rpm.\nTorque: 490 Nm (361 lb-ft) @ 4,500 rpm.\n\n**Performance**\nTop Speed: 290 km/h (180 mph).\n0–100 km/h (0–62 mph): 5.2–5.3 seconds.\nQuarter Mile: ~13.5 seconds.\n\n\nCredit: @niev",
+      "faceCount": 978263,
+      "createdAt": "2026-08-08T16:46:08.418780",
+      "vertexCount": 605699,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 38400948,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 976030,
+          "vertexCount": 833630
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 14330164,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 976030,
+          "vertexCount": 833630
+        },
+        "source": {
+          "textureCount": null,
+          "size": 71316252,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 19419638,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f55dea1320724fa7ad089461353ff943",
+      "uid": "f55dea1320724fa7ad089461353ff943",
+      "name": "1986 Ferrari 308 GTS",
+      "staffpickedAt": null,
+      "viewCount": 520,
+      "likeCount": 33,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f55dea1320724fa7ad089461353ff943",
+      "embedUrl": "https://sketchfab.com/models/f55dea1320724fa7ad089461353ff943/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-08T16:43:59.476167",
+      "tags": [
+        {
+          "name": "rome",
+          "slug": "rome",
+          "uri": "https://api.sketchfab.com/v3/tags/rome"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "gts",
+          "slug": "gts",
+          "uri": "https://api.sketchfab.com/v3/tags/gts"
+        },
+        {
+          "name": "1986",
+          "slug": "1986",
+          "uri": "https://api.sketchfab.com/v3/tags/1986"
+        },
+        {
+          "name": "mashina",
+          "slug": "mashina",
+          "uri": "https://api.sketchfab.com/v3/tags/mashina"
+        },
+        {
+          "name": "besplatno",
+          "slug": "besplatno",
+          "uri": "https://api.sketchfab.com/v3/tags/besplatno"
+        },
+        {
+          "name": "2027",
+          "slug": "2027",
+          "uri": "https://api.sketchfab.com/v3/tags/2027"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "2026",
+          "slug": "2026",
+          "uri": "https://api.sketchfab.com/v3/tags/2026"
+        },
+        {
+          "name": "resinnnn",
+          "slug": "resinnnn",
+          "uri": "https://api.sketchfab.com/v3/tags/resinnnn"
+        },
+        {
+          "name": "res1n",
+          "slug": "res1n",
+          "uri": "https://api.sketchfab.com/v3/tags/res1n"
+        },
+        {
+          "name": "ferrari-308",
+          "slug": "ferrari-308",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-308"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "54a9e0530ad44559bf20dd8a4e12a361",
+            "size": 387595,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f55dea1320724fa7ad089461353ff943/thumbnails/b77b4d7b868543999529cfa5e9036211/e1da340fbe2843ee9839386ecb6ec6b5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4013f2429c804d08ad0bd1d1821f7d7e",
+            "size": 67968,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f55dea1320724fa7ad089461353ff943/thumbnails/b77b4d7b868543999529cfa5e9036211/aa9afac0ce814e139712a16796d61949.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f44db9f5de3441b7a523327e7418671d",
+            "size": 38916,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f55dea1320724fa7ad089461353ff943/thumbnails/b77b4d7b868543999529cfa5e9036211/6500ed2f72c24d7594608870d72ffd58.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5959db21f0c44788a7b2bc73bdbd3ac6",
+            "size": 8241,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f55dea1320724fa7ad089461353ff943/thumbnails/b77b4d7b868543999529cfa5e9036211/2589402ed3b44b22a384b15b7f263168.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7c7eadd4f9ca484b97d31279767f595e",
+            "size": 1529,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f55dea1320724fa7ad089461353ff943/thumbnails/b77b4d7b868543999529cfa5e9036211/34e9f076c8d34ee2bb0dbd6778d75bdc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa2a02628a5b4dfb9d2cb0a8f47c764c",
+        "username": "Res1n",
+        "displayName": "Res1n",
+        "profileUrl": "https://sketchfab.com/Res1n",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc",
+          "images": [
+            {
+              "size": 1127,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/b455fc0ad3724b82ab47192aa34f67c3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1636,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/129434c4e42f4fd3ae38ce8cb7ccd98b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3880,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/e5e170e9516e4f30b7b8ffd962b4f453.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4528,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/0d5ac2e50b0f4c50b3966865ec9f6168.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa2a02628a5b4dfb9d2cb0a8f47c764c"
+      },
+      "description": "*The 1986 Ferrari 308 GTS (Quattrovalvole) is an iconic mid-engine, two-seater Targa-topped sports car powered by a 2.9-liter 32-valve V8 engine producing roughly 240 horsepower. It features a transverse 5-speed manual gated shifter, Pininfarina styling, and a top speed of around 155 mph. 1986 marked the final year of production for the legendary 308 series before it was fully succeeded by the Ferrari 328.*\n\n**Engine and Performance Specs**\nEngine Type: 2.9 L (2,926 cc) naturally aspirated 90-degree V8\nValvetrain: DOHC with 4 valves per cylinder (Quattrovalvole)\nPower Output: 240 hp @ 7,000 rpm (US version slightly lower due to emissions)\nTorque: 186 lb-ft @ 5,000 rpm\nTransmission: 5-speed manual transaxle with classic open-gated shifter\n0–60 mph (0–100 km/h): ~6.1 seconds\nTop Speed: ~155 mph (250 km/h)\n\n\nCredit: @niev",
+      "faceCount": 688095,
+      "createdAt": "2026-08-08T16:33:26.276486",
+      "vertexCount": 403747,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 24660716,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 686246,
+          "vertexCount": 513838
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 9082926,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 686246,
+          "vertexCount": 513838
+        },
+        "source": {
+          "textureCount": null,
+          "size": 45798089,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12389264,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/44e6d0c9e0d54fb9a9334035e4675c99",
+      "uid": "44e6d0c9e0d54fb9a9334035e4675c99",
+      "name": "1965 Ferrari 330 GT",
+      "staffpickedAt": null,
+      "viewCount": 572,
+      "likeCount": 40,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-44e6d0c9e0d54fb9a9334035e4675c99",
+      "embedUrl": "https://sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-08T16:26:17.498356",
+      "tags": [
+        {
+          "name": "rome",
+          "slug": "rome",
+          "uri": "https://api.sketchfab.com/v3/tags/rome"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "obj",
+          "slug": "obj",
+          "uri": "https://api.sketchfab.com/v3/tags/obj"
+        },
+        {
+          "name": "1965",
+          "slug": "1965",
+          "uri": "https://api.sketchfab.com/v3/tags/1965"
+        },
+        {
+          "name": "mashina",
+          "slug": "mashina",
+          "uri": "https://api.sketchfab.com/v3/tags/mashina"
+        },
+        {
+          "name": "besplatno",
+          "slug": "besplatno",
+          "uri": "https://api.sketchfab.com/v3/tags/besplatno"
+        },
+        {
+          "name": "2027",
+          "slug": "2027",
+          "uri": "https://api.sketchfab.com/v3/tags/2027"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "2026",
+          "slug": "2026",
+          "uri": "https://api.sketchfab.com/v3/tags/2026"
+        },
+        {
+          "name": "resinnnn",
+          "slug": "resinnnn",
+          "uri": "https://api.sketchfab.com/v3/tags/resinnnn"
+        },
+        {
+          "name": "res1n",
+          "slug": "res1n",
+          "uri": "https://api.sketchfab.com/v3/tags/res1n"
+        },
+        {
+          "name": "ferrari-330",
+          "slug": "ferrari-330",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari-330"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9d6f1d3d0e8846d79cf63d2254206306",
+            "size": 391603,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/thumbnails/e928a3a38a54482ab16644f6e5f6aab4/d8025884f1aa4fc0b8226d823ac52d99.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "56509c0791324d12b3e494c644eb5f55",
+            "size": 70704,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/thumbnails/e928a3a38a54482ab16644f6e5f6aab4/6aa96ac851b3455297cc874833f3261f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0780ca29ba004f65978f0899af2596e6",
+            "size": 40391,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/thumbnails/e928a3a38a54482ab16644f6e5f6aab4/8a5626f49b4c4e8aa6afda1e52c1e265.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b448852fc4cd4262b08a7be0e0825580",
+            "size": 8486,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/thumbnails/e928a3a38a54482ab16644f6e5f6aab4/762efad4aad94848bb89dbe7c2f50394.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "48f6f71514df491fb28b7a839f43bb35",
+            "size": 1503,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/44e6d0c9e0d54fb9a9334035e4675c99/thumbnails/e928a3a38a54482ab16644f6e5f6aab4/a7df177ee0994cd0af2bf6201b43163a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fa2a02628a5b4dfb9d2cb0a8f47c764c",
+        "username": "Res1n",
+        "displayName": "Res1n",
+        "profileUrl": "https://sketchfab.com/Res1n",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc",
+          "images": [
+            {
+              "size": 1127,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/b455fc0ad3724b82ab47192aa34f67c3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1636,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/129434c4e42f4fd3ae38ce8cb7ccd98b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3880,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/e5e170e9516e4f30b7b8ffd962b4f453.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4528,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/683bdedc0f1c4d0daa1f1b3c0b5fc8fc/0d5ac2e50b0f4c50b3966865ec9f6168.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fa2a02628a5b4dfb9d2cb0a8f47c764c"
+      },
+      "description": "*The 1965 Ferrari 330 GT 2+2 is a classic luxury grand tourer powered by a 4.0-liter Colombo V12 engine producing 300 horsepower. Featuring bodywork designed by Pininfarina, 1965 marked a major transition year as production shifted from the four-headlamp Series I (\"Chinese eyes\") to the dual-headlamp Series II layout.*\n\n**Specifications and Performance**\nEngine: 3,967 cc Colombo V12 with three Weber carburetors\nPower: 300 hp at 6,600 rpm\nTransmission: 4-speed manual with overdrive or later 5-speed manual\nTop Speed: ~245 km/h (152 mph)\n\n**Design Evolution in 1965**\nSeries I (1963–1965): Distinctive quad-headlight arrangement that earned the affectionate nickname \"Chinese eyes\".\nInterim / Series II (1965–1967): Replaced the quad headlights with a cleaner dual-headlight setup, upgraded to a 5-speed gearbox, and added dual-circuit brakes.\n\n\nCredit: @niev",
+      "faceCount": 794564,
+      "createdAt": "2026-08-08T16:12:33.365517",
+      "vertexCount": 448915,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 24909456,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 794542,
+          "vertexCount": 480867
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 9888543,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 794542,
+          "vertexCount": 480867
+        },
+        "source": {
+          "textureCount": null,
+          "size": 53812981,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12231821,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/77d17b13608449ca8b3a19d412e74eef",
+      "uid": "77d17b13608449ca8b3a19d412e74eef",
+      "name": "Abandoned Car - Ferrari Amalfi",
+      "staffpickedAt": null,
+      "viewCount": 369,
+      "likeCount": 9,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-77d17b13608449ca8b3a19d412e74eef",
+      "embedUrl": "https://sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2025-09-11T12:46:44.914163",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "transportation",
+          "slug": "transportation",
+          "uri": "https://api.sketchfab.com/v3/tags/transportation"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "broken",
+          "slug": "broken",
+          "uri": "https://api.sketchfab.com/v3/tags/broken"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "apocalypse",
+          "slug": "apocalypse",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalypse"
+        },
+        {
+          "name": "junkyard",
+          "slug": "junkyard",
+          "uri": "https://api.sketchfab.com/v3/tags/junkyard"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "ruined",
+          "slug": "ruined",
+          "uri": "https://api.sketchfab.com/v3/tags/ruined"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "derelict",
+          "slug": "derelict",
+          "uri": "https://api.sketchfab.com/v3/tags/derelict"
+        },
+        {
+          "name": "wreckage",
+          "slug": "wreckage",
+          "uri": "https://api.sketchfab.com/v3/tags/wreckage"
+        },
+        {
+          "name": "environment-prop",
+          "slug": "environment-prop",
+          "uri": "https://api.sketchfab.com/v3/tags/environment-prop"
+        },
+        {
+          "name": "amalfi",
+          "slug": "amalfi",
+          "uri": "https://api.sketchfab.com/v3/tags/amalfi"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "background-asset",
+          "slug": "background-asset",
+          "uri": "https://api.sketchfab.com/v3/tags/background-asset"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "21205b5266d64dac80e18ddfa561af45",
+            "size": 186287,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/thumbnails/94e78aa831904718867e7f7c3efd850f/4e49c210eb4a4ae89b0836c63c72342d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a9b6afb789cc4cc281809cc067f90f72",
+            "size": 50705,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/thumbnails/94e78aa831904718867e7f7c3efd850f/417812d273d648388c19ecca2fbd60ba.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3cf134e6033e49138df7ff1527040c1b",
+            "size": 27365,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/thumbnails/94e78aa831904718867e7f7c3efd850f/c1dd7752a0ab40269f1b8c48fd7584d2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "75a566a9c164493e9f03b67c12ead045",
+            "size": 5290,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/thumbnails/94e78aa831904718867e7f7c3efd850f/9221da94d050493ebbded79c425ea97a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ce9a7967b0ce41fa9912095ebd04821e",
+            "size": 1189,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/77d17b13608449ca8b3a19d412e74eef/thumbnails/94e78aa831904718867e7f7c3efd850f/9546ee1e847c4befafdcf7d666d794d1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7b2d51a011d4477aaaf771ce1552fd11",
+        "username": "roh3d",
+        "displayName": "ROH3D",
+        "profileUrl": "https://sketchfab.com/roh3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/a898620019814efd801dc91f7e10d92c",
+          "images": [
+            {
+              "size": 885,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/7ca903f489154675833261fd5e225185.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1118,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/465bf89f17a443ed880e869fc3b5aa29.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2019,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/5d3d9edf7ebb4f149297a0b6d7e1f5ce.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2293,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/3ff55b260bc64056b4986ec55c3e5b64.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7b2d51a011d4477aaaf771ce1552fd11"
+      },
+      "description": "# **BUY [HERE](https://roh3d.com/products/abandoned-car-ferrari-amalfi-2026)**\n\nUnveiled in July 2025, the Ferrari Amalfi, a 2+2 coupe, replaces the Roma with a 3.9L twin-turbo V8 delivering 631 hp and 561 lb-ft. It hits 0-60 mph in 3.3s and a 199-mph top speed. Built on the Roma’s platform, it features a sharknose front, active rear spoiler, and physical steering wheel buttons. The interior offers a 10.25-inch touchscreen, 15.6-inch cluster, and optional Burmester audio. With brake-by-wire and Side Slip Control 6.1, it blends performance and comfort. Priced at ~$280,000, it rivals the Aston Martin Vanquish.",
+      "faceCount": 9934,
+      "createdAt": "2025-09-08T13:37:42.981326",
+      "vertexCount": 5584,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    }
+  ]
+}

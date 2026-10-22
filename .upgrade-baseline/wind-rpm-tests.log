@@ -1,0 +1,32 @@
+✔ mode switching preserves the original scene and uses a bounded cached advanced instance (496.1433ms)
+✔ presets, presentation controls, component selection and pause update real state (682.8843ms)
+✔ advanced daylight, tracking and room controls stay independent of Basic (180.6358ms)
+✔ Monsoon disables all solar and motor assistance, preserves wind and restores Sunny (315.7986ms)
+✔ Advanced Urban Canyon selects the rebuilt district and sheltered wind without disabling solar (213.3444ms)
+✔ Advanced viewport scenario menu works in fit screen and stays synchronized with sidebar (194.6299ms)
+✔ Advanced wind and target controls expose the extended range and live RPM (337.1663ms)
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ Advanced wind RPM grows across the extended 0–60 m/s range instead of plateauing (26.9488ms)
+✔ wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly (18.2088ms)
+✔ PV and battery are finite; empty night system stops and full battery curtails surplus (11.708ms)
+✔ assistance requires timed verification; battery recovery has separate hysteresis (6.1961ms)
+✔ actual Blender GLB loads with finite geometry, all pivots and the intended shaft origins (722.8922ms)
+✔ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (15373.9651ms)
+✔ sun tracking aligns the module normal and keeps the roof rack anchored (281.6782ms)
+✔ Monsoon operates solely on wind regardless of battery, sunlight and assistance policy (10.7793ms)
+✔ advanced exhaust clears the roof and the entrance supports an enclosed interior view (337.0077ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 18481.5093

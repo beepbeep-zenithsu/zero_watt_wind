@@ -1,0 +1,152 @@
+[
+  {
+    "path": "src/graphics/traffic.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/graphics/traffic.js.txt",
+    "sha256": "d712c770cbe8edbf90340e9b6d47c6be5c06211e4f2029e464ebb85a8d52e8f9"
+  },
+  {
+    "path": "src/graphics/city.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/graphics/city.js.txt",
+    "sha256": "c5ac2b57e84670fcc01406001472006fd1fb6b892b22a9aae8c123bbd6d881da"
+  },
+  {
+    "path": "src/advanced/hybrid-model.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/advanced/hybrid-model.js.txt",
+    "sha256": "6a1c55c154e7feb27368c6ec56f29b656a77483fbba712fee6041e1188223e46"
+  },
+  {
+    "path": "src/advanced/hybrid-ui.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/advanced/hybrid-ui.js.txt",
+    "sha256": "7e79b68e235c6dace1dc5608c589ac74a52ef8a62dff21ea8c75f0ede9d5abe6"
+  },
+  {
+    "path": "hybrid.css",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/hybrid.css.txt",
+    "sha256": "bf9d49d870c407de32ffa94c54a461e9405952d6805f8e3531dfac7344919646"
+  },
+  {
+    "path": "scene.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/scene.js.txt",
+    "sha256": "1098b5d3b6dcb838907564e2abf5dbfad3bfc13f32f46d916e877a8d878eb7cb"
+  },
+  {
+    "path": "src/graphics/assets.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/graphics/assets.js.txt",
+    "sha256": "aee2368a4dab35c59f1a633444bd4738ea757dd2aaed95cf84ad47e1e6be3c39"
+  },
+  {
+    "path": "src/graphics/surfaces.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/graphics/surfaces.js.txt",
+    "sha256": "661186fc332dd80874cf6c532cf60bddbc7371877f7175129a309fe80d5964bb"
+  },
+  {
+    "path": "src/advanced/advanced-scene.js",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/src/advanced/advanced-scene.js.txt",
+    "sha256": "083b93b429f1e05699a856f57468cb016529014188e88cdea47a521feaf9cff1"
+  },
+  {
+    "path": "tools/build-environment.cjs",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/tools/build-environment.cjs.txt",
+    "sha256": "eefc12a05e40050ebc9e967871417761eece73265f9d0aa09a3fa01a2dc07a9b"
+  },
+  {
+    "path": "tests/environment.test.cjs",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/tests/environment.test.cjs.txt",
+    "sha256": "cd34cb7b036ff9ebe7862d73e1be4a85033816fe10b1ed62b5e51e276b9a0b5e"
+  },
+  {
+    "path": "tests/hybrid.test.cjs",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/tests/hybrid.test.cjs.txt",
+    "sha256": "59871161e577fbef95d744d9898cefa7751798198b4a7f2e597f1964ff51f89d"
+  },
+  {
+    "path": "tests/hybrid-ui.test.cjs",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/tests/hybrid-ui.test.cjs.txt",
+    "sha256": "75b5ace5511153e8a481c9042695c07b5a543c2c4f8c7d6450cb2e16c4cd05a2"
+  },
+  {
+    "path": "HYBRID-GUIDE.md",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/HYBRID-GUIDE.md.txt",
+    "sha256": "3673efb3759a9c42aa4b26b26a5fb30a7fa1a02d298df28103455d205122e728"
+  },
+  {
+    "path": "CITY_UPGRADE_PROGRESS.md",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/CITY_UPGRADE_PROGRESS.md.txt",
+    "sha256": "a0868cb1f5bb7e9783ddc84162a3b429ce23188bd2b3d7259b92a66e9cbe6e58"
+  },
+  {
+    "path": "CAR_INTEGRATION_PROGRESS.md",
+    "action": "REPLACE",
+    "file": "deliveries/traffic-wind-20261022/files/CAR_INTEGRATION_PROGRESS.md.txt",
+    "sha256": "38b5040f3b76ecb9660ea95481556c350219fca3c645d8ea53c46cbb3a7f65e7"
+  },
+  {
+    "path": "src/graphics/city-materials.js",
+    "action": "CREATE",
+    "file": "deliveries/traffic-wind-20261022/files/src/graphics/city-materials.js.txt",
+    "sha256": "cb6910ef336d1ba8dca451f5fc3cd38c133664a5926fde507cd905b5a174f859"
+  },
+  {
+    "path": "scripts/blender/build_city_architecture.py",
+    "action": "CREATE",
+    "file": "deliveries/traffic-wind-20261022/files/scripts/blender/build_city_architecture.py.txt",
+    "sha256": "7711ca2400140c50b173790bdc6ec4779f910c5d590d40c0d5fe1a5c30a8420a"
+  },
+  {
+    "path": "vendor/addons/loaders/HDRLoader.js",
+    "action": "CREATE",
+    "file": "deliveries/traffic-wind-20261022/files/vendor/addons/loaders/HDRLoader.js.txt",
+    "sha256": "a43733878e7109caa3b62caac52a9de0bcdc5241a4252490757eb9f470033c37"
+  },
+  {
+    "path": "vendor/addons/loaders/RGBELoader.js",
+    "action": "CREATE",
+    "file": "deliveries/traffic-wind-20261022/files/vendor/addons/loaders/RGBELoader.js.txt",
+    "sha256": "6c08f9c441040a61a188ad7711078da4df48f8c5ac3b3725dd6f10ac9ff81162"
+  },
+  {
+    "path": "assets/textures/city/SOURCES.md",
+    "action": "CREATE",
+    "file": "deliveries/traffic-wind-20261022/files/assets/textures/city/SOURCES.md.txt",
+    "sha256": "1f5305541afa57f2eda0f237e5ecac82fa5c17756d847ddf79e384992005570f"
+  },
+  {
+    "path": "src/cars/car-catalog.js",
+    "action": "KEEP (reference)",
+    "file": "deliveries/traffic-wind-20261022/files/src/cars/car-catalog.js.txt",
+    "sha256": "07b7da5440defeff9bfe621bc0822c4c0ccdeda9c18abc0ff6da6162af68e1e6"
+  },
+  {
+    "path": "src/cars/traffic-fleet.js",
+    "action": "KEEP (reference)",
+    "file": "deliveries/traffic-wind-20261022/files/src/cars/traffic-fleet.js.txt",
+    "sha256": "1d988d14f0011df12c44c14c18401429a31a11fa49bf69b1ef06c6d220b6f8e3"
+  },
+  {
+    "path": "scripts/blender/prepare_car.py",
+    "action": "KEEP (reference)",
+    "file": "deliveries/traffic-wind-20261022/files/scripts/blender/prepare_car.py.txt",
+    "sha256": "40bd45c8ac4236af0575e048e5c59e596660db6e0f03217c4fcc7b675aa4d31a"
+  },
+  {
+    "path": "tools/prepare-cars.ps1",
+    "action": "KEEP (reference)",
+    "file": "deliveries/traffic-wind-20261022/files/tools/prepare-cars.ps1.txt",
+    "sha256": "24bf7fa58ec5e03bf099e1bc338282d8df2ec4a46843addbedcffc34908aa418"
+  }
+]

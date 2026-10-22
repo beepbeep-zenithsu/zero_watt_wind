@@ -1,0 +1,240 @@
+"""Build licensed source meshes into uncompressed, Y-up/+Z-forward traffic GLBs.
+
+Run through tools/make-traffic-lods.ps1. This never fabricates a requested car.
+Front is the Blender axis AFTER import. Wheel object names must be explicitly
+reviewed; unmarked wheels remain static instead of rotating guessed body parts.
+"""
+import argparse
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import re
+import sys
+import tempfile
+
+import bpy
+from mathutils import Matrix, Vector
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from prepare_car import import_model, world_bounds, select_only, tri_count, FRONT
+
+
+def arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--manifest', required=True)
+    parser.add_argument('--output', required=True)
+    parser.add_argument('--only', nargs='*')
+    parser.add_argument('--budgets', default='60000,16000,4000')
+    parser.add_argument('--textures', default='1024,512,256')
+    argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else []
+    return parser.parse_args(argv)
+
+
+def digest(file):
+    h = hashlib.sha256()
+    with open(file, 'rb') as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b''):
+            h.update(block)
+    return h.hexdigest()
+
+
+def validate(car, root):
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', car['id']):
+        raise ValueError('Invalid car id')
+    source = car.get('source') or {}
+    if not source.get('verified') or source.get('license') not in ('CC0-1.0', 'CC-BY-4.0', 'CC-BY-SA-4.0'):
+        raise ValueError('No verified source with a supported redistribution license')
+    for key in ('title', 'author', 'url', 'licenseUrl', 'provenance'):
+        if not source.get(key):
+            raise ValueError('Missing source attribution: ' + key)
+    if car.get('front') not in FRONT:
+        raise ValueError('Set front to the inspected nose axis after import: +X/-X/+Y/-Y')
+    if not car.get('input'):
+        raise ValueError('Original model has not been acquired: input is empty')
+    file = (root / car['input']).resolve()
+    if not file.is_file():
+        raise ValueError('Source file does not exist: ' + str(file))
+    if not 2 < car['length'] < 7:
+        raise ValueError('Invalid vehicle length')
+    return file
+
+
+def normalize(car, file):
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+    import_model(str(file))
+    # Freeze evaluated modifiers/rigs with their world transforms, UVs and PBR materials.
+    scene = bpy.context.scene
+    bpy.context.view_layer.update()
+    originals = [o for o in scene.objects if o.type == 'MESH' and not o.hide_render]
+    if car.get('include'):
+        originals = [o for o in originals if o.name in car['include']]
+    if not originals:
+        raise ValueError('No renderable meshes selected')
+    wheel_names = {}
+    for wheel in car.get('wheels', []):
+        if wheel['id'] not in ('FL', 'FR', 'RL', 'RR'):
+            raise ValueError('Wheel id must be FL, FR, RL or RR')
+        for name in wheel['objects']:
+            if name in wheel_names:
+                raise ValueError('Wheel object belongs to two groups: ' + name)
+            wheel_names[name] = wheel['id']
+    missing = set(wheel_names) - {o.name for o in originals}
+    if missing:
+        raise ValueError('Wheel objects not found: ' + ', '.join(sorted(missing)))
+    meshes = []
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    for obj in originals:
+        mesh = bpy.data.meshes.new_from_object(obj.evaluated_get(depsgraph), depsgraph=depsgraph)
+        copy = bpy.data.objects.new('ZW_' + obj.name, mesh)
+        scene.collection.objects.link(copy)
+        copy.matrix_world = obj.matrix_world.copy()
+        if obj.name in wheel_names:
+            copy['zwWheelPart'] = wheel_names[obj.name]
+        meshes.append(copy)
+    for obj in list(scene.objects):
+        if obj not in meshes:
+            bpy.data.objects.remove(obj, do_unlink=True)
+    fx, fy = FRONT[car['front']]
+    orient = Matrix.Rotation(-math.pi / 2 - math.atan2(fy, fx), 4, 'Z')
+    for obj in meshes:
+        obj.matrix_world = orient @ obj.matrix_world
+    bpy.context.view_layer.update()
+    lo, hi = world_bounds(meshes)
+    size = hi - lo
+    if size.y < size.x * 1.15 or min(size) <= 0:
+        raise ValueError('Nose axis/bounds invalid; length must be along Blender Y')
+    scale = Matrix.Scale(car['length'] / size.y, 4)
+    for obj in meshes:
+        obj.matrix_world = scale @ obj.matrix_world
+    bpy.context.view_layer.update()
+    lo, hi = world_bounds(meshes)
+    move = Matrix.Translation(Vector((-(lo.x + hi.x) / 2, -(lo.y + hi.y) / 2, -lo.z)))
+    for obj in meshes:
+        obj.data.transform(move @ obj.matrix_world)
+        obj.matrix_world = Matrix.Identity(4)
+    # One static group plus explicit wheel groups; preserve material/UV assignments.
+    groups = {}
+    for obj in meshes:
+        groups.setdefault(obj.get('zwWheelPart', 'body'), []).append(obj)
+    output = []
+    for name, objects in groups.items():
+        select_only(objects)
+        if len(objects) > 1:
+            bpy.ops.object.join()
+        obj = bpy.context.view_layer.objects.active
+        obj.name = 'Traffic_' + name
+        if name != 'body':
+            obj['zwWheelPart'] = name
+        output.append(obj)
+    bpy.context.view_layer.update()
+    return output
+
+
+def reduce_meshes(meshes, budget):
+    # Each level starts from the normalized original, not the preceding LOD.
+    for attempt in range(8):
+        count = tri_count(meshes)
+        if count <= budget:
+            return count
+        ratio = budget / count * .97
+        for obj in meshes:
+            if len(obj.data.polygons) < 16:
+                continue
+            select_only([obj])
+            modifier = obj.modifiers.new('TrafficLOD', 'DECIMATE')
+            modifier.ratio = ratio
+            bpy.ops.object.modifier_apply(modifier=modifier.name)
+    raise ValueError('Could not meet triangle budget while retaining mesh groups')
+
+
+def build(car, file, output, budgets, textures):
+    source = car['source']
+    warnings = []
+    if not car.get('wheels'):
+        warnings.append('Wheel hierarchy not supplied; moving vehicle has static wheels.')
+    output.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=car['id'] + '-', dir=output) as work:
+        work = Path(work)
+        meshes = normalize(car, file)
+        before = tri_count(meshes)
+        base = work / (car['id'] + '.blend')
+        bpy.context.preferences.filepaths.file_preview_type = 'NONE'
+        bpy.ops.file.pack_all()
+        bpy.ops.wm.save_as_mainfile(filepath=str(base))
+        report = {'id':car['id'], 'source':source, 'sourceSha256':digest(file),
+                  'front':car['front'], 'length':car['length'], 'trianglesBefore':before,
+                  'warnings':warnings, 'levels':[]}
+        for level, (budget, texture) in enumerate(zip(budgets, textures)):
+            bpy.ops.wm.open_mainfile(filepath=str(base))
+            meshes = [o for o in bpy.context.scene.objects if o.type == 'MESH']
+            count = reduce_meshes(meshes, budget)
+            if count < 12 or any(not o.data.polygons for o in meshes):
+                raise ValueError('LOD reduction produced an empty or invalid mesh')
+            for image in bpy.data.images:
+                width, height = image.size
+                if max(width, height) > texture:
+                    factor = texture / max(width, height)
+                    image.scale(max(1, round(width * factor)), max(1, round(height * factor)))
+            bpy.context.view_layer.update()
+            lo, hi = world_bounds(meshes)
+            materials = sum(len({p.material_index for p in o.data.polygons}) for o in meshes)
+            if materials > 32:
+                raise ValueError('More than 32 material primitives; atlas this source before traffic use')
+            credit = bpy.data.objects.new('Asset_license', None)
+            bpy.context.scene.collection.objects.link(credit)
+            credit['title'] = source['title']
+            credit['author'] = source['author']
+            credit['license'] = source['license']
+            credit['source'] = source['url']
+            credit['changes'] = 'Normalized scale/orientation, grouped meshes, reduced geometry/textures into LODs.'
+            filename = f"{car['id']}-lod{level}.glb"
+            target = work / filename
+            bpy.ops.export_scene.gltf(filepath=str(target), export_format='GLB', export_yup=True,
+                                      export_apply=True, export_extras=True, export_animations=False,
+                                      export_materials='EXPORT', export_draco_mesh_compression_enable=False)
+            report['levels'].append({'level':level, 'file':filename, 'triangles':count,
+                'budget':budget, 'materialPrimitives':materials, 'textureLimit':texture,
+                'sizeBlenderXYZ':[round(v,5) for v in hi-lo], 'bytes':target.stat().st_size,
+                'sha256':digest(target)})
+        counts = [item['triangles'] for item in report['levels']]
+        if counts != sorted(counts, reverse=True):
+            raise ValueError('LOD triangle counts must not increase with distance')
+        report_file = work / (car['id'] + '.report.json')
+        report_file.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+        # No existing files are touched until all three exports pass.
+        for file_to_publish in [base] + [work / item['file'] for item in report['levels']] + [report_file]:
+            os.replace(file_to_publish, output / file_to_publish.name)
+        print('ZW_TRAFFIC_LOD_REPORT ' + json.dumps(report))
+
+
+def main():
+    args = arguments()
+    manifest_file = Path(args.manifest).resolve()
+    config = json.loads(manifest_file.read_text(encoding='utf-8-sig'))
+    root = Path(config.get('root', Path(__file__).resolve().parents[2]))
+    budgets = [int(v) for v in args.budgets.split(',')]
+    textures = [int(v) for v in args.textures.split(',')]
+    for values in (budgets, textures):
+        if len(values) != 3 or min(values) < 16 or values != sorted(values, reverse=True):
+            raise ValueError('Provide three positive, descending budgets and texture limits')
+    cars = [c for c in config['cars'] if not args.only or c['id'] in args.only]
+    if not cars or (args.only and set(args.only) - {c['id'] for c in cars}):
+        raise ValueError('Requested car id not in manifest')
+    # Preflight the whole requested batch before writing anything.
+    inputs = []
+    failures = []
+    for car in cars:
+        try:
+            inputs.append((car, validate(car, root)))
+        except ValueError as error:
+            failures.append(car['id'] + ': ' + str(error))
+    if failures:
+        raise ValueError('\n'.join(failures))
+    for car, file in inputs:
+        build(car, file, Path(args.output).resolve(), budgets, textures)
+
+
+if __name__ == '__main__':
+    main()

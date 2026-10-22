@@ -1,0 +1,24 @@
+(node:16872) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/occupant-layout.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ thirty seats fit the smallest room with one corner computer operator and a clear desk (893.0684ms)
+✔ cars and bicycles use eight connected circuits and stay on the actual road surfaces (6319.1956ms)
+✔ rider legs keep fixed lengths and feet remain attached to the moving pedals (146.7627ms)
+✔ Blender neighborhood and detailed site are installed in both applications (1175.9627ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (273.9301ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (2176.5795ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (1015.2924ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (3267.2862ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (5234.7174ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (8452.9783ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (598.158ms)
+✔ traffic starts with bounded jerk and smoothly eases its heading (703.5012ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 23579.8049

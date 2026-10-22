@@ -1,0 +1,89 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+09:42:10 | INFO: Data are loaded, start creating Blender stuff
+09:42:10 | INFO: Blender create Mesh node Object_0
+09:42:10 | INFO: Blender create Mesh node Object_1
+09:42:10 | INFO: Blender create Mesh node Object_2
+09:42:10 | INFO: glTF import finished in 0.12s
+G:\new_8\zerowatt-wind-v8\scripts\blender\inspect_traffic_sources.py:19: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Inspection daylight');world.use_nodes=True
+00:07.687  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\de-tomaso-p72-0.png'
+00:09.859  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\de-tomaso-p72-1.png'
+INSPECTED_SOURCE {"name": "de-tomaso-p72", "bounds": [[-1037.6689453125, -2355.71923828125, 3.185380220413208], [1037.6689453125, 2383.12060546875, 1110.9525146484375]], "objects": [{"name": "Object_2", "polygons": 2631, "materials": ["Standard32B531"]}, {"name": "Object_3", "polygons": 7108, "materials": ["Standard32B531"]}, {"name": "Object_4", "polygons": 11756, "materials": ["Standard32B531"]}]}
+09:42:15 | INFO: Data are loaded, start creating Blender stuff
+09:42:15 | INFO: Blender create Mesh node Object_0
+09:42:15 | INFO: Blender create Mesh node Object_1
+09:42:15 | INFO: Blender create Mesh node Object_2
+09:42:16 | INFO: Blender create Mesh node Object_3
+09:42:16 | INFO: Blender create Mesh node Object_4
+09:42:16 | INFO: Blender create Mesh node Object_5
+09:42:16 | INFO: Blender create Mesh node Object_6
+09:42:16 | INFO: Blender create Mesh node Object_7
+09:42:16 | INFO: glTF import finished in 0.87s
+00:12.937  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\jaguar-e-type-nommoc-0.png'
+00:14.875  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\jaguar-e-type-nommoc-1.png'
+INSPECTED_SOURCE {"name": "jaguar-e-type-nommoc", "bounds": [[-2.20600962638855, -0.8730254173278809, -1.360713781650702e-06], [2.3293981552124023, 0.873027503490448, 1.2786129713058472]], "objects": [{"name": "Object_4", "polygons": 9623, "materials": ["body"]}, {"name": "Object_5", "polygons": 860, "materials": ["glass"]}, {"name": "Object_6", "polygons": 50255, "materials": ["flame"]}, {"name": "Object_7", "polygons": 15991, "materials": ["flame"]}, {"name": "Object_8", "polygons": 11336, "materials": ["black"]}, {"name": "Object_9", "polygons": 30, "materials": ["logo"]}, {"name": "Object_10", "polygons": 29108, "materials": ["yellow"]}, {"name": "Object_11", "polygons": 8324, "materials": ["material"]}]}
+09:42:20 | INFO: Data are loaded, start creating Blender stuff
+09:42:20 | INFO: Blender create Mesh node Object_0
+09:42:20 | INFO: Blender create Mesh node Object_1
+09:42:20 | INFO: Blender create Mesh node Object_2
+09:42:20 | INFO: Blender create Mesh node Object_3
+09:42:20 | INFO: Blender create Mesh node Object_4
+09:42:20 | INFO: Blender create Mesh node Object_5
+09:42:20 | INFO: Blender create Mesh node Object_6
+09:42:20 | INFO: Blender create Mesh node Object_7
+09:42:20 | INFO: Blender create Mesh node Object_8
+09:42:20 | INFO: Blender create Mesh node Object_9
+09:42:20 | INFO: Blender create Mesh node Object_10
+09:42:20 | INFO: Blender create Mesh node Object_11
+09:42:20 | INFO: Blender create Mesh node Object_12
+09:42:20 | INFO: Blender create Mesh node Object_13
+09:42:20 | INFO: Blender create Mesh node Object_14
+09:42:21 | INFO: Blender create Mesh node Object_15
+09:42:21 | INFO: Blender create Mesh node Object_16
+09:42:21 | INFO: Blender create Mesh node Object_17
+09:42:21 | INFO: Blender create Mesh node Object_18
+09:42:21 | INFO: Blender create Mesh node Object_19
+09:42:21 | INFO: Blender create Mesh node Object_20
+09:42:21 | INFO: Blender create Mesh node Object_21
+09:42:21 | INFO: Blender create Mesh node Object_22
+09:42:21 | INFO: Blender create Mesh node Object_23
+09:42:21 | INFO: Blender create Mesh node Object_24
+09:42:21 | INFO: Blender create Mesh node Object_25
+09:42:21 | INFO: Blender create Mesh node Object_26
+09:42:21 | INFO: Blender create Mesh node Object_27
+09:42:21 | INFO: Blender create Mesh node Object_28
+09:42:21 | INFO: Blender create Mesh node Object_29
+09:42:21 | INFO: Blender create Mesh node Object_30
+09:42:21 | INFO: Blender create Mesh node Object_31
+09:42:21 | INFO: Blender create Mesh node Object_32
+09:42:21 | INFO: Blender create Mesh node Object_33
+09:42:21 | INFO: Blender create Mesh node Object_34
+09:42:21 | INFO: Blender create Mesh node Object_35
+09:42:21 | INFO: Blender create Mesh node Object_36
+09:42:21 | INFO: Blender create Mesh node Object_37
+09:42:21 | INFO: Blender create Mesh node Object_38
+09:42:21 | INFO: Blender create Mesh node Object_39
+09:42:21 | INFO: Blender create Mesh node Object_40
+09:42:21 | INFO: Blender create Mesh node Object_41
+09:42:21 | INFO: Blender create Mesh node Object_42
+09:42:21 | INFO: Blender create Mesh node Object_43
+09:42:21 | INFO: Blender create Mesh node Object_44
+09:42:21 | INFO: Blender create Mesh node Object_45
+09:42:21 | INFO: Blender create Mesh node Object_46
+09:42:21 | INFO: Blender create Mesh node Object_47
+09:42:21 | INFO: Blender create Mesh node Object_48
+09:42:21 | INFO: Blender create Mesh node Object_49
+09:42:21 | INFO: Blender create Mesh node Object_50
+09:42:22 | INFO: Blender create Mesh node Object_51
+09:42:22 | INFO: Blender create Mesh node Object_52
+09:42:22 | INFO: Blender create Mesh node Object_53
+09:42:22 | INFO: Blender create Mesh node Object_54
+09:42:22 | INFO: Blender create Mesh node Object_55
+09:42:22 | INFO: glTF import finished in 1.46s
+00:18.719  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\porsche-taycan-martin-0.png'
+00:20.844  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\source-previews\porsche-taycan-martin-1.png'
+INSPECTED_SOURCE {"name": "porsche-taycan-martin", "bounds": [[-1069.5072021484375, -2466.358642578125, -16.8829402923584], [1069.5076904296875, 2483.141357421875, 1392.1085205078125]], "objects": [{"name": "Object_2", "polygons": 2100, "materials": ["ExtAluminium"]}, {"name": "Object_3", "polygons": 637, "materials": ["Black"]}, {"name": "Object_4", "polygons": 688, "materials": ["GlassRedLights"]}, {"name": "Object_5", "polygons": 96, "materials": ["GlassMatRedLights"]}, {"name": "Object_6", "polygons": 8, "materials": ["IntPorscheText"]}, {"name": "Object_7", "polygons": 372, "materials": ["IntStitchesGreyWheel"]}, {"name": "Object_8", "polygons": 72, "materials": ["PlasticNumber"]}, {"name": "Object_9", "polygons": 1792, "materials": ["intLeatherSteeringWheel"]}, {"name": "Object_10", "polygons": 668, "materials": ["intLeatherSeatsTurbo"]}, {"name": "Object_11", "polygons": 3112, "materials": ["intLeatherLtPerfRed"]}, {"name": "Object_12", "polygons": 5503, "materials": ["wire_225198087"]}, {"name": "Object_13", "polygons": 226, "materials": ["intTexDevices"]}, {"name": "Object_14", "polygons": 7682, "materials": ["wire_008110135"]}, {"name": "Object_15", "polygons": 1618, "materials": ["wire_008008136"]}, {"name": "Object_16", "polygons": 46197, "materials": ["wire_027177027"]}, {"name": "Object_17", "polygons": 2764, "materials": ["wire_135006006"]}, {"name": "Object_18", "polygons": 1131, "materials": ["wire_145028177"]}, {"name": "Object_19", "polygons": 356, "materials": ["wire_088199225"]}, {"name": "Object_20", "polygons": 6495, "materials": ["wire_135110008"]}, {"name": "Object_21", "polygons": 2668, "materials": ["wire_135059008"]}, {"name": "Object_22", "polygons": 6495, "materials": ["wire_061135006"]}, {"name": "Object_23", "polygons": 5503, "materials": ["wire_087225087"]}, {"name": "Object_24", "polygons": 14536, "materials": ["Aluminium"]}, {"name": "Object_25", "polygons": 2250, "materials": ["BlueGlass"]}, {"name": "Object_26", "polygons": 4522, "materials": ["Carbon"]}, {"name": "Object_27", "polygons": 9572, "materials": ["Glass"]}, {"name": "Object_28", "polygons": 2956, "materials": ["GlassWinds"]}, {"name": "Object_29", "polygons": 11864, "materials": ["IntAlcantaraBlack"]}, {"name": "Object_30", "polygons": 1832, "materials": ["IntBurmesterGrid"]}, {"name": "Object_31", "polygons": 3104, "materials": ["IntButtons"]}, {"name": "Object_32", "polygons": 1216, "materials": ["IntButtonsGlossy"]}, {"name": "Object_33", "polygons": 3026, "materials": ["IntCarpet"]}, {"name": "Object_34", "polygons": 792, "materials": ["IntGrid"]}, {"name": "Object_35", "polygons": 2064, "materials": ["PlasticBlackGlossy"]}, {"name": "Object_36", "polygons": 28273, "materials": ["PlasticBlack"]}, {"name": "Object_37", "polygons": 10730, "materials": ["PlasticBlack"]}, {"name": "Object_38", "polygons": 9728, "materials": ["PlasticBlack"]}, {"name": "Object_39", "polygons": 8420, "materials": ["PlasticBlack"]}, {"name": "Object_40", "polygons": 15072, "materials": ["PlasticBlack"]}, {"name": "Object_41", "polygons": 9256, "materials": ["PlasticBlack"]}, {"name": "Object_42", "polygons": 2448, "materials": ["IntSeatBelt"]}, {"name": "Object_43", "polygons": 6528, "materials": ["IntStitchesWhite"]}, {"name": "Object_44", "polygons": 608, "materials": ["PlasticRed"]}, {"name": "Object_45", "polygons": 3848, "materials": ["PlasticGrey"]}, {"name": "Object_46", "polygons": 8184, "materials": ["Rubber"]}, {"name": "Object_47", "polygons": 14488, "materials": ["WheelCaliper"]}, {"name": "Object_48", "polygons": 4440, "materials": ["WheelPlasticBlackBolt"]}, {"name": "Object_49", "polygons": 3264, "materials": ["WheelTire"]}, {"name": "Object_50", "polygons": 13226, "materials": ["intLeatherBlack"]}, {"name": "Object_51", "polygons": 14652, "materials": ["intLeatherBlack"]}, {"name": "Object_52", "polygons": 14086, "materials": ["intLeatherRed"]}, {"name": "Object_53", "polygons": 5215, "materials": ["intLeatherRed"]}, {"name": "Object_54", "polygons": 13056, "materials": ["intSeamsRed"]}, {"name": "Object_55", "polygons": 952, "materials": ["wire_000000000"]}, {"name": "Object_56", "polygons": 14460, "materials": ["wire_057008136"]}, {"name": "Object_57", "polygons": 14752, "materials": ["wire_057008136"]}]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

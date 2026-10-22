@@ -2,7 +2,7 @@
 
 Recovery: checkpoints/city-before-premium-20261021.zip (175 files, 81,302,312 bytes; source, GLBs, editable Blender files and prior work preserved). Restore into a separate folder. Run npm ci, npm run build, npm start.
 
-Current: realism revision in progress after user visual rejection. Prior visual PASS labels below describe the earlier stylized version and are superseded by this revision. Recovery: checkpoints/city-before-realism-20261021.zip.
+Current: traffic/wind checkpoint complete; realism revision remains in progress after user visual rejection. Prior visual PASS labels below describe the earlier stylized version and are superseded by this revision. Recovery: checkpoints/city-before-realism-20261021.zip.
 
 Revision scope: detailed far skyline, scanned PBR masonry, outdoor HDR reflections, five brand-inspired car models, more natural human anatomy and cross-scenario lighting.
 

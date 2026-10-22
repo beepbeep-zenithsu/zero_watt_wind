@@ -14,6 +14,8 @@
     "assets:environment": "node tools/build-environment.cjs",
     "verify:graphics": "node tools/verify-graphics.cjs",
     "assets:cars": "powershell -ExecutionPolicy Bypass -File tools/prepare-cars.ps1",
+    "assets:traffic": "powershell -ExecutionPolicy Bypass -File tools/make-traffic-lods.ps1",
+    "test:car-lods": "node tools/test-traffic-lods.cjs",
     "assets:review": "node tools/run-blender.cjs scripts/blender/render_review.py"
   },
   "devDependencies": {

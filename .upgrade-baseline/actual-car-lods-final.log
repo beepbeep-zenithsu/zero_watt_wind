@@ -1,0 +1,243 @@
+00:04.875  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\assets\cars\traffic\porsche-taycan-jbd9a3_0\porsche-taycan.blend"
+Info: No new files have been packed
+Info: Saved as "porsche-taycan.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+10:07:59 | INFO: Starting glTF 2.0 export
+10:07:59 | INFO: Extracting primitive: Object_0.005
+10:07:59 | INFO: Primitives created: 9
+10:07:59 | INFO: Extracting primitive: Object_0.004
+10:07:59 | INFO: Primitives created: 4
+10:07:59 | INFO: Extracting primitive: Object_0.003
+10:07:59 | INFO: Primitives created: 4
+10:07:59 | INFO: Extracting primitive: Object_0.002
+10:07:59 | INFO: Primitives created: 4
+10:07:59 | INFO: Extracting primitive: Object_0.001
+10:07:59 | INFO: Primitives created: 4
+10:07:59 | INFO: Finished glTF 2.0 export in 0.20290040969848633 s
+00:10.922  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\assets\cars\traffic\porsche-taycan-jbd9a3_0\porsche-taycan.blend"
+
+10:08:05 | INFO: Starting glTF 2.0 export
+10:08:05 | INFO: Extracting primitive: Object_0.005
+10:08:05 | INFO: Primitives created: 9
+10:08:05 | INFO: Extracting primitive: Object_0.004
+10:08:05 | INFO: Primitives created: 4
+10:08:05 | INFO: Extracting primitive: Object_0.003
+10:08:05 | INFO: Primitives created: 4
+10:08:05 | INFO: Extracting primitive: Object_0.002
+10:08:05 | INFO: Primitives created: 4
+10:08:05 | INFO: Extracting primitive: Object_0.001
+10:08:05 | INFO: Primitives created: 4
+10:08:05 | INFO: Finished glTF 2.0 export in 0.0826411247253418 s
+00:16.406  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\assets\cars\traffic\porsche-taycan-jbd9a3_0\porsche-taycan.blend"
+
+10:08:10 | INFO: Starting glTF 2.0 export
+10:08:10 | WARNING: Mesh Object_0.005 is not valid, and may be exported wrongly
+10:08:10 | INFO: Extracting primitive: Object_0.005
+10:08:10 | INFO: Primitives created: 9
+10:08:10 | INFO: Extracting primitive: Object_0.004
+10:08:10 | INFO: Primitives created: 3
+10:08:10 | INFO: Extracting primitive: Object_0.003
+10:08:10 | INFO: Primitives created: 3
+10:08:10 | INFO: Extracting primitive: Object_0.002
+10:08:10 | INFO: Primitives created: 4
+10:08:10 | INFO: Extracting primitive: Object_0.001
+10:08:10 | INFO: Primitives created: 4
+10:08:10 | INFO: Finished glTF 2.0 export in 0.05371356010437012 s
+
+ZW_TRAFFIC_LOD_REPORT {"id": "porsche-taycan", "source": {"uid": "875072396ef541e3b106152e6dea6978", "title": "2020 Porsche Taycan", "author": "martin002", "url": "https://sketchfab.com/3d-models/875072396ef541e3b106152e6dea6978", "license": "CC-BY-4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0/", "verified": true, "verifiedAt": "2026-10-22", "status": "downloaded", "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-014/875072396ef541e3b106152e6dea6978.glb", "originalSha256": "b93347425d0c30c55647742dc77d0a4e9bec7ec8c423a8214a655928a213d0c6", "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Public creator attribution/license retained.", "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures. Restored missing material colors with semantic PBR materials.", "warnings": [], "originalFile": "porsche-taycan-martin.glb"}, "sourceSha256": "bc6715f069df54d49700ae03e00d188d774522e5b3f0969acc8244e1869403c4", "front": "-Y", "length": 4.96, "trianglesBefore": 369603, "warnings": [], "levels": [{"level": 0, "file": "porsche-taycan-lod0.glb", "triangles": 58196, "trianglesBeforeExport": 58196, "budget": 60000, "materialPrimitives": 25, "textureLimit": 1024, "sizeBlenderXYZ": [2.14334, 4.9595, 1.41138], "bytes": 2163996, "sha256": "401e9c2a140b30310bf6f322292b1887abbdc25f9cb081723c428f2d64ec9901"}, {"level": 1, "file": "porsche-taycan-lod1.glb", "triangles": 15515, "trianglesBeforeExport": 15515, "budget": 16000, "materialPrimitives": 25, "textureLimit": 512, "sizeBlenderXYZ": [2.13752, 4.95577, 1.41198], "bytes": 745948, "sha256": "b93a9d6681193f5e38a6a11ca09cc921a989a473929621aee9dfa175cbf47bf0"}, {"level": 2, "file": "porsche-taycan-lod2.glb", "triangles": 3871, "trianglesBeforeExport": 3876, "budget": 4000, "materialPrimitives": 23, "textureLimit": 256, "sizeBlenderXYZ": [2.14311, 4.92926, 1.41198], "bytes": 244660, "sha256": "d04712fcb25dc9986f76aef702ecc6695e1271310ecd19f852b17f9b5aa6f197"}]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
+(node:25268) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/vendor/three.module.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[
+  {
+    "id": "jaguar-e-type",
+    "levels": [
+      {
+        "triangles": 58196,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.7128424048423767,
+          1.2541858128550984,
+          4.4479899406433105
+        ],
+        "sha256": "ba86829d3ca8a8dbdd75e0848369964a409479e796da7c10ceb48460792cd3e9",
+        "bytes": 4006804
+      },
+      {
+        "triangles": 15516,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.7115124464035034,
+          1.253830330753658,
+          4.448092460632324
+        ],
+        "sha256": "eed35621152bee89dd0768ec64f8d25ae68b3c9ff5c725df00aec244b35835b0",
+        "bytes": 1226396
+      },
+      {
+        "triangles": 3877,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            256,
+            256
+          ]
+        ],
+        "size": [
+          1.7123263478279114,
+          1.253123233195197,
+          4.449999809265137
+        ],
+        "sha256": "5e4a74aa6a68f7e62645433edabee56cd4090b954e39469d8ddf23c4d5a54441",
+        "bytes": 329464
+      }
+    ]
+  },
+  {
+    "id": "porsche-taycan",
+    "levels": [
+      {
+        "triangles": 58196,
+        "primitives": 25,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.143343925476074,
+          1.4113804773951415,
+          4.95949912071228
+        ],
+        "sha256": "401e9c2a140b30310bf6f322292b1887abbdc25f9cb081723c428f2d64ec9901",
+        "bytes": 2163996
+      },
+      {
+        "triangles": 15515,
+        "primitives": 25,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.1375192403793335,
+          1.4119802881032228,
+          4.955766201019287
+        ],
+        "sha256": "b93a9d6681193f5e38a6a11ca09cc921a989a473929621aee9dfa175cbf47bf0",
+        "bytes": 745948
+      },
+      {
+        "triangles": 3871,
+        "primitives": 23,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.1336023807525635,
+          1.4119802881032228,
+          4.925276517868042
+        ],
+        "sha256": "d04712fcb25dc9986f76aef702ecc6695e1271310ecd19f852b17f9b5aa6f197",
+        "bytes": 244660
+      }
+    ]
+  },
+  {
+    "id": "de-tomaso-p72",
+    "levels": [
+      {
+        "triangles": 21495,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            1024,
+            1024
+          ],
+          [
+            1024,
+            1024
+          ],
+          [
+            1024,
+            1024
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.0636230304371566,
+          4.550000190734863
+        ],
+        "sha256": "7d09dc6eb66af86a0129e89de89f4da694486403b5e750ffe87b28c291481193",
+        "bytes": 2883896
+      },
+      {
+        "triangles": 15518,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.0632323815952986,
+          4.550000190734863
+        ],
+        "sha256": "daaca37c38556b455324045f689af85a2f7cfbf9ea1c2ece4174627b0d8b08ba",
+        "bytes": 1408580
+      },
+      {
+        "triangles": 3877,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            256,
+            256
+          ],
+          [
+            256,
+            256
+          ],
+          [
+            256,
+            256
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.060851025977172,
+          4.550000190734863
+        ],
+        "sha256": "302b2d796f23301d0781a68a32d52ecebf7647faa40afab4c6709d9caff79bc9",
+        "bytes": 437652
+      }
+    ]
+  }
+]

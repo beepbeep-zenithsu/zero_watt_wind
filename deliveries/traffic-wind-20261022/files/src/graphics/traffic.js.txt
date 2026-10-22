@@ -1,0 +1,71 @@
+/** Metres/seconds, stable substeps, shared by both ventilation modes and pond. */
+export function signalState(time){
+  const t=((time%30)+30)%30;
+  if(t<11)return ['green','red'];
+  if(t<14)return ['amber','red'];
+  if(t<15)return ['red','red'];
+  if(t<26)return ['red','green'];
+  if(t<29)return ['red','amber'];
+  return ['red','red'];
+}
+
+export function prepareTraffic(city){
+  city.stops=city.paths.map(path=>{
+    const stops=[];let was=false;
+    for(let i=-1;i<1200;i++){
+      const phase=(i/1200+1)%1,p=path.getPointAt(phase),t=path.getTangentAt(phase);
+      const horizontal=Math.abs(t.x)>.98,vertical=Math.abs(t.z)>.98;
+      const approaching=(horizontal&&p.x*t.x>0&&Math.abs(p.x)>city.rx-7.2)||(vertical&&p.z*t.z>0&&Math.abs(p.z)>city.rz-7.2);
+      if(i>=0&&approaching&&!was)stops.push({phase,axis:horizontal?0:1});
+      was=approaching;
+    }
+    return stops;
+  });
+  city.pathLengths=city.paths.map(p=>p.getLength());
+  city.trafficRemainder=0;city.trafficPhases=new Float64Array(city.cars.length);
+  city.cars.forEach(c=>{
+    c.speed=0;c.acceleration=0;c.wheelAngle=0;c.steering=0;
+    c.tangent=city.paths[c.lane].getTangentAt(c.phase);c.nextTangent=c.tangent.clone();
+    c.heading=Math.atan2(c.tangent.x,c.tangent.z);
+  });
+}
+
+export function advanceTraffic(city,dt,cruise,allowed){
+  const step=1/120;
+  city.trafficRemainder+=Math.max(0,Math.min(dt,.5));
+  while(city.trafficRemainder+1e-9>=step){
+    city.trafficRemainder=Math.max(0,city.trafficRemainder-step);
+    const phases=city.trafficPhases;
+    city.cars.forEach((c,i)=>phases[i]=c.phase);
+    city.cars.forEach((car,index)=>{
+      const path=city.paths[car.lane],length=city.pathLengths[car.lane];let gap=length,stop=length;
+      city.cars.forEach((other,j)=>{if(index!==j&&car.lane===other.lane)gap=Math.min(gap,(phases[j]-phases[index]+1)%1*length);});
+      for(const line of city.stops[car.lane]){
+        const distance=(line.phase-car.phase+1)%1*length;
+        if(!allowed(line.axis,car,distance))stop=Math.min(stop,distance);
+      }
+      const room=Math.max(0,Math.min(gap-5.7,stop-2.4));
+      // Preview bends and leave a time headway for the acceleration ramp.
+      // Limiting jerk avoids the instant acceleration changes of the old model.
+      const ahead=(car.phase+Math.max(2,car.speed*1.6)/length)%1;
+      const t=path.getTangentAt(ahead,car.tangent),next=path.getTangentAt((ahead+.004)%1,car.nextTangent);
+      const curvature=Math.atan2(t.z*next.x-t.x*next.z,t.x*next.x+t.z*next.z)/(.004*length);
+      const cornerSpeed=Math.sqrt(1.15/Math.max(.001,Math.abs(curvature)));
+      const brakingSpeed=Math.max(0,Math.sqrt(3*room+2.25)-1.5);
+      const target=Math.min(cruise,cornerSpeed,brakingSpeed,Math.max(0,(gap-5.7)/1.6));
+      const desiredAcceleration=Math.max(-2.4,Math.min(1.15,(target-car.speed)/.65));
+      const change=2.2*step;
+      car.acceleration+=Math.max(-change,Math.min(change,desiredAcceleration-car.acceleration));
+      const speed=Math.max(0,Math.min(cruise,car.speed+car.acceleration*step));
+      const travel=Math.min(room,(car.speed+speed)*.5*step);
+      car.speed=room<.002?0:speed;if(room<.002)car.acceleration=0;
+      car.phase=(car.phase+travel/length)%1;car.wheelAngle+=travel/(car.wheelRadius||.345);
+      path.getTangentAt(car.phase,t);path.getTangentAt((car.phase+.003)%1,next);
+      const localCurvature=Math.atan2(t.z*next.x-t.x*next.z,t.x*next.x+t.z*next.z)/(.003*length);
+      const desired=Math.max(-.5,Math.min(.5,Math.atan(2.86*localCurvature)));
+      car.steering+=(desired-car.steering)*(1-Math.exp(-step*9));
+      const heading=Math.atan2(t.x,t.z),delta=Math.atan2(Math.sin(heading-car.heading),Math.cos(heading-car.heading));
+      car.heading+=delta*(1-Math.exp(-step*14));
+    });
+  }
+}

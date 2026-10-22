@@ -1,0 +1,97 @@
+
+> zerowatt-wind@8.0.0 test
+> node --test tests/*.test.cjs
+
+(node:11484) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/occupant-layout.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ thirty seats fit the smallest room with one corner computer operator and a clear desk (1699.9113ms)
+✔ cars and bicycles use eight connected circuits and stay on the actual road surfaces (5217.8332ms)
+✔ rider legs keep fixed lengths and feet remain attached to the moving pedals (82.7316ms)
+✔ Blender neighborhood and detailed site are installed in both applications (1244.2756ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (394.3059ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (2447.609ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (737.3924ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (2313.3348ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (3679.6818ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (5946.7697ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (423.0029ms)
+✔ traffic starts with bounded jerk and smoothly eases its heading (729.7459ms)
+(node:4344) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/cars/car-catalog.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ traffic catalog has eight unique cars with three ascending LODs (15.264ms)
+✔ LOD clones share geometry and materials with the cached template (120.0317ms)
+✔ uninstalled cars keep the moving fallback without requesting missing GLBs (3.3102ms)
+✔ loaded moving fleet caches files, preserves one fit across LODs and animates explicit wheels (19.7685ms)
+✔ empty replacement meshes fail closed and leave fallback traffic available (1.4215ms)
+✔ engineering source hash and all 84 representative outputs match the pre-upgrade baseline (42.0655ms)
+✔ every exported GLB loads through the actual r180 loader with finite geometry and expected axes (298.5243ms)
+✔ water uses stable GPU deformation and responds to weather without changing simulation state (10.2062ms)
+✔ asset replacement preserves the animated parent transform and shared resources survive layout disposal (4.2191ms)
+✔ mode switching preserves the original scene and uses a bounded cached advanced instance (560.2112ms)
+✔ presets, presentation controls, component selection and pause update real state (574.6825ms)
+✔ advanced daylight, tracking and room controls stay independent of Basic (127.0099ms)
+✔ Monsoon disables all solar and motor assistance, preserves wind and restores Sunny (374.0988ms)
+✔ Advanced Urban Canyon selects the rebuilt district and sheltered wind without disabling solar (173.3833ms)
+✔ Advanced viewport scenario menu works in fit screen and stays synchronized with sidebar (178.2483ms)
+✔ Advanced wind and target controls expose the extended range and live RPM (327.5445ms)
+✔ Advanced wind RPM grows across the extended 0–60 m/s range instead of plateauing (40.9952ms)
+✔ wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly (13.6515ms)
+✔ PV and battery are finite; empty night system stops and full battery curtails surplus (47.7058ms)
+✔ assistance requires timed verification; battery recovery has separate hysteresis (3.3445ms)
+✔ actual Blender GLB loads with finite geometry, all pivots and the intended shaft origins (908.466ms)
+✔ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (1624.7821ms)
+✔ sun tracking aligns the module normal and keeps the roof rack anchored (566.3472ms)
+✔ Monsoon operates solely on wind regardless of battery, sunlight and assistance policy (8.244ms)
+✔ advanced exhaust clears the roof and the entrance supports an enclosed interior view (557.4507ms)
+✔ face control never changes wind by default, including speaking-like lip shapes (641.8341ms)
+✔ blow option: puckered lips alone (no breath sound) never raise the wind, and nothing resets it (211.144ms)
+✔ head turn switches once per hold and rearms only at centre (133.6058ms)
+✔ resting hands cannot change wind; pinch clicks once until released (176.3422ms)
+✔ tracking begins pinched and tracking loss cannot generate phantom clicks (78.5049ms)
+✔ pinch drags sliders and releases without repeated clicks (74.1457ms)
+✔ two-finger adjustment ignores small neutral jitter and releases immediately (110.4476ms)
+✔ commands preserve decimals, spoken numbers, relative changes and limits (81.4608ms)
+✔ common offline mishearing of set is limited to a command at the start (48.9469ms)
+✔ speech previews do not execute; each final result executes once (63.8153ms)
+✔ lip gesture cannot change wind while voice is active (147.8529ms)
+✔ stop cancels a pending microphone permission request (63.8647ms)
+✔ speech restarts after a normal end and ignores an old session after stop (144.1892ms)
+✔ blocked speech service releases the microphone and reports the error (81.1515ms)
+✔ browser service network failure preserves its cause and points to offline voice (59.6106ms)
+✔ normal no-speech timeouts do not accumulate startup failures (53.8108ms)
+✔ offline voice is the default and only final utterances change the app (52.3582ms)
+✔ cancelling offline model loading cannot reactivate voice (44.834ms)
+✔ microphone check measures sound, detects silence, and releases input after eight seconds (54.638ms)
+✔ audio setup failures are visible and release the microphone (49.961ms)
+✔ hover-to-click clicks a button once after about a second and not again until the ring leaves (146.2279ms)
+✔ a quick two-frame pinch clicks even on a slow camera (34.3117ms)
+✔ zoom only starts after holding two fingers still over the scene, then open hand zooms in and curled fingers zoom out (80.6218ms)
+✔ zoom mode ends by itself after a few idle seconds and needs arming again (134.0713ms)
+✔ zoom needs the scene under the cursor (35.8742ms)
+✔ face switch works right after the face appears, without holding still to calibrate (33.4332ms)
+✔ offline engine forwards audio, previews and finals, and disconnects everything on stop (132.8294ms)
+✔ aborting model load terminates the worker and rejects startup (24.2366ms)
+✔ bad offline models report failure and terminate their worker (12.1368ms)
+ZeroWatt: original geometry retained for workspace: Failed to parse URL from assets/zw-upgrade/workspace.glb
+ZeroWatt: original geometry retained for chair: Failed to parse URL from assets/zw-upgrade/chair.glb
+ZeroWatt: original geometry retained for site-seated-person: Failed to parse URL from assets/environment/site-seated-person.glb
+ZeroWatt: original geometry retained for site-canyon-tower: Failed to parse URL from assets/environment/site-canyon-tower.glb
+✔ window apertures remain clear of opaque walls as the building changes size (372.5167ms)
+✔ the full enclosure closes the entrance and roof while the hinged door opens a real passage (82.9946ms)
+✔ all original inputs and weather cases remain usable without bottom readout panels (1858.0129ms)
+✔ maximum installations, manual brake, keyboard tabs and reduced-motion initial pause are preserved (457.0974ms)
+✔ ventilation paths use model flow, stop powered trails at zero output, and preserve background exchange (1140.0067ms)
+✔ all intake paths cross actual window apertures and exhaust paths follow each installed fan (591.6164ms)
+✔ camera movement eases while paused, settles to the target, and frames portrait inspection views (672.9931ms)
+ℹ tests 73
+ℹ suites 0
+ℹ pass 73
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20323.3059

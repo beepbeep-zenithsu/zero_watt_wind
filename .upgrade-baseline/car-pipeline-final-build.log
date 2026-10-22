@@ -1,0 +1,12 @@
+
+> zerowatt-wind@8.0.0 build
+> esbuild app.js --bundle --minify --format=iife --outfile=app.bundle.js && esbuild car-showcase.js --bundle --minify --format=iife --outfile=car-showcase.bundle.js
+
+
+  app.bundle.js  738.6kb
+
+Done in 158ms
+
+  car-showcase.bundle.js  565.9kb
+
+Done in 172ms

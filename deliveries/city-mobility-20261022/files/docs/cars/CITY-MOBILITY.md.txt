@@ -1,0 +1,41 @@
+# City traffic, riders and corner workstation
+
+The website now has 18 moving cars and ten riders on eight circuits across the
+connected city roads. Signals and shared junction reservations coordinate both
+groups. Dry-road car cruise is 7.2 m/s (about 26 km/h); curves, queues, rain and
+storms reduce speed. Movement retains 120 Hz steps, bounded jerk and eased heading.
+Cyclist wheels, pedals and leg motion follow distance travelled, including stops.
+
+All moving cars use genuine installed Jaguar E-Type, Porsche Taycan or De Tomaso
+P72 models. Three of the requested eight types are available; the other five are
+explicitly pending. Source and license details: [SOURCES.md](../../assets/cars/SOURCES.md).
+
+The computer desk is in a rear corner, with one assigned operator facing the
+screen when occupancy is nonzero. Other seats avoid that reserved area. Raising
+occupancy only reveals additional predetermined seats, preserving the first
+operator and existing seat positions. The layout supports 30 occupants in the
+smallest room. Front-corner plants stay clear of the desk and seating.
+
+Review images:
+
+- [Actual installed car GLBs](installed-cars-review.png)
+- [Actual 30-person workstation layout](workstation-review.png)
+- [Original Blender rider/bicycle](cyclist-review.png)
+
+These are headless Blender geometry/PBR reviews, not browser screenshots.
+`mobility-validation.json` records actual loaded car IDs, replacement count,
+routes, riders and seating. `installed-asset-validation.json` records checks on
+the nine real vehicle LODs. Browser FPS and GPU metrics remain unmeasured.
+
+Relevant complete source files:
+
+- `src/graphics/road-network.js`: circuits and staggered initial positions.
+- `src/graphics/traffic.js`: queues, shared reservations and smooth integration.
+- `src/graphics/cyclists.js`: rider traffic and two-link leg/pedal motion.
+- `src/graphics/occupant-layout.js`: reserved desk space and stable seat order.
+- `src/cars/traffic-fleet.js`: actual installed models, LOD reuse, wheel and night-lamp motion.
+- `scripts/blender/build_city_cyclists.py`: editable original bicycle/rider source.
+
+Rebuild the rider with `node tools/run-blender.cjs scripts/blender/build_city_cyclists.py`.
+For car rebuilds, see [TRAFFIC-PIPELINE.md](TRAFFIC-PIPELINE.md). Run `npm run build`
+after source/registry changes; `npm start` serves the project on port 5500.

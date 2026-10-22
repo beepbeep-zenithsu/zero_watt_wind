@@ -1,0 +1,67 @@
+{
+  "id": "lod-pipeline-fixture",
+  "source": {
+    "verified": true,
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Original technical test fixture, not a branded vehicle",
+    "author": "ZeroWatt project",
+    "url": "urn:zerowatt:technical-test-fixture",
+    "provenance": "Created by this local test script from primitives."
+  },
+  "sourceSha256": "ec5eaeff24da88ebb100901836fab1cb4855f361edb8ecfbac76f70c7c925968",
+  "front": "-Y",
+  "length": 4.6,
+  "trianglesBefore": 10112,
+  "warnings": [],
+  "levels": [
+    {
+      "level": 0,
+      "file": "lod-pipeline-fixture-lod0.glb",
+      "triangles": 6784,
+      "trianglesBeforeExport": 6784,
+      "budget": 7000,
+      "materialPrimitives": 5,
+      "textureLimit": 128,
+      "sizeBlenderXYZ": [
+        2.18,
+        4.6,
+        1.35
+      ],
+      "bytes": 539404,
+      "sha256": "c7358cf0d3bd5583994eb044e540def125752c7ddf1a353eef146f85a1039205"
+    },
+    {
+      "level": 1,
+      "file": "lod-pipeline-fixture-lod1.glb",
+      "triangles": 1936,
+      "trianglesBeforeExport": 1936,
+      "budget": 2000,
+      "materialPrimitives": 5,
+      "textureLimit": 64,
+      "sizeBlenderXYZ": [
+        2.18,
+        4.59794,
+        1.34987
+      ],
+      "bytes": 192240,
+      "sha256": "77a463a51a6bb2b74f921b34f7b6a8be0c105dcada327ddc5304033663207775"
+    },
+    {
+      "level": 2,
+      "file": "lod-pipeline-fixture-lod2.glb",
+      "triangles": 580,
+      "trianglesBeforeExport": 580,
+      "budget": 600,
+      "materialPrimitives": 5,
+      "textureLimit": 32,
+      "sizeBlenderXYZ": [
+        2.18,
+        4.58994,
+        1.34839
+      ],
+      "bytes": 64208,
+      "sha256": "6d373f3c4ef054436f91d91f1fed9096557d38140e0b04365bfff5861b4bba0b"
+    }
+  ]
+}

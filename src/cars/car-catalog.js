@@ -5,11 +5,11 @@
  * fleet rescale each loaded model to this length, so a model exported in
  * centimetres still fits.
  * `yaw` is a manual correction in degrees if a model's nose does not face +Z.
- * `source` stays null until YOU have opened the model page and confirmed the
- * licence. Fill it in like this once verified:
- *   source:{title:'Model title',author:'Author name',url:'https://...',
- *           license:'CC-BY-4.0',attribution:'"Title" by Author (URL) is licensed under CC-BY-4.0.'}
+ * `source` is populated by installed-fleet.js only after real GLBs and their
+ * recorded licenses pass tools/validate-traffic-assets.cjs --install.
+ * Candidate licenses alone never mark an absent model as installed.
  */
+import {INSTALLED_FLEET} from './installed-fleet.js';
 export const CAR_BASE = 'assets/cars/';
 
 /** Traffic-ready LOD files: assets/cars/traffic/<id>-lod0.glb, -lod1.glb, -lod2.glb */
@@ -29,7 +29,11 @@ const entries = [
   {id: 'lotus-evija', name: 'Lotus Evija', maker: 'Lotus', year: '2020–', length: 4.69, note: 'Electric hypercar'}
 ];
 
-export const CARS = entries.map(c => ({yaw: 0, source: null, ...c, file: `${CAR_BASE}${c.id}.glb`}));
+export const CARS = entries.map(c => {
+  const installed = INSTALLED_FLEET[c.id];
+  return {yaw: 0, source: installed?.source ?? null, ...c,
+    installed: Boolean(installed), file: installed?.lods[0] ?? `${CAR_BASE}${c.id}.glb`};
+});
 
 /** Same eight cars, with the three LOD files used by city traffic. */
 export const TRAFFIC_CARS = CARS.map(c => ({

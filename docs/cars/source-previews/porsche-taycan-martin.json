@@ -1,0 +1,409 @@
+{
+  "name": "porsche-taycan-martin",
+  "bounds": [
+    [
+      -1069.5072021484375,
+      -2466.358642578125,
+      -16.8829402923584
+    ],
+    [
+      1069.5076904296875,
+      2483.141357421875,
+      1392.1085205078125
+    ]
+  ],
+  "objects": [
+    {
+      "name": "Object_2",
+      "polygons": 2100,
+      "materials": [
+        "ExtAluminium"
+      ]
+    },
+    {
+      "name": "Object_3",
+      "polygons": 637,
+      "materials": [
+        "Black"
+      ]
+    },
+    {
+      "name": "Object_4",
+      "polygons": 688,
+      "materials": [
+        "GlassRedLights"
+      ]
+    },
+    {
+      "name": "Object_5",
+      "polygons": 96,
+      "materials": [
+        "GlassMatRedLights"
+      ]
+    },
+    {
+      "name": "Object_6",
+      "polygons": 8,
+      "materials": [
+        "IntPorscheText"
+      ]
+    },
+    {
+      "name": "Object_7",
+      "polygons": 372,
+      "materials": [
+        "IntStitchesGreyWheel"
+      ]
+    },
+    {
+      "name": "Object_8",
+      "polygons": 72,
+      "materials": [
+        "PlasticNumber"
+      ]
+    },
+    {
+      "name": "Object_9",
+      "polygons": 1792,
+      "materials": [
+        "intLeatherSteeringWheel"
+      ]
+    },
+    {
+      "name": "Object_10",
+      "polygons": 668,
+      "materials": [
+        "intLeatherSeatsTurbo"
+      ]
+    },
+    {
+      "name": "Object_11",
+      "polygons": 3112,
+      "materials": [
+        "intLeatherLtPerfRed"
+      ]
+    },
+    {
+      "name": "Object_12",
+      "polygons": 5503,
+      "materials": [
+        "wire_225198087"
+      ]
+    },
+    {
+      "name": "Object_13",
+      "polygons": 226,
+      "materials": [
+        "intTexDevices"
+      ]
+    },
+    {
+      "name": "Object_14",
+      "polygons": 7682,
+      "materials": [
+        "wire_008110135"
+      ]
+    },
+    {
+      "name": "Object_15",
+      "polygons": 1618,
+      "materials": [
+        "wire_008008136"
+      ]
+    },
+    {
+      "name": "Object_16",
+      "polygons": 46197,
+      "materials": [
+        "wire_027177027"
+      ]
+    },
+    {
+      "name": "Object_17",
+      "polygons": 2764,
+      "materials": [
+        "wire_135006006"
+      ]
+    },
+    {
+      "name": "Object_18",
+      "polygons": 1131,
+      "materials": [
+        "wire_145028177"
+      ]
+    },
+    {
+      "name": "Object_19",
+      "polygons": 356,
+      "materials": [
+        "wire_088199225"
+      ]
+    },
+    {
+      "name": "Object_20",
+      "polygons": 6495,
+      "materials": [
+        "wire_135110008"
+      ]
+    },
+    {
+      "name": "Object_21",
+      "polygons": 2668,
+      "materials": [
+        "wire_135059008"
+      ]
+    },
+    {
+      "name": "Object_22",
+      "polygons": 6495,
+      "materials": [
+        "wire_061135006"
+      ]
+    },
+    {
+      "name": "Object_23",
+      "polygons": 5503,
+      "materials": [
+        "wire_087225087"
+      ]
+    },
+    {
+      "name": "Object_24",
+      "polygons": 14536,
+      "materials": [
+        "Aluminium"
+      ]
+    },
+    {
+      "name": "Object_25",
+      "polygons": 2250,
+      "materials": [
+        "BlueGlass"
+      ]
+    },
+    {
+      "name": "Object_26",
+      "polygons": 4522,
+      "materials": [
+        "Carbon"
+      ]
+    },
+    {
+      "name": "Object_27",
+      "polygons": 9572,
+      "materials": [
+        "Glass"
+      ]
+    },
+    {
+      "name": "Object_28",
+      "polygons": 2956,
+      "materials": [
+        "GlassWinds"
+      ]
+    },
+    {
+      "name": "Object_29",
+      "polygons": 11864,
+      "materials": [
+        "IntAlcantaraBlack"
+      ]
+    },
+    {
+      "name": "Object_30",
+      "polygons": 1832,
+      "materials": [
+        "IntBurmesterGrid"
+      ]
+    },
+    {
+      "name": "Object_31",
+      "polygons": 3104,
+      "materials": [
+        "IntButtons"
+      ]
+    },
+    {
+      "name": "Object_32",
+      "polygons": 1216,
+      "materials": [
+        "IntButtonsGlossy"
+      ]
+    },
+    {
+      "name": "Object_33",
+      "polygons": 3026,
+      "materials": [
+        "IntCarpet"
+      ]
+    },
+    {
+      "name": "Object_34",
+      "polygons": 792,
+      "materials": [
+        "IntGrid"
+      ]
+    },
+    {
+      "name": "Object_35",
+      "polygons": 2064,
+      "materials": [
+        "PlasticBlackGlossy"
+      ]
+    },
+    {
+      "name": "Object_36",
+      "polygons": 28273,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_37",
+      "polygons": 10730,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_38",
+      "polygons": 9728,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_39",
+      "polygons": 8420,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_40",
+      "polygons": 15072,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_41",
+      "polygons": 9256,
+      "materials": [
+        "PlasticBlack"
+      ]
+    },
+    {
+      "name": "Object_42",
+      "polygons": 2448,
+      "materials": [
+        "IntSeatBelt"
+      ]
+    },
+    {
+      "name": "Object_43",
+      "polygons": 6528,
+      "materials": [
+        "IntStitchesWhite"
+      ]
+    },
+    {
+      "name": "Object_44",
+      "polygons": 608,
+      "materials": [
+        "PlasticRed"
+      ]
+    },
+    {
+      "name": "Object_45",
+      "polygons": 3848,
+      "materials": [
+        "PlasticGrey"
+      ]
+    },
+    {
+      "name": "Object_46",
+      "polygons": 8184,
+      "materials": [
+        "Rubber"
+      ]
+    },
+    {
+      "name": "Object_47",
+      "polygons": 14488,
+      "materials": [
+        "WheelCaliper"
+      ]
+    },
+    {
+      "name": "Object_48",
+      "polygons": 4440,
+      "materials": [
+        "WheelPlasticBlackBolt"
+      ]
+    },
+    {
+      "name": "Object_49",
+      "polygons": 3264,
+      "materials": [
+        "WheelTire"
+      ]
+    },
+    {
+      "name": "Object_50",
+      "polygons": 13226,
+      "materials": [
+        "intLeatherBlack"
+      ]
+    },
+    {
+      "name": "Object_51",
+      "polygons": 14652,
+      "materials": [
+        "intLeatherBlack"
+      ]
+    },
+    {
+      "name": "Object_52",
+      "polygons": 14086,
+      "materials": [
+        "intLeatherRed"
+      ]
+    },
+    {
+      "name": "Object_53",
+      "polygons": 5215,
+      "materials": [
+        "intLeatherRed"
+      ]
+    },
+    {
+      "name": "Object_54",
+      "polygons": 13056,
+      "materials": [
+        "intSeamsRed"
+      ]
+    },
+    {
+      "name": "Object_55",
+      "polygons": 952,
+      "materials": [
+        "wire_000000000"
+      ]
+    },
+    {
+      "name": "Object_56",
+      "polygons": 14460,
+      "materials": [
+        "wire_057008136"
+      ]
+    },
+    {
+      "name": "Object_57",
+      "polygons": 14752,
+      "materials": [
+        "wire_057008136"
+      ]
+    }
+  ]
+}

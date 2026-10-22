@@ -1,0 +1,130 @@
+RENDER_REVIEW {"mode":"air","weather":"clear","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":696,"triangles":2849230,"medianFrameMs":13.899999999999636,"p95FrameMs":20.800000000000182,"medianRenderCpuMs":13.899999998509884,"p95RenderCpuMs":16,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":0}
+RENDER_REVIEW {"mode":"air","weather":"rain","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":707,"triangles":2849510,"medianFrameMs":13.899999999999636,"p95FrameMs":20.899999999999636,"medianRenderCpuMs":14.599999999627471,"p95RenderCpuMs":17.40000000037253,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":20}
+RENDER_REVIEW {"mode":"air","weather":"night","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":699,"triangles":2860750,"medianFrameMs":13.899999999999636,"p95FrameMs":20.899999999999636,"medianRenderCpuMs":15.299999998882413,"p95RenderCpuMs":17.800000000745058,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":48}
+RENDER_REVIEW {"mode":"water","weather":"clear","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":496,"triangles":2854040,"medianFrameMs":13.899999999999636,"p95FrameMs":20.899999999999636,"medianRenderCpuMs":13.900000000372529,"p95RenderCpuMs":16.5,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":0}
+RENDER_REVIEW {"mode":"advanced","weather":"clear","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":628,"triangles":2843662,"medianFrameMs":14,"p95FrameMs":20.900000000001455,"medianRenderCpuMs":16.40000000037253,"p95RenderCpuMs":19.5,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":0}
+RENDER_REVIEW {"mode":"advanced","weather":"rain","cars":36,"cyclists":24,"pedestrians":80,"drawCalls":639,"triangles":2843942,"medianFrameMs":13.900000000001455,"p95FrameMs":20.899999999997817,"medianRenderCpuMs":15.099999999627471,"p95RenderCpuMs":17.799999998882413,"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)","allCarsInstalled":true,"crossingsCompleted":35}
+{
+  "results": [
+    {
+      "mode": "air",
+      "weather": "clear",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 696,
+      "triangles": 2849230,
+      "medianFrameMs": 13.899999999999636,
+      "p95FrameMs": 20.800000000000182,
+      "medianRenderCpuMs": 13.899999998509884,
+      "p95RenderCpuMs": 16,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 0
+    },
+    {
+      "mode": "air",
+      "weather": "rain",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 707,
+      "triangles": 2849510,
+      "medianFrameMs": 13.899999999999636,
+      "p95FrameMs": 20.899999999999636,
+      "medianRenderCpuMs": 14.599999999627471,
+      "p95RenderCpuMs": 17.40000000037253,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 20
+    },
+    {
+      "mode": "air",
+      "weather": "night",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 699,
+      "triangles": 2860750,
+      "medianFrameMs": 13.899999999999636,
+      "p95FrameMs": 20.899999999999636,
+      "medianRenderCpuMs": 15.299999998882413,
+      "p95RenderCpuMs": 17.800000000745058,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 48
+    },
+    {
+      "mode": "water",
+      "weather": "clear",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 496,
+      "triangles": 2854040,
+      "medianFrameMs": 13.899999999999636,
+      "p95FrameMs": 20.899999999999636,
+      "medianRenderCpuMs": 13.900000000372529,
+      "p95RenderCpuMs": 16.5,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 0
+    },
+    {
+      "mode": "advanced",
+      "weather": "clear",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 628,
+      "triangles": 2843662,
+      "medianFrameMs": 14,
+      "p95FrameMs": 20.900000000001455,
+      "medianRenderCpuMs": 16.40000000037253,
+      "p95RenderCpuMs": 19.5,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 0
+    },
+    {
+      "mode": "advanced",
+      "weather": "rain",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "drawCalls": 639,
+      "triangles": 2843942,
+      "medianFrameMs": 13.900000000001455,
+      "p95FrameMs": 20.899999999997817,
+      "medianRenderCpuMs": 15.099999999627471,
+      "p95RenderCpuMs": 17.799999998882413,
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU (0x000028E1) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "allCarsInstalled": true,
+      "crossingsCompleted": 35
+    }
+  ],
+  "appModes": [
+    {
+      "mode": "air",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "installed": true
+    },
+    {
+      "mode": "water",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "installed": true
+    },
+    {
+      "mode": "advanced",
+      "cars": 36,
+      "cyclists": 24,
+      "pedestrians": 80,
+      "installed": true
+    }
+  ],
+  "errors": []
+}

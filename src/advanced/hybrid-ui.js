@@ -33,7 +33,7 @@ export function installHybrid(s,{recompute,toggleFit,setSceneView}){
     <label class="hy-select">Scenario<select data-hy-select="weather"><option value="sunny">Sunny · solar + wind</option><option value="canyon">Urban canyon · sheltered wind + solar</option><option value="monsoon">Monsoon · wind only</option></select></label>
     <div class="hy-presets" role="group" aria-label="Operating demonstrations"><button data-hy-preset="wind">Adequate wind</button><button data-hy-preset="hybrid">Weak wind</button><button data-hy-preset="electric">No wind</button><button data-hy-preset="protected">Low battery</button></div>
     <div class="hy-section-label">ENVIRONMENT</div>
-    ${range('wind','Wind speed',0,20,.1,h.p.wind,'m/s')}${range('irradiance','Solar irradiance',0,1200,10,h.p.irradiance,'W/m²')}${range('sunHour','Sun position',6,18,.25,h.p.sunHour,'h')}${range('soc','Set battery charge',0,100,1,h.p.soc,'%')}${range('targetRPM','Target fan speed',80,500,10,h.p.targetRPM,'RPM')}
+    ${range('wind','Wind speed',0,60,.1,h.p.wind,'m/s')}<output class="hy-live-rpm" data-hy-rpm aria-live="off">Rotor 0 RPM · Fan 0 RPM</output>${range('irradiance','Solar irradiance',0,1200,10,h.p.irradiance,'W/m²')}${range('sunHour','Sun position',6,18,.25,h.p.sunHour,'h')}${range('soc','Set battery charge',0,100,1,h.p.soc,'%')}${range('targetRPM','Target fan speed',80,1200,10,h.p.targetRPM,'RPM')}
     <label class="hy-select">Control policy<select data-hy-select="control"><option value="auto">Automatic assistance</option><option value="wind-only">Wind only · motor inhibited</option></select></label>
     <div class="hy-inline-toggles">${toggle('night','Night')}${toggle('fault','Inject fault')}</div>
     <div class="hy-section-label">PRESENTATION</div>
@@ -179,6 +179,7 @@ export function installHybrid(s,{recompute,toggleFit,setSceneView}){
     if(h.scene){h.scene.hybridSample=h.sample;h.scene.hybridWind=h.p.wind;h.scene.irradiance=h.p.weather==='monsoon'?0:h.p.irradiance;}
   };
   h.render=()=>{
+    aside.querySelector('[data-hy-rpm]').textContent=`Rotor ${n(h.sample.windRPM)} RPM · Fan ${n(h.sample.fanRPM)} RPM`;
     const tour=overlay.querySelector('[data-hy-action="tour"]');
     if(h.scene)tour.setAttribute('aria-pressed',h.scene.tour);
     if(h.scene)overlay.querySelector('[data-hy-action="section"]').setAttribute('aria-pressed',h.scene.section);

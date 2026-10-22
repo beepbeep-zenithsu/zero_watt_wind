@@ -145,6 +145,11 @@
       "meshes": 9,
       "triangles": 10180,
       "bytes": 709288
+    },
+    "site-cyclist": {
+      "meshes": 32,
+      "triangles": 12300,
+      "bytes": 454120
     }
   }
 }

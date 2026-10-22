@@ -1,0 +1,77 @@
+<string>:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+10:27:46 | INFO: Starting glTF 2.0 export
+10:27:46 | INFO: Extracting primitive: Cylinder.057
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.058
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.118
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cone.005
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.007
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Sphere.007
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.122
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.061
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.006
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.048
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.005
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.127
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cone.006
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.132
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cone.007
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.064
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cone.001
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Torus.003
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Torus.002
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.002
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.003
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cone
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Torus.001
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Torus
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.008
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.009
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.010
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cube.011
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Sphere.009
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.126
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Sphere.014
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Extracting primitive: Cylinder.131
+10:27:46 | INFO: Primitives created: 1
+10:27:46 | INFO: Finished glTF 2.0 export in 0.18209290504455566 s
+00:05.703  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:05.703  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+
+Info: Saved as "city-cyclists.blend"
+CITY_CYCLIST_READY {'meshes': 32, 'triangles': 12300, 'bytes': 454120}
+
+Blender quit

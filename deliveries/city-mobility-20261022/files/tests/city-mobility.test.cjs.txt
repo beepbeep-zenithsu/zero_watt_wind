@@ -1,0 +1,64 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const {makeScene,ready,updateCity,T}=require('../tools/verify-graphics.cjs'),M=require('../model.js');
+const url=file=>pathToFileURL(path.join(__dirname,'..',file)).href;
+
+test('thirty seats fit the smallest room with one corner computer operator and a clear desk',async()=>{
+  const {occupantLayout}=await import(url('src/graphics/occupant-layout.js'));
+  for(const [w,d] of [[6,6],[8.94,6],[15,6],[6,18],[28,24]]){
+    const {desk,reserved,seats}=occupantLayout(w,d,30);
+    assert.equal(seats.length,30);assert.equal(seats.filter(p=>p.role==='computer-operator').length,1);
+    assert.equal(seats[0].rotation,Math.PI);assert.ok(desk.x<-w/2+1.2&&desk.z<-d/2+1);
+    for(const p of seats.slice(1)){
+      assert.ok(!(p.x+.34>reserved.minX&&p.x-.34<reserved.maxX&&p.z+.62>reserved.minZ&&p.z-.3<reserved.maxZ),'desk/operator clearance');
+      assert.ok(Math.abs(p.x)<w/2-.3&&p.z+.62<d/2-.6);
+    }
+    for(let i=1;i<seats.length;i++)for(let j=i+1;j<seats.length;j++){
+      assert.ok(Math.abs(seats[i].x-seats[j].x)>.67||Math.abs(seats[i].z-seats[j].z)>.9,'seated bodies/shoes do not overlap');
+    }
+  }
+  const s=makeScene('air'),p={...M.defaults,_mode:'air',units:1,people:30};
+  s.setEnvironment({weather:'clear',environment:'roof'},p);await ready(s);
+  const sample=M.steady(p,p.wind,M.evaluateHardware(p));s.render(0,sample,false);
+  assert.equal(s.people.filter(o=>o.visible).length,30);
+  assert.equal(s.people.filter(o=>o.userData.seatRole==='computer-operator'&&o.visible).length,1);
+  const deskBox=new T.Box3().setFromObject(s.shell.getObjectByName('Corner computer workstation'));
+  for(const occupant of s.people.slice(1))assert.ok(!new T.Box3().setFromObject(occupant).intersectsBox(deskBox),'actual Blender occupants clear of actual desk');
+});
+
+test('cars and bicycles use eight connected circuits and stay on the actual road surfaces',async()=>{
+  const s=makeScene('air');s.setEnvironment({weather:'clear',environment:'roof'},{...M.defaults,_mode:'air',units:1});await ready(s);
+  assert.equal(s.city.paths.length,8);assert.equal(s.city.cars.length,18);assert.equal(s.city.cyclists.length,10);
+  assert.ok(s.city.cars.every(c=>c.model),'all moving cars use successfully loaded real car GLBs');
+  assert.deepEqual([...new Set(s.city.cars.map(c=>c.modelId))].sort(),['de-tomaso-p72','jaguar-e-type','porsche-taycan']);
+  assert.equal(new Set(s.city.cars.map(c=>c.lane)).size,8);assert.equal(new Set(s.city.cyclists.map(c=>c.lane)).size,8);
+  const {xs,zs}=s.city.network;
+  for(const route of [...s.city.paths,...s.city.network.cyclePaths])for(let i=0;i<1000;i++){
+    const p=route.getPointAt(i/1000),distance=Math.min(...xs.map(x=>Math.abs(p.x-x)),...zs.map(z=>Math.abs(p.z-z)));
+    assert.ok(distance<4.7,'road user stays within street asphalt');
+  }
+  for(const stops of [...s.city.stops,...s.city.cycleTraffic.stops])assert.equal(new Set(stops.map(l=>l.junction.id)).size,stops.length,'no second stop at the exit of the same turn');
+  const before=s.city.cars.map(c=>c.phase),cycleBefore=s.city.cyclists.map(c=>c.phase);s.reducedMotion=false;let fastest=0;
+  for(let step=0;step<1000;step++){
+    s.time=step*.1;updateCity(s,.1);fastest=Math.max(fastest,...s.city.cars.map(c=>c.speed));
+    for(let i=0;i<s.city.cars.length;i++)for(let j=i+1;j<s.city.cars.length;j++){
+      const a=s.city.cars[i],b=s.city.cars[j],pa=s.city.paths[a.lane].getPointAt(a.phase),pb=s.city.paths[b.lane].getPointAt(b.phase);
+      assert.ok(pa.distanceTo(pb)>2.1,'separate car lanes and shared junctions prevent overlap');
+    }
+  }
+  assert.ok(fastest>5,'straight-road traffic is visibly faster than the former 3.2 m/s cap');
+  assert.ok(s.city.cars.every((c,i)=>Math.abs(c.phase-before[i])>.001),'all car circuits restart after signals');
+  assert.ok(s.city.cyclists.every((c,i)=>Math.abs(c.phase-cycleBefore[i])>.001),'all bicycle circuits progress');
+  assert.ok(s.city.cyclistsBatch.children.some(o=>o.name.startsWith('CycleThighL_')));
+  const stopped=s.city.cyclists.map(c=>[c.phase,c.wheelAngle]);updateCity(s,0);assert.deepEqual(s.city.cyclists.map(c=>[c.phase,c.wheelAngle]),stopped);
+});
+
+test('rider legs keep fixed lengths and feet remain attached to the moving pedals',async()=>{
+  const {cycleLeg}=await import(url('src/graphics/cyclists.js'));
+  for(let i=0;i<60;i++)for(const side of [-1,1]){
+    const leg=cycleLeg(side,i*Math.PI/30);
+    assert.ok(Math.abs(leg.hip.distanceTo(leg.knee)-.44)<.0001);
+    assert.ok(Math.abs(leg.knee.distanceTo(leg.ankle)-.46)<.0001);
+    assert.ok(Math.abs(leg.ankle.y-leg.pedal.y-.12)<1e-9);
+    assert.ok(Math.abs(leg.ankle.z-leg.pedal.z+.04)<1e-9);
+  }
+});

@@ -1,0 +1,151 @@
+{
+  "uid": "32aa25ea6e1b40f395b2aff33ca0a279",
+  "name": "Jaguar E_TYPE",
+  "author": {
+    "uid": "d3f0906c9eca4e77baaa16eb612c737a",
+    "username": "kikumi",
+    "displayName": "Nommoc",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/kikumi",
+    "avatar": {
+      "uid": "3d125e0affc34928a1315dc92dde2157",
+      "uri": "https://api.sketchfab.com/v3/avatars/3d125e0affc34928a1315dc92dde2157",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 3065,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/c52fe80cb711455b8d42127432092d56.png"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 5483,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/813384095c8b4d128e765931da27f668.png"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 14986,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/3b699070bebd440c984fe3c520e1230e.png"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 11005,
+          "url": "https://media.sketchfab.com/avatars/3d125e0affc34928a1315dc92dde2157/d5b9e975723f470bb6ec8e45a26dadcd.png"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/d3f0906c9eca4e77baaa16eb612c737a"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "description": "Jaguar E_TYPE by Blender 2.93",
+  "triangles": 125527
+}
+{
+  "uid": "875072396ef541e3b106152e6dea6978",
+  "name": "2020 Porsche Taycan",
+  "author": {
+    "uid": "0ce404973bc8424f9e7f8a6690294d95",
+    "username": "martin002",
+    "displayName": "martin002",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/martin002",
+    "avatar": {
+      "uid": "5eba4b0ab82b4c0b918334c657abf06e",
+      "uri": "https://api.sketchfab.com/v3/avatars/5eba4b0ab82b4c0b918334c657abf06e",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 810,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/66c1c8b6f1cc4afab3a85d3b7879f58e.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1391,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/4a407b5fdbbf4900b0e146723daa5ee0.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 3638,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2a90b417adb142aa8c7c7b23139f7ba6.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 4236,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2446c110a82340c2aa8df96e2e66846a.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/0ce404973bc8424f9e7f8a6690294d95"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "description": "2020 Porsche Taycanhttps://www.google.com/imgres?imgurl=https%3A%2F%2Fdaxstreet.com%2Fwp-content%2Fuploads%2F2020%2F12%2F2020-porsche-taycan-feature.jpg&imgrefurl=https%3A%2F%2Fdaxstreet.com%2Fcars%2F1339%2F2020-porsche-taycan-compelling-electric-sports-car%2F&tbnid=oUl1Mk02qW8xIM&vet=12ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ..i&docid=ofjAsBFDVfkk8M&w=1920&h=1080&q=2020%20porsche%20taycan&ved=2ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ",
+  "triangles": 369603
+}
+{
+  "uid": "000aed7c07034556bc66733d5abb8464",
+  "name": "McLaren Elva",
+  "author": {
+    "uid": "f480bfc72b2e41ca8d6b710ae9d5b6f0",
+    "username": "zirodesign",
+    "displayName": "ZIRODESIGN",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/zirodesign",
+    "avatar": {
+      "uid": "76cba406342043ae9cc1a7e84db33971",
+      "uri": "https://api.sketchfab.com/v3/avatars/76cba406342043ae9cc1a7e84db33971",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 909,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/b7b868365e4246e28f2bd6035bb77a3f.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1107,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/bb2b225e722e418e9320695cf88f0826.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 2111,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/574e5fdd71b74c2ca1a21a48e2d163a5.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 2402,
+          "url": "https://media.sketchfab.com/avatars/76cba406342043ae9cc1a7e84db33971/7538a765b9484ea595bc3799df2cee21.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/f480bfc72b2e41ca8d6b710ae9d5b6f0"
+  },
+  "license": {},
+  "description": "Just a free Mclaren to celebrate nothing :/\n\n*enjoy*\n\n\n**Also u can follow my instagram**\n\n**<a href=\"https://www.instagram.com/zirodesign/\">ZIRODESIGN</a>**",
+  "triangles": 1742339
+}
+S3D3C files [{"name":"Sketchfab_3D_Creative_Commons_Collection_model_metadata.zip","kind":"file","links":{"info":"https://api.osf.io/v2/files/65cde8afc3ab4901f046af81/","move":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/65cde8afc3ab4901f046af81","upload":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/65cde8afc3ab4901f046af81","delete":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/65cde8afc3ab4901f046af81","download":"https://osf.io/download/7xu45/","render":"https://mfr.de-1.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2F7xu45%2F%3Fdirect%26mode%3Drender","html":"https://osf.io/w2qu9/files/osfstorage/65cde8afc3ab4901f046af81","self":"https://api.osf.io/v2/files/65cde8afc3ab4901f046af81/","iri":"https://osf.io/7xu45"},"relationships":{"parent_folder":{"links":{"related":{"href":"https://api.osf.io/v2/files/65ca0e3b32eafb0a404eef44/","meta":{}}},"data":{"id":"65ca0e3b32eafb0a404eef44","type":"files"}},"versions":{"links":{"related":{"href":"https://api.osf.io/v2/files/65cde8afc3ab4901f046af81/versions/","meta":{}}}},"comments":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/comments/?filter%5Btarget%5D=7xu45","meta":{}}}},"node":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/","meta":{}}},"data":{"id":"w2qu9","type":"nodes"}},"target":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/","meta":{"type":"nodes"}}},"data":{"type":"nodes","id":"w2qu9"}},"cedar_metadata_records":{"links":{"related":{"href":"https://api.osf.io/v2/files/65cde8afc3ab4901f046af81/cedar_metadata_records/","meta":{}}}}}},{"name":"s3d3c-model-paths.txt","kind":"file","links":{"info":"https://api.osf.io/v2/files/6894cb077f2f1bcf0a1b51ef/","move":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/6894cb077f2f1bcf0a1b51ef","upload":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/6894cb077f2f1bcf0a1b51ef","delete":"https://files.de-1.osf.io/v1/resources/w2qu9/providers/osfstorage/6894cb077f2f1bcf0a1b51ef","download":"https://osf.io/download/egc96/","render":"https://mfr.de-1.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Fegc96%2F%3Fdirect%26mode%3Drender","html":"https://osf.io/w2qu9/files/osfstorage/6894cb077f2f1bcf0a1b51ef","self":"https://api.osf.io/v2/files/6894cb077f2f1bcf0a1b51ef/","iri":"https://osf.io/egc96"},"relationships":{"parent_folder":{"links":{"related":{"href":"https://api.osf.io/v2/files/65ca0e3b32eafb0a404eef44/","meta":{}}},"data":{"id":"65ca0e3b32eafb0a404eef44","type":"files"}},"versions":{"links":{"related":{"href":"https://api.osf.io/v2/files/6894cb077f2f1bcf0a1b51ef/versions/","meta":{}}}},"comments":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/comments/?filter%5Btarget%5D=egc96","meta":{}}}},"node":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/","meta":{}}},"data":{"id":"w2qu9","type":"nodes"}},"target":{"links":{"related":{"href":"https://api.osf.io/v2/nodes/w2qu9/","meta":{"type":"nodes"}}},"data":{"type":"nodes","id":"w2qu9"}},"cedar_metadata_records":{"links":{"related":{"href":"https://api.osf.io/v2/files/6894cb077f2f1bcf0a1b51ef/cedar_metadata_records/","meta":{}}}}}}]
+S3D3C PROJECT {"title":"Sketchfab 3D Creative Commons Collection","description":"Sketchfab 3D Creative Commons Collection metadata.\nPlease contact us for access to the original models.","category":"project","custom_citation":null,"date_created":"2024-02-12T12:25:31.016158","date_modified":"2025-08-07T15:49:27.998109","registration":false,"preprint":false,"fork":false,"collection":false,"tags":[],"access_requests_enabled":true,"node_license":null,"analytics_key":"","current_user_can_comment":false,"current_user_permissions":["read"],"current_user_is_contributor":false,"current_user_is_contributor_or_group_member":false,"wiki_enabled":true,"public":true,"subjects":[]}

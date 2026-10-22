@@ -1,0 +1,71 @@
+{
+  "id": "de-tomaso-p72",
+  "source": {
+    "uid": "ab85c302e652492196b600ee1eb7106a",
+    "title": "Low Poly Car - De Tomaso P72 2020",
+    "author": "ROH3D",
+    "url": "https://sketchfab.com/3d-models/ab85c302e652492196b600ee1eb7106a",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "verified": true,
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-122/ab85c302e652492196b600ee1eb7106a.glb",
+    "originalSha256": "cc55ceab81ed64ee03f05becc35e9357b4361c77a0277ca1c3ce7d5c226018f1",
+    "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Public creator attribution/license retained.",
+    "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures.",
+    "warnings": []
+  },
+  "sourceSha256": "9c32d5ce11b0cc930efebf15e6d5709f962f578c4ec37fe43cd3b972ac5209e8",
+  "front": "-Y",
+  "length": 4.55,
+  "trianglesBefore": 21495,
+  "warnings": [],
+  "levels": [
+    {
+      "level": 0,
+      "file": "de-tomaso-p72-lod0.glb",
+      "triangles": 21495,
+      "budget": 60000,
+      "materialPrimitives": 5,
+      "textureLimit": 1024,
+      "sizeBlenderXYZ": [
+        1.99264,
+        4.55,
+        1.06362
+      ],
+      "bytes": 2883896,
+      "sha256": "7d09dc6eb66af86a0129e89de89f4da694486403b5e750ffe87b28c291481193"
+    },
+    {
+      "level": 1,
+      "file": "de-tomaso-p72-lod1.glb",
+      "triangles": 15518,
+      "budget": 16000,
+      "materialPrimitives": 5,
+      "textureLimit": 512,
+      "sizeBlenderXYZ": [
+        1.99264,
+        4.55,
+        1.06323
+      ],
+      "bytes": 1408580,
+      "sha256": "daaca37c38556b455324045f689af85a2f7cfbf9ea1c2ece4174627b0d8b08ba"
+    },
+    {
+      "level": 2,
+      "file": "de-tomaso-p72-lod2.glb",
+      "triangles": 3877,
+      "budget": 4000,
+      "materialPrimitives": 5,
+      "textureLimit": 256,
+      "sizeBlenderXYZ": [
+        1.99264,
+        4.55,
+        1.06085
+      ],
+      "bytes": 437652,
+      "sha256": "302b2d796f23301d0781a68a32d52ecebf7647faa40afab4c6709d9caff79bc9"
+    }
+  ]
+}

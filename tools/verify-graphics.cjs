@@ -3,6 +3,11 @@
    and browser layout still need an authorized browser session to inspect. */
 const fs=require('node:fs'),path=require('node:path'),Module=require('node:module'),assert=require('node:assert/strict');
 const {buildSync}=require('esbuild');
+// Node geometry tests do not render pixels. Permit the real GLTFLoader to parse
+// embedded textured car files; image dimensions/content are validated separately
+// and the actual PBR output is reviewed in Blender.
+globalThis.self ??= globalThis;
+globalThis.createImageBitmap ??= async()=>({width:1,height:1,close(){}});
 const root=path.join(__dirname,'..');
 const build=buildSync({stdin:{contents:`export {FieldScene} from './scene.js';export * as T from './vendor/three.module.js';
   export {GLTFLoader} from './vendor/addons/loaders/GLTFLoader.js';export {createWaterMaterial,applySurfaceDetail,applyVentilationMaterials} from './src/graphics/surfaces.js';
@@ -42,8 +47,10 @@ function makeScene(mode){
 }
 async function ready(s){
   const pending=[];s.scene.traverse(o=>{if(o.userData.assetReady)pending.push(o.userData.assetReady);});
+  if(s.city)pending.push(...s.city.cars.map(c=>c.model_ready));
   await Promise.all(pending);
   assert.equal(assetStatus.failed.size,0);
+  if(s.city){compiled.exports.updateCity(s,0);s.scene.updateMatrixWorld(true);s.camera.updateMatrixWorld();s.city.root.traverse(o=>{if(o.isLOD)o.update(s.camera);});}
 }
 function meshSnapshot(s,file){
   s.scene.updateMatrixWorld(true);const batches=new Map();

@@ -1,0 +1,41 @@
+import * as T from '../../vendor/three.module.js';
+
+export function roundedRoadRoute(minX,maxX,minZ,maxZ,{reverse=false,lane=1.25,radius=4}={}){
+  const offset=reverse?-lane:lane,left=minX+offset,right=maxX-offset,back=minZ+offset,front=maxZ-offset;
+  const r=Math.min(radius,(right-left)/3,(front-back)/3),points=[];
+  for(const [x,z,start] of [[right-r,front-r,0],[left+r,front-r,Math.PI/2],[left+r,back+r,Math.PI],[right-r,back+r,Math.PI*1.5]]){
+    for(let j=0;j<=10;j++){const a=start+j*Math.PI/20;points.push(new T.Vector3(x+r*Math.cos(a),0,z+r*Math.sin(a)));}
+  }
+  if(reverse)points.reverse();
+  return new T.CatmullRomCurve3(points,true,'centripetal');
+}
+
+/** Eight continuous circuits share the actual street grid, including outer roads. */
+export function roadNetwork(xs,zs){
+  const rectangles=[
+    [xs[1],xs[2],zs[1],zs[2],false], [xs[1],xs[2],zs[1],zs[2],true],
+    [xs[0],xs[1],zs[1],zs[2],false], [xs[2],xs[3],zs[1],zs[2],false],
+    [xs[0],xs[3],zs[0],zs[1],false], [xs[0],xs[3],zs[2],zs[3],false],
+    [xs[0],xs[3],zs[0],zs[3],false], [xs[0],xs[3],zs[0],zs[3],true]
+  ];
+  const routes=(lane,radius)=>rectangles.map(([a,b,c,d,reverse])=>roundedRoadRoute(a,b,c,d,{reverse,lane,radius}));
+  return {paths:routes(1.25,4),cyclePaths:routes(3.65,2.4),
+    junctions:xs.flatMap((x,i)=>zs.map((z,j)=>({id:`${i}:${j}`,x,z}))),owners:new Map(),xs,zs};
+}
+
+/** Stagger departures on shared road segments; no initial overlapping vehicles. */
+export function seedRoadUsers(paths,counts,make){
+  const users=[],point=new T.Vector3(),otherPoint=new T.Vector3();
+  counts.forEach((count,lane)=>{
+    for(let i=0;i<count;i++){
+      let phase=(i/count+lane*.117)%1;
+      for(let attempt=0;attempt<200;attempt++){
+        paths[lane].getPointAt(phase,point);
+        if(users.every(other=>{paths[other.lane].getPointAt(other.phase,otherPoint);return point.distanceTo(otherPoint)>7.2;}))break;
+        phase=(phase+.017)%1;
+      }
+      users.push({...make(users.length,lane),lane,phase});
+    }
+  });
+  return users;
+}

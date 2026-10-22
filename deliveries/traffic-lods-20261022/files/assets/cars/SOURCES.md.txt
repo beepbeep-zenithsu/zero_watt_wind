@@ -1,0 +1,30 @@
+# Requested vehicle sources — 22 October 2026
+
+**No requested vehicle mesh has been downloaded or installed.** Files in `metadata/`
+are the creators' public Sketchfab API records, not 3D models. They confirm the
+four listings below are downloadable under CC-BY 4.0. Actual download requests
+require account authentication. The P72 official download endpoint returned
+`Authentication credentials were not provided.` The user confirmed no Sketchfab
+account is available. No account was created and no viewer assets were extracted.
+
+| Requested car | Reviewed candidate | Creator/license | Mesh status |
+|---|---|---|---|
+| Jaguar E-Type | [Lightweight Jaguar E Type](https://sketchfab.com/3d-models/lightweight-jaguar-e-type-c0a45fa0ea31442788a36be00c2e115c) | Nick Russill, [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Not acquired. Original photogrammetry of a restoration project; variant, completeness and appearance need inspection. |
+| Porsche Taycan | [Porshe Taycan](https://sketchfab.com/3d-models/porshe-taycan-c6004141452e4d3ab048bf0fee52666d) | Mikhail Hamanovich, CC-BY 4.0 | Not acquired. Creator describes original Maya/Substance work. |
+| Ferrari Roma | [Low Poly Ferrari Roma](https://sketchfab.com/3d-models/low-poly-ferrari-roma-d830f729e0e64450b8dbe0ad16443ea5) | kulonee, CC-BY 4.0 | Not acquired. 6,000 triangles; this candidate does not satisfy cinematic close-up detail by itself. |
+| McLaren GT | No source cleared | — | Not acquired. Reviewed 3D CAD Browser listing prohibits source redistribution; another Sketchfab listing is noncommercial with unresolved provenance. |
+| Automobili Pininfarina Battista | No source cleared | — | Not acquired. Free Ddiaz listings explicitly derive from CSR2. Original paid listings require purchase and license review. |
+| De Tomaso P72 | [Low Poly Car - De Tomaso P72 2020](https://sketchfab.com/3d-models/low-poly-car-de-tomaso-p72-2020-ab85c302e652492196b600ee1eb7106a) | ROH3D, CC-BY 4.0 | Not acquired. Own creator listing and license verified through public API. |
+| McLaren Elva | No source cleared | — | Not acquired. Accessible game-derived listings were not accepted. |
+| Lotus Evija | No source cleared | — | Not acquired. [Eliot-M-Digital-Design's original model](https://sketchfab.com/3d-models/lotus-evija-onyx-c5bf7b4cca884410a368a10c07ae11e0) links to a purchase; download/redistribution rights have not been acquired. |
+
+`traffic-sources.json` records the exact URLs, licenses, provenance notes and
+rejected sources. `verified` refers to the listing/license review, not completed
+acquisition, acceptable visual quality, or manufacturer endorsement. No game-ripped
+models were accepted based solely on an uploader's Creative Commons label.
+
+Once an accepted model is acquired, the build embeds title, author, source URL,
+license and modification notice in each GLB. Installation also generates credits
+for the existing showcase. Keep this file, the source record, generated report
+and attribution with redistributed files. CC licenses apply to the model author's
+work; they do not grant car-maker trademark rights or imply endorsement.

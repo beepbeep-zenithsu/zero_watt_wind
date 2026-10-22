@@ -1,0 +1,45 @@
+[
+  {
+    "id": "jaguar-e-type",
+    "status": "already-downloaded",
+    "file": "downloads\\cars\\jaguar-e-type-nommoc.glb",
+    "sha256": "9ababf1542c24a0676cc9dfda6fd822516492088c4af41d840677fc3b95dbf3b"
+  },
+  {
+    "id": "porsche-taycan",
+    "status": "already-downloaded",
+    "file": "downloads\\cars\\porsche-taycan-martin.glb",
+    "sha256": "b93347425d0c30c55647742dc77d0a4e9bec7ec8c423a8214a655928a213d0c6"
+  },
+  {
+    "id": "ferrari-roma",
+    "status": "blocked",
+    "reason": "No reviewed account-free URL; official download requires OAuth authentication."
+  },
+  {
+    "id": "mclaren-gt",
+    "status": "blocked",
+    "reason": "No redistribution-cleared source selected."
+  },
+  {
+    "id": "pininfarina-battista",
+    "status": "blocked",
+    "reason": "No redistribution-cleared source selected."
+  },
+  {
+    "id": "de-tomaso-p72",
+    "status": "already-downloaded",
+    "file": "downloads\\cars\\de-tomaso-p72.glb",
+    "sha256": "cc55ceab81ed64ee03f05becc35e9357b4361c77a0277ca1c3ce7d5c226018f1"
+  },
+  {
+    "id": "mclaren-elva",
+    "status": "blocked",
+    "reason": "No redistribution-cleared source selected."
+  },
+  {
+    "id": "lotus-evija",
+    "status": "blocked",
+    "reason": "No redistribution-cleared source selected."
+  }
+]

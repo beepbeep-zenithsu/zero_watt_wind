@@ -1,0 +1,4806 @@
+{
+  "cursors": {
+    "next": "24",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&q=taycan&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c6004141452e4d3ab048bf0fee52666d",
+      "uid": "c6004141452e4d3ab048bf0fee52666d",
+      "name": "Porshe Taycan",
+      "staffpickedAt": null,
+      "viewCount": 18514,
+      "likeCount": 113,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c6004141452e4d3ab048bf0fee52666d",
+      "embedUrl": "https://sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2023-01-16T20:22:11.115293",
+      "tags": [
+        {
+          "name": "porshe",
+          "slug": "porshe",
+          "uri": "https://api.sketchfab.com/v3/tags/porshe"
+        },
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "wheels",
+          "slug": "wheels",
+          "uri": "https://api.sketchfab.com/v3/tags/wheels"
+        },
+        {
+          "name": "motor",
+          "slug": "motor",
+          "uri": "https://api.sketchfab.com/v3/tags/motor"
+        },
+        {
+          "name": "sporty",
+          "slug": "sporty",
+          "uri": "https://api.sketchfab.com/v3/tags/sporty"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a96022d8b3b54c679924851798259b5c",
+            "size": 318995,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/9e178a3bbeee4bb18693d2b9d5472b23.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0d58a1d04a6a447e944b5a12ede06fed",
+            "size": 36986,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/d08b5d3419da47279878b93bd81067ce.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8eef7c629ad64ab091d074a3be28d9b5",
+            "size": 21047,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/734de70bc337468c975863b8f1d7a3a5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "af60c8e2eb9441e3b79a33fbeccdf707",
+            "size": 4616,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/fd35bdb77c0f49d9a70e2c9d3c3a3692.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "cd2cacb1b66f482ab65a221bb9ff254c",
+            "size": 1171,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/e25414fe5720428ab4125745123f75de.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d901a8862cad4df7903d56f4b037d0ba",
+        "username": "mihailhamanovich",
+        "displayName": "Mikhail Hamanovich",
+        "profileUrl": "https://sketchfab.com/mihailhamanovich",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/df78bb39b35147b7b65be5db397b8148",
+          "images": [
+            {
+              "size": 996,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/3e3d3459b8ab43fb92fa92244f3dfa7c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1278,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/ca7f958f849247b19ddfd1f6a84aabb8.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2499,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/edd358b7eee1436abd4c36de2bdfd004.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2814,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/62162c721fd549e9ba645276afbebe7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d901a8862cad4df7903d56f4b037d0ba"
+      },
+      "description": "3D model of the Porsche Taycan electric car. Modeling in Autodesk Maya and texturing in Substance Painter. Emphasis on accurate reproduction of form and details.Rendering Examples https://www.artstation.com/artwork/DArbkA",
+      "faceCount": 3007137,
+      "createdAt": "2023-01-16T19:38:43.523940",
+      "vertexCount": 1549708,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 99340492,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3007135,
+          "vertexCount": 1801807
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 57948692,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3007135,
+          "vertexCount": 1801807
+        },
+        "source": {
+          "textureCount": null,
+          "size": 86511493,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 40720383,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/58eabf784de44202b7b73abf9da78549",
+      "uid": "58eabf784de44202b7b73abf9da78549",
+      "name": "Porsche Taycan 2020",
+      "staffpickedAt": null,
+      "viewCount": 13207,
+      "likeCount": 76,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-58eabf784de44202b7b73abf9da78549",
+      "embedUrl": "https://sketchfab.com/models/58eabf784de44202b7b73abf9da78549/embed",
+      "commentCount": 2,
+      "isDownloadable": false,
+      "publishedAt": "2020-11-16T14:00:13.801903",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "4door",
+          "slug": "4door",
+          "uri": "https://api.sketchfab.com/v3/tags/4door"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "hybric",
+          "slug": "hybric",
+          "uri": "https://api.sketchfab.com/v3/tags/hybric"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6323fafb4eaa4d998ac4592d4f68588b",
+            "size": 135437,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/58eabf784de44202b7b73abf9da78549/thumbnails/3097a9bfd2af4819bcc5735423592f67/752b8dc325834cacb8a81cdff1fa9635.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5d3ea34384c04dc98dc3401b02ed8b79",
+            "size": 47713,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/58eabf784de44202b7b73abf9da78549/thumbnails/3097a9bfd2af4819bcc5735423592f67/d61e6ffb6b244e218c5397d4b7daa84d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "2478eb21a1344910b316f610254b3550",
+            "size": 28257,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/58eabf784de44202b7b73abf9da78549/thumbnails/3097a9bfd2af4819bcc5735423592f67/7bba658b1fd04dd68b85c7da255c0cb3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "014ef90e0cd44681b6f69668f68de4f9",
+            "size": 6039,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/58eabf784de44202b7b73abf9da78549/thumbnails/3097a9bfd2af4819bcc5735423592f67/b00931b64bfa4203a55972032130b994.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ed21d8b22a6546beb16d0ba6f2bfe909",
+            "size": 1015,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/58eabf784de44202b7b73abf9da78549/thumbnails/3097a9bfd2af4819bcc5735423592f67/ee5ee0839b6e45119a1c7c951894de22.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Porsche Taycan 2020 - high detailed 3D model created by SQUIR team",
+      "faceCount": 2241653,
+      "createdAt": "2020-11-10T22:29:43.931111",
+      "vertexCount": 1173736,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 64856924,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2241315,
+          "vertexCount": 1369631
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 36759138,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2241315,
+          "vertexCount": 1369631
+        },
+        "source": {
+          "textureCount": null,
+          "size": 44483639,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 41662231,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/63b69723d4ae46ad93fa3104fcdc038d",
+      "uid": "63b69723d4ae46ad93fa3104fcdc038d",
+      "name": "Porsche Taycan 2021",
+      "staffpickedAt": null,
+      "viewCount": 1091,
+      "likeCount": 62,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-63b69723d4ae46ad93fa3104fcdc038d",
+      "embedUrl": "https://sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2026-07-29T15:23:54.588716",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "custom",
+          "slug": "custom",
+          "uri": "https://api.sketchfab.com/v3/tags/custom"
+        },
+        {
+          "name": "visualization",
+          "slug": "visualization",
+          "uri": "https://api.sketchfab.com/v3/tags/visualization"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "photorealistic",
+          "slug": "photorealistic",
+          "uri": "https://api.sketchfab.com/v3/tags/photorealistic"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "detailed",
+          "slug": "detailed",
+          "uri": "https://api.sketchfab.com/v3/tags/detailed"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "ev",
+          "slug": "ev",
+          "uri": "https://api.sketchfab.com/v3/tags/ev"
+        },
+        {
+          "name": "cockpit",
+          "slug": "cockpit",
+          "uri": "https://api.sketchfab.com/v3/tags/cockpit"
+        },
+        {
+          "name": "modified",
+          "slug": "modified",
+          "uri": "https://api.sketchfab.com/v3/tags/modified"
+        },
+        {
+          "name": "customized",
+          "slug": "customized",
+          "uri": "https://api.sketchfab.com/v3/tags/customized"
+        },
+        {
+          "name": "performance",
+          "slug": "performance",
+          "uri": "https://api.sketchfab.com/v3/tags/performance"
+        },
+        {
+          "name": "aerodynamics",
+          "slug": "aerodynamics",
+          "uri": "https://api.sketchfab.com/v3/tags/aerodynamics"
+        },
+        {
+          "name": "premium",
+          "slug": "premium",
+          "uri": "https://api.sketchfab.com/v3/tags/premium"
+        },
+        {
+          "name": "electriccar",
+          "slug": "electriccar",
+          "uri": "https://api.sketchfab.com/v3/tags/electriccar"
+        },
+        {
+          "name": "stance",
+          "slug": "stance",
+          "uri": "https://api.sketchfab.com/v3/tags/stance"
+        },
+        {
+          "name": "aggressive",
+          "slug": "aggressive",
+          "uri": "https://api.sketchfab.com/v3/tags/aggressive"
+        },
+        {
+          "name": "carbonfiber",
+          "slug": "carbonfiber",
+          "uri": "https://api.sketchfab.com/v3/tags/carbonfiber"
+        },
+        {
+          "name": "tuned",
+          "slug": "tuned",
+          "uri": "https://api.sketchfab.com/v3/tags/tuned"
+        },
+        {
+          "name": "highperformance",
+          "slug": "highperformance",
+          "uri": "https://api.sketchfab.com/v3/tags/highperformance"
+        },
+        {
+          "name": "widebody",
+          "slug": "widebody",
+          "uri": "https://api.sketchfab.com/v3/tags/widebody"
+        },
+        {
+          "name": "luxurycar",
+          "slug": "luxurycar",
+          "uri": "https://api.sketchfab.com/v3/tags/luxurycar"
+        },
+        {
+          "name": "bodykit",
+          "slug": "bodykit",
+          "uri": "https://api.sketchfab.com/v3/tags/bodykit"
+        },
+        {
+          "name": "lowered",
+          "slug": "lowered",
+          "uri": "https://api.sketchfab.com/v3/tags/lowered"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "render",
+          "slug": "render",
+          "uri": "https://api.sketchfab.com/v3/tags/render"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "highpoly",
+          "slug": "highpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/highpoly"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "porschetaycan",
+          "slug": "porschetaycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porschetaycan"
+        },
+        {
+          "name": "taycanturbo",
+          "slug": "taycanturbo",
+          "uri": "https://api.sketchfab.com/v3/tags/taycanturbo"
+        },
+        {
+          "name": "forgedwheels",
+          "slug": "forgedwheels",
+          "uri": "https://api.sketchfab.com/v3/tags/forgedwheels"
+        },
+        {
+          "name": "sportsedan",
+          "slug": "sportsedan",
+          "uri": "https://api.sketchfab.com/v3/tags/sportsedan"
+        },
+        {
+          "name": "taycan2021",
+          "slug": "taycan2021",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan2021"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5cad5ec862d24cf787045e95d2185c35",
+            "size": 370967,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/thumbnails/746ed70069fc4ce7a27717e00d37ad8d/51dd7d9df1a845939d3604958ae2817e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "1d031d8ad8a443b6a4373986d0fb6021",
+            "size": 104265,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/thumbnails/746ed70069fc4ce7a27717e00d37ad8d/6e10d4f0e2604d49ba4dcc2171877e9b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "df481af4338e453c894684038d8e1bd0",
+            "size": 56859,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/thumbnails/746ed70069fc4ce7a27717e00d37ad8d/07ea42f5ae534d6b950ede4e75ec078f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d2ecf91d3dac4742aa6c1c21517710d3",
+            "size": 10688,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/thumbnails/746ed70069fc4ce7a27717e00d37ad8d/aa866c0bc92644fe84904820e4c34d09.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5938afdc02a6406c81bb23c2ceb327d7",
+            "size": 1752,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/63b69723d4ae46ad93fa3104fcdc038d/thumbnails/746ed70069fc4ce7a27717e00d37ad8d/b23bb44263bc44989dcbe86d1fd3d6bc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "74df30788364447d93dd2c6c9869df28",
+        "username": "VTX_car",
+        "displayName": "VTX",
+        "profileUrl": "https://sketchfab.com/VTX_car",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d87dee1ac5ab436e9f73d3100c6a4bac",
+          "images": [
+            {
+              "size": 1487,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/fb8b89dd24af45e8b0e58813f4c4ae23.png",
+              "height": 32
+            },
+            {
+              "size": 2931,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/4aa873bddfc04b1ab1ff0d4ce9bd3de4.png",
+              "height": 48
+            },
+            {
+              "size": 8876,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/bf4c75654b334524b07cfe3f08945a8a.png",
+              "height": 90
+            },
+            {
+              "size": 10627,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d87dee1ac5ab436e9f73d3100c6a4bac/ccb76827be3b4b2289116a7c7f96c7bf.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/74df30788364447d93dd2c6c9869df28"
+      },
+      "description": "Porsche Taycan 2021 – Ultra Detailed 3D Model",
+      "faceCount": 473040,
+      "createdAt": "2026-07-29T14:47:48.567976",
+      "vertexCount": 291546,
+      "isAgeRestricted": false,
+      "archives": {
+        "source": {
+          "textureCount": null,
+          "size": 81311823,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1254ba2ae0164acb8ae0956ad1a71311",
+      "uid": "1254ba2ae0164acb8ae0956ad1a71311",
+      "name": "Porshe Taycan",
+      "staffpickedAt": null,
+      "viewCount": 5275,
+      "likeCount": 25,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1254ba2ae0164acb8ae0956ad1a71311",
+      "embedUrl": "https://sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/embed",
+      "commentCount": 2,
+      "isDownloadable": false,
+      "publishedAt": "2020-05-25T07:14:25.323126",
+      "tags": [
+        {
+          "name": "porshe",
+          "slug": "porshe",
+          "uri": "https://api.sketchfab.com/v3/tags/porshe"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7c57de277fce486692824aecf9993774",
+            "size": 93403,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/thumbnails/efbf3efb8cc342e3a4a33aa41025bccc/d3837f9f98dd45d586d14a12899333a1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a07527b3971745a5888562bd41c15d7f",
+            "size": 31034,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/thumbnails/efbf3efb8cc342e3a4a33aa41025bccc/0e6115fc97314bd284bc00b06bb9db4d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "94a7a85a07db492e93e326dc31042fca",
+            "size": 18263,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/thumbnails/efbf3efb8cc342e3a4a33aa41025bccc/cd670aaa3d1942288c26839e9fd6a6ad.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "041b512827b44e40bc3a18fa88f96ac5",
+            "size": 4189,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/thumbnails/efbf3efb8cc342e3a4a33aa41025bccc/67ee82a893034700ac2a89b9ed9f0a36.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3cf613fec76643b382d0e10cba6b57c9",
+            "size": 1073,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1254ba2ae0164acb8ae0956ad1a71311/thumbnails/efbf3efb8cc342e3a4a33aa41025bccc/511fe443670c4da4bfab8f4057def2a7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "20a13ef6084f4894817c9937f193db0c",
+        "username": "anx450z",
+        "displayName": "Ankur",
+        "profileUrl": "https://sketchfab.com/anx450z",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/20a13ef6084f4894817c9937f193db0c"
+      },
+      "description": "Porshe Taycan Sportscar Model \nAvailable on BlenderMarket, Turbosquid, BlenderKit",
+      "faceCount": 326106,
+      "createdAt": "2020-05-25T06:31:32.078111",
+      "vertexCount": 170100,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4e1abafe7cf5413587a421377624ba08",
+      "uid": "4e1abafe7cf5413587a421377624ba08",
+      "name": "2025 Porsche Taycan Turbo GT Weissach Package",
+      "staffpickedAt": null,
+      "viewCount": 4949,
+      "likeCount": 118,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4e1abafe7cf5413587a421377624ba08",
+      "embedUrl": "https://sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-23T15:57:11.040940",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "2025",
+          "slug": "2025",
+          "uri": "https://api.sketchfab.com/v3/tags/2025"
+        },
+        {
+          "name": "csr2",
+          "slug": "csr2",
+          "uri": "https://api.sketchfab.com/v3/tags/csr2"
+        },
+        {
+          "name": "porsche-taycan",
+          "slug": "porsche-taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "turbo-gt",
+          "slug": "turbo-gt",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo-gt"
+        },
+        {
+          "name": "porsche-taycan-turbo-gt",
+          "slug": "porsche-taycan-turbo-gt",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-turbo-gt"
+        },
+        {
+          "name": "weissach-package",
+          "slug": "weissach-package",
+          "uri": "https://api.sketchfab.com/v3/tags/weissach-package"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3841c2a75a314d429ed41b8a0643a63e",
+            "size": 324550,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/thumbnails/00e8df8f8a884cf8923fe73571cdd04a/b2284c2894244ce1b17296d15235b459.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "87da16dd55244e9096ebee32f0684cd1",
+            "size": 54014,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/thumbnails/00e8df8f8a884cf8923fe73571cdd04a/27635f637abe424bbc4a242851216435.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9a18db77af234dba994d40fbeef72a92",
+            "size": 31817,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/thumbnails/00e8df8f8a884cf8923fe73571cdd04a/7592106f0dd940cbb3c7b776967b7a37.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9ca826e96354467e92416b33f8e7c61d",
+            "size": 7102,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/thumbnails/00e8df8f8a884cf8923fe73571cdd04a/a71089d2534048848ec6dc5c5e04c548.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "32f73d0b71e94d30a4c46a1ba93ae519",
+            "size": 1418,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4e1abafe7cf5413587a421377624ba08/thumbnails/00e8df8f8a884cf8923fe73571cdd04a/e2aa8417a95a47638492beb9ebb9d66d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/dirpxstlbtxvz9quczrl)\n\nPorsche is expanding the model line-up of its all-electric sports sedan to include the Taycan Turbo GT and the Taycan Turbo GT with Weissach package. The latter is built for the track and dispenses with the rear seats in favour of an even better power-to-weight ratio. At peak power, both models can deliver more than 1,100 PS. In combination with various lightweight construction and aerodynamics measures, these all-electric GT sports cars raise the bar in terms of driving dynamics. A more powerful and efficient pulse inverter that uses silicon carbide as the semiconductor material is used on the rear axle.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a CSR2 3d model\n\nCredits: ZD 3D Modelling and Design Discord Server (discord.gg/ZwWHzxk2zu)",
+      "faceCount": 281228,
+      "createdAt": "2025-10-23T15:42:08.237336",
+      "vertexCount": 160791,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 37,
+          "size": 13960264,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 281228,
+          "vertexCount": 197260
+        },
+        "gltf": {
+          "textureCount": 37,
+          "size": 7229070,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 281228,
+          "vertexCount": 197260
+        },
+        "source": {
+          "textureCount": null,
+          "size": 15757947,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7961150,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0c73dad8b9094a84ba68d4641d4f36e8",
+      "uid": "0c73dad8b9094a84ba68d4641d4f36e8",
+      "name": "Porsche Taycan",
+      "staffpickedAt": null,
+      "viewCount": 4496,
+      "likeCount": 33,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0c73dad8b9094a84ba68d4641d4f36e8",
+      "embedUrl": "https://sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/embed",
+      "commentCount": 4,
+      "isDownloadable": false,
+      "publishedAt": "2020-03-29T23:17:58.985206",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "high",
+          "slug": "high",
+          "uri": "https://api.sketchfab.com/v3/tags/high"
+        },
+        {
+          "name": "future",
+          "slug": "future",
+          "uri": "https://api.sketchfab.com/v3/tags/future"
+        },
+        {
+          "name": "hd",
+          "slug": "hd",
+          "uri": "https://api.sketchfab.com/v3/tags/hd"
+        },
+        {
+          "name": "new",
+          "slug": "new",
+          "uri": "https://api.sketchfab.com/v3/tags/new"
+        },
+        {
+          "name": "sports",
+          "slug": "sports",
+          "uri": "https://api.sketchfab.com/v3/tags/sports"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "fast",
+          "slug": "fast",
+          "uri": "https://api.sketchfab.com/v3/tags/fast"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "realism",
+          "slug": "realism",
+          "uri": "https://api.sketchfab.com/v3/tags/realism"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6022eb03446c4784b93eb958b79e4525",
+            "size": 110459,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/thumbnails/cb043a8ffd634940b055a8fd81dc6059/27dc982c77d740969d25b8a3769df04a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d16d68fa418e4e65bbc7fcf6f4547ef2",
+            "size": 38794,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/thumbnails/cb043a8ffd634940b055a8fd81dc6059/fd7c774dd6d14a9ebf00bcfd996ff35d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d7d735ac7b5f43ba845239a9b5450bb8",
+            "size": 23132,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/thumbnails/cb043a8ffd634940b055a8fd81dc6059/edb8481d2f2f4821ac11990983b8a465.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "76bde15cad184c47b06c009247ce2006",
+            "size": 5011,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/thumbnails/cb043a8ffd634940b055a8fd81dc6059/2e2c8a9bf9bb43cba4807d93e622efbc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b61f71545cef47eeaf8ed9fc85caf6f0",
+            "size": 916,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0c73dad8b9094a84ba68d4641d4f36e8/thumbnails/cb043a8ffd634940b055a8fd81dc6059/3d7d46f2eb334fc2a6ae18514c71550f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2fb0bc05c5e24cd5b29835b3733a37e2",
+        "username": "IshmalAdil",
+        "displayName": "AbdulRahim",
+        "profileUrl": "https://sketchfab.com/IshmalAdil",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/464eed7cf3e342c3aaec4bdbab9f847e",
+          "images": [
+            {
+              "size": 1754,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/464eed7cf3e342c3aaec4bdbab9f847e/f9d53c78d14e48aaa2b966400bcbd161.png",
+              "height": 32
+            },
+            {
+              "size": 2891,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/464eed7cf3e342c3aaec4bdbab9f847e/c8334dd08e8b4b99bb0c50a1af084e1c.png",
+              "height": 48
+            },
+            {
+              "size": 6181,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/464eed7cf3e342c3aaec4bdbab9f847e/340f1a7f61624ca98c743bc4b5ba6eb2.png",
+              "height": 90
+            },
+            {
+              "size": 7016,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/464eed7cf3e342c3aaec4bdbab9f847e/60ea7315486a499d9ea68d4d90084326.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2fb0bc05c5e24cd5b29835b3733a37e2"
+      },
+      "description": "# The most realistic, exotic, highly detailed model, very useful in building next generation graphics game.\n\n**Details:**\n\n* 2 types of rear designs\n* Texture type - PNG\n* Texture size - 2048 x 2048\n* Rightly adjustments of normals for realistic material shading\n* Highly detailed interior\n* Perfectly HD textures adjustments to each material\n* Separated meshes of 4 Doors, 4 Windows, 4 wheels, 4 Callipers and a Steering wheel\nbefore you buy it, take a free test drive demo, the car in this demo is attached with a standard car controller with a little adjustments in wheel colliders to improve suspension springs.\n  \n[Test](http://www.mediafire.com/file/gw6lxqy56ggzz66/Porsche_Taycan_Demo.rar/file)",
+      "faceCount": 254299,
+      "createdAt": "2020-03-22T11:26:03.822635",
+      "vertexCount": 141791,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 19430144,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 254018,
+          "vertexCount": 232934
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 14162099,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 254018,
+          "vertexCount": 232934
+        },
+        "source": {
+          "textureCount": null,
+          "size": 37219196,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8668461,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/875072396ef541e3b106152e6dea6978",
+      "uid": "875072396ef541e3b106152e6dea6978",
+      "name": "2020 Porsche Taycan",
+      "staffpickedAt": null,
+      "viewCount": 3104,
+      "likeCount": 20,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-875072396ef541e3b106152e6dea6978",
+      "embedUrl": "https://sketchfab.com/models/875072396ef541e3b106152e6dea6978/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2021-01-26T16:17:02.315437",
+      "tags": [
+        {
+          "name": "porsch",
+          "slug": "porsch",
+          "uri": "https://api.sketchfab.com/v3/tags/porsch"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c9b2edbf44f54372a93e82707b4d36e2",
+            "size": 23969,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/dfa87f22b2374100af03624ca05586cd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "de33ab7d475c44efbac9b2972d44c0bb",
+            "size": 8331,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/912beaddbfa44c99bef2d363983a48d2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3443d949a3934521a58652e24a3ecef5",
+            "size": 4885,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/855fa2b027c14212903e4db19e48e136.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f5701647162a47e19ee333a8fc46d94a",
+            "size": 1160,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/bfdee44e20b745d193dd0a9022b573d6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d2ab6817353646d09e176548fa208fb7",
+            "size": 407,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/caca9ad8da2a457aa7c9826df14362d4.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0ce404973bc8424f9e7f8a6690294d95",
+        "username": "martin002",
+        "displayName": "martin002",
+        "profileUrl": "https://sketchfab.com/martin002",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/5eba4b0ab82b4c0b918334c657abf06e",
+          "images": [
+            {
+              "size": 810,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/66c1c8b6f1cc4afab3a85d3b7879f58e.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1391,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/4a407b5fdbbf4900b0e146723daa5ee0.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3638,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2a90b417adb142aa8c7c7b23139f7ba6.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4236,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2446c110a82340c2aa8df96e2e66846a.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0ce404973bc8424f9e7f8a6690294d95"
+      },
+      "description": "2020 Porsche Taycanhttps://www.google.com/imgres?imgurl=https%3A%2F%2Fdaxstreet.com%2Fwp-content%2Fuploads%2F2020%2F12%2F2020-porsche-taycan-feature.jpg&imgrefurl=https%3A%2F%2Fdaxstreet.com%2Fcars%2F1339%2F2020-porsche-taycan-compelling-electric-sports-car%2F&tbnid=oUl1Mk02qW8xIM&vet=12ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ..i&docid=ofjAsBFDVfkk8M&w=1920&h=1080&q=2020%20porsche%20taycan&ved=2ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ",
+      "faceCount": 369603,
+      "createdAt": "2021-01-26T16:12:06.443641",
+      "vertexCount": 209811,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 12153756,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 369603,
+          "vertexCount": 239561
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 5614759,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 369603,
+          "vertexCount": 239561
+        },
+        "source": {
+          "textureCount": null,
+          "size": 29096365,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6729389,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/99553d9e6102417183838760719713bb",
+      "uid": "99553d9e6102417183838760719713bb",
+      "name": "Porsche Taycan 4S Cross Turismo 2021",
+      "staffpickedAt": null,
+      "viewCount": 4501,
+      "likeCount": 48,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-99553d9e6102417183838760719713bb",
+      "embedUrl": "https://sketchfab.com/models/99553d9e6102417183838760719713bb/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2021-03-20T15:25:06.691750",
+      "tags": [
+        {
+          "name": "cross",
+          "slug": "cross",
+          "uri": "https://api.sketchfab.com/v3/tags/cross"
+        },
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "4s",
+          "slug": "4s",
+          "uri": "https://api.sketchfab.com/v3/tags/4s"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "sw",
+          "slug": "sw",
+          "uri": "https://api.sketchfab.com/v3/tags/sw"
+        },
+        {
+          "name": "wagon",
+          "slug": "wagon",
+          "uri": "https://api.sketchfab.com/v3/tags/wagon"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "turismo",
+          "slug": "turismo",
+          "uri": "https://api.sketchfab.com/v3/tags/turismo"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "hybrid",
+          "slug": "hybrid",
+          "uri": "https://api.sketchfab.com/v3/tags/hybrid"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "avant",
+          "slug": "avant",
+          "uri": "https://api.sketchfab.com/v3/tags/avant"
+        },
+        {
+          "name": "estate",
+          "slug": "estate",
+          "uri": "https://api.sketchfab.com/v3/tags/estate"
+        },
+        {
+          "name": "combi",
+          "slug": "combi",
+          "uri": "https://api.sketchfab.com/v3/tags/combi"
+        },
+        {
+          "name": "kombi",
+          "slug": "kombi",
+          "uri": "https://api.sketchfab.com/v3/tags/kombi"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "2024",
+          "slug": "2024",
+          "uri": "https://api.sketchfab.com/v3/tags/2024"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "41ac6e89b0204fff85d9c1aadcb64c2c",
+            "size": 140146,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/99553d9e6102417183838760719713bb/thumbnails/d3b6f5fabd5144bfbb39801e105c8810/80889eac87f54c7bac34014a38a9f582.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "853fbeb9c4b74a91b39c2619aa1e61b9",
+            "size": 49117,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/99553d9e6102417183838760719713bb/thumbnails/d3b6f5fabd5144bfbb39801e105c8810/c190176f68734e8ca24b2885b87f9c68.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "314df7e752a9411fbcb94c5c63e70919",
+            "size": 29174,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/99553d9e6102417183838760719713bb/thumbnails/d3b6f5fabd5144bfbb39801e105c8810/a285840648c24de9988f2fec05500d1d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f4a491d2b74646b3a7ca90120cd35bd0",
+            "size": 6298,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/99553d9e6102417183838760719713bb/thumbnails/d3b6f5fabd5144bfbb39801e105c8810/6a27ef17b0f34f88a18e004209181cbb.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3d413740249640be964a485d53236776",
+            "size": 1018,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/99553d9e6102417183838760719713bb/thumbnails/d3b6f5fabd5144bfbb39801e105c8810/5496b114ed154ad2aed73eebf400be2f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Porsche Taycan 4S Cross Turismo 2021 - high detailed 3D model created by SQUIR team",
+      "faceCount": 2432901,
+      "createdAt": "2021-03-20T14:47:34.730929",
+      "vertexCount": 1274589,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 7,
+          "size": 70468900,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2432840,
+          "vertexCount": 1504940
+        },
+        "gltf": {
+          "textureCount": 7,
+          "size": 38741842,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2432840,
+          "vertexCount": 1504940
+        },
+        "source": {
+          "textureCount": null,
+          "size": 46276644,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 44703842,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/687ecd85c26e476bafb8255a28f84c3e",
+      "uid": "687ecd85c26e476bafb8255a28f84c3e",
+      "name": "Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 3413,
+      "likeCount": 43,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-687ecd85c26e476bafb8255a28f84c3e",
+      "embedUrl": "https://sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-02-22T15:44:26.520232",
+      "tags": [
+        {
+          "name": "tron",
+          "slug": "tron",
+          "uri": "https://api.sketchfab.com/v3/tags/tron"
+        },
+        {
+          "name": "wheel",
+          "slug": "wheel",
+          "uri": "https://api.sketchfab.com/v3/tags/wheel"
+        },
+        {
+          "name": "rim",
+          "slug": "rim",
+          "uri": "https://api.sketchfab.com/v3/tags/rim"
+        },
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "911",
+          "slug": "911",
+          "uri": "https://api.sketchfab.com/v3/tags/911"
+        },
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "carrera",
+          "slug": "carrera",
+          "uri": "https://api.sketchfab.com/v3/tags/carrera"
+        },
+        {
+          "name": "bmw",
+          "slug": "bmw",
+          "uri": "https://api.sketchfab.com/v3/tags/bmw"
+        },
+        {
+          "name": "wheels",
+          "slug": "wheels",
+          "uri": "https://api.sketchfab.com/v3/tags/wheels"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "studio",
+          "slug": "studio",
+          "uri": "https://api.sketchfab.com/v3/tags/studio"
+        },
+        {
+          "name": "audi",
+          "slug": "audi",
+          "uri": "https://api.sketchfab.com/v3/tags/audi"
+        },
+        {
+          "name": "energy",
+          "slug": "energy",
+          "uri": "https://api.sketchfab.com/v3/tags/energy"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "fast",
+          "slug": "fast",
+          "uri": "https://api.sketchfab.com/v3/tags/fast"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "auto",
+          "slug": "auto",
+          "uri": "https://api.sketchfab.com/v3/tags/auto"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "sports-car",
+          "slug": "sports-car",
+          "uri": "https://api.sketchfab.com/v3/tags/sports-car"
+        },
+        {
+          "name": "porsche-911",
+          "slug": "porsche-911",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-911"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "porsche-taycan",
+          "slug": "porsche-taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "sports-cars",
+          "slug": "sports-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/sports-cars"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "bc21656134f84f3195a2b4e25116c144",
+            "size": 339191,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/thumbnails/97f298e7846e49b18abcb6f91925bf67/63b51c72de614e6cada5190bc1dfa9dd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "12e7c58108664a3e84d0f5a62d69cfe1",
+            "size": 66383,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/thumbnails/97f298e7846e49b18abcb6f91925bf67/19f281bd14ff4ba0aa3e311e4d11bd09.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0f8b410b93a345ea929f1871e6b965e2",
+            "size": 38716,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/thumbnails/97f298e7846e49b18abcb6f91925bf67/d0c2895aa4754569b6b5d3f166f5f50a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "673f323bb32e4efa81b6da124b9a196b",
+            "size": 8358,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/thumbnails/97f298e7846e49b18abcb6f91925bf67/7f76d82ce7c14012aaeee475174e6829.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5f2d71568d224895a507d3c9f7f3cd31",
+            "size": 1608,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/687ecd85c26e476bafb8255a28f84c3e/thumbnails/97f298e7846e49b18abcb6f91925bf67/23a163cd9da04f598aa4978317e8bc6d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "48e0e14bc58b4afba197b38c09d7c4b8",
+        "username": "NLM-Group",
+        "displayName": "NLM",
+        "profileUrl": "https://sketchfab.com/NLM-Group",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6ee174379cb644598d4cdf0458a385e3",
+          "images": [
+            {
+              "size": 972,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6ee174379cb644598d4cdf0458a385e3/9aa03e8dabc641668523428b817d6714.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1109,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6ee174379cb644598d4cdf0458a385e3/c4736c32d4e14ef19b89ad1163edba1a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2143,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6ee174379cb644598d4cdf0458a385e3/f4661fa3f8ec41d69bcb611ddb79480f.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2638,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6ee174379cb644598d4cdf0458a385e3/a8c98df266ef4b698aceb96fd97bdc0c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/48e0e14bc58b4afba197b38c09d7c4b8"
+      },
+      "description": "**GET FREE 3D MODELS ON OUR DISCORD SERVER AND PATREON**\n\n**https://discord.gg/6QJ9sKJubp**\n\n**patreon.com/NLM_Group**\n\n**A highly detailed 3D model of the Porsche Taycan Turbo S created by NLM**\n\n- All textures were included in this file, but you can also use the glb file - in this file, the textures are already attached to the model.\n\n***About 3D model:***\n\n- Highly detailed car model.\n- Highly detailed interior of the car\n- Suitable for use in games/renders\n\n\n**Thank you for purchasing our models!**",
+      "faceCount": 2169515,
+      "createdAt": "2023-02-22T14:32:18.088786",
+      "vertexCount": 1106859,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 79853936,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2169246,
+          "vertexCount": 1331658
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 37717821,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2169246,
+          "vertexCount": 1331658
+        },
+        "source": {
+          "textureCount": null,
+          "size": 97666297,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 43526080,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "783b685da9bf457d81e829fa283f3567",
+        "label": "Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ebe96a291799479b8c2990ac572514ab",
+      "uid": "ebe96a291799479b8c2990ac572514ab",
+      "name": "Porsche Taycan Turbo 2020",
+      "staffpickedAt": null,
+      "viewCount": 3001,
+      "likeCount": 23,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ebe96a291799479b8c2990ac572514ab",
+      "embedUrl": "https://sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2020-11-18T08:12:05.913208",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "s",
+          "slug": "s",
+          "uri": "https://api.sketchfab.com/v3/tags/s"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "4door",
+          "slug": "4door",
+          "uri": "https://api.sketchfab.com/v3/tags/4door"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "turbos",
+          "slug": "turbos",
+          "uri": "https://api.sketchfab.com/v3/tags/turbos"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "hybric",
+          "slug": "hybric",
+          "uri": "https://api.sketchfab.com/v3/tags/hybric"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "dd7ce3d438834e62a1fc9826c83677b0",
+            "size": 147316,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/thumbnails/5677218be47c4a29b69268cd578e050e/f68d6ace72114b0aa5ede19b9f133977.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b14c0c9b150e436b99fb8a0b648f6b01",
+            "size": 52715,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/thumbnails/5677218be47c4a29b69268cd578e050e/62254d8bb93749748245f431b5be3149.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b776920a09d44112a2901d099ac705f4",
+            "size": 31767,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/thumbnails/5677218be47c4a29b69268cd578e050e/90deac3570024c77937b65f1b85d805e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9ee0f0ad64af498a935a276b1300e619",
+            "size": 6918,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/thumbnails/5677218be47c4a29b69268cd578e050e/e95c937ba83b4958a5aa0738d0df2b45.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2603d66f374b4a13a0f42807f70e01a2",
+            "size": 1190,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ebe96a291799479b8c2990ac572514ab/thumbnails/5677218be47c4a29b69268cd578e050e/ff579d045850486bb750492b5165333d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Porsche Taycan Turbo 2020 - high detailed 3D model created by SQUIR team",
+      "faceCount": 2260027,
+      "createdAt": "2020-11-10T22:30:17.917693",
+      "vertexCount": 1186223,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 7,
+          "size": 66405424,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2259689,
+          "vertexCount": 1381402
+        },
+        "gltf": {
+          "textureCount": 7,
+          "size": 38407266,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2259689,
+          "vertexCount": 1381402
+        },
+        "source": {
+          "textureCount": null,
+          "size": 44807337,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 42889641,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/738d27d5c4dc49429d5c5637b8454c6a",
+      "uid": "738d27d5c4dc49429d5c5637b8454c6a",
+      "name": "Porsche Taycan Turbo S Cross Turismo 2021",
+      "staffpickedAt": null,
+      "viewCount": 6904,
+      "likeCount": 42,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-738d27d5c4dc49429d5c5637b8454c6a",
+      "embedUrl": "https://sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2021-03-20T15:50:28.250075",
+      "tags": [
+        {
+          "name": "cross",
+          "slug": "cross",
+          "uri": "https://api.sketchfab.com/v3/tags/cross"
+        },
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "sw",
+          "slug": "sw",
+          "uri": "https://api.sketchfab.com/v3/tags/sw"
+        },
+        {
+          "name": "wagon",
+          "slug": "wagon",
+          "uri": "https://api.sketchfab.com/v3/tags/wagon"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "turismo",
+          "slug": "turismo",
+          "uri": "https://api.sketchfab.com/v3/tags/turismo"
+        },
+        {
+          "name": "hybrid",
+          "slug": "hybrid",
+          "uri": "https://api.sketchfab.com/v3/tags/hybrid"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "estate",
+          "slug": "estate",
+          "uri": "https://api.sketchfab.com/v3/tags/estate"
+        },
+        {
+          "name": "combi",
+          "slug": "combi",
+          "uri": "https://api.sketchfab.com/v3/tags/combi"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "2024",
+          "slug": "2024",
+          "uri": "https://api.sketchfab.com/v3/tags/2024"
+        },
+        {
+          "name": "turbos",
+          "slug": "turbos",
+          "uri": "https://api.sketchfab.com/v3/tags/turbos"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f454d73d0b444b93beecd30ed8d51ebf",
+            "size": 149473,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/thumbnails/3fab83338c424b77b294862a065b7408/9ebfd5d17db74afba75df5c69cd708c4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0599f67243984e6283b01360569d23f1",
+            "size": 52832,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/thumbnails/3fab83338c424b77b294862a065b7408/0bac2753e6cc450badae4bfd9502b5dd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e7b6a0b148484c17ad6783961ad07ba2",
+            "size": 31367,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/thumbnails/3fab83338c424b77b294862a065b7408/ed40f83a4c2f432d817d6ceda254c6b2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5db06ccb8dbf4596a9d293acc245879c",
+            "size": 6728,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/thumbnails/3fab83338c424b77b294862a065b7408/af3321cb55754f148840294539940636.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9e4f33b14d5243e7922613c1c85f47b8",
+            "size": 1140,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/738d27d5c4dc49429d5c5637b8454c6a/thumbnails/3fab83338c424b77b294862a065b7408/5ad30083599d4f28b4dcf4f1d1810e1d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Porsche Taycan Turbo S Cross Turismo 2021 - high detailed 3D model created by SQUIR team",
+      "faceCount": 2826695,
+      "createdAt": "2021-03-20T15:31:38.963877",
+      "vertexCount": 1472968,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 7,
+          "size": 80142160,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2826632,
+          "vertexCount": 1702278
+        },
+        "gltf": {
+          "textureCount": 7,
+          "size": 44549174,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2826632,
+          "vertexCount": 1702278
+        },
+        "source": {
+          "textureCount": null,
+          "size": 52803087,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 50175817,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/34baf14e6ce4402eac161a8db440c377",
+      "uid": "34baf14e6ce4402eac161a8db440c377",
+      "name": "Porsche Taycan Turbo S 2020",
+      "staffpickedAt": null,
+      "viewCount": 3172,
+      "likeCount": 27,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-34baf14e6ce4402eac161a8db440c377",
+      "embedUrl": "https://sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2020-11-23T09:20:29.414142",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "exotic",
+          "slug": "exotic",
+          "uri": "https://api.sketchfab.com/v3/tags/exotic"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "hybrid",
+          "slug": "hybrid",
+          "uri": "https://api.sketchfab.com/v3/tags/hybrid"
+        },
+        {
+          "name": "s",
+          "slug": "s",
+          "uri": "https://api.sketchfab.com/v3/tags/s"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "4door",
+          "slug": "4door",
+          "uri": "https://api.sketchfab.com/v3/tags/4door"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "4-door",
+          "slug": "4-door",
+          "uri": "https://api.sketchfab.com/v3/tags/4-door"
+        },
+        {
+          "name": "turbos",
+          "slug": "turbos",
+          "uri": "https://api.sketchfab.com/v3/tags/turbos"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "94638fa5b3344446a6e639ab152a06a1",
+            "size": 117335,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/thumbnails/dce41946d0c844cc8320ced2d5d2fc91/458fda9e2be7400cb49aef5d22a3c75b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "aaddb96c3e0c44e5ba99f958458143f6",
+            "size": 42805,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/thumbnails/dce41946d0c844cc8320ced2d5d2fc91/9d587f2c543d4984b491041302df60d4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0e2ec240860d4d18ba0bbf353ac2ad62",
+            "size": 25900,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/thumbnails/dce41946d0c844cc8320ced2d5d2fc91/71e70352b0194c8eb88369a34a2a92a7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ada580f44ba445759dabeb2fde2cfcd0",
+            "size": 5638,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/thumbnails/dce41946d0c844cc8320ced2d5d2fc91/dae37da0cbab48e0a24727c078568fdb.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8999a1f2bb464f4b85e4c155f664ebba",
+            "size": 1012,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/34baf14e6ce4402eac161a8db440c377/thumbnails/dce41946d0c844cc8320ced2d5d2fc91/2904cc2a7e694a60b03f5582886fa01c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Porsche Taycan Turbo S 2020 - high detailed 3D model created by SQUIR team",
+      "faceCount": 2303139,
+      "createdAt": "2020-11-10T22:30:30.065901",
+      "vertexCount": 1205993,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 66940860,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2302801,
+          "vertexCount": 1406725
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 38363449,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2302801,
+          "vertexCount": 1406725
+        },
+        "source": {
+          "textureCount": null,
+          "size": 46388355,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 42859314,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e76773c1dccb4f41b9876b1b4a994b5f",
+      "uid": "e76773c1dccb4f41b9876b1b4a994b5f",
+      "name": "2022 Porsche Taycan Cross Turismo",
+      "staffpickedAt": null,
+      "viewCount": 3807,
+      "likeCount": 45,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e76773c1dccb4f41b9876b1b4a994b5f",
+      "embedUrl": "https://sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2022-08-24T15:32:58.726178",
+      "tags": [
+        {
+          "name": "porshe",
+          "slug": "porshe",
+          "uri": "https://api.sketchfab.com/v3/tags/porshe"
+        },
+        {
+          "name": "police",
+          "slug": "police",
+          "uri": "https://api.sketchfab.com/v3/tags/police"
+        },
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "cross",
+          "slug": "cross",
+          "uri": "https://api.sketchfab.com/v3/tags/cross"
+        },
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "audi",
+          "slug": "audi",
+          "uri": "https://api.sketchfab.com/v3/tags/audi"
+        },
+        {
+          "name": "pack",
+          "slug": "pack",
+          "uri": "https://api.sketchfab.com/v3/tags/pack"
+        },
+        {
+          "name": "new",
+          "slug": "new",
+          "uri": "https://api.sketchfab.com/v3/tags/new"
+        },
+        {
+          "name": "turismo",
+          "slug": "turismo",
+          "uri": "https://api.sketchfab.com/v3/tags/turismo"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "porsche911",
+          "slug": "porsche911",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche911"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "carpack",
+          "slug": "carpack",
+          "uri": "https://api.sketchfab.com/v3/tags/carpack"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0cbfd58134604929ad3a69d6ab4b997f",
+            "size": 107457,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/thumbnails/f7580e2c324a475abcc8b8153649f29e/455690e601f4417ea9c0d1152ab30024.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c7d8fc72a5804449b5b425bf4e7cfd42",
+            "size": 37863,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/thumbnails/f7580e2c324a475abcc8b8153649f29e/5924a6c5477449ebbe654bb96352c48a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "14708ed026da4552a031154eba44561c",
+            "size": 22661,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/thumbnails/f7580e2c324a475abcc8b8153649f29e/349745ccfacc4d2e84b6d5dd7a47dd1c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "77dd58fe641545b58af35602b90f6827",
+            "size": 5104,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/thumbnails/f7580e2c324a475abcc8b8153649f29e/2ebf037208584c3aba4cc96871ef5260.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "483a405fdf604b748690b2b47a24ba9d",
+            "size": 1219,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e76773c1dccb4f41b9876b1b4a994b5f/thumbnails/f7580e2c324a475abcc8b8153649f29e/ea7a92bd59e749f19b94b05096831f90.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "24a3921b03f74cc4a97789859bd1e1a6",
+        "username": "Sidramax",
+        "displayName": "Sidra",
+        "profileUrl": "https://sketchfab.com/Sidramax",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4f286dde332445ac8c0a3585d2d9f05d",
+          "images": [
+            {
+              "size": 1053,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4f286dde332445ac8c0a3585d2d9f05d/7766ef72776f4c988326e37523c2a46d.png",
+              "height": 32
+            },
+            {
+              "size": 1620,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4f286dde332445ac8c0a3585d2d9f05d/6c6a1739750049c4a86b979fd511be61.png",
+              "height": 48
+            },
+            {
+              "size": 3538,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4f286dde332445ac8c0a3585d2d9f05d/9e9c3326ad6846c498ef69759399ac0a.png",
+              "height": 90
+            },
+            {
+              "size": 3822,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4f286dde332445ac8c0a3585d2d9f05d/d77489c7ac474f60ae6baf15d03889a3.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/24a3921b03f74cc4a97789859bd1e1a6"
+      },
+      "description": "my friends.. you can buy this model from here on my fab page…\n\nPlease purchase the model before downloading and using it\n\nhttps://www.fab.com/sellers/SIDRA\n\n\n\n*2022 Porsche Taycan Cross Turismo\n\n*You can use these models in any game and any project.\n\n*The interior of these models is simply designed so that it is low poly and can be used for any game.\n\n*This model is made with order and precision.\n\n*Separated parts (body. Wheels).\n\n*low poly\n\n*Average poly count: 16,000 tris.\n\nTexture size: 4096 * 4096(BMP)_2048 * 2048(bmp).\n\n*High quality texture\n\n*Thanks.",
+      "faceCount": 16173,
+      "createdAt": "2022-08-24T15:02:23.154295",
+      "vertexCount": 10402,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c3502f68ca0240228db9c301e3ac9394",
+      "uid": "c3502f68ca0240228db9c301e3ac9394",
+      "name": "Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 3007,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c3502f68ca0240228db9c301e3ac9394",
+      "embedUrl": "https://sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-04-23T20:06:31.677335",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "90c0404fb8824c0ea270f86545f0664f",
+            "size": 291845,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/thumbnails/cb5765624dc34f84be4f6c1bebeb947f/f12f22eaf8b846bbb99c7bae6a15e952.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "88bed09bc77d4d7b89d66e4ba4cd795d",
+            "size": 43392,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/thumbnails/cb5765624dc34f84be4f6c1bebeb947f/bafb561074574b78af8e6942d60a68f6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "17c9aa828f074df49319aa98ac7aec16",
+            "size": 21625,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/thumbnails/cb5765624dc34f84be4f6c1bebeb947f/4501710905b5483f9c02e6a3029f9330.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6812deb40a99420da0898d69f3988f07",
+            "size": 4268,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/thumbnails/cb5765624dc34f84be4f6c1bebeb947f/a24acee511404c2e8910bdca0a6888d1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "96e94eaa0e7f4c88bea8f9650b5d601d",
+            "size": 1105,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c3502f68ca0240228db9c301e3ac9394/thumbnails/cb5765624dc34f84be4f6c1bebeb947f/7d9d99dfb88841f7afe78018268c0d47.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "671dc384b26f4dd1bb9958b980e18933",
+        "username": "schifffan",
+        "displayName": "Blender.Lutz",
+        "profileUrl": "https://sketchfab.com/schifffan",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/671dc384b26f4dd1bb9958b980e18933"
+      },
+      "description": "This is a model of the Porsche Taycan Turbo S made with Blender. I also used a modified Version of the car in this Youtube Video: https://www.youtube.com/watch?v=BJRquTeSJrI",
+      "faceCount": 2488952,
+      "createdAt": "2023-04-23T19:55:16.121147",
+      "vertexCount": 1276708,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1112579c6bae4c95af83f82ec72f6332",
+      "uid": "1112579c6bae4c95af83f82ec72f6332",
+      "name": "Porsche Taycan Turbo S Cross Turismo 2021",
+      "staffpickedAt": null,
+      "viewCount": 1324,
+      "likeCount": 16,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1112579c6bae4c95af83f82ec72f6332",
+      "embedUrl": "https://sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2023-03-03T22:27:58.896149",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "fbx",
+          "slug": "fbx",
+          "uri": "https://api.sketchfab.com/v3/tags/fbx"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "crossturismo",
+          "slug": "crossturismo",
+          "uri": "https://api.sketchfab.com/v3/tags/crossturismo"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d467f90e7d7e44f8a2b1e7e61acccbbc",
+            "size": 130225,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/thumbnails/2c867da03d0e4e8e815d8a94f372245d/cb141c40ea8c441a8e73a2c1d6a4a6ec.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "60749858d649423dbc9726f831071a91",
+            "size": 44059,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/thumbnails/2c867da03d0e4e8e815d8a94f372245d/80b28c0aca734ebba0e4d9ce8cad2401.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "853abf5f54944f9a992d3124010171ed",
+            "size": 26458,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/thumbnails/2c867da03d0e4e8e815d8a94f372245d/2c518b26c86e4b5d939cecac8a62cf58.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2ae267f0bd6d42d58809904a894f8847",
+            "size": 5841,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/thumbnails/2c867da03d0e4e8e815d8a94f372245d/3c11fa0fcde842d19a19c08b79140b63.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "460a831a765c451f99a1467b22425e17",
+            "size": 1218,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1112579c6bae4c95af83f82ec72f6332/thumbnails/2c867da03d0e4e8e815d8a94f372245d/7c244dda59e34f168251147699c0b8fa.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6b0aeae2441b44ea9dbcb6a61f1f76aa",
+        "username": "ehabjundi5",
+        "displayName": "Eihab_3D",
+        "profileUrl": "https://sketchfab.com/ehabjundi5",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/984a42cce6f94d8cb142c0c5a837af54",
+          "images": [
+            {
+              "size": 1021,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/984a42cce6f94d8cb142c0c5a837af54/f2891cc683be474791204a72b8c004c1.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1411,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/984a42cce6f94d8cb142c0c5a837af54/e9e5d2562ce8457bb0d7714d3e10e205.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3172,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/984a42cce6f94d8cb142c0c5a837af54/e4633a90608a454a84d2eacf0308233b.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3666,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/984a42cce6f94d8cb142c0c5a837af54/ab3358a9a24f4a478820202a233849e2.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6b0aeae2441b44ea9dbcb6a61f1f76aa"
+      },
+      "description": "Porsche Taycan Turbo S Cross Turismo 2021 - mid detailed 3d model created in Blender.",
+      "faceCount": 54578,
+      "createdAt": "2023-03-03T22:11:21.403091",
+      "vertexCount": 30505,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 3194240,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 54574,
+          "vertexCount": 55406
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 1564083,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 54574,
+          "vertexCount": 55406
+        },
+        "source": {
+          "textureCount": null,
+          "size": 4350500,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1486861,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cd97c516c0eb411789e7bb2bcd28622b",
+      "uid": "cd97c516c0eb411789e7bb2bcd28622b",
+      "name": "Porsche Taycan Cross Turismo",
+      "staffpickedAt": null,
+      "viewCount": 2332,
+      "likeCount": 67,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cd97c516c0eb411789e7bb2bcd28622b",
+      "embedUrl": "https://sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-01-12T15:46:06.311926",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5d43c4d3b8d442318e8b752f972670b3",
+            "size": 137585,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/thumbnails/83f882b621d54775a05fd3d2cd4976c4/74f650a8da104648999cac7284ce83e1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "324ed4f3cbaf40a1b6fa239843ec89e9",
+            "size": 47679,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/thumbnails/83f882b621d54775a05fd3d2cd4976c4/20dc0088d68d4d4abcf0691930a90dfc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "11a7bd93f208474c8935cc274ec307d1",
+            "size": 27302,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/thumbnails/83f882b621d54775a05fd3d2cd4976c4/eb7870b9a0144b559f02ca9c4644c99e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "249574ddf83e412e8ff56dacf0e5fad9",
+            "size": 5216,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/thumbnails/83f882b621d54775a05fd3d2cd4976c4/305b70816c684e54a3bb37c769191d77.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d8a613961e7646daa55a5021b0e33238",
+            "size": 1063,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cd97c516c0eb411789e7bb2bcd28622b/thumbnails/83f882b621d54775a05fd3d2cd4976c4/fe525bd5f8cd443ca31abcf4ffdb9090.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "355459d1f7dc4556941652d314621675",
+        "username": "Car2022",
+        "displayName": "Mona x Supercars",
+        "profileUrl": "https://sketchfab.com/Car2022",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c23e89f9132347ffaca1d854cc8818a6",
+          "images": [
+            {
+              "size": 1005,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/3403cd2dd19b4aec8acf01ad4e880995.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1323,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/b6920b4c8f6441c3a5c04cd3d24c8184.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2541,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/386ed5ca1b344227a88be60073bba0e5.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2949,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/6b5ff429633a459686f7dcd142bd11c5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/355459d1f7dc4556941652d314621675"
+      },
+      "description": "Color: Racing Green\nSeating Capacity: 5\nGearbox: N/A\nDriver Seat: LHD\nFuel: Electric\nProduction: 2022\nOrigin: 🇩🇪 Germany",
+      "faceCount": 376817,
+      "createdAt": "2025-01-12T15:33:34.569773",
+      "vertexCount": 208479,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 60,
+          "size": 26716572,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 376817,
+          "vertexCount": 372650
+        },
+        "gltf": {
+          "textureCount": 60,
+          "size": 15872199,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 376817,
+          "vertexCount": 372650
+        },
+        "source": {
+          "textureCount": null,
+          "size": 32682382,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13706894,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/697632aaa0c64adb8c7573caf92c413f",
+      "uid": "697632aaa0c64adb8c7573caf92c413f",
+      "name": "Low Poly Car - Porsche Taycan GTS 2022",
+      "staffpickedAt": null,
+      "viewCount": 1408,
+      "likeCount": 21,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-697632aaa0c64adb8c7573caf92c413f",
+      "embedUrl": "https://sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2024-11-17T11:42:38.386368",
+      "tags": [
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "tire",
+          "slug": "tire",
+          "uri": "https://api.sketchfab.com/v3/tags/tire"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "drive",
+          "slug": "drive",
+          "uri": "https://api.sketchfab.com/v3/tags/drive"
+        },
+        {
+          "name": "luxury",
+          "slug": "luxury",
+          "uri": "https://api.sketchfab.com/v3/tags/luxury"
+        },
+        {
+          "name": "speed",
+          "slug": "speed",
+          "uri": "https://api.sketchfab.com/v3/tags/speed"
+        },
+        {
+          "name": "sports",
+          "slug": "sports",
+          "uri": "https://api.sketchfab.com/v3/tags/sports"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "sportscar",
+          "slug": "sportscar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportscar"
+        },
+        {
+          "name": "gts",
+          "slug": "gts",
+          "uri": "https://api.sketchfab.com/v3/tags/gts"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic",
+          "uri": "https://api.sketchfab.com/v3/tags/futuristic"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "porshce-taycan",
+          "slug": "porshce-taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porshce-taycan"
+        },
+        {
+          "name": "porsche-taycan-gts",
+          "slug": "porsche-taycan-gts",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-gts"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7036076d8f4e45e695d182569f5e9f85",
+            "size": 154217,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/thumbnails/e4ab1b69dbf847df8788e14ae6eb7dff/1974955b422d4b7fbcf752b66bb17934.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a10044ce56ae4c7bb7bc0513b981e26a",
+            "size": 47645,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/thumbnails/e4ab1b69dbf847df8788e14ae6eb7dff/99e4094bfcd445a3a981d39803d08264.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "94a71255c8b3437ba1b06c0a9febff55",
+            "size": 27620,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/thumbnails/e4ab1b69dbf847df8788e14ae6eb7dff/adf7f09ee3614a498ded37abbc5e77c5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b2fc4cd0a66b499b858c0965ee616d3e",
+            "size": 5663,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/thumbnails/e4ab1b69dbf847df8788e14ae6eb7dff/1c8df6fd78c34ffb91736d190e03fd61.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1b8785dcf2bc4f9981c954b489dc51da",
+            "size": 1296,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/697632aaa0c64adb8c7573caf92c413f/thumbnails/e4ab1b69dbf847df8788e14ae6eb7dff/9d6b47fe4b164591b82fd790779c4f54.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7b2d51a011d4477aaaf771ce1552fd11",
+        "username": "roh3d",
+        "displayName": "ROH3D",
+        "profileUrl": "https://sketchfab.com/roh3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/a898620019814efd801dc91f7e10d92c",
+          "images": [
+            {
+              "size": 885,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/7ca903f489154675833261fd5e225185.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1118,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/465bf89f17a443ed880e869fc3b5aa29.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2019,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/5d3d9edf7ebb4f149297a0b6d7e1f5ce.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2293,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/3ff55b260bc64056b4986ec55c3e5b64.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7b2d51a011d4477aaaf771ce1552fd11"
+      },
+      "description": "# Buy [Here](https://payhip.com/b/WH2uK)\nThe 2022 Porsche Taycan GTS is an electric sports car that combines cutting-edge technology with iconic Porsche performance. It features a dual-motor setup, delivering an impressive 509 horsepower and 626 lb-ft of torque, allowing the Taycan GTS to accelerate from 0 to 60 mph in just 3.5 seconds. The vehicle offers a range of up to 246 miles on a full charge.\n\nKey features include adaptive air suspension, Porsche Active Suspension Management (PASM), and a dynamic chassis control system for exceptional handling. The exterior design is sleek and aerodynamic, with LED matrix headlights, black accents, and 21-inch alloy wheels.\n\nInside, the Taycan GTS boasts a luxurious cabin with premium leather upholstery, a 16.8-inch curved digital instrument cluster, and a 10.9-inch touchscreen infotainment system. Additional features include Apple CarPlay, Android Auto, and a 14-speaker Bose sound system.",
+      "faceCount": 16121,
+      "createdAt": "2024-11-17T10:20:12.574644",
+      "vertexCount": 13000,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/05d7951204e84686ba12625c66d7a8b7",
+      "uid": "05d7951204e84686ba12625c66d7a8b7",
+      "name": "Porsche Taycan Turbo S (Project Cars 3)",
+      "staffpickedAt": null,
+      "viewCount": 1386,
+      "likeCount": 39,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-05d7951204e84686ba12625c66d7a8b7",
+      "embedUrl": "https://sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2025-11-23T09:56:37.981144",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "porsche-taycan",
+          "slug": "porsche-taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "porsche-taycan-turbo-s",
+          "slug": "porsche-taycan-turbo-s",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-turbo-s"
+        },
+        {
+          "name": "projectcars3",
+          "slug": "projectcars3",
+          "uri": "https://api.sketchfab.com/v3/tags/projectcars3"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9d5af100d2324c87a1a38be9cfbcd167",
+            "size": 391582,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/thumbnails/ccf50ef6e4674d79bddeecb8b344dc0f/770f5326b31e46a7a9463e57ca17b718.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a4d2d7f3e4914165ac2492dcb4a0307f",
+            "size": 65704,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/thumbnails/ccf50ef6e4674d79bddeecb8b344dc0f/8651ceee859148c6b0d04f809122ec6c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "ad0f293b616446108331995fa67a37ad",
+            "size": 32925,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/thumbnails/ccf50ef6e4674d79bddeecb8b344dc0f/d304b1bdd9df44bf98b63f2f67d4b630.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "233def5c65f64eefb585d61563b2ea2a",
+            "size": 6264,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/thumbnails/ccf50ef6e4674d79bddeecb8b344dc0f/3dea7d023c734a359c0453fdc8631f7f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b42fe54b042b49c6a309cdb1d256fdc0",
+            "size": 1301,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/05d7951204e84686ba12625c66d7a8b7/thumbnails/ccf50ef6e4674d79bddeecb8b344dc0f/ac3c1d35fbb0429fb5a7677295b54517.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5835904f1a1d432a9fb5a92d34340e54",
+        "username": "VuckyZ123",
+        "displayName": "VuckyZ",
+        "profileUrl": "https://sketchfab.com/VuckyZ123",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3bd539e72cf946d98ad22af346e9b9e2",
+          "images": [
+            {
+              "size": 1136,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/ce0329facff645a0ba7de6476acd9f9b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1691,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/90f32a79e40646f3858e8cb0efa262f7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3712,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/446fb29026214c10bb8ab3bae27c2734.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4188,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3bd539e72cf946d98ad22af346e9b9e2/66fb5392052a4764ae5320acba4f8293.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5835904f1a1d432a9fb5a92d34340e54"
+      },
+      "description": "With HD interior.\n\nConverted with 3DSimED.\n\nIf you enjoy what I upload, you can [donate](http://ko-fi.com/vuckyz) for me aswell.\n\nhttp://ko-fi.com/vuckyz",
+      "faceCount": 182298,
+      "createdAt": "2025-11-23T08:51:29.025833",
+      "vertexCount": 106591,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 58,
+          "size": 9995700,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 182283,
+          "vertexCount": 147575
+        },
+        "gltf": {
+          "textureCount": 58,
+          "size": 6206825,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 182283,
+          "vertexCount": 147575
+        },
+        "source": {
+          "textureCount": null,
+          "size": 65208723,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6300688,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/50814870c6b64364927fabc009a81066",
+      "uid": "50814870c6b64364927fabc009a81066",
+      "name": "Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 2866,
+      "likeCount": 26,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-50814870c6b64364927fabc009a81066",
+      "embedUrl": "https://sketchfab.com/models/50814870c6b64364927fabc009a81066/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-07-23T04:18:23.872019",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "s",
+          "slug": "s",
+          "uri": "https://api.sketchfab.com/v3/tags/s"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "2024",
+          "slug": "2024",
+          "uri": "https://api.sketchfab.com/v3/tags/2024"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c5f63963ecc2410ab506e190604ebc85",
+            "size": 213367,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/50814870c6b64364927fabc009a81066/thumbnails/1f59d94ec7d8410db75d688132577773/373eee256c1c4442a96781771e5c2d13.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ae0a3c8ad54e4214b6c97e40dde24deb",
+            "size": 65665,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/50814870c6b64364927fabc009a81066/thumbnails/1f59d94ec7d8410db75d688132577773/6ddb42586b2740c697a61ba9e7b08894.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "ee45c1e25a5d44d28d9e1ac09af2757c",
+            "size": 38150,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/50814870c6b64364927fabc009a81066/thumbnails/1f59d94ec7d8410db75d688132577773/0a679f75f1b84095931526e0571f3a8d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "444505e5b39f4cf2901ce44e660733c5",
+            "size": 7955,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/50814870c6b64364927fabc009a81066/thumbnails/1f59d94ec7d8410db75d688132577773/726927ad73b04e00b45b3455835f963c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7189fde318794b33b56be868973f576e",
+            "size": 1513,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/50814870c6b64364927fabc009a81066/thumbnails/1f59d94ec7d8410db75d688132577773/57219d9ce0c9477687d51c445ffbd89e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "44133559efe3490e9fb18dcdf449c318",
+        "username": "Phazan",
+        "displayName": "Phazan Product",
+        "profileUrl": "https://sketchfab.com/Phazan",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/80ff914afa994fa7839f3ecd25404692",
+          "images": [
+            {
+              "size": 1192,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/5e007b9631634a9b8f2a875e045d3af8.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1457,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/d00b45d22fdc4d5ab047b39ad1624e84.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2736,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/016198364cdd44288d38f4344a7bf61f.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3138,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/2a2cdf4870fd4996aba88941eac51e89.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/44133559efe3490e9fb18dcdf449c318"
+      },
+      "description": "",
+      "faceCount": 106337,
+      "createdAt": "2022-07-23T02:39:18.303919",
+      "vertexCount": 59849,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 6428204,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 106185,
+          "vertexCount": 136755
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 2676134,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 106185,
+          "vertexCount": 136755
+        },
+        "source": {
+          "textureCount": null,
+          "size": 18549569,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3692174,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/35f416d8173740bb80057186b5752bf3",
+      "uid": "35f416d8173740bb80057186b5752bf3",
+      "name": "Steering wheel Porsche Taycan brown edition",
+      "staffpickedAt": null,
+      "viewCount": 1336,
+      "likeCount": 20,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-35f416d8173740bb80057186b5752bf3",
+      "embedUrl": "https://sketchfab.com/models/35f416d8173740bb80057186b5752bf3/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2024-08-23T11:48:45.149116",
+      "tags": [
+        {
+          "name": "leather",
+          "slug": "leather",
+          "uri": "https://api.sketchfab.com/v3/tags/leather"
+        },
+        {
+          "name": "european",
+          "slug": "european",
+          "uri": "https://api.sketchfab.com/v3/tags/european"
+        },
+        {
+          "name": "drive",
+          "slug": "drive",
+          "uri": "https://api.sketchfab.com/v3/tags/drive"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "driving",
+          "slug": "driving",
+          "uri": "https://api.sketchfab.com/v3/tags/driving"
+        },
+        {
+          "name": "speed",
+          "slug": "speed",
+          "uri": "https://api.sketchfab.com/v3/tags/speed"
+        },
+        {
+          "name": "sportcar",
+          "slug": "sportcar",
+          "uri": "https://api.sketchfab.com/v3/tags/sportcar"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "auto",
+          "slug": "auto",
+          "uri": "https://api.sketchfab.com/v3/tags/auto"
+        },
+        {
+          "name": "racecar",
+          "slug": "racecar",
+          "uri": "https://api.sketchfab.com/v3/tags/racecar"
+        },
+        {
+          "name": "electric-car",
+          "slug": "electric-car",
+          "uri": "https://api.sketchfab.com/v3/tags/electric-car"
+        },
+        {
+          "name": "germancar",
+          "slug": "germancar",
+          "uri": "https://api.sketchfab.com/v3/tags/germancar"
+        },
+        {
+          "name": "cgcar",
+          "slug": "cgcar",
+          "uri": "https://api.sketchfab.com/v3/tags/cgcar"
+        },
+        {
+          "name": "richcar",
+          "slug": "richcar",
+          "uri": "https://api.sketchfab.com/v3/tags/richcar"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "interiorcar",
+          "slug": "interiorcar",
+          "uri": "https://api.sketchfab.com/v3/tags/interiorcar"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        },
+        {
+          "name": "carshow",
+          "slug": "carshow",
+          "uri": "https://api.sketchfab.com/v3/tags/carshow"
+        },
+        {
+          "name": "exoticcars",
+          "slug": "exoticcars",
+          "uri": "https://api.sketchfab.com/v3/tags/exoticcars"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "58e3a1ac00c9460e8642ea9c1c61c7b1",
+            "size": 170648,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/35f416d8173740bb80057186b5752bf3/thumbnails/170bdbc5e1cc45c89a0da645f6899d7f/59fc8ee3d84840d9a6893454fd1c7ac8.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c7f05f16bf3c414b9cca34db7cb9c73f",
+            "size": 44277,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/35f416d8173740bb80057186b5752bf3/thumbnails/170bdbc5e1cc45c89a0da645f6899d7f/83523ffdf2d94b01ba366c7b59974168.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dba70d3c1a0849e38fc6b3d3c9bf5234",
+            "size": 25654,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/35f416d8173740bb80057186b5752bf3/thumbnails/170bdbc5e1cc45c89a0da645f6899d7f/630e0cfdd49745afb3f670e2674f7763.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4bfa482aea2e4bfea1e837bd2027a4b6",
+            "size": 5427,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/35f416d8173740bb80057186b5752bf3/thumbnails/170bdbc5e1cc45c89a0da645f6899d7f/9126ff7cdce34db38304d2227f58ed77.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "664b3e4e7e2f4f298609f2048f3891ff",
+            "size": 1156,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/35f416d8173740bb80057186b5752bf3/thumbnails/170bdbc5e1cc45c89a0da645f6899d7f/96de792540ff44e99d7f514c2a7f9984.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "79b1b9b84e6549c5b92b4717afb0c0ec",
+        "username": "BumpkinCZ",
+        "displayName": "BumpkinCZ",
+        "profileUrl": "https://sketchfab.com/BumpkinCZ",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b94e977987d5425e8e5956c04db5f6bb",
+          "images": [
+            {
+              "size": 721,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b94e977987d5425e8e5956c04db5f6bb/5834dfdea41e471b8a16afb600724a3b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1061,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b94e977987d5425e8e5956c04db5f6bb/0a78c7ac95904971a6676b22c1afa38c.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2727,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b94e977987d5425e8e5956c04db5f6bb/2058b4b3d7e54410ab0d3c134390f4d6.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3274,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b94e977987d5425e8e5956c04db5f6bb/cd98fd6780da4cd8ac1b9fcfac334029.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/79b1b9b84e6549c5b92b4717afb0c0ec"
+      },
+      "description": "Hi, I have prepared for your projects a model of a steering wheel from a Porsche Taycan. The model is suitable for animations or visualizations, it’s also not a problem to get it into game engines.\n\nBuy here: https://ko-fi.com/s/d9d25ca5b7",
+      "faceCount": 958221,
+      "createdAt": "2024-08-23T11:30:32.685476",
+      "vertexCount": 495612,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 14,
+          "size": 81514496,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 958221,
+          "vertexCount": 548461
+        },
+        "gltf": {
+          "textureCount": 14,
+          "size": 65919225,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 958221,
+          "vertexCount": 548461
+        },
+        "source": {
+          "textureCount": null,
+          "size": 137125817,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 22639752,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "783b685da9bf457d81e829fa283f3567",
+        "label": "Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/862b651f6dc644b9a4da47990880ae28",
+      "uid": "862b651f6dc644b9a4da47990880ae28",
+      "name": "2023 Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 503,
+      "likeCount": 11,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-862b651f6dc644b9a4da47990880ae28",
+      "embedUrl": "https://sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-11T10:15:33.393058",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "s",
+          "slug": "s",
+          "uri": "https://api.sketchfab.com/v3/tags/s"
+        },
+        {
+          "name": "turbo",
+          "slug": "turbo",
+          "uri": "https://api.sketchfab.com/v3/tags/turbo"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "037128e268924dfab37d692a5c42d907",
+            "size": 83888,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/thumbnails/5939be0a2a3f407b86001cc1433b0521/a4d17c5cf0a044e1a8030a91e419489f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9a76d588ffb94388bf3ca7a5f94ee2aa",
+            "size": 30164,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/thumbnails/5939be0a2a3f407b86001cc1433b0521/9d7827bc6aa74c44bd7eb7730e95dbd2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3fda225c8ea94116b865915b395e907f",
+            "size": 18092,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/thumbnails/5939be0a2a3f407b86001cc1433b0521/9a96ec20242a4efb9535b431e2d37939.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d54b80eb860d4bd280ba7b376bbe58c7",
+            "size": 4326,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/thumbnails/5939be0a2a3f407b86001cc1433b0521/60564513c2b9417a9924f50ed63d24ce.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6feb8599e8174c778462c17b48ab4345",
+            "size": 1097,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/862b651f6dc644b9a4da47990880ae28/thumbnails/5939be0a2a3f407b86001cc1433b0521/deed644eefaa415c9d5a87d123d6887c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ab7d2fa2ec7445e4b88a8c65839a294a",
+        "username": "tonielpro520",
+        "displayName": "tonielpro520",
+        "profileUrl": "https://sketchfab.com/tonielpro520",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0f04c96e42d84ebca96975659430fcb7",
+          "images": [
+            {
+              "size": 2664,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0f04c96e42d84ebca96975659430fcb7/e9b7ee2ee96047838def084059585093.png",
+              "height": 32
+            },
+            {
+              "size": 5485,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0f04c96e42d84ebca96975659430fcb7/352e2cdf1f4f4a7da95eb3c9c687fac7.png",
+              "height": 48
+            },
+            {
+              "size": 16077,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0f04c96e42d84ebca96975659430fcb7/803d4cb2eed64a1bb5629640533eaa8b.png",
+              "height": 90
+            },
+            {
+              "size": 19185,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0f04c96e42d84ebca96975659430fcb7/9c5f0a9e8b3449c6b114fd8decf3cc1c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ab7d2fa2ec7445e4b88a8c65839a294a"
+      },
+      "description": "2023 Porsche Taycan Turbo S\n![](https://cdn.motor1.com/images/mgl/8APvRq/s1/2023-porsche-taycan.jpg)\nFree",
+      "faceCount": 438640,
+      "createdAt": "2026-01-11T10:13:43.832094",
+      "vertexCount": 244819,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 37056188,
+          "type": "glb",
+          "textureMaxResolution": 32,
+          "faceCount": 438473,
+          "vertexCount": 990399
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 14834961,
+          "type": "gltf",
+          "textureMaxResolution": 32,
+          "faceCount": 438473,
+          "vertexCount": 990399
+        },
+        "source": {
+          "textureCount": null,
+          "size": 16659825,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 24015518,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/25f3058e7ac94e56a775d9d5f68905ca",
+      "uid": "25f3058e7ac94e56a775d9d5f68905ca",
+      "name": "Porshe Taycan Turbo GT",
+      "staffpickedAt": null,
+      "viewCount": 1043,
+      "likeCount": 20,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-25f3058e7ac94e56a775d9d5f68905ca",
+      "embedUrl": "https://sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-26T09:36:54.900134",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "taycan",
+          "slug": "taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/taycan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "31ca61752543413097c97a3c9a123c4b",
+            "size": 169653,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/thumbnails/da06d9a1c0b444468c969d89672e1f34/cc8f0d95f64d4b7d881e6c6e6e7e0d39.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9badaa2905914c1bacaf6d75617d89bc",
+            "size": 38468,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/thumbnails/da06d9a1c0b444468c969d89672e1f34/7b1c6854c8424fdeb62930241baf41e9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3a994ab787b74c57afd52615f34ab841",
+            "size": 20813,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/thumbnails/da06d9a1c0b444468c969d89672e1f34/17516a62950446b7836517ac4b51b253.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "aad5a3cd86814929ae990afac44586d9",
+            "size": 4045,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/thumbnails/da06d9a1c0b444468c969d89672e1f34/9bcdfb914018473abf35d1f8526fbe7e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "186a5a42d2ce4703be80959098402af0",
+            "size": 1017,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/25f3058e7ac94e56a775d9d5f68905ca/thumbnails/da06d9a1c0b444468c969d89672e1f34/3784b8c7c3f34540942ea95300307e4e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "29a1010119824eaca3940ff5f3cfa790",
+        "username": "dannzjs",
+        "displayName": "dannzjs",
+        "profileUrl": "https://sketchfab.com/dannzjs",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/984b356cdc4a4f0781cea3a692325051",
+          "images": [
+            {
+              "size": 2516,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/984b356cdc4a4f0781cea3a692325051/f3eb7e11bf484b5eb1cda70666f899cb.png",
+              "height": 32
+            },
+            {
+              "size": 5392,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/984b356cdc4a4f0781cea3a692325051/41e0860a32a44baa8401de373fcc093d.png",
+              "height": 48
+            },
+            {
+              "size": 18060,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/984b356cdc4a4f0781cea3a692325051/7bdbdc9e522c4c00b3245ce012337735.png",
+              "height": 90
+            },
+            {
+              "size": 22232,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/984b356cdc4a4f0781cea3a692325051/a71471919d6d4adb83c49055d15344b6.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/29a1010119824eaca3940ff5f3cfa790"
+      },
+      "description": "Engine\nPower Up to 1,034 PS (760 kW) with Overboost\nMaximum torque 1,240 Nm with Launch Control\nConsumption\nCombined 18.4 kWh/100 km\nCO2 emissions 0 g/km\nPerformance\nTop speed 290 km/h\nAcceleration 0 - 100 km/h 2.3 seconds with Launch Control\nAcceleration 0 - 160 km/h 4.5 seconds with Launch Control\nBody\nLength 4,968 mm\nWidth 2,144 mm\nHeight 1,378 mm\nWheelbase 2,900 mm\nPermissible payload 2,710 kg\nLuggage compartment volume 84 litres / 326 litres with seats folded",
+      "faceCount": 3007135,
+      "createdAt": "2025-02-26T09:28:27.970563",
+      "vertexCount": 1552744,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 99344868,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3007135,
+          "vertexCount": 1801807
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 57949681,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3007135,
+          "vertexCount": 1801807
+        },
+        "source": {
+          "textureCount": null,
+          "size": 104926107,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 40728923,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3657f54c69c242f09fae93104bb20120",
+      "uid": "3657f54c69c242f09fae93104bb20120",
+      "name": "2020 Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 1876,
+      "likeCount": 62,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3657f54c69c242f09fae93104bb20120",
+      "embedUrl": "https://sketchfab.com/models/3657f54c69c242f09fae93104bb20120/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-12-04T02:39:50.828726",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "cb406d8b1e764f9c896ccb66763693eb",
+            "size": 169704,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3657f54c69c242f09fae93104bb20120/thumbnails/8da5931ab19541c6b97164275b9f1c46/dd5ce6f5638b458c9e64dd2460ac6e36.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4d87458cb15b4f609d06929b566b4bec",
+            "size": 62880,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3657f54c69c242f09fae93104bb20120/thumbnails/8da5931ab19541c6b97164275b9f1c46/6a068594e8f04d14b928f6df87a7ec88.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d096e5e9d3a749fabb8b835f8a191029",
+            "size": 38553,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3657f54c69c242f09fae93104bb20120/thumbnails/8da5931ab19541c6b97164275b9f1c46/3119415614804525a0dce07feef5300a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "dd5578641a244ba8875761e1a3bea7f8",
+            "size": 8690,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3657f54c69c242f09fae93104bb20120/thumbnails/8da5931ab19541c6b97164275b9f1c46/611de241a2434fdaaef741e5782f7fca.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5f221eaa467449b59960f5c1117283e3",
+            "size": 1584,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3657f54c69c242f09fae93104bb20120/thumbnails/8da5931ab19541c6b97164275b9f1c46/c5115dd864e249d7a0cc12f0d93895b6.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18c9b8a5047746e7b944294c7ba35dc4",
+        "username": "outpiston",
+        "displayName": "OUTPISTON",
+        "profileUrl": "https://sketchfab.com/outpiston",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6509b6c75faf498bb9d55c0e81927c17",
+          "images": [
+            {
+              "size": 1391,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/d4bcee40eeca4bab90ccd9afc9ee270a.png",
+              "height": 32
+            },
+            {
+              "size": 2512,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/da5d4104086446579e0016343471a985.png",
+              "height": 48
+            },
+            {
+              "size": 6460,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/23b7891b0f2144958054b0d0eed27dcd.png",
+              "height": 90
+            },
+            {
+              "size": 7357,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/01feb0c03b974583b05bc69a191b4459.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18c9b8a5047746e7b944294c7ba35dc4"
+      },
+      "description": "Source: Real Racing 3",
+      "faceCount": 46164,
+      "createdAt": "2025-12-03T05:42:21.460074",
+      "vertexCount": 27999,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 11,
+          "size": 2865388,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 46164,
+          "vertexCount": 46700
+        },
+        "gltf": {
+          "textureCount": 11,
+          "size": 1697879,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 46164,
+          "vertexCount": 46700
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3478759,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1794831,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3cf8d21ee9c74e97b4d9aeb88e733d6d",
+      "uid": "3cf8d21ee9c74e97b4d9aeb88e733d6d",
+      "name": "2020 Porsche Taycan Turbo S",
+      "staffpickedAt": null,
+      "viewCount": 829,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3cf8d21ee9c74e97b4d9aeb88e733d6d",
+      "embedUrl": "https://sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2024-03-30T11:43:53.795017",
+      "tags": [
+        {
+          "name": "porsche",
+          "slug": "porsche",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche"
+        },
+        {
+          "name": "porsche-taycan",
+          "slug": "porsche-taycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan"
+        },
+        {
+          "name": "porschedesign",
+          "slug": "porschedesign",
+          "uri": "https://api.sketchfab.com/v3/tags/porschedesign"
+        },
+        {
+          "name": "porschetaycan",
+          "slug": "porschetaycan",
+          "uri": "https://api.sketchfab.com/v3/tags/porschetaycan"
+        },
+        {
+          "name": "porscheturbo",
+          "slug": "porscheturbo",
+          "uri": "https://api.sketchfab.com/v3/tags/porscheturbo"
+        },
+        {
+          "name": "porsche-taycan-turbo-s",
+          "slug": "porsche-taycan-turbo-s",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-turbo-s"
+        },
+        {
+          "name": "porsche-taycan-turbo-s-3d-model",
+          "slug": "porsche-taycan-turbo-s-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-turbo-s-3d-model"
+        },
+        {
+          "name": "porsche-taycan-car-model",
+          "slug": "porsche-taycan-car-model",
+          "uri": "https://api.sketchfab.com/v3/tags/porsche-taycan-car-model"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7b576dd3c65f44dfaad6a4721612e0b4",
+            "size": 325641,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/thumbnails/f0eeb942aa3944608663083d5b313157/8dbb7b0f67134b789e88759a3289b9a8.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e1be7814761348d4a66b937f22e8a9be",
+            "size": 53169,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/thumbnails/f0eeb942aa3944608663083d5b313157/346980696fb44ab29ab6e6af786a24b2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "51487541125f4e578cb853d1c8c57dab",
+            "size": 26840,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/thumbnails/f0eeb942aa3944608663083d5b313157/82a69244990d41218ec3e0af2afe8236.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "98d937c5844a4a75be9bc4f67be5db93",
+            "size": 5400,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/thumbnails/f0eeb942aa3944608663083d5b313157/78cefa134de54cf2abf31dba72c1e277.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "58940c519b02424199bc2d5335cca3dd",
+            "size": 1207,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3cf8d21ee9c74e97b4d9aeb88e733d6d/thumbnails/f0eeb942aa3944608663083d5b313157/d4e37c6c80d748f48fd45d6a80c6340e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e6d71dca9543466e984fdc9f549bc685",
+        "username": "3Dinamicc",
+        "displayName": "3Dinamic",
+        "profileUrl": "https://sketchfab.com/3Dinamicc",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b5130317e04f493ab252568b7bb572e6",
+          "images": [
+            {
+              "size": 1082,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b5130317e04f493ab252568b7bb572e6/afd337c6322e4a88ba0f43142186aaf1.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1319,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b5130317e04f493ab252568b7bb572e6/e13a24d1b3d44534978e8f3b87a87f4a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2784,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b5130317e04f493ab252568b7bb572e6/533910b0198f4d0db3d8550db3686700.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3143,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b5130317e04f493ab252568b7bb572e6/208f3bdc2f7d448dbe0bd21c2cca7a0a.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e6d71dca9543466e984fdc9f549bc685"
+      },
+      "description": "**2020 Porsche Taycan Turbo S Sport Edition**\n\nIntroducing a highly detailed 3D model of the 2020 Porsche Taycan Turbo S. This model captures every aspect of the vehicle, both inside and out, with impressive precision. From the luxurious interior with its leather seats to exterior details like LED headlights and aerodynamic wheels, every element has been faithfully recreated. This 3D model is perfect for car enthusiasts seeking a realistic and detailed representation of the Porsche Taycan Turbo S.\n\nIf you are interested on the model, dm me on dc :) \n\n**asier1781**",
+      "faceCount": 747965,
+      "createdAt": "2024-03-30T11:31:38.629862",
+      "vertexCount": 414222,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    }
+  ]
+}

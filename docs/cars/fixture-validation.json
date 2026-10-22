@@ -1,0 +1,61 @@
+[
+  {
+    "id": "lod-pipeline-fixture",
+    "levels": [
+      {
+        "triangles": 6784,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            128,
+            128
+          ]
+        ],
+        "size": [
+          2.1800003051757812,
+          1.3500001430511475,
+          4.599999904632568
+        ],
+        "sha256": "c7358cf0d3bd5583994eb044e540def125752c7ddf1a353eef146f85a1039205",
+        "bytes": 539404
+      },
+      {
+        "triangles": 1936,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            64,
+            64
+          ]
+        ],
+        "size": [
+          2.1800003051757812,
+          1.3498733043670654,
+          4.597940921783447
+        ],
+        "sha256": "77a463a51a6bb2b74f921b34f7b6a8be0c105dcada327ddc5304033663207775",
+        "bytes": 192240
+      },
+      {
+        "triangles": 580,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            32,
+            32
+          ]
+        ],
+        "size": [
+          2.1800003051757812,
+          1.3483898639678955,
+          4.589938640594482
+        ],
+        "sha256": "6d373f3c4ef054436f91d91f1fed9096557d38140e0b04365bfff5861b4bba0b",
+        "bytes": 64208
+      }
+    ]
+  }
+]

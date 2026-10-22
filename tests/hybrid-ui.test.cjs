@@ -108,3 +108,14 @@ test('Advanced viewport scenario menu works in fit screen and stays synchronized
   sidebar.value='monsoon';sidebar.dispatchEvent(new f.w.Event('change'));assert.equal(viewport.value,'monsoon');
   f.close();
 });
+
+test('Advanced wind and target controls expose the extended range and live RPM',async()=>{
+  const f=fixture(),s=f.s,h=s.hybrid;await h.choose('advanced');
+  const wind=s.root.querySelector('[data-hy-param="wind"]'),target=s.root.querySelector('[data-hy-param="targetRPM"]');
+  assert.equal(wind.max,'60');assert.equal(target.max,'1200');
+  wind.value='60';wind.dispatchEvent(new f.w.Event('input'));
+  for(let i=0;i<200;i++)h.tick(.1,true);h.render();
+  assert.equal(h.p.wind,60);assert.ok(h.sample.fanRPM>2000);
+  assert.match(s.root.querySelector('[data-hy-rpm]').textContent,/Rotor [\d,]+ RPM · Fan [\d,]+ RPM/);
+  f.close();
+});

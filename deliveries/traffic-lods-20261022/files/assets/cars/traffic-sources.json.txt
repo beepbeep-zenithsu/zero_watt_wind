@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-22",
+  "note": "Exact requested fleet. Source verification does not mean a mesh has been downloaded or installed. Local input and front axis must be set after inspecting the original.",
+  "cars": [
+    {
+      "id": "jaguar-e-type",
+      "name": "Jaguar E-Type",
+      "length": 4.45,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": {
+        "uid": "c0a45fa0ea31442788a36be00c2e115c",
+        "title": "Lightweight Jaguar E Type",
+        "author": "Nick Russill",
+        "url": "https://sketchfab.com/3d-models/lightweight-jaguar-e-type-c0a45fa0ea31442788a36be00c2e115c",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "provenance": "Creator describes an original photogrammetry capture. Lightweight variant; inspect texture and geometry quality before acceptance.",
+        "status": "authentication-required",
+        "evidence": "assets/cars/metadata/jaguar-e-type.json",
+        "verifiedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "porsche-taycan",
+      "name": "Porsche Taycan",
+      "length": 4.96,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": {
+        "uid": "c6004141452e4d3ab048bf0fee52666d",
+        "title": "Porshe Taycan",
+        "author": "Mikhail Hamanovich",
+        "url": "https://sketchfab.com/3d-models/porshe-taycan-c6004141452e4d3ab048bf0fee52666d",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "provenance": "Creator describes Maya modelling and Substance Painter texturing.",
+        "status": "authentication-required",
+        "evidence": "assets/cars/metadata/porsche-taycan.json",
+        "verifiedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "ferrari-roma",
+      "name": "Ferrari Roma",
+      "length": 4.66,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": {
+        "uid": "d830f729e0e64450b8dbe0ad16443ea5",
+        "title": "Low Poly Ferrari Roma",
+        "author": "kulonee",
+        "url": "https://sketchfab.com/3d-models/low-poly-ferrari-roma-d830f729e0e64450b8dbe0ad16443ea5",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "provenance": "Creator describes Blender materials; 6000 triangles. This is a traffic candidate, not a cinematic high-detail mesh.",
+        "status": "authentication-required",
+        "evidence": "assets/cars/metadata/ferrari-roma.json",
+        "verifiedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "mclaren-gt",
+      "name": "McLaren GT",
+      "length": 4.68,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "pininfarina-battista",
+      "name": "Automobili Pininfarina Battista",
+      "length": 4.91,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "de-tomaso-p72",
+      "name": "De Tomaso P72",
+      "length": 4.55,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": {
+        "uid": "ab85c302e652492196b600ee1eb7106a",
+        "title": "Low Poly Car - De Tomaso P72 2020",
+        "author": "ROH3D",
+        "url": "https://sketchfab.com/3d-models/low-poly-car-de-tomaso-p72-2020-ab85c302e652492196b600ee1eb7106a",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "provenance": "Creator's own model listing. Public model API confirms CC-BY-4.0 and downloadable; official download API returned authentication required.",
+        "status": "authentication-required",
+        "evidence": "assets/cars/metadata/de-tomaso-p72.json",
+        "verifiedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "mclaren-elva",
+      "name": "McLaren Elva",
+      "length": 4.61,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "lotus-evija",
+      "name": "Lotus Evija",
+      "length": 4.69,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://sketchfab.com/3d-models/2020-ferrari-roma-cbc0c13c0fb54fc8bbfa79a9ff99e3aa",
+      "reason": "Description explicitly credits a CSR2 game model; uploader's CC label does not establish rights to redistribute the game asset."
+    },
+    {
+      "url": "https://sketchfab.com/3d-models/2020-pininfarina-battista-anniversario-edition-a34a93d53c894c80bc4d54c973cafe40",
+      "reason": "Description explicitly credits a CSR2 game model; provenance not cleared."
+    },
+    {
+      "url": "https://www.3dcadbrowser.com/3d-model/mclaren-gt-2020",
+      "reason": "Listing prohibits redistribution of source files. Account also required."
+    },
+    {
+      "url": "https://sketchfab.com/3d-models/nfs-unbound-lotus-evija-criterion-edition-f424ad6f28284d1d89d9136b0ad0b905",
+      "reason": "Game-derived model; creator also prohibits reposting."
+    }
+  ]
+}

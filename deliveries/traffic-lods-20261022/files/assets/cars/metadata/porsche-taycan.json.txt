@@ -1,0 +1,192 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 5,
+  "createdAt": "2023-01-16T19:38:43.523940",
+  "embedUrl": "https://sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/embed",
+  "faceCount": 3007137,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 113,
+  "name": "Porshe Taycan",
+  "publishedAt": "2023-01-16T20:22:11.115293",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "porshe",
+      "slug": "porshe",
+      "uri": "https://api.sketchfab.com/v3/tags/porshe"
+    },
+    {
+      "name": "automobile",
+      "slug": "automobile",
+      "uri": "https://api.sketchfab.com/v3/tags/automobile"
+    },
+    {
+      "name": "wheels",
+      "slug": "wheels",
+      "uri": "https://api.sketchfab.com/v3/tags/wheels"
+    },
+    {
+      "name": "motor",
+      "slug": "motor",
+      "uri": "https://api.sketchfab.com/v3/tags/motor"
+    },
+    {
+      "name": "sporty",
+      "slug": "sporty",
+      "uri": "https://api.sketchfab.com/v3/tags/sporty"
+    },
+    {
+      "name": "maya",
+      "slug": "maya",
+      "uri": "https://api.sketchfab.com/v3/tags/maya"
+    },
+    {
+      "name": "vehicle",
+      "slug": "vehicle",
+      "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+    },
+    {
+      "name": "car",
+      "slug": "car",
+      "uri": "https://api.sketchfab.com/v3/tags/car"
+    },
+    {
+      "name": "electric",
+      "slug": "electric",
+      "uri": "https://api.sketchfab.com/v3/tags/electric"
+    },
+    {
+      "name": "taycan",
+      "slug": "taycan",
+      "uri": "https://api.sketchfab.com/v3/tags/taycan"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "a96022d8b3b54c679924851798259b5c",
+        "width": 1920,
+        "height": 1080,
+        "size": 318995,
+        "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/9e178a3bbeee4bb18693d2b9d5472b23.jpeg"
+      },
+      {
+        "uid": "0d58a1d04a6a447e944b5a12ede06fed",
+        "width": 1024,
+        "height": 576,
+        "size": 36986,
+        "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/d08b5d3419da47279878b93bd81067ce.jpeg"
+      },
+      {
+        "uid": "8eef7c629ad64ab091d074a3be28d9b5",
+        "width": 720,
+        "height": 405,
+        "size": 21047,
+        "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/734de70bc337468c975863b8f1d7a3a5.jpeg"
+      },
+      {
+        "uid": "af60c8e2eb9441e3b79a33fbeccdf707",
+        "width": 256,
+        "height": 144,
+        "size": 4616,
+        "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/fd35bdb77c0f49d9a70e2c9d3c3a3692.jpeg"
+      },
+      {
+        "uid": "cd2cacb1b66f482ab65a221bb9ff254c",
+        "width": 64,
+        "height": 36,
+        "size": 1171,
+        "url": "https://media.sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/thumbnails/45793a7a61da4ec8a85586b9955339b5/e25414fe5720428ab4125745123f75de.jpeg"
+      }
+    ]
+  },
+  "uid": "c6004141452e4d3ab048bf0fee52666d",
+  "uri": "https://api.sketchfab.com/v3/models/c6004141452e4d3ab048bf0fee52666d",
+  "user": {
+    "uid": "d901a8862cad4df7903d56f4b037d0ba",
+    "username": "mihailhamanovich",
+    "displayName": "Mikhail Hamanovich",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/mihailhamanovich",
+    "avatar": {
+      "uid": "df78bb39b35147b7b65be5db397b8148",
+      "uri": "https://api.sketchfab.com/v3/avatars/df78bb39b35147b7b65be5db397b8148",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 996,
+          "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/3e3d3459b8ab43fb92fa92244f3dfa7c.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1278,
+          "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/ca7f958f849247b19ddfd1f6a84aabb8.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 2499,
+          "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/edd358b7eee1436abd4c36de2bdfd004.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 2814,
+          "url": "https://media.sketchfab.com/avatars/df78bb39b35147b7b65be5db397b8148/62162c721fd549e9ba645276afbebe7b.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/d901a8862cad4df7903d56f4b037d0ba"
+  },
+  "vertexCount": 1549708,
+  "viewCount": 18514,
+  "viewerUrl": "https://sketchfab.com/3d-models/porshe-taycan-c6004141452e4d3ab048bf0fee52666d",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "3D model of the Porsche Taycan electric car. Modeling in Autodesk Maya and texturing in Substance Painter. Emphasis on accurate reproduction of form and details.Rendering Examples https://www.artstation.com/artwork/DArbkA",
+  "price": null,
+  "downloadCount": 5772,
+  "editorUrl": "https://sketchfab.com/models/c6004141452e4d3ab048bf0fee52666d/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2025-01-13T07:56:15.552843",
+  "pbrType": null,
+  "textureCount": 1,
+  "materialCount": 22
+}

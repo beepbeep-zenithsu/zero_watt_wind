@@ -1,0 +1,139 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
+const {makeScene,ready,updateCity,T}=require('../tools/verify-graphics.cjs'),M=require('../model.js');
+const url=file=>pathToFileURL(path.join(__dirname,'..',file)).href;
+
+test('thirty seats fit the smallest room with one corner computer operator and a clear desk',async()=>{
+  const {occupantLayout}=await import(url('src/graphics/occupant-layout.js'));
+  for(const [w,d] of [[6,6],[8.94,6],[15,6],[6,18],[28,24]]){
+    const {desk,reserved,seats}=occupantLayout(w,d,30);
+    assert.equal(seats.length,30);assert.equal(seats.filter(p=>p.role==='computer-operator').length,1);
+    assert.equal(seats[0].rotation,Math.PI);assert.ok(desk.x<-w/2+1.2&&desk.z<-d/2+1);
+    for(const p of seats.slice(1)){
+      assert.ok(!(p.x+.34>reserved.minX&&p.x-.34<reserved.maxX&&p.z+.62>reserved.minZ&&p.z-.3<reserved.maxZ),'desk/operator clearance');
+      assert.ok(Math.abs(p.x)<w/2-.3&&p.z+.62<d/2-.6);
+    }
+    for(let i=1;i<seats.length;i++)for(let j=i+1;j<seats.length;j++){
+      assert.ok(Math.abs(seats[i].x-seats[j].x)>.67||Math.abs(seats[i].z-seats[j].z)>.9,'seated bodies/shoes do not overlap');
+    }
+  }
+  const s=makeScene('air'),p={...M.defaults,_mode:'air',units:1,people:30};
+  s.setEnvironment({weather:'clear',environment:'roof'},p);await ready(s);
+  const sample=M.steady(p,p.wind,M.evaluateHardware(p));s.render(0,sample,false);
+  assert.equal(s.people.filter(o=>o.visible).length,30);
+  assert.equal(s.people.filter(o=>o.userData.seatRole==='computer-operator'&&o.visible).length,1);
+  const deskBox=new T.Box3().setFromObject(s.shell.getObjectByName('Corner computer workstation'));
+  for(const occupant of s.people.slice(1))assert.ok(!new T.Box3().setFromObject(occupant).intersectsBox(deskBox),'actual Blender occupants clear of actual desk');
+});
+
+test('cars and bicycles cover every block using twelve connected circuits on the asphalt',async()=>{
+  const s=makeScene('air');s.setEnvironment({weather:'clear',environment:'roof'},{...M.defaults,_mode:'air',units:1});await ready(s);
+  assert.equal(s.city.paths.length,12);assert.equal(s.city.cars.length,36);assert.equal(s.city.cyclists.length,24);
+  assert.ok(s.city.cars.every(c=>c.model),'all moving cars use successfully loaded real car GLBs');
+  assert.deepEqual([...new Set(s.city.cars.map(c=>c.modelId))].sort(),['de-tomaso-p72','jaguar-e-type','porsche-taycan']);
+  assert.equal(new Set(s.city.cars.map(c=>c.lane)).size,12);assert.equal(new Set(s.city.cyclists.map(c=>c.lane)).size,12);
+  const {xs,zs}=s.city.network;
+  for(const x of xs)for(let i=0;i<zs.length-1;i++){
+    const target=new T.Vector3(x,0,(zs[i]+zs[i+1])/2);let closest=Infinity;
+    for(const route of s.city.paths)for(let n=0;n<500;n++)closest=Math.min(closest,route.getPointAt(n/500).distanceTo(target));
+    assert.ok(closest<1.6,'every vertical street segment is served');
+  }
+  for(const z of zs)for(let i=0;i<xs.length-1;i++){
+    const target=new T.Vector3((xs[i]+xs[i+1])/2,0,z);let closest=Infinity;
+    for(const route of s.city.paths)for(let n=0;n<500;n++)closest=Math.min(closest,route.getPointAt(n/500).distanceTo(target));
+    assert.ok(closest<1.6,'every horizontal street segment is served');
+  }
+  for(const route of [...s.city.paths,...s.city.network.cyclePaths])for(let i=0;i<1000;i++){
+    const p=route.getPointAt(i/1000),distance=Math.min(...xs.map(x=>Math.abs(p.x-x)),...zs.map(z=>Math.abs(p.z-z)));
+    assert.ok(distance<4.7,'road user stays within street asphalt');
+  }
+  for(const stops of [...s.city.stops,...s.city.cycleTraffic.stops])assert.equal(new Set(stops.map(l=>l.junction.id)).size,stops.length,'no second stop at the exit of the same turn');
+  const before=s.city.cars.map(c=>c.phase),cycleBefore=s.city.cyclists.map(c=>c.phase);s.reducedMotion=false;let fastest=0;
+  for(let step=0;step<1000;step++){
+    s.time=step*.1;updateCity(s,.1);fastest=Math.max(fastest,...s.city.cars.map(c=>c.speed));
+    for(let i=0;i<s.city.cars.length;i++)for(let j=i+1;j<s.city.cars.length;j++){
+      const a=s.city.cars[i],b=s.city.cars[j],pa=s.city.paths[a.lane].getPointAt(a.phase),pb=s.city.paths[b.lane].getPointAt(b.phase);
+      assert.ok(pa.distanceTo(pb)>2.1,'separate car lanes and shared junctions prevent overlap');
+    }
+  }
+  assert.ok(fastest>5,'straight-road traffic is visibly faster than the former 3.2 m/s cap');
+  assert.ok(s.city.cars.every((c,i)=>Math.abs(c.phase-before[i])>.001),'all car circuits restart after signals');
+  assert.ok(s.city.cyclists.every((c,i)=>Math.abs(c.phase-cycleBefore[i])>.001),'all bicycle circuits progress');
+  assert.ok(s.city.cyclistsBatch.children.some(o=>o.name.startsWith('CycleThighL_')));
+  const stopped=s.city.cyclists.map(c=>[c.phase,c.wheelAngle]);updateCity(s,0);assert.deepEqual(s.city.cyclists.map(c=>[c.phase,c.wheelAngle]),stopped);
+});
+
+test('high-refresh rendering moves between deterministic simulation ticks and freezes when paused',async()=>{
+  const {prepareTraffic,advanceTraffic}=await import(url('src/graphics/traffic.js'));
+  const {bakeRoute}=await import(url('src/graphics/motion-route.js'));
+  const curve=new T.CatmullRomCurve3(Array.from({length:32},(_,i)=>new T.Vector3(Math.sin(i*Math.PI/16)*60,0,Math.cos(i*Math.PI/16)*60)),true);
+  const controller={cars:[{phase:.1,lane:0}],paths:[bakeRoute(curve)],rx:1000,rz:1000};prepareTraffic(controller);
+  const car=controller.cars[0];car.speed=8;
+  let previous=controller.paths[0].getPointAt(car.phase),subTickFrames=0;
+  for(let i=0;i<300;i++){
+    const physical=car.phase;advanceTraffic(controller,1/144,8.4,()=>true);
+    const point=controller.paths[0].getPointAt(car.renderPhase),distance=point.distanceTo(previous);
+    assert.ok(distance>.04&&distance<.061,'no repeated poses or jump on 144 Hz frames');
+    if(physical===car.phase)subTickFrames++;
+    previous=point;
+  }
+  assert.ok(subTickFrames>30,'exercise frames between physics ticks');
+  const pose=[car.renderPhase,car.renderWheelAngle];advanceTraffic(controller,0,8.4,()=>true);assert.deepEqual([car.renderPhase,car.renderWheelAngle],pose);
+});
+
+test('rider legs keep fixed lengths and feet remain attached to the moving pedals',async()=>{
+  const {cycleLeg}=await import(url('src/graphics/cyclists.js'));
+  for(let i=0;i<60;i++)for(const side of [-1,1]){
+    const leg=cycleLeg(side,i*Math.PI/30);
+    assert.ok(Math.abs(leg.hip.distanceTo(leg.knee)-.44)<.0001);
+    assert.ok(Math.abs(leg.knee.distanceTo(leg.ankle)-.46)<.0001);
+    assert.ok(Math.abs(leg.ankle.y-leg.pedal.y-.12)<1e-9);
+    assert.ok(Math.abs(leg.ankle.z-leg.pedal.z+.04)<1e-9);
+  }
+});
+
+test('people travel between all city blocks using protected painted crossings',async()=>{
+  const s=makeScene('water');s.setEnvironment({weather:'clear',environment:'park'},{...M.defaults,_mode:'water',boats:1,upb:1});await ready(s);s.reducedMotion=false;
+  assert.equal(s.city.pedestrians.length,80);
+  const crossed=new Set(),corners=new Set(),initial=s.city.pedestrians.map(p=>p.pose.position.slice());
+  let crossingFrames=0;
+  for(let i=0;i<2400;i++){
+    s.time=i*.1;updateCity(s,.1);
+    for(const [id,people] of s.city.network.crossings){
+      crossed.add(id);assert.ok(people.size>0);assert.ok(!s.city.network.owners.has(id),'vehicles cannot reserve an occupied pedestrian crossing');crossingFrames++;
+    }
+    for(const p of s.city.pedestrians){
+      const e=p.edge,x=p.pose.position[0],z=p.pose.position[2];
+      assert.ok(Number.isFinite(x)&&Number.isFinite(z));
+      if(e.crossing){
+        const j=s.city.network.junctions.find(j=>j.id===e.crossing);
+        const acrossX=Math.abs(e.tx)>.5;
+        assert.ok(Math.abs(Math.abs(acrossX?z-j.z:x-j.x)-5.7)<.25,'crossing follows zebra stripes');
+      }
+      for(const corner of p.visited)corners.add(corner);
+    }
+  }
+  assert.equal(crossed.size,16,'every junction sees pedestrians crossing');assert.equal(corners.size,16,'pedestrians visit the whole grid');
+  assert.ok(crossingFrames>100);assert.ok(s.city.pedestrians.every(p=>p.crossingsCompleted>0),'every pedestrian eventually crosses a road');
+  assert.ok(s.city.pedestrians.every((p,i)=>Math.hypot(p.pose.position[0]-initial[i][0],p.pose.position[2]-initial[i][2])>2),'people change streets, rather than pacing in place');
+  const before=s.city.pedestrians.map(p=>p.pose.position.slice());updateCity(s,0);assert.deepEqual(s.city.pedestrians.map(p=>p.pose.position),before,'pause preserves positions');
+});
+
+test('whole-city cars share instanced draws and dynamic populations keep stable buffers',async()=>{
+  const s=makeScene('air');s.setEnvironment({weather:'clear',environment:'roof'},{...M.defaults,_mode:'air',units:1});await ready(s);s.reducedMotion=false;
+  const meshes=[];s.city.fleet.group.traverse(o=>{if(o.isMesh)meshes.push(o);});
+  assert.ok(meshes.every(o=>o.isInstancedMesh),'36 cars use shared instanced geometry, not 36 sets of mesh draws');
+  assert.ok(meshes.length<145,'model draw count stays bounded across three types and three levels');
+  const matrices=meshes.map(o=>o.instanceMatrix.array),colors=s.city.walkers.children.map(o=>o.instanceColor?.version),sphere=s.city.cyclistsBatch.children[0].boundingSphere;
+  for(let i=0;i<20;i++){s.time=i/60;updateCity(s,1/60);}
+  assert.deepEqual(meshes.map(o=>o.instanceMatrix.array),matrices,'matrix buffers are reused');
+  assert.deepEqual(s.city.walkers.children.map(o=>o.instanceColor?.version),colors,'unchanged clothing colors are not uploaded every frame');
+  assert.equal(s.city.cyclistsBatch.children[0].boundingSphere,sphere,'bounds are not recomputed per animated limb/frame');
+  assert.ok(s.city.paths.every(p=>p.isBakedRoute),'fixed-step motion samples cached arc-length tables');
+  for(const type of s.city.fleet.types.values())assert.equal(type.levels.reduce((n,l)=>n+l.count,0),type.cars.length,'each car renders exactly one LOD');
+  for(const type of s.city.fleet.types.values())for(const level of type.levels)for(const part of level.parts){
+    if(!part.mesh.visible)continue;
+    for(let i=0;i<part.mesh.count;i++){
+      const matrix=new T.Matrix4();part.mesh.getMatrixAt(i,matrix);assert.ok(matrix.elements.every(Number.isFinite));
+    }
+  }
+});

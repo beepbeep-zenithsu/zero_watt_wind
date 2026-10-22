@@ -15,10 +15,12 @@ export function createHybridState(options={}) {
 export function stepHybrid(s, options, dt) {
   const p={...HYBRID_DEFAULTS,...options};
   dt=clamp(Number.isFinite(dt)?dt:0,0,1); s.time+=dt;
-  const wind=clamp(p.wind,0,60),target=clamp(p.targetRPM,80,500);
+  const wind=clamp(p.wind,0,60),target=clamp(p.targetRPM,80,1200);
   const monsoon=p.weather==='monsoon',windOnly=monsoon||p.control==='wind-only';
   // 2.1 m swept diameter, Cp .23, 1:1 miter drive. P_fan ∝ RPM³.
-  const windW=Math.min(360,.5*1.225*3.46*.23*wind**3)*p.transmissionEfficiency;
+  // The previous 360 W ceiling caused RPM to plateau above roughly 9 m/s.
+  // Retain the wind-power and cubic fan-load relationship across the full range.
+  const windW=.5*1.225*3.46*.23*wind**3*p.transmissionEfficiency;
   const windAvailableRPM=240*Math.cbrt(windW/p.fanRatedW);
   const freeRPM=wind<.1?0:wind*65;
   const windOnlyRPM=Math.min(freeRPM,windAvailableRPM);

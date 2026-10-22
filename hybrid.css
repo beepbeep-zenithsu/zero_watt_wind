@@ -36,3 +36,4 @@
 .hy-viewport-scenario select{font:500 12px/1.4 var(--sans,Arial,sans-serif);color:#f0f1df;background:#173e41;border:1px solid #486465;border-radius:7px;padding:10px 30px 10px 12px;min-height:42px;max-width:100%;box-shadow:0 3px 14px #102b3026;cursor:pointer}
 @media(max-width:900px){.hy-viewport-scenario{top:12px;left:12px}.hy-overlay .hy-toolbar{top:68px}}
 .hy-overlay .sr-only,.hy-controls .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hy-live-rpm{display:block;margin:-3px 0 14px;color:#c2d4bb;font:10px/1.5 var(--mono,monospace);font-variant-numeric:tabular-nums}

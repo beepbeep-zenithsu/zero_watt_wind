@@ -1,0 +1,3827 @@
+{
+  "cursors": {
+    "next": "24",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&q=battista&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/675658aa6cee4267877d8b83e20e096c",
+      "uid": "675658aa6cee4267877d8b83e20e096c",
+      "name": "Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 2574,
+      "likeCount": 57,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-675658aa6cee4267877d8b83e20e096c",
+      "embedUrl": "https://sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-02-03T08:45:34.601423",
+      "tags": [
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "eaf3bd750b2548dfa60784717aa7fffe",
+            "size": 129363,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/thumbnails/2dad5973fd464a3993901a1205a2e168/b6a561eab78f4144bba2dec229034db9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "248030538f934c008b0c0e71b1102297",
+            "size": 45066,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/thumbnails/2dad5973fd464a3993901a1205a2e168/29d378890abe4daab4f1d1291640559d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "182cd74197fe419a9105514fa088b3c7",
+            "size": 27023,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/thumbnails/2dad5973fd464a3993901a1205a2e168/127bc613c5c343cea4c9a1e3865b5fc0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e500288310c940638b31f092efe74f04",
+            "size": 6150,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/thumbnails/2dad5973fd464a3993901a1205a2e168/7e7d29802b0945e5b443b2364978b17b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ae0553114ac54708b846821d5ec3c59d",
+            "size": 1335,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/675658aa6cee4267877d8b83e20e096c/thumbnails/2dad5973fd464a3993901a1205a2e168/204ded327a1d48e389b9754cef7a9a9d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6e224db44def4fc58d328007b37ac984",
+        "username": "sohyalebret",
+        "displayName": "kevin (ケビン)",
+        "profileUrl": "https://sketchfab.com/sohyalebret",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/864004a48cc3456a86f89db222311a55",
+          "images": [
+            {
+              "size": 1193,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/864004a48cc3456a86f89db222311a55/446ec3a068d84f96b80be1b7dbdb7bff.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1760,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/864004a48cc3456a86f89db222311a55/7e6bbf1b72ca43268f6da3f192bc1852.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4314,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/864004a48cc3456a86f89db222311a55/c90b0094b9e0445ab4d0d665d252cf35.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4901,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/864004a48cc3456a86f89db222311a55/e5e10204859f4dd9b8b4a094efcd5296.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6e224db44def4fc58d328007b37ac984"
+      },
+      "description": "The Pininfarina Battista is an electric hypercar capable of delivering up to 1900 hp and 2340 Nm of torque. According to its manufacturer, it goes from 0 to 100 km/h in 1.86 seconds and 0 to 200 km/h in just 4.79 seconds. VIDEO – The Pininfarina Battista goes from 0 to 100 km/h in 1.86 seconds!",
+      "faceCount": 696966,
+      "createdAt": "2024-02-02T16:35:21.127602",
+      "vertexCount": 364977,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 56370808,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 696803,
+          "vertexCount": 732404
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 16435412,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 696803,
+          "vertexCount": 732404
+        },
+        "source": {
+          "textureCount": null,
+          "size": 56997957,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14859358,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e6b0ea0c98de4f3eb2444371730f6cbf",
+      "uid": "e6b0ea0c98de4f3eb2444371730f6cbf",
+      "name": "2019 Automobili Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 2986,
+      "likeCount": 100,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e6b0ea0c98de4f3eb2444371730f6cbf",
+      "embedUrl": "https://sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-12-26T15:32:24.432385",
+      "tags": [
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "csr2",
+          "slug": "csr2",
+          "uri": "https://api.sketchfab.com/v3/tags/csr2"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        },
+        {
+          "name": "automobili-pininfarina-battista-3d-model",
+          "slug": "automobili-pininfarina-battista-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-pininfarina-battista-3d-model"
+        },
+        {
+          "name": "automobili-pininfarina",
+          "slug": "automobili-pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-pininfarina"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4e23b240e73a46849793c5ff257d3f7f",
+            "size": 344614,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/thumbnails/41126ab6f3f54105bb1fad7b4c152592/86cd4dbbcd994d3598ef89722814c691.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d85f81bf43164c4bbe6bc3c3694b2b62",
+            "size": 58543,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/thumbnails/41126ab6f3f54105bb1fad7b4c152592/d70ef85d95cc4ca1b38db82b035a64fb.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0a3a928fb18c4865b8d309879d8a8794",
+            "size": 34955,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/thumbnails/41126ab6f3f54105bb1fad7b4c152592/3b4925f9c9a4443ca81f7572cf57e52e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3eaa3efbff9d4b25834348e8bcfd1d54",
+            "size": 7973,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/thumbnails/41126ab6f3f54105bb1fad7b4c152592/d3b93b1cf03f411db942ec2ed3d1f959.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f9735a70e0f24d32861ffdc69dd1abe3",
+            "size": 1486,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e6b0ea0c98de4f3eb2444371730f6cbf/thumbnails/41126ab6f3f54105bb1fad7b4c152592/29cfa249039d4e558ebf04f98448073b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2019_Automobili_Pininfarina_Battista_Front.jpg/1024px-2019_Automobili_Pininfarina_Battista_Front.jpg)\n\nAutomobili Pininfarina has unveiled the ultimate expression of the world's first luxury pure-electric hyper GT, the Battista Anniversario. The Battista Anniversario celebrates 90 years since Battista 'Pinin' Farina created the legendary Pininfarina coachbuilder and design house, and is the most powerful sports car ever to be designed and built in Italy.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a CSR2 3d model\n\nCredits: https://www.facebook.com/p/GM25-100042237200164/",
+      "faceCount": 240571,
+      "createdAt": "2024-12-26T15:16:37.860921",
+      "vertexCount": 152275,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 32,
+          "size": 13953944,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 240571,
+          "vertexCount": 173873
+        },
+        "gltf": {
+          "textureCount": 32,
+          "size": 6251111,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 240571,
+          "vertexCount": 173873
+        },
+        "source": {
+          "textureCount": null,
+          "size": 16131131,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7291786,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5a1b62fa1e7447388ed81a18f03c2464",
+      "uid": "5a1b62fa1e7447388ed81a18f03c2464",
+      "name": "Piranesi prison (voxel)",
+      "staffpickedAt": "2017-05-30T16:41:42.484780",
+      "viewCount": 6356,
+      "likeCount": 190,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5a1b62fa1e7447388ed81a18f03c2464",
+      "embedUrl": "https://sketchfab.com/models/5a1b62fa1e7447388ed81a18f03c2464/embed",
+      "commentCount": 9,
+      "isDownloadable": false,
+      "publishedAt": "2017-02-19T11:12:11.551794",
+      "tags": [
+        {
+          "name": "prison",
+          "slug": "prison",
+          "uri": "https://api.sketchfab.com/v3/tags/prison"
+        },
+        {
+          "name": "piranesi",
+          "slug": "piranesi",
+          "uri": "https://api.sketchfab.com/v3/tags/piranesi"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "voxel",
+          "slug": "voxel",
+          "uri": "https://api.sketchfab.com/v3/tags/voxel"
+        },
+        {
+          "name": "voxelart",
+          "slug": "voxelart",
+          "uri": "https://api.sketchfab.com/v3/tags/voxelart"
+        },
+        {
+          "name": "c4d",
+          "slug": "c4d",
+          "uri": "https://api.sketchfab.com/v3/tags/c4d"
+        },
+        {
+          "name": "magicavoxel",
+          "slug": "magicavoxel",
+          "uri": "https://api.sketchfab.com/v3/tags/magicavoxel"
+        }
+      ],
+      "categories": [
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c8450be2676a46169e5be7a1394ecb42",
+            "size": 55003,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5a1b62fa1e7447388ed81a18f03c2464/thumbnails/9f9f1ccbe3f04099af0d4626f90d5aed/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "06741cc9b0344c8e963759d099515bca",
+            "size": 31932,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5a1b62fa1e7447388ed81a18f03c2464/thumbnails/9f9f1ccbe3f04099af0d4626f90d5aed/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2f25ebd9119d45ef9e50602f0b4b92a8",
+            "size": 6262,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5a1b62fa1e7447388ed81a18f03c2464/thumbnails/9f9f1ccbe3f04099af0d4626f90d5aed/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3d181082a67a47f8ad3a029294c73816",
+            "size": 915,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5a1b62fa1e7447388ed81a18f03c2464/thumbnails/9f9f1ccbe3f04099af0d4626f90d5aed/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "893f35e8f449421a8da00501efb1116b",
+        "username": "exm59",
+        "displayName": "EXM",
+        "profileUrl": "https://sketchfab.com/exm59",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d19d6a1af715493a89c6f9c8ae81235a",
+          "images": [
+            {
+              "size": 3597,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d19d6a1af715493a89c6f9c8ae81235a/b1bb92c328884a5a8ee1331ac0427ae5.jpeg",
+              "height": 100
+            },
+            {
+              "size": 3248,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d19d6a1af715493a89c6f9c8ae81235a/11a23035d5ab4ce38308232d3571eda4.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1749,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d19d6a1af715493a89c6f9c8ae81235a/2206f2efad2c4759a794e5ead02203ff.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1032,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d19d6a1af715493a89c6f9c8ae81235a/2da277aefb964e9ebf601c635a90f341.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/893f35e8f449421a8da00501efb1116b"
+      },
+      "description": "Fanart of the italian Giambattista Piranesi's prison etching, modeled in voxel with Magicavoxel. Ambient occlusion baked in C4D.\n\nMore info about Piranesi's prison etchings : http://artmuseum.princeton.edu/object-package/giovanni-battista-piranesi-imaginary-prisons/3640",
+      "faceCount": 31653,
+      "createdAt": "2017-02-19T11:04:23.145118",
+      "vertexCount": 15475,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/884969963eff4e06b0bdce8f779b371a",
+      "uid": "884969963eff4e06b0bdce8f779b371a",
+      "name": "Battista Edizione Nino Farina | www.vecarz.com",
+      "staffpickedAt": null,
+      "viewCount": 2244,
+      "likeCount": 99,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-884969963eff4e06b0bdce8f779b371a",
+      "embedUrl": "https://sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-21T11:41:49.784607",
+      "tags": [
+        {
+          "name": "nino",
+          "slug": "nino",
+          "uri": "https://api.sketchfab.com/v3/tags/nino"
+        },
+        {
+          "name": "farina",
+          "slug": "farina",
+          "uri": "https://api.sketchfab.com/v3/tags/farina"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "edizione",
+          "slug": "edizione",
+          "uri": "https://api.sketchfab.com/v3/tags/edizione"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1cda1dd00f344f4b97fe6c9890339bb0",
+            "size": 136057,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/thumbnails/41a9c9b708c648ca95beb94cef31daa5/9ee619b237bf48148e7cae563bca36d9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5df7883e0e814e739062fb9ed0ee8851",
+            "size": 26508,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/thumbnails/41a9c9b708c648ca95beb94cef31daa5/271f341135d74b38b2be7b69ee46b417.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "52ba9215873a412fb06908540a845b15",
+            "size": 14097,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/thumbnails/41a9c9b708c648ca95beb94cef31daa5/af47ff8ed8cb4c25bcea87406e122d2c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7bee4788dc8743edbd8d017894af92d8",
+            "size": 2827,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/thumbnails/41a9c9b708c648ca95beb94cef31daa5/34644939cca14a39a6c9fad9f669c1ff.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "868377d50210439593e5cc3be52973f0",
+            "size": 896,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/884969963eff4e06b0bdce8f779b371a/thumbnails/41a9c9b708c648ca95beb94cef31daa5/58ea1b54b7254e46b9bdde95127d53f4.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f3128e66b434556a831444e846717c0",
+        "username": "heynic",
+        "displayName": "vecarz",
+        "profileUrl": "https://sketchfab.com/heynic",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f6949765a609461a9ea0f49cd8c10ceb",
+          "images": [
+            {
+              "size": 1105,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/1221ccac1fe045ec988d66a62b34c77a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1429,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/c1f0ffdc59bd40dca2923ed8ac647069.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2633,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/bbab7000d79c4db6a541270a50aadb4d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2879,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f6949765a609461a9ea0f49cd8c10ceb/de9c7937570941a78862b19cf07b9ee5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f3128e66b434556a831444e846717c0"
+      },
+      "description": "Pininfarina Battista Edizione Nino Farina https://www.instagram.com/p/DbDke57IPew/\n![]https://www.instagram.com/p/DbDke57IPew/)\ncredit [Sleet.] https://sketchfab.com/3d-models/pininfarina-battista-edizione-nino-farina-90b4b365f6bd4679a7d15a713a4f7504",
+      "faceCount": 263634,
+      "createdAt": "2026-07-21T10:17:28.020289",
+      "vertexCount": 158561,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 38,
+          "size": 21388840,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 263634,
+          "vertexCount": 222503
+        },
+        "gltf": {
+          "textureCount": 38,
+          "size": 13725965,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 263634,
+          "vertexCount": 222503
+        },
+        "source": {
+          "textureCount": null,
+          "size": 25115808,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9333268,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a34a93d53c894c80bc4d54c973cafe40",
+      "uid": "a34a93d53c894c80bc4d54c973cafe40",
+      "name": "2020 Pininfarina Battista Anniversario edition",
+      "staffpickedAt": null,
+      "viewCount": 2369,
+      "likeCount": 95,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a34a93d53c894c80bc4d54c973cafe40",
+      "embedUrl": "https://sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-02T17:56:14.762521",
+      "tags": [
+        {
+          "name": "anniversary",
+          "slug": "anniversary",
+          "uri": "https://api.sketchfab.com/v3/tags/anniversary"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "csr2",
+          "slug": "csr2",
+          "uri": "https://api.sketchfab.com/v3/tags/csr2"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        },
+        {
+          "name": "automobili-pininfarina",
+          "slug": "automobili-pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-pininfarina"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0f7acd98a77f469a83f7b6e818088358",
+            "size": 345659,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/thumbnails/59f239106868462c96b73d7d68a04c72/2af0fb5658bd4adf8ed6d6650e984fef.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "292364068ac9440e85ab0c38017b4595",
+            "size": 61701,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/thumbnails/59f239106868462c96b73d7d68a04c72/fc5f37561f484927a3dee2f693fde171.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e7a5593592444ce5bbf2dfb4cb9403a4",
+            "size": 36400,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/thumbnails/59f239106868462c96b73d7d68a04c72/bf4da536eefd4aeba0a321aa2e32c5dc.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c9553e1aae144898ada0ab8a1c8ff83d",
+            "size": 8059,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/thumbnails/59f239106868462c96b73d7d68a04c72/c218fb61c1994c16b2e1bf158d7d70fe.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7a896e57fccc4c818d80e9b6afc0b9bc",
+            "size": 1467,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a34a93d53c894c80bc4d54c973cafe40/thumbnails/59f239106868462c96b73d7d68a04c72/7261a130e97245dcb2152861ef9836ec.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://zmfqrnenekgkedngmqke.supabase.co/storage/v1/object/public/media/automobili-pininfarina/anniversario_04.jpg)\n\nSecured by discerning collectors around the world within 24 hours of release, the five Battista Anniversario editions are a celebration of nine decades of design excellence.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a CSR2 3d model\n\nCredits: ZD 3D Modelling and Design Discord Server (discord.gg/ZwWHzxk2zu)",
+      "faceCount": 253068,
+      "createdAt": "2025-02-02T17:25:04.049003",
+      "vertexCount": 163795,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 31,
+          "size": 14237832,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 253068,
+          "vertexCount": 184938
+        },
+        "gltf": {
+          "textureCount": 31,
+          "size": 5847630,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 253068,
+          "vertexCount": 184938
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13419365,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6660189,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1d0d14cff4c842ad9f81fb3a8f5696fd",
+      "uid": "1d0d14cff4c842ad9f81fb3a8f5696fd",
+      "name": "Giovanni Battista",
+      "staffpickedAt": null,
+      "viewCount": 386,
+      "likeCount": 27,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1d0d14cff4c842ad9f81fb3a8f5696fd",
+      "embedUrl": "https://sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2020-10-10T18:36:55.805755",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "44b4e6b7050f4e89a5206f779bfb69e9",
+            "size": 216873,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/thumbnails/2967f5a0e94f4ea2bcd0ee3a23c91959/f44661e09d244817b1ea2033c3a0274e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "04857a908a69472cb19c1e33de38b907",
+            "size": 35874,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/thumbnails/2967f5a0e94f4ea2bcd0ee3a23c91959/d868d94e80304d2fa36f8743a27b560e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "829327180b00424a99b513c0e545fb85",
+            "size": 18344,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/thumbnails/2967f5a0e94f4ea2bcd0ee3a23c91959/4b42e87b56614a96bccfcf1821b842dd.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f650522bf85a470eac87039d49504221",
+            "size": 4061,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/thumbnails/2967f5a0e94f4ea2bcd0ee3a23c91959/100eb106fa7f48da92d0b98cac10b909.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "262947bb268b463f940b1cd9ffcdebd0",
+            "size": 1108,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1d0d14cff4c842ad9f81fb3a8f5696fd/thumbnails/2967f5a0e94f4ea2bcd0ee3a23c91959/53f477ef0789455dad029ef566947381.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b3cc501b0f43494f903d6edc52bddcf5",
+        "username": "FaberSorrentino",
+        "displayName": "Faber Sorrentino",
+        "profileUrl": "https://sketchfab.com/FaberSorrentino",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b051f593e95143a4b643d8a39144f248",
+          "images": [
+            {
+              "size": 2922,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b051f593e95143a4b643d8a39144f248/435354796bb54c18b2ef5c55f31a2cbf.png",
+              "height": 32
+            },
+            {
+              "size": 4994,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b051f593e95143a4b643d8a39144f248/ef79556f8c0d4046a044945a407b80d8.png",
+              "height": 48
+            },
+            {
+              "size": 10763,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b051f593e95143a4b643d8a39144f248/d9fd80b980c8431fa75b6c93708c8030.png",
+              "height": 90
+            },
+            {
+              "size": 12678,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b051f593e95143a4b643d8a39144f248/0737c487e0b242c790992b980484e00e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b3cc501b0f43494f903d6edc52bddcf5"
+      },
+      "description": "Giovanni Battista, Rossellino",
+      "faceCount": 299998,
+      "createdAt": "2020-10-10T18:33:49.894602",
+      "vertexCount": 150001,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 25203324,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 299998,
+          "vertexCount": 899696
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 13085003,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 299998,
+          "vertexCount": 899696
+        },
+        "source": {
+          "textureCount": null,
+          "size": 25669861,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 21600725,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d5d008bcd5d34850886ef600efb99af5",
+      "uid": "d5d008bcd5d34850886ef600efb99af5",
+      "name": "Pininfarina Battista 2020",
+      "staffpickedAt": null,
+      "viewCount": 1604,
+      "likeCount": 31,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d5d008bcd5d34850886ef600efb99af5",
+      "embedUrl": "https://sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2020-11-18T15:12:41.004384",
+      "tags": [
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "fast",
+          "slug": "fast",
+          "uri": "https://api.sketchfab.com/v3/tags/fast"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "italian",
+          "slug": "italian",
+          "uri": "https://api.sketchfab.com/v3/tags/italian"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6f2b98423b7447e582e9e8afc1307ef2",
+            "size": 125913,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/thumbnails/9b552f962d3646caa876e757677fdb14/5f38d612f9f54e82891f6ce8e4a96832.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "351a48fd6740417fb398708acfc2d2ea",
+            "size": 44356,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/thumbnails/9b552f962d3646caa876e757677fdb14/6f18aa5f6a774c8ea9921f1abd26079e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3b2984f730b040deb1565022821cf232",
+            "size": 26537,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/thumbnails/9b552f962d3646caa876e757677fdb14/fb92b7008c4b457fbf734cf9f53fceba.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "033b1123ecf34772a32ff39933966d22",
+            "size": 5654,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/thumbnails/9b552f962d3646caa876e757677fdb14/733a2afdd8294a1ea1067e46e4534daf.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8181cacd8bcc43fa94e919cf28764d04",
+            "size": 942,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d5d008bcd5d34850886ef600efb99af5/thumbnails/9b552f962d3646caa876e757677fdb14/f51480e1543e4243a3f53e6dd15583d3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "Pininfarina Battista 2020 - high detailed 3D model created by SQUIR team",
+      "faceCount": 1035654,
+      "createdAt": "2020-11-11T17:25:04.864257",
+      "vertexCount": 544931,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 37618912,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1035652,
+          "vertexCount": 737729
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 19449343,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1035652,
+          "vertexCount": 737729
+        },
+        "source": {
+          "textureCount": null,
+          "size": 23557314,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 21457269,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/24dabbf5b742419b8228ba70cb4ee91d",
+      "uid": "24dabbf5b742419b8228ba70cb4ee91d",
+      "name": "2023 Pininfarina Battista Edizione Nino Farina",
+      "staffpickedAt": null,
+      "viewCount": 1876,
+      "likeCount": 64,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-24dabbf5b742419b8228ba70cb4ee91d",
+      "embedUrl": "https://sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-01T19:45:59.790932",
+      "tags": [
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "csr2",
+          "slug": "csr2",
+          "uri": "https://api.sketchfab.com/v3/tags/csr2"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        },
+        {
+          "name": "automobili-pininfarina",
+          "slug": "automobili-pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-pininfarina"
+        },
+        {
+          "name": "nino-farina",
+          "slug": "nino-farina",
+          "uri": "https://api.sketchfab.com/v3/tags/nino-farina"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "da226c98e28c40f0bf7127d50420dd39",
+            "size": 346108,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/thumbnails/cd0f3a1d2914410bb58139cc62de5fa2/b87a35631ba441b39d2b6d102143b5d0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "55d4b015493d43749a7401454170cfb4",
+            "size": 63766,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/thumbnails/cd0f3a1d2914410bb58139cc62de5fa2/acb686139ab2462db7bda309d82b45b0.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4234ee79c70e4bfd8245503e69d77104",
+            "size": 38063,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/thumbnails/cd0f3a1d2914410bb58139cc62de5fa2/0477374293b1479198515cc568279313.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3e7c8612345e40cea56afac1d9828211",
+            "size": 8454,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/thumbnails/cd0f3a1d2914410bb58139cc62de5fa2/b565ee72828b4edb9296dd010d2589c2.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bd2b6f4af7c1438a8534e3d41243b29f",
+            "size": 1549,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/24dabbf5b742419b8228ba70cb4ee91d/thumbnails/cd0f3a1d2914410bb58139cc62de5fa2/e4251e0dce094bb894a423f8ff6a48b9.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://www.motortrend.com/uploads/2023/07/2024-Pininfarina-Battista-Edizione-Nino-Farina-20.png)\n\nThe 2024 Pininfarina Battista Edizione Nino Farina is meant to celebrate Formula 1 racer Giuseppe Antonio \"Nino\" Farina, who was the first-ever FIA-sanctioned F1 world champion back in 1950 driving Alfa Romeos. Nino lead his team to a 1-2-3 finish at Silverstone, the first race of 1950, and rounded out the championship year by winning at both the Swiss and Italian Grand Prix races.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a CSR2 3d model\n\nCredits: ZD 3D Modelling and Design Discord Server (discord.gg/ZwWHzxk2zu)",
+      "faceCount": 263187,
+      "createdAt": "2025-02-01T19:14:40.989518",
+      "vertexCount": 163613,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 31,
+          "size": 14347084,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 263187,
+          "vertexCount": 186286
+        },
+        "gltf": {
+          "textureCount": 31,
+          "size": 6310974,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 263187,
+          "vertexCount": 186286
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14008109,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6953193,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/319e7ce20bf749f8836202ecd9b761c4",
+      "uid": "319e7ce20bf749f8836202ecd9b761c4",
+      "name": "Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 1150,
+      "likeCount": 46,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-319e7ce20bf749f8836202ecd9b761c4",
+      "embedUrl": "https://sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2023-12-23T17:39:05.201304",
+      "tags": [
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "unity3d",
+          "slug": "unity3d",
+          "uri": "https://api.sketchfab.com/v3/tags/unity3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3bbedf3e09ed4a58bf4c47c975d63886",
+            "size": 81935,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/thumbnails/5edd4665b4b44c80af1a05b831b39c53/40c2c6ad1dcb433690555f349775bef3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "fef210b644824379b3095c0e05d6a48a",
+            "size": 29078,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/thumbnails/5edd4665b4b44c80af1a05b831b39c53/ccba3363216647c6830ae87a9b1d8d33.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "03ae408a390149d29de7f0f264198423",
+            "size": 17027,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/thumbnails/5edd4665b4b44c80af1a05b831b39c53/e5c68c80d51b403dae21b08515331d43.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5abacc9cfed84d86866d26e6bb2a8d1f",
+            "size": 3744,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/thumbnails/5edd4665b4b44c80af1a05b831b39c53/d7edb1aad06e49389a121357b206ffe2.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2940fad88f8d4c4d8a266bec002cf5b7",
+            "size": 946,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/319e7ce20bf749f8836202ecd9b761c4/thumbnails/5edd4665b4b44c80af1a05b831b39c53/ffbac9dc1b6b4c678970c9596825fa21.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "355459d1f7dc4556941652d314621675",
+        "username": "Car2022",
+        "displayName": "Mona x Supercars",
+        "profileUrl": "https://sketchfab.com/Car2022",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c23e89f9132347ffaca1d854cc8818a6",
+          "images": [
+            {
+              "size": 1005,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/3403cd2dd19b4aec8acf01ad4e880995.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1323,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/b6920b4c8f6441c3a5c04cd3d24c8184.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2541,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/386ed5ca1b344227a88be60073bba0e5.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2949,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c23e89f9132347ffaca1d854cc8818a6/6b5ff429633a459686f7dcd142bd11c5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/355459d1f7dc4556941652d314621675"
+      },
+      "description": "![](https://www.topgear.com/sites/default/files/images/news-article/2019/03/ab1685ac35d9c970f17a3b62fcdd173e/1-ao1i3643.jpg)\n\n3 Electric Motors.\n\nA Custom car for Amy. for TTRITB.",
+      "faceCount": 223695,
+      "createdAt": "2023-12-23T17:26:41.188695",
+      "vertexCount": 130733,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 62,
+          "size": 12235352,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 223691,
+          "vertexCount": 176973
+        },
+        "gltf": {
+          "textureCount": 62,
+          "size": 7408185,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 223691,
+          "vertexCount": 176973
+        },
+        "source": {
+          "textureCount": null,
+          "size": 40625761,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8339730,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/90b4b365f6bd4679a7d15a713a4f7504",
+      "uid": "90b4b365f6bd4679a7d15a713a4f7504",
+      "name": "Pininfarina Battista Edizione Nino Farina",
+      "staffpickedAt": null,
+      "viewCount": 344,
+      "likeCount": 19,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-90b4b365f6bd4679a7d15a713a4f7504",
+      "embedUrl": "https://sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-03-15T05:44:26.371539",
+      "tags": [
+        {
+          "name": "world",
+          "slug": "world",
+          "uri": "https://api.sketchfab.com/v3/tags/world"
+        },
+        {
+          "name": "nino",
+          "slug": "nino",
+          "uri": "https://api.sketchfab.com/v3/tags/nino"
+        },
+        {
+          "name": "record",
+          "slug": "record",
+          "uri": "https://api.sketchfab.com/v3/tags/record"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "farina",
+          "slug": "farina",
+          "uri": "https://api.sketchfab.com/v3/tags/farina"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "edizone",
+          "slug": "edizone",
+          "uri": "https://api.sketchfab.com/v3/tags/edizone"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c9c1836bdaf94f6b8d2d5d3fff20502e",
+            "size": 82049,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/thumbnails/5b5c6b9f90384d248e6f59ce7dd23583/387ea421456c44fca69e5d8f06ed2994.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f3711e9706574ec5b13aeed45ab2ceed",
+            "size": 24138,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/thumbnails/5b5c6b9f90384d248e6f59ce7dd23583/5411e564c9f749abbc91cdcdcb6417a4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "ade07f9c9452470aad870e39eca125aa",
+            "size": 13650,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/thumbnails/5b5c6b9f90384d248e6f59ce7dd23583/f0637a2515a3403eb0a5013869f66a12.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "48cb303fb366471fae8d6323c2644f29",
+            "size": 2885,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/thumbnails/5b5c6b9f90384d248e6f59ce7dd23583/1ad6cae75677474a9cd54bffd58fd5ea.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "08d51f8b7e5142569ef4d903efcc6538",
+            "size": 925,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/90b4b365f6bd4679a7d15a713a4f7504/thumbnails/5b5c6b9f90384d248e6f59ce7dd23583/03bcf10d292642fab571d126654bb77c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "79cfed6be1ae40ec86187884f18aeffe",
+        "username": "ufw_sleet",
+        "displayName": "Sleet.",
+        "profileUrl": "https://sketchfab.com/ufw_sleet",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/52c0bb01be90481ea02ca48e2a86862f",
+          "images": [
+            {
+              "size": 975,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/52c0bb01be90481ea02ca48e2a86862f/a0c0a8f08ebe4c66a31c016e62083556.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1313,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/52c0bb01be90481ea02ca48e2a86862f/8f006d08bdbb47c68cf82220a08f6438.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2811,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/52c0bb01be90481ea02ca48e2a86862f/bf00348d54eb400e964e24828865bc24.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3229,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/52c0bb01be90481ea02ca48e2a86862f/c368942ec87d40a8869fd46adfa091f4.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/79cfed6be1ae40ec86187884f18aeffe"
+      },
+      "description": "Pininfarina Battista Edizione Nino Farina, nothing to say, its electric and dumb but looks really cool.",
+      "faceCount": 263634,
+      "createdAt": "2026-03-15T05:18:00.615696",
+      "vertexCount": 158561,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 56,
+          "size": 21198620,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 263634,
+          "vertexCount": 222503
+        },
+        "gltf": {
+          "textureCount": 56,
+          "size": 14119923,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 263634,
+          "vertexCount": 222503
+        },
+        "source": {
+          "textureCount": null,
+          "size": 30103906,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8903633,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/077da46ced2846c9b3c53f8e4eb3d04c",
+      "uid": "077da46ced2846c9b3c53f8e4eb3d04c",
+      "name": "Automobili Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 480,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-077da46ced2846c9b3c53f8e4eb3d04c",
+      "embedUrl": "https://sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2023-06-17T10:40:59.633174",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "sports-car",
+          "slug": "sports-car",
+          "uri": "https://api.sketchfab.com/v3/tags/sports-car"
+        },
+        {
+          "name": "autodesk-maya",
+          "slug": "autodesk-maya",
+          "uri": "https://api.sketchfab.com/v3/tags/autodesk-maya"
+        },
+        {
+          "name": "super-car",
+          "slug": "super-car",
+          "uri": "https://api.sketchfab.com/v3/tags/super-car"
+        },
+        {
+          "name": "3d-cars",
+          "slug": "3d-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-cars"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "3d-car-model",
+          "slug": "3d-car-model",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-car-model"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        },
+        {
+          "name": "super-car-3d-model",
+          "slug": "super-car-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/super-car-3d-model"
+        },
+        {
+          "name": "pininfarina-car-model",
+          "slug": "pininfarina-car-model",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-car-model"
+        },
+        {
+          "name": "pininfarina-battista-3d-car-model",
+          "slug": "pininfarina-battista-3d-car-model",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista-3d-car-model"
+        },
+        {
+          "name": "automobili-3d-model",
+          "slug": "automobili-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-3d-model"
+        },
+        {
+          "name": "pininfarina-battista-3d-model",
+          "slug": "pininfarina-battista-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista-3d-model"
+        },
+        {
+          "name": "automobili-pininfarina-battista-3d-model",
+          "slug": "automobili-pininfarina-battista-3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/automobili-pininfarina-battista-3d-model"
+        },
+        {
+          "name": "high-quality-car-models",
+          "slug": "high-quality-car-models",
+          "uri": "https://api.sketchfab.com/v3/tags/high-quality-car-models"
+        },
+        {
+          "name": "3d-car-model-for-games",
+          "slug": "3d-car-model-for-games",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-car-model-for-games"
+        },
+        {
+          "name": "3d-car-model-for-animations",
+          "slug": "3d-car-model-for-animations",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-car-model-for-animations"
+        },
+        {
+          "name": "3d-car-model-for-vfx",
+          "slug": "3d-car-model-for-vfx",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-car-model-for-vfx"
+        },
+        {
+          "name": "3d-car-model-maya",
+          "slug": "3d-car-model-maya",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-car-model-maya"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3869ee8765aa461cb18c33a819f212cf",
+            "size": 111242,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/thumbnails/32b74669eb21447a93a647b61209a7d7/93f5b8213da4455da7d3cce590c89522.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "63be16c7d2924edd84aaad17cb17c713",
+            "size": 40011,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/thumbnails/32b74669eb21447a93a647b61209a7d7/6d7d078607ac4d61b7c74094612c359a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "813a0ebb5f884ed1a90d51f965c75982",
+            "size": 24439,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/thumbnails/32b74669eb21447a93a647b61209a7d7/acbe711c117b4b99a5b26fb80e219a81.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "62ed29d6d01d4d2594ba6cf0d1e193f1",
+            "size": 5716,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/thumbnails/32b74669eb21447a93a647b61209a7d7/6539de4299c945f7a5ae71aa54fd6801.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "fd7d912c04364ba18235cef57ba49aa3",
+            "size": 1249,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/077da46ced2846c9b3c53f8e4eb3d04c/thumbnails/32b74669eb21447a93a647b61209a7d7/b256f7bb8f894910b028a477d1a5196b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e0539043e14b4098825713ab135ff0fb",
+        "username": "MWHD",
+        "displayName": "MWHD Models",
+        "profileUrl": "https://sketchfab.com/MWHD",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/70da6db5cd0446f7b9c109899b5f4e0f",
+          "images": [
+            {
+              "size": 1343,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/70da6db5cd0446f7b9c109899b5f4e0f/c55cbbfa849c4fd294c04a9ceeed5002.png",
+              "height": 32
+            },
+            {
+              "size": 2822,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/70da6db5cd0446f7b9c109899b5f4e0f/78f7c808ca774f3fab44153e7c9b01ad.png",
+              "height": 48
+            },
+            {
+              "size": 6834,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/70da6db5cd0446f7b9c109899b5f4e0f/b67eeb750bb145e0a6ffe206e7406ab3.png",
+              "height": 90
+            },
+            {
+              "size": 7981,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/70da6db5cd0446f7b9c109899b5f4e0f/b9b6db61e05b4740a91576cefe5850f9.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e0539043e14b4098825713ab135ff0fb"
+      },
+      "description": "***Automobili Pininfarina Battista***\n\nHigh Detailed Mid-Poly 3D car model made for Games, Animation & VFX using Autodesk Maya\n\nThank you!\n\n*Made by Mowahed3D*",
+      "faceCount": 19692,
+      "createdAt": "2023-06-16T19:25:07.459059",
+      "vertexCount": 10771,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 1245388,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 19692,
+          "vertexCount": 29677
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 383771,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 19692,
+          "vertexCount": 29677
+        },
+        "source": {
+          "textureCount": null,
+          "size": 714358,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 744160,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "783b685da9bf457d81e829fa283f3567",
+        "label": "Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0684c83ea92c4324b93be423b34c221d",
+      "uid": "0684c83ea92c4324b93be423b34c221d",
+      "name": "Pininfarina-Battista",
+      "staffpickedAt": null,
+      "viewCount": 845,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0684c83ea92c4324b93be423b34c221d",
+      "embedUrl": "https://sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-07-23T13:37:49.943544",
+      "tags": [
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "2023",
+          "slug": "2023",
+          "uri": "https://api.sketchfab.com/v3/tags/2023"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "pininfarina-battista",
+          "slug": "pininfarina-battista",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina-battista"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "eb3c07357585413fa8bd5d69a0a4d493",
+            "size": 173238,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/thumbnails/dbf66fa41f59433990e376f3ea1ae8d7/53f650aa7e0b41e7b12c896c33f9a5e0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ff7cedc00c3e4866903a0334bcdb4ab6",
+            "size": 53032,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/thumbnails/dbf66fa41f59433990e376f3ea1ae8d7/5ce34ed53d0c47bba4640cb8028a6273.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "21cdc26130184a288552b56f54838a8e",
+            "size": 30804,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/thumbnails/dbf66fa41f59433990e376f3ea1ae8d7/2e33a613b85e4906bb52f8c748bf833e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "728c1d725e874e27839046b0747c0171",
+            "size": 6562,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/thumbnails/dbf66fa41f59433990e376f3ea1ae8d7/cd90208f7ae243269400ca9192c393de.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e941d94912a94ffb9028e73e32362309",
+            "size": 1306,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0684c83ea92c4324b93be423b34c221d/thumbnails/dbf66fa41f59433990e376f3ea1ae8d7/71ececda4e0446fa815e9578f3d9c207.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "44133559efe3490e9fb18dcdf449c318",
+        "username": "Phazan",
+        "displayName": "Phazan Product",
+        "profileUrl": "https://sketchfab.com/Phazan",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/80ff914afa994fa7839f3ecd25404692",
+          "images": [
+            {
+              "size": 1192,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/5e007b9631634a9b8f2a875e045d3af8.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1457,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/d00b45d22fdc4d5ab047b39ad1624e84.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2736,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/016198364cdd44288d38f4344a7bf61f.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3138,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/80ff914afa994fa7839f3ecd25404692/2a2cdf4870fd4996aba88941eac51e89.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/44133559efe3490e9fb18dcdf449c318"
+      },
+      "description": "",
+      "faceCount": 60019,
+      "createdAt": "2022-07-23T10:02:28.625352",
+      "vertexCount": 33736,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 15093612,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 60001,
+          "vertexCount": 77328
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 12522818,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 60001,
+          "vertexCount": 77328
+        },
+        "source": {
+          "textureCount": null,
+          "size": 21569194,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4079483,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/05a698ca80834ce0b4771b3b1645c4b1",
+      "uid": "05a698ca80834ce0b4771b3b1645c4b1",
+      "name": "2020 Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 3723,
+      "likeCount": 29,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-05a698ca80834ce0b4771b3b1645c4b1",
+      "embedUrl": "https://sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/embed",
+      "commentCount": 5,
+      "isDownloadable": false,
+      "publishedAt": "2020-06-14T00:13:15.717055",
+      "tags": [
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b1a69eaf1cec490f9e4d86736a1fda22",
+            "size": 213658,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/thumbnails/bba4436f01cc4f0e85169859014f66c5/39c95eb881de48449266ab58203226d5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9eab9f3ae6824351bfbfd9ea4771ea34",
+            "size": 43799,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/thumbnails/bba4436f01cc4f0e85169859014f66c5/c066267f39ac4c2eb8e279070614f871.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "ac9d781ee2464dea91f9135f156dcc57",
+            "size": 25592,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/thumbnails/bba4436f01cc4f0e85169859014f66c5/60f0e61737814cbe892567d7530fd110.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "43013c3924cb490ebe3ee3c44df0f65c",
+            "size": 5301,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/thumbnails/bba4436f01cc4f0e85169859014f66c5/86bab5c16dba4d20b78b31014ddb6dc9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "143e6e4722514f469bb126de2317fed3",
+            "size": 928,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/05a698ca80834ce0b4771b3b1645c4b1/thumbnails/bba4436f01cc4f0e85169859014f66c5/ab61a12af720450091c0c612ac5669b5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5cddd5ba96354b95872efdaeb1b9c136",
+        "username": "xix",
+        "displayName": "Hammad",
+        "profileUrl": "https://sketchfab.com/xix",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/5e193c44e1f64f159c64f970d1e0fd33",
+          "images": [
+            {
+              "size": 2183,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/5e193c44e1f64f159c64f970d1e0fd33/30f2f5f45d4e4a77a856d0c941dd25b8.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1896,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/5e193c44e1f64f159c64f970d1e0fd33/59cd1da7783d48f6b4475a683071f12c.jpeg",
+              "height": 90
+            },
+            {
+              "size": 815,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5e193c44e1f64f159c64f970d1e0fd33/98f1ea4ebcf84dc8be5ca0c7bf9c5ec8.jpeg",
+              "height": 48
+            },
+            {
+              "size": 635,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5e193c44e1f64f159c64f970d1e0fd33/9a266294f5104604b39a1b4caab05a5a.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5cddd5ba96354b95872efdaeb1b9c136"
+      },
+      "description": "",
+      "faceCount": 594607,
+      "createdAt": "2020-06-13T23:07:50.096582",
+      "vertexCount": 307517,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/471d2978d8c446b9aa8e55333cf3ca56",
+      "uid": "471d2978d8c446b9aa8e55333cf3ca56",
+      "name": "Giovanni Battista Piatti, Milan",
+      "staffpickedAt": null,
+      "viewCount": 334,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-471d2978d8c446b9aa8e55333cf3ca56",
+      "embedUrl": "https://sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-10-26T08:42:12.883668",
+      "tags": [
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "70d4abd8ef0b4994a596eaba80ce9238",
+            "size": 448449,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/thumbnails/cd29a6897630418792d671ae809b4604/8e7636e302e34e279ee40b564040ea42.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "fb961cca778149a09e2724e49329a810",
+            "size": 71097,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/thumbnails/cd29a6897630418792d671ae809b4604/b47466a37bbe4e55b760e51898e48873.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d45ac129bce04239988d2c84219ebfb0",
+            "size": 33520,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/thumbnails/cd29a6897630418792d671ae809b4604/54437ef6d22b4903aade9981be5dad03.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2a0b316f0fdf44d7a715fcd1b0a7b47c",
+            "size": 5578,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/thumbnails/cd29a6897630418792d671ae809b4604/c5bb83beccdb48a382a33599ed93820e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b2679544b47c4bb8ace46b992f6fd425",
+            "size": 1207,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/471d2978d8c446b9aa8e55333cf3ca56/thumbnails/cd29a6897630418792d671ae809b4604/ae16f0c4c57240e1895d6e735a270ab3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ba019e9db88a4aca94570ba37544ee28",
+        "username": "soulbank",
+        "displayName": "Soulbank",
+        "profileUrl": "https://sketchfab.com/soulbank",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51be5dbe29e543af9402f8bfdec11461",
+          "images": [
+            {
+              "size": 2534,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51be5dbe29e543af9402f8bfdec11461/ff9735a425264ae1afaaee28859f9f17.png",
+              "height": 32
+            },
+            {
+              "size": 4414,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51be5dbe29e543af9402f8bfdec11461/32e59f9a3fc84e66b264603298a40a6a.png",
+              "height": 48
+            },
+            {
+              "size": 10927,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51be5dbe29e543af9402f8bfdec11461/856ad48ca3e442749b9134e0e421e721.png",
+              "height": 90
+            },
+            {
+              "size": 12717,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51be5dbe29e543af9402f8bfdec11461/c1474524430a407d888d612e051b5309.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ba019e9db88a4aca94570ba37544ee28"
+      },
+      "description": "Giovanni Battista Piatti was an Italian civil engineer from Milan.",
+      "faceCount": 225898,
+      "createdAt": "2022-10-26T08:20:09.384716",
+      "vertexCount": 132071,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0f435337e6c94309b22741ef8941a639",
+      "uid": "0f435337e6c94309b22741ef8941a639",
+      "name": "automobili pininfarina battista",
+      "staffpickedAt": null,
+      "viewCount": 169,
+      "likeCount": 18,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0f435337e6c94309b22741ef8941a639",
+      "embedUrl": "https://sketchfab.com/models/0f435337e6c94309b22741ef8941a639/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-26T15:07:12.222289",
+      "tags": [
+        {
+          "name": "track",
+          "slug": "track",
+          "uri": "https://api.sketchfab.com/v3/tags/track"
+        },
+        {
+          "name": "asphalt",
+          "slug": "asphalt",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "asphalt-8",
+          "slug": "asphalt-8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt-8"
+        },
+        {
+          "name": "asphalt8",
+          "slug": "asphalt8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt8"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2b26be69dea9425b98b9ddf8ea33eb8e",
+            "size": 95385,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0f435337e6c94309b22741ef8941a639/thumbnails/2232f8da0a7b4f22b59e86c3100af561/c9fe6fa7a9374f72998e5920840e38ac.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "20e881ca180244c8936cfa7d0e4fba41",
+            "size": 33482,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0f435337e6c94309b22741ef8941a639/thumbnails/2232f8da0a7b4f22b59e86c3100af561/45122ebe39f54ebc94e3cd589a2dfddf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6ff250669c474dcb866472143344a884",
+            "size": 20177,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0f435337e6c94309b22741ef8941a639/thumbnails/2232f8da0a7b4f22b59e86c3100af561/7778b23f24a34887a7fc5a1fd0bf704a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a6b9226cca74412b971c9aea9c4d1c36",
+            "size": 4740,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0f435337e6c94309b22741ef8941a639/thumbnails/2232f8da0a7b4f22b59e86c3100af561/20756ebb66994a978c833e5e818f7fcf.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "778d42045d93491898f1a565186f84e3",
+            "size": 1214,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0f435337e6c94309b22741ef8941a639/thumbnails/2232f8da0a7b4f22b59e86c3100af561/dd6105d9137947da8526eaf0f30c9c53.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a3f53ccb4bbd4b20adb3212a3e039799",
+        "username": "amogusstrikesback2",
+        "displayName": "amogusstrikesback2",
+        "profileUrl": "https://sketchfab.com/amogusstrikesback2",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1e86f6ba160c4c7ba2f2466cf9129512",
+          "images": [
+            {
+              "size": 2236,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/9bb265aa88194112a83577fdf18308f5.png",
+              "height": 32
+            },
+            {
+              "size": 4490,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/aeb9f312f1ac4133bd3b51ffdc3aa1c4.png",
+              "height": 48
+            },
+            {
+              "size": 13455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/02c7cedec824424abd925b65c37418d7.png",
+              "height": 90
+            },
+            {
+              "size": 16128,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/e9f778f720e14ed4889f244f8bb23f18.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a3f53ccb4bbd4b20adb3212a3e039799"
+      },
+      "description": "",
+      "faceCount": 31850,
+      "createdAt": "2026-07-26T15:02:47.393137",
+      "vertexCount": 18846,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 3171652,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 31842,
+          "vertexCount": 26741
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 2528418,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 31842,
+          "vertexCount": 26741
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5058774,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1591826,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7da7ddd2feba48aea94a0ec9048f8f2b",
+      "uid": "7da7ddd2feba48aea94a0ec9048f8f2b",
+      "name": "Battista Aniversario Print Model",
+      "staffpickedAt": null,
+      "viewCount": 550,
+      "likeCount": 6,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7da7ddd2feba48aea94a0ec9048f8f2b",
+      "embedUrl": "https://sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-02-23T17:28:35.858884",
+      "tags": [
+        {
+          "name": "toy",
+          "slug": "toy",
+          "uri": "https://api.sketchfab.com/v3/tags/toy"
+        },
+        {
+          "name": "parts",
+          "slug": "parts",
+          "uri": "https://api.sketchfab.com/v3/tags/parts"
+        },
+        {
+          "name": "scale",
+          "slug": "scale",
+          "uri": "https://api.sketchfab.com/v3/tags/scale"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "ev",
+          "slug": "ev",
+          "uri": "https://api.sketchfab.com/v3/tags/ev"
+        },
+        {
+          "name": "replica",
+          "slug": "replica",
+          "uri": "https://api.sketchfab.com/v3/tags/replica"
+        },
+        {
+          "name": "print",
+          "slug": "print",
+          "uri": "https://api.sketchfab.com/v3/tags/print"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "pininfarina",
+          "slug": "pininfarina",
+          "uri": "https://api.sketchfab.com/v3/tags/pininfarina"
+        },
+        {
+          "name": "aniversario",
+          "slug": "aniversario",
+          "uri": "https://api.sketchfab.com/v3/tags/aniversario"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "hypergt",
+          "slug": "hypergt",
+          "uri": "https://api.sketchfab.com/v3/tags/hypergt"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0bc8f8c0cf2d42c591c2d90df9bd9708",
+            "size": 255449,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/thumbnails/29b7bc2dffc7472bb602ffc0dd5ec908/cfdf2c68289a4678b17858a72763c58f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f1e52246c0a7436bbcf126c6cda63e8c",
+            "size": 68898,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/thumbnails/29b7bc2dffc7472bb602ffc0dd5ec908/957d5f027d4d4c68ad39479f3cf42ba6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "19a7b59ff63441b99587bb510768a784",
+            "size": 34532,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/thumbnails/29b7bc2dffc7472bb602ffc0dd5ec908/0b67857e50c844a0aa3eb5ed27766d20.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f54aa58093e940348392876dd9a77051",
+            "size": 5852,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/thumbnails/29b7bc2dffc7472bb602ffc0dd5ec908/7c84d34930604ac0994a137b0c731ee2.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "626b3e8dcc8c4cf799ced1df61a58b09",
+            "size": 1221,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7da7ddd2feba48aea94a0ec9048f8f2b/thumbnails/29b7bc2dffc7472bb602ffc0dd5ec908/4b08b311de2a4e15a0463c50f6d73d14.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e677e5e8cee242b8ba2c51be9851e24c",
+        "username": "DroneB",
+        "displayName": "DroneB",
+        "profileUrl": "https://sketchfab.com/DroneB",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ee6769bf1a574643bdf29288229c216e",
+          "images": [
+            {
+              "size": 981,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ee6769bf1a574643bdf29288229c216e/66c332cf36cb49da89ede3ce8b71d1a2.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1170,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ee6769bf1a574643bdf29288229c216e/4b9212830023489a83affa8ce91930e3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2324,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ee6769bf1a574643bdf29288229c216e/d14a24a2c9634f5ea94211cd7954895e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2554,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ee6769bf1a574643bdf29288229c216e/0144de8f13e14310bc45e08cc045cc8a.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e677e5e8cee242b8ba2c51be9851e24c"
+      },
+      "description": "Battista hypergt print model .   \n\n12 parts . 1/25 scale   \n\nColors Represent individual parts  \n\neasy to assemble,    \n\ncontact us for any question or fixes",
+      "faceCount": 1645886,
+      "createdAt": "2023-02-23T16:50:17.658388",
+      "vertexCount": 797853,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 137765456,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1645882,
+          "vertexCount": 4915005
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 45243452,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1645882,
+          "vertexCount": 4915005
+        },
+        "source": {
+          "textureCount": null,
+          "size": 33602704,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 118056989,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7da1b9ed67254410b385319520ac8d78",
+      "uid": "7da1b9ed67254410b385319520ac8d78",
+      "name": "2023 Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 225,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7da1b9ed67254410b385319520ac8d78",
+      "embedUrl": "https://sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-05-03T20:43:42.719632",
+      "tags": [
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "unity3d",
+          "slug": "unity3d",
+          "uri": "https://api.sketchfab.com/v3/tags/unity3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "8a891b1748af414dbb44eedf471aa67c",
+            "size": 105075,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/thumbnails/19c8ede3dc04430a961229a0f83269c9/1d0e236596594e7c8a2593691b524826.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "86905317ad53426b99d97b19649a9db0",
+            "size": 39715,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/thumbnails/19c8ede3dc04430a961229a0f83269c9/e3f84421761b4cbf9e84e8c78c89d249.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "98f0f26468c741078bd5f72d149de51b",
+            "size": 23687,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/thumbnails/19c8ede3dc04430a961229a0f83269c9/ecb1d19ed4314951a42996e10063b865.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0b535ca414c84b4aa74ec8c09ed2d974",
+            "size": 5279,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/thumbnails/19c8ede3dc04430a961229a0f83269c9/1a69d647f0424c0884c51845f7e7777b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2dd81a11fc284e27b4bc9b8bb4dcc868",
+            "size": 1169,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7da1b9ed67254410b385319520ac8d78/thumbnails/19c8ede3dc04430a961229a0f83269c9/b2562027ed1e4b24823a0c1ccbd7a0e3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e59d67ef42644902a2f08f8ba9d46933",
+        "username": "supercarmodels",
+        "displayName": "DisneyCars",
+        "profileUrl": "https://sketchfab.com/supercarmodels",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/fe8b94521a70474892de7a4202aed709",
+          "images": [
+            {
+              "size": 1070,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/5eed6b1003b746c6af46e6ed5fc05a8b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1548,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/ac4c73f3e5914fdf8608d7912d1f6a86.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3553,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/670c3daee9eb414f9219e2b49341cff2.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4156,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/2957208ef5e048e7a1b6fc946f4291fe.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e59d67ef42644902a2f08f8ba9d46933"
+      },
+      "description": "Only 150 examples will be built around the world, but added an extra example for a custom character",
+      "faceCount": 223691,
+      "createdAt": "2025-05-03T20:24:04.388830",
+      "vertexCount": 130733,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 64,
+          "size": 14531280,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 223691,
+          "vertexCount": 176973
+        },
+        "gltf": {
+          "textureCount": 64,
+          "size": 8667082,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 223691,
+          "vertexCount": 176973
+        },
+        "source": {
+          "textureCount": null,
+          "size": 16608761,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8583804,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3fcc6d06b2fe4e56ae222cc028674bff",
+      "uid": "3fcc6d06b2fe4e56ae222cc028674bff",
+      "name": "2019 Automobili Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 25,
+      "likeCount": 6,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3fcc6d06b2fe4e56ae222cc028674bff",
+      "embedUrl": "https://sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-10-13T06:39:01.947228",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3fc034b2aa2d4f8db18e0d3a35a1d979",
+            "size": 61016,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/thumbnails/dded6da66654462eb9908ac26d4d5e4c/6fa9439405674e9997035c81719cdb72.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "cec56c1646fa4e60a9f902fbafa27c7b",
+            "size": 20410,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/thumbnails/dded6da66654462eb9908ac26d4d5e4c/297822df64ad48bd848497dd8c97ce01.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4c67383173d64863bdf3bec29fdcac37",
+            "size": 11911,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/thumbnails/dded6da66654462eb9908ac26d4d5e4c/e7cd621e3bb7453c8a0959e734dd85a5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "dd7a7fbd1d9a4632a8f566b03bd90b0c",
+            "size": 2727,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/thumbnails/dded6da66654462eb9908ac26d4d5e4c/9d44d8daf5e14356aafd6ebb6d2f9edf.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e65e241a1c5e48858d164ce4eea0c7d0",
+            "size": 895,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3fcc6d06b2fe4e56ae222cc028674bff/thumbnails/dded6da66654462eb9908ac26d4d5e4c/d18137a1bd7546de8e0551f5af83f037.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "797254d39a0e4c83844f7879abb95bb3",
+        "username": "tangwang920",
+        "displayName": "007",
+        "profileUrl": "https://sketchfab.com/tangwang920",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e782cf2af46b4b37b16971ab81d3f4bb",
+          "images": [
+            {
+              "size": 2542,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/8614778ab59b43a48611f75b59924482.png",
+              "height": 32
+            },
+            {
+              "size": 5430,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/ea78a6977a32409f863c9594b3fc975f.png",
+              "height": 48
+            },
+            {
+              "size": 17665,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/08b878415cb64853a853d0c12cf9ff63.png",
+              "height": 90
+            },
+            {
+              "size": 21537,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e782cf2af46b4b37b16971ab81d3f4bb/4f16dc1ac74b4d34bd05ee5a2167b841.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/797254d39a0e4c83844f7879abb95bb3"
+      },
+      "description": "The 2019 Automobili Pininfarina Battista is a top-tier limited-production all-electric hypercar that made its global debut at the 2019 Geneva Motor Show by Pininfarina. Named after the brand's founder Battista Farina, it is produced in a strictly limited run of only 150 units worldwide.",
+      "faceCount": 240571,
+      "createdAt": "2026-10-13T06:36:21.314214",
+      "vertexCount": 152275,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 32,
+          "size": 16441768,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 240571,
+          "vertexCount": 173873
+        },
+        "gltf": {
+          "textureCount": 32,
+          "size": 6469252,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 240571,
+          "vertexCount": 173873
+        },
+        "source": {
+          "textureCount": null,
+          "size": 7768092,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7361609,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/56b4d741b1514838af6ba46df71db8bb",
+      "uid": "56b4d741b1514838af6ba46df71db8bb",
+      "name": "Pininfarina Battista 2020",
+      "staffpickedAt": null,
+      "viewCount": 122,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-56b4d741b1514838af6ba46df71db8bb",
+      "embedUrl": "https://sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-27T03:14:15.422531",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3efebdcd2b6647ff9a4c3a1ae0d23fda",
+            "size": 46717,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/thumbnails/97b7d4aad8004779a746d817c65917c3/7845657fc2e44ccaae487d86ba828926.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a9e8cfd130594e19ab59e6c4c90ba27a",
+            "size": 14892,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/thumbnails/97b7d4aad8004779a746d817c65917c3/293d302c33c0427e8e8913d144a1a569.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1b36736649ed46c8b7224267417fd71c",
+            "size": 8453,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/thumbnails/97b7d4aad8004779a746d817c65917c3/15fb7ca992ee4f8eacb9a6e086ffdab6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "76681078be8f4d71bf058f80a32ef4cc",
+            "size": 1889,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/thumbnails/97b7d4aad8004779a746d817c65917c3/52736b45582342ec826ffba6e7676e06.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "807ff763da0e4e009f79f7f5a962fe13",
+            "size": 782,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/56b4d741b1514838af6ba46df71db8bb/thumbnails/97b7d4aad8004779a746d817c65917c3/421dcc9560d3486fb0d422ff5c0cb89b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "714d7e36847a443eaefb5ecacdc16452",
+        "username": "niev",
+        "displayName": "Nieve5677",
+        "profileUrl": "https://sketchfab.com/niev",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2",
+          "images": [
+            {
+              "size": 2543,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/1d5b99bd1f5e4702bd72bf68ff10c818.png",
+              "height": 32
+            },
+            {
+              "size": 5030,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/7a39cd0025e04fce8cda31c50a591f86.png",
+              "height": 48
+            },
+            {
+              "size": 14373,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/38f304c5fe3b48aaa0ecb00fa51d2b6f.png",
+              "height": 90
+            },
+            {
+              "size": 17263,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/e61279dbfc4543d6a50181bd012e868b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/714d7e36847a443eaefb5ecacdc16452"
+      },
+      "description": "",
+      "faceCount": 1035628,
+      "createdAt": "2025-10-27T03:13:00.068896",
+      "vertexCount": 544923,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 36681256,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1035628,
+          "vertexCount": 756407
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 17060947,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1035628,
+          "vertexCount": 756407
+        },
+        "source": {
+          "textureCount": null,
+          "size": 23612549,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 20853668,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/892cd197d5234256a830d85b45d4672c",
+      "uid": "892cd197d5234256a830d85b45d4672c",
+      "name": "Pininfarina Battista",
+      "staffpickedAt": null,
+      "viewCount": 701,
+      "likeCount": 6,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-892cd197d5234256a830d85b45d4672c",
+      "embedUrl": "https://sketchfab.com/models/892cd197d5234256a830d85b45d4672c/embed",
+      "commentCount": 24,
+      "isDownloadable": false,
+      "publishedAt": "2020-05-27T15:49:22.128476",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "193582ac228944fdbee5ae3d9e8ef504",
+            "size": 108580,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/892cd197d5234256a830d85b45d4672c/thumbnails/530026a196284d5b8473d57a0523d95a/bf3571c2b9f848cf89e6affe8a6eb2b0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c3252a8c08ba418dba6118a7fbdc793d",
+            "size": 35389,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/892cd197d5234256a830d85b45d4672c/thumbnails/530026a196284d5b8473d57a0523d95a/1f87a6d860d54ab9ae8dc823b15c1cc8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c3c2f10e355f41dcad026ae548dbda38",
+            "size": 18628,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/892cd197d5234256a830d85b45d4672c/thumbnails/530026a196284d5b8473d57a0523d95a/37dc9591b7154cf2a4e5fcc5e0396c23.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1672ca102afc455eb75ae2d8d0b87862",
+            "size": 3646,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/892cd197d5234256a830d85b45d4672c/thumbnails/530026a196284d5b8473d57a0523d95a/7943781545a347bfa9a505c9f4ae4bfd.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ebd4530708824d06ba7c19262ac83ecf",
+            "size": 728,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/892cd197d5234256a830d85b45d4672c/thumbnails/530026a196284d5b8473d57a0523d95a/a74154fc2c0548eca146000b45387dda.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5b1345e8630c468887b689b54cbd2f3b",
+        "username": "AGZ",
+        "displayName": "AGZ",
+        "profileUrl": "https://sketchfab.com/AGZ",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3993169de1434d53b6c71c06e9391553",
+          "images": [
+            {
+              "size": 2017,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/40d00e7a55994b7e9c496c6a5d502923.png",
+              "height": 32
+            },
+            {
+              "size": 4051,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/dc3ab54fc11d45a4ad27ab0dd81b2691.png",
+              "height": 48
+            },
+            {
+              "size": 12433,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/ad6708d3e2a9426b8593ea022547813f.png",
+              "height": 90
+            },
+            {
+              "size": 14826,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/b574bc99fa2e4f9da1f02fb3d413f379.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5b1345e8630c468887b689b54cbd2f3b"
+      },
+      "description": "",
+      "faceCount": 31353,
+      "createdAt": "2020-05-27T15:35:44.382647",
+      "vertexCount": 18292,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c89ec576a44f4ef8b64758dbd0533af3",
+      "uid": "c89ec576a44f4ef8b64758dbd0533af3",
+      "name": "Chiesa San Giovanni Battista, Mogno, Switzerland",
+      "staffpickedAt": null,
+      "viewCount": 1513,
+      "likeCount": 21,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c89ec576a44f4ef8b64758dbd0533af3",
+      "embedUrl": "https://sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-04-02T20:05:04.593946",
+      "tags": [
+        {
+          "name": "sfm",
+          "slug": "sfm",
+          "uri": "https://api.sketchfab.com/v3/tags/sfm"
+        },
+        {
+          "name": "switzerland",
+          "slug": "switzerland",
+          "uri": "https://api.sketchfab.com/v3/tags/switzerland"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "church",
+          "slug": "church",
+          "uri": "https://api.sketchfab.com/v3/tags/church"
+        },
+        {
+          "name": "mariobotta",
+          "slug": "mariobotta",
+          "uri": "https://api.sketchfab.com/v3/tags/mariobotta"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7127aaf527404d4f93def7bb41eb93ab",
+            "size": 370265,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/thumbnails/fa387eff898f47c49a8cf95333494c95/a6b71db5ed2e4fbbb1bfd2446afd9a04.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7da300c6ad5b43ab8f11d677893bddbe",
+            "size": 119086,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/thumbnails/fa387eff898f47c49a8cf95333494c95/20d9388ad4614dcd883d4e598cac5b14.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4c6df78b0ea745f6b4f11047c73439e8",
+            "size": 67371,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/thumbnails/fa387eff898f47c49a8cf95333494c95/d6395b0107f646ef88d17809468edffa.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "06e698f0350045e28d2a3dcdd4bf9cc9",
+            "size": 11528,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/thumbnails/fa387eff898f47c49a8cf95333494c95/97511af68a9945e1babe953f51571b4c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c76f03efafaf42b99e77d005db74a6f2",
+            "size": 1440,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c89ec576a44f4ef8b64758dbd0533af3/thumbnails/fa387eff898f47c49a8cf95333494c95/fbbc55d74d12453aa781b3687b0651d7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "97fa362a96b24d9989c08989c2c1cfeb",
+        "username": "GeomaticsFHNW",
+        "displayName": "Geomatics@FHNW",
+        "profileUrl": "https://sketchfab.com/GeomaticsFHNW",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/16f553e1d391468093683bd1bf2f02d4",
+          "images": [
+            {
+              "size": 1112,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/16f553e1d391468093683bd1bf2f02d4/c724528c017a48f989298111a21b055e.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1481,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/16f553e1d391468093683bd1bf2f02d4/e691f2b64f6a49bb8a9350b344620d21.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3404,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/16f553e1d391468093683bd1bf2f02d4/809a7f9142d649eeac8c928eb87c75f9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4016,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/16f553e1d391468093683bd1bf2f02d4/4e2e20517f9e40cf968f180ad2eec72b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/97fa362a96b24d9989c08989c2c1cfeb"
+      },
+      "description": "# Author:\nModel by our darling students:\n* Damiano Delbiaggio\n* Davide Succetti\n* Yannik Ambrosini\n\n# Technology: \nPhotogrammetric reconstruction using 894 photos.\n\n# Context:\n3D modelling course, spring 2022.\n\n# Supervision: \nDr. Wissam Wahbeh",
+      "faceCount": 4412808,
+      "createdAt": "2022-04-02T19:24:51.588528",
+      "vertexCount": 2249589,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 311560236,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 4412793,
+          "vertexCount": 2683708
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 254061328,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 4412793,
+          "vertexCount": 2683708
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 63702,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 588307600,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 101628258,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/09e1d0b7722445e0b5275d199e123740",
+      "uid": "09e1d0b7722445e0b5275d199e123740",
+      "name": "2019 Pininfarina Battista 90th Anniversary",
+      "staffpickedAt": null,
+      "viewCount": 306,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-09e1d0b7722445e0b5275d199e123740",
+      "embedUrl": "https://sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-05-03T20:16:25.252717",
+      "tags": [
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "unity3d",
+          "slug": "unity3d",
+          "uri": "https://api.sketchfab.com/v3/tags/unity3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "12704f2efa12402bbaa58c328330b248",
+            "size": 102511,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/thumbnails/7aa8248f58bb461782e5b7cfe80546a9/abf9db4023bc4e39843d7e0ce0c8e89f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ff62c9ae84104fb9ad7280fcfbe00dda",
+            "size": 37267,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/thumbnails/7aa8248f58bb461782e5b7cfe80546a9/bacb24c3a1f848dcb45fd136b48b3555.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8b4576adcd0e400d8dc1535aad5e20d5",
+            "size": 22538,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/thumbnails/7aa8248f58bb461782e5b7cfe80546a9/7422119c6355437993cde8394fffa153.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a9699d130a7b46249fd87989703e804c",
+            "size": 5307,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/thumbnails/7aa8248f58bb461782e5b7cfe80546a9/435c4ed43fab4aa59beff62036462eb5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9ed0233b0c4847b2b1a85f1cc632f99d",
+            "size": 1249,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/09e1d0b7722445e0b5275d199e123740/thumbnails/7aa8248f58bb461782e5b7cfe80546a9/19e058a4524643a5a673c5e76456fa8d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e59d67ef42644902a2f08f8ba9d46933",
+        "username": "supercarmodels",
+        "displayName": "DisneyCars",
+        "profileUrl": "https://sketchfab.com/supercarmodels",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/fe8b94521a70474892de7a4202aed709",
+          "images": [
+            {
+              "size": 1070,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/5eed6b1003b746c6af46e6ed5fc05a8b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1548,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/ac4c73f3e5914fdf8608d7912d1f6a86.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3553,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/670c3daee9eb414f9219e2b49341cff2.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4156,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/fe8b94521a70474892de7a4202aed709/2957208ef5e048e7a1b6fc946f4291fe.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e59d67ef42644902a2f08f8ba9d46933"
+      },
+      "description": "90 Years of Pininfarina",
+      "faceCount": 253068,
+      "createdAt": "2025-05-03T20:07:20.485059",
+      "vertexCount": 163795,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 30,
+          "size": 17175972,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 253068,
+          "vertexCount": 184938
+        },
+        "gltf": {
+          "textureCount": 30,
+          "size": 6238730,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 253068,
+          "vertexCount": 184938
+        },
+        "source": {
+          "textureCount": null,
+          "size": 15279501,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6730705,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/254da217da5c4a29986075366ab7f993",
+      "uid": "254da217da5c4a29986075366ab7f993",
+      "name": "Lombardi Giovanni Battista Najad - Anatomy Study",
+      "staffpickedAt": null,
+      "viewCount": 628,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-254da217da5c4a29986075366ab7f993",
+      "embedUrl": "https://sketchfab.com/models/254da217da5c4a29986075366ab7f993/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2018-02-25T21:26:37.552759",
+      "tags": [
+        {
+          "name": "anatomy",
+          "slug": "anatomy",
+          "uri": "https://api.sketchfab.com/v3/tags/anatomy"
+        },
+        {
+          "name": "lombardi-giovanni",
+          "slug": "lombardi-giovanni",
+          "uri": "https://api.sketchfab.com/v3/tags/lombardi-giovanni"
+        },
+        {
+          "name": "battista-najad",
+          "slug": "battista-najad",
+          "uri": "https://api.sketchfab.com/v3/tags/battista-najad"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "56f41d99b2124de6be9706a82b04acdf",
+            "size": 93549,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/254da217da5c4a29986075366ab7f993/thumbnails/f41d65f197f24dc896f9b05aed71918a/420d8681f8c0466a8bb397c90c8b2b51.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "152d0642afd84c56863fb764678bd08b",
+            "size": 17429,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/254da217da5c4a29986075366ab7f993/thumbnails/f41d65f197f24dc896f9b05aed71918a/591adf7cd16444f2b56fe457862a2d49.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "15bde4f021a1492db96e00e74cc4ef3a",
+            "size": 10300,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/254da217da5c4a29986075366ab7f993/thumbnails/f41d65f197f24dc896f9b05aed71918a/75f86206ffb54d91ae656e22d6e0fafe.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c48d8541e7bd4c6fa25d9ffc8e9480c3",
+            "size": 2478,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/254da217da5c4a29986075366ab7f993/thumbnails/f41d65f197f24dc896f9b05aed71918a/ed9d0539ae6a41138c0c470b69a62e9b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "127ab08cbb564ad28125bf6786ba4107",
+            "size": 598,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/254da217da5c4a29986075366ab7f993/thumbnails/f41d65f197f24dc896f9b05aed71918a/931d8182ef41415787ca0f005d47eb09.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f9a5dd868cb046709a9a061427fde513",
+        "username": "bmwebster",
+        "displayName": "B",
+        "profileUrl": "https://sketchfab.com/bmwebster",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/319865e9b2e1413eba4f9a19339c27fd",
+          "images": [
+            {
+              "size": 858,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/319865e9b2e1413eba4f9a19339c27fd/26578159d65145248f0d901184430e0a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1252,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/319865e9b2e1413eba4f9a19339c27fd/07b0485c1be14c04a6f674bb341bdff7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2648,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/319865e9b2e1413eba4f9a19339c27fd/925e796a9c9d48b0be51c25334af2c48.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2970,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/319865e9b2e1413eba4f9a19339c27fd/710dd8ad3d484792a9e7902ff887c9f0.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f9a5dd868cb046709a9a061427fde513"
+      },
+      "description": "High poly sculpted in Zbrush, taken into Maya and retopologised using quad draw. \nBrought back into Zbrush to project the high poly onto the low poly mesh, normals generated and exported and finally posed.",
+      "faceCount": 7056,
+      "createdAt": "2018-02-25T21:24:48.509007",
+      "vertexCount": 3539,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/fe3dc62c93994959819da620f831c4e5",
+      "uid": "fe3dc62c93994959819da620f831c4e5",
+      "name": "Albert Quackmore - Battista",
+      "staffpickedAt": null,
+      "viewCount": 125,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-fe3dc62c93994959819da620f831c4e5",
+      "embedUrl": "https://sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2022-03-01T15:59:57.611031",
+      "tags": [
+        {
+          "name": "disney",
+          "slug": "disney",
+          "uri": "https://api.sketchfab.com/v3/tags/disney"
+        },
+        {
+          "name": "uncle",
+          "slug": "uncle",
+          "uri": "https://api.sketchfab.com/v3/tags/uncle"
+        },
+        {
+          "name": "albert",
+          "slug": "albert",
+          "uri": "https://api.sketchfab.com/v3/tags/albert"
+        },
+        {
+          "name": "scrooge",
+          "slug": "scrooge",
+          "uri": "https://api.sketchfab.com/v3/tags/scrooge"
+        },
+        {
+          "name": "butler",
+          "slug": "butler",
+          "uri": "https://api.sketchfab.com/v3/tags/butler"
+        },
+        {
+          "name": "battista",
+          "slug": "battista",
+          "uri": "https://api.sketchfab.com/v3/tags/battista"
+        },
+        {
+          "name": "quackmore",
+          "slug": "quackmore",
+          "uri": "https://api.sketchfab.com/v3/tags/quackmore"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e8364872d89241d2922c2edda77dfe60",
+            "size": 130309,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/thumbnails/686299986c804d41bb3641a93f062b30/10f9a34a96b6433cac7af4508f467f78.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ce5edf7fbd8f4f9b938a7ca38189ec23",
+            "size": 33401,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/thumbnails/686299986c804d41bb3641a93f062b30/66de25875560471ba0bc9980aa18b653.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "77a5132a6cd84a7c91346cdd1346c38d",
+            "size": 18718,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/thumbnails/686299986c804d41bb3641a93f062b30/8537158e13f3459792163e387a8f2c5d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ad428fcdceac4244b67af3611fd3e5a9",
+            "size": 4386,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/thumbnails/686299986c804d41bb3641a93f062b30/25e4ba8ae7e847a5a5a8a8dff875ebed.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2a493197fd834b2888893ce27415331e",
+            "size": 1142,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/fe3dc62c93994959819da620f831c4e5/thumbnails/686299986c804d41bb3641a93f062b30/198f2234023b466e98cdb1d53cc1956b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ddb071c009f042c5b7b4b521f9608695",
+        "username": "refref1990",
+        "displayName": "Refref1990",
+        "profileUrl": "https://sketchfab.com/refref1990",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9c519eb74c3641299436295e5d26ba23",
+          "images": [
+            {
+              "size": 700,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9c519eb74c3641299436295e5d26ba23/7c79a1caad764af6ac4cb83d2a99d031.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1095,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9c519eb74c3641299436295e5d26ba23/af33342501f241c6aca9e455d1aab509.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2715,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9c519eb74c3641299436295e5d26ba23/295009953fd0467e8f1102da70c1470d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3200,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9c519eb74c3641299436295e5d26ba23/42a1cd34dfbe405bb8ec2d0e113a7b11.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ddb071c009f042c5b7b4b521f9608695"
+      },
+      "description": "Albert Quackmore the Butler of Uncle Scrooge",
+      "faceCount": 42626,
+      "createdAt": "2022-03-01T15:57:09.677592",
+      "vertexCount": 21578,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    }
+  ]
+}

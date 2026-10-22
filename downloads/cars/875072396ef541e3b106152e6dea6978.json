@@ -1,0 +1,157 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 1,
+  "createdAt": "2021-01-26T16:12:06.443641",
+  "embedUrl": "https://sketchfab.com/models/875072396ef541e3b106152e6dea6978/embed",
+  "faceCount": 369603,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 20,
+  "name": "2020 Porsche Taycan",
+  "publishedAt": "2021-01-26T16:17:02.315437",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "porsch",
+      "slug": "porsch",
+      "uri": "https://api.sketchfab.com/v3/tags/porsch"
+    },
+    {
+      "name": "2020",
+      "slug": "2020",
+      "uri": "https://api.sketchfab.com/v3/tags/2020"
+    },
+    {
+      "name": "taycan",
+      "slug": "taycan",
+      "uri": "https://api.sketchfab.com/v3/tags/taycan"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "c9b2edbf44f54372a93e82707b4d36e2",
+        "width": 1920,
+        "height": 1080,
+        "size": 23969,
+        "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/dfa87f22b2374100af03624ca05586cd.jpeg"
+      },
+      {
+        "uid": "de33ab7d475c44efbac9b2972d44c0bb",
+        "width": 1024,
+        "height": 576,
+        "size": 8331,
+        "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/912beaddbfa44c99bef2d363983a48d2.jpeg"
+      },
+      {
+        "uid": "3443d949a3934521a58652e24a3ecef5",
+        "width": 720,
+        "height": 405,
+        "size": 4885,
+        "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/855fa2b027c14212903e4db19e48e136.jpeg"
+      },
+      {
+        "uid": "f5701647162a47e19ee333a8fc46d94a",
+        "width": 256,
+        "height": 144,
+        "size": 1160,
+        "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/bfdee44e20b745d193dd0a9022b573d6.jpeg"
+      },
+      {
+        "uid": "d2ab6817353646d09e176548fa208fb7",
+        "width": 64,
+        "height": 36,
+        "size": 407,
+        "url": "https://media.sketchfab.com/models/875072396ef541e3b106152e6dea6978/thumbnails/bc0b40ba820f4479a13507223cc401d3/caca9ad8da2a457aa7c9826df14362d4.jpeg"
+      }
+    ]
+  },
+  "uid": "875072396ef541e3b106152e6dea6978",
+  "uri": "https://api.sketchfab.com/v3/models/875072396ef541e3b106152e6dea6978",
+  "user": {
+    "uid": "0ce404973bc8424f9e7f8a6690294d95",
+    "username": "martin002",
+    "displayName": "martin002",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/martin002",
+    "avatar": {
+      "uid": "5eba4b0ab82b4c0b918334c657abf06e",
+      "uri": "https://api.sketchfab.com/v3/avatars/5eba4b0ab82b4c0b918334c657abf06e",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 810,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/66c1c8b6f1cc4afab3a85d3b7879f58e.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1391,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/4a407b5fdbbf4900b0e146723daa5ee0.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 3638,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2a90b417adb142aa8c7c7b23139f7ba6.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 4236,
+          "url": "https://media.sketchfab.com/avatars/5eba4b0ab82b4c0b918334c657abf06e/2446c110a82340c2aa8df96e2e66846a.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/0ce404973bc8424f9e7f8a6690294d95"
+  },
+  "vertexCount": 209811,
+  "viewCount": 3104,
+  "viewerUrl": "https://sketchfab.com/3d-models/2020-porsche-taycan-875072396ef541e3b106152e6dea6978",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "2020 Porsche Taycanhttps://www.google.com/imgres?imgurl=https%3A%2F%2Fdaxstreet.com%2Fwp-content%2Fuploads%2F2020%2F12%2F2020-porsche-taycan-feature.jpg&imgrefurl=https%3A%2F%2Fdaxstreet.com%2Fcars%2F1339%2F2020-porsche-taycan-compelling-electric-sports-car%2F&tbnid=oUl1Mk02qW8xIM&vet=12ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ..i&docid=ofjAsBFDVfkk8M&w=1920&h=1080&q=2020%20porsche%20taycan&ved=2ahUKEwiYl8GD_7nuAhX0gc4BHTXoDNUQMygAegUIARCyAQ",
+  "price": null,
+  "downloadCount": 748,
+  "editorUrl": "https://sketchfab.com/models/875072396ef541e3b106152e6dea6978/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2022-07-21T03:54:09.095071",
+  "pbrType": null,
+  "textureCount": 0,
+  "materialCount": 48
+}

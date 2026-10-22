@@ -1,0 +1,115 @@
+00:03.453  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\.upgrade-baseline\traffic-lod-validation\driver-exports\lod-pipeline-fixture-sddg09ce\lod-pipeline-fixture.blend"
+Info: No new files have been packed
+Info: Saved as "lod-pipeline-fixture.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+09:14:30 | INFO: Starting glTF 2.0 export
+09:14:30 | INFO: Extracting primitive: Sphere.001
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.007
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.006
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.005
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.004
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Finished glTF 2.0 export in 0.2879912853240967 s
+00:04.593  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\.upgrade-baseline\traffic-lod-validation\driver-exports\lod-pipeline-fixture-sddg09ce\lod-pipeline-fixture.blend"
+
+09:14:30 | INFO: Starting glTF 2.0 export
+09:14:30 | INFO: Extracting primitive: Sphere.001
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.007
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.006
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.005
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.004
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Finished glTF 2.0 export in 0.02625274658203125 s
+00:04.718  blend            | Read blend: "G:\new_8\zerowatt-wind-v8\.upgrade-baseline\traffic-lod-validation\driver-exports\lod-pipeline-fixture-sddg09ce\lod-pipeline-fixture.blend"
+
+09:14:30 | INFO: Starting glTF 2.0 export
+09:14:30 | INFO: Extracting primitive: Sphere.001
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.007
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.006
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.005
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Extracting primitive: Torus.004
+09:14:30 | INFO: Primitives created: 1
+09:14:30 | INFO: Finished glTF 2.0 export in 0.03925180435180664 s
+
+ZW_TRAFFIC_LOD_REPORT {"id": "lod-pipeline-fixture", "source": {"verified": true, "license": "CC0-1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "title": "Original technical test fixture, not a branded vehicle", "author": "ZeroWatt project", "url": "urn:zerowatt:technical-test-fixture", "provenance": "Created by this local test script from primitives."}, "sourceSha256": "a539f1292d4a769eae295fc839ed9c9f8f3cd4a350635f168b822ce9101e08e7", "front": "-Y", "length": 4.6, "trianglesBefore": 10112, "warnings": [], "levels": [{"level": 0, "file": "lod-pipeline-fixture-lod0.glb", "triangles": 6784, "budget": 7000, "materialPrimitives": 5, "textureLimit": 128, "sizeBlenderXYZ": [2.18008, 4.6, 1.35], "bytes": 539404, "sha256": "01b540311e2e0f758a126a4baebc160b22d75db1b49a21ef12b1c994fc0d050f"}, {"level": 1, "file": "lod-pipeline-fixture-lod1.glb", "triangles": 1936, "budget": 2000, "materialPrimitives": 5, "textureLimit": 64, "sizeBlenderXYZ": [2.18024, 4.59794, 1.35089], "bytes": 192256, "sha256": "4c9e2cf5c2deee41d275f1d77feb5575c8e8decddef08ea36a3cef94db81cb56"}, {"level": 2, "file": "lod-pipeline-fixture-lod2.glb", "triangles": 580, "budget": 600, "materialPrimitives": 5, "textureLimit": 32, "sizeBlenderXYZ": [2.1867, 4.59752, 1.35991], "bytes": 64308, "sha256": "c038d00a2323e26548e03ec9225ffbcf88a0b8034ada381a947260305adc701a"}]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
+(node:17112) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/vendor/three.module.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[
+  {
+    "id": "lod-pipeline-fixture",
+    "levels": [
+      {
+        "triangles": 6784,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            128,
+            128
+          ]
+        ],
+        "size": [
+          2.180079460144043,
+          1.3500001430511475,
+          4.599999904632568
+        ],
+        "sha256": "01b540311e2e0f758a126a4baebc160b22d75db1b49a21ef12b1c994fc0d050f",
+        "bytes": 539404
+      },
+      {
+        "triangles": 1936,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            64,
+            64
+          ]
+        ],
+        "size": [
+          2.180238127708435,
+          1.3508894965052605,
+          4.597940921783447
+        ],
+        "sha256": "4c9e2cf5c2deee41d275f1d77feb5575c8e8decddef08ea36a3cef94db81cb56",
+        "bytes": 192256
+      },
+      {
+        "triangles": 580,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            32,
+            32
+          ]
+        ],
+        "size": [
+          2.186698317527771,
+          1.3599089523777366,
+          4.597517251968384
+        ],
+        "sha256": "c038d00a2323e26548e03ec9225ffbcf88a0b8034ada381a947260305adc701a",
+        "bytes": 64308
+      }
+    ]
+  }
+]

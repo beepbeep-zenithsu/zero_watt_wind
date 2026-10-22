@@ -6,7 +6,8 @@ Run (Windows PowerShell, from the project root):
 Output convention: glTF Y-up, nose toward +Z, centred on X/Z, wheels on y=0,
 scaled so overall length equals --length metres. Draco is NOT used because the
 project's GLTFLoader has no Draco decoder.
-Status: written but not run in the authoring environment (no Blender available).
+Blender 5.2 is available locally. Use make_traffic_lods.py for the three-level
+traffic pipeline; this utility also provides shared import/bounds helpers.
 """
 import argparse
 import json
@@ -152,4 +153,5 @@ def main():
     print('ZW_CAR_REPORT ' + json.dumps(report))
 
 
-main()
+if __name__ == '__main__':
+    main()

@@ -5,6 +5,7 @@ import {installReflections, createWaterMaterial, updateWater, applySurfaceDetail
 import {dressArchitecture, dressLandscape} from './src/graphics/site.js';
 import {buildCity,updateCity} from './src/graphics/city.js';
 import {personLook} from './src/graphics/people.js';
+import {occupantLayout} from './src/graphics/occupant-layout.js';
 import {VentilationVFX, updateVentilationLabels} from './src/graphics/ventilation-vfx.js';
 import {advanceCamera,viewDistance} from './src/graphics/camera.js';
 
@@ -441,8 +442,9 @@ export class FieldScene {
     this.setDoorOpen(!!this.doorOpen);
     this.doorPivot.rotation.y=this.doorTarget;
     // desk and monitor
-    const dx = -W/2 + 1.35;
-    const desk = new T.Group(); desk.position.x=dx; S.add(desk);
+    const seating=occupantLayout(W,D,MAX_PEOPLE);
+    const desk = new T.Group(); desk.name='Corner computer workstation';desk.position.set(seating.desk.x,0,seating.desk.z); S.add(desk);
+    desk.userData.reserved=seating.reserved;
     this.box(1.5, .08, .8, m.wood, desk, 0, .95, 0);
     for (const [lx, lz] of [[-.65, -.32], [.65, -.32], [-.65, .32], [.65, .32]]) this.box(.07, .61, .07, m.dark, desk, lx, .62, lz);
     this.box(.5, .32, .035, m.dark, desk, -.1, 1.25, -.12);
@@ -469,10 +471,10 @@ export class FieldScene {
       this.panes.push({piv, sign: -side, x, zc, width:w, y:sill + windowH/2});
     }
     // Seated occupants and clinic details, with no long benches across the room.
-    const cols = Math.max(2, Math.floor((W - 1.4)/.85)), rows = Math.ceil(MAX_PEOPLE/cols), zS = -D/2 + 1.0, zE = D/2 - 1.6, step = rows > 1 ? (zE - zS)/(rows - 1) : 0;
-    const xs = c => -W/2 + .9 + c*(W - 1.8)/Math.max(1, cols - 1), F = FLOOR_TOP;
+    const F = FLOOR_TOP;
     for (let k = 0; k < MAX_PEOPLE; k++) {
-      const c = k % cols, r = Math.floor(k/cols), g = new T.Group(); g.position.set(xs(c), F, zS + r*step); S.add(g); this.people.push(g);
+      const seat=seating.seats[k],g = new T.Group(); g.position.set(seat.x,F,seat.z);g.rotation.y=seat.rotation;
+      g.name=k===0?'Computer operator':'Waiting room occupant';g.userData.seatRole=seat.role;S.add(g); this.people.push(g);
       const chair=new T.Group();g.add(chair);
       this.box(.4, .05, .4, m.dark, chair, 0, .46, 0); this.box(.4, .4, .05, m.dark, chair, 0, .72, -.2);
       upgradePart(chair,'chair');
@@ -483,7 +485,7 @@ export class FieldScene {
     }
     const bz = -D/2 + .1;
     this.box(1.15, 1.15, .03, m.white, S, -W/2 + 2.4, F + 2.1, bz); this.box(.78, .2, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02); this.box(.2, .78, .04, m.cross, S, -W/2 + 2.4, F + 2.1, bz + .02);   // health cross
-    for (const px of [W/2 - .55, -W/2 + .5]) { this.cyl(.17, .32, m.trunk, S, px, F + .16, -D/2 + .6); for (let j = 0; j < 3; j++) this.sphere(.2 - j*.03, m.leaf2, S, px + (j - 1)*.08, F + .5 + j*.18, -D/2 + .6); }  // plants
+    for (const px of [W/2 - .35, -W/2 + .35]) { this.cyl(.17, .32, m.trunk, S, px, F + .16, D/2-.28); for (let j = 0; j < 3; j++) this.sphere(.2 - j*.03, m.leaf2, S, px + (j - 1)*.08, F + .5 + j*.18, D/2-.28); }  // plants clear of desk and seat rows
     for (let j = 0; j < 5; j++) this.box(.04, .07, .95, m.white, S, -W/2 + .12, F + .45 + j*.15, -D/2 + 1.6);              // fresh-air louvre low on the side wall
     // canyon blocks (environment option) and the path
     this.canyon = new T.Group(); S.add(this.canyon);

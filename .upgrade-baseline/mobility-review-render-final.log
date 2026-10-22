@@ -1,0 +1,66 @@
+10:30:24 | INFO: Data are loaded, start creating Blender stuff
+10:30:24 | INFO: Blender create Mesh node Object_0.005
+10:30:24 | INFO: Blender create Mesh node Object_0.004
+10:30:24 | INFO: Blender create Mesh node Object_0.003
+10:30:24 | INFO: Blender create Mesh node Object_0.002
+10:30:24 | INFO: Blender create Mesh node Object_0.001
+10:30:24 | INFO: glTF import finished in 0.48s
+10:30:24 | INFO: Data are loaded, start creating Blender stuff
+10:30:24 | INFO: Blender create Mesh node Object_0.010
+10:30:24 | INFO: Blender create Mesh node Object_0.009
+10:30:24 | INFO: Blender create Mesh node Object_0.008
+10:30:24 | INFO: Blender create Mesh node Object_0.007
+10:30:24 | INFO: Blender create Mesh node Object_0.006
+10:30:24 | INFO: glTF import finished in 0.30s
+10:30:24 | INFO: Data are loaded, start creating Blender stuff
+10:30:24 | INFO: Blender create Mesh node Object_0.010
+10:30:24 | INFO: Blender create Mesh node Object_0.009
+10:30:24 | INFO: Blender create Mesh node Object_0.008
+10:30:24 | INFO: Blender create Mesh node Object_0.007
+10:30:24 | INFO: Blender create Mesh node Object_0.006
+10:30:24 | INFO: glTF import finished in 0.11s
+G:\new_8\zerowatt-wind-v8\scripts\blender\render_mobility_review.py:9: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Daylight studio');world.use_nodes=True
+00:20.000  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\installed-cars-review.png'
+G:\new_8\zerowatt-wind-v8\scripts\blender\render_mobility_review.py:43: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new(batch['name']);material.use_nodes=True
+00:29.250  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\workstation-review.png'
+10:30:48 | INFO: Data are loaded, start creating Blender stuff
+10:30:48 | INFO: Blender create Mesh node Cylinder.057
+10:30:48 | INFO: Blender create Mesh node Cylinder.058
+10:30:48 | INFO: Blender create Mesh node Cylinder.118
+10:30:48 | INFO: Blender create Mesh node Cone.005
+10:30:48 | INFO: Blender create Mesh node Cube.007
+10:30:48 | INFO: Blender create Mesh node Sphere.007
+10:30:48 | INFO: Blender create Mesh node Cylinder.122
+10:30:48 | INFO: Blender create Mesh node Cylinder.061
+10:30:48 | INFO: Blender create Mesh node Cube.006
+10:30:48 | INFO: Blender create Mesh node Cylinder.048
+10:30:48 | INFO: Blender create Mesh node Cube.005
+10:30:48 | INFO: Blender create Mesh node Cylinder.127
+10:30:48 | INFO: Blender create Mesh node Cone.006
+10:30:48 | INFO: Blender create Mesh node Cylinder.132
+10:30:48 | INFO: Blender create Mesh node Cone.007
+10:30:48 | INFO: Blender create Mesh node Cylinder.064
+10:30:48 | INFO: Blender create Mesh node Cone.001
+10:30:48 | INFO: Blender create Mesh node Torus.003
+10:30:48 | INFO: Blender create Mesh node Torus.002
+10:30:48 | INFO: Blender create Mesh node Cube.002
+10:30:48 | INFO: Blender create Mesh node Cube.003
+10:30:48 | INFO: Blender create Mesh node Cone
+10:30:48 | INFO: Blender create Mesh node Torus.001
+10:30:48 | INFO: Blender create Mesh node Torus
+10:30:48 | INFO: Blender create Mesh node Cube.008
+10:30:49 | INFO: Blender create Mesh node Cube.009
+10:30:49 | INFO: Blender create Mesh node Cube.010
+10:30:49 | INFO: Blender create Mesh node Cube.011
+10:30:49 | INFO: Blender create Mesh node Sphere.009
+10:30:49 | INFO: Blender create Mesh node Cylinder.126
+10:30:49 | INFO: Blender create Mesh node Sphere.014
+10:30:49 | INFO: Blender create Mesh node Cylinder.131
+10:30:49 | INFO: glTF import finished in 0.11s
+00:39.500  render           | Saved: 'G:\new_8\zerowatt-wind-v8\docs\cars\cyclist-review.png'
+MOBILITY_REVIEW_RENDERED
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

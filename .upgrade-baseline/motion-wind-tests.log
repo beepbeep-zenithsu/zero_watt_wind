@@ -1,0 +1,66 @@
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ Blender neighborhood and detailed site are installed in both applications (1317.3397ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (307.0477ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (1373.6323ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (569.7566ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (2017.8676ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (3629.5727ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (5116.1239ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (472.8604ms)
+✔ mode switching preserves the original scene and uses a bounded cached advanced instance (535.2078ms)
+✔ presets, presentation controls, component selection and pause update real state (678.0045ms)
+✔ advanced daylight, tracking and room controls stay independent of Basic (173.302ms)
+✔ Monsoon disables all solar and motor assistance, preserves wind and restores Sunny (287.1813ms)
+✔ Advanced Urban Canyon selects the rebuilt district and sheltered wind without disabling solar (212.2539ms)
+✔ Advanced viewport scenario menu works in fit screen and stays synchronized with sidebar (161.5505ms)
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly (26.0276ms)
+✔ PV and battery are finite; empty night system stops and full battery curtails surplus (12.6551ms)
+✔ assistance requires timed verification; battery recovery has separate hysteresis (6.8893ms)
+✔ actual Blender GLB loads with finite geometry, all pivots and the intended shaft origins (882.6534ms)
+✔ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (15986.6324ms)
+✖ sun tracking aligns the module normal and keeps the roof rack anchored (383.638ms)
+✔ Monsoon operates solely on wind regardless of battery, sunlight and assistance policy (20.9385ms)
+✔ advanced exhaust clears the roof and the entrance supports an enclosed interior view (369.9916ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 21
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 32845.9822
+
+✖ failing tests:
+
+test at tests\hybrid.test.cjs:80:1
+✖ sun tracking aligns the module normal and keeps the roof rack anchored (383.638ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(s.sun.intensity>4)
+  
+      at TestContext.<anonymous> (G:\new_8\zerowatt-wind-v8\tests\hybrid.test.cjs:93:124)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

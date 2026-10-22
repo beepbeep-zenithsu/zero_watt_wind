@@ -1,0 +1,54 @@
+[
+  {
+    "query": "\"Ferrari Roma\"",
+    "total": 2,
+    "repositories": [
+      {
+        "name": "ferrariRoma/ferrariRoma",
+        "url": "https://github.com/ferrariRoma/ferrariRoma",
+        "description": null
+      },
+      {
+        "name": "Yig1tt/Ferrari-Roma",
+        "url": "https://github.com/Yig1tt/Ferrari-Roma",
+        "description": null
+      }
+    ]
+  },
+  {
+    "query": "\"McLaren GT\"",
+    "total": 2,
+    "repositories": [
+      {
+        "name": "sareen-nandal04/mclaren-gts-figma-ui",
+        "url": "https://github.com/sareen-nandal04/mclaren-gts-figma-ui",
+        "description": "A high-fidelity Figma UI design concept for the McLaren GTS Edition landing page. Features a bold automotive hero layout, performance highlights, modern typography, and premium visual styling. Created for UI/UX practice and portfolio showcase."
+      },
+      {
+        "name": "carolynee01/mclaren-gt3-telemetry-ml",
+        "url": "https://github.com/carolynee01/mclaren-gt3-telemetry-ml",
+        "description": null
+      }
+    ]
+  },
+  {
+    "query": "\"McLaren Elva\"",
+    "total": 0,
+    "repositories": []
+  },
+  {
+    "query": "\"Lotus Evija\"",
+    "total": 1,
+    "repositories": [
+      {
+        "name": "KPPVIP/Lotus-Evija-2021",
+        "url": "https://github.com/KPPVIP/Lotus-Evija-2021",
+        "description": null
+      }
+    ]
+  },
+  {
+    "query": "\"Pininfarina Battista\"",
+    "error": 403
+  }
+]

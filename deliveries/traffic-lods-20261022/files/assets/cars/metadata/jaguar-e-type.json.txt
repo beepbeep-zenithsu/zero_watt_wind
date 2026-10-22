@@ -1,0 +1,142 @@
+{
+  "animationCount": 0,
+  "categories": [],
+  "commentCount": 2,
+  "createdAt": "2020-11-09T21:30:57.396143",
+  "embedUrl": "https://sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/embed",
+  "faceCount": 2870015,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 42,
+  "name": "Lightweight Jaguar E Type",
+  "publishedAt": "2020-11-09T21:35:09.399683",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "faro",
+      "slug": "faro",
+      "uri": "https://api.sketchfab.com/v3/tags/faro"
+    },
+    {
+      "name": "jaguar",
+      "slug": "jaguar",
+      "uri": "https://api.sketchfab.com/v3/tags/jaguar"
+    },
+    {
+      "name": "classiccars",
+      "slug": "classiccars",
+      "uri": "https://api.sketchfab.com/v3/tags/classiccars"
+    },
+    {
+      "name": "etype",
+      "slug": "etype",
+      "uri": "https://api.sketchfab.com/v3/tags/etype"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "173a041f15bb47bf9629f852ca2c0ace",
+        "width": 1920,
+        "height": 1080,
+        "size": 360054,
+        "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/08318f0ea05540d68fa8dde96471c58c.jpeg"
+      },
+      {
+        "uid": "ca6ec743209242269ca358f7d5aa439e",
+        "width": 1024,
+        "height": 576,
+        "size": 92529,
+        "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/3f6614a3529349b185c92bed378f0fe7.jpeg"
+      },
+      {
+        "uid": "3a7c41a63f6b4e288e03d6fad9ca7dfb",
+        "width": 720,
+        "height": 405,
+        "size": 46773,
+        "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/8e6467bd03e447a89332fc459f328c81.jpeg"
+      },
+      {
+        "uid": "c664ad28601044d1bfc7f131c5c03f58",
+        "width": 256,
+        "height": 144,
+        "size": 7284,
+        "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/a0643a0ce5c64aa18dfcd0f4c32a335f.jpeg"
+      },
+      {
+        "uid": "7c8f7d39766a4dff8704252b0d5661f0",
+        "width": 64,
+        "height": 36,
+        "size": 1089,
+        "url": "https://media.sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/thumbnails/b07a2c8cadb84b61b08b6017789cdd6e/3deb2935f06a4f21a9fa83d848700331.jpeg"
+      }
+    ]
+  },
+  "uid": "c0a45fa0ea31442788a36be00c2e115c",
+  "uri": "https://api.sketchfab.com/v3/models/c0a45fa0ea31442788a36be00c2e115c",
+  "user": {
+    "uid": "07507e20f809462abea4eb1ecb58a085",
+    "username": "NickRussill",
+    "displayName": "Nick Russill",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/NickRussill",
+    "avatar": {
+      "uid": "6cecf02a96174ebbbbec15787456489a",
+      "uri": "https://api.sketchfab.com/v3/avatars/6cecf02a96174ebbbbec15787456489a",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 696,
+          "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/5fca0ffa47f047b1bd720bc5e83ea7fd.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 976,
+          "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/2bdc72fd01af403f83541baf785121e0.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 2169,
+          "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/3fef4f17a00d4162a076f4836efb1914.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 2484,
+          "url": "https://media.sketchfab.com/avatars/6cecf02a96174ebbbbec15787456489a/2cfe07233a4442b09a0d97cb70d78474.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/07507e20f809462abea4eb1ecb58a085"
+  },
+  "vertexCount": 1604790,
+  "viewCount": 2067,
+  "viewerUrl": "https://sketchfab.com/3d-models/lightweight-jaguar-e-type-c0a45fa0ea31442788a36be00c2e115c",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "W.F. Wins project car in progress at Heynes Restoration.\n\nModel created using 244 photographs taken with a Fujifilm X-T4\n\nModel created with ContextCapture. www.bentley.com",
+  "price": null,
+  "downloadCount": 365,
+  "editorUrl": "https://sketchfab.com/models/c0a45fa0ea31442788a36be00c2e115c/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "unknown",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2022-07-19T05:43:48.285538",
+  "pbrType": null,
+  "textureCount": 6,
+  "materialCount": 6
+}

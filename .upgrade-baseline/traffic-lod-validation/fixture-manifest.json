@@ -1,0 +1,46 @@
+{
+  "root": "G:\\new_8\\zerowatt-wind-v8",
+  "cars": [
+    {
+      "id": "lod-pipeline-fixture",
+      "length": 4.6,
+      "input": "G:\\new_8\\zerowatt-wind-v8\\.upgrade-baseline\\traffic-lod-validation\\original-test-fixture.blend",
+      "front": "-Y",
+      "wheels": [
+        {
+          "id": "FL",
+          "objects": [
+            "FL"
+          ]
+        },
+        {
+          "id": "FR",
+          "objects": [
+            "FR"
+          ]
+        },
+        {
+          "id": "RL",
+          "objects": [
+            "RL"
+          ]
+        },
+        {
+          "id": "RR",
+          "objects": [
+            "RR"
+          ]
+        }
+      ],
+      "source": {
+        "verified": true,
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "title": "Original technical test fixture, not a branded vehicle",
+        "author": "ZeroWatt project",
+        "url": "urn:zerowatt:technical-test-fixture",
+        "provenance": "Created by this local test script from primitives."
+      }
+    }
+  ]
+}

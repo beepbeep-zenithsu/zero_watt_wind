@@ -1,0 +1,32 @@
+param(
+  [string]$Blender=$env:BLENDER_PATH,
+  [string]$Manifest='assets/cars/traffic-sources.json',
+  [string]$Output='assets/cars/traffic',
+  [string[]]$Only,
+  [string]$Budgets='60000,16000,4000',
+  [string]$Textures='1024,512,256'
+)
+$ErrorActionPreference='Stop'
+if ($Only) { $Only=@($Only | ForEach-Object { $_ -split ',' }) }
+$projectRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+if (!$Blender) { $Blender='C:\Program Files\Blender Foundation\Blender 5.2\blender.exe' }
+if (!(Test-Path -LiteralPath $Blender -PathType Leaf)) { throw 'Set BLENDER_PATH to the Blender executable.' }
+$manifestPath=[IO.Path]::GetFullPath((Join-Path $projectRoot $Manifest))
+$outputPath=[IO.Path]::GetFullPath((Join-Path $projectRoot $Output))
+$blenderArgs=@('--background','--factory-startup','--disable-autoexec','--python-exit-code','1',
+  '--python',(Join-Path $projectRoot 'scripts/blender/make_traffic_lods.py'),'--',
+  '--manifest',$manifestPath,'--output',$outputPath,'--budgets',$Budgets,'--textures',$Textures)
+if ($Only) { $blenderArgs += '--only'; $blenderArgs += $Only }
+& $Blender @blenderArgs
+if ($LASTEXITCODE -ne 0) { throw 'Traffic LOD build failed; inspect the preflight/error report above.' }
+$validationArgs=@('--directory',$outputPath)
+$productionPath=Join-Path $projectRoot 'assets/cars/traffic'
+if ($outputPath -eq $productionPath) {
+  $validationArgs += '--install'
+  $configuration=Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
+  foreach ($car in $configuration.cars) {
+    if (Test-Path -LiteralPath (Join-Path $outputPath ($car.id+'.report.json'))) { $validationArgs += $car.id }
+  }
+} elseif ($Only) { $validationArgs += $Only }
+& node (Join-Path $projectRoot 'tools/validate-traffic-assets.cjs') @validationArgs
+if ($LASTEXITCODE -ne 0) { throw 'Exported GLB validation failed.' }

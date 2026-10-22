@@ -1,0 +1,17 @@
+(node:7536) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/occupant-layout.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ thirty seats fit the smallest room with one corner computer operator and a clear desk (637.3949ms)
+✔ cars and bicycles cover every block using twelve connected circuits on the asphalt (3204.4309ms)
+✔ rider legs keep fixed lengths and feet remain attached to the moving pedals (82.6515ms)
+✔ people travel between all city blocks using protected painted crossings (6366.2123ms)
+✔ whole-city cars share instanced draws and dynamic populations keep stable buffers (216.8877ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11039.4267

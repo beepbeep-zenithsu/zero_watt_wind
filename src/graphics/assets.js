@@ -72,18 +72,31 @@ export function addAsset(parent, name, position, scale = [1, 1, 1], rotation) {
 }
 
 /** One draw per material for an entire street of repeated Blender models. */
-export function addAssetInstances(parent,name,poses,{lighting=false,surfaceNormal=null}={}){
+export function addAssetInstances(parent,name,poses,{lighting=false,surfaceNormal=null,motionBounds=null}={}){
   const group=new T.Group();group.name=`Instanced Blender ${name}`;parent.add(group);
   group.userData.assetRequested=name;group.userData.glowMaterials=[];
-  const batches=[],pose=new T.Object3D(),matrix=new T.Matrix4(),partMatrix=new T.Matrix4(),pivot=new T.Matrix4(),rotation=new T.Matrix4();let bottom=0;
+  const batches=[],pose=new T.Object3D(),matrix=new T.Matrix4(),partMatrix=new T.Matrix4(),pivot=new T.Matrix4(),rotation=new T.Matrix4(),color=new T.Color(),worlds=[];let bottom=0;
   group.setPoses=values=>{
     poses=values;
-    for(const {mesh,offset,colorKey,wheel,longHair,limb} of batches){
+    // Compose each person's/rider's world pose once, rather than once per part.
+    values.forEach((value,i)=>{
+      pose.position.set(...value.position);pose.rotation.set(0,value.rotation||0,0);
+      const scale=value.scale??1;Array.isArray(scale)?pose.scale.set(...scale):pose.scale.setScalar(scale);
+      if(value.grounded)pose.position.y-=bottom*pose.scale.y;
+      pose.updateMatrix();(worlds[i] ||= new T.Matrix4()).copy(pose.matrix);
+    });
+    for(const {mesh,offset,colorKey,wheel,longHair,limb,cyclePart,colors} of batches){
+      let colorsChanged=false;
       values.forEach((value,i)=>{
-        pose.position.set(...value.position);pose.rotation.set(0,value.rotation||0,0);
-        const scale=value.scale??1;Array.isArray(scale)?pose.scale.set(...scale):pose.scale.setScalar(scale);
-        if(value.grounded)pose.position.y-=bottom*pose.scale.y;
-        pose.updateMatrix();partMatrix.copy(offset);
+        partMatrix.copy(offset);
+        if(cyclePart){
+          if(value.parts?.[cyclePart])partMatrix.premultiply(value.parts[cyclePart]);
+          else if(cyclePart==='CycleFW'||cyclePart==='CycleRW'||cyclePart==='CycleCrank'){
+            const y=.35,z=cyclePart==='CycleFW'?.59:cyclePart==='CycleRW'?-.59:-.02;
+            pivot.makeTranslation(0,y,z);rotation.makeRotationX(cyclePart==='CycleCrank'?(value.crankAngle||0):(value.renderWheelAngle??value.wheelAngle??0));pivot.multiply(rotation);
+            rotation.makeTranslation(0,-y,-z);pivot.multiply(rotation);partMatrix.premultiply(pivot);
+          }
+        }
         if(longHair&&!value.longHair)partMatrix.makeScale(.00001,.00001,.00001);
         if(limb&&value.limbs){
           const arm=limb.startsWith('Arm'),side=limb.endsWith('L')?-1:1,y=arm?1.27:.89,x=side*(arm?.165:.085);
@@ -96,12 +109,12 @@ export function addAssetInstances(parent,name,poses,{lighting=false,surfaceNorma
           pivot.makeTranslation(x,.345,z);rotation.makeRotationY(wheel.startsWith('F')?(value.steering||0):0);pivot.multiply(rotation);
           rotation.makeRotationX(value.wheelAngle||0);pivot.multiply(rotation);rotation.makeTranslation(-x,-.345,-z);pivot.multiply(rotation);partMatrix.premultiply(pivot);
         }
-        matrix.multiplyMatrices(pose.matrix,partMatrix);mesh.setMatrixAt(i,matrix);
-        if(colorKey&&value[colorKey])mesh.setColorAt(i,new T.Color(value[colorKey]));
+        matrix.multiplyMatrices(worlds[i],partMatrix);mesh.setMatrixAt(i,matrix);
+        if(colorKey&&value[colorKey]&&colors[i]!==value[colorKey]){mesh.setColorAt(i,color.set(value[colorKey]));colors[i]=value[colorKey];colorsChanged=true;}
       });
       mesh.instanceMatrix.needsUpdate=true;
-      if(mesh.instanceColor)mesh.instanceColor.needsUpdate=true;
-      mesh.computeBoundingSphere();mesh.computeBoundingBox();
+      if(colorsChanged)mesh.instanceColor.needsUpdate=true;
+      if(!motionBounds){mesh.computeBoundingSphere();mesh.computeBoundingBox();}
     }
   };
   group.userData.assetReady=loadAsset(name).then(template=>{
@@ -119,8 +132,9 @@ export function addAssetInstances(parent,name,poses,{lighting=false,surfaceNorma
         if(facade){material.color.set('#ffffff');if(!material.normalMap)material.normalMap=surfaceNormal;}else group.userData.glowMaterials.push(material);
       }
       const mesh=new T.InstancedMesh(source.geometry,material,poses.length);
-      mesh.name=source.name;mesh.castShadow=mesh.receiveShadow=true;
-      group.add(mesh);batches.push({mesh,offset:source.matrixWorld.clone(),colorKey:personColorKey(material.name)||((facade||material.name==='City vehicle enamel')?'color':null),wheel:source.name.match(/^(FL|FR|RL|RR)_/)?.[1],longHair:source.name.startsWith('HairLong'),limb:source.name.match(/^(ArmL|ArmR|LegL|LegR)_/)?.[1]});
+      if(motionBounds){mesh.boundingBox=motionBounds.clone();mesh.boundingSphere=motionBounds.getBoundingSphere(new T.Sphere());mesh.instanceMatrix.setUsage(T.DynamicDrawUsage);}
+      mesh.name=source.name;mesh.castShadow=!motionBounds;mesh.receiveShadow=true;
+      group.add(mesh);batches.push({mesh,offset:source.matrixWorld.clone(),colors:[],colorKey:personColorKey(material.name)||((facade||material.name==='City vehicle enamel')?'color':null),wheel:source.name.match(/^(FL|FR|RL|RR)_/)?.[1],longHair:source.name.startsWith('HairLong'),limb:source.name.match(/^(ArmL|ArmR|LegL|LegR)_/)?.[1],cyclePart:source.name.match(/^(CycleFW|CycleRW|CycleCrank|CycleThigh[LR]|CycleCalf[LR]|CycleShoe[LR]|CyclePedal[LR])_/)?.[1]});
     });
     group.userData.asset=name;group.setPoses(poses);return true;
   });

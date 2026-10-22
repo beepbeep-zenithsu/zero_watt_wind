@@ -1,0 +1,66 @@
+(node:2776) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/occupant-layout.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ thirty seats fit the smallest room with one corner computer operator and a clear desk (723.389ms)
+✖ cars and bicycles use eight connected circuits and stay on the actual road surfaces (299.3184ms)
+✔ rider legs keep fixed lengths and feet remain attached to the moving pedals (89.5059ms)
+✔ Blender neighborhood and detailed site are installed in both applications (1013.1733ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (238.1636ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (1201.3985ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (619.1971ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (1184.4277ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (1998.9453ms)
+✖ pedestrians walk, converse, gesture, resume and pause without route jumps (180.6432ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (281.5161ms)
+✔ traffic starts with bounded jerk and smoothly eases its heading (293.7154ms)
+(node:21032) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/cars/car-catalog.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ traffic catalog has eight unique cars with three ascending LODs (9.6692ms)
+✔ LOD clones share geometry and materials with the cached template (84.3123ms)
+✔ uninstalled cars keep the moving fallback without requesting missing GLBs (1.3434ms)
+✔ loaded moving fleet caches files, preserves one fit across LODs and animates explicit wheels (21.0549ms)
+✔ empty replacement meshes fail closed and leave fallback traffic available (1.44ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 15
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7680.6786
+
+✖ failing tests:
+
+test at tests\city-mobility.test.cjs:28:1
+✖ cars and bicycles use eight connected circuits and stay on the actual road surfaces (299.3184ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  12 !== 8
+  
+      at TestContext.<anonymous> (G:\new_8\zerowatt-wind-v8\tests\city-mobility.test.cjs:30:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 12,
+    expected: 8,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\environment.test.cjs:143:1
+✖ pedestrians walk, converse, gesture, resume and pause without route jumps (180.6432ms)
+  AssertionError [ERR_ASSERTION]: continuous body position at t=0.533
+      at TestContext.<anonymous> (G:\new_8\zerowatt-wind-v8\tests\environment.test.cjs:150:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

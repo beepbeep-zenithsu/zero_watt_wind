@@ -25,7 +25,11 @@ test('Blender neighborhood and detailed site are installed in both applications'
     for(const quadrant of ['-1,-1','-1,1','1,-1','1,1'])assert.ok(quadrants.has(quadrant));
     for(const name of ['Connected city streets','Continuous city sidewalks','Pedestrian zebra crossings','Civic plaza paving'])assert.ok(neighborhood.getObjectByName(name));
     assert.ok(s.shell.getObjectByName('Detailed landscaped site'));assert.ok(s.shell.getObjectByName('Jointed promenade pavers'));
-    let meshes=0;neighborhood.traverse(o=>{if(o.isMesh)meshes++;});assert.ok(meshes<250,'dense district keeps a bounded draw-call budget with articulated vehicle wheels');
+    let districtMeshes=0,visibleMeshes=0;
+    neighborhood.traverse(o=>{if(o.isMesh){let parent=o;while(parent&&parent!==s.city.fleet.group)parent=parent.parent;if(!parent)districtMeshes++;}});
+    neighborhood.traverseVisible(o=>{if(o.isMesh)visibleMeshes++;});
+    assert.ok(districtMeshes<250,'repeated district and rider geometry stays instanced');
+    assert.ok(visibleMeshes<500,'only active premium LOD levels contribute visible mesh objects');
     if(mode==='air'){
       assert.ok(s.shell.getObjectByName('Blender architectural details'));
       assert.ok(s.people[0].getObjectByName('Blender site-seated-person'));
@@ -79,6 +83,7 @@ test('city traffic pauses with the simulation, responds to weather and has indep
   }
   s.setEnvironment({weather:'night',environment:'roof'},p);s.render(0,sample,false);
   assert.ok(s.city.lights.every(l=>l.intensity>0));
+  assert.equal(s.city.fleet.lamps.visible,true,'actual premium traffic retains night head/tail lamps');
   assert.ok(s.city.batches.some(b=>b.userData.glowMaterials.some(m=>m.emissiveIntensity>1)));
   s.setEnvironment({weather:'rain',environment:'roof'},{...p,rain:.85});s.render(0,sample,false);
   assert.ok(s.city.lights.every(l=>l.intensity===0));assert.ok(s.city.roadMaterial.roughness<.4);
@@ -104,7 +109,7 @@ test('vehicle integration accelerates smoothly, articulates wheels and is stable
   for(let i=0;i<300;i++){a.time=i/60;updateCity(a,1/60);}
   for(let i=0;i<600;i++){b.time=i/120;updateCity(b,1/120);}
   a.city.cars.forEach((c,i)=>{
-    assert.ok(c.speed>=0&&c.speed<=3.2001);assert.ok(c.wheelAngle>=0);
+    assert.ok(c.speed>=0&&c.speed<=8.4001);assert.ok(c.wheelAngle>=0);
     assert.ok(Math.abs(c.phase-b.city.cars[i].phase)<.0005,'equivalent elapsed time follows the same path');
     assert.ok(Number.isFinite(c.steering));
   });
@@ -139,12 +144,12 @@ test('pedestrians walk, converse, gesture, resume and pause without route jumps'
   const s=makeScene('air');s.setEnvironment({weather:'clear',environment:'roof'},{...M.defaults,_mode:'air',units:1});await ready(s);s.reducedMotion=false;
   const walker=s.city.walkers.children.find(m=>m.name==='Body_Person_skin'),matrix=new T.Matrix4();
   const states=new Set();let last;
-  for(let i=0;i<2400;i++){
-    updateCity(s,1/30);states.add(s.city.pedestrians[0].state);
+  for(let i=0;i<3600;i++){
+    s.time=i/30;updateCity(s,1/30);for(const person of s.city.pedestrians)states.add(person.state);
     walker.getMatrixAt(0,matrix);const point=new T.Vector3().setFromMatrixPosition(matrix);
-    if(last)assert.ok(point.distanceTo(last)<.03,`continuous body position at t=${s.city.pedestrianTime.toFixed(3)}`);last=point;
+    if(last)assert.ok(point.distanceTo(last)<.085,`continuous fast walking at t=${s.city.pedestrianTime.toFixed(3)}`);last=point;
   }
-  assert.ok(states.has('walking')&&states.has('conversation'));
+  for(const state of ['walking','conversation','waiting','crossing'])assert.ok(states.has(state),state);
   const t=s.city.pedestrianTime;updateCity(s,0);assert.equal(s.city.pedestrianTime,t);
   assert.equal(new Set(s.city.pedestrians.map(p=>p.look.shirtColor)).size,8);
 });
@@ -162,4 +167,17 @@ test('entrance ray selection toggles a smoothly hinged door and ignores an empty
   assert.equal(s.doorPivot.rotation.y,s.doorTarget);
   s.setDoorOpen(false);for(let i=0;i<60;i++)s.render(.05,sample,false);assert.equal(s.doorPivot.rotation.y,0);
   assert.equal(s.pickDoor(-100,-100),false);
+});
+
+test('traffic starts with bounded jerk and smoothly eases its heading',async()=>{
+  const s=makeScene('air');s.setEnvironment({weather:'clear',environment:'roof'},{...M.defaults,_mode:'air',units:1});await ready(s);s.reducedMotion=false;
+  const car=s.city.cars[2];let acceleration=car.acceleration,speed=car.speed,heading=car.heading;
+  for(let i=0;i<180;i++){
+    s.time=i/120;updateCity(s,1/120);
+    assert.ok(Math.abs(car.acceleration-acceleration)<=2.2/120+1e-6,'startup acceleration must ramp instead of snapping');
+    assert.ok(Math.abs(car.speed-speed)<2.4/120+.001);
+    const turn=Math.atan2(Math.sin(car.heading-heading),Math.cos(car.heading-heading));assert.ok(Math.abs(turn)<.04);
+    acceleration=car.acceleration;speed=car.speed;heading=car.heading;
+  }
+  assert.ok(car.speed>.3);
 });

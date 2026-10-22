@@ -1,0 +1,17 @@
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (2102.4223ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3206.1664

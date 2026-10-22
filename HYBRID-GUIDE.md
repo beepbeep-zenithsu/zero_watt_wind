@@ -22,6 +22,9 @@ Use HTTP rather than opening `index.html` as a file. No external asset CDNs are 
 
 ## Explore
 
+- **Higher wind/RPM:** Advanced wind now spans 0–60 m/s. Fan target spans 80–1200 RPM, and live rotor/fan RPM appears beneath the wind control. Wind-driven RPM can exceed the assistance target; the target governs electrical assistance. The educational model no longer plateaus at the old 360 W wind-power ceiling.
+- **Traffic motion:** acceleration ramps, anticipatory bend speeds, gentle braking and eased heading run with fixed 120 Hz integration. Existing premium-model LOD loading and moving fallback vehicles are preserved.
+
 - **City view** frames the full district in Basic, Advanced and Pond scenes. Reset camera returns to the installation. Drag to orbit and scroll to zoom.
 - Street cars accelerate, queue, steer and rotate their wheels. Red/amber/green signals include an all-red clearance interval.
 - Pedestrian pairs walk along sidewalks, stop for face-to-face gestures, and resume. These social encounters use animation without generated voices.

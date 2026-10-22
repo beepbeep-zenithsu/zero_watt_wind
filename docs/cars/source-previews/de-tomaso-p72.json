@@ -1,0 +1,38 @@
+{
+  "name": "de-tomaso-p72",
+  "bounds": [
+    [
+      -1037.6689453125,
+      -2355.71923828125,
+      3.185380220413208
+    ],
+    [
+      1037.6689453125,
+      2383.12060546875,
+      1110.9525146484375
+    ]
+  ],
+  "objects": [
+    {
+      "name": "Object_2",
+      "polygons": 2631,
+      "materials": [
+        "Standard32B531"
+      ]
+    },
+    {
+      "name": "Object_3",
+      "polygons": 7108,
+      "materials": [
+        "Standard32B531"
+      ]
+    },
+    {
+      "name": "Object_4",
+      "polygons": 11756,
+      "materials": [
+        "Standard32B531"
+      ]
+    }
+  ]
+}

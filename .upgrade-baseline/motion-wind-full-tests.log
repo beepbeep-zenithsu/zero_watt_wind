@@ -1,0 +1,128 @@
+
+> zerowatt-wind@8.0.0 test
+> node --test tests/*.test.cjs
+
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ Blender neighborhood and detailed site are installed in both applications (2355.9578ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (551.5673ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (2181.4186ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (643.155ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (2241.9015ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (3549.6824ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (4754.0936ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (489.3591ms)
+✔ traffic starts with bounded jerk and smoothly eases its heading (478.0511ms)
+(node:24672) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/cars/car-catalog.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ traffic catalog has eight unique cars with three ascending LODs (59.6598ms)
+✔ LOD clones share geometry and materials with the cached template (213.2044ms)
+✔ engineering source hash and all 84 representative outputs match the pre-upgrade baseline (22.8362ms)
+✔ every exported GLB loads through the actual r180 loader with finite geometry and expected axes (613.2739ms)
+✔ water uses stable GPU deformation and responds to weather without changing simulation state (29.7525ms)
+✔ asset replacement preserves the animated parent transform and shared resources survive layout disposal (5.4668ms)
+✔ mode switching preserves the original scene and uses a bounded cached advanced instance (1017.0307ms)
+✔ presets, presentation controls, component selection and pause update real state (1048.5382ms)
+✔ advanced daylight, tracking and room controls stay independent of Basic (360.7149ms)
+✔ Monsoon disables all solar and motor assistance, preserves wind and restores Sunny (470.6125ms)
+✔ Advanced Urban Canyon selects the rebuilt district and sheltered wind without disabling solar (184.1988ms)
+✔ Advanced viewport scenario menu works in fit screen and stays synchronized with sidebar (182.7615ms)
+✔ Advanced wind and target controls expose the extended range and live RPM (675.7624ms)
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ Advanced wind RPM grows across the extended 0–60 m/s range instead of plateauing (49.7951ms)
+✔ wind, weak-wind hybrid, motor-only and protection demonstrations settle correctly (38.7164ms)
+✔ PV and battery are finite; empty night system stops and full battery curtails surplus (20.3605ms)
+✔ assistance requires timed verification; battery recovery has separate hysteresis (6.163ms)
+✔ actual Blender GLB loads with finite geometry, all pivots and the intended shaft origins (2100.2945ms)
+✖ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (16739.2247ms)
+✔ sun tracking aligns the module normal and keeps the roof rack anchored (340.3134ms)
+✔ Monsoon operates solely on wind regardless of battery, sunlight and assistance policy (12.7454ms)
+✔ advanced exhaust clears the roof and the entrance supports an enclosed interior view (386.3573ms)
+✔ face control never changes wind by default, including speaking-like lip shapes (1301.8186ms)
+✔ blow option: puckered lips alone (no breath sound) never raise the wind, and nothing resets it (373.3068ms)
+✔ head turn switches once per hold and rearms only at centre (259.0106ms)
+✔ resting hands cannot change wind; pinch clicks once until released (210.5184ms)
+✔ tracking begins pinched and tracking loss cannot generate phantom clicks (130.8525ms)
+✔ pinch drags sliders and releases without repeated clicks (100.6246ms)
+✔ two-finger adjustment ignores small neutral jitter and releases immediately (344.7357ms)
+✔ commands preserve decimals, spoken numbers, relative changes and limits (254.4867ms)
+✔ common offline mishearing of set is limited to a command at the start (107.5368ms)
+✔ speech previews do not execute; each final result executes once (146.7477ms)
+✔ lip gesture cannot change wind while voice is active (324.9432ms)
+✔ stop cancels a pending microphone permission request (124.1343ms)
+✔ speech restarts after a normal end and ignores an old session after stop (99.3893ms)
+✔ blocked speech service releases the microphone and reports the error (163.6438ms)
+✔ browser service network failure preserves its cause and points to offline voice (91.5289ms)
+✔ normal no-speech timeouts do not accumulate startup failures (90.6916ms)
+✔ offline voice is the default and only final utterances change the app (125.7975ms)
+✔ cancelling offline model loading cannot reactivate voice (155.0254ms)
+✔ microphone check measures sound, detects silence, and releases input after eight seconds (200.8642ms)
+✔ audio setup failures are visible and release the microphone (44.6968ms)
+✔ hover-to-click clicks a button once after about a second and not again until the ring leaves (123.0661ms)
+✔ a quick two-frame pinch clicks even on a slow camera (92.0921ms)
+✔ zoom only starts after holding two fingers still over the scene, then open hand zooms in and curled fingers zoom out (71.2131ms)
+✔ zoom mode ends by itself after a few idle seconds and needs arming again (90.1736ms)
+✔ zoom needs the scene under the cursor (51.5957ms)
+✔ face switch works right after the face appears, without holding still to calibrate (44.3727ms)
+✔ offline engine forwards audio, previews and finals, and disconnects everything on stop (263.2933ms)
+✔ aborting model load terminates the worker and rejects startup (70.598ms)
+✔ bad offline models report failure and terminate their worker (16.6048ms)
+ZeroWatt: original geometry retained for workspace: Failed to parse URL from assets/zw-upgrade/workspace.glb
+ZeroWatt: original geometry retained for chair: Failed to parse URL from assets/zw-upgrade/chair.glb
+ZeroWatt: original geometry retained for site-seated-person: Failed to parse URL from assets/environment/site-seated-person.glb
+ZeroWatt: original geometry retained for site-canyon-tower: Failed to parse URL from assets/environment/site-canyon-tower.glb
+✔ window apertures remain clear of opaque walls as the building changes size (642.7234ms)
+✔ the full enclosure closes the entrance and roof while the hinged door opens a real passage (98.9327ms)
+✔ all original inputs and weather cases remain usable without bottom readout panels (3523.4698ms)
+✔ maximum installations, manual brake, keyboard tabs and reduced-motion initial pause are preserved (828.3588ms)
+ZeroWatt: premium traffic model jaguar-e-type not found; original car retained.
+ZeroWatt: premium traffic model porsche-taycan not found; original car retained.
+ZeroWatt: premium traffic model ferrari-roma not found; original car retained.
+ZeroWatt: premium traffic model mclaren-gt not found; original car retained.
+ZeroWatt: premium traffic model pininfarina-battista not found; original car retained.
+ZeroWatt: premium traffic model de-tomaso-p72 not found; original car retained.
+ZeroWatt: premium traffic model mclaren-elva not found; original car retained.
+ZeroWatt: premium traffic model lotus-evija not found; original car retained.
+✔ ventilation paths use model flow, stop powered trails at zero output, and preserve background exchange (1896.8035ms)
+✔ all intake paths cross actual window apertures and exhaust paths follow each installed fan (1128.5095ms)
+✔ camera movement eases while paused, settles to the target, and frames portrait inspection views (901.6202ms)
+ℹ tests 67
+ℹ suites 0
+ℹ pass 66
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22596.6864
+
+✖ failing tests:
+
+test at tests\hybrid.test.cjs:68:1
+✖ advanced animation shares RPM ratios, pauses, sections and reassembles without drifting (16739.2247ms)
+  Error: UNKNOWN: unknown error, open 'G:\new_8\zerowatt-wind-v8\.upgrade-baseline\verification\hybrid.json'
+      at Object.writeFileSync (node:fs:2482:20)
+      at meshSnapshot (G:\new_8\zerowatt-wind-v8\tools\verify-graphics.cjs:85:6)
+      at TestContext.<anonymous> (G:\new_8\zerowatt-wind-v8\tests\hybrid.test.cjs:88:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -4094,
+    code: 'UNKNOWN',
+    syscall: 'open',
+    path: 'G:\\new_8\\zerowatt-wind-v8\\.upgrade-baseline\\verification\\hybrid.json'
+  }

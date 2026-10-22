@@ -1,0 +1,73 @@
+{
+  "name": "jaguar-e-type-nommoc",
+  "bounds": [
+    [
+      -2.20600962638855,
+      -0.8730254173278809,
+      -1.360713781650702e-06
+    ],
+    [
+      2.3293981552124023,
+      0.873027503490448,
+      1.2786129713058472
+    ]
+  ],
+  "objects": [
+    {
+      "name": "Object_4",
+      "polygons": 9623,
+      "materials": [
+        "body"
+      ]
+    },
+    {
+      "name": "Object_5",
+      "polygons": 860,
+      "materials": [
+        "glass"
+      ]
+    },
+    {
+      "name": "Object_6",
+      "polygons": 50255,
+      "materials": [
+        "flame"
+      ]
+    },
+    {
+      "name": "Object_7",
+      "polygons": 15991,
+      "materials": [
+        "flame"
+      ]
+    },
+    {
+      "name": "Object_8",
+      "polygons": 11336,
+      "materials": [
+        "black"
+      ]
+    },
+    {
+      "name": "Object_9",
+      "polygons": 30,
+      "materials": [
+        "logo"
+      ]
+    },
+    {
+      "name": "Object_10",
+      "polygons": 29108,
+      "materials": [
+        "yellow"
+      ]
+    },
+    {
+      "name": "Object_11",
+      "polygons": 8324,
+      "materials": [
+        "material"
+      ]
+    }
+  ]
+}

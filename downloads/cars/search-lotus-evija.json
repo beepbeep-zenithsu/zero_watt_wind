@@ -1,0 +1,3089 @@
+{
+  "cursors": {
+    "next": null,
+    "previous": null
+  },
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0759efe278f6400392b883e5657952b8",
+      "uid": "0759efe278f6400392b883e5657952b8",
+      "name": "Lotus Evija 2020",
+      "staffpickedAt": null,
+      "viewCount": 6473,
+      "likeCount": 102,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0759efe278f6400392b883e5657952b8",
+      "embedUrl": "https://sketchfab.com/models/0759efe278f6400392b883e5657952b8/embed",
+      "commentCount": 4,
+      "isDownloadable": false,
+      "publishedAt": "2021-09-14T15:00:43.448290",
+      "tags": [
+        {
+          "name": "wheel",
+          "slug": "wheel",
+          "uri": "https://api.sketchfab.com/v3/tags/wheel"
+        },
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "transportation",
+          "slug": "transportation",
+          "uri": "https://api.sketchfab.com/v3/tags/transportation"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "drive",
+          "slug": "drive",
+          "uri": "https://api.sketchfab.com/v3/tags/drive"
+        },
+        {
+          "name": "sedan",
+          "slug": "sedan",
+          "uri": "https://api.sketchfab.com/v3/tags/sedan"
+        },
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "classic",
+          "slug": "classic",
+          "uri": "https://api.sketchfab.com/v3/tags/classic"
+        },
+        {
+          "name": "bus",
+          "slug": "bus",
+          "uri": "https://api.sketchfab.com/v3/tags/bus"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "part",
+          "slug": "part",
+          "uri": "https://api.sketchfab.com/v3/tags/part"
+        },
+        {
+          "name": "supercars",
+          "slug": "supercars",
+          "uri": "https://api.sketchfab.com/v3/tags/supercars"
+        },
+        {
+          "name": "caring",
+          "slug": "caring",
+          "uri": "https://api.sketchfab.com/v3/tags/caring"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "bb146687b0244530a8a8c2c09ef058cd",
+            "size": 127901,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0759efe278f6400392b883e5657952b8/thumbnails/74a1e8908d8147b3a9924abab4d79399/ae025a6a8cb34360b20f890c22f16982.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2ba980ea17c546838744353259443ef4",
+            "size": 38097,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0759efe278f6400392b883e5657952b8/thumbnails/74a1e8908d8147b3a9924abab4d79399/eb0f663f6a6342ea82710d6b20cd73f6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7baceee7f64d4c4c891c8386449cd6d5",
+            "size": 21557,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0759efe278f6400392b883e5657952b8/thumbnails/74a1e8908d8147b3a9924abab4d79399/d70cc410a16e48e8890ad388c415902c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d46a9a8c983e41d096d887d72f60e9d7",
+            "size": 4401,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0759efe278f6400392b883e5657952b8/thumbnails/74a1e8908d8147b3a9924abab4d79399/35de93d3f92d4d6889ea5ae56856bdee.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "fef811aa391744479e4c915383b18407",
+            "size": 1107,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0759efe278f6400392b883e5657952b8/thumbnails/74a1e8908d8147b3a9924abab4d79399/1da80ac0b56d468380c7a132fa5ed2de.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7b2d51a011d4477aaaf771ce1552fd11",
+        "username": "roh3d",
+        "displayName": "ROH3D",
+        "profileUrl": "https://sketchfab.com/roh3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/a898620019814efd801dc91f7e10d92c",
+          "images": [
+            {
+              "size": 885,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/7ca903f489154675833261fd5e225185.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1118,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/465bf89f17a443ed880e869fc3b5aa29.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2019,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/5d3d9edf7ebb4f149297a0b6d7e1f5ce.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2293,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/3ff55b260bc64056b4986ec55c3e5b64.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7b2d51a011d4477aaaf771ce1552fd11"
+      },
+      "description": "Low Poly Car: Lotus Evija 2020. Nice geometry and surface flow. Perfect for every kind of project.",
+      "faceCount": 22688,
+      "createdAt": "2021-09-14T14:24:27.761918",
+      "vertexCount": 12466,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 33936196,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 22688,
+          "vertexCount": 13921
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 33271805,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 22688,
+          "vertexCount": 13921
+        },
+        "source": {
+          "textureCount": null,
+          "size": 106409748,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5258445,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/985005a6dc194a258812c75a499bc06f",
+      "uid": "985005a6dc194a258812c75a499bc06f",
+      "name": "2019 Lotus Evija",
+      "staffpickedAt": null,
+      "viewCount": 2818,
+      "likeCount": 57,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-985005a6dc194a258812c75a499bc06f",
+      "embedUrl": "https://sketchfab.com/models/985005a6dc194a258812c75a499bc06f/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-12-03T07:46:28.849166",
+      "tags": [
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "lotus-evija",
+          "slug": "lotus-evija",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus-evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b61f9e30d76b452585acfc770aea03dd",
+            "size": 136624,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/985005a6dc194a258812c75a499bc06f/thumbnails/b047577c0ea340c8a7228a8d7c54e278/b9937527803a44aeadc45637711a928e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a1b63d81ac5c4ee6845649c49d0f1a54",
+            "size": 48337,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/985005a6dc194a258812c75a499bc06f/thumbnails/b047577c0ea340c8a7228a8d7c54e278/877ad38d6fc54e9e945218d3a4752da4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "60f10a5d23224fb48172f5e52bc12f88",
+            "size": 29494,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/985005a6dc194a258812c75a499bc06f/thumbnails/b047577c0ea340c8a7228a8d7c54e278/7ad8979f4a724209a6bb0d6c588ed5a3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "167779a6311649228e56fcc323915d16",
+            "size": 6734,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/985005a6dc194a258812c75a499bc06f/thumbnails/b047577c0ea340c8a7228a8d7c54e278/c3995fd9b1164085abc3b73bb86e47a3.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c899d0dcdef64b51bcd1d537ed3bd7d0",
+            "size": 1339,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/985005a6dc194a258812c75a499bc06f/thumbnails/b047577c0ea340c8a7228a8d7c54e278/e9045c7cd20f44f2a61530444bc8559c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18c9b8a5047746e7b944294c7ba35dc4",
+        "username": "outpiston",
+        "displayName": "OUTPISTON",
+        "profileUrl": "https://sketchfab.com/outpiston",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6509b6c75faf498bb9d55c0e81927c17",
+          "images": [
+            {
+              "size": 1391,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/d4bcee40eeca4bab90ccd9afc9ee270a.png",
+              "height": 32
+            },
+            {
+              "size": 2512,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/da5d4104086446579e0016343471a985.png",
+              "height": 48
+            },
+            {
+              "size": 6460,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/23b7891b0f2144958054b0d0eed27dcd.png",
+              "height": 90
+            },
+            {
+              "size": 7357,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6509b6c75faf498bb9d55c0e81927c17/01feb0c03b974583b05bc69a191b4459.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18c9b8a5047746e7b944294c7ba35dc4"
+      },
+      "description": "Source: Real Racing 3",
+      "faceCount": 56508,
+      "createdAt": "2025-12-03T05:42:36.151854",
+      "vertexCount": 34129,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 11,
+          "size": 3718036,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 56508,
+          "vertexCount": 57171
+        },
+        "gltf": {
+          "textureCount": 11,
+          "size": 2268482,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 56508,
+          "vertexCount": 57171
+        },
+        "source": {
+          "textureCount": null,
+          "size": 4603929,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1984181,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/bcb96e7edf8a4f9ca8a4688ed3493362",
+      "uid": "bcb96e7edf8a4f9ca8a4688ed3493362",
+      "name": "Lego Lotus Evija",
+      "staffpickedAt": null,
+      "viewCount": 1017,
+      "likeCount": 25,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-bcb96e7edf8a4f9ca8a4688ed3493362",
+      "embedUrl": "https://sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2023-03-13T19:10:03.010296",
+      "tags": [
+        {
+          "name": "lego",
+          "slug": "lego",
+          "uri": "https://api.sketchfab.com/v3/tags/lego"
+        },
+        {
+          "name": "legocar",
+          "slug": "legocar",
+          "uri": "https://api.sketchfab.com/v3/tags/legocar"
+        },
+        {
+          "name": "legomodel",
+          "slug": "legomodel",
+          "uri": "https://api.sketchfab.com/v3/tags/legomodel"
+        },
+        {
+          "name": "3dsmax",
+          "slug": "3dsmax",
+          "uri": "https://api.sketchfab.com/v3/tags/3dsmax"
+        },
+        {
+          "name": "3dsmaxpublisher",
+          "slug": "3dsmaxpublisher",
+          "uri": "https://api.sketchfab.com/v3/tags/3dsmaxpublisher"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9e55906df1154885be71ddbed6128e6c",
+            "size": 281943,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/thumbnails/95f3c5b9c9f94ffda15340fab583dc7f/9204dce21ee54a4b9bd8021bac3eb413.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3f6cfb5812f742fab458d23807710195",
+            "size": 76745,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/thumbnails/95f3c5b9c9f94ffda15340fab583dc7f/81cb23f9a75e48c089d14ed3ae18ed75.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4e66269e582846a69c779cc23b7fdd6b",
+            "size": 41780,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/thumbnails/95f3c5b9c9f94ffda15340fab583dc7f/b82c737425a64c7fa3bdf6d57e761647.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "84947598fc19472b8c2578b211b155e9",
+            "size": 7368,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/thumbnails/95f3c5b9c9f94ffda15340fab583dc7f/0efcbf2d873c469fa22696a9c2db82c4.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "704e1a440ab44fd6b216e2c4d5390689",
+            "size": 1356,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/bcb96e7edf8a4f9ca8a4688ed3493362/thumbnails/95f3c5b9c9f94ffda15340fab583dc7f/2b550a9a27d14d65a4215295a88a39d6.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "54bff901756b47d2b6a40c14294aa5c4",
+        "username": "Ch-4-rlie",
+        "displayName": "Ch4rlie",
+        "profileUrl": "https://sketchfab.com/Ch-4-rlie",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3f136dc65121407b90aaed2739a41e25",
+          "images": [
+            {
+              "size": 1075,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3f136dc65121407b90aaed2739a41e25/be9c9c30bab6470d999b68c51eaf111f.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1551,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3f136dc65121407b90aaed2739a41e25/a5800eb93c534f0ca36315b836412568.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3556,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3f136dc65121407b90aaed2739a41e25/427719158a664703850263ae9fd99ac5.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4187,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3f136dc65121407b90aaed2739a41e25/4c16b7eafbc14db6a85e0801baa5b4d8.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/54bff901756b47d2b6a40c14294aa5c4"
+      },
+      "description": "The Lego Lotus Evija 76907\nModeled in 3dsmax, textured in photoshop",
+      "faceCount": 21510,
+      "createdAt": "2023-03-13T19:09:29.479929",
+      "vertexCount": 11149,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 5145372,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 21498,
+          "vertexCount": 20915
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 4362906,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 21498,
+          "vertexCount": 20915
+        },
+        "source": {
+          "textureCount": null,
+          "size": 7452514,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3230346,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/80d85f9fe49f4e249548a466a5674835",
+      "uid": "80d85f9fe49f4e249548a466a5674835",
+      "name": "lotus evija",
+      "staffpickedAt": null,
+      "viewCount": 139,
+      "likeCount": 17,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-80d85f9fe49f4e249548a466a5674835",
+      "embedUrl": "https://sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-10-14T12:14:33.959376",
+      "tags": [
+        {
+          "name": "track",
+          "slug": "track",
+          "uri": "https://api.sketchfab.com/v3/tags/track"
+        },
+        {
+          "name": "asphalt",
+          "slug": "asphalt",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "asphalt-8",
+          "slug": "asphalt-8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt-8"
+        },
+        {
+          "name": "asphalt8",
+          "slug": "asphalt8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt8"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "dd23ae986b54448d9e0bf2b81526a455",
+            "size": 107223,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/thumbnails/0437327f389e4a8a9b005433e278a9a5/ca3567899058417ebc8f7dccd2467ac9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9ddbb2e8f587403daf450042b97cd687",
+            "size": 37325,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/thumbnails/0437327f389e4a8a9b005433e278a9a5/7596f22da0074f32b327336ae5d42996.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "afef839f97c74479b0652e888436d27f",
+            "size": 22445,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/thumbnails/0437327f389e4a8a9b005433e278a9a5/5a140bbeec5b48c686acaa1f359517fb.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3563f1ad403040c9be923b21545b3186",
+            "size": 5056,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/thumbnails/0437327f389e4a8a9b005433e278a9a5/085e9df402b94880b39f8cdb28a01816.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "214d5b2bedd041819dd470b0e21ea323",
+            "size": 1139,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/80d85f9fe49f4e249548a466a5674835/thumbnails/0437327f389e4a8a9b005433e278a9a5/a9d5cfd38c974435b8eaa9978a1bac82.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a3f53ccb4bbd4b20adb3212a3e039799",
+        "username": "amogusstrikesback2",
+        "displayName": "amogusstrikesback2",
+        "profileUrl": "https://sketchfab.com/amogusstrikesback2",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1e86f6ba160c4c7ba2f2466cf9129512",
+          "images": [
+            {
+              "size": 2236,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/9bb265aa88194112a83577fdf18308f5.png",
+              "height": 32
+            },
+            {
+              "size": 4490,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/aeb9f312f1ac4133bd3b51ffdc3aa1c4.png",
+              "height": 48
+            },
+            {
+              "size": 13455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/02c7cedec824424abd925b65c37418d7.png",
+              "height": 90
+            },
+            {
+              "size": 16128,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/e9f778f720e14ed4889f244f8bb23f18.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a3f53ccb4bbd4b20adb3212a3e039799"
+      },
+      "description": "",
+      "faceCount": 30893,
+      "createdAt": "2026-10-14T12:01:10.342696",
+      "vertexCount": 17962,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 3203684,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 30893,
+          "vertexCount": 32666
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 2420565,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 30893,
+          "vertexCount": 32666
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5083628,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1690072,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f424ad6f28284d1d89d9136b0ad0b905",
+      "uid": "f424ad6f28284d1d89d9136b0ad0b905",
+      "name": "NFS UNBOUND LOTUS EVIJA CRITERION EDITION",
+      "staffpickedAt": null,
+      "viewCount": 1375,
+      "likeCount": 52,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f424ad6f28284d1d89d9136b0ad0b905",
+      "embedUrl": "https://sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/embed",
+      "commentCount": 9,
+      "isDownloadable": false,
+      "publishedAt": "2025-04-26T21:10:21.013197",
+      "tags": [
+        {
+          "name": "nfs",
+          "slug": "nfs",
+          "uri": "https://api.sketchfab.com/v3/tags/nfs"
+        },
+        {
+          "name": "unbound",
+          "slug": "unbound",
+          "uri": "https://api.sketchfab.com/v3/tags/unbound"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d86f4934971c4c8599efad3b7d162b9f",
+            "size": 77082,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/thumbnails/3457d7721723481f83502b8233a2c2c7/6be2028a64b24cd2b15e85df88f2b9ea.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "84c16a9f376f4987b47c51510f76e38b",
+            "size": 26622,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/thumbnails/3457d7721723481f83502b8233a2c2c7/e03c1b1839b94bd7ad7a0ca880dcc2cc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "182d8a80096041a6bbc511fd122da49d",
+            "size": 15701,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/thumbnails/3457d7721723481f83502b8233a2c2c7/dc3d9e90f29e4ecc8eba899c607aabca.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ba5e8620c069483895c415e8c8f4ba31",
+            "size": 3466,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/thumbnails/3457d7721723481f83502b8233a2c2c7/78817b2411494541a66f9108e4b0894f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5cd3057e9f8142dba9fb9a7f6771cf55",
+            "size": 985,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f424ad6f28284d1d89d9136b0ad0b905/thumbnails/3457d7721723481f83502b8233a2c2c7/0a0fb52e2b4a430cb22e074a5547eb84.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ea4354e26c284d3580da9d7e9746d7a9",
+        "username": "SoMeOnE_7",
+        "displayName": "SoMeOnE_7",
+        "profileUrl": "https://sketchfab.com/SoMeOnE_7",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/5da988fa19ae4619a67ee9640e20e6f4",
+          "images": [
+            {
+              "size": 1812,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5da988fa19ae4619a67ee9640e20e6f4/e562dde294074bc785dbbe2a3dbb74bb.png",
+              "height": 32
+            },
+            {
+              "size": 3386,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5da988fa19ae4619a67ee9640e20e6f4/c1306c41e7944373a2ac5aad0ae62dfb.png",
+              "height": 48
+            },
+            {
+              "size": 9271,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/5da988fa19ae4619a67ee9640e20e6f4/f3afa8219f654442a84faa8b8bd8bba6.png",
+              "height": 90
+            },
+            {
+              "size": 10835,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/5da988fa19ae4619a67ee9640e20e6f4/a5789dfbb58a4c198b9b557d1f67ce49.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ea4354e26c284d3580da9d7e9746d7a9"
+      },
+      "description": "The custom Evija - Criterion Edition is a legendary rated modified car that can be purchased from the \"Buy Custom\" section of the \"Buy and Sell\" menu in the garage for $2,600,000 and has a Tier S+ 400+ performance rating.\n\n\n\n!PLS DO NOT POST MY MODEL TO OTHER SITES! thank you\n\nhope you like it",
+      "faceCount": 158046,
+      "createdAt": "2025-04-26T21:07:58.839465",
+      "vertexCount": 95432,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/616569c5e2c64608995eb8c4f19a2285",
+      "uid": "616569c5e2c64608995eb8c4f19a2285",
+      "name": "2020 Lotus Evija",
+      "staffpickedAt": null,
+      "viewCount": 2719,
+      "likeCount": 16,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-616569c5e2c64608995eb8c4f19a2285",
+      "embedUrl": "https://sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/embed",
+      "commentCount": 3,
+      "isDownloadable": false,
+      "publishedAt": "2020-08-17T15:33:29.625291",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "513897cae0424c6c9c71ce455cc61cf7",
+            "size": 108622,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/thumbnails/5350f58f86c64e7fae6c88239a3e262b/36ce80ce27f74b8b9159c87dca01861f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d4fb2152208e4835bd2c952295255021",
+            "size": 34274,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/thumbnails/5350f58f86c64e7fae6c88239a3e262b/3659ae4d773844f6ae143de1b0f71a32.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "83f88a65a3f942ea9650f8c2633d8f36",
+            "size": 19951,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/thumbnails/5350f58f86c64e7fae6c88239a3e262b/7baba3b49a8944c182f69e762cd54570.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7527d4d614bf4c6b9e1b14d221af71ed",
+            "size": 4567,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/thumbnails/5350f58f86c64e7fae6c88239a3e262b/d8121b4475a544eb854f27c7dce02c59.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "50de369a34ff4b03a217358bbf0fbd5e",
+            "size": 894,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/616569c5e2c64608995eb8c4f19a2285/thumbnails/5350f58f86c64e7fae6c88239a3e262b/1c6c323acd2b47fba8d7d139cac06e15.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5b1345e8630c468887b689b54cbd2f3b",
+        "username": "AGZ",
+        "displayName": "AGZ",
+        "profileUrl": "https://sketchfab.com/AGZ",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3993169de1434d53b6c71c06e9391553",
+          "images": [
+            {
+              "size": 2017,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/40d00e7a55994b7e9c496c6a5d502923.png",
+              "height": 32
+            },
+            {
+              "size": 4051,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/dc3ab54fc11d45a4ad27ab0dd81b2691.png",
+              "height": 48
+            },
+            {
+              "size": 12433,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/ad6708d3e2a9426b8593ea022547813f.png",
+              "height": 90
+            },
+            {
+              "size": 14826,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3993169de1434d53b6c71c06e9391553/b574bc99fa2e4f9da1f02fb3d413f379.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5b1345e8630c468887b689b54cbd2f3b"
+      },
+      "description": "",
+      "faceCount": 78110,
+      "createdAt": "2020-08-17T15:25:18.386864",
+      "vertexCount": 45756,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c801a90321744c7caa57ba5e0a9d90ef",
+      "uid": "c801a90321744c7caa57ba5e0a9d90ef",
+      "name": "TOON Hypercars : Lotus Evija",
+      "staffpickedAt": null,
+      "viewCount": 579,
+      "likeCount": 17,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c801a90321744c7caa57ba5e0a9d90ef",
+      "embedUrl": "https://sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-01-08T11:26:27.105312",
+      "tags": [
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "toon",
+          "slug": "toon",
+          "uri": "https://api.sketchfab.com/v3/tags/toon"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "stylized",
+          "slug": "stylized",
+          "uri": "https://api.sketchfab.com/v3/tags/stylized"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "38d3d5a1bafa4623a87bca4e7a499377",
+            "size": 91185,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/thumbnails/8d1c1e31203b41ce922f92e3e47123c6/52678f83e17244509ca42d3ebcaaea07.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9c433847e5774b60b1b71a6fecff34db",
+            "size": 35795,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/thumbnails/8d1c1e31203b41ce922f92e3e47123c6/e813f2f5714b45e39afdbed2bd5f4629.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8b17a5b55f694b2b8cd5d9222011368b",
+            "size": 22462,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/thumbnails/8d1c1e31203b41ce922f92e3e47123c6/ac68834c2612489dad0a4b1ae0f1f1a2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "13588f33e03145ea96ed31a2111e61a6",
+            "size": 5706,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/thumbnails/8d1c1e31203b41ce922f92e3e47123c6/b6aabae0625e41baa409408f9cf2f28e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1fd0b75a8acd482dafe5aaf9c835694c",
+            "size": 1331,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c801a90321744c7caa57ba5e0a9d90ef/thumbnails/8d1c1e31203b41ce922f92e3e47123c6/001ec29ce9ca456993444ea9cbaa0a1e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ad561c1c9ae44bff94ea62c10ee6f945",
+        "username": "LePointBAT",
+        "displayName": "LePoint_BAT",
+        "profileUrl": "https://sketchfab.com/LePointBAT",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3eaa1c89cee54e9d9768e6424252a65d",
+          "images": [
+            {
+              "size": 1791,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3eaa1c89cee54e9d9768e6424252a65d/0a6551cb01d149029bcd5036d11b1d7e.png",
+              "height": 32
+            },
+            {
+              "size": 3760,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3eaa1c89cee54e9d9768e6424252a65d/41ebbe7b31b543059e64f9f5502ababf.png",
+              "height": 48
+            },
+            {
+              "size": 13285,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3eaa1c89cee54e9d9768e6424252a65d/26b8f67a0b2c4cf593045c38c24eab5b.png",
+              "height": 90
+            },
+            {
+              "size": 16215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3eaa1c89cee54e9d9768e6424252a65d/d2ea34666919462f9f255223cb577444.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ad561c1c9ae44bff94ea62c10ee6f945"
+      },
+      "description": "This car is part of the \"Hypercars\" series\nAvailable for purchase on my website.\nDiscover all my models in the same style !",
+      "faceCount": 45564,
+      "createdAt": "2023-01-08T09:55:34.828444",
+      "vertexCount": 26960,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f7047e314f6648f8b5d61fa6b5a797a4",
+      "uid": "f7047e314f6648f8b5d61fa6b5a797a4",
+      "name": "Lotus Evija 2020",
+      "staffpickedAt": null,
+      "viewCount": 406,
+      "likeCount": 13,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f7047e314f6648f8b5d61fa6b5a797a4",
+      "embedUrl": "https://sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-06T12:17:20.585842",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "63917664077e4ba480de749de04ad9d8",
+            "size": 69938,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/thumbnails/d4e0eb45e7064eec934d4d9932be9b61/b9ed93ff2a794acb9d34f0dd9fef5f46.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "59283c0e6019475ba7cb4eccd3fef82f",
+            "size": 23717,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/thumbnails/d4e0eb45e7064eec934d4d9932be9b61/f301bb95808f464d98f805c8319888fe.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "79682f0f07794e848985719a8610ff63",
+            "size": 14185,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/thumbnails/d4e0eb45e7064eec934d4d9932be9b61/b6210d2cd7574e88993232cd35e87a2b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2e3069a2b5ce4e529df5f09deacc3e13",
+            "size": 3436,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/thumbnails/d4e0eb45e7064eec934d4d9932be9b61/48bd4e2ccf644c6c8c7a137d9a9740a0.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e950bc7f75614a6fa68424d16be6d08e",
+            "size": 1010,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f7047e314f6648f8b5d61fa6b5a797a4/thumbnails/d4e0eb45e7064eec934d4d9932be9b61/2cbeb28aa82f4f3daf2df4b2e74ead0f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "714d7e36847a443eaefb5ecacdc16452",
+        "username": "niev",
+        "displayName": "Nieve5677",
+        "profileUrl": "https://sketchfab.com/niev",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2",
+          "images": [
+            {
+              "size": 2543,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/1d5b99bd1f5e4702bd72bf68ff10c818.png",
+              "height": 32
+            },
+            {
+              "size": 5030,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/7a39cd0025e04fce8cda31c50a591f86.png",
+              "height": 48
+            },
+            {
+              "size": 14373,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/38f304c5fe3b48aaa0ecb00fa51d2b6f.png",
+              "height": 90
+            },
+            {
+              "size": 17263,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8d6fa0e43ab24a43b79fe42c4982b9e2/e61279dbfc4543d6a50181bd012e868b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/714d7e36847a443eaefb5ecacdc16452"
+      },
+      "description": "",
+      "faceCount": 1599166,
+      "createdAt": "2025-10-06T12:15:28.842402",
+      "vertexCount": 829719,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 49567412,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1599152,
+          "vertexCount": 946723
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 19780167,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1599152,
+          "vertexCount": 946723
+        },
+        "source": {
+          "textureCount": null,
+          "size": 29305698,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 26893040,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f2f47ba9bcf1462383d1f78fa23ec92c",
+      "uid": "f2f47ba9bcf1462383d1f78fa23ec92c",
+      "name": "Lotus Evija 2020",
+      "staffpickedAt": null,
+      "viewCount": 833,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f2f47ba9bcf1462383d1f78fa23ec92c",
+      "embedUrl": "https://sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/embed",
+      "commentCount": 3,
+      "isDownloadable": false,
+      "publishedAt": "2020-05-12T08:26:23.346406",
+      "tags": [
+        {
+          "name": "british",
+          "slug": "british",
+          "uri": "https://api.sketchfab.com/v3/tags/british"
+        },
+        {
+          "name": "fast",
+          "slug": "fast",
+          "uri": "https://api.sketchfab.com/v3/tags/fast"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "england",
+          "slug": "england",
+          "uri": "https://api.sketchfab.com/v3/tags/england"
+        },
+        {
+          "name": "uk",
+          "slug": "uk",
+          "uri": "https://api.sketchfab.com/v3/tags/uk"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a3bba39197504227bff3949e7012b692",
+            "size": 54561,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/thumbnails/b2fcc62985cd4cbe9d0be0b0626d24f9/00246af04e1d4db9a811cea92b70c305.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "115cc56e6d574c0896e03396a4e06ad9",
+            "size": 20074,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/thumbnails/b2fcc62985cd4cbe9d0be0b0626d24f9/f8b2860b130a4fc4927192367518707c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9c8a972386be48318f270a63610834ca",
+            "size": 12141,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/thumbnails/b2fcc62985cd4cbe9d0be0b0626d24f9/c2c7b89157dd4c93a5ce8ae1fa48eee3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6d5560b971774dd28177007bdb726485",
+            "size": 2838,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/thumbnails/b2fcc62985cd4cbe9d0be0b0626d24f9/542ac003c12b454eb7611ca9b4f76f5f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bee6655277f84db7803dc4ed83d3ccd6",
+            "size": 662,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f2f47ba9bcf1462383d1f78fa23ec92c/thumbnails/b2fcc62985cd4cbe9d0be0b0626d24f9/58f575fa881c4987b313888cc23b633e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "High detailed model created by SQUIR team.",
+      "faceCount": 1599174,
+      "createdAt": "2019-09-21T12:20:56.699884",
+      "vertexCount": 829777,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 45181332,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1599166,
+          "vertexCount": 941386
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 24671788,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1599166,
+          "vertexCount": 941386
+        },
+        "source": {
+          "textureCount": null,
+          "size": 27884082,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 27915740,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/252f3c3a506346edb8e157c90b1365f6",
+      "uid": "252f3c3a506346edb8e157c90b1365f6",
+      "name": "LOTUS Evija - Grey",
+      "staffpickedAt": null,
+      "viewCount": 917,
+      "likeCount": 5,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-252f3c3a506346edb8e157c90b1365f6",
+      "embedUrl": "https://sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2025-03-23T13:04:26.003994",
+      "tags": [
+        {
+          "name": "alias",
+          "slug": "alias",
+          "uri": "https://api.sketchfab.com/v3/tags/alias"
+        },
+        {
+          "name": "automotive",
+          "slug": "automotive",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "cgi",
+          "slug": "cgi",
+          "uri": "https://api.sketchfab.com/v3/tags/cgi"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "cardesign",
+          "slug": "cardesign",
+          "uri": "https://api.sketchfab.com/v3/tags/cardesign"
+        },
+        {
+          "name": "electriccar",
+          "slug": "electriccar",
+          "uri": "https://api.sketchfab.com/v3/tags/electriccar"
+        },
+        {
+          "name": "3drendering",
+          "slug": "3drendering",
+          "uri": "https://api.sketchfab.com/v3/tags/3drendering"
+        },
+        {
+          "name": "3dasset",
+          "slug": "3dasset",
+          "uri": "https://api.sketchfab.com/v3/tags/3dasset"
+        },
+        {
+          "name": "aliasmodel",
+          "slug": "aliasmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/aliasmodel"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "rendering",
+          "slug": "rendering",
+          "uri": "https://api.sketchfab.com/v3/tags/rendering"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        },
+        {
+          "name": "lotusevija",
+          "slug": "lotusevija",
+          "uri": "https://api.sketchfab.com/v3/tags/lotusevija"
+        },
+        {
+          "name": "automotive3d",
+          "slug": "automotive3d",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3a289f66b3874e62b278cb94ada012b7",
+            "size": 152809,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/thumbnails/2b3b03d8808143fe9251048fe2ebaaab/208cedeba94d4ee3ae05972419437afc.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "1caf7a60da2f4bf6a34597e0f8fde40e",
+            "size": 43717,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/thumbnails/2b3b03d8808143fe9251048fe2ebaaab/81b1eaf32d684a7f8862de841954c9e4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "2ebe657fc8864d63891ee7fdb7abed40",
+            "size": 24978,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/thumbnails/2b3b03d8808143fe9251048fe2ebaaab/acd40841cb284cac896ab40d01d929b6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6bf9ce68734e4a93954611d281cdf9d5",
+            "size": 5112,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/thumbnails/2b3b03d8808143fe9251048fe2ebaaab/78355cc7b0f64c7b885b625c5d0ba573.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "07b5d91e08744524837974083bc42cf7",
+            "size": 1168,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/252f3c3a506346edb8e157c90b1365f6/thumbnails/2b3b03d8808143fe9251048fe2ebaaab/a8b4fc6b9d0a46b79887c6cb84cfcc6f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a11e7fa12a3c4163b64ab455b44b4379",
+        "username": "montaudoneliot",
+        "displayName": "Eliot-M-Digital-Design",
+        "profileUrl": "https://sketchfab.com/montaudoneliot",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3c5c00e4f3344c87ae183faede95d1d5",
+          "images": [
+            {
+              "size": 349,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/2ca2667f15ef4563b285365fd181f08e.png",
+              "height": 32
+            },
+            {
+              "size": 492,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/85eb9ca7bb924429a8a176fe13c1ad48.png",
+              "height": 48
+            },
+            {
+              "size": 889,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/25f50a96818f49c58ccae8b1401b9b0a.png",
+              "height": 90
+            },
+            {
+              "size": 975,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/b14b2ead6e9e4065863d8ecd1a98d807.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a11e7fa12a3c4163b64ab455b44b4379"
+      },
+      "description": "Experience this meticulously crafted 3D model of the Lotus Evija, designed over three months in Alias using reference images. This model captures the sleek aerodynamics, smooth curves, and aggressive styling of Lotus’s all-electric hypercar, making it perfect for renders, animations, and real-time applications.\n\n🚀 Now available on Gumroad! Explore the details and bring this futuristic hypercar to life!\n\nIf you want to buy this model folow the behance link, at the end of the project you will found a Gumroad link : [Lotus Evija](https://www.behance.net/gallery/186969689/LOTUS-Evija-Modeling)\n\n🔗 Check it out & bring realism to your projects!",
+      "faceCount": 733446,
+      "createdAt": "2025-03-23T12:54:05.263972",
+      "vertexCount": 378156,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c5bf7b4cca884410a368a10c07ae11e0",
+      "uid": "c5bf7b4cca884410a368a10c07ae11e0",
+      "name": "LOTUS Evija - Onyx",
+      "staffpickedAt": null,
+      "viewCount": 315,
+      "likeCount": 4,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c5bf7b4cca884410a368a10c07ae11e0",
+      "embedUrl": "https://sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2025-03-23T13:33:17.081155",
+      "tags": [
+        {
+          "name": "alias",
+          "slug": "alias",
+          "uri": "https://api.sketchfab.com/v3/tags/alias"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "cgi",
+          "slug": "cgi",
+          "uri": "https://api.sketchfab.com/v3/tags/cgi"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "electriccar",
+          "slug": "electriccar",
+          "uri": "https://api.sketchfab.com/v3/tags/electriccar"
+        },
+        {
+          "name": "automotivedesign",
+          "slug": "automotivedesign",
+          "uri": "https://api.sketchfab.com/v3/tags/automotivedesign"
+        },
+        {
+          "name": "3dasset",
+          "slug": "3dasset",
+          "uri": "https://api.sketchfab.com/v3/tags/3dasset"
+        },
+        {
+          "name": "aliasmodel",
+          "slug": "aliasmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/aliasmodel"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        },
+        {
+          "name": "rendering",
+          "slug": "rendering",
+          "uri": "https://api.sketchfab.com/v3/tags/rendering"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        },
+        {
+          "name": "lotusevija",
+          "slug": "lotusevija",
+          "uri": "https://api.sketchfab.com/v3/tags/lotusevija"
+        },
+        {
+          "name": "automotive3d",
+          "slug": "automotive3d",
+          "uri": "https://api.sketchfab.com/v3/tags/automotive3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c0e06abb29424580ae36f61a9066eb2b",
+            "size": 324658,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/thumbnails/f2f01fd59fbf4636bafab431b5062840/806e176561fd434b9204ebab6bae3a9f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "70f1ba38e9ef440ebe672e09401b8c81",
+            "size": 48407,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/thumbnails/f2f01fd59fbf4636bafab431b5062840/34d1ad5fd67049fa8a029a0cafc02fa5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c95bec378e6b4e1a836a484d51a9e0ec",
+            "size": 27604,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/thumbnails/f2f01fd59fbf4636bafab431b5062840/4c49e6ea0fea4724a3e841fd80154dc8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2044208080db4bcfb3b334c2d05ac63e",
+            "size": 5774,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/thumbnails/f2f01fd59fbf4636bafab431b5062840/8e0324793a0c41fc86df5e67b8ccff42.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bd07472b026540439294e570f1dd5e24",
+            "size": 1319,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c5bf7b4cca884410a368a10c07ae11e0/thumbnails/f2f01fd59fbf4636bafab431b5062840/ac1929deb1ae4c87a538d2640bfbcdb8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a11e7fa12a3c4163b64ab455b44b4379",
+        "username": "montaudoneliot",
+        "displayName": "Eliot-M-Digital-Design",
+        "profileUrl": "https://sketchfab.com/montaudoneliot",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3c5c00e4f3344c87ae183faede95d1d5",
+          "images": [
+            {
+              "size": 349,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/2ca2667f15ef4563b285365fd181f08e.png",
+              "height": 32
+            },
+            {
+              "size": 492,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/85eb9ca7bb924429a8a176fe13c1ad48.png",
+              "height": 48
+            },
+            {
+              "size": 889,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/25f50a96818f49c58ccae8b1401b9b0a.png",
+              "height": 90
+            },
+            {
+              "size": 975,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3c5c00e4f3344c87ae183faede95d1d5/b14b2ead6e9e4065863d8ecd1a98d807.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a11e7fa12a3c4163b64ab455b44b4379"
+      },
+      "description": "Discover this stunning 3D model of the Lotus Evija in an exclusive Onyx color scheme (Copper & Black), crafted over three months in Alias using reference images. This model captures the futuristic aerodynamics, sculpted curves, and striking two-tone finish, making it perfect for renders, animations, and real-time applications.\n \nIf you want to buy this model folow the behance link, at the end of the project you will found a Gumroad link : [Lotus Evija](https://www.behance.net/gallery/186969689/LOTUS-Evija-Modeling)\n\n🔗 Check it out & bring realism to your projects!",
+      "faceCount": 733445,
+      "createdAt": "2025-03-23T13:22:02.585684",
+      "vertexCount": 378156,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/aecf50538715428c8a34ad74d5b3756f",
+      "uid": "aecf50538715428c8a34ad74d5b3756f",
+      "name": "Lotus Evija 2020",
+      "staffpickedAt": null,
+      "viewCount": 656,
+      "likeCount": 7,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-aecf50538715428c8a34ad74d5b3756f",
+      "embedUrl": "https://sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2020-05-12T08:19:15.955969",
+      "tags": [
+        {
+          "name": "british",
+          "slug": "british",
+          "uri": "https://api.sketchfab.com/v3/tags/british"
+        },
+        {
+          "name": "fast",
+          "slug": "fast",
+          "uri": "https://api.sketchfab.com/v3/tags/fast"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "england",
+          "slug": "england",
+          "uri": "https://api.sketchfab.com/v3/tags/england"
+        },
+        {
+          "name": "uk",
+          "slug": "uk",
+          "uri": "https://api.sketchfab.com/v3/tags/uk"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "coupe",
+          "slug": "coupe",
+          "uri": "https://api.sketchfab.com/v3/tags/coupe"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "2019",
+          "slug": "2019",
+          "uri": "https://api.sketchfab.com/v3/tags/2019"
+        },
+        {
+          "name": "2020",
+          "slug": "2020",
+          "uri": "https://api.sketchfab.com/v3/tags/2020"
+        },
+        {
+          "name": "2021",
+          "slug": "2021",
+          "uri": "https://api.sketchfab.com/v3/tags/2021"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f6ff4ee0bea64fabbd520ab34deca2da",
+            "size": 45478,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/thumbnails/13a492fdc13b4163b925638b2d982b8d/82c876f5338e412095786c248a49c601.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7be4ccfc4dd54593a1eb981f5ae35b27",
+            "size": 16215,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/thumbnails/13a492fdc13b4163b925638b2d982b8d/5337c4f0b55341d9ac00df8310ae00ef.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c4e490eeeabc4eea8954c163f8cce20b",
+            "size": 10068,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/thumbnails/13a492fdc13b4163b925638b2d982b8d/2faf5cce4a8c4c829a78e34b8f70c50e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ce3022b7ac6b483b8e3abdcc4427de31",
+            "size": 2277,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/thumbnails/13a492fdc13b4163b925638b2d982b8d/69c882764cbb488a9fe01c53d4d1141d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d094e22cfe5d4e1280066397566ee140",
+            "size": 546,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/aecf50538715428c8a34ad74d5b3756f/thumbnails/13a492fdc13b4163b925638b2d982b8d/7df708be7aa94ba28b66394d361ffac0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9aa81820402645f68f81de98bdf85c9d",
+        "username": "SQUIR3D",
+        "displayName": "SQUIR3D",
+        "profileUrl": "https://sketchfab.com/SQUIR3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/81e1bc1d22fe44108e8b76cd2da856cd",
+          "images": [
+            {
+              "size": 859,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/9f90e4771fa14fd49cef99540746fd74.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1336,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/6c6736cde41d48a0958b4fd26c79e77a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2904,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/4231587acd9741d984c9006529025efb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3276,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/81e1bc1d22fe44108e8b76cd2da856cd/60dbc691a3cd461d9c2494644b7a2c6b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9aa81820402645f68f81de98bdf85c9d"
+      },
+      "description": "High detailed model created by SQUIR team.",
+      "faceCount": 1599174,
+      "createdAt": "2019-11-20T20:41:14.291642",
+      "vertexCount": 829777,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 45181332,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1599166,
+          "vertexCount": 941386
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 24671786,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1599166,
+          "vertexCount": 941386
+        },
+        "source": {
+          "textureCount": null,
+          "size": 27884082,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 27915740,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "5b54cf13b1a4422ca439696eb152070d",
+        "label": "Editorial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cea1fdedebca461dabba65d3df809d9e",
+      "uid": "cea1fdedebca461dabba65d3df809d9e",
+      "name": "2022 Lotus Emira V6",
+      "staffpickedAt": null,
+      "viewCount": 3305,
+      "likeCount": 102,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cea1fdedebca461dabba65d3df809d9e",
+      "embedUrl": "https://sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-21T16:36:32.808346",
+      "tags": [
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "v6",
+          "slug": "v6",
+          "uri": "https://api.sketchfab.com/v3/tags/v6"
+        },
+        {
+          "name": "2022",
+          "slug": "2022",
+          "uri": "https://api.sketchfab.com/v3/tags/2022"
+        },
+        {
+          "name": "emira",
+          "slug": "emira",
+          "uri": "https://api.sketchfab.com/v3/tags/emira"
+        },
+        {
+          "name": "lotus-emira",
+          "slug": "lotus-emira",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus-emira"
+        },
+        {
+          "name": "need-for-speed-mobile",
+          "slug": "need-for-speed-mobile",
+          "uri": "https://api.sketchfab.com/v3/tags/need-for-speed-mobile"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3d9fea3e9df340c69007592b9c9781a5",
+            "size": 340381,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/thumbnails/ac87711cf9524ca789d96c0f0dcdb371/55717aa50001458e87c355ed730bde2d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "252477a5f33a47f1b23628d1713c495d",
+            "size": 57840,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/thumbnails/ac87711cf9524ca789d96c0f0dcdb371/0db0d50f48e440ef9ca6daf7b2b306c6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "97fd5bf0f4c7484180d61d50313a84cf",
+            "size": 34058,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/thumbnails/ac87711cf9524ca789d96c0f0dcdb371/f7f97adfc6024539acd63a6bddea80f7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "73dd81ffba604cbda033fc7258dedab0",
+            "size": 7561,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/thumbnails/ac87711cf9524ca789d96c0f0dcdb371/aad7f329e80546a8a12312a1171c7cce.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4b209aa5e1c347c3beb6c9ac762ec575",
+            "size": 1430,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cea1fdedebca461dabba65d3df809d9e/thumbnails/ac87711cf9524ca789d96c0f0dcdb371/53bd534d75834b40b0e055bfa249be08.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f55cf43a9e4c446d813b75376e41cdab",
+        "username": "ddiaz-design",
+        "displayName": "Ddiaz Design",
+        "profileUrl": "https://sketchfab.com/ddiaz-design",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/21b60b92b1aa4fcd9833347044399b57",
+          "images": [
+            {
+              "size": 549,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/b685fa4f0397486099d29f7189ff7d3f.png",
+              "height": 32
+            },
+            {
+              "size": 883,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/1a148a5faecf4f7eb5374a9903829faa.png",
+              "height": 48
+            },
+            {
+              "size": 1781,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/36c28e85d64147bebdd9815f78a833d6.png",
+              "height": 90
+            },
+            {
+              "size": 1813,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/21b60b92b1aa4fcd9833347044399b57/e5bce64685f440cca1731df11d8a3633.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f55cf43a9e4c446d813b75376e41cdab"
+      },
+      "description": "Repositorio de modelos 3D de Ddiaz Design\n\n![](https://upload.wikimedia.org/wikipedia/commons/c/c1/2022_Lotus_Emira.jpg)\n\nThe Lotus Emira has been developed on a new lightweight bonded aluminium chassis, technology pioneered by Lotus and which remains an intrinsic part of the company's sports car DNA. That innovative vehicle architecture is wrapped with a bold and sculpted design using cues clearly developed from the Evija. Key dimensions of the Emira are length 4,412mm; width 1,895mm; height 1,225mm; and wheelbase 2,575mm.\n\nInstagram del proyecto: https://www.instagram.com/ddiaz.design/\n\nPaypal Donations: https://paypal.me/sergiodd\n\nBased on a Need For Speed Mobile 3d model\n\nCredits: https://www.vertex-warehouse.com/models",
+      "faceCount": 102053,
+      "createdAt": "2025-10-21T16:20:36.051740",
+      "vertexCount": 67319,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 31,
+          "size": 6244792,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 102053,
+          "vertexCount": 88825
+        },
+        "gltf": {
+          "textureCount": 31,
+          "size": 3561108,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 102053,
+          "vertexCount": 88825
+        },
+        "source": {
+          "textureCount": null,
+          "size": 9273266,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3818497,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c894fe50e6d3443a8e4472164a4d35d3",
+      "uid": "c894fe50e6d3443a8e4472164a4d35d3",
+      "name": "Lotus Evija",
+      "staffpickedAt": null,
+      "viewCount": 322,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c894fe50e6d3443a8e4472164a4d35d3",
+      "embedUrl": "https://sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-01-08T23:00:01.222279",
+      "tags": [
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "future",
+          "slug": "future",
+          "uri": "https://api.sketchfab.com/v3/tags/future"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic",
+          "uri": "https://api.sketchfab.com/v3/tags/futuristic"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "654b9594dcff42078161c91fd0d59790",
+            "size": 53014,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/thumbnails/0004b3deced64dc48d5956f1a1325dd0/2f412c23979245ce8f9289fff21fb016.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7805cd65060b433598b9192d0d7bcbe2",
+            "size": 17788,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/thumbnails/0004b3deced64dc48d5956f1a1325dd0/169cdeac48bb48809df454ab5c838a40.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5b9e079027914069bde7549b9a415a93",
+            "size": 10468,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/thumbnails/0004b3deced64dc48d5956f1a1325dd0/eec01fcb29ad427db36a4408f76ced7e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "649595d9023b4605a231af2e0b62e662",
+            "size": 2441,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/thumbnails/0004b3deced64dc48d5956f1a1325dd0/81082285071342c1adea2f22182a7077.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "79679a81ffa34898806ad2a644108575",
+            "size": 858,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c894fe50e6d3443a8e4472164a4d35d3/thumbnails/0004b3deced64dc48d5956f1a1325dd0/24734b4f98224c49ae0b9a8741e2b6fb.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6bde1a27b585433c806d41896d7de45c",
+        "username": "seyram14",
+        "displayName": "seyram14",
+        "profileUrl": "https://sketchfab.com/seyram14",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ed36b533e6d740d4bdc6ad3fcb6b9b70",
+          "images": [
+            {
+              "size": 1821,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ed36b533e6d740d4bdc6ad3fcb6b9b70/50eb94476c844cfd90afa8b04f4319b4.png",
+              "height": 32
+            },
+            {
+              "size": 3356,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ed36b533e6d740d4bdc6ad3fcb6b9b70/ae9a7ac2329c49f0bcc984ac8a95bae1.png",
+              "height": 48
+            },
+            {
+              "size": 8738,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ed36b533e6d740d4bdc6ad3fcb6b9b70/b94ca373da4c4f7aa0f291c6247f6173.png",
+              "height": 90
+            },
+            {
+              "size": 10186,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ed36b533e6d740d4bdc6ad3fcb6b9b70/a232abf5adcb4c0d82fed85506ca36b5.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6bde1a27b585433c806d41896d7de45c"
+      },
+      "description": "Lotus Evija light gray",
+      "faceCount": 72436,
+      "createdAt": "2022-01-08T22:58:22.811292",
+      "vertexCount": 20413,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1f1f5339c9cc401b9212e5b7a19d79f3",
+      "uid": "1f1f5339c9cc401b9212e5b7a19d79f3",
+      "name": "Lotus Evija Concept (2020) 147493_fbx",
+      "staffpickedAt": null,
+      "viewCount": 266,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1f1f5339c9cc401b9212e5b7a19d79f3",
+      "embedUrl": "https://sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2023-08-26T15:02:21.615673",
+      "tags": [
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "23b282cac5194a06872d782b9d378da4",
+            "size": 57720,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/thumbnails/a01590f5223c4a749d7f0ed1f159426a/53553f44bbe84e29a197977f62495bba.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9ecf874b6b5e475c80d34f3b60cacd1c",
+            "size": 18059,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/thumbnails/a01590f5223c4a749d7f0ed1f159426a/a435f2cc1b1e4818aa8dc2ad3bf4170e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "edbf04fc8ad24b82ba8b643a44c6493e",
+            "size": 10161,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/thumbnails/a01590f5223c4a749d7f0ed1f159426a/443707f06a554e3abcb6107e9fd003be.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "cc7255a924824d3ab85e100e7400f649",
+            "size": 2330,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/thumbnails/a01590f5223c4a749d7f0ed1f159426a/afbddb282b394d4596af5446d850de58.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "349f9388b6174221a1f18f25c27a428b",
+            "size": 845,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1f1f5339c9cc401b9212e5b7a19d79f3/thumbnails/a01590f5223c4a749d7f0ed1f159426a/da2f5a42ebba461f900f4fb2fbbe15df.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "70e3177e2dbb4547bc645ff942e3ffe1",
+        "username": "Mrjoao86",
+        "displayName": "João Mateus",
+        "profileUrl": "https://sketchfab.com/Mrjoao86",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/70e3177e2dbb4547bc645ff942e3ffe1"
+      },
+      "description": "The Lotus Evija is an all-electric sports car known for its exceptional power and exclusivity. With over 2,000 horsepower from four electric motors, it accelerates incredibly fast. Its aerodynamic design enhances performance, and rapid charging gets the battery to 80% in about 18 minutes. This limited-edition car combines advanced technology with a focus on lightweight materials, showcasing a new era of high-performance electric vehicles.",
+      "faceCount": 36250,
+      "createdAt": "2023-08-26T14:56:22.405802",
+      "vertexCount": 20606,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1f124153ff354301a612498df07d7c48",
+      "uid": "1f124153ff354301a612498df07d7c48",
+      "name": "lotus evija",
+      "staffpickedAt": null,
+      "viewCount": 112,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1f124153ff354301a612498df07d7c48",
+      "embedUrl": "https://sketchfab.com/models/1f124153ff354301a612498df07d7c48/embed",
+      "commentCount": 0,
+      "isDownloadable": false,
+      "publishedAt": "2022-08-07T12:08:45.470831",
+      "tags": [
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "lotusevija",
+          "slug": "lotusevija",
+          "uri": "https://api.sketchfab.com/v3/tags/lotusevija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c82d1c1a3fa8458681b2f2ce55d2d103",
+            "size": 218371,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1f124153ff354301a612498df07d7c48/thumbnails/cd6c6c2aca5b4745a4c5183c0e105682/30eb73a965f9478dbb1e8c58a9acbe51.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "aa9178f9897f46d1a1b3b80694a1282f",
+            "size": 72631,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1f124153ff354301a612498df07d7c48/thumbnails/cd6c6c2aca5b4745a4c5183c0e105682/3b8f69b25d894102878ff91ae84dd133.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1ef7e188b7e3498180b17f90479bd30e",
+            "size": 41903,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1f124153ff354301a612498df07d7c48/thumbnails/cd6c6c2aca5b4745a4c5183c0e105682/af78939aac114d06803bc32394c6ca3c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "40b484a84f2c44e5a6d6bac0b80cf93d",
+            "size": 7704,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1f124153ff354301a612498df07d7c48/thumbnails/cd6c6c2aca5b4745a4c5183c0e105682/6cf3399b09414fbf8ca976e08b018622.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "858ee7524a2d46f2967968d59ee50c20",
+            "size": 1307,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1f124153ff354301a612498df07d7c48/thumbnails/cd6c6c2aca5b4745a4c5183c0e105682/814534af446e4a51b29e14750e5ca01e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "52a18221bd4448dcb71621d86bf36609",
+        "username": "cloud9duy",
+        "displayName": "cloud9duy",
+        "profileUrl": "https://sketchfab.com/cloud9duy",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/52a18221bd4448dcb71621d86bf36609"
+      },
+      "description": "",
+      "faceCount": 3560242,
+      "createdAt": "2022-08-07T11:57:36.072780",
+      "vertexCount": 1782627,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7ab26c67351f4986bbaddc3ac6e2a1df",
+      "uid": "7ab26c67351f4986bbaddc3ac6e2a1df",
+      "name": "Toy Lotus Evija model car",
+      "staffpickedAt": null,
+      "viewCount": 3,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7ab26c67351f4986bbaddc3ac6e2a1df",
+      "embedUrl": "https://sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/embed",
+      "commentCount": 1,
+      "isDownloadable": false,
+      "publishedAt": "2026-05-09T08:05:38.139936",
+      "tags": [
+        {
+          "name": "rodin",
+          "slug": "rodin",
+          "uri": "https://api.sketchfab.com/v3/tags/rodin"
+        },
+        {
+          "name": "shaded",
+          "slug": "shaded",
+          "uri": "https://api.sketchfab.com/v3/tags/shaded"
+        },
+        {
+          "name": "gen-1",
+          "slug": "gen-1",
+          "uri": "https://api.sketchfab.com/v3/tags/gen-1"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e01f6c97a63d42c7b545158ef4c98ddf",
+            "size": 46736,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/thumbnails/d8aa686ea371415c9834bfb7f2ca3e55/82173c1b82f745c988a4512131df948e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9d0c0bc329f44c15bc11416635a0ec6b",
+            "size": 14931,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/thumbnails/d8aa686ea371415c9834bfb7f2ca3e55/f3f3cbd4ffb748a89becb5bcbddf82a2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "89be56dbe1384faf8bb87ce98e15c990",
+            "size": 8562,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/thumbnails/d8aa686ea371415c9834bfb7f2ca3e55/d2a02b60988d49d1a8e76279523692ac.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1a1f8613ebd148dc95e1ad64a3b27a59",
+            "size": 1984,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/thumbnails/d8aa686ea371415c9834bfb7f2ca3e55/0bc9978ab0594154a398231b1e0b12d1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "78c12d04e29d4dc0b69535f006e17a52",
+            "size": 772,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7ab26c67351f4986bbaddc3ac6e2a1df/thumbnails/d8aa686ea371415c9834bfb7f2ca3e55/c495ea1b52f14ff38715b8b33c5b29e8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "aeb5e5ec65434aad91a265ee4bf86cba",
+        "username": "ModernAlpaca7988",
+        "displayName": "ModernAlpaca7988",
+        "profileUrl": "https://sketchfab.com/ModernAlpaca7988",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/aeb5e5ec65434aad91a265ee4bf86cba"
+      },
+      "description": "This model is generated by the state-of-the-art 3D GenAI tool, Rodin Gen-1.However, its ideas and creativity originate from the human author.\r\n\r\nCreate your own model from images:\r\n\r\n[https://hyper3d.ai](https://hyper3d.ai)",
+      "faceCount": 999368,
+      "createdAt": "2026-05-09T08:04:50.604681",
+      "vertexCount": 499532,
+      "isAgeRestricted": false,
+      "archives": {},
+      "license": null
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/fbfdc2ad3be64e92b7461e4f8ce12a8d",
+      "uid": "fbfdc2ad3be64e92b7461e4f8ce12a8d",
+      "name": "Stairs Ironic with colorful iron texture",
+      "staffpickedAt": null,
+      "viewCount": 318,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-fbfdc2ad3be64e92b7461e4f8ce12a8d",
+      "embedUrl": "https://sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-11-23T09:42:45.476829",
+      "tags": [
+        {
+          "name": "cow",
+          "slug": "cow",
+          "uri": "https://api.sketchfab.com/v3/tags/cow"
+        },
+        {
+          "name": "rabbit",
+          "slug": "rabbit",
+          "uri": "https://api.sketchfab.com/v3/tags/rabbit"
+        },
+        {
+          "name": "goat",
+          "slug": "goat",
+          "uri": "https://api.sketchfab.com/v3/tags/goat"
+        },
+        {
+          "name": "ferrari",
+          "slug": "ferrari",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrari"
+        },
+        {
+          "name": "sheep",
+          "slug": "sheep",
+          "uri": "https://api.sketchfab.com/v3/tags/sheep"
+        },
+        {
+          "name": "pig",
+          "slug": "pig",
+          "uri": "https://api.sketchfab.com/v3/tags/pig"
+        },
+        {
+          "name": "lamborghini",
+          "slug": "lamborghini",
+          "uri": "https://api.sketchfab.com/v3/tags/lamborghini"
+        },
+        {
+          "name": "aventador",
+          "slug": "aventador",
+          "uri": "https://api.sketchfab.com/v3/tags/aventador"
+        },
+        {
+          "name": "lexus",
+          "slug": "lexus",
+          "uri": "https://api.sketchfab.com/v3/tags/lexus"
+        },
+        {
+          "name": "chevrolet",
+          "slug": "chevrolet",
+          "uri": "https://api.sketchfab.com/v3/tags/chevrolet"
+        },
+        {
+          "name": "aston",
+          "slug": "aston",
+          "uri": "https://api.sketchfab.com/v3/tags/aston"
+        },
+        {
+          "name": "turkey",
+          "slug": "turkey",
+          "uri": "https://api.sketchfab.com/v3/tags/turkey"
+        },
+        {
+          "name": "donkey",
+          "slug": "donkey",
+          "uri": "https://api.sketchfab.com/v3/tags/donkey"
+        },
+        {
+          "name": "chicken",
+          "slug": "chicken",
+          "uri": "https://api.sketchfab.com/v3/tags/chicken"
+        },
+        {
+          "name": "corvette",
+          "slug": "corvette",
+          "uri": "https://api.sketchfab.com/v3/tags/corvette"
+        },
+        {
+          "name": "duck",
+          "slug": "duck",
+          "uri": "https://api.sketchfab.com/v3/tags/duck"
+        },
+        {
+          "name": "gt",
+          "slug": "gt",
+          "uri": "https://api.sketchfab.com/v3/tags/gt"
+        },
+        {
+          "name": "camel",
+          "slug": "camel",
+          "uri": "https://api.sketchfab.com/v3/tags/camel"
+        },
+        {
+          "name": "koenigsegg",
+          "slug": "koenigsegg",
+          "uri": "https://api.sketchfab.com/v3/tags/koenigsegg"
+        },
+        {
+          "name": "lotus",
+          "slug": "lotus",
+          "uri": "https://api.sketchfab.com/v3/tags/lotus"
+        },
+        {
+          "name": "acura",
+          "slug": "acura",
+          "uri": "https://api.sketchfab.com/v3/tags/acura"
+        },
+        {
+          "name": "bugatti",
+          "slug": "bugatti",
+          "uri": "https://api.sketchfab.com/v3/tags/bugatti"
+        },
+        {
+          "name": "hamster",
+          "slug": "hamster",
+          "uri": "https://api.sketchfab.com/v3/tags/hamster"
+        },
+        {
+          "name": "goose",
+          "slug": "goose",
+          "uri": "https://api.sketchfab.com/v3/tags/goose"
+        },
+        {
+          "name": "llama",
+          "slug": "llama",
+          "uri": "https://api.sketchfab.com/v3/tags/llama"
+        },
+        {
+          "name": "maserati",
+          "slug": "maserati",
+          "uri": "https://api.sketchfab.com/v3/tags/maserati"
+        },
+        {
+          "name": "alpaca",
+          "slug": "alpaca",
+          "uri": "https://api.sketchfab.com/v3/tags/alpaca"
+        },
+        {
+          "name": "s7",
+          "slug": "s7",
+          "uri": "https://api.sketchfab.com/v3/tags/s7"
+        },
+        {
+          "name": "gt3",
+          "slug": "gt3",
+          "uri": "https://api.sketchfab.com/v3/tags/gt3"
+        },
+        {
+          "name": "akula",
+          "slug": "akula",
+          "uri": "https://api.sketchfab.com/v3/tags/akula"
+        },
+        {
+          "name": "chiron",
+          "slug": "chiron",
+          "uri": "https://api.sketchfab.com/v3/tags/chiron"
+        },
+        {
+          "name": "gerbil",
+          "slug": "gerbil",
+          "uri": "https://api.sketchfab.com/v3/tags/gerbil"
+        },
+        {
+          "name": "stradale",
+          "slug": "stradale",
+          "uri": "https://api.sketchfab.com/v3/tags/stradale"
+        },
+        {
+          "name": "720s",
+          "slug": "720s",
+          "uri": "https://api.sketchfab.com/v3/tags/720s"
+        },
+        {
+          "name": "horse",
+          "slug": "horse",
+          "uri": "https://api.sketchfab.com/v3/tags/horse"
+        },
+        {
+          "name": "jesko",
+          "slug": "jesko",
+          "uri": "https://api.sketchfab.com/v3/tags/jesko"
+        },
+        {
+          "name": "sf90",
+          "slug": "sf90",
+          "uri": "https://api.sketchfab.com/v3/tags/sf90"
+        },
+        {
+          "name": "evija",
+          "slug": "evija",
+          "uri": "https://api.sketchfab.com/v3/tags/evija"
+        }
+      ],
+      "categories": [
+        {
+          "name": "animals-pets"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "09190654e22c482f9445e2986f38adbb",
+            "size": 286427,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/thumbnails/f0896b4d1fb6448b8826505695c99c44/69ef7d14a8d44c55b9ff353d4e660719.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "97271c670bf447aa98a504b99bd9c607",
+            "size": 82674,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/thumbnails/f0896b4d1fb6448b8826505695c99c44/af775bcaa6184d0c8088ae02304a88bd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f6ddfd15826943a28ee98409f68bf8f2",
+            "size": 43931,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/thumbnails/f0896b4d1fb6448b8826505695c99c44/66596d008a6d42e9a7cc552e65d4e955.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "59e61ae8020d4d5ebb0d71375cd6e93a",
+            "size": 8068,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/thumbnails/f0896b4d1fb6448b8826505695c99c44/e008e13c1db7468f963ab986a9cdb3db.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "727f361952624208813a10a1c4238e8f",
+            "size": 1550,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/fbfdc2ad3be64e92b7461e4f8ce12a8d/thumbnails/f0896b4d1fb6448b8826505695c99c44/1fe4e01957d7461ca7d84bb3a99242df.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0937190656b74ce1a2e5b00b6e404621",
+        "username": "saqlainbaig",
+        "displayName": "saqlainbaig",
+        "profileUrl": "https://sketchfab.com/saqlainbaig",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3803eb6973304175866e9cf1f48ab3f0",
+          "images": [
+            {
+              "size": 1071,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3803eb6973304175866e9cf1f48ab3f0/61b9f69c025d4d1da7372302083d1994.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1476,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3803eb6973304175866e9cf1f48ab3f0/da41605c05544664becda828b5ee6a02.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3475,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3803eb6973304175866e9cf1f48ab3f0/54c6f6f917d14c23b61e08c7a1969b43.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4021,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3803eb6973304175866e9cf1f48ab3f0/6b9733083fba45e2b84e32707ebfed84.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0937190656b74ce1a2e5b00b6e404621"
+      },
+      "description": "# **⭐ Saqlain Baig — Official Links & Services**\n\n# **• 📞 WhatsApp: +92 314 9343181**\n\n**• 🌐 Website: **👉https://saqlainbaig.site/\n\n**• 📺 YouTube: **👉 https://youtube.com/@saqlainbaig-f8i\n\n**• 🛒 Patreon Shop:** 👉 https://patreon.com/c/saqlainbaig/shop\n\n**• 🎨 Sketchfab: **👉 https://sketchfab.com/saqlainbaig\n\n# **🎬 1. 3D Animation Packs (Top Collection!)**\n\n• 💧 Crossing Fountain — Full Animation Pack\n\n• 🎨 200+ Background 3D Models (FBX / DAE)\n\n• 🎶 Background Music & Sound FX\n\n• 🐾 Animated Animals — Complete Pack (with Course)\n\n• 📦 High-quality 3D Assets for Games & Videos\n\n# **🚀 2. BeamNG Drive Creations**\n\n• 🚚 BNG Big & Small Mods\n\n• 🗺️ BNG Custom Maps\n\n• 🏗️ BNG 3D Model Slide Stairs & More\n\n# **🌾 3. Farming Simulator 22 (FS22) Mods**\n\n• 🎨 Color Ramps Platforms\n\n• 🌈 Colorful Decorations\n\n• 🛠️ Custom FS22 Mods\n\n# **🙏 Thank You for Your Support!**",
+      "faceCount": 9840,
+      "createdAt": "2025-11-23T09:40:54.915894",
+      "vertexCount": 4802,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 15014896,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 9456,
+          "vertexCount": 17947
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 14399150,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 9456,
+          "vertexCount": 17947
+        },
+        "source": {
+          "textureCount": null,
+          "size": 42273298,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3580702,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

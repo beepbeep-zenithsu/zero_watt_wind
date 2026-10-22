@@ -1,0 +1,123 @@
+/* Structural, hash, geometry and world-bounds checks. No renderer/GPU required. */
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const {pathToFileURL} = require('node:url');
+const root = path.resolve(__dirname, '..');
+const sha = data => crypto.createHash('sha256').update(data).digest('hex');
+function imageDimensions(bytes) {
+  if (bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10]))) return [bytes.readUInt32BE(16),bytes.readUInt32BE(20)];
+  if (bytes.readUInt16BE(0) === 0xffd8) {
+    let offset=2;
+    while (offset+9<bytes.length) {
+      if (bytes[offset++] !== 0xff) continue;
+      let marker=bytes[offset++];while(marker===0xff)marker=bytes[offset++];
+      if ([0xd8,0xd9,0x01].includes(marker)) continue;
+      const length=bytes.readUInt16BE(offset);
+      if ([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf].includes(marker)) return [bytes.readUInt16BE(offset+5),bytes.readUInt16BE(offset+3)];
+      if(length<2)break;offset+=length;
+    }
+  }
+  throw Error('Unsupported or corrupt traffic texture; export PNG/JPEG');
+}
+async function inspect(file, spec, budget, textureLimit=Infinity) {
+  const T = await import(pathToFileURL(path.join(root, 'vendor/three.module.js')).href);
+  const bytes = fs.readFileSync(file);
+  if (bytes.readUInt32LE(0) !== 0x46546c67 || bytes.readUInt32LE(4) !== 2 || bytes.readUInt32LE(8) !== bytes.length) throw Error('Invalid GLB header');
+  if (bytes.readUInt32LE(16) !== 0x4e4f534a) throw Error('Missing GLB JSON chunk');
+  const gltf = JSON.parse(bytes.toString('utf8', 20, 20 + bytes.readUInt32LE(12)));
+  const binHeader=20+bytes.readUInt32LE(12), binStart=binHeader+8;
+  if(binStart>bytes.length || bytes.readUInt32LE(binHeader+4)!==0x004e4942)throw Error('Missing GLB binary chunk');
+  const binary=bytes.subarray(binStart,binStart+bytes.readUInt32LE(binHeader));
+  for(const view of gltf.bufferViews || []) {
+    if((view.buffer ?? 0)!==0 || (view.byteOffset || 0)<0 || (view.byteOffset || 0)+view.byteLength>binary.length)throw Error('Invalid embedded buffer view');
+  }
+  const textureSizes=(gltf.images || []).map(image=>{
+    const view=gltf.bufferViews[image.bufferView];
+    const data=view ? binary.subarray(view.byteOffset || 0,(view.byteOffset || 0)+view.byteLength) : image.uri?.startsWith('data:') ? Buffer.from(image.uri.split(',')[1],'base64') : null;
+    if(!data)throw Error('Non-embedded traffic texture');
+    const size=imageDimensions(data);
+    if(Math.max(...size)>textureLimit)throw Error('Embedded texture exceeds LOD size limit');
+    return size;
+  });
+  for (const ext of [...gltf.extensionsRequired || [], ...gltf.extensionsUsed || []]) {
+    if (/draco|meshopt|basisu/i.test(ext)) throw Error('Asset requires an unavailable decoder: ' + ext);
+  }
+  if (gltf.buffers?.some(b => b.uri) || gltf.images?.some(i => i.uri && !i.uri.startsWith('data:'))) throw Error('Traffic GLB must be self-contained');
+  if (bytes.length > 20 * 1024 * 1024) throw Error('Traffic GLB exceeds 20 MiB');
+  const bounds = new T.Box3(), points = new T.Vector3();
+  let triangles = 0, primitives = 0, wheels = 0;
+  const seen = new Set();
+  function nodeAt(index, parent, chain) {
+    if (chain.has(index)) throw Error('Cyclic node hierarchy');
+    const node = gltf.nodes[index], matrix = new T.Matrix4();
+    if (!node) throw Error('Invalid node index');
+    if (node.matrix) matrix.fromArray(node.matrix);
+    else matrix.compose(new T.Vector3(...node.translation || [0,0,0]),new T.Quaternion(...node.rotation || [0,0,0,1]),new T.Vector3(...node.scale || [1,1,1]));
+    matrix.premultiply(parent);
+    if (node.extras?.zwWheelPart) wheels++;
+    for (const primitive of gltf.meshes?.[node.mesh]?.primitives || []) {
+      if ((primitive.mode ?? 4) !== 4) throw Error('Non-triangle traffic primitive');
+      const accessor = gltf.accessors[primitive.attributes.POSITION];
+      if (!accessor?.min || !accessor?.max) throw Error('Missing position bounds');
+      triangles += (gltf.accessors[primitive.indices]?.count ?? accessor.count) / 3;
+      primitives++;
+      for (let bits=0;bits<8;bits++) {
+        points.set(...[0,1,2].map(axis => (bits & (1 << axis) ? accessor.max : accessor.min)[axis]));
+        bounds.expandByPoint(points.applyMatrix4(matrix));
+      }
+    }
+    seen.add(index);
+    const next = new Set(chain); next.add(index);
+    for (const child of node.children || []) nodeAt(child,matrix,next);
+  }
+  for (const index of gltf.scenes?.[gltf.scene ?? 0]?.nodes || []) nodeAt(index,new T.Matrix4(),new Set());
+  const size = bounds.getSize(new T.Vector3()), center = bounds.getCenter(new T.Vector3());
+  if (!triangles || !Number.isFinite(triangles) || triangles > budget) throw Error('Triangle budget exceeded/empty mesh');
+  if (primitives > 32) throw Error('More than 32 material primitives');
+  if (Math.abs(size.z - spec.length) > .12 || size.z < size.x * 1.15 || size.y < .4 || size.y > 2.5) throw Error('Incorrect vehicle scale/orientation');
+  if (Math.abs(bounds.min.y) > .08 || Math.abs(center.x) > .08 || Math.abs(center.z) > .08) throw Error(`Vehicle is not grounded/centered: ${path.basename(file)}; floor=${bounds.min.y.toFixed(4)}, center=${center.toArray().map(v=>v.toFixed(4)).join(',')}`);
+  if(spec.source && !(gltf.nodes || []).some(n=>n.extras?.source===spec.source.url && n.extras?.license===spec.source.license)) throw Error('Missing embedded model credit/license');
+  return {triangles,primitives,wheelMeshes:wheels,textureSizes,size:size.toArray(),sha256:sha(bytes),bytes:bytes.length};
+}
+async function main() {
+  const args = process.argv.slice(2), dirIndex = args.indexOf('--directory');
+  const directory = path.resolve(dirIndex < 0 ? path.join(root,'assets/cars/traffic') : args[dirIndex+1]);
+  const only = args.filter((a,i) => !a.startsWith('--') && !(dirIndex >= 0 && i === dirIndex+1));
+  const specs = JSON.parse(fs.readFileSync(path.join(root,'assets/cars/traffic-sources.json'),'utf8')).cars;
+  const selected = only.length ? only.map(id => specs.find(c => c.id === id) || {id}) : specs;
+  const installed = {}, results = [];
+  for (const spec of selected) {
+    if (args.includes('--install') && !specs.some(c => c.id === spec.id)) throw Error('Cannot install an unknown car id');
+    const reportFile = path.join(directory,spec.id + '.report.json');
+    if (!fs.existsSync(reportFile)) throw Error('Missing real LOD report: ' + spec.id);
+    const report = JSON.parse(fs.readFileSync(reportFile,'utf8'));
+    if (report.id !== spec.id || report.levels.length !== 3) throw Error('Invalid report: ' + spec.id);
+    if (!report.source?.verified) throw Error('Unverified model license: ' + spec.id);
+    if (args.includes('--install') && (report.source.url !== spec.source?.url || report.source.license !== spec.source?.license)) throw Error('Installed source differs from the reviewed source: ' + spec.id);
+    const checks = [];
+    for (let level=0;level<3;level++) {
+      const item = report.levels[level], filename = `${spec.id}-lod${level}.glb`;
+      const check = await inspect(path.join(directory,filename), {length:report.length,source:report.source}, item.budget, item.textureLimit);
+      if (check.sha256 !== item.sha256 || check.triangles !== item.triangles) throw Error('Export differs from report: ' + filename);
+      checks.push(check);
+    }
+    if (checks.some((c,i) => i && c.triangles > checks[i-1].triangles)) throw Error('Increasing LOD detail: ' + spec.id);
+    const source = {...report.source, attribution:`"${report.source.title}" by ${report.source.author} (${report.source.url}), ${report.source.license} (${report.source.licenseUrl}). Modified: ${report.source.changes || 'scale/orientation, mesh grouping, reduced geometry/textures.'}`};
+    installed[spec.id] = {source,lods:[0,1,2].map(level => `assets/cars/traffic/${spec.id}-lod${level}.glb`)};
+    results.push({id:spec.id,levels:checks});
+  }
+  if (args.includes('--install')) {
+    if (directory !== path.join(root,'assets/cars/traffic')) throw Error('Only production assets may be installed.');
+    // Revalidate the entire on-disk fleet, so an install never leaves stale entries.
+    const existingIds = specs.filter(c => fs.existsSync(path.join(directory,c.id+'.report.json'))).map(c=>c.id);
+    if (existingIds.some(id => !installed[id])) throw Error('For --install validate all available production cars with explicit ids.');
+    const file = path.join(root,'src/cars/installed-fleet.js');
+    const temporary = file + '.tmp';
+    fs.writeFileSync(temporary,'// Generated by tools/validate-traffic-assets.cjs --install.\nexport const INSTALLED_FLEET = ' + JSON.stringify(installed,null,2) + ';\n');
+    fs.renameSync(temporary,file);
+  }
+  console.log(JSON.stringify(results,null,2));
+}
+module.exports = {inspect};
+if (require.main === module) main().catch(error => {console.error(error.message);process.exitCode=1;});

@@ -1,0 +1,271 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    },
+    {
+      "uid": "81bfbbfa2c9b4f218eed8609e3cf7aa6",
+      "name": "Fashion & Style",
+      "slug": "fashion-style",
+      "uri": "https://api.sketchfab.com/v3/categories/81bfbbfa2c9b4f218eed8609e3cf7aa6",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/87a0deda90ae1bcc407ee9613be69320-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/81bfbbfa2c9b4f218eed8609e3cf7aa6/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/81bfbbfa2c9b4f218eed8609e3cf7aa6/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 9,
+  "createdAt": "2022-08-12T03:41:31.121308",
+  "embedUrl": "https://sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/embed",
+  "faceCount": 21496,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 348,
+  "name": "Low Poly Car - De Tomaso P72 2020",
+  "publishedAt": "2022-08-12T15:14:56.863200",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "power",
+      "slug": "power",
+      "uri": "https://api.sketchfab.com/v3/tags/power"
+    },
+    {
+      "name": "vehicles",
+      "slug": "vehicles",
+      "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+    },
+    {
+      "name": "transportation",
+      "slug": "transportation",
+      "uri": "https://api.sketchfab.com/v3/tags/transportation"
+    },
+    {
+      "name": "cars",
+      "slug": "cars",
+      "uri": "https://api.sketchfab.com/v3/tags/cars"
+    },
+    {
+      "name": "compact",
+      "slug": "compact",
+      "uri": "https://api.sketchfab.com/v3/tags/compact"
+    },
+    {
+      "name": "supercar",
+      "slug": "supercar",
+      "uri": "https://api.sketchfab.com/v3/tags/supercar"
+    },
+    {
+      "name": "coupe",
+      "slug": "coupe",
+      "uri": "https://api.sketchfab.com/v3/tags/coupe"
+    },
+    {
+      "name": "hypercar",
+      "slug": "hypercar",
+      "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+    },
+    {
+      "name": "Detomaso",
+      "slug": "detomaso",
+      "uri": "https://api.sketchfab.com/v3/tags/detomaso"
+    },
+    {
+      "name": "lemans",
+      "slug": "lemans",
+      "uri": "https://api.sketchfab.com/v3/tags/lemans"
+    },
+    {
+      "name": "racing-car",
+      "slug": "racing-car",
+      "uri": "https://api.sketchfab.com/v3/tags/racing-car"
+    },
+    {
+      "name": "race-car",
+      "slug": "race-car",
+      "uri": "https://api.sketchfab.com/v3/tags/race-car"
+    },
+    {
+      "name": "drag-racing",
+      "slug": "drag-racing",
+      "uri": "https://api.sketchfab.com/v3/tags/drag-racing"
+    },
+    {
+      "name": "vehicle",
+      "slug": "vehicle",
+      "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+    },
+    {
+      "name": "design",
+      "slug": "design",
+      "uri": "https://api.sketchfab.com/v3/tags/design"
+    },
+    {
+      "name": "racing",
+      "slug": "racing",
+      "uri": "https://api.sketchfab.com/v3/tags/racing"
+    },
+    {
+      "name": "car",
+      "slug": "car",
+      "uri": "https://api.sketchfab.com/v3/tags/car"
+    },
+    {
+      "name": "super",
+      "slug": "super",
+      "uri": "https://api.sketchfab.com/v3/tags/super"
+    },
+    {
+      "name": "race",
+      "slug": "race",
+      "uri": "https://api.sketchfab.com/v3/tags/race"
+    },
+    {
+      "name": "p72",
+      "slug": "p72",
+      "uri": "https://api.sketchfab.com/v3/tags/p72"
+    },
+    {
+      "name": "de-tomaso",
+      "slug": "de-tomaso",
+      "uri": "https://api.sketchfab.com/v3/tags/de-tomaso"
+    },
+    {
+      "name": "detomaso-p72",
+      "slug": "detomaso-p72",
+      "uri": "https://api.sketchfab.com/v3/tags/detomaso-p72"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "cd55bca0eada4fc48c48697f45e95bb8",
+        "width": 1920,
+        "height": 1080,
+        "size": 115575,
+        "url": "https://media.sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/thumbnails/36712e36f9154807b5570a3b8df4de77/040114b4be374c6aaedb78f2ed9b835f.jpeg"
+      },
+      {
+        "uid": "741462a57e0b4480a383b19732e514b0",
+        "width": 1024,
+        "height": 576,
+        "size": 36163,
+        "url": "https://media.sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/thumbnails/36712e36f9154807b5570a3b8df4de77/6adaa747a0a04b46a90745e9acbcb2cc.jpeg"
+      },
+      {
+        "uid": "7e7766cba46143e6b56ed574b75bb7b1",
+        "width": 720,
+        "height": 405,
+        "size": 21019,
+        "url": "https://media.sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/thumbnails/36712e36f9154807b5570a3b8df4de77/67c29552b8424a5090b7ea3a4ed1869b.jpeg"
+      },
+      {
+        "uid": "3ae1be6f4042416fab296d2b87eb8e92",
+        "width": 256,
+        "height": 144,
+        "size": 4641,
+        "url": "https://media.sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/thumbnails/36712e36f9154807b5570a3b8df4de77/f1f6373fa9d44411a96d6108455c7c25.jpeg"
+      },
+      {
+        "uid": "bc4f67b7c5c84ec9a6d5e279d1fdeee1",
+        "width": 64,
+        "height": 36,
+        "size": 1143,
+        "url": "https://media.sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/thumbnails/36712e36f9154807b5570a3b8df4de77/bb5c99bb2f78417e9b17023f97636c5c.jpeg"
+      }
+    ]
+  },
+  "uid": "ab85c302e652492196b600ee1eb7106a",
+  "uri": "https://api.sketchfab.com/v3/models/ab85c302e652492196b600ee1eb7106a",
+  "user": {
+    "uid": "7b2d51a011d4477aaaf771ce1552fd11",
+    "username": "roh3d",
+    "displayName": "ROH3D",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/roh3d",
+    "avatar": {
+      "uid": "a898620019814efd801dc91f7e10d92c",
+      "uri": "https://api.sketchfab.com/v3/avatars/a898620019814efd801dc91f7e10d92c",
+      "images": [
+        {
+          "width": 32,
+          "height": 32,
+          "size": 885,
+          "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/7ca903f489154675833261fd5e225185.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 1118,
+          "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/465bf89f17a443ed880e869fc3b5aa29.jpeg"
+        },
+        {
+          "width": 90,
+          "height": 90,
+          "size": 2019,
+          "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/5d3d9edf7ebb4f149297a0b6d7e1f5ce.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 2293,
+          "url": "https://media.sketchfab.com/avatars/a898620019814efd801dc91f7e10d92c/3ff55b260bc64056b4986ec55c3e5b64.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/7b2d51a011d4477aaaf771ce1552fd11"
+  },
+  "vertexCount": 18907,
+  "viewCount": 11667,
+  "viewerUrl": "https://sketchfab.com/3d-models/low-poly-car-de-tomaso-p72-2020-ab85c302e652492196b600ee1eb7106a",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "The De Tomaso P72 is an upcoming sports car manufactured by Chinese IdealVentures automobile manufacturer, current propietary of De Tomaso. Based on the underpinnings of the Apollo Intensa Emozione, the car is meant to be a homage to the De Tomaso P70 prototype racing car.\n\nThe De Tomaso brand was acquired by Hong Kong based IdealVentures in 2014, the same company who had acquired German automobile manufacturer Gumpert. Under the new management, work was started to revive the brand after a failed attempt in 2009. After an advertising campaign based on the company's history and some teaser videos of the new car in development under the code name \"Project P\", the company introduced the new sports car at the 2019 Goodwood Festival of Speed. The new car, called the P72 uses a carbon fibre monocoque chassis constructed to LMP1 standards and is based on the Apollo Intensa Emozione. Unlike the Intensa Emozione, the car is meant to be a grand tourer.",
+  "price": null,
+  "downloadCount": 2919,
+  "editorUrl": "https://sketchfab.com/models/ab85c302e652492196b600ee1eb7106a/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2022-08-12T15:14:57.020259",
+  "pbrType": "metalness",
+  "textureCount": 5,
+  "materialCount": 1
+}
