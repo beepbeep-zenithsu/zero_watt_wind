@@ -1,0 +1,38 @@
+# Project understanding and baseline
+
+Read in full: inputs/project.pdf (8 pages, signed 15 September 2026), inputs/poster.pdf (1 page), model.js, app.js, src/advanced/hybrid-model.js, src/advanced/hybrid-ui.js and HYBRID-GUIDE.md. Extracted text is preserved alongside this note. Poster and project pages 6-7 were rendered and visually inspected. Figures confirm a small printed demonstrator; no dimensioned, load-rated production drawing or measured test series was supplied. The hand sketch on project page 6 also suggests grain grinding, which is future scope, not an implemented site mode. Contact details are deliberately excluded from the report.
+
+## Authoritative baseline
+
+The PDFs establish a spiral/Archimedes/Fibonacci rotor, shafts, two-stage right-angle bevel drive and interchangeable NACA 65-810 fan or surface paddle. The prototype is PLA, designed with SolidWorks, fabricated on Bambu Lab P1S; airfoil geometry was generated with Python/SciPy. Poster explicitly says starting wind speed, torque, airflow, drivetrain efficiency and oxygen transfer remain unmeasured. The drawn pond uses PLA floats; these are illustrative, not evidence of buoyancy, fatigue, watertightness or stability testing. Source labels [S] below mean the source states a value; they do not mean the value is experimentally true.
+
+PDF numerical claims: [S] 500 ppm CO2 rise and 15% cognitive-performance reduction attributed to COGfx (requires primary-source verification); [S] 90-degree power redirection; [S] two-stage bevel transmission; [S] NACA 65-810 profile identifier; [S] submission date 15-09-2026. No capex, component price, revenue, business-model tariff, market demand, lifetime, payback, measured airflow or measured oxygen-transfer value appears in either PDF. No commercial business model or tariff is implemented in current model.js/app.js/hybrid modules. Sale, lease, pay-per-use, installation and maintenance will therefore be explicitly analyst-proposed alternatives, never attributed to the site or PDFs. A combined case means two separate installations, with no sharing of a rooftop rotor and a remote pond rotor.
+
+## Basic / pond code defaults (all [A] demonstration coefficients)
+
+Complete machine-readable inventory is exported to data/site_baseline.json and data/site_numeric_inventory.csv by model/audit_site.cjs, including every numeric literal in the engineering/UI sources, catalogue ratings and all presets. Engineering defaults: wind 3.5 m/s; rotor diameter 1 m; 1 unit; Cp .18; drive .75; cutin 2 m/s; cutout 25 m/s; stormCutout 16 m/s; ratedPower 250 W/unit; 1 boat and 1 unit/boat; rain 0; gear reduction 2; TSR .9; ambient 32 C. Room 150 m3; 8 people; outdoor CO2 420 ppm; background .5 ACH; pressure 20 Pa; fan efficiency .35; target CO2 1200 ppm. Pond 100 m3; water 28 C; oxygen demand .25 mg/L/h; SAE .8 kg O2/kWh at standard conditions; background K .01/h; DO target 4 mg/L.
+
+Basic presets: rooftop breeze (4.5 m/s, 8 people, 150 m3, 32 C); urban canyon (2.8, lull, 12, 150, 34); heatwave (2.3, gusts, 18, 150, 46); monsoon (7, gusts, 10, 150, rain .8, 30); cyclone (19, storm, 8, 150, rain 1, 28). Pond presets: park breeze (4.5 m/s, 100 m3, 25 C, demand .25); sheltered lull (2.8, lull, 100, 28, .35); hot night (2.2, gusts, 100, 30, .55); monsoon (7, gusts, 150, 26, .4); storm surge (19, storm, 180, 27, .35). Pond units = boats x units/boat; moving and moored pontoons are visual options, not a hydrodynamic/navigation model. Wind profiles: steady; sinusoidal gusts; repeating 36-second lull; sinusoidal storm. UI ranges and hardware catalogue are captured in the inventory, not treated as validated operating limits.
+
+Basic formula: Pshaft=min(0.5*1.225*pi*D^2/4*v^3*Cp*drive,250*units), zero below cutin or with manual brake; Q=Pshaft*fanEfficiency/pressure*3600; rain damper factor .3 if enabled. RPM=v*TSR/(pi*D)*60, outputRPM=RPM/ratio. CO2 is a steady, perfectly mixed mass balance; occupants emit assumed .018 m3/h each. Pond model uses SAE and a saturation polynomial, temperature correction 1.024^(T-20), background reaeration and constant oxygen demand. It is equilibrium, not transient night-time survival modelling. Sensors can enable warnings/logic but need electricity.
+
+## Advanced ventilation (all coefficients [A])
+
+Wind area 3.46 m2 (comment describes 2.1 m diameter); Cp .23; transmission .84; density 1.225 kg/m3. Nominal 60 W fan at 240 RPM with 850 m3/h estimated flow; cube-law load; free rotor 65*wind RPM; equal miter gears 1:1; belt radii ratio 34/22. PV 180 W at irradiance 1000 W/m2; controller .94; battery 240 Wh on conceptual 24 V bus, initial SOC 72%; motor 95 W maximum input, efficiency .78; charge cap 75 W, charge efficiency .95; battery bus support 120 W. Assistance hysteresis .90/1.05 target and 1.5 s verification; low lockout 12%, recovery 20%; target range 80-1200 RPM; wind UI 0-60 m/s; irradiance 0-1200 W/m2. Time step capped at 1 s; airflow linear in RPM; rotation visually .22 times physical rate. Sunny, canyon and monsoon weather; adequate-wind, weak-wind, no-wind, low-battery presets; night, injected fault and wind-only policy are independent demonstrations. Monsoon forces PV and motor assistance off. Scene inspection, section, explode, tour, sun tracking and controls do not validate physical efficiency.
+
+## Contradictions / corrections required
+
+- Project calls the system reliable during outages; poster correctly conditions this on sufficient wind. No guaranteed airflow or fish survival is defensible.
+- Project claims no added carbon footprint; fabrication, replacement and logistics imply embodied emissions. Zero operating electricity applies only to uninstrumented mechanical core, not advanced hybrid.
+- Claims of inherently cooler/drier intake are conditional: outdoor air can be hotter, wetter and polluted. Negative pressure needs a screened intake and a pressure budget; filtration adds losses.
+- Fibonacci nomenclature and an airfoil identifier do not establish superiority, low-speed self-start, quietness or optimum SAE. All require tests at actual Reynolds number, gear losses and static pressure.
+- Basic declares cutout values but code ignores them and only manual braking stops rotation. Advanced has no tested overspeed/structural model. Do not treat cyclone/storm graphics as safe operation.
+- Guide says advanced wind power is capped; current source deliberately removes that cap. Source code controls the simulation audit, PDFs control the physical project intent.
+- Basic area/diameter, Cp, gear ratio and performance are different from advanced. They are separate assumed geometries, not an efficiency comparison at equal geometry.
+- Pond gusts may not coincide with pre-dawn oxygen demand. Mixing can expose anoxic water; emergency powered backup remains necessary.
+- Poster lists three contributors while submission file identifies two; no judgement of team membership is made.
+- No business models/prices appear in the supplied materials. This absence is NOT FOUND, not a licence to invent a baseline.
+
+## Final visual baseline refinement
+
+Project p7 rotor slicing estimate [S]: total filament12.70m /40.02g, model filament9.77m /30.78g, slicer cost1.02 (currency NOT GIVEN), prepare6m14s, model print1h59m and total2h5m. These are software estimates for the small printed part, not measured fabrication costs or full-scale BOM inputs. Left assembly slicing screenshot visibly labels PolyLite PETG, while textual project specs and poster state PLA; retain as a material contradiction pending print-file confirmation. The printed rotor mass is not extrapolated to production. Hand sketch includes a grain-grinding possibility, which is deferred.

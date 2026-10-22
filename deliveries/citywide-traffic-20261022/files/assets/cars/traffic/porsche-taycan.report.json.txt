@@ -1,0 +1,75 @@
+{
+  "id": "porsche-taycan",
+  "source": {
+    "uid": "875072396ef541e3b106152e6dea6978",
+    "title": "2020 Porsche Taycan",
+    "author": "martin002",
+    "url": "https://sketchfab.com/3d-models/875072396ef541e3b106152e6dea6978",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "verified": true,
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-014/875072396ef541e3b106152e6dea6978.glb",
+    "originalSha256": "b93347425d0c30c55647742dc77d0a4e9bec7ec8c423a8214a655928a213d0c6",
+    "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Public creator attribution/license retained.",
+    "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures. Restored missing material colors with semantic PBR materials.",
+    "warnings": [],
+    "originalFile": "porsche-taycan-martin.glb"
+  },
+  "sourceSha256": "9bcbc5c4f7c30d2fe3d4bdf54a46d5db0ec18a79b168db0f3a308595086f9cb0",
+  "front": "-Y",
+  "length": 4.96,
+  "trianglesBefore": 369603,
+  "warnings": [],
+  "levels": [
+    {
+      "level": 0,
+      "file": "porsche-taycan-lod0.glb",
+      "triangles": 58196,
+      "trianglesBeforeExport": 58196,
+      "budget": 60000,
+      "materialPrimitives": 25,
+      "textureLimit": 1024,
+      "sizeBlenderXYZ": [
+        2.14334,
+        4.9595,
+        1.41138
+      ],
+      "bytes": 2164240,
+      "sha256": "9b31ac4b26c2158bd437699d7f7193b595d691f423f4d6d54169d26204db6a00"
+    },
+    {
+      "level": 1,
+      "file": "porsche-taycan-lod1.glb",
+      "triangles": 15515,
+      "trianglesBeforeExport": 15515,
+      "budget": 16000,
+      "materialPrimitives": 25,
+      "textureLimit": 512,
+      "sizeBlenderXYZ": [
+        2.13752,
+        4.95577,
+        1.41198
+      ],
+      "bytes": 746008,
+      "sha256": "29a143d383479774716ac879c9e2d25ac341657f6c90a0242c2cff4ee5cf44d1"
+    },
+    {
+      "level": 2,
+      "file": "porsche-taycan-lod2.glb",
+      "triangles": 3869,
+      "trianglesBeforeExport": 3874,
+      "budget": 4000,
+      "materialPrimitives": 23,
+      "textureLimit": 256,
+      "sizeBlenderXYZ": [
+        2.14311,
+        4.92926,
+        1.41198
+      ],
+      "bytes": 244744,
+      "sha256": "ec690c483179b3d71e3e458f3547b886e02561ba0dc124f87acf0be700dad444"
+    }
+  ]
+}

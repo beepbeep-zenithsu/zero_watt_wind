@@ -1,0 +1,22 @@
+﻿task,rounds,evidence,numerical,realism,completeness,limitation
+01,3,8,9,9,9,Requested evidence threshold met for bounded description; physical validation still separate.
+02,6,6,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+03,6,7,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+04,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+05,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+06,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+07,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+08,6,5,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+09,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+10,6,7,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+11,6,7,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+12,3,9,10,9,9,Requested evidence threshold met for bounded description; physical validation still separate.
+13,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+14,6,7,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+15,6,7,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+16,6,6,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+17,6,7,9,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+18,3,8,9,9,9,Requested evidence threshold met for bounded description; physical validation still separate.
+19,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+20,6,6,10,9,9,"NOT FOUND: task-specific field data, comparable quotes or commercial proof; Evidence <8 after maximum rounds."
+Finance,6,6,10,9,9,"Unvalidated demand, WTP, resource and production quote inputs; negative base economics retained."

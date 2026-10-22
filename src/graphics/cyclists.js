@@ -1,6 +1,6 @@
 import * as T from '../../vendor/three.module.js';
 import {addAssetInstances} from './assets.js';
-import {prepareTraffic,advanceTraffic,TRAFFIC_CRUISE} from './traffic.js';
+import {prepareTraffic,advanceTraffic,TRAFFIC_CRUISE,trafficSignal} from './traffic.js';
 import {seedRoadUsers} from './road-network.js';
 import {personLook} from './people.js';
 
@@ -20,18 +20,25 @@ function boneTransform(a,b,c,d,result){
 
 export function buildCyclists(city){
   const users=seedRoadUsers(city.network.cyclePaths,city.network.cyclePaths.map(()=>2),i=>({
-    ...personLook(i+3),wheelRadius:.35,wheelbase:1.18,clearance:2.5,standOff:1.25,headway:1.0,maxAcceleration:1.0,cornerAcceleration:1.1,
+    ...personLook(i+3),wheelRadius:.35,wheelbase:1.18,clearance:2.5,standOff:2.2,headway:1.0,maxAcceleration:1.0,cornerAcceleration:1.1,
     parts:{},initial:[cycleLeg(-1,0),cycleLeg(1,0)],current:[cycleLeg(-1,0),cycleLeg(1,0)],position:[0,-.18,0]
-  }));
+  }),{junctions:city.network.junctions,junctionClearance:10,spacing:3,laneWidth:.9});
   const controller=city.cycleTraffic={cars:users,paths:city.network.cyclePaths,network:city.network};
   city.cyclists=users;prepareTraffic(controller);
   const batch=city.cyclistsBatch=addAssetInstances(city.root,'site-cyclist',users,{lighting:true,motionBounds:city.motionBounds});
   city.batches.push(batch);
 }
 
-export function updateCyclists(city,dt,signals,reduced,wet,storm){
+export function advanceCyclists(city,dt,signals,wet,storm){
   const controller=city.cycleTraffic;
-  if(!reduced)advanceTraffic(controller,dt,storm?TRAFFIC_CRUISE.stormBicycle:wet?TRAFFIC_CRUISE.wetBicycle:TRAFFIC_CRUISE.bicycle,(axis,car,distance)=>signals[axis]==='green'||(signals[axis]==='amber'&&distance<1.25+car.speed*car.speed/5.2));
+  advanceTraffic(controller,dt,storm?TRAFFIC_CRUISE.stormBicycle:wet?TRAFFIC_CRUISE.wetBicycle:TRAFFIC_CRUISE.bicycle,(axis,car,distance,line)=>{
+    const signal=trafficSignal(city.network,city.simulationTime||0,line?.junction)[axis];
+    return signal==='green'||(signal==='amber'&&distance<car.standOff+car.speed*car.speed/5.2);
+  });
+}
+
+export function updateCyclists(city){
+  const controller=city.cycleTraffic;
   const point=city.cyclePoint ||= new T.Vector3();
   for(const rider of city.cyclists){
     const p=controller.paths[rider.lane].getPointAt(rider.renderPhase??rider.phase,point);

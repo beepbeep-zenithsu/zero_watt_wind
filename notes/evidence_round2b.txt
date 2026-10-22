@@ -1,0 +1,508 @@
+ (https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doe/2024/12/ea2411221c1f4ff49805bb7ac39c66fa.pdf)
+citeturn13view0 [wordlim: 200] Crawled: 2 days ago; Content type: application/pdf; Number of pages: 1; Source: open({"ref_id":"https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doe/2024/12/ea2411221c1f4ff49805bb7ac39c66fa.pdf","lineno":null}); Total lines: 20
+L0@P0:  Department of Environment
+L1@P0:  Ministry of Environment and Forests Government of the People's Republic of Bangladesh
+L2@P0: Ref. 22.02.0000.063.61.009.23-37 Date: 23 January 2025
+L3@P0: Subject: Grid Emission Factor (GEF) for Bangladesh
+L4@P0: On behalf of the Article 6 Designated National Authority (DNA), I have the pleasure
+L5@P0: to inform you that the Grid Emission Factor (GEF) for Bangladesh for the period 2019-20 is
+L6@P0: 0.61 tCO2/MWh, whereas it is 0.62 tCO2/MWh for the periods 2020-21 and 2021-22. For
+L7@P0: methodologies and other relevant information, please see the Bangladesh First Biennial Update
+L8@P0: Report to the United Nations Framework Convention on Climate Change 2023.
+L9@P0: This is being circulated for further necessary actions by the authorities concerned.
+L10@P0: Mirza Shawkat Ali
+L11@P0: Director (Climate Change and Int. Convention)
+L12@P0: and
+L13@P0: Article 6.4 Mechanism DNA Contact Point
+L14@P0: E-mail: mirzasa1@yahoo.com
+L15@P0: Paribesh Bhaban
+L16@P0: E/16, Agargaon, Sher-e-Bangla
+L17@P0: Nagar, Dhaka-1207
+L18@P0: Telephone: 88-02-222218500
+L19@P0: E-Mail: dg@doe.gov.bd
+--------------------------------------------------------------------------------
+Small Wind Guidebook | Department of Energy (https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook)
+citeturn13view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook","lineno":null}); Total lines: 803
+L0: 【0†iframe†www.googletagmanager.com】 【1†iframe†www.googletagmanager.com】
+L1: # Small Wind Guidebook
+L2: 
+L3: 【2†WINDExchange Home】
+L4: 
+L5: The Small Wind Guidebook helps homeowners, ranchers, and small business owners decide if wind energy will work for them by addressing the following questions:
+L6:   * 【3†Is wind energy practical for me?】
+L7:   * 【4†What size wind turbine do I need?】
+L8:   * 【5†What are the basic parts of a small wind electric system?】
+L9:   * 【6†What do wind systems cost?】
+L10:   * 【7†Where can I find installation and maintenance support?】
+L11:   * 【8†How much energy will my system generate?】
+L12:   * 【9†Is there enough wind on my site?】
+L13:   * 【10†How do I choose the best site for my wind turbine?】
+L14:   * 【11†Can I connect my system to the utility grid?】
+L15:   * 【12†Can I go off grid?】
+L16: ## Introduction
+L17: 
+L18:   * [Button: What Is Small Wind? ]
+L19: Can I use wind energy to power my home? More people across the country are asking this question as they look for a hedge against increasing electricity rates and a way to harvest their local wind resources. Although wind turbines large enough to provide a significant portion of the electricity needed by the average U.S. home generally require 1 acre of property or more, approximately 19.3% of the U.S.
+L20: population lives in rural areas^{[1]} and may own land parcels large enough to accommodate a wind energy system.
+L21: A small wind electric system will work for you if:
+L22: 
+L23:     * There is enough wind where you live
+L24:     * Tall towers are allowed in your neighborhood or rural area (or you live in flat terrain with no tall obstacles nearby)
+L25:     * You have enough space
+L26:     * You can determine how much electricity you need or want to produce
+L27:     * You can interconnect with your utility service provider (assuming you have a grid-connection application)
+L28:     * It works for you economically.
+L29: Small wind electric systems can contribute to our nation's energy needs. This guide will provide you with basic information about small wind electric systems to help you decide if wind energy will work for you.
+L30: 
+L31: 【13†Image: A small wind turbine against a cloudy blue sky】
+L32: 
+L33: Homeowners, ranchers, and small business owners can use wind turbines, like this Skystream 3.7 residential turbine, to reduce their utility bills.
+L34: 
+L35: Photo from Southwest Power
+L36: 
+L37:   * [Button: Why Should I Choose Wind? ]
+L38: Depending on your wind resource, a small wind energy system can lower your electricity bill slightly or up to 100%, help you avoid the high costs of extending utility power lines to remote locations, and sometimes can provide DC or off-grid power.^{[2]} In addition, wind energy is local energy.
+L39: 
+L40: 
+L41: 
+L42:   * [Button: How Do Wind Turbines Work? ]
+L43: Wind is created by the unequal heating of the Earth's surface by the sun. Wind turbines convert the kinetic energy in wind into mechanical power that runs a generator to produce electricity. Today's turbines are versatile modular sources of electricity.^{[3]} Their blades are aerodynamically designed to capture the maximum energy from the wind.^{[4]} The wind turns the blades, which spin a shaft connected to a generator or the generator's rotor, which makes electricity.
+L44: 
+L45: 【14†Add to top】.
+L46: ## How Can I Get Involved?
+L47: 
+L48:   * [Button: First, How Can I Make My Home More Energy Efficient? ]
+L49: Before choosing a wind system for your home, you should consider reducing your energy consumption by making your home or business more energy efficient. You can start by learning 【15†how electricity is used in U.S. homes.†www.eia.gov】 Reducing your energy consumption will significantly lower your utility bills and will reduce the size of the home-based renewable energy system you need. To achieve maximum energy efficiency, you should take a whole-building approach.
+L50: View your home as an energy system with interrelated parts, all of which work synergistically to contribute to the efficiency of the system. From the insulation in your home's walls to the light bulbs in its fixtures, there are many ways to make your home more efficient.
+L51:     * Improving insulation and sealing air leaks in a home are two of the fastest and most cost-effective ways to reduce energy waste. Homes built prior to 1950 use approximately 60% more energy per square foot than those constructed in 2000 or later.
+L52:     * Turning your thermostat down 7° to 10°F for 8 hours a day from its normal setting can save as much as 10% on heating and cooling.
+L53:     * Low-e exterior or interior storm windows can save you 12% to 33% on heating and cooling costs, depending on the type of window already installed in the home.^{[5]}
+L54:     * By replacing your home's five most frequently used light fixtures or bulbs with 【16†models that have earned the ENERGY STAR†www.energystar.gov】, you can save money on utility bills.
+L55:     * When shopping for appliances, look for the ENERGY STAR® label. ENERGY STAR appliances have been identified by the U.S. Environmental Protection Agency and U.S. Department of Energy as being the most energy-efficient products in their classes.^{[6]}
+L56: For more information on how to make your home energy efficient, see 【17†Energy Saver Guide: Tips on Saving Money and Energy at Home】.
+L57: 
+L58:   * [Button: Is Wind Energy Practical for Me? ]
+L59: 
+L60: A small wind energy system can provide you with a practical and economical source of electricity if:
+L61:     * Your property has a 【18†good wind resource】.^{[7]}
+L62:     * Your home or business is located on at least 1 acre of land.
+L63:     * Your local zoning codes or covenants allow wind turbines.
+L64:     * You can determine how much electricity you need or want to produce.
+L65:     * It works for you economically (you may be eligible for state/utility or federal incentives).
+L66:     * You're comfortable with long-term investments.
+L67:     * Your average electricity bills are high or you don't have access to utility grid power.
+L68: ### Zoning and Permitting Issues
+L69: 
+L70: Zoning refers to the general local regulations that allow and restrict various types of projects, whereas permitting refers to acquiring permits for a specific project within the scope of those zoning rules.
+L71: The zoning and permitting processes for wind energy installations seek to address safety, aesthetics, and community interests and concerns. Some of these concerns might include sound level, visual impact, wildlife impact, TV/radio interference, ice shedding, or broken equipment.
+L72: Practices vary dramatically across the country so becoming familiar with the local regulations, authorities, and general requirements is helpful. In some cases, zoning and permitting expectations are consistent and straightforward. In other cases, hearings may be required and the process is uncertain. A project designed within the existing limitations will experience a much smoother permitting process and will be more likely to receive a permit.
+L73: But if your project falls outside of defined limits, it must usually undergo a special review process to obtain a variance from the existing rules and regulations — a potentially expensive and time-consuming process that often involves at least one public hearing and has no guarantee of success.^{[8]}
+L74: Before you invest in a wind energy system, you should research potential zoning and permitting obstacles. Some jurisdictions restrict the height of the structures permitted in residential-zoned areas, although variances may be obtained. Most zoning ordinances have a height limit of 35 feet.^{[9]}
+L75: 
+L76: You can find out more about zoning and permitting requirements by:
+L77:     * Contacting the local building inspector, board of supervisors, or planning board. They can tell you if you will need to obtain a building permit and will provide you with a list of requirements.
+L78:     * Visiting the Distributed Wind Energy Association's 【19†Permitting and Zoning Resource Center†distributedwind.org】.
+L79:     * Utilizing the Clean Energy States Alliance's 【20†Distributed Wind Energy Zoning and Permitting: A Toolkit for Local Governments†www.cesa.org】.
+L80: In addition to zoning issues, your neighbors might object to a wind turbine that blocks their view, or they might be concerned about the sound it produces. Most zoning and aesthetic concerns can be addressed by supplying objective data. For example, a typical 2-kilowatt wind turbine operates at a noise level of approximately 55 dB 50 feet away from the hub of the turbine.^{[10]} At that level, the sound of the wind turbine can be picked out of surrounding noise if a conscious effort is made to hear it.
+L81: 【21†Image: A couple standing in front of a small wind turbine being lifted into place in a field by crane.】
+L82: 
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn13view2 [wordlim: 200] Source: open({"ref_id":"https://www.mdpi.com/1996-1073/12/24/4624","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.mdpi.com/1996-1073/12/24/4624: (429) Too Many Requests
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn13view3 [wordlim: 200] Source: open({"ref_id":"https://www.sciencedirect.com/science/article/pii/S2352484726000946","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.sciencedirect.com/science/article/pii/S2352484726000946: (403) Forbidden
+--------------------------------------------------------------------------------
+Addressing Environmental Pollution is Critical for Bangladesh’s Growth and Development (https://www.worldbank.org/en/news/press-release/2024/03/28/addressing-environmental-pollution-is-critical-for-bangladesh-s-growth-and-development)
+citeturn13view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.worldbank.org/en/news/press-release/2024/03/28/addressing-environmental-pollution-is-critical-for-bangladesh-s-growth-and-development","lineno":null}); Total lines: 261
+L0: col-xs-12
+L1: 
+L2: col-sm-12
+L3: 
+L4: col-md-1
+L5: 
+L6: col-lg-1
+L7: 
+L8: col-xs-12
+L9: 
+L10: col-sm-12
+L11: 
+L12: col-md-8
+L13: 
+L14: col-lg-8
+L15: 
+L16: jcrtitle
+L17: # Addressing Environmental Pollution is Critical for Bangladesh’s Growth and Development
+L18: 
+L19: jcrpagetitle
+L20: 
+L21: Addressing Environmental Pollution is Critical for Bangladesh’s Growth and Development
+L22: 
+L23: jcrnavtitle
+L24: 
+L25: Addressing Environmental Pollution is Critical for Bangladesh’s Growth and Development
+L26: 
+L27: jcrdescription
+L28: Bangladesh faces alarming levels of pollution and environmental health risks that disproportionately harm the most vulnerable people – the poor, children under 5, the elderly, and women, says a new World Bank report titled "Building Back a Greener Bangladesh: Country Environmental Analysis 2023."
+L29: 
+L30: jcrtags
+L31: 
+L32:   * wbg:regions/south-asia
+L33:   * wbg:country/bangladesh
+L34:   * wbg:topic/environment_broad/environment_natural-capital
+L35: 
+L36: jcrimage
+L37: 【0†https://delivery-p136806-e1377785.adobeaemcloud.com/adobe/assets/urn:aaid:aem:bcd7e4d4-a970-415f-87df-a7ba7800ee4a/as/WBG-Logo.jpg†delivery-p136806-e1377785.adobeaemcloud.com】
+L38: 
+L39: content-type
+L40: 
+L41: Press Release
+L42: 
+L43: writer
+L44: 
+L45: 000576596
+L46: 
+L47: first-appeared-in
+L48: 
+L49: 2024-03-28
+L50: 
+L51: expert-id
+L52: 
+L53: 000576596
+L54: 
+L55: country
+L56: 
+L57: Bangladesh
+L58: 
+L59: keyframe-img
+L60: 
+L61: 【0†https://delivery-p136806-e1377785.adobeaemcloud.com/adobe/assets/urn:aaid:aem:bcd7e4d4-a970-415f-87df-a7ba7800ee4a/as/WBG-Logo.jpg†delivery-p136806-e1377785.adobeaemcloud.com】
+L62: related-report-id
+L63: 
+L64:   * 188631
+L65: 
+L66: result
+L67: 
+L68: false
+L69: 
+L70: funding-mechanism
+L71: 
+L72:   * ida, IDA
+L73: 
+L74: content-date
+L75: 
+L76: March 28, 2024
+L77: 
+L78: col-xs-12
+L79: 
+L80: col-sm-12
+L81: 
+L82: col-md-3
+L83: 
+L84: col-lg-3
+L85: 
+L86: sec-spacing
+L87: 
+L88: section-none
+L89: 
+L90: sec-spacing-bottom
+L91: 
+L92: section-xlarge
+L93: 
+L94: style
+L95: 
+L96: default
+L97: 
+L98: col-xs-12
+L99: 
+L100: col-sm-12
+L101: 
+L102: col-md-1
+L103: 
+L104: col-lg-1
+L105: 
+L106: col-xs-12
+L107: 
+L108: col-sm-12
+L109: 
+L110: col-md-7
+L111: 
+L112: col-lg-7
+L113: 
+L114:   * add-style
+L115:   * font-medium
+L116:   * lp-body-content
+L117: 
+L118: 【1†Image】
+L119: 
+L120: Bangladesh Country Environmental Analysis 2023
+L121: DHAKA, March 28, 2024—Bangladesh faces alarming levels of pollution and environmental health risks that disproportionately harm the most vulnerable people – the poor, children under 5, the elderly, and women, says a new World Bank report.
+L122: The 【2†Bangladesh Country Environmental Analysis (CEA)†documents.worldbank.org】 finds air pollution, unsafe water, poor sanitation and hygiene, and lead exposure cause over 272,000 premature deaths and 5.2 billion days of illness annually. These environmental issues cost the equivalent of 17.6 percent of Bangladesh's GDP in 2019. Household and outdoor air pollution have the most detrimental effect on health, leading to nearly 55 percent of premature deaths, which alone cost 8.32 percent of GDP in 2019.
+L123: “For Bangladesh, addressing environmental risks is both a development and an economic priority. We have seen around the world that when economic growth comes at the cost of the environment, it cannot sustain. But it is possible to grow cleaner and greener without growing slower,” said Abdoulaye Seck, Country Director for Bhutan and Bangladesh. “To sustain its strong growth path and improve the livability of cities and the countryside, Bangladesh simply cannot afford to ignore the environment.
+L124: Preventing environmental degradation and ensuring climate resilience is critical to stay on a strong growth path and for achieving the country’s vision of becoming an upper-middle-income country.”
+L125: Environmental pollution is taking a heavy toll on children. Lead poisoning is causing irreversible damage to children’s brain development, resulting in an estimated annual loss of nearly 20 million IQ points. Household emissions from cooking with solid fuels is a major source of air pollution and affect women and children.
+L126: Major rivers in Bangladesh have experienced a severe decline in water quality due to industrial discharge and unmanaged waste, including plastics and untreated sewage, among other sources.
+L127: Timely and urgent interventions for air pollution control; improved water, sanitation, and hygiene (WASH); and control of lead exposure could prevent over 133,000 premature deaths per year. Investments in cleaner power generation, clean cooking fuels, and stricter controls on industrial emissions can help reduce air pollution.
+L128: “With timely and right set of policies and actions, Bangladesh can reverse its environment degradation trend,” said Ana Luisa Gomes Lima, World Bank Senior Environmental Specialist and co-author of the report. “Strengthening and enforcing environmental regulations, coupled with investments and other incentives for clean cooking, scaling up green financing, setting up efficient carbon markets, and raising awareness, can help reduce pollution and achieve green growth in Bangladesh.”
+L129: The report identifies environmental priorities, assesses interventions, and includes recommendations to strengthen governance and institutional capacity for environmental management. Bangladesh can protect its environment by setting evidence-based priorities, diversifying and strengthening environmental policy instruments, strengthening institutional capacity, and building an enabling environment for green financing.
+L130: 
+L131: Contacts
+L132: ### Mehrin A. Mahbub
+L133: 
+L134: mmahbub@worldbank.org
+L135: 
+L136: In Dhaka
+L137: 
+L138: ### Diana Chung
+L139: 
+L140: dchung1@worldbank.org
+L141: 
+L142: In Washington
+L143: ## About The World Bank
+L144: 
+L145: The World Bank Group has a bold vision: to create a world free of poverty on a livable planet. In more than 100 countries, the World Bank Group provides financing, advice, and innovative solutions that improve lives by creating jobs, strengthening economic growth, and confronting the most urgent global challenges. For more information, please visit 【3†www.worldbank.org】, 【4†www.miga.org†www.miga.org】, and 【5†www.ifc.org†www.ifc.org】.
+L146: 
+L147: col-xs-12
+L148: 
+L149: col-sm-12
+L150: 
+L151: col-md-1
+L152: 
+L153: col-lg-1
+L154: col-xs-12
+L155: 
+L156: col-sm-12
+L157: 
+L158: col-md-3
+L159: 
+L160: col-lg-3
+L161: 
+L162:   * add-style
+L163: ## RELATED
+L164: 
+L165: lp-heading-bottom-medium
+L166: 
+L167: Report: Building Back a Greener Bangladesh: Country Environmental Analysis 2023
+L168: 
+L169: 【2†https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099032624044525190†documents.worldbank.org】
+L170: 
+L171: Webpage: Bangladesh Country Environmental Analysis 2023
+L172: 
+L173: 【6†https://www.worldbank.org/en/region/sar/publication/bangladesh-country-environment-analysis-2023】
+L174: 
+L175: The World Bank in Bangladesh
+L176: 
+L177: 【7†https://www.worldbank.org/ext/en/country/bangladesh】
+L178: World Bank Bangladesh on Facebook
+L179: 
+L180: 【8†https://www.facebook.com/WorldBankBangladesh†www.facebook.com】
+L181: 
+L182: World Bank Bangladesh on X/Twitter
+L183: 
+L184: 【9†https://twitter.com/WBBangladeshCD†twitter.com】
+L185: 
+L186: sec-spacing
+L187: 
+L188: section-none
+L189: 
+L190: sec-spacing-bottom
+L191: 
+L192: section-padding-between
+L193: 
+L194: style
+L195: 
+L196: default
+L197: ## OMBC
+L198: 
+L199: Online Media Briefing Center (OMBC) news for accredited journalists
+L200: 
+L201: Sign In
+L202: 
+L203: 【10†https://media.worldbank.org/†media.worldbank.org】
+L204: 
+L205: Register
+L206: 
+L207: 【11†https://media.worldbank.org/user/register†media.worldbank.org】
+L208: 
+L209: secondary
+L210: 
+L211: white-btn
+L212: 
+L213: sec-spacing
+L214: 
+L215: section-none
+L216: 
+L217: sec-spacing-bottom
+L218: 
+L219: section-padding-between
+L220: 
+L221: sec-swoosh
+L222: 
+L223: sec-swoosh-type12
+L224: 
+L225: style
+L226: 
+L227: default, lp-signup-wrapper, border-radius-medium, bg-primary-blue-80, heading-v1
+L228: 
+L229: sec-inside-container
+L230: 
+L231: true
+L232: 
+L233: everything
+L234: 【12†https://webapi.worldbank.org/aemsite/everything/search†webapi.worldbank.org】
+L235: 
+L236: true
+L237: 
+L238: {"facets":[],"orderby":"contentDate desc","select":"*","searchFields":"*","search":"*","filter":"contentType eq 'Press Release'","top":20,"skip":0}
+L239: 
+L240: 3
+L241: 
+L242: no
+L243: 
+L244: yes
+L245: 
+L246: no
+L247: 
+L248: whats_news
+L249: 
+L250: sec-spacing
+L251: 
+L252: section-none
+L253: 
+L254: sec-spacing-bottom
+L255: 
+L256: section-padding-between
+L257: 
+L258: style
+L259: 
+L260: default, bg-neutrals-15-gradient
+--------------------------------------------------------------------------------
+Office air quality may affect employees’ cognition, productivity | Harvard T.H. Chan School of Public Health (https://hsph.harvard.edu/news/office-air-quality-may-affect-employees-cognition-productivity/)
+citeturn13view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://hsph.harvard.edu/news/office-air-quality-may-affect-employees-cognition-productivity/","lineno":null}); Total lines: 130
+L0: 【0†iframe†www.googletagmanager.com】 【1†Skip to main content】
+L1: 
+L2: Support the School
+L3: 
+L4: 【2†Your gift†community.alumni.harvard.edu】 powers excellence in research and education to advance public health.
+L5: 
+L6: [Input: Search Harvard Chan]
+L7: 
+L8: Search
+L9: 
+L10: 【3†Giving】
+L11: 
+L12:   * 【4†Degrees & Programs】
+L13:   * 【5†Admissions】
+L14:   * 【6†Faculty & Research】
+L15:   * [Button: Degrees & Programs]
+L16:     * 【4†Degrees & Programs】
+L17:     * 【7†Degree Program Finder】
+L18:       * 【8†Master’s Degrees】
+L19:       * 【9†Doctoral Degrees】
+L20:       * 【10†Joint and Combined Degrees】
+L21:       * 【11†Interdisciplinary Concentrations】
+L22:     * 【12†Advanced Learning Academy】
+L23:     * 【13†Fellowships and Special Programs】
+L24:     * 【14†Undergraduate and High School Programs】
+L25:   * [Button: Admissions]
+L26:     * 【5†Admissions】
+L27:     * 【15†Applying to a Degree Program】
+L28:     * 【16†Tuition and Financial Aid】
+L29:     * 【17†Why Harvard Chan?】
+L30:     * 【18†Upcoming Admissions Events and Webinars】
+L31:     * 【19†Policies and Disclosures】
+L32:   * [Button: Faculty & Research]
+L33:     * 【6†Faculty & Research】
+L34:     * 【20†Faculty and Researcher Profiles】
+L35:     * 【21†Academic Departments】
+L36:     * 【22†Research Centers, Institutes, and Labs】
+L37:     * 【23†Resources for Researchers】
+L38:   * [Button: News & Events]
+L39:     * 【24†News】
+L40:       * 【25†Newsletters】
+L41:       * 【26†For the Media】
+L42:     * 【27†Events】
+L43:     * 【28†Topics】
+L44:     * 【29†The Studio】
+L45:   * [Button: Student Life]
+L46:     * 【30†Student Life】
+L47:     * 【31†Student Resources】
+L48:     * 【32†Career Development 】
+L49:     * 【33†Life in Boston】
+L50:     * 【34†Housing】
+L51:     * 【35†Teaching and Mentoring】
+L52:     * 【36†Beyond the Classroom】
+L53:     * 【37†International Student Experience】
+L54:     * 【38†Graduation】
+L55:     * 【39†Orientation】
+L56:   * [Button: Alumni & Friends]
+L57:     * 【40†Alumni & Friends】
+L58:     * 【41†Get Involved】
+L59:     * 【42†Impact】
+L60:     * 【43†Events】
+L61:     * 【44†Alumni Home】
+L62:     * 【3†Support Harvard Chan School】
+L63:   * [Button: Who We Are]
+L64:     * 【45†Mission and Vision】
+L65:       * 【46†The Harvard Chan Principles of Citizenship 】
+L66:     * 【47†Research Impact】
+L67:     * 【48†Open Inquiry and Constructive Engagement】
+L68:     * 【49†Leadership】
+L69:     * 【50†Location and Facilities】
+L70:     * 【51†Facts and Figures】
+L71:     * 【52†History】
+L72:     * 【53†Contact】
+L73: 【54†Environment & Climate Health】
+L74: # Office air quality may affect employees’ cognition, productivity
+L75: 
+L76: By
+L77: 
+L78: Staff Writer
+L79: 
+L80: September 9, 2021
+L81: 
+L82: 【55†Image】
+L83: 
+L84: Jump to Section
+L85: 
+L86: Share Post
+L87: 
+L88:   * 【56†LinkedIn†www.linkedin.com】
+L89:   * 【57†Facebook†www.facebook.com】
+L90:   * 【58†WhatsApp†wa.me】
+L91:   * Email
+L92:   * Copy link
+L93: 
+L94: For immediate release: Thursday, September 9, 2021
+L95: Boston, MA – The air quality within an office can have significant impacts on employees’ cognitive function, including response times and ability to focus, and it may also affect their productivity, according to new research led by Harvard T.H. Chan School of Public Health.
+L96: The one-year study, which included participants in offices across six countries working in a variety of fields, including engineering, real estate investment, architecture, and technology, found that increased concentrations of fine 【59†particulate matter (PM2.5)†www.hsph.harvard.edu】 and lower ventilation rates (measured using carbon dioxide (CO2) levels as a proxy) were associated with slower response times and reduced accuracy on a series of cognitive tests.
+L97: The researchers noted that they observed impaired cognitive function at concentrations of PM2.5 and CO2 that are common within indoor environments.
+L98: “Our study adds to the emerging evidence that 【60†air pollution†www.hsph.harvard.edu】 has an impact on our brain. The findings show that increases in PM2.5 levels were associated with acute reductions in cognitive function. It’s the first time we’ve seen these short-term effects among younger adults,” said 【61†Jose Guillermo Cedeño Laurent†www.hsph.harvard.edu】, a research fellow in the 【62†Department of Environmental Health†www.hsph.harvard.edu】 and lead author of the study.
+L99: “The study also confirmed how low ventilation rates negatively impact cognitive function. Overall, the study suggests that poor indoor air quality affects health and productivity significantly more than we previously understood.”
+L100: The 【63†study†iopscience.iop.org】 was published online in Environmental Research Letters on September 9, 2021.
+L101: A growing body of research has shown that indoor and outdoor air pollution diminishes cognitive function. While it is well known that air pollutants such as PM2.5 can penetrate indoor environments, few studies have focused on how indoor exposures to PM2.5 and outdoor air ventilation rates affect cognition. Cedeño-Laurent noted that this is a particularly important area of research given the high percentage of time people spend indoors, especially office workers.
+L102: To better understand the issue, the research team enrolled more than 300 office workers in cities across China, India, Mexico, Thailand, the United Kingdom, and the United States. All participants were between the ages of 18 and 65, worked at least three days a week in an office building, and had a permanent workstation within the office.
+L103: Each participant’s workspace was outfitted with an environmental sensor that monitored in real-time concentrations of PM2.5 and CO2, as well as temperature and relative humidity. Additionally, each participant had a custom-designed app on their phones through which cognitive tests and surveys could be administered.
+L104: Study participants were prompted to participate in tests and surveys at prescheduled times or when the environmental sensors detected levels of PM2.5 and CO2 that fell below or exceeded certain thresholds. Two types of tests were administered: One test required employees to correctly identify the color of displayed words and was used to evaluate cognitive speed and inhibitory control—the ability to focus on relevant stimuli when irrelevant stimuli are also present.
+L105: The second test consisted of basic arithmetic questions and was used to assess cognitive speed and working memory.
+L106: The study found that response times on the color-based test were slower as PM2.5 and CO2 levels increased. They also found that accuracy on the color-based test was affected by PM2.5 and CO2 levels. For the arithmetic-based test, the study found that increases in CO2 but not PM2.5 were associated with slower response times. As concentrations of both pollutants increased, however, participants completed fewer questions correctly in the allotted test time.
+L107: “The world is rightly focused on COVID-19, and strategies like better ventilation and filtration are key to slowing infectious disease transmission indoors,” said 【64†Joseph Allen†www.hsph.harvard.edu】, associate professor of exposure assessment science and senior author on the study.
+L108: “Our research consistently finds that the value proposition of these strategies extends to cognitive function and productivity of workers, making healthy buildings foundational to public health and business strategy moving forward.”
+L109: Other Harvard co-authors included Jose Vallarino, Skye Flanigan, Anna Young, as well as Piers MacNaughton, Emily Jones, and Maya Bliss, who were previously affiliated with Harvard Chan School.
+L110: Funding for the study came from National Institutes of Health Grant T32-ES007069, the National Institute of Environmental Health Sciences Grant P30-ES000002, the National Institute for Occupational Safety and Health Grant T42-OH008416, and a gift from Carrier Global Corporation. Additional support was provided by Jones Lang LaSalle, Inc.
+L111: “Associations between acute exposures to PM2.5 and carbon dioxide indoors and cognitive function in office workers: a multicountry longitudinal prospective observational study,” Jose Guillermo Cedeño Laurent, Piers MacNaughton, Emily Jones, Anna S Young, Maya Bliss, Skye Flanigan, Jose Vallarino, Ling Jyh Chen, Xiaodong Cao, and Joseph G Allen, Environmental Research Letters, online September 9, 2021, doi: 10.1088/1748-9326/ac1bd8
+L112: 
+L113: Photo: Unsplash/Tim Gouw
+L114: 
+L115: For more information:
+L116: Chris Sweeney
+L117: 617.432.8416
+L118: csweeney@hsph.harvard.edu
+L119: 
+L120: Visit the Harvard Chan School website for the 【65†latest news†www.hsph.harvard.edu】, 【66†press releases†www.hsph.harvard.edu】, and 【67†multimedia offerings†www.hsph.harvard.edu】.
+L121: ###
+L122: 【68†Harvard T.H. Chan School of Public Health†www.hsph.harvard.edu】 brings together dedicated experts from many disciplines to educate new generations of global health leaders and produce powerful ideas that improve the lives and health of people everywhere.
+L123: As a community of leading scientists, educators, and students, we work together to take innovative ideas from the laboratory to people’s lives—not only making scientific breakthroughs, but also working to change individual behaviors, public policies, and health care practices. Each year, more than 400 faculty members at Harvard Chan School teach 1,000-plus full-time students from around the world and train thousands more through online and executive education courses.
+

@@ -1,0 +1,15 @@
+﻿component_family,supplier,price,currency,bdt,usd,source_id,status,spec,date_accessed
+PLA filament kg,HTE Bangladesh,1287,BDT,1287,10.408410837040032,filament3,open text; out of stock on recheck,generic,2026-10-22
+PLA filament kg,Costareen,1550,BDT,1550,12.535382126971289,filament1,dated guide starting price,SUNLU PLA+,2026-10-22
+PLA filament kg,Electronics.Com.BD,1999,BDT,1999,16.166599272139102,filament4,open text,generic white,2026-10-22
+PLA filament kg,TechShopBD,1950.04,BDT,1950.04,15.770642943792962,filament2,open marketplace,SUNLU PLA+ red,2026-10-22
+UCP204 bearing,Daraz/Fair Enterprise,450,BDT,450,3.6393044884755357,bearing1,cached stock conflicting,generic 20mm,2026-10-22
+UCP204 bearing,MISUMI,15.65,SGD,1511.556815,12.224478892033966,bearing2,search-index only; open 429,ASAHI branded,2026-10-22
+UCP204 bearing,Motion,52.7,USD,6516.3550000000005,52.7,bearing3,open text,AMI branded,2026-10-22
+Electric exhaust fan,Walton,1250,BDT,1250,10.109179134654266,fanweb,open full text; index showed 1310,WEF1201N 55W,2026-10-22
+Hobby bevel gear,ZerOneTech,245,BDT,245,1.9813991103922362,gear,search-index only; open failed,"8mm hole, not production gear",2026-10-22
+Conventional aerator,NSC BD,50000,BDT,50000,404.3671653861706,aerator1,open text,2HP four paddles,2026-10-22
+Conventional aerator,Bangla Ltd.,40000,BDT,40000,323.4937323089365,banglaaer,open text; inconsistent transfer claims,2HP model unspecified,2026-10-22
+Conventional aerator,BDStall single seller,40000,BDT,40000,323.4937323089365,bdstall,open text; seller independence not established,1HP two paddles; not equivalent,2026-10-22
+Battery 12V20Ah,CityTechBD,1845,BDT,1845,14.921148402749695,battery1,open text; suspicious outlier,not selected,2026-10-22
+Battery 12V20Ah,Teexla,8200,BDT,8200,66.31621512333199,battery2,open text,not 24V warranted pack,2026-10-22

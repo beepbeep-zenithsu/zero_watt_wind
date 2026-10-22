@@ -8,7 +8,7 @@ $archive=[System.IO.Compression.ZipArchive]::new($stream,[System.IO.Compression.
 try {
   $files=Get-ChildItem -LiteralPath $projectPath -Recurse -File -Force | Where-Object {
     $relative=$_.FullName.Substring($projectPath.Length+1)
-    $relative -notmatch '^(node_modules|\.git|\.upgrade-baseline|checkpoints|downloads)(\\|/)' -and
+    $relative -notmatch '^(node_modules|\.git|\.upgrade-baseline|checkpoints|downloads|data|inputs|model|notes|tmp|report|\.venv)(\\|/)' -and
     $relative -notmatch '(^|[\\/])__pycache__([\\/]|$)' -and
     $_.Extension -notin '.zip','.partial','.tmp' -and $_.Name -notmatch '\.blend[0-9]+$'
   }
@@ -33,6 +33,12 @@ try {
       $required="assets/cars/traffic/$carId$suffix"
       if(!$check.GetEntry("ZeroWatt-City/$required")){throw "Missing installed car asset: $required"}
     }
+  }
+  foreach($required in @('src/graphics/people.js','src/graphics/motion-route.js','src/graphics/mobility-shadows.js','docs/cars/live-traffic-motion.json','docs/cars/citywide-browser-review.json','deliveries/citywide-traffic-20261022/DELIVERY.md')){
+    if(!$check.GetEntry("ZeroWatt-City/$required")){throw "Missing whole-city movement entry: $required"}
+  }
+  foreach($required in @('tools/audit-city-traffic.cjs','docs/cars/traffic-safety-audit.json','docs/cars/traffic-safety-water-rain.json','deliveries/traffic-safety-20261022/DELIVERY.md')){
+    if(!$check.GetEntry("ZeroWatt-City/$required")){throw "Missing latest traffic safety entry: $required"}
   }
   [PSCustomObject]@{Path=$deliveryPath;Files=$check.Entries.Count;Bytes=(Get-Item -LiteralPath $deliveryPath).Length}
 }finally{$check.Dispose()}

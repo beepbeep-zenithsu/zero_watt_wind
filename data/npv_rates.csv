@@ -1,0 +1,10 @@
+﻿scenario,discount_rate,npv_bdt,basis
+conservative,0.12,-26789578.73223124,D from A/S inputs
+conservative,0.18,-21129345.84412533,D from A/S inputs
+conservative,0.25,-16757317.228545588,D from A/S inputs
+base,0.12,-13020404.912625443,D from A/S inputs
+base,0.18,-11181078.003929747,D from A/S inputs
+base,0.25,-9622554.994994443,D from A/S inputs
+optimistic,0.12,3733464.8178016194,D from A/S inputs
+optimistic,0.18,605232.7458829731,D from A/S inputs
+optimistic,0.25,-1463702.9177689538,D from A/S inputs

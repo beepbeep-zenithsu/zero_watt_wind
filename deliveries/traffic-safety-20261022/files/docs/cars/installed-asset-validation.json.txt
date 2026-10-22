@@ -1,0 +1,188 @@
+[
+  {
+    "id": "jaguar-e-type",
+    "levels": [
+      {
+        "triangles": 58196,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.7128424048423767,
+          1.2541858128550984,
+          4.4479899406433105
+        ],
+        "sha256": "48d0805497b71452414b69ab9afa07f30b3ec2620d85619a9743a650e4654dbf",
+        "bytes": 4006976
+      },
+      {
+        "triangles": 15516,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.7115124464035034,
+          1.253830330753658,
+          4.448092460632324
+        ],
+        "sha256": "2e7b08377cab384cfa92602fa50e20371655b9e76553489b56097fecef0d827c",
+        "bytes": 1226664
+      },
+      {
+        "triangles": 3877,
+        "primitives": 15,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            256,
+            256
+          ]
+        ],
+        "size": [
+          1.7123263478279114,
+          1.253123233195197,
+          4.449999809265137
+        ],
+        "sha256": "79bd9d83a6ab3083017ac8f5e7ed59cc07e2d57efab94384eeb32312ea45f97d",
+        "bytes": 329668
+      }
+    ]
+  },
+  {
+    "id": "porsche-taycan",
+    "levels": [
+      {
+        "triangles": 58196,
+        "primitives": 25,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.143343925476074,
+          1.4113804773951415,
+          4.95949912071228
+        ],
+        "sha256": "9b31ac4b26c2158bd437699d7f7193b595d691f423f4d6d54169d26204db6a00",
+        "bytes": 2164240
+      },
+      {
+        "triangles": 15515,
+        "primitives": 25,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.1375192403793335,
+          1.4119802881032228,
+          4.955766201019287
+        ],
+        "sha256": "29a143d383479774716ac879c9e2d25ac341657f6c90a0242c2cff4ee5cf44d1",
+        "bytes": 746008
+      },
+      {
+        "triangles": 3869,
+        "primitives": 23,
+        "wheelMeshes": 4,
+        "textureSizes": [],
+        "size": [
+          2.1336023807525635,
+          1.4119802881032228,
+          4.925276517868042
+        ],
+        "sha256": "ec690c483179b3d71e3e458f3547b886e02561ba0dc124f87acf0be700dad444",
+        "bytes": 244744
+      }
+    ]
+  },
+  {
+    "id": "de-tomaso-p72",
+    "levels": [
+      {
+        "triangles": 21495,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            1024,
+            1024
+          ],
+          [
+            1024,
+            1024
+          ],
+          [
+            1024,
+            1024
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.0636230304371566,
+          4.550000190734863
+        ],
+        "sha256": "7d09dc6eb66af86a0129e89de89f4da694486403b5e750ffe87b28c291481193",
+        "bytes": 2883896
+      },
+      {
+        "triangles": 15518,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.0632323815952986,
+          4.550000190734863
+        ],
+        "sha256": "daaca37c38556b455324045f689af85a2f7cfbf9ea1c2ece4174627b0d8b08ba",
+        "bytes": 1408580
+      },
+      {
+        "triangles": 3877,
+        "primitives": 5,
+        "wheelMeshes": 4,
+        "textureSizes": [
+          [
+            256,
+            256
+          ],
+          [
+            256,
+            256
+          ],
+          [
+            256,
+            256
+          ]
+        ],
+        "size": [
+          1.9926369190216064,
+          1.060851025977172,
+          4.550000190734863
+        ],
+        "sha256": "302b2d796f23301d0781a68a32d52ecebf7647faa40afab4c6709d9caff79bc9",
+        "bytes": 437652
+      }
+    ]
+  }
+]

@@ -1,0 +1,523 @@
+Internal Error ()
+citeturn2view0 [wordlim: 200] Source: open({"ref_id":"https://www.nrel.gov/docs/fy18osti/71077.pdf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.nrel.gov/docs/fy18osti/71077.pdf: (502) Bad Gateway
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn2view1 [wordlim: 200] Source: open({"ref_id":"https://www.who.int/publications-detail-redirect/9789240021280","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.who.int/publications-detail-redirect/9789240021280: (400) Timeout fetching
+--------------------------------------------------------------------------------
+www.bb.org.bd (https://www.bb.org.bd/en/index.php/econdata/exchangerate)
+citeturn2view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bb.org.bd/en/index.php/econdata/exchangerate","lineno":null}); Total lines: 171
+L0: ﻿ Bangladesh Bank
+L1: 
+L2: [Input: Search]
+L3: 
+L4: 【0†বাংলা】
+L5: 
+L6:   * 【1†About us】
+L7: 
+L8: 【2†Image: titleToAlt】
+L9: 
+L10:     * 【3†Department and Offices】
+L11:     * 【4†Vision and Mission】
+L12:     * 【5†Citizen Charter】
+L13:     * 【6†Organogram/hierarchy】
+L14:     * 【7†Foreign tours & visit】
+L15: 
+L16:     * 【8†Board Of Directors】
+L17:     * 【9†Monetary Policy Committee】
+L18:     * 【10†Governors】
+L19:     * 【11†Deputy Governors】
+L20:     * 【12†Advisers】
+L21:     * 【13†Executives】
+L22:     * 【14†Directors】
+L23: 
+L24:   * 【15†Monetary Policy】
+L25: 
+L26: 【16†Image: titleToAlt】
+L27:     * 【17†Monetary Policy Statements】
+L28:     * 【9†Monetary Policy Committee】
+L29:     * 【18†MPC Resolution】
+L30: 
+L31:     * 【19†Monetary Policy Tools】
+L32:     * 【20†SMART】
+L33: 
+L34:   * 【21†Financial System】
+L35: 
+L36: 【22†Image: titleToAlt】
+L37: 
+L38:     * 【21†Overview】
+L39:     * 【23†Financial Markets】
+L40:     * 【24†Financial Stability】
+L41:     * 【25†Payment Systems】
+L42: 
+L43:     * 【26†Inter Bank Money Market】
+L44:     * 【27†Money Market Reference Rate】
+L45:     * 【28†Deposit Insurance】
+L46:     * 【29†Regulators】
+L47:     * 【30†Credit Rating Of Banks】
+L48:     * 【31†Schedule Of Charges Of Banks】
+L49:     * 【32†Banks & FCs】
+L50:     * 【33†Insurance】
+L51:     * 【34†MFIS】
+L52: 
+L53:   * 【35†FX Market】
+L54: 
+L55: 【36†Image: titleToAlt】
+L56: 
+L57:     * 【35†Overview of the FX Market】
+L58:     * 【37†Interbank FX Market】
+L59:     * 【38†Exchange Rates】
+L60:     * 【39†FX Reference Rate】
+L61:     * 【40†FX Auction Result】
+L62:     * 【41†ACU Payment】
+L63: 
+L64:     * 【42†Export Development Fund (EDF)】
+L65:     * 【43†FC Clearing】
+L66:     * 【44†Foreign Exchange Reserve】
+L67:     * 【45†Remittances】
+L68:     * 【46†BOP, Export & Import】
+L69:     * 【47†Macroeconomic and Financial Data】
+L70: 
+L71:   * 【48†G-Sec Market】
+L72: 【49†Image: titleToAlt】
+L73: 
+L74:     * 【48†Government Securities Market】
+L75:     * 【50†Primary Auction of Treasury Bill & Bond】
+L76:     * 【51†Secondary Trading of Treasury Bills and Bonds】
+L77:     * 【52†91 Days BCR】
+L78: 
+L79:     * 【53†G-Sec Investment Process】
+L80:     * 【54†BD Govt Investment Sukuk (BGIS)】
+L81:     * 【55†FAQ on Government Securities Market】
+L82: 
+L83:   * 【56†Publication】
+L84: 
+L85: 【57†Image: titleToAlt】
+L86: 
+L87:     * 【58†Weekly】
+L88:     * 【59†Fortnightly】
+L89:     * 【60†Monthly】
+L90:     * 【61†Quarterly】
+L91:     * 【62†Half Yearly】
+L92:     * 【63†Annual】
+L93:     * 【64†Research Work】
+L94:     * 【65†Special Publication】
+L95:     * 【66†Others】
+L96: ### search previous data
+L97: 
+L98: [Select]
+L99: 
+L100: [Input]
+L101: 
+L102: [Button: Search]
+L103: 
+L104: FX Rate Sheet effective for 19/10/2026
+L105: (Download 【67†.xls】 or 【68†.pdf】)
+L106: 
+L107: 【69†View Archive】
+L108: ### Related Links
+L109: 
+L110:   * 【37†Interbank FX Market】
+L111:   * 【39†FX Reference Rate】
+L112:   * 【40†FX Auction Result】
+L113:   * 【41†ACU Payment】
+L114:   * 【42†Export Development Fund (EDF)】
+L115:   * 【43†FC Clearing】
+L116:   * 【44†Foreign Exchange Reserve】
+L117:   * 【45†Remittances】
+L118:   * 【46†BOP, Export & Import】
+L119:   * 【47†Macroeconomic and Financial Data】
+L120: 
+L121: Exchange Rate of Taka  (Oct 19, 2026)
+L122: The exchange rate of the Taka against the US Dollar is determined based on interbank transactions in the domestic foreign exchange market. This rate is primarily influenced by market-driven demand and supply dynamics.
+L123: 
+L124: The USD/BDT bid and ask rates shown below represent the highest and lowest interbank exchange rates at Dhaka close on the previous business day, while BDT cross rates against other foreign currencies are based on New York and Dhaka closing rates of that day.
+L125: Bangladesh Bank applies the following exchange rates for purchase and sale transactions with the Government and international organizations.
+L126: A. USD/BDT Exchange Rate
+L127: ---
+L128: Currency  | Bid Rate  | Ask Rate  | WAR
+L129: --- | --- | --- | ---
+L130: USD  | 123.6000  | 123.7200  | 123.6500
+L131: B. Cross Rates
+L132: ---
+L133: Currency  | Bid Rate  | Ask Rate
+L134: --- | --- | ---
+L135: EUR  | 138.9140  | 139.0613
+L136: GBP  | 164.7341  | 164.9188
+L137: AUD  | 85.8278  | 85.9854
+L138: JPY  | 0.7821  | 0.7831
+L139: CAD  | 87.3992  | 87.5150
+L140: SEK  | 12.4513  | 12.5006
+L141: SGD  | 96.5851  | 96.6865
+L142: CNH  | 18.4836  | 18.5071
+L143: INR  | 1.3015  | 1.3029
+L144: LKR  | 2.6774  | 2.6808
+L145: ## Contact
+L146: 
+L147: Bangladesh Bank, Motijheel, Dhaka
+L148: 
+L149: Phone: +880-255665001-6
+L150: 
+L151: E-mail: webmaster@bb.org.bd
+L152: 
+L153: 【70†Contact for other purposes】
+L154: 
+L155: ## Useful Links
+L156: 
+L157:   * 【71†Foreign Investment and Financing Portal】
+L158:   * 【25†Payment Systems】
+L159:   * 【72†Regulations And Guidelines】
+L160:   * 【73†Currency Museum】 | 【74†Banknotes and Coins】
+L161:   * 【75†SAARCFINANCE】
+L162:   * 【76†National ICT Policy】
+L163:   * 【77†BBTA Journal: Thoughts on Banking and Finance】
+L164: ## Stay connected
+L165: 
+L166:   * 【78†Home】
+L167:   * 【79†Sitemap】
+L168:   * Feedback (webmaster@bb.org.bd)
+L169: 
+L170: Disclaimer: While every effort is made to ensure accuracy of the information in this website, Bangladesh Bank assumes no responsibility for any damages or losses to users resulting from any error/omission/inadvertent alteration in information provided by this website.
+--------------------------------------------------------------------------------
+Monetary Policy Review (https://www.bb.org.bd/pub/halfyearly/monetaryprev/mpr_2024_25.pdf)
+citeturn2view3 [wordlim: 200] Crawled: 2 days ago; Content type: application/pdf; Number of pages: 58; Source: open({"ref_id":"https://www.bb.org.bd/pub/halfyearly/monetaryprev/mpr_2024_25.pdf","lineno":null}); Total lines: 2499
+L0@P1: Editorial Board
+L1@P1: Chief Editor
+L2@P1: Dr. Mohammad Akhtar Hossain, Chief Economist, Bangladesh Bank
+L3@P1: Editors
+L4@P1: Mst. Nurnaher Begum, Director (Research), Chief Economist‘s Unit
+L5@P1: Dr. Md. Salim Al Mamun, Director (Research), Chief Economist‘s Unit
+L6@P1: Contributors
+L7@P1: Shohel Ahammed, Additional Director, Chief Economist‘s Unit
+L8@P1: Dr. Md. Omor Faruq, Additional Director, Monetary Policy Department
+L9@P1: Md. Rashel Hasan, Additional Director, Chief Economist‘s Unit
+L10@P1: Shampa Chakraborty, Additional Director, Chief Economist‘s Unit
+L11@P1: Md. Mokhlesur Rahman, Additional Director, Chief Economist‘s Unit
+L12@P1: Arjina Akhter Efa, Additional Director, Chief Economist‘s Unit
+L13@P1: Dr. Md. Rubel Islam, Joint Director, Chief Economist‘s Unit
+L14@P1: Dr. Saidul Islam, Joint Director, Chief Economist‘s Unit
+L15@P1: Md. Zakaria Hossain, Joint Director, Chief Economist‘s Unit
+L16@P1: Raju Ahmed, Joint Director, Chief Economist‘s Unit
+L17@P1: Nasrin Akter Lubna, Joint Director, Chief Economist‘s Unit
+L18@P1: Khadiza Akter, Deputy Director, Chief Economist‘s Unit
+L19@P1: Farhana Faruk, Assistant Director, Chief Economist‘s Unit
+L20@P1: Md. Abdus Sobhan, Assistant Director, Chief Economist‘s Unit
+L21@P1: Apu Deb Nath, Assistant Director, Chief Economist‘s Unit
+L22@P1: Jannatul Ferdous, Assistant Director, Chief Economist‘s Unit
+L23@P1: Data Support
+L24@P1: Forex Reserve and Treasury Management Department
+L25@P1: Monetary Policy Department
+L26@P1: Research Department
+L27@P1: Statistics Department
+L28@P1: Cover Design
+L29@P1: Tariq Aziz, Joint Director, Department of Communications and Publications
+L30@P1: Monetary Policy Review is published on a yearly basis. Electronic version of this document is available at
+L31@P1: www.bb.org.bd. Bangladesh Bank welcomes suggestions and comments from readers, which may be
+L32@P1: forwarded to gm.ceu@bb.org.bd or nur.begum@bb.org.bd
+L33@P1: Chief Economist‘s Unit
+L34@P1: Bangladesh Bank
+L35@P1-2: July 2025Monetary Policy Review
+L36@P2: 2024-25
+L37@P2: Chief Economist’s Unit
+L38@P2: Bangladesh Bank
+L39@P2: Copyright© 2024-25 by Bangladesh Bank
+L40@P2: The views expressed in this Review are based on the professional analysis carried out by the staff of the Bangladesh
+L41@P2-4: Bank and do not necessarily reflect the official policy view of the Bangladesh Bank.Message
+L42@P4: Bangladesh's economy is currently navigating a challenging macroeconomic environment marked by
+L43@P4: moderately high inflation, external pressures, and underlying vulnerabilities in the financial sector. The current
+L44@P4: interim government has been striving to maintain macroeconomic stability despite starting its journey in an
+L45@P4: uncertain economic environment. Although FY25's economic growth was slower at 3.97 percent, recent
+L46@P4: months have seen a drop in inflation rates. Notwithstanding persistent global uncertainties stemming from
+L47@P4: trade tensions and geopolitical conflict, a rebound is anticipated in FY26, supported by ongoing structural
+L48@P4: and strategic economic reforms.
+L49@P4: The Bangladesh Bank (BB) has taken coordinated measures to control inflation, stabilise the foreign exchange
+L50@P4: market, and reform the banking sector. Inflation dropped to 8.48 percent in June 2025, the lowest since
+L51@P4: February 2023, mainly due to BB's tight monetary policy. With positive global commodity trends and ongoing
+L52@P4: policy support, BB is optimistic about a further decline in inflation. To address long-standing structural
+L53@P4: weaknesses, restore financial stability, strengthen governance, and enhance the sector's resilience, the Banking
+L54@P4: Sector Reform Taskforce was established by BB on September 11, 2024. Additionally, BB transitioned from a
+L55@P4: crawling peg to a flexible exchange rate system, effective as of May 14, 2025. This transition marks a
+L56@P4: significant milestone in modernising the country‘s economic policy. The initiative is expected to enhance the
+L57@P4: performance of the external sector and bolster the competitiveness of Bangladeshi exports by accurately
+L58@P4: reflecting prevailing market dynamics, increasing the attractiveness of foreign investment, and facilitating the
+L59@P4: accumulation of foreign reserves. It is noteworthy to highlight that the substantial increase in remittance
+L60@P4: inflows observed during FY25 can be attributed to a series of thoughtful reforms such as the implementation
+L61@P4: of a unified and market-aligned exchange rate, measures to curb informal transfers, the expansion of
+L62@P4: remittance channels, and the introduction of the 'Probash' pension scheme for expatriates.
+L63@P4: The Monetary Policy Review (MPR) 2025 is a comprehensive analysis of the prevailing macroeconomic,
+L64@P4: monetary, and financial sector conditions. The primary objective of this Review is to proactively discern
+L65@P4: potential near and medium-term challenges within the existing monetary policy stance, accompanied by a
+L66@P4: rigorous assessment of the efficacy of our policy interventions. This Review is intended to enhance
+L67@P4: transparency and informed public discourse while also offering valuable insights to policymakers, researchers,
+L68@P4: and market participants. Additionally, this MPR aims to serve as an indispensable resource for policymakers
+L69@P4: in formulating future monetary policy strategies by scrutinising the impacts of prior measures.
+L70@P4: I believe that this MPR will serve as an essential resource for stakeholders to understand current trends and
+L71@P4: emerging salient issues. It is my great pleasure to warmly thank the Chief Economist‘s Unit for their diligent
+L72@P4: efforts in preparing this detailed and insightful Review. I also extend my sincere thanks to all supporting
+L73@P4: departments for their valuable contributions to this Review. In 2025, we will work together to implement the
+L74@P4: changes we have initiated, leading to a more innovative, agile, and transparent Bangladesh Bank.
+L75@P4: Dr. Ahsan H. Mansur
+L76@P4-5: GovernorContents
+L77@P5: List of Abbreviations............................................................................................................................vii
+L78@P5: Executive Summary ..............................................................................................................................ix
+L79@P5: Chapter I: Monetary Policy Stance ........................................................................................................ 1
+L80@P5: I.1 Review of Monetary Policy Stance in 2024 .................................................................................................. 1
+L81@P5: I.2 Current Monetary Policy Stance and Progress ............................................................................................ 6
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn2view4 [wordlim: 200] Source: open({"ref_id":"https://misc.bpdb.gov.bd/storage/tender/20240624125003_27.11.0000.304.24.141.24.pdf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://misc.bpdb.gov.bd/storage/tender/20240624125003_27.11.0000.304.24.141.24.pdf: (400) Timeout fetching
+--------------------------------------------------------------------------------
+Manual on polyculture and integrated fish farming in Bangladesh (https://www.fao.org/4/AC375E/AC375E05.htm)
+citeturn2view5 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.fao.org/4/AC375E/AC375E05.htm","lineno":null}); Total lines: 144
+L0: * * *
+L1: # Topic 4
+L2: HAZARD MANAGEMENT
+L3: In Bangladesh, like other tropical countries, the overall conditions are in favour of pond fish culture. Long summer and monsoon in association with lengthy and bright sunshine accelerate good growth of fish under semi-intensive culture system. However, there are also some common problems and constraints that often hinder fish production. Some common hazards of fish culture are described here with possible means of prevention and remedy.
+L4: Some common hazards of fish culture and their possible solutions are considered below.
+L5: ## 4.1 OXYGEN DEPLETION
+L6: 
+L7: Dissolved oxygen level is one of the most important production factor in fish culture. Loss of fish due to reduction in dissolved oxygen content of water is not uncommon in fish ponds of bangladesh. Low level of dissolved oxygen decrease appetite and growth rate of fish. Repeated exposure to low dissolved oxygen make the fish susceptible to diseases. Oxygen deficiency appears as frequent hazard factor when the intensity of fish production increased.
+L8: Influence of dissolved oxygen levels at different concentrations on warm water fishes are given in Table-4.1
+L9: 
+L10: Table 4.1. Influence of dissolved oxygen at different concentration
+L11: 
+L12: Dissolved Oxygen  | Effect on fishes
+L13: <1 ppm  | Lethal when exposed longer than few hours
+L14: 1–5 ppm  | Fish survive but poor reproduction and
+L15:    | slow growth under continuous exposure
+L16: > 5 ppm  | Normal growth and reproduction
+L17: Lethal concentration of dissolved oxygen for some common culturable species of pond fish in Bangladesh is given in Table 4.2.
+L18: 
+L19: Table 4.2 Lethal concentration of dissolved oxygen for some common culturable fishes (Doudoroff and Shumway, 1970)
+L20: 
+L21: Fish species  | mg/l
+L22: Catla catla  | 0.7
+L23: Labeo rohita  | 0.7
+L24: Cirrhinus mrigala  | 0.7
+L25: Hypophthalmichthys molitrix  | 0.3–1.1
+L26: Ctenopharyngodon idella  | 0.2–0.6
+L27: Cyprinus carpio  | 0.2–0.8
+L28: 
+L29: a. Accumulation of organic matters
+L30: In some ponds high concentration in detritus can accumulate because of reasons such as over manuring, direct inflow of community waste water etc. In all cases, the increase in organic detritus is followed by an increase in heterotrophic bacteria which also is an oxygen consumer. Usually during day time enough oxygen is produced by photosynthesis to balance the demand but during the night the oxygen reserves in the water are depleted and fish die before sunrise.
+L31: 
+L32: Prevention
+L33:   * by using proper combination of fish species under polyculture system.
+L34: 
+L35:   * continuous use of bottom rakers (horra) throughout production cycle in ponds with high detritus level.
+L36: 
+L37: b. Algal bloom
+L38: Because of intensive manuring and excessive use of chemical fertilizers planktonic algae are often over produced. In this “deep green” water the light penetration is limited to a thin surface level. When the day is calm, dissolved oxygen level in the surface water is very high (above 100% saturation), while the oxygen balance is negative in deeper layers. In windy days, the oxygen from the upper level is mixed with the oxygen poor water of deeper levels.
+L39: Thus making enough provision of oxygen for night time respiration. But if the night is warm and calm oxygen deficiency will often occur before sunrise.
+L40: Prevention
+L41: 
+L42:   * By using higher number of silver carp in the fish stock the danger of phytoplankton bloom can be considerably decreased.
+L43: 
+L44:   * By daily monitoring of water colour and use of fertilizer. When the symptom of algal bloom appears, fertilization should be stopped for some days.
+L45: 
+L46: c. Cloudiness:
+L47: Cloudiness over a period of 2–3 days reduces light irradiation considerably. As a result the production of dissolved oxygen through photosynthesis is also considerably reduced. This factor can cause problems during monsoon months.
+L48: 
+L49: Steps to prevent fish mortality by anoxia
+L50: With the appearance of the signs of potential causative factors (algal bloom, calm evening etc.) the pond should be checked during the second half of the night. When the symptoms of oxygen deficiency start (gulping of fish). The following actions should be taken immediately.
+L51: 
+L52:   * Splashing the water surface with bamboo poles.
+L53: 
+L54:   * Add fresh water by pump from neighboring water body or circulate the pond water. Let the water splash as it enters the pond.
+L55: 
+L56:   * Stop or minimize manuring on cloudy days.
+L57: ## 4.2 EMBANKMENT PROBLEMS
+L58:   1. Traditionally the slopes of fish ponds are prepared too steep. The slope should be at least 1:2. Old construction should be strengthened at the weak points from time to time. The best solution is to make a fence by bamboo poles on the original embankment and fill the collapsed part with compressed dry soil. As soon as possible plant grass on this part to avoid erosion. Leakages and possible connections with other water bodies must be stopped.
+L59: The above mentioned method can be used with some soil filled bag also.
+L60:   2. Cultivation (horticulture) on embankments should be limited to the top. The sides and 1–2 feet on the brink of embankment should be kept for grass to stop soil erosion.
+L61: 
+L62: Decomposing roots of dead or cut trees also create holes in the dike which can cause erosion. These holes should be closed with soil.
+L63: ## 4.3 POUCHING OF FISH
+L64: 
+L65: In some places this problem causes more damage than other, hazards. Some suggestions which may give some protection beside proper guarding:
+L66: 
+L67:   * Putting bamboo twigs or branches of trees in the water along the dike sides, closely blocking the use of nets.
+L68: 
+L69:   * Fixing barbed wire under the pond surface in criss-cross manner is fairly effective.
+L70: 
+L71:   * Fencing the farm/fish pond properly.
+L72: ## 4.4 PREDATORS
+L73: 
+L74: Snakes and birds can cause problems in fish ponds by feeding on fingerlings. Chicken/ducks are often attacked by wolves and jackals.
+L75: 
+L76: Protection
+L77:   * Chase away predatory birds from pond.
+L78:   * Put poison injected eggs on the embankment to kill predatory birds.
+L79:   * Destroy the nests of fish-eating birds near the pond site.
+L80:   * Collect the eggs from the poultry house several times a day.
+L81:   * The bridge should be removed from the poultry house at night.
+L82:   * Keep guard dogs to protect chicken/ducks at night time.
+--------------------------------------------------------------------------------
+Direct estimates of absolute ventilation and estimated Mycobacterium tuberculosis transmission risk in clinics in South Africa - PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC10021606/)
+citeturn2view6 [wordlim: 200] Crawled: 4 days ago; Content type: text/html; Source: open({"ref_id":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10021606/","lineno":null}); Total lines: 568
+L0: 【0†Skip to main content】
+L1: 
+L2: 【1†Image†cdn.ncbi.nlm.nih.gov】 Search
+L3: 
+L4: 【2†Image†cdn.ncbi.nlm.nih.gov】 Log in 【3†Image†cdn.ncbi.nlm.nih.gov】 【4†Image†cdn.ncbi.nlm.nih.gov】
+L5: 
+L6:   * 【5†Dashboard†www.ncbi.nlm.nih.gov】
+L7:   * 【6†Publications†www.ncbi.nlm.nih.gov】
+L8:   * 【7†Account settings†www.ncbi.nlm.nih.gov】
+L9:   * [Button: Log out ]
+L10: 
+L11: Search… [Input: Search NCBI] Search NCBI
+L12: 
+L13: Primary site navigation
+L14: 
+L15: 【8†Image: Close†cdn.ncbi.nlm.nih.gov】
+L16: 
+L17: Search [Input: Search NCBI]
+L18: 
+L19: Logged in as:
+L20:   * 【5†Dashboard†www.ncbi.nlm.nih.gov】
+L21:   * 【6†Publications†www.ncbi.nlm.nih.gov】
+L22:   * 【7†Account settings†www.ncbi.nlm.nih.gov】
+L23: 
+L24: [Button: Log in ]
+L25: 
+L26: 【1†Image: PMC search open icon†cdn.ncbi.nlm.nih.gov】 【8†Image: PMC search close ison†cdn.ncbi.nlm.nih.gov】
+L27: 
+L28: Search PMC Full-Text Archive [Input: Search PMC Full-Text Archive] Search in PMC 【9†Image: Search†cdn.ncbi.nlm.nih.gov】
+L29: 
+L30:   * 【10†Journal List】
+L31:   * 【11†User Guide】
+L32: 
+L33: [Button: PLOS Glob Public Health]
+L34: . 2022 Nov 2;2(11):e0000603. doi: 【12†10.1371/journal.pgph.0000603†doi.org】
+L35: # Direct estimates of absolute ventilation and estimated Mycobacterium tuberculosis transmission risk in clinics in South Africa
+L36: 
+L37: 【13†Peter G Beckwith†pubmed.ncbi.nlm.nih.gov】
+L38: ### Peter G Beckwith
+L39: 
+L40: ^{1}Department of Medicine, University of Cape Town, Cape Town, South Africa
+L41: 
+L42: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L43: 
+L44: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Project administration, Resources, Validation, Visualization, Writing – original draft
+L45: 
+L46: Find articles by 【13†Peter G Beckwith†pubmed.ncbi.nlm.nih.gov】
+L47: 
+L48: ^{1,}^{2}, 【14†Aaron S Karat†pubmed.ncbi.nlm.nih.gov】
+L49: ### Aaron S Karat
+L50: 
+L51: ^{1}Department of Medicine, University of Cape Town, Cape Town, South Africa
+L52: 
+L53: ^{3}The Institute for Global Health and Development, Queen Margaret University, Edinburgh, United Kingdom
+L54: 
+L55: Data curation, Formal analysis, Investigation, Methodology, Visualization, Writing – review & editing
+L56: 
+L57: Find articles by 【14†Aaron S Karat†pubmed.ncbi.nlm.nih.gov】
+L58: 
+L59: ^{1,}^{3}, 【15†Indira Govender†pubmed.ncbi.nlm.nih.gov】
+L60: ### Indira Govender
+L61: 
+L62: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L63: 
+L64: ^{4}Africa Health Research Institute, School of Laboratory Medicine & Medical Sciences, College of Health Sciences, University of KwaZulu-Natal, Durban, South Africa
+L65: 
+L66: Data curation, Methodology, Writing – review & editing
+L67: 
+L68: Find articles by 【15†Indira Govender†pubmed.ncbi.nlm.nih.gov】
+L69: 
+L70: ^{2,}^{4}, 【16†Arminder K Deol†pubmed.ncbi.nlm.nih.gov】
+L71: ### Arminder K Deol
+L72: 
+L73: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L74: 
+L75: Conceptualization, Data curation, Formal analysis, Investigation, Software, Writing – review & editing
+L76: 
+L77: Find articles by 【16†Arminder K Deol†pubmed.ncbi.nlm.nih.gov】
+L78: 
+L79: ^{2}, 【17†Nicky McCreesh†pubmed.ncbi.nlm.nih.gov】
+L80: ### Nicky McCreesh
+L81: 
+L82: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L83: 
+L84: Data curation, Formal analysis, Methodology, Validation, Writing – review & editing
+L85: 
+L86: Find articles by 【17†Nicky McCreesh†pubmed.ncbi.nlm.nih.gov】
+L87: 
+L88: ^{2}, 【18†Karina Kielmann†pubmed.ncbi.nlm.nih.gov】
+L89: ### Karina Kielmann
+L90: 
+L91: ^{3}The Institute for Global Health and Development, Queen Margaret University, Edinburgh, United Kingdom
+L92: 
+L93: ^{5}Institute of Tropical Medicine, Antwerp, Belgium
+L94: 
+L95: Conceptualization, Funding acquisition, Supervision, Writing – review & editing
+L96: 
+L97: Find articles by 【18†Karina Kielmann†pubmed.ncbi.nlm.nih.gov】
+L98: 
+L99: ^{3,}^{5}, 【19†Kathy Baisley†pubmed.ncbi.nlm.nih.gov】
+L100: ### Kathy Baisley
+L101: 
+L102: ^{6}Department of Infectious Disease Epidemiology, The London School of Hygiene & Tropical Medicine, London, United Kingdom
+L103: 
+L104: Conceptualization, Data curation, Formal analysis, Writing – review & editing
+L105: 
+L106: Find articles by 【19†Kathy Baisley†pubmed.ncbi.nlm.nih.gov】
+L107: 
+L108: ^{6}, 【20†Alison D Grant†pubmed.ncbi.nlm.nih.gov】
+L109: ### Alison D Grant
+L110: 
+L111: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L112: 
+L113: ^{4}Africa Health Research Institute, School of Laboratory Medicine & Medical Sciences, College of Health Sciences, University of KwaZulu-Natal, Durban, South Africa
+L114: 
+L115: ^{7}School of Laboratory Medicine and Medical Sciences, College of Health Sciences, University of KwaZulu-Natal, Durban, South Africa
+L116: Conceptualization, Funding acquisition, Investigation, Methodology, Project administration, Resources, Writing – review & editing
+L117: 
+L118: Find articles by 【20†Alison D Grant†pubmed.ncbi.nlm.nih.gov】
+L119: 
+L120: ^{2,}^{4,}^{7}, 【21†Tom A Yates†pubmed.ncbi.nlm.nih.gov】
+L121: ### Tom A Yates
+L122: 
+L123: ^{8}Division of Infection and Immunity, Faculty of Medicine, University College London, London, United Kingdom
+L124: 
+L125: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Resources, Software, Supervision, Validation, Visualization, Writing – review & editing
+L126: 
+L127: Find articles by 【21†Tom A Yates†pubmed.ncbi.nlm.nih.gov】
+L128: 
+L129: ^{8,}^{*}
+L130: 
+L131: Editor: Rehab Hosny El-Sokkary^{9}
+L132:   * [Button: Author information]
+L133:   * [Button: Article notes]
+L134:   * [Button: Copyright and License information]
+L135: 
+L136: ^{1}Department of Medicine, University of Cape Town, Cape Town, South Africa
+L137: 
+L138: ^{2}TB Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
+L139: 
+L140: ^{3}The Institute for Global Health and Development, Queen Margaret University, Edinburgh, United Kingdom
+L141: ^{4}Africa Health Research Institute, School of Laboratory Medicine & Medical Sciences, College of Health Sciences, University of KwaZulu-Natal, Durban, South Africa
+L142: 
+L143: ^{5}Institute of Tropical Medicine, Antwerp, Belgium
+L144: 
+L145: ^{6}Department of Infectious Disease Epidemiology, The London School of Hygiene & Tropical Medicine, London, United Kingdom
+L146: 
+L147: ^{7}School of Laboratory Medicine and Medical Sciences, College of Health Sciences, University of KwaZulu-Natal, Durban, South Africa
+L148: ^{8}Division of Infection and Immunity, Faculty of Medicine, University College London, London, United Kingdom
+L149: 
+L150: ^{9}Zagazig University, Faculty of Medicine, EGYPT
+L151: 
+L152: The authors have declared that no competing interests exist.
+L153: 
+L154: ^{✉}
+L155: 
+L156: * E-mail: t.yates@ucl.ac.uk
+L157: #### Roles
+L158: 
+L159: Peter G Beckwith: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Project administration, Resources, Validation, Visualization, Writing – original draft
+L160: 
+L161: Aaron S Karat: Data curation, Formal analysis, Investigation, Methodology, Visualization, Writing – review & editing
+L162: 
+

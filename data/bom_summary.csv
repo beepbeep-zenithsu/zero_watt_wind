@@ -1,0 +1,5 @@
+﻿mode,low_bdt,base_bdt,high_bdt,base_usd,basis
+A,21200,40000,74600,323.4937323089365,D from A production allowances
+B,22800,43200,80100,349.3732308936514,D from A production allowances
+H,44100,78800,138000,637.2826526486049,D from A production allowances
+A+B,44000,83200,154700,672.866963202588,"D; separate cores, no energy sharing"

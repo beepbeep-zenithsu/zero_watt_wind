@@ -1,0 +1,513 @@
+Chapter 21 Aeration and Oxygenation in Aquaculture (https://www.fao.org/4/X5744E/x5744e0m.htm)
+citeturn16view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.fao.org/4/X5744E/x5744e0m.htm","lineno":null}); Total lines: 807
+L0: * * *
+L1: 
+L2: # Chapter 21 Aeration and Oxygenation in Aquaculture
+L3: 
+L4: J. Kepenyes and L. Váradi
+L5: Fish Culture Research Institute
+L6: Szarvas, Hungary
+L7: 
+L8: * * *
+L9: 
+L10: > 【0†1. OXYGEN BUDGET OF FISH PONDS】
+L11: > 【1†2. AERATION DEVICES FOR FISH PONDS】
+L12: > 【2†3. UTILIZATION OF PURE OXYGEN IN INTENSIVE FISH CULTURE SYSTEMS】
+L13: > 【3†4. BASIC PRINCIPLES OF THE DESIGN OF FISH POND AERATORS】
+L14: > 【4†5. DIMENSIONING OF AERATORS】
+L15: > 【5†6. REFERENCES】
+L16: 
+L17: * * *
+L18: ## 1. OXYGEN BUDGET OF FISH PONDS
+L19: 
+L20: * * *
+L21: 
+L22: > 【6†1.1 Diurnal Changes of Dissolved Oxygen Content】
+L23: > 【7†1.2 Factors Influencing the Dissolved Oxygen Content of Pond Water】
+L24: 
+L25: * * *
+L26: Dissolved oxygen content of the water of fish ponds is one of the most important parameters of water quality, as the oxygen is a vital condition for all the organisms living in the water and having an aerobic type of respiration. The solubility of oxygen is influenced by several factors (e.g. air pressure, hydrostatical pressure, salt content), but in pond fish farms it is generally enough to consider only water temperature.
+L27: Table 1 shows values of oxygen saturation of water as a function of water temperature. In pond fish farming the dissolved oxygen content of the water can be expressed as the absolute quantity of oxygen in one unit of water (mg/l; ppm) or as relative oxygen saturation (%).
+L28: ### 1.1 Diurnal Changes of Dissolved Oxygen Content
+L29: 
+L30: Diurnal changes of the dissolved oxygen content of pond water during a period of time t¢ ¢ - t¢ can be expressed by the following equation:
+L31: 
+L32: O_{2}¢ ¢ - O_{2}¢ = P - R - Y ± A
+L33: 
+L34: where
+L35: > P = quantity of oxygen produced during the photosynthetic process of the phytoplankton, the phytobenthos and the water plants,
+L36: >
+L37: > R = quantity of oxygen consumed during the respiration of bacterial-, phyto- and zooplankton and organisms of animals and plants,
+L38: >
+L39: > Y = quantity of oxygen fixed by the mud of the pond bottom,
+L40: >
+L41: > A = quantity of oxygen dissolved from the atmosphere or in case of supersaturation released to the atmosphere.
+--------------------------------------------------------------------------------
+2. Improving Pond Water Quality (https://www.fao.org/fishery/static/FAO_Training/FAO_Training/General/x6709e/x6709e02.htm)
+citeturn16view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.fao.org/fishery/static/FAO_Training/FAO_Training/General/x6709e/x6709e02.htm","lineno":null}); Total lines: 1223
+L0: # 2. IMPROVING POND WATER QUALITY
+L1: ## 2.0 Introduction
+L2: 
+L3: 1. Water is essential for the life of fish. It is the medium that must supply or support all their needs, including breathing, eating, reproducing and growing.
+L4: 
+L5: 2. In a previous manual (`Water`, FAO Training Series, `4`) you learned:
+L6: 
+L7:   * where water comes from and where it goes;
+L8:   * which water to use to fill your ponds;
+L9:   * and how much water you will require.
+L10: 3. Here you will learn a bit more `about water itself`, and about the main physical and chemical characteristics that are important for the production of fish in earthen ponds (see Sections 2.2 to 2.5).
+L11: 
+L12: 4. Once you know your water well, you will understand more easily how to control its quality and, if necessary, improve it through good pond management practices (see Sections 2.6 to 2.9).
+L13: 
+L14: `Where water comes from and where water goes`
+L15: 【0†Image】
+L16: ### Pond water composition
+L17: 
+L18: 5. Pond water contains two major groups of substances as shown in the attached chart:
+L19:   * `dissolved substances` made of gases, minerals and organic compounds;
+L20:   * `suspended particles` made of non-living particles and very small plants and animals,` the plankton*`.
+L21: 6. The composition of pond water changes continuously, depending on climatic and seasonal changes, and on how a pond is used. It is the aim of good management to control the composition to yield the best conditions for the fish.  |    | `General composition of water`
+L22: `Dissolved substances`
+L23: `Gases`
+L24:   * oxygen, carbon dioxide, hydrogen sulphide
+L25: `Minerals`
+L26: 
+L27:   * salts of calcium, magnesium, sodium, potassium, iron
+L28:   * compounds of nitrogen, phosphorus
+L29: `Organic compounds`
+L30: 
+L31:   * proteins, carbohydrates
+L32: `Suspended particles`
+L33: `Non-living particles`
+L34: 
+L35:   * minerals such as silt and clay
+L36:   * organic materials such as detritus, dead organisms, `humus*`
+L37: `Microscopic living organisms`
+L38:   * plant forms (`phytoplankton*`)
+L39:   * animal forms (`zooplankton*`)
+L40:    |    |
+L41: 7. Some of these substances are of particular importance for successful fish farming. You will therefore learn more about:
+--------------------------------------------------------------------------------
+ (https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-fisheries/2024/12/4c64d1e387d446ec97430228bcc06ddc.pdf)
+citeturn16view2 [wordlim: 200] Crawled: 2 days ago; Content type: application/pdf; Number of pages: 141; Source: open({"ref_id":"https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-fisheries/2024/12/4c64d1e387d446ec97430228bcc06ddc.pdf","lineno":null}); Total lines: 4764
+L0@P0: 
+L1@P0: YEARBOOK OF
+L2@P0: FISHERIES STATISTICS OF BANGLADESH
+L3@P0: 2023-24
+L4@P0: Fisheries Resources Survey System
+L5@P0: Department of Fisheries
+L6@P0: Ministry of Fisheries and Livestock
+L7@P0: Government of the People’s Republic of Bangladesh
+L8@P0-1: www.fisheries.gov.bd ii
+L9@P1: Yearbook of Fisheries Statistics of Bangladesh
+L10@P1: (July 2023 - June 2024)
+L11@P1: Volume: 41
+L12@P1: Published: December 2024
+L13@P1: Published by: Director General
+L14@P1: Department of Fisheries, Bangladesh.
+L15@P1: Cover design: Syed Rakibul Moin, Former Senior Photo Artist, Department of Fisheries (DoF)
+L16@P1: Printed by: Bangladesh Govt. Press (BG Press), Tejgaon, Dhaka-1208.
+L17@P1: Any individual or institution can use the information for referral use of publication with
+L18@P1: acknowledgement. The Yearbook can be collected from Matshya Bhaban, Ramna, Dhaka, Bangladesh
+L19@P1: free of cost. The pdf version is also available in DoF website: http://www.fisheries.gov.bd
+L20@P1: Citation: DOF. 2024 Yearbook of Fisheries Statistics of Bangladesh, 2023-24. Fisheries
+L21@P1: Resources Survey System (FRSS), Department of Fisheries; Ministry of Fisheries and Livestock,
+L22@P1-2: 2024. Volume 41; 140p.  iii
+L23@P2: EDITORIAL PANEL
+L24@P2: 1. Dr. Md. Abdur Rouf Director General
+L25@P2: Department of Fisheries
+L26@P2: Chief
+L27@P2: Advisor
+L28@P2: 2. Masuda Khanam Principal Scientific Officer
+L29@P2: (Fisheries Planning & Survey)
+L30@P2: Department of Fisheries
+L31@P2: President
+L32@P2: 3. Md. Abdus Sattar Director (Marine)
+L33@P2: Department of Fisheries
+L34@P2: Member
+L35@P2: 4. Dr. Md. Khaled Kanak Deputy Director (Budget & Finance)
+L36@P2: Department of Fisheries
+L37@P2: Member
+L38@P2: 5. Md. Shahed Ali Deputy Director (Planning)
+L39@P2: Department of Fisheries
+L40@P2: Member
+L41@P2: 6. Md. Ahsan Hasib Khan Deputy Director
+L42@P2: Fish Inspection & Quality Control, Dhaka
+L43@P2: Department of Fisheries
+L44@P2: Member
+L45@P2: 7. Dr. Md. Amimul Ehshan Deputy Director (Aquaculture)
+L46@P2: Department of Fisheries
+L47@P2: Member
+L48@P2: 8. Molla Imdadullah Project Director
+L49@P2: Hilsa Development & Management Project (1st Revised)
+L50@P2: Department of Fisheries
+L51@P2: Member
+--------------------------------------------------------------------------------
+Scorching heat wave affecting aquatic species, livestock  | News (https://www.bssnews.net/news/184834)
+citeturn16view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bssnews.net/news/184834","lineno":null}); Total lines: 96
+L0: Thursday
+L1: 
+L2: 22 October, 2026
+L3: 
+L4: 【0†Archive】 【1†বাংলা】
+L5: 
+L6:   * 【2†News】
+L7:     * 【3†PM】
+L8:     * 【4†President】
+L9:     * 【5†Top News】
+L10:     * 【6†National】
+L11:     * 【7†Arts & Entertainment】
+L12:     * 【8†July Uprising】
+L13:     * 【9†Education News】
+L14:     * 【10†Health News】
+L15:     * 【11†Climate Change & Environment】
+L16:     * 【12†Science & Technology】
+L17:     * 【13†Weather】
+L18:     * 【14†81st session of the UN General Assembly】
+L19: 
+L20: [Input: Search...]
+L21: #### Scorching heat wave affecting aquatic species, livestock
+L22: 
+L23: 【15†Image】
+L24: 
+L25: DHAKA, April 21, 2024 (BSS)-Soaring heat wave will have adverse impacts not only on people’s life, it will disturb the balance of nature affecting the overall food production by putting aquatic species and livestock in danger.
+L26: Climate scientists said heat wave-induced complexities among humans are always being taken into the account, but its impacts on aquatic species and livestock are not considered properly. Heat wave contributes to decline of dissolved oxygen in water-bodies, they said, adding that farm animals also get sick frequently cutting the farm output.
+L27: Severe heat wave has been sweeping over many parts of country for the last few days. The temperature soared to 42.6 degrees Celsius yesterday (Saturday) in Jashore, while the maximum temperature in Dhaka was 40.4 degrees Celsius. The Bangladesh Meteorological Department (BMD) warned that there was no end in sight for the heat.
+L28: According to the BMD, very severe heat wave is sweeping over Pabna, Jashore and Chuadanga districts. Severe heat wave is sweeping over Dhaka and Khulna divisions and the district of Rajshahi too.
+L29: 
+L30: Mild to moderate heat wave is sweeping over Barishal division and parts of Rajshahi divisions and Mymensingh, Moulvibazar, Feni, Cox’s Bazar, Chandpur and Rangamati and it may continue over the next three days.
+L31: Scientists have said climate change is contributing to more frequent, severe, and longer heat waves in Bangladesh during its summer months.
+L32: 
+L33: “Apart from causing heat stokes due to exposure to heat wave, germs like bacteria and viruses can spread amid extreme heat affecting humans.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn16view4 [wordlim: 200] Source: open({"ref_id":"https://www.idcol.org/idcol_new/public/renewable/rooftop-solar-project","lineno":null}); Total lines: 1
+L0: URL https://www.idcol.org/idcol_new/public/renewable/rooftop-solar-project is not accessible via this tool.
+--------------------------------------------------------------------------------
+IDCOL - Home (https://www.idcol.org/idcol_new/public/fees-charge)
+citeturn16view5 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://www.idcol.org/idcol_new/public/fees-charge","lineno":null}); Total lines: 200
+L0: 【0†Home】
+L1: 【1†PerformanceAt A Glance】 【2†CSR】
+L2: 【3†Customer Complaints】
+L3: 
+L4:   * Quick Menu
+L5:     * 【1†Performance At A Glance】
+L6:     * 【2†CSR】
+L7:     * 【3†Customer Complaints】
+L8:   * 【4†About Us】
+L9:     * 【5†About Us】
+L10:       * 【6†Vision, Mission, Core Values】
+L11:       * 【7†Key Milestones】
+L12:       * 【8†Board of Directors】
+L13:       * 【9†Management】
+L14:       * 【10†Financial Highlights】
+L15:       * 【1†Performance At A Glance】
+L16:       * 【11†Awards & Recognition】
+L17:       * 【2†Corporate Social Responsibility】
+L18:       * 【12†Our Stakeholders】
+L19: 【12†Our Stakeholders】
+L20: 
+L21: IDCOL's stakeholders include the government, private sector, NGOs, multilateral institutions, academics and the people of Bangladesh at large.
+L22: 
+L23: 【10†Financial Reports】
+L24: 
+L25: Financial Reports Of IDCOL...
+L26: 
+L27: 【13†Credit Rating】
+L28: 
+L29: Credit Rating has been made as general information purpose...
+L30: 
+L31:   * 【4†Products & Services】
+L32:     * 【14†Infrastructure】
+L33:       * 【15†Eligible sectors】
+L34:       * 【16†Lending Terms】
+L35:       * 【17†Fees and charges】
+L36: 【18†Renewable Energy】
+L37:       * 【19†Eligible sectors】
+L38:       * 【20†Lending Terms】
+L39:       * 【21†Fees and charges】
+L40: 
+L41: 【22†Energy Efficiency】
+L42:       * 【23†Eligible Sectors】
+L43:       * 【24†Lending Terms】
+L44:       * 【25†Fees and charges】
+L45: 
+L46: 【26†Advisory Services】
+L47: 
+L48:   * 【4†Projects & Programs】
+L49:     * ### 【27†Infrastructure】
+L50: 
+L51:       * 【28†Power】
+L52:       * 【29†Telecommunications】
+L53:       * 【30†PPP】
+L54:       * 【31†ICT】
+L55:       * 【32†Port】
+L56:       * 【33†Environmental Services】
+L57:       * 【34†Other Infrastructure Projects】
+L58: ### 【35†Renewable Energy】
+L59: 
+L60:       * 【36†Solar Home System Program】
+L61:       * 【37†Biogas and Bio-fertilizer】
+L62:       * 【38†Solar Mini Grid Projects】
+L63:       * 【39†Rooftop Solar Project】
+L64:       * 【40†Solar Irrigation Program】
+L65:       * 【41†Green Climate Fund (GCF)】
+L66:       * 【42†Other RE Projects】
+L67:       * 【43†R&D】
+L68: 
+L69: ### 【44†Energy Efficiency】
+L70: 
+L71:       * 【45†Energy Efficient Equipment】
+L72:       * 【46†Improved Cook Stove Program】
+L73:       * 【47†Energy Efficient Brick Kilns】
+L74:       * 【48†Other Energy Efficient Projects】
+--------------------------------------------------------------------------------
+3d Printing Filament Pla 1kg | HTE Bangladesh (https://www.htebd.com/3d-printing-filament-pla-1kg/)
+citeturn16view6 [wordlim: 200] Crawled: 4 months ago; Content type: text/html; Source: open({"ref_id":"https://www.htebd.com/3d-printing-filament-pla-1kg/","lineno":null}); Total lines: 443
+L0: Skip to content
+L1: 
+L2: 0170995 9967 【0†[email protected]】  ৳4999+ অর্ডারে ফ্রি শিপিং
+L3: 
+L4: 【1† My Account 】 | 【2† Track Order 】 | 【3†Contact】
+L5: 
+L6: 【4† 】
+L7: Category  All Categories DIY KIT Measuring Instrument Others PCB Raspberry Pi & Accessories Housing & Box Arduino Burners/Programmers CNC Parts & 3D Printer Components Display Integrated Circuit (IC)Modules MOTOR & DRIVER POWER SUPPLY Projects KIT Rc controlar and propelar ROBOTIC PARTS & KITS Sensor SMD Component's Tools Development Board Batteries & Chargers Search
+L8: 
+L9: 【1† Login 】  【5† কার্ট 0 】
+L10: 
+L11: HTE Bangladesh
+L12: 
+L13:     Search
+L14: 
+L15:   *  【6† All Categories 】
+L16:  【7†Arduino (38)】【8†Batteries & Chargers (43)】【9†Burners/Programmers (9)】【10†CNC Parts & 3D Printer (16)】【11†⚙️ Components (179)】【12†️ Development Board (16)】【13†️ Display (28)】【14†DIY KIT (3)】【15†Housing & Box (4)】【16†Integrated Circuit (IC) (142)】【17†Measuring Instrument (24)】【18†Modules (70)】【19†MOTOR & DRIVER (48)】【20†Others (130)】【21†PCB (4)】【22†⚡ POWER SUPPLY (42)】【23†Projects KIT (8)】【24†Raspberry Pi & Accessories (15)】【25†Rc controlar and propelar (15)】【26†ROBOTIC PARTS & KITS (13)】【27†Sensor (115)】【28†SMD Component's (19)】【29†Tools (31)】
+L17: 【7†Arduino — All】【30†Arduino KITS (17)】
+L18: 
+L19: 【8†Batteries & Chargers — All】【31†3.2V Battery (1)】【32†3.7V Battery's (4)】【33†9V Battery (6)】【34†Battery Accessories (17)】【35†Chargers (4)】【36†Coin Type (2)】【37†Li-Po Battery (10)】【38†Li-Po Battery Charger (4)】
+L20: 【11†Components — All】【39†Audio Amplifier (1)】【40†Cables (2)】【41†Cables & Connector (41)】【42†Capacitors (1)】【43†Connector (7)】【44†Crystal Oscillator (1)】【45†Diodes (1)】【46†LED (24)】【47†MOSFETs (13)】【48†Passive Components (34)】【49†Resistors (6)】【50†Switches (14)】
+L21: 
+L22: 【12†Development Board — All】【51†ESP-32 (6)】【52†Node MCU (7)】
+L23: 
+L24: 【13†Display — All】【53†7 Segment (9)】【54†Dot Matrix (1)】【55†HMI (1)】
+L25: 【16†Integrated Circuit (IC) — All】【56†Logic Gate IC (12)】【57†Microcontroller (IC) (22)】【58†Op-Amp (Ics) (1)】【59†Regulator ICs (25)】
+L26: 
+L27: 【17†Measuring Instrument — All】【60†Digital Multimeter (16)】【61†Oscilloscope and Probes (7)】
+L28: 
+L29: 【18†Modules — All】【62†Communication (17)】【63†GSM/GPS/GPRS (8)】【64†Sound Modue (1)】【65†TTL (1)】
+L30: 
+L31: 【19†MOTOR & DRIVER — All】【66†⚙️ DC Motors (7)】【67†GEAR MOTOR (3)】【68†MOTOR DRIVERS (11)】【69†SERVO MOTORS (4)】【70†Solenoids and Electromagnets (2)】【71†STEPPER MOTORS (2)】
+--------------------------------------------------------------------------------
+PLA 3D Printer Filament 1.75mm 1KG/2.2lb (WHITE) | Electronics.Com.BD (https://electronics.com.bd/pla-3d-printer-filament-1-75mm-1kg2-2lb-white)
+citeturn16view7 [wordlim: 200] Crawled: 3 weeks ago; Content type: text/html; Source: open({"ref_id":"https://electronics.com.bd/pla-3d-printer-filament-1-75mm-1kg2-2lb-white","lineno":null}); Total lines: 367
+L0: 【0†iframe†www.googletagmanager.com】
+L1:   * Categories
+L2:   * 【1†New Products】
+L3:   * 【2†Image: Microcontrollers And SBC†cdn.electronics.com.bd】 Components
+L4:     * 【3†Resistors】
+L5:     * 【4†Capacitors】
+L6:     * 【5†Inductors & Coils】
+L7:     * 【6†Diodes】
+L8:     * 【7†Transistors】
+L9:     * 【8†Integrated Circuits (IC)】
+L10:     * 【9†Sensors】
+L11:     * 【10†Switches】
+L12:     * 【11†Connectors】
+L13:     * 【12†Crystal Oscillators and Resonators】
+L14:     * 【13†Miscellaneous Components】
+L15:     * 【14†Optocouplers】
+L16:   * 【15†Image: hat†cdn.electronics.com.bd】 Accessories
+L17:     * 【16†Fan and Coolers】
+L18:     * 【17†Nuts and Screws】
+L19:     * 【18†Magnet】
+L20:     * 【19†Pipe and Fittings】
+L21:   * 【20†Image: clothes†cdn.electronics.com.bd】 Microcontrollers
+L22:     * 【21†Microcontroller Units (MCUs)】
+L23:     * 【22†Single-Board Computers】
+L24:     * 【23†Modules & Shields】
+L25:   * 【24†Image: glasses†cdn.electronics.com.bd】 3D Printers & CNC
+L26:     * 【25†Filaments】
+L27:     * 【26†3D Printer Parts】
+L28:     * 【27†Electronics for 3D Printers】
+L29:     * 【28†3D Printers】
+L30:   * 【29†Image: bag†cdn.electronics.com.bd】 Power Tools
+L31:     * 【30†Handheld Tools】
+L32:     * 【31†Stationary Tools】
+L33:     * 【32†Soldering Equipment】
+L34:     * 【33†Measurement Tools】
+L35:     * 【34†Tool & Accessories】
+L36:   * 【35†Image: makeup†cdn.electronics.com.bd】 Consumer Electronics
+L37:     * 【36†Power Adapters & Chargers】
+L38:     * 【37†Cables and Connectors】
+L39:     * 【38†Monitors & Displays】
+L40:     * 【39†Amplifier Boards】
+L41:     * 【40†Speakers】
+L42:     * 【41†Power Banks & Modules】
+L43:     * 【42†Projectors】
+L44:   * 【43†Image: makeup†cdn.electronics.com.bd】 RC Hobby
+L45:     * 【44†Motors & ESCs】
+L46:     * 【45†Batteries & Chargers】
+L47:     * 【46†Radio Systems】
+L48:     * 【47†Frames and Chassis】
+L49:     * 【48†Propellers and Wheels】
+L50:     * 【49†Other RC Accessories】
+L51:     * 【50†Camera and accessories】
+L52:     * 【51†RC Toys】
+L53:   * 【52†Image: Cake†cdn.electronics.com.bd】 DIY Robot
+L54:     * 【53†Robot Kits】
+L55:     * 【54†Motors & Actuators】
+L56:     * 【55†Chassis & Frames】
+L57:   * 【56†Project】
+L58:   * 【57†Image: makeup†cdn.electronics.com.bd】 Others
+L59:     * 【58†Power Supplies】
+L60:     * 【59†Pumps】
+--------------------------------------------------------------------------------
+12V 20Ah LiFePO4 Rechargeable Battery Pack Price in BD (https://www.citytechbd.com/12v-20ah-lifepo4-rechargeable-battery-pack)
+citeturn16view8 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://www.citytechbd.com/12v-20ah-lifepo4-rechargeable-battery-pack","lineno":null}); Total lines: 177
+L0: search
+L1: 
+L2: shopping_basket 0
+L3: 
+L4: [Input: Search for product brands and more] search
+L5: 
+L6: 【0†card_giftcard Offers Latest Offers】 【1†flash_on Happy Hour Special Deals】
+L7: 
+L8: library_add
+L9: ##### Compare (0)
+L10: 
+L11: 【2†person】
+L12: 
+L13: 【2†Account】
+L14: 
+L15: 【3†Register】 or 【2†Login】
+L16: 
+L17: library_add
+L18: 
+L19: Compare
+L20: 
+L21: 0
+L22: 
+L23: Compare Product (0)
+L24: 
+L25: Your compare list is empty!
+L26: 
+L27: shopping_basket
+L28: 
+L29: Cart
+L30: 
+L31: 0
+L32: 
+L33: YOUR CART
+L34: 
+L35: Your shopping cart is empty!
+L36: 
+L37: Sub-Total
+L38: 
+L39: 0৳
+L40: 
+L41: Total
+L42: 
+L43: 0৳
+L44: 
+L45: 【4†Image: Add to Wish List】 Save 【5†Image: Compare】 Add to Compare
+L46: 
+L47: 【6†Image: 12V 20Ah LiFePO4 Rechargeable Battery Pack - product image】
+L48: 
+L49: 【6†Image: 12V 20Ah LiFePO4 Rechargeable Battery Pack - product thumbnail image】
+L50: 
+L51: ×
+L52: 
+L53: ❮ ❯
+L54: # 12V 20Ah LiFePO4 Rechargeable Battery Pack
+L55: 
+L56: Regular Price: 1,845৳
+L57: 
+L58: Status: In Stock
+L59: 
+L60: Model: Custom Built with 30A BMS
+L61: ### Key Features
+L62: 
+L63:   * Model: 12V 20Ah LiFePO4 Battery Pack
+L64:   * Voltage: 12.8V Nominal
+L65:   * Accuracy: BMS-controlled voltage and current protection
+L66:   * Connectivity: Positive and Negative Battery Terminals
+L67:   * High-performance 12V 20Ah LiFePO4 battery pack.
+L68:   * Ideal for solar, UPS, and backup power.
+L69:   * Custom built for DIY projects.
+L70:   * Long-lasting and reliable energy source.
+L71: View More Info
+L72: 
+L73: [Input]
+L74: 
+L75: 1,845৳
+L76: 
+L77: [Input]
+L78: 
+L79: [Button: −] [Input] [Button: +]
+L80: 
+L81: [Button: Buy Now]
+L82:   * Description
+L83:   * Questions (0)
+L84:   * Reviews (0)
+L85: ## Description
+L86: ## 12V 20Ah LiFePO4 Rechargeable Battery Pack
+L87: The 12V 20Ah LiFePO4 Rechargeable Battery Pack is a cutting-edge energy solution designed to meet the demands of modern power needs. With its advanced lithium iron phosphate (LiFePO4) technology, this battery pack offers a reliable and efficient power source for various applications, including solar energy systems, uninterruptible power supplies (UPS), and backup power solutions. Its custom-built design ensures optimal performance, making it an excellent choice for DIY projects and energy storage needs.
+L88: The 12V 20Ah capacity provides ample power for a range of devices, ensuring that you have the energy you need when you need it most. Additionally, the battery pack is equipped with a 30A Battery Management System (BMS) that enhances safety and longevity, protecting against overcharging, overheating, and short circuits. Whether you are looking to power your home, RV, or off-grid setup, this battery pack delivers consistent performance and peace of mind.
+--------------------------------------------------------------------------------
+Battery pack | Teexla (https://teexla.com/product-category/battery-pack/)
+citeturn16view9 [wordlim: 200] Crawled: 3 days ago; Content type: text/html; Source: open({"ref_id":"https://teexla.com/product-category/battery-pack/","lineno":null}); Total lines: 55
+L0:   * 【0†E bike】
+L1:   * 【1†Motor kit】
+L2:   * 【2†Battery pack】
+L3:   * 【3†Music】
+L4:   * 【4†Accessories】
+L5: 
+L6: Select Page
+L7: 
+L8: [Input: Search …]
+L9: # Battery pack
+L10: 
+L11: Showing 1–10 of 52 results
+L12: 
+L13: [Select] [Input]
+L14:   * 【5†Sale! 12v 100ah 4s2p lifepo4 battery ~~40,000.00৳ ~~ 37,000.00৳ 】
+L15:   * 【6†Sale! 12v 100ah lifepo4 battery supper pack ~~40,000.00৳ ~~ 37,000.00৳ 】
+L16:   * 【7†Sale! 12v 200ah lifepo4 battery for solar, ups,ips ~~70,000.00৳ ~~ 68,000.00৳ 】
+L17:   * 【8†12v 300ah lifepo4 battery 120,000.00৳ 】
+L18:   * 【9†12V100Ah 150Ah Rv Solar Lithium Battery Pack 300Ah 200Ah 24V 48V 400Ah 789,890.00৳ 】
+L19:   * 【10†Sale! 12v100Ah Lithium phosphate battery Bangladesh Rated 5.00 out of 5 ~~40,000.00৳ ~~ 36,000.00৳ 】
+L20:   * 【11†Sale! 12v20Ah lifepo4 battery ~~10,000.00৳ ~~ 8,200.00৳ 】
+L21:   * 【12†Sale! 12v50Ah Lithium phosphate battery Bangladesh ~~20,000.00৳ ~~ 17,000.00৳ 】
+L22:   * 【13†2025 Lithium Battery 12V24V48V100Ah200Ah Large Capacity Rv Model Photovoltaic Energy Storage Lithium Iron Phosphate 172,390.00৳  – 564,750.00৳ 】
+L23:   * 【14†25.6V51.2V48V100Ah200Ah Stacked Inverter Control Energy Storage Household Lithium Iron Phosphate Battery Power Station 382,395.00৳  – 1,185,695.00৳ 】
+L24:   * 1
+L25:   * 【15†2】
+L26:   * 【16†3】
+L27:   * 【17†4】
+L28:   * 【18†5】
+L29:   * 【19†6】
+L30:   * 【15†→】
+L31: #### Product categories
+L32: 
+L33:   * 【20†Baby】
+L34:   * 【2†Battery pack】
+L35:   * 【21†Charger】
+L36:   * 【22†Drone】
+L37:   * 【0†E bike】
+L38:   * 【23†Ips inverter】
+L39:   * 【1†Motor kit】
+L40:     * 【24†Chain drive motor kit】
+L41:     * 【25†Engine】
+L42:     * 【26†Hub motor kit】
+L43:   * 【27†Rc toy car】
+L44:   * 【28†Smart bed】
+L45:   * 【29†Tire tube wheels】
+L46:   * 【30†Uncategorized】
+L47: 
+L48: Battery Type: [Select]
+L49: Voltage (V): [Input]
+L50: Capacity (Ah): [Input]
+L51: BMS Type: [Select]
+L52: [Input] [Input] [Button: Calculate Price] [Button: Add to Cart]
+L53: 
+L54: teexla.com 2026
+

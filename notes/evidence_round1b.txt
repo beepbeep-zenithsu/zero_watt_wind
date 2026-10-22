@@ -1,0 +1,659 @@
+Filament Price in Bangladesh (2026): PLA, PETG, ABS, TPU Guide (https://costareen.com/2026/10/01/filament-price-in-bangladesh-guide/)
+citeturn6view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://costareen.com/2026/10/01/filament-price-in-bangladesh-guide/","lineno":null}); Total lines: 198
+L0: 【0†COSTAREEN】
+L1: ## Genuine 3D Printers & Filaments in Bangladesh
+L2: 
+L3:  Shop By Department
+L4: 
+L5:   * 【1†3D Printers】
+L6:     * 【2†BAMBULAB】
+L7:   * 【3†Filaments】
+L8:     * 【4†SUNLU】
+L9:       * 【5†GLOW IN THE DARK】
+L10:     * 【6†Polymaker】
+L11:       * 【7†Panchroma】
+L12:   * 【8†Accessories】
+L13:     * 【9†Filament Dryer】
+L14:     * 【10†AMS Heater】
+L15:     * 【11†Parts】
+L16:     * 【12†Nozzles】
+L17:     * 【13†Adhesives】
+L18:     * 【14†3D Pen】
+L19:   * 【15†Laser Engravers】
+L20:   * 【16†Resin】
+L21:   * 【17†Electronics (Soon)】
+L22:   * 【18†Toys & Crafts (Soon)】
+L23: 
+L24: All
+L25: 
+L26: [Select]
+L27: 
+L28: [Input: I'm shopping for...] [Input]
+L29: [Button: Search]
+L30: 
+L31:   * Call Now 01681443070
+L32:   * 【19†0】
+L33:   * 【20†0】
+L34: 
+L35: No products in the cart.
+L36: 
+L37:   * 【21†Log in】 【21†Register】
+L38: 
+L39:   * 【0†Home】
+L40:   * 【22†All Categories】
+L41:   * 【1†3D Printers】
+L42:   * 【3†Filaments】
+L43:   * 【8†Accessories】
+L44:   * 【16†Resin】
+L45:   * 【15†Laser Engravers】
+L46:   * 【17†Electronics (Soon)】
+L47:   * 【18†Toys & Crafts (Soon)】
+L48:   * 【23†About Costareen】
+L49:   * 【24†Contact】
+L50: # 3D Printer Filament Price in Bangladesh: PLA, PETG, ABS or TPU?
+L51: 
+L52: 【25†October 1, 2026】 / by 【26†Costareen Team】 / in 【27†Blog】
+L53: 
+L54: Filament is the part of 3D printing you keep buying, so choosing the right type matters more than most people expect. This guide explains the six materials sold in Bangladesh — PLA, PLA+, PETG, ABS, ASA and TPU — what each costs at Costareen, and which one fits your printer and your project.
+L55: ## Filament price in Bangladesh at a glance
+L56: 
+L57: Prices below are for 1.75mm, 1kg spools at Costareen in October 2026. Prices move with stock and exchange rate, so open the linked page for today’s figure.
+L58: Material  | Starting price (1kg)  | Best for  | Difficulty
+L59: --- | --- | --- | ---
+L60: 【28†PLA+ (SUNLU)】  | from ৳1,550  | Everyday prints, models, prototypes  | Easy
+L61: 【7†PLA (Polymaker Panchroma)】  | from ৳1,670  | Display models, matte and special finishes  | Easy
+L62: 【29†PLA Basic / Matte (Bambu Lab)】  | from ৳1,700  | Bambu Lab printers with AMS  | Easy
+L63: 【30†PETG (SUNLU)】  | from ৳1,450  | Functional and outdoor-ish parts  | Moderate
+L64: 【31†ABS (SUNLU)】  | from ৳1,650  | Heat-resistant parts, enclosures  | Hard without an enclosed printer
+L65: 【32†ASA (SUNLU)】  | from ৳2,800  | Parts that live in the sun  | Hard without an enclosed printer
+L66: 【33†TPU 95A (SUNLU)】  | from ৳2,700  | Flexible parts, gaskets, phone cases  | Moderate, print slowly
+L67: ## PLA and PLA+: where almost everyone should start
+L68: 
+L69: PLA prints at a low temperature (roughly 190–220°C nozzle, 50–60°C bed), does not need an enclosure, barely warps and has almost no smell. If you have just bought your first printer, buy PLA or PLA+ and nothing else until your prints come out clean.
+L70: PLA+ is PLA with additives that make it less brittle. A PLA+ part bends a little before it snaps, where plain PLA cracks. For brackets, holders, toys and anything that gets handled, PLA+ is the better default, and it costs about the same.
+L71: 
+L72: The one weakness that matters in Bangladesh: heat. PLA starts to soften at around 55–60°C. A part left on a car dashboard, on a rooftop or next to a hot motor will sag. For anything that sits in the sun or near heat, move up to PETG or ASA.
+--------------------------------------------------------------------------------
+TechShopBD - Leading Robotics & Electronics Shop in Bangladesh (https://techshopbd.com/marketplace)
+citeturn6view1 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://techshopbd.com/marketplace","lineno":null}); Total lines: 855
+L0: 【0†Image†www.facebook.com】 【1†iframe†www.googletagmanager.com】
+L1: 
+L2: [Input: ]
+L3: 
+L4: 【2†Sign in】
+L5: 
+L6:   * Hello, ...
+L7:   * * * *
+L8: 
+L9:   * 【3†My Profile】
+L10:   * 【4†Address Book】
+L11:   * 【5†My orders】
+L12:   * 【6†Reviews】
+L13:   * 【7†Wishlist】
+L14:   * 【8†TechShopBD Points】
+L15:   * 【9†Logout】
+L16: 
+L17: 0
+L18: 
+L19: PRODUCT CATEGORIES
+L20: 
+L21: PRODUCT CATEGORIES
+L22: 
+L23:     * 【10†Instruments】
+L24: 
+L25: Instruments
+L26: 【11†Signal Generator】 【12†Signal Analyzer】 【13†Analog Multimeter】 【14†Load Tester】 【15†Digital Oscilloscopes】 【16†Digital Multimeters】 【17†Calculator】 【18†Measurement】 【19†Power Supply】
+L27:     * 【20†Drone】
+L28: 
+L29: Drone
+L30: 
+L31: 【21†Semi Professional Drone】 【22†Professional Drone】
+L32:     * 【23†Kits】
+L33: 
+L34: Kits
+L35: 
+L36: 【24†Sensor Kits】 【25†Robotic Kits】 【26†Starter Kits】 【27†Science Box】 【28†Advanced kits】
+L37:     * 【29†Maintenance Tools】
+L38: 
+L39: Maintenance Tools
+L40: 
+L41: 【30†Tools】
+L42:     * 【31†Home Automation】
+L43: 
+L44: Home Automation
+L45: 【32†Rechargeable Fan】 【33†Appliance】 【34†IPS UPS Inverter】 【35†Remote】 【36†Timer】 【37†Security System】 【38†Automatic Light】 【39†Automatic Switch】 【40†IoT Device】
+L46:     * 【41†3D Printer & Accessories】
+L47: 
+L48: 3D Printer & Accessories
+L49: 
+L50: 【42†3D Printing Machines】 【43†3D Printer Filament】
+L51:     * 【44†Miscellaneous】
+L52: 
+L53: Miscellaneous
+L54: 【45†Audio】 【46†Screw】 【47†Magnet】 【48†Pump】 【49†Solenoid】 【50†Cooler】 【51†Generator】 【52†Charger】 【53†Memory Card】 【54†Keypad】 【55†Battery】 【56†Switch & Button】 【57†Relay】 【58†DC Fan】 【59†Breadboard】 【60†Crystal Oscillator】 【61†Soldering】 【62†Solar】
+L55:     * 【63†Microcontroller】
+L56: 
+L57: Microcontroller
+L58: 
+L59: 【64†ARM Microcontroller】 【65†Data Converter】 【66†AVR Programmer】 【67†PIC Programmer】 【68†Other Microcontrollers & Accessories】 【69†AVR Microcontroller】 【70†PIC Microcontroller】
+L60:     * 【71†ESP】
+L61: 
+L62: ESP
+L63: 【72†ESP8266】 【73†ESP32】
+L64:     * 【74†Arduino】
+L65: 
+L66: Arduino
+L67: 
+L68: 【75†Arduino Shield】 【76†Arduino Board】
+L69:     * 【77†Development Board】
+L70: 
+L71: Development Board
+L72: 
+L73: 【78†Raspberry Pi & Accessories】 【79†Other Development Board】 【80†ARM Development Board】 【81†FPGA Development Board】 【82†AVR Development Board】 【83†PIC Development Board】
+L74:     * 【84†Robotics】
+L75: 
+L76: Robotics
+L77: 
+L78: 【85†Propeller】 【86†Controller】 【87†Actuator】 【88†Robotics Sensor】 【89†Motor Driver】 【90†Motor】 【91†Wheel & Caster】 【92†Other Robotics】
+L79:     * 【93†Sensor】
+L80: 
+L81: Sensor
+L82: 【94†Sound】 【95†Motion】 【96†Weight】 【97†Water】 【98†Pressure】 【99†Moisture】 【100†Current】 【101†Gas】 【102†Flex】 【103†Gyro, Accelerometer & Compass】 【104†Biometrics】 【105†Other Sensor】 【106†Light】 【107†Temperature】
+L83:     * 【108†Wireless Transceiver】
+L84: 
+L85: Wireless Transceiver
+L86: 
+L87: 【109†Xbee / Zigbee】 【110†Bluetooth】 【111†WiFi】 【112†Antennas】 【113†GSM, GPS & GPRS】 【114†RF】
+L88:     * 【115†Accessories】
+L89: 
+L90: Accessories
+L91: 
+L92: 【116†Computer Peripherals】 【117†Cable】 【118†Connector】
+L93:     * 【119†Display】
+L94: 
+L95: Display
+L96: 【120†Display Driver】 【121†LED Panel】 【122†Multi Segment】 【123†DOT Matrix】 【124†LCD, OLED & E-Ink】
+L97:     * 【125†Basic Component】
+L98: 
+L99: Basic Component
+L100: 
+L101: 【126†Laser】 【127†Inductor】 【128†Resistor】 【129†Capacitor】 【130†LED】 【131†Thyristor / SCR】 【132†Diac & Triac】 【133†Buzzer】 【134†Diode】 【135†Regulator】 【136†Transistor】 【137†MOSFET】 【138†Optocoupler】
+L102:     * 【139†General IC】
+L103: 
+L104: General IC
+--------------------------------------------------------------------------------
+UCP 204 Pillow Block Housed Bearing | Daraz.com.bd (https://www.daraz.com.bd/products/ucp-204-pillow-block-housed-bearing-i235701366.html)
+citeturn6view2 [wordlim: 200] Crawled: 6 months ago; Content type: text/html; Source: open({"ref_id":"https://www.daraz.com.bd/products/ucp-204-pillow-block-housed-bearing-i235701366.html","lineno":null}); Total lines: 176
+L0: ## Product Images
+L1: 
+L2: 【56†Image: UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%201†www.daraz.com.bd】 UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%201 【57†Image: UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%202†www.daraz.com.bd】 UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%202
+L3: 
+L4: 【58†Image: UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%201†www.daraz.com.bd】 【59†Image: UCP%20204%20Pillow%20Block%20Housed%20Bearing%20-%20Image%202†www.daraz.com.bd】
+L5:  Save More on App
+L6: 
+L7: Download the App
+L8: 
+L9: 【60†Image†www.daraz.com.bd】
+L10: 
+L11: 【0† 】
+L12: 
+L13: 【1† †apps.apple.com】 【2† †play.google.com】
+L14: 
+L15:  【3†Become a Seller†sellercenter.daraz.com.bd】
+L16: 
+L17:  Help & Support
+L18: 
+L19:   * 【4† Help Center †buyer-helpcenter.daraz.com.bd】
+L20:   * 【5† Contact Customer Care †ai.alimebot.daraz.com.bd】
+L21:   * 【6† Shipping & Delivery †helpcenter.daraz.com.bd】
+L22:   * 【7† Order †helpcenter.daraz.com.bd】
+L23:   * 【8† Payment †helpcenter.daraz.com.bd】
+L24:   * 【9† Returns & Refunds 】
+L25: 
+L26:  【10†Login†member.daraz.com.bd】
+L27:  【11†Sign Up†member.daraz.com.bd】
+L28: 
+L29:   * 【12† Manage My Account †member.daraz.com.bd】
+L30:   * 【13† My Orders †my.daraz.com.bd】
+L31:   * 【14† My Wishlist & Followed Stores †my.daraz.com.bd】
+L32:   * 【15† My Reviews †my.daraz.com.bd】
+L33:   * 【16† My Returns & Cancellations †my.daraz.com.bd】
+L34:   * 【17† Logout †member.daraz.com.bd】
+L35: 
+L36:  ভাষা
+L37: 
+L38: BN / Bengali
+L39: 
+L40: EN / English
+L41: 
+L42: 【61†Image: Online Shopping Daraz Logo†www.daraz.com.bd】
+L43: 
+L44: 【18† †cart.daraz.com.bd】
+L45: 
+L46: Categories
+L47:   * 【19† Motors 】
+L48:   * 【20† Service & Installations 】
+L49:   * 【21† Wheels & Tires Installations 】
+L50:   * UCP 204 Pillow Block Housed Bearing
+L51: 
+L52: 【62†Image: UCP 204 Pillow Block Housed Bearing†www.daraz.com.bd】
+L53: 
+L54: 【63†Image: UCP 204 Pillow Block Housed Bearing. †www.daraz.com.bd】
+L55: 
+L56: 【64†Image: UCP 204 Pillow Block Housed Bearing. †www.daraz.com.bd】
+L57: # UCP 204 Pillow Block Housed Bearing
+L58: 
+L59: Ratings 3
+L60: 
+L61: 4 Answered Questions
+L62: 
+L63: Brand: 【22†No Brand】
+L64: 
+L65: 【23†More Service & Installations from No Brand】
+L66: 
+L67: ৳ 450
+L68: 
+L69: ###### Tire Size
+L70: 
+L71: Not Specified
+L72: ###### Quantity
+L73: 
+L74: Buy Now Add to Cart
+L75: 
+L76: Delivery Options
+L77: 
+L78: Dhaka, Dhaka North, Banani Road No. 12 - 19
+L79: 
+L80: CHANGE
+L81: 
+L82: Standard Delivery
+L83: 
+L84: Guaranteed by 27 Apr-2 May
+L85: 
+L86: ৳ 110
+L87: 
+L88: Cash on Delivery Available
+L89: 
+L90: Return & Warranty
+L91: 
+L92: 【65†Image†www.daraz.com.bd】
+L93: 
+L94: Change of Mind
+L95: 
+L96: 14 days easy return
+L97: 
+L98: Warranty not available
+L99: 
+L100: 【66†Image: Lazada App†www.daraz.com.bd】
+L101: 
+L102: Download app to enjoy exclusive discounts!
+L103: 
+L104: Scan with mobile
+L105: 
+L106: Sold by
+L107: 
+L108: 【24†The Fair Enterprise】
+L109: 
+L110: Chat Now
+L111: 
+L112: Positive Seller Ratings
+L113: 
+L114: 87%
+L115: 
+L116: Ship on Time
+L117: 100%
+L118: 
+L119: Chat Response Rate
+L120: 
+L121: Not enough data
+L122: 
+L123: 【24†GO TO STORE】
+L124: ### Customer Care
+L125: 
+L126:   * 【4†Help Center†buyer-helpcenter.daraz.com.bd】
+L127:   * 【25†How to Buy†helpcenter.daraz.com.bd】
+L128:   * 【26†Returns & Refunds†pages.daraz.com.bd】
+L129:   * 【27†Contact Us】
+L130:   * 【28†Terms & Conditions†pages.daraz.com.bd】
+L131:   * 【29†CCMS - Central Complain Management System†ccms.gov.bd】
+L132: ### Daraz
+L133:   * 【30†About Daraz】
+L134:   * 【31†Digital Payments†pages.daraz.com.bd】
+L135:   * 【32†Daraz Card†pages.daraz.com.bd】
+L136:   * 【33†Daraz Blog†blog.daraz.com.bd】
+L137:   * 【34†Daraz Cares】
+L138:   * 【35†Privacy Policy†pages.daraz.com.bd】
+L139:   * 【36†Daraz Mart†pages.daraz.com.bd】
+L140:   * 【37†Daraz App】
+L141:   * 【38†Daraz Exclusives】
+L142:   * 【39†Daraz Donates†pages.daraz.com.bd】
+L143:   * 【40†Daraz University†university.daraz.com.bd】
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn6view3 [wordlim: 200] Source: open({"ref_id":"https://sg.misumi-ec.com/vona2/detail/221000611249/?HissuCode=UCP204","lineno":null}); Total lines: 1
+L0: Failed to fetch https://sg.misumi-ec.com/vona2/detail/221000611249/?HissuCode=UCP204: (429) Too Many Requests
+--------------------------------------------------------------------------------
+UCP204 | AMI BEARINGS INC (https://www.motion.com/products/sku/00561782)
+citeturn6view4 [wordlim: 200] Crawled: 2 months ago; Content type: text/html; Source: open({"ref_id":"https://www.motion.com/products/sku/00561782","lineno":null}); Total lines: 194
+L0: 1-800-526-9328【0†Support Center】[Button: English]
+L1: 
+L2: Sign In
+L3: 
+L4: [Button: Register]
+L5: 
+L6: 【1†Image: UCP204†content.motion.com】【1†Image: UCP204†content.motion.com】
+L7: 
+L8: 【1†Image: UCP204†content.motion.com】【1†Image: UCP204†content.motion.com】
+L9: 
+L10: 【1†Image: UCP204†content.motion.com】【1†Image: UCP204†content.motion.com】
+L11: 
+L12: 【1†Image: UCP204†content.motion.com】
+L13: 
+L14: 【2†Image: UCP204†content.motion.com】
+L15: 
+L16: Roll over image to zoom Pinch image to zoom
+L17: 
+L18: Tap image to view
+L19: Photo may not represent actual item. Refer to name and product specs for all details.
+L20: # 【3†AMI BEARINGS INC】
+L21: 
+L22: UCP204
+L23: 
+L24: Pillow Block Ball Bearing Unit - 2-Bolt Base, 20 mm Bore, Cast Iron Material, Standard Duty, Non-Expansion Bearing (Fixed)
+L25: 
+L26: MI ITEM #00561782
+L27: 
+L28: MFR #UCP204
+L29: 
+L30: * * *
+L31: 
+L32: Availability:
+L33: 
+L34: In Stock
+L35: 
+L36: In stock
+L37: 
+L38: Shipping
+L39: 
+L40: [Button: Get estimated arrival date]
+L41: 
+L42: Price$52.70/each
+L43: 
+L44: ## Specifications
+L45: ### Dimensions
+L46: 
+L47:   * Base To Bore Centerline
+L48: 
+L49: 33.30 mm
+L50: 
+L51:   * Base Width
+L52: 
+L53: 38 mm
+L54: 
+L55:   * Bolt Center To Center Length
+L56: 
+L57: 86 mm to 105 mm
+L58: 
+L59:   * Bolt Size
+L60: 
+L61: M10
+L62: 
+L63:   * Bore Diameter
+L64: 
+L65: 20 mm
+L66: 
+L67:   * Overall Height
+L68: 
+L69: 65 mm
+L70: 
+L71:   * Overall Length
+L72: 
+L73: 127 mm
+L74: 
+L75:   * Overall Width
+L76: 
+L77: 38 mm
+L78: ### Details
+L79: 
+L80:   * Bore Type
+L81: 
+L82: Round
+L83: 
+L84:   * Duty Type
+L85: 
+L86: Standard Duty
+L87: 
+L88:   * Expansion Type
+L89: 
+L90: Non-Expansion Bearing (Fixed)
+L91: 
+L92:   * Housing Material
+L93: 
+L94: Cast Iron
+L95: 
+L96:   * Locking Device
+L97: 
+L98: Set Screw
+L99: 
+L100:   * Locking Type
+L101: 
+L102: Set Screw
+L103: 
+L104:   * Lubrication Type
+L105: 
+L106: Lubrication Fitting
+L107: 
+L108:   * Manufacturer Product Page
+L109: 
+L110: 【4†Click here†catalog.amibearings.com】
+L111: 
+L112:   * Mounting Type
+L113: 
+L114: 2-Bolt Base
+L115: 
+L116:   * Number Of Mounting Holes
+L117: 
+L118: 2
+L119: 
+L120:   * Product Type
+L121: 
+L122: Pillow Block Ball Bearing Units
+L123: 
+L124:   * Radial Dynamic Load Capacity
+L125: 
+L126: 1310 kgf
+L127:   * Radial Static Load Capacity
+L128: 
+L129: 680 kgf
+L130: 
+L131:   * Replacement Bearing
+L132: 
+L133: UC204
+L134: 
+L135:   * Seal Type
+L136: 
+L137: Contact with Slinger
+L138: 
+L139:   * Series
+L140: 
+L141: UCP200
+L142: 
+L143:   * UPC_NO
+L144: 
+L145: 0808250104086
+L146: 
+L147: Help us improve this product Provide Feedback
+L148: ## Overview
+L149: 
+L150: Mfr description
+L151: 
+L152: UCP204 20MM PILLOW BLOCK
+L153: ## Compliance & Safety Data
+L154: 
+L155: Click on an icon below to learn more about the compliance and safety data
+L156: 
+L157: CUSTOMER SERVICE
+L158: 
+L159:   * 【5†Track Orders】
+L160:   * 【6†Request a Quote】
+L161:   * 【7†Find a Location】
+L162:   * 【0†Support Center】
+L163:   * 【8†FAQs】
+L164: 
+L165: RESOURCES
+L166:   * 【9†Knowledge Hub】
+L167:   * 【10†Motion Learning and Development】
+L168:   * 【11†Supplier inMotion†www.supplierinmotion.com】
+L169:   * 【12†Site Map】
+L170:   * 【13†Motion Conveyance Solutions†www.miconveyancesolutions.com】
+L171:   * 【14†Motion Automation Intelligence†www.ai.motion.com】
+L172:   * 【15†Motion Onsite Solutions】
+L173:   * 【16†Motion Repair & Services†www.mirepairandservices.com】
+L174: 
+L175: COMPANY INFORMATION
+L176:   * 【17†About Us】
+L177:   * 【18†Events】
+L178:   * 【19†Careers†jobs.genpt.com】
+L179:   * 【20†Press Releases】
+L180:   * 【21†Investor Relations†www.genpt.com】
+L181:   * 【22†Download CMRT†www.motionesg.com】
+L182:   * 【23†Sustainability†www.motionesg.com】
+L183: 
+L184: 【24†Image: Motion Logo†content.motion.com】
+L185: 
+L186: 1-800-526-9328
+L187: 
+L188: GET HELP 24 / 7 / 365
+L189: 
+L190: Copyright © 2001 - 2026 Motion Industries, Inc. - All Rights Reserved.
+L191: 【25†Supply Chain Transparency】【26†Terms and Conditions】【27†Terms of Use】【28†Privacy Policy】[Button: Cookie Settings]【29†P2MRO Terms of Use】【30†Get Support】
+L192: 
+L193: Motion 1605 Alton Rd. Birmingham, AL 35210, USA (205) 956-1122, 1-800-526-9328
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn6view5 [wordlim: 200] Source: open({"ref_id":"https://www.zeronetechbd.com/product/details/bevel-gear-8mm-hole-model-gear-90-degree-transmission-steering-20-teethcna015","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.zeronetechbd.com/product/details/bevel-gear-8mm-hole-model-gear-90-degree-transmission-steering-20-teethcna015: Cache miss
+--------------------------------------------------------------------------------
+4 Paddle Wheel Aerator 2HP Price In Bangladesh (https://nscbd.com/4-paddle-wheel-aerator-2hp-price-in-bangladesh/)
+citeturn6view6 [wordlim: 200] Crawled: last month; Content type: text/html; Source: open({"ref_id":"https://nscbd.com/4-paddle-wheel-aerator-2hp-price-in-bangladesh/","lineno":null}); Total lines: 606
+L0: 【0†Skip to navigation】 【1†Skip to main content】
+L1: 
+L2: ##### Free shipping In dhaka city for 3+ orders
+L3: 
+L4: ##### We Are Located In Uttra Model Town Dhaka 1230
+L5: ### Hotline - 01776233191
+L6: 
+L7: [Input: Search for products] [Input]
+L8: 
+L9: [Input]
+L10: 
+L11: Select category
+L12:   * 【2†Select category】
+L13:   * 【3†Agricultural Machinery】
+L14:     * 【4†Aerator Machine In Bangladesh】
+L15:     * 【5†Agro equipment】
+L16:     * 【6†Agro Weight Scale Cow buffalo Goat】
+L17:     * 【7†Animal ear hole puncher】
+L18:     * 【8†Baby cow feed nipples】
+L19:     * 【9†buffalo Nose Ring】
+L20:     * 【10†Cattle Mattress】
+L21:     * 【11†Cow Brush】
+L22:     * 【12†Cow Milking Machine】
+L23:     * 【13†Cow Water Bowl】
+L24:     * 【14†Dairy Equipment】
+L25:     * 【15†Dehorning Machine】
+L26:     * 【16†Earth Auger Soil Drill Machine】
+L27:     * 【17†Grass Cutter Machine】
+L28:     * 【18†Nitrogen Transport Tanks】
+L29:       * 【19†Nitrogen Tank BD】
+L30:     * 【20†Paddy Cutting Machine】
+L31:     * 【21†Sprayer Machines】
+L32:     * 【22†SUJA Chaff Cutters】
+L33:     * 【23†SUJA Corn Sheller】
+L34:     * 【24†Tiller Machine】
+L35:   * 【25†All Kinds of Meter Price in Bangladesh】
+L36:     * 【26†AC & DC Testing Meter】
+L37:     * 【27†Anemometer】
+L38:     * 【28†Bench-top PH Meter】
+L39:     * 【29†Coating Thickness meter】
+L40:     * 【30†Coding Machine】
+L41:     * 【31†Concrete moisture meter】
+L42:     * 【32†Conductivity / TDS / Salinity Tester】
+L43:     * 【33†Digital Hygrometer】
+L44:     * 【34†Digital Tachometer】
+L45:     * 【35†Dissolved Oxygen Meter】
+L46:     * 【36†DO Meter】
+L47:     * 【37†Environment Meter】
+L48:     * 【38†Flow Meter】
+L49:     * 【39†GAS Detectors】
+L50:     * 【40†Gloss Meter】
+L51:     * 【41†Grain Moisture Meter】
+L52:     * 【42†Human Pulse Oximeter】
+L53:     * 【43†Humidity Temperature Meter】
+L54:     * 【44†Infrared Thermometer】
+L55:     * 【45†Jute moisture meter】
+L56:     * 【46†K-TYPE Temperature Meter】
+L57:     * 【47†Laser Distance Meter】
+L58:     * 【48†Lux Meter】
+L59:     * 【49†Measuring Instrument】
+L60:     * 【50†Meat Moisture Meter】
+L61:     * 【51†Micrometer】
+L62:     * 【52†Outdoor Sound Level Meter】
+L63:     * 【53†Oxygen meter】
+L64:     * 【54†Paper Carton Moisture Meter】
+L65:     * 【55†Paper Moisture Meter】
+L66:     * 【56†Ph Meter】
+L67:     * 【57†Rangefinder】
+L68:     * 【58†Refractometer】
+L69:     * 【59†Schmidt Tension Meters – Tension Meter】
+L70:     * 【60†Smart Vibration Meter】
+L71:     * 【61†Soil Ph Meter】
+L72:     * 【62†Sound Level Meter】
+L73:     * 【63†Spectrophotometer】
+L74:     * 【64†Tachometer】
+L75:     * 【65†Temperature Meters】
+L76:     * 【66†Thermal Imager】
+L77:     * 【67†Thickness Tester】
+L78:     * 【68†Vibration Meter】
+L79:     * 【69†Water flow meter bangladesh】
+L80:     * 【70†Water PH Meter】
+L81:     * 【71†Water TDS Meter】
+L82:     * 【72†Wood Moisture Meter】
+L83:     * 【73†Wood Moisture Meter】
+L84:   * 【74†Bag Sewing Machine Electric Manual Sealing Machine】
+L85:   * 【75†Building Paint & Coating Chemicals】
+L86:   * 【76†Choice Sewing Machine Co.Ltd】
+L87:   * 【77†Cleaning Equipment】
+L88:     * 【78†Carpet Cleaning Machine】
+L89:     * 【79†Caution Board】
+L90:     * 【80†Cleaning Mops Tools】
+L91:     * 【81†Double Moping Trolley】
+L92:     * 【82†Dry Foam Sofa Maintainer】
+L93:     * 【83†Floor Sweeping Machine】
+L94:     * 【84†Luxury Lobby Mop】
+L95:     * 【85†Luxury Pressing Mop】
+L96:     * 【86†Polishing Machine】
+L97:     * 【87†Scrubber Machine】
+L98:     * 【88†Steam Cleaner】
+L99:     * 【89†Vacuum Cleaner】
+L100:     * 【90†Wet Floor Dryer Machine】
+L101:     * 【91†Wringer Trolley】
+L102:   * 【92†Coloro Color Dictionary】
+L103:   * 【93†Colour Matching Shed lights QC】
+L104:   * 【94†Construction Equipment】
+L105:     * 【95†Aluminum Bull Float】
+L106:     * 【96†Civil Tools】
+L107:     * 【97†Concrete Floor Grinding Machine】
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn6view7 [wordlim: 200] Source: open({"ref_id":"https://esmart.com.bd/product-category/industrial-supplies/agriculture-industry/aerator/","lineno":null}); Total lines: 1
+L0: Failed to fetch https://esmart.com.bd/product-category/industrial-supplies/agriculture-industry/aerator/: Error fetching
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn6view8 [wordlim: 200] Source: open({"ref_id":"https://waltonbd.com/canton-fair/pdf/fan-canton-catalog.pdf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://waltonbd.com/canton-fair/pdf/fan-canton-catalog.pdf: (400) Content length is too large: 38735886
+--------------------------------------------------------------------------------
+Bot Verification (https://constructionmart.com.bd/ads/exhaust-fan/)
+citeturn6view9 [wordlim: 200] Crawled: 6 months ago; Content type: text/html; Source: open({"ref_id":"https://constructionmart.com.bd/ads/exhaust-fan/","lineno":null}); Total lines: 1
+L0: ### Verifying that you are not a robot...
+

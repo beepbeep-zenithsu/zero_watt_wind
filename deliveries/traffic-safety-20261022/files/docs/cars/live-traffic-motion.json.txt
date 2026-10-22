@@ -1,0 +1,62 @@
+[
+  {
+    "preference": "no-preference",
+    "mode": "basic",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.5625999999999953,
+    "movingCars": 36,
+    "maxSpeed": 3.8563958333333876
+  },
+  {
+    "preference": "no-preference",
+    "mode": "advanced",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.548799999999999,
+    "movingCars": 36,
+    "maxSpeed": 2.986395833333355
+  },
+  {
+    "preference": "no-preference",
+    "mode": "water",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.5624999999999902,
+    "movingCars": 36,
+    "maxSpeed": 3.091395833333359
+  },
+  {
+    "preference": "reduce",
+    "mode": "basic",
+    "initiallyRunning": false,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.5696,
+    "movingCars": 36,
+    "maxSpeed": 2.926395833333353
+  },
+  {
+    "preference": "reduce",
+    "mode": "advanced",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.5903999999999976,
+    "movingCars": 36,
+    "maxSpeed": 2.9638958333333543
+  },
+  {
+    "preference": "reduce",
+    "mode": "water",
+    "initiallyRunning": false,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.541899999999995,
+    "movingCars": 36,
+    "maxSpeed": 2.881395833333351
+  }
+]

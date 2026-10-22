@@ -1,0 +1,68 @@
+LIVE_MOTION {"preference":"no-preference","mode":"basic","initiallyRunning":true,"running":true,"reduced":false,"timeChange":3.569499999999997,"movingCars":35,"maxSpeed":7.493508012820468}
+LIVE_MOTION {"preference":"no-preference","mode":"advanced","initiallyRunning":true,"running":true,"reduced":false,"timeChange":3.5487,"movingCars":35,"maxSpeed":6.051124999999966}
+LIVE_MOTION {"preference":"no-preference","mode":"water","initiallyRunning":true,"running":true,"reduced":false,"timeChange":3.5417999999999954,"movingCars":35,"maxSpeed":6.186124999999963}
+LIVE_MOTION {"preference":"reduce","mode":"basic","initiallyRunning":false,"running":true,"reduced":true,"timeChange":3.548700000000001,"movingCars":35,"maxSpeed":5.811124999999971}
+LIVE_MOTION {"preference":"reduce","mode":"advanced","initiallyRunning":true,"running":true,"reduced":true,"timeChange":3.5834999999999995,"movingCars":35,"maxSpeed":5.946124999999968}
+LIVE_MOTION {"preference":"reduce","mode":"water","initiallyRunning":false,"running":true,"reduced":true,"timeChange":3.5626999999999933,"movingCars":35,"maxSpeed":5.811124999999971}
+[
+  {
+    "preference": "no-preference",
+    "mode": "basic",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.569499999999997,
+    "movingCars": 35,
+    "maxSpeed": 7.493508012820468
+  },
+  {
+    "preference": "no-preference",
+    "mode": "advanced",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.5487,
+    "movingCars": 35,
+    "maxSpeed": 6.051124999999966
+  },
+  {
+    "preference": "no-preference",
+    "mode": "water",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": false,
+    "timeChange": 3.5417999999999954,
+    "movingCars": 35,
+    "maxSpeed": 6.186124999999963
+  },
+  {
+    "preference": "reduce",
+    "mode": "basic",
+    "initiallyRunning": false,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.548700000000001,
+    "movingCars": 35,
+    "maxSpeed": 5.811124999999971
+  },
+  {
+    "preference": "reduce",
+    "mode": "advanced",
+    "initiallyRunning": true,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.5834999999999995,
+    "movingCars": 35,
+    "maxSpeed": 5.946124999999968
+  },
+  {
+    "preference": "reduce",
+    "mode": "water",
+    "initiallyRunning": false,
+    "running": true,
+    "reduced": true,
+    "timeChange": 3.5626999999999933,
+    "movingCars": 35,
+    "maxSpeed": 5.811124999999971
+  }
+]

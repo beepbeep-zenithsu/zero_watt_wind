@@ -1,0 +1,35 @@
+﻿check,status
+base: analytic versus quadrature full-performance probability,PASS
+base: independently recomputed NPV,PASS
+conservative: analytic versus quadrature full-performance probability,PASS
+conservative: independently recomputed NPV,PASS
+optimistic: analytic versus quadrature full-performance probability,PASS
+optimistic: independently recomputed NPV,PASS
+Independent Python versus existing JS shaft calculation,PASS
+Independent Python versus existing JS airflow calculation,PASS
+Every report citation is in actually-opened/attempted source register,PASS
+Every citation has a bibliography item,PASS
+At least ten vector figures,PASS
+No external image/data/bibliography dependencies,PASS
+"Task01: draft, objections, numerical register and rounds",PASS
+"Task02: draft, objections, numerical register and rounds",PASS
+"Task03: draft, objections, numerical register and rounds",PASS
+"Task04: draft, objections, numerical register and rounds",PASS
+"Task05: draft, objections, numerical register and rounds",PASS
+"Task06: draft, objections, numerical register and rounds",PASS
+"Task07: draft, objections, numerical register and rounds",PASS
+"Task08: draft, objections, numerical register and rounds",PASS
+"Task09: draft, objections, numerical register and rounds",PASS
+"Task10: draft, objections, numerical register and rounds",PASS
+"Task11: draft, objections, numerical register and rounds",PASS
+"Task12: draft, objections, numerical register and rounds",PASS
+"Task13: draft, objections, numerical register and rounds",PASS
+"Task14: draft, objections, numerical register and rounds",PASS
+"Task15: draft, objections, numerical register and rounds",PASS
+"Task16: draft, objections, numerical register and rounds",PASS
+"Task17: draft, objections, numerical register and rounds",PASS
+"Task18: draft, objections, numerical register and rounds",PASS
+"Task19: draft, objections, numerical register and rounds",PASS
+"Task20: draft, objections, numerical register and rounds",PASS
+Every recorded report numerical item has S/D/A basis,PASS
+Every report displayed number has a reproducibility origin,PASS

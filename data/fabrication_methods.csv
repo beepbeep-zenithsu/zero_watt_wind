@@ -1,0 +1,7 @@
+﻿method,low_bdt,base_bdt,high_bdt,process,tooling_and_caveat,basis
+Printed pattern + formed recycled aluminium rotor,3000,6000,11000,"Print segmented pattern, roll/form sheet, rivet, balance",Shared jigs; alloy and fatigue evidence required,"A process-level alternatives, overlap BOM; do not add to BOM"
+Purchased gears / local steel shaft and frame,5000,10000,19000,"Machine/key shaft, weld and coat frame, align purchased bearings","Lathe, welding, alignment jig; paid labour and scrap","A process-level alternatives, overlap BOM; do not add to BOM"
+Recycled PLA / PETG noncritical parts per unit,800,1800,3500,"Dry, filter, print coupons then ducts/covers only",Reuse existing printer; no critical strength inferred,"A process-level alternatives, overlap BOM; do not add to BOM"
+Reclaimed HDPE float pair,2400,4400,8000,"Inspect contamination, leak-test compartments, mechanically cradle","No toxic drums, no glued untested seams","A process-level alternatives, overlap BOM; do not add to BOM"
+Bamboo replaceable noncritical fixtures,500,1500,3000,"Dry, treat appropriately, bolt and inspect for rot",No untested roof anchor substitution,"A process-level alternatives, overlap BOM; do not add to BOM"
+Recovered metal and polymer take-back per unit,300,700,1500,"Label material, separate fasteners, recover at end of life","Recovery target, recycler agreement NOT FOUND","A process-level alternatives, overlap BOM; do not add to BOM"

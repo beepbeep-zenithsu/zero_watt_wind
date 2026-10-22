@@ -53,6 +53,9 @@ export function flushTrafficFleet(city,camera){
       const distance=car.model.position.distanceTo(fleetCamera);let index=car.renderLod??1;
       if(index>0&&distance<TRAFFIC_LOD_DISTANCES[index]*(1-TRAFFIC_LOD_HYSTERESIS))index--;
       if(index<2&&distance>=TRAFFIC_LOD_DISTANCES[index+1])index++;
+      // The red P72's heavily reduced mesh collapses its curved silhouette.
+      // Its original is only 21k triangles, so retain that body at every range.
+      if(type.spec.id==='de-tomaso-p72')index=0;
       car.renderLod=index;
       const level=type.levels[index],slot=level.count++;
       car.model.updateMatrix();fleetWorld.multiplyMatrices(car.model.matrix,level.fit);

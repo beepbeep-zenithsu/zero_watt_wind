@@ -1,0 +1,609 @@
+[
+  {
+    "action": "REPLACE",
+    "path": "CAR_INTEGRATION_PROGRESS.md",
+    "textCopy": "files/CAR_INTEGRATION_PROGRESS.md.txt",
+    "bytes": 7807,
+    "sha256": "fb36031fba11cfa2c8773e2068934f3e3578f8e9fb896997074eb9ff3889ea85"
+  },
+  {
+    "action": "REPLACE",
+    "path": "package.json",
+    "textCopy": "files/package.json.txt",
+    "bytes": 1147,
+    "sha256": "af37e28d216bfbab7503e39d1c0ad168e8ee8262b9cb76a537a404c39b7c42ce"
+  },
+  {
+    "action": "REPLACE",
+    "path": "index.html",
+    "textCopy": "files/index.html.txt",
+    "bytes": 3385,
+    "sha256": "8202101065a7e4be2d22016971265afe9520d6470279b065f7587c29db5e8ab5"
+  },
+  {
+    "action": "REPLACE",
+    "path": "scene.js",
+    "textCopy": "files/scene.js.txt",
+    "bytes": 78304,
+    "sha256": "6b6c6c131cd777d4c9bc0b936d0a7e39ea63b157f7fba0d4f66c582acb4cff89"
+  },
+  {
+    "action": "REPLACE",
+    "path": "app.bundle.js",
+    "textCopy": "files/app.bundle.js.txt",
+    "bytes": 774422,
+    "sha256": "dcce50887bcf711fff9f1b226fc026e91531be590b609e554132ed5cd56c7fb6"
+  },
+  {
+    "action": "REPLACE",
+    "path": "car-showcase.bundle.js",
+    "textCopy": "files/car-showcase.bundle.js.txt",
+    "bytes": 583500,
+    "sha256": "ab79c24de52fd5902c203d5c345c8b59a3003199de7918c9cfbb47a0cd69a8cf"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/cars/car-catalog.js",
+    "textCopy": "files/src/cars/car-catalog.js.txt",
+    "bytes": 2540,
+    "sha256": "cf273269f75d9838860c72bd7883b114c8cb10d45da45bb163f70754448139fe"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/cars/traffic-fleet.js",
+    "textCopy": "files/src/cars/traffic-fleet.js.txt",
+    "bytes": 12066,
+    "sha256": "324aaa4517effda50a501d8a72d7fefc59cc95acb15360a2315eff1772c1234a"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/cars/installed-fleet.js",
+    "textCopy": "files/src/cars/installed-fleet.js.txt",
+    "bytes": 4724,
+    "sha256": "88a0c0e2a1ed236b62a97518304d7cb02a36ddc1ce17d0401e822fc60327a3f3"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/graphics/city.js",
+    "textCopy": "files/src/graphics/city.js.txt",
+    "bytes": 13282,
+    "sha256": "07a7f804b3d2c94e51850a743b944bcae7f575f395992158f38cb516afe23cda"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/graphics/traffic.js",
+    "textCopy": "files/src/graphics/traffic.js.txt",
+    "bytes": 10001,
+    "sha256": "b9ef561941421f167b6a5f056a501f04ff9a3a79548351b02be6ff992fda7931"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/graphics/assets.js",
+    "textCopy": "files/src/graphics/assets.js.txt",
+    "bytes": 8732,
+    "sha256": "0cdf2daf85c936774b2109a2ae1ffb55f3ecd4dc081be3decfd275056811ce89"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/graphics/road-network.js",
+    "textCopy": "files/src/graphics/road-network.js.txt",
+    "bytes": 2266,
+    "sha256": "9fd0156a1260f943e5a049427ca22c7829aff8d4d498be98127b99fd77c99856"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/graphics/cyclists.js",
+    "textCopy": "files/src/graphics/cyclists.js.txt",
+    "bytes": 3702,
+    "sha256": "a4ea0b1be9a7a29575fdc4fcc6e7c46e5156ba8051e53b77bedd4f4df47e94e7"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/graphics/occupant-layout.js",
+    "textCopy": "files/src/graphics/occupant-layout.js.txt",
+    "bytes": 1408,
+    "sha256": "968228900cfafa19908d38a177d9215dbaf99054ba8bc36e8c206227bbcf5266"
+  },
+  {
+    "action": "REPLACE",
+    "path": "src/graphics/people.js",
+    "textCopy": "files/src/graphics/people.js.txt",
+    "bytes": 6742,
+    "sha256": "e8b03887ef07ae98e7fbf29afa16c44362c1424115f79e1be13faeb4cc4d1c98"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/graphics/motion-route.js",
+    "textCopy": "files/src/graphics/motion-route.js.txt",
+    "bytes": 1005,
+    "sha256": "67450da14fd5089832690c1cc3059a92f1ad48ace3297b9c025c6a3bc941beb6"
+  },
+  {
+    "action": "CREATE",
+    "path": "src/graphics/mobility-shadows.js",
+    "textCopy": "files/src/graphics/mobility-shadows.js.txt",
+    "bytes": 1851,
+    "sha256": "2aa2aa14f1f2c4a2ab5e235b490668651782c711a856c30d4a416a3a761be16b"
+  },
+  {
+    "action": "CREATE",
+    "path": "tools/review-citywide-browser.cjs",
+    "textCopy": "files/tools/review-citywide-browser.cjs.txt",
+    "bytes": 6894,
+    "sha256": "4ca4bf3134f586e3a26a1a1b3195e93668e18b951f574fdc7e6c6092688c6b0b"
+  },
+  {
+    "action": "CREATE",
+    "path": "tools/check-live-traffic.cjs",
+    "textCopy": "files/tools/check-live-traffic.cjs.txt",
+    "bytes": 2528,
+    "sha256": "a7acfd00fd768cffa74001c7ad9bc3b9c67b386aa0e39d8af7f0a6e5c537b21c"
+  },
+  {
+    "action": "REPLACE",
+    "path": "scripts/blender/prepare_car.py",
+    "textCopy": "files/scripts/blender/prepare_car.py.txt",
+    "bytes": 6175,
+    "sha256": "a43d6b08dcbf600f9a011a35cafea889e6060022f177c25018cbccb3058162d2"
+  },
+  {
+    "action": "REPLACE",
+    "path": "scripts/blender/make_traffic_lods.py",
+    "textCopy": "files/scripts/blender/make_traffic_lods.py.txt",
+    "bytes": 12878,
+    "sha256": "58be3218f436953d85cae0ebfa3e1d1dba8b3bca67e35923c8bad8f0c4ce7363"
+  },
+  {
+    "action": "REPLACE",
+    "path": "scripts/blender/test_traffic_lods.py",
+    "textCopy": "files/scripts/blender/test_traffic_lods.py.txt",
+    "bytes": 2437,
+    "sha256": "6e5292c82744a98f6a2dea895e927fd45d7965b12bb6cc3d68c8184a6ff43ca3"
+  },
+  {
+    "action": "CREATE",
+    "path": "scripts/blender/build_city_cyclists.py",
+    "textCopy": "files/scripts/blender/build_city_cyclists.py.txt",
+    "bytes": 5116,
+    "sha256": "9c8136dce224f305853978b3c01b681eb2ec92972f8e9dfec4d3d6f517374623"
+  },
+  {
+    "action": "CREATE",
+    "path": "scripts/blender/prepare_downloaded_traffic.py",
+    "textCopy": "files/scripts/blender/prepare_downloaded_traffic.py.txt",
+    "bytes": 8324,
+    "sha256": "719bac2750d7abb2295422f8b7b84cb919c8c6cd2f383b362d62947c4cc90ee3"
+  },
+  {
+    "action": "CREATE",
+    "path": "scripts/blender/refine_traffic_materials.py",
+    "textCopy": "files/scripts/blender/refine_traffic_materials.py.txt",
+    "bytes": 1261,
+    "sha256": "eac5eba85be4bf9a53dd31624e97e1acd3539c66dd22bc5a2c3a628e793e9c31"
+  },
+  {
+    "action": "CREATE",
+    "path": "scripts/blender/inspect_traffic_sources.py",
+    "textCopy": "files/scripts/blender/inspect_traffic_sources.py.txt",
+    "bytes": 2274,
+    "sha256": "79ffce5010996ddd5841262a319b3c4f28c3864ab703f2e594b98f897d27f28c"
+  },
+  {
+    "action": "CREATE",
+    "path": "scripts/blender/render_mobility_review.py",
+    "textCopy": "files/scripts/blender/render_mobility_review.py.txt",
+    "bytes": 4087,
+    "sha256": "ab3f9f5ba145a2efcf44902d622eca3236f50040a7ec9f73565a13dba111d6e8"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/run-blender.cjs",
+    "textCopy": "files/tools/run-blender.cjs.txt",
+    "bytes": 584,
+    "sha256": "a4f8caed9e6245832fd6ac705b735b6574d3c8166bf20e8aef96e5e1f5fea02f"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/build-environment.cjs",
+    "textCopy": "files/tools/build-environment.cjs.txt",
+    "bytes": 451,
+    "sha256": "4aea4778fac4ad2543915aed02705367ca77ba4c7201be4c48b48176dee15726"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/download-traffic-models.cjs",
+    "textCopy": "files/tools/download-traffic-models.cjs.txt",
+    "bytes": 4992,
+    "sha256": "e517c691a1f82ecd2b8b613907c68c86da6a7982b9e8ce542cc03bf8b024c849"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/download-traffic-models.ps1",
+    "textCopy": "files/tools/download-traffic-models.ps1.txt",
+    "bytes": 896,
+    "sha256": "bbbd14e229f3e14cffb9d2974d88ef72c3f9a6ca465cd91e57a3447158921c02"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/make-traffic-lods.ps1",
+    "textCopy": "files/tools/make-traffic-lods.ps1.txt",
+    "bytes": 1827,
+    "sha256": "15705f063667231be864179fe76b7acd26cbbe8c5f7f705f73abc35422020e8f"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/validate-traffic-assets.cjs",
+    "textCopy": "files/tools/validate-traffic-assets.cjs.txt",
+    "bytes": 8919,
+    "sha256": "f98b261a875db1491a86ead0700d84c6af1ff0da588f6dfa2b30fa80625b79c7"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/test-traffic-lods.cjs",
+    "textCopy": "files/tools/test-traffic-lods.cjs.txt",
+    "bytes": 3403,
+    "sha256": "885f88036693767f5895b7eefc6d7dc0d3aa2917e3a54de2c1afa8b5e2d38570"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/verify-graphics.cjs",
+    "textCopy": "files/tools/verify-graphics.cjs.txt",
+    "bytes": 10022,
+    "sha256": "ca6ab87659b8cbbbad9a368368bc37278ad72c9fabb3b529329cd46d92532c03"
+  },
+  {
+    "action": "CREATE",
+    "path": "tools/capture-mobility-review.cjs",
+    "textCopy": "files/tools/capture-mobility-review.cjs.txt",
+    "bytes": 1628,
+    "sha256": "b8700a3adf409862d6f2d92862cfca98ceb0674b84e48a91586d31c143ab1f9e"
+  },
+  {
+    "action": "CREATE",
+    "path": "tools/update-car-source-report.cjs",
+    "textCopy": "files/tools/update-car-source-report.cjs.txt",
+    "bytes": 5647,
+    "sha256": "74bbfbe99aa2a270c1b464ecd573008d73581d1dc0666f91829e2e48671863ac"
+  },
+  {
+    "action": "CREATE",
+    "path": "tools/deliver-city-mobility.cjs",
+    "textCopy": "files/tools/deliver-city-mobility.cjs.txt",
+    "bytes": 8753,
+    "sha256": "d86daa288103f3429d8062b06bcc9a34e19d9e6cd3033637cab6f8ae30412da8"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/package-city.ps1",
+    "textCopy": "files/tools/package-city.ps1.txt",
+    "bytes": 3255,
+    "sha256": "b5ddddbdec3f093a9e7f5060934e88319978c7cc3a517bc990925a481e91eff4"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/fetch-car-candidate-metadata.cjs",
+    "textCopy": "files/tools/fetch-car-candidate-metadata.cjs.txt",
+    "bytes": 1417,
+    "sha256": "716fbb4c89e0cc8930edd7d5cd8d121683d296ae85926eb2bea7c10050a90c30"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/inspect-public-car-repositories.cjs",
+    "textCopy": "files/tools/inspect-public-car-repositories.cjs.txt",
+    "bytes": 868,
+    "sha256": "009e12c092416967855f05be0a75a193191e530ba42fee00b04a76f48fad5306"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/research-account-free-cars.cjs",
+    "textCopy": "files/tools/research-account-free-cars.cjs.txt",
+    "bytes": 1399,
+    "sha256": "317751bcd46054260d08b7d7188a57a9cc6c59899980374d0226aae5a4d58f54"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tools/search-car-repositories.cjs",
+    "textCopy": "files/tools/search-car-repositories.cjs.txt",
+    "bytes": 989,
+    "sha256": "444c8553c804086f1f293fe43dfaa89335092ea49b01958421224b5751e51744"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tests/fleet.test.cjs",
+    "textCopy": "files/tests/fleet.test.cjs.txt",
+    "bytes": 5222,
+    "sha256": "4444e62137c2d4d222707013e59b958d8e19ca5619dac2c07787adb6b1115c3a"
+  },
+  {
+    "action": "REPLACE",
+    "path": "tests/environment.test.cjs",
+    "textCopy": "files/tests/environment.test.cjs.txt",
+    "bytes": 12391,
+    "sha256": "ee41b698ecb424fc6ae43cd18252fac21a8e2a0b05d69edb5460921ab418d8a6"
+  },
+  {
+    "action": "CREATE",
+    "path": "tests/city-mobility.test.cjs",
+    "textCopy": "files/tests/city-mobility.test.cjs.txt",
+    "bytes": 11267,
+    "sha256": "3afe6b373a780c9ac04485aec1dc23fcab9a06cf0c25238e6553263566c242ac"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/environment/manifest.json",
+    "textCopy": "files/assets/environment/manifest.json.txt",
+    "bytes": 3142,
+    "sha256": "37249238e5c7b5720284567ad26165b377f448f6159623ff2058f3096c001a41"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/SOURCES.md",
+    "textCopy": "files/assets/cars/SOURCES.md.txt",
+    "bytes": 4561,
+    "sha256": "1535ff1848712a12f1e404db1a8f5d3f1efbce4b69137bd776c342fa08bcddf9"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/CREDITS.html",
+    "textCopy": "files/assets/cars/CREDITS.html.txt",
+    "bytes": 2177,
+    "sha256": "63a64ddcfdfb9f758d522503431e1aeae78a793996f34f314d7708d561e2d55d"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/traffic-sources.json",
+    "textCopy": "files/assets/cars/traffic-sources.json.txt",
+    "bytes": 7713,
+    "sha256": "ec666faa73f21addd879f98b8ac7a04a9a02893a83299f35ce06359e3fabae82"
+  },
+  {
+    "action": "REPLACE",
+    "path": "docs/cars/TRAFFIC-PIPELINE.md",
+    "textCopy": "files/docs/cars/TRAFFIC-PIPELINE.md.txt",
+    "bytes": 7107,
+    "sha256": "d930599f2badd78950b282428174ce3cbaff665c256dfb33366cc4ffa2f2b0ef"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/CITY-MOBILITY.md",
+    "textCopy": "files/docs/cars/CITY-MOBILITY.md.txt",
+    "bytes": 4681,
+    "sha256": "0e2fdcd3abd0e32422973ecdfe32dc867fae1b3e86e81e1509796be5a0fa2a3b"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/installed-asset-validation.json",
+    "textCopy": "files/docs/cars/installed-asset-validation.json.txt",
+    "bytes": 4088,
+    "sha256": "7c4c6015692268bf75e50fa8c0f5ed991e3c294a93d276b2969cd93ea7374d0d"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/mobility-validation.json",
+    "textCopy": "files/docs/cars/mobility-validation.json.txt",
+    "bytes": 537,
+    "sha256": "6cfdeefc02d822ba0f640a442341a4f3ec6e64cb8b199c0f042081505ce0ee2b"
+  },
+  {
+    "action": "REPLACE",
+    "path": "docs/cars/fixture-validation.json",
+    "textCopy": "files/docs/cars/fixture-validation.json.txt",
+    "bytes": 1309,
+    "sha256": "574e665ddcf20815cd9c64cf0b0eaacfbd82659f05cdcb67820d2d5d99738bb1"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-browser-review.json",
+    "textCopy": "files/docs/cars/citywide-browser-review.json.txt",
+    "bytes": 3793,
+    "sha256": "eb2f2bc19e6e57af58e188969cc8980669e501e28ca86b314818304b6be19d3f"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/live-traffic-motion.json",
+    "textCopy": "files/docs/cars/live-traffic-motion.json.txt",
+    "bytes": 1365,
+    "sha256": "1d89222db3d9d68d5a11e127da6830fc5289ec0cbcfd155c24ee12c4c728de23"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/metadata/acquisition-receipts.json",
+    "textCopy": "files/assets/cars/metadata/acquisition-receipts.json.txt",
+    "bytes": 2214,
+    "sha256": "b1f79020aee9fbd7760cd82243ed2914a222a44a59089783d318ea5fef8d32f6"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/metadata/de-tomaso-p72.json",
+    "textCopy": "files/assets/cars/metadata/de-tomaso-p72.json.txt",
+    "bytes": 9468,
+    "sha256": "741f0b1d56362dd88f969b543e98848dc47e83fb8e6bce006c1ff62844574ecc"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/metadata/download-access.json",
+    "textCopy": "files/assets/cars/metadata/download-access.json.txt",
+    "bytes": 597,
+    "sha256": "c1c7e89398c3357a21f595bb43ac2bc556ea9c3e2ae6052a0d57c71444ef4949"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/metadata/ferrari-roma.json",
+    "textCopy": "files/assets/cars/metadata/ferrari-roma.json.txt",
+    "bytes": 9468,
+    "sha256": "2622695358f25113f3df2fee09eae0f1e7efba12631b4fb5098d18f68a94f937"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/metadata/jaguar-e-type.json",
+    "textCopy": "files/assets/cars/metadata/jaguar-e-type.json.txt",
+    "bytes": 5322,
+    "sha256": "48993557b421c744374b608aae625483007a60886139d681c94449b2c9e7f345"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/metadata/porsche-taycan.json",
+    "textCopy": "files/assets/cars/metadata/porsche-taycan.json.txt",
+    "bytes": 5882,
+    "sha256": "f3aec4613dd4bca88e25943fce8433ff5a9052469039bb74769ac07ef25603f1"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/traffic/jaguar-e-type.report.json",
+    "textCopy": "files/assets/cars/traffic/jaguar-e-type.report.json.txt",
+    "bytes": 2479,
+    "sha256": "3f5f9a8b2c86af74a443826003fe981908583c84c01b0b756d488b243679543a"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/traffic/porsche-taycan.report.json",
+    "textCopy": "files/assets/cars/traffic/porsche-taycan.report.json.txt",
+    "bytes": 2554,
+    "sha256": "ccd66453786f6adcbb836211ae624ac7b10639c8362ed493b9d9c0e772c4dbd9"
+  },
+  {
+    "action": "REPLACE",
+    "path": "assets/cars/traffic/de-tomaso-p72.report.json",
+    "textCopy": "files/assets/cars/traffic/de-tomaso-p72.report.json.txt",
+    "bytes": 2321,
+    "sha256": "f48e8697ef129155c9283450e156bbf5e2f0dc285fbc66d219645e4daf429821"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/jaguar-e-type-lod0.glb",
+    "bytes": 4006976,
+    "sha256": "48d0805497b71452414b69ab9afa07f30b3ec2620d85619a9743a650e4654dbf"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/jaguar-e-type-lod1.glb",
+    "bytes": 1226664,
+    "sha256": "2e7b08377cab384cfa92602fa50e20371655b9e76553489b56097fecef0d827c"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/jaguar-e-type-lod2.glb",
+    "bytes": 329668,
+    "sha256": "79bd9d83a6ab3083017ac8f5e7ed59cc07e2d57efab94384eeb32312ea45f97d"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/jaguar-e-type.blend",
+    "bytes": 4489303,
+    "sha256": "dce8c9d376ac702e3477f6e6aeaadb8bbe440c345f193464358018c54e371a67"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/porsche-taycan-lod0.glb",
+    "bytes": 2164240,
+    "sha256": "9b31ac4b26c2158bd437699d7f7193b595d691f423f4d6d54169d26204db6a00"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/porsche-taycan-lod1.glb",
+    "bytes": 746008,
+    "sha256": "29a143d383479774716ac879c9e2d25ac341657f6c90a0242c2cff4ee5cf44d1"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/porsche-taycan-lod2.glb",
+    "bytes": 244744,
+    "sha256": "ec690c483179b3d71e3e458f3547b886e02561ba0dc124f87acf0be700dad444"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/porsche-taycan.blend",
+    "bytes": 12267599,
+    "sha256": "176254d5e883e7ff5856e8324c667ca91d1885c8e1750b71e07651ab512d4f15"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/de-tomaso-p72-lod0.glb",
+    "bytes": 2883896,
+    "sha256": "7d09dc6eb66af86a0129e89de89f4da694486403b5e750ffe87b28c291481193"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/de-tomaso-p72-lod1.glb",
+    "bytes": 1408580,
+    "sha256": "daaca37c38556b455324045f689af85a2f7cfbf9ea1c2ece4174627b0d8b08ba"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/de-tomaso-p72-lod2.glb",
+    "bytes": 437652,
+    "sha256": "302b2d796f23301d0781a68a32d52ecebf7647faa40afab4c6709d9caff79bc9"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/cars/traffic/de-tomaso-p72.blend",
+    "bytes": 2872688,
+    "sha256": "68ab08567f0c3ca6b1b66a88752ad23489649e1531bfb978291c57fcff83f160"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/environment/site-cyclist.glb",
+    "bytes": 454120,
+    "sha256": "1ca57d13ebaa488cee10a9aee755146fdc0cf4ca9d86e33669084e513295ee02"
+  },
+  {
+    "action": "CREATE",
+    "path": "assets/environment/city-cyclists.blend",
+    "bytes": 240681,
+    "sha256": "17032fff530c77c9381a9f4ea91f8216910678608f0b8040fe806733d723fdf3"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/installed-cars-review.png",
+    "bytes": 1045552,
+    "sha256": "6a0b6d380abc56e39e2cf7a77102d89ae52f992af16cffd9df9985f292392295"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/cyclist-review.png",
+    "bytes": 729623,
+    "sha256": "ac460bdd0d78455da6045926d83c3aeb06088a1449672c61bebe12d018551920"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/workstation-review.png",
+    "bytes": 1022526,
+    "sha256": "5be70f74a589d172c36f8b6513903518fa3a5a6103e8f356f2a80e9e361d5bf6"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-clear.png",
+    "bytes": 1177345,
+    "sha256": "8c0755791acace259696f74a05aeacd930afa8637875e5c54b75dbf98788ff6c"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-rain.png",
+    "bytes": 1129537,
+    "sha256": "5c8a6506d80352f1e4be1a4b3eb384948467a10f1da0d4b6674255492c8b7f26"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-night.png",
+    "bytes": 1038069,
+    "sha256": "08b9eb18503c29bf5e1dd292fd4adabf3ab51d7b8f26363436be1254c1b06ccf"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-water-clear.png",
+    "bytes": 1107841,
+    "sha256": "59672918343070c148f83f6dcc48496b71e58036ae694b0f6f3ab4c74eb55583"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-advanced-clear.png",
+    "bytes": 1163060,
+    "sha256": "aa790a94a6692591bfea6c17697afc5f3f61f86c7d225d8313c2eccbd34eff14"
+  },
+  {
+    "action": "CREATE",
+    "path": "docs/cars/citywide-advanced-rain.png",
+    "bytes": 1184898,
+    "sha256": "e2c83a4a43dee1bbc0d01848fba3f4644960ae5c9fb74609ce421b6ddda4aaf4"
+  }
+]

@@ -1,0 +1,612 @@
+Filament Material Guide | Prusa Knowledge Base (https://help.prusa3d.com/filament-material-guide)
+citeturn22view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://help.prusa3d.com/filament-material-guide","lineno":null}); Total lines: 804
+L0: [Button: Skip to content]
+L1: 
+L2: All categories
+L3: 
+L4:   * Shop
+L5: 
+L6: SHOP
+L7: 
+L8:     * 【0†Latest products†www.prusa3d.com】
+L9: 
+L10: BY CATEGORY
+L11: 
+L12:     * 【1†3D printersnew†www.prusa3d.com】
+L13:     * 【2†Upgradesnew†www.prusa3d.com】
+L14:     * 【3†Materials†www.prusa3d.com】
+L15:     * 【4†Accessories†www.prusa3d.com】
+L16:     * 【5†Spare parts†www.prusa3d.com】
+L17:     * 【6†Courses†www.prusa3d.com】
+L18:     * 【7†Merch†www.prusa3d.com】
+L19: 
+L20:     * 【8†Sales inquiry & Price quote†www.prusa3d.com】
+L21: 
+L22: QUICK LINKS
+L23:     * 【9†Shipping information】
+L24:     * 【10†Refunds & returns】
+L25:     * 【11†Payment options】
+L26:     * 【12†Warranty】
+L27:     * 【13†VAT & Customs fees】
+L28:     * 【14†FAQ】
+L29: 
+L30: 0 item in your cart items in your cart
+L31: 
+L32: Your cart is empty
+L33: 
+L34: 【15†Go to cart†www.prusa3d.com】【16†Shop 3D printers†www.prusa3d.com】
+L35: 
+L36: My profile
+L37: 
+L38: Log in to see orders, saved items
+L39: 
+L40: My profile
+L41: 
+L42: Signed in as
+L43: 
+L44:     * 【17†Orders†www.prusa3d.com】
+L45:     * Logout
+L46: 
+L47:   * [Button: 3D printing]
+L48: 
+L49: 3D PRINTING
+L50: 
+L51:     * 【18†Explore 3D printing†www.prusa3d.com】
+L52: 
+L53: FOR BEGINNERS
+L54:     * 【19†3D printing 101†www.prusa3d.com】
+L55:     * 【20†Types of printers (FDM/SLA)】
+L56:     * 【21†How to choose a 3D Printer†www.prusa3d.com】
+L57:     * 【22†Printables (3D models)†www.printables.com】
+L58: 
+L59: BY APPLICATION
+L60: 
+L61:     * 【23†Rapid prototyping†www.prusa3d.com】
+L62:     * 【24†Manufacturing†www.prusa3d.com】
+L63:     * 【25†Engineering†www.prusa3d.com】
+L64:     * 【26†Research†www.prusa3d.com】
+L65:     * 【27†Arts & design†www.prusa3d.com】
+L66: 
+L67: GO DEEPER
+L68:     * 【28†Materials guide】
+L69:     * 【6†Courses†www.prusa3d.com】
+L70:     * 【29†Webinars†www.prusa3d.com】
+L71:     * 【30†Case studies†www.prusa3d.com】
+L72:     * 【31†Custom 3D printing†www.prusa3d.com】
+L73: 
+L74:   * 3D printers
+L75: 
+L76: 3D PRINTERS
+L77: 
+L78:     * 【16†All 3D printers†www.prusa3d.com】
+L79: 
+L80: FOR
+L81: 
+L82:     * 【32†Home or garageHobbyists, tinkerers and home printing†www.prusa3d.com】
+L83:     * 【33†Shop or studioIn-house production for small teams†www.prusa3d.com】
+L84:     * 【34†EnterpriseFleets, security and scale†www.prusa3d.com】
+L85:     * 【21†How to choose a 3D Printer†www.prusa3d.com】
+L86: 
+L87: SHOP & BROWSE
+L88: 
+L89:     * 【35†CORE One+new†www.prusa3d.com】
+L90:     * 【36†CORE One+ INDXnew†www.prusa3d.com】
+L91:     * 【37†CORE One L+new†www.prusa3d.com】
+L92:     * 【38†CORE One L+ INDXnew†www.prusa3d.com】
+L93:     * 【39†XL+new†www.prusa3d.com】
+L94:     * 【40†MK4S†www.prusa3d.com】
+L95:     * 【41†Prusa Pro HT90†www.prusa3d.com】
+L96:     * 【42†Prusa Pro AFS†www.prusa3d.com】
+L97:     * 【43†Prusa Pro SLX†www.prusa3d.com】
+L98: 
+L99: MORE FROM PRINTERS
+L100:     * 【2†Upgradesnew†www.prusa3d.com】
+L101:     * 【5†Spare parts†www.prusa3d.com】
+L102:     * 【44†Critical infrastructure†www.prusa3d.com】
+L103:     * 【30†Case studies†www.prusa3d.com】
+L104:     * 【45†Signature Oak†www.prusa3d.com】
+L105:     * 【46†Kits†www.prusa3d.com】
+L106: 
+L107:   * [Button: Materials]
+L108: 
+L109: MATERIALS
+L110: 
+L111:     * 【3†All materials†www.prusa3d.com】
+L112: 
+L113: BY USE
+L114:     * 【47†Every-day & design†www.prusa3d.com】
+L115:     * 【48†Functional engineering†www.prusa3d.com】
+L116:     * 【49†Composites†www.prusa3d.com】
+L117:     * 【50†Pro speciality†www.prusa3d.com】
+L118:     * 【51†SLA resins†www.prusa3d.com】
+L119: 
+L120: PRUSAMENT
+L121: 
+L122:     * 【47†PLA†www.prusa3d.com】
+L123:     * 【48†PETG†www.prusa3d.com】
+L124:     * 【52†ASA†www.prusa3d.com】
+L125:     * 【53†PC†www.prusa3d.com】
+L126:     * 【54†PA11†www.prusa3d.com】
+L127:     * 【55†Flex†www.prusa3d.com】
+L128:     * 【56†TPU†www.prusa3d.com】
+L129: 
+L130: MORE FROM MATERIALS
+L131:     * 【28†Materials guide】
+L132:     * 【57†We make material in house†prusament.com】
+L133:     * 【58†Sustainability†www.prusa3d.com】
+L134:     * 【59†Order on the store†www.prusa3d.com】
+L135: 
+L136:   * Software
+L137: 
+L138: SOFTWARE
+L139: 
+L140:     * 【60†All software†github.com】
+L141: 
+L142: PREPARE THE PRINT
+L143: 
+L144:     * 【61†PrusaSlicer 3.0New†www.prusa3d.com】
+L145: 
+L146: PRINT & MONITOR
+L147: 
+L148:     * 【62†Prusa Connect†www.prusa3d.com】
+L149:     * 【63†EasyPrint】
+L150:     * 【64†iOS & Android app†www.prusa3d.com】
+L151:     * 【65†Prusa Farm†www.prusa3d.com】
+L152: 
+L153: GET STARTED
+L154:     * 【66†Download & install】
+L155:     * 【67†Knowledge base】
+L156: 
+L157: MORE FROM SOFTWARE
+L158: 
+L159:     * 【22†Printables (3D models)†www.printables.com】
+L160: 
+L161:   * [Button: Support]
+L162: 
+L163: SUPPORT
+L164: 
+L165:     * 【68†Explore support】
+L166: 
+L167: FIND ANSWERS
+L168: 
+L169:     * 【67†Knowledge base】
+L170:     * 【69†Troubleshooting】
+L171:     * 【6†Courses†www.prusa3d.com】
+L172:     * 【29†Webinars†www.prusa3d.com】
+L173: 
+L174: GET HELP
+L175:     * 【70†Contact us†www.prusa3d.com】
+L176:     * 【71†Livechat†direct.lc.chat】
+L177:     * 【9†Shipping information】
+L178:     * 【12†Warranty】
+L179:     * 【10†Refunds & returns】
+L180:     * 【5†Spare parts†www.prusa3d.com】
+L181:     * 【72†Factory repair】
+L182: 
+L183: COMMUNITY
+L184: 
+L185:     * 【73†Forum†forum.prusa3d.com】
+L186:     * 【74†Reddit†www.reddit.com】
+L187:     * 【22†Printables†www.printables.com】
+L188: 
+L189:   * [Button: Trust Center]
+L190: 
+L191: TRUST CENTER
+L192: 
+L193:     * 【75†Trust Center overview†www.prusa3d.com】
+L194: 
+L195: BY TOPIC
+L196:     * 【76†GDPR†www.prusa3d.com】
+L197:     * 【77†Certificates】
+L198:     * 【78†Security†www.prusa3d.com】
+L199:     * 【79†Compliance†www.prusa3d.com】
+L200: 
+L201: COMMITMENTS
+L202: 
+L203:     * 【58†Sustainability report†www.prusa3d.com】
+L204: 
+L205: TALK TO US
+L206: 
+L207:     * 【80†Contact the security team】
+L208: 
+L209:   * [Button: Company]
+L210: 
+L211: COMPANY
+L212: 
+L213:     * 【81†About Prusa†www.prusa3d.com】
+L214: 
+L215: GET TO KNOW US
+L216: 
+L217:     * 【82†Our story†www.prusa3d.com】
+L218:     * 【83†How we make printers†blog.prusa3d.com】
+L219:     * 【84†Open source†www.prusa3d.com】
+L220: 
+L221:     * 【85†Brand & media kit†www.prusa3d.com】
+L222: 
+L223: NEWS
+L224:     * 【86†Blog†blog.prusa3d.com】
+L225:     * 【87†Newsroom†www.prusa3d.com】
+L226:     * 【88†Events†www.printables.com】
+L227: 
+L228: TRUST & PARTNERS
+L229: 
+L230:     * 【58†Sustainability†www.prusa3d.com】
+L231:     * 【89†Resellers & distributors†www.prusa3d.com】
+L232:     * 【90†Affiliate program†partner.prusa3d.com】
+L233:     * 【70†Contact†www.prusa3d.com】
+L234: 
+L235:   * Switch language EN
+L236: 
+L237:     * 【91†English】
+L238:     * 【91†Čeština】
+L239:     * 【91†Deutsch】
+L240:     * 【91†Español】
+L241:     * 【91†Français】
+L242:     * 【91†Italiano】
+L243:     * 【91†Polski】
+L244:     * 【91†日本語】
+L245: 
+L246:   * Signed in as
+L247:     * 【17†Orders†www.prusa3d.com】
+L248:     * 【92†Address†www.prusa3d.com】
+L249:     * 【93†In-stock Alerts†www.prusa3d.com】
+L250:     * 【94†My Courses†www.prusa3d.com】
+L251:     * 【95†Subscription†subscription.prusa3d.com】
+L252:     * 【96†Edit Account†account.prusa3d.com】
+L253:     * Logout
+L254: 
+L255: Log in to see orders, saved items
+L256: 
+L257: Search
+L258: 
+L259: Log in· EN
+L260: 
+L261: Signed in as
+L262:   * [Button: Log in]
+L263:   * 【17†Orders†www.prusa3d.com】
+L264:   * 【92†Address†www.prusa3d.com】
+L265:   * 【93†In-stock Alerts†www.prusa3d.com】
+L266:   * 【94†My Courses†www.prusa3d.com】
+L267:   * 【95†Subscription†subscription.prusa3d.com】
+L268:   * 【96†Edit Account†account.prusa3d.com】
+L269: 
+L270: Switch language EN
+L271: 
+L272:   * 【91†English】
+L273:   * 【91†Čeština】
+L274:   * 【91†Deutsch】
+L275:   * 【91†Español】
+L276:   * 【91†Français】
+L277:   * 【91†Italiano】
+L278:   * 【91†Polski】
+L279:   * 【91†日本語】
+L280: 
+--------------------------------------------------------------------------------
+ASA | Prusa Knowledge Base (https://help.prusa3d.com/article/asa_1809?product=mk4s)
+citeturn22view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://help.prusa3d.com/article/asa_1809?product=mk4s","lineno":null}); Total lines: 655
+L0: [Button: Skip to content]
+L1: 
+L2: All categories
+L3: 
+L4:   * Shop
+L5: 
+L6: SHOP
+L7: 
+L8:     * 【0†Latest products†www.prusa3d.com】
+L9: 
+L10: BY CATEGORY
+L11: 
+L12:     * 【1†3D printersnew†www.prusa3d.com】
+L13:     * 【2†Upgradesnew†www.prusa3d.com】
+L14:     * 【3†Materials†www.prusa3d.com】
+L15:     * 【4†Accessories†www.prusa3d.com】
+L16:     * 【5†Spare parts†www.prusa3d.com】
+L17:     * 【6†Courses†www.prusa3d.com】
+L18:     * 【7†Merch†www.prusa3d.com】
+L19: 
+L20:     * 【8†Sales inquiry & Price quote†www.prusa3d.com】
+L21: 
+L22: QUICK LINKS
+L23:     * 【9†Shipping information】
+L24:     * 【10†Refunds & returns】
+L25:     * 【11†Payment options】
+L26:     * 【12†Warranty】
+L27:     * 【13†VAT & Customs fees】
+L28:     * 【14†FAQ】
+L29: 
+L30: 0 item in your cart items in your cart
+L31: 
+L32: Your cart is empty
+L33: 
+L34: 【15†Go to cart†www.prusa3d.com】【16†Shop 3D printers†www.prusa3d.com】
+L35: 
+L36: My profile
+L37: 
+L38: Log in to see orders, saved items
+L39: 
+L40: My profile
+L41: 
+L42: Signed in as
+L43: 
+L44:     * 【17†Orders†www.prusa3d.com】
+L45:     * Logout
+L46: 
+L47:   * [Button: 3D printing]
+L48: 
+L49: 3D PRINTING
+L50: 
+L51:     * 【18†Explore 3D printing†www.prusa3d.com】
+L52: 
+L53: FOR BEGINNERS
+L54:     * 【19†3D printing 101†www.prusa3d.com】
+L55:     * 【20†Types of printers (FDM/SLA)】
+L56:     * 【21†How to choose a 3D Printer†www.prusa3d.com】
+L57:     * 【22†Printables (3D models)†www.printables.com】
+L58: 
+L59: BY APPLICATION
+L60: 
+L61:     * 【23†Rapid prototyping†www.prusa3d.com】
+L62:     * 【24†Manufacturing†www.prusa3d.com】
+L63:     * 【25†Engineering†www.prusa3d.com】
+L64:     * 【26†Research†www.prusa3d.com】
+L65:     * 【27†Arts & design†www.prusa3d.com】
+L66: 
+L67: GO DEEPER
+L68:     * 【28†Materials guide】
+L69:     * 【6†Courses†www.prusa3d.com】
+L70:     * 【29†Webinars†www.prusa3d.com】
+L71:     * 【30†Case studies†www.prusa3d.com】
+L72:     * 【31†Custom 3D printing†www.prusa3d.com】
+L73: 
+L74:   * 3D printers
+L75: 
+L76: 3D PRINTERS
+L77: 
+L78:     * 【16†All 3D printers†www.prusa3d.com】
+L79: 
+L80: FOR
+L81: 
+L82:     * 【32†Home or garageHobbyists, tinkerers and home printing†www.prusa3d.com】
+L83:     * 【33†Shop or studioIn-house production for small teams†www.prusa3d.com】
+L84:     * 【34†EnterpriseFleets, security and scale†www.prusa3d.com】
+L85:     * 【21†How to choose a 3D Printer†www.prusa3d.com】
+L86: 
+L87: SHOP & BROWSE
+L88: 
+L89:     * 【35†CORE One+new†www.prusa3d.com】
+L90:     * 【36†CORE One+ INDXnew†www.prusa3d.com】
+L91:     * 【37†CORE One L+new†www.prusa3d.com】
+L92:     * 【38†CORE One L+ INDXnew†www.prusa3d.com】
+L93:     * 【39†XL+new†www.prusa3d.com】
+L94:     * 【40†MK4S†www.prusa3d.com】
+L95:     * 【41†Prusa Pro HT90†www.prusa3d.com】
+L96:     * 【42†Prusa Pro AFS†www.prusa3d.com】
+L97:     * 【43†Prusa Pro SLX†www.prusa3d.com】
+L98: 
+L99: MORE FROM PRINTERS
+L100:     * 【2†Upgradesnew†www.prusa3d.com】
+L101:     * 【5†Spare parts†www.prusa3d.com】
+L102:     * 【44†Critical infrastructure†www.prusa3d.com】
+L103:     * 【30†Case studies†www.prusa3d.com】
+L104:     * 【45†Signature Oak†www.prusa3d.com】
+L105:     * 【46†Kits†www.prusa3d.com】
+L106: 
+L107:   * [Button: Materials]
+L108: 
+L109: MATERIALS
+L110: 
+L111:     * 【3†All materials†www.prusa3d.com】
+L112: 
+L113: BY USE
+L114:     * 【47†Every-day & design†www.prusa3d.com】
+L115:     * 【48†Functional engineering†www.prusa3d.com】
+L116:     * 【49†Composites†www.prusa3d.com】
+L117:     * 【50†Pro speciality†www.prusa3d.com】
+L118:     * 【51†SLA resins†www.prusa3d.com】
+L119: 
+L120: PRUSAMENT
+L121: 
+L122:     * 【47†PLA†www.prusa3d.com】
+L123:     * 【48†PETG†www.prusa3d.com】
+L124:     * 【52†ASA†www.prusa3d.com】
+L125:     * 【53†PC†www.prusa3d.com】
+L126:     * 【54†PA11†www.prusa3d.com】
+L127:     * 【55†Flex†www.prusa3d.com】
+L128:     * 【56†TPU†www.prusa3d.com】
+L129: 
+L130: MORE FROM MATERIALS
+L131:     * 【28†Materials guide】
+L132:     * 【57†We make material in house†prusament.com】
+L133:     * 【58†Sustainability†www.prusa3d.com】
+L134:     * 【59†Order on the store†www.prusa3d.com】
+L135: 
+L136:   * Software
+L137: 
+L138: SOFTWARE
+L139: 
+L140:     * 【60†All software†github.com】
+L141: 
+L142: PREPARE THE PRINT
+L143: 
+L144:     * 【61†PrusaSlicer 3.0New†www.prusa3d.com】
+L145: 
+L146: PRINT & MONITOR
+L147: 
+L148:     * 【62†Prusa Connect†www.prusa3d.com】
+L149:     * 【63†EasyPrint】
+L150:     * 【64†iOS & Android app†www.prusa3d.com】
+L151:     * 【65†Prusa Farm†www.prusa3d.com】
+L152: 
+L153: GET STARTED
+L154:     * 【66†Download & install】
+L155:     * 【67†Knowledge base】
+L156: 
+L157: MORE FROM SOFTWARE
+L158: 
+L159:     * 【22†Printables (3D models)†www.printables.com】
+L160: 
+L161:   * [Button: Support]
+L162: 
+L163: SUPPORT
+L164: 
+L165:     * 【68†Explore support】
+L166: 
+L167: FIND ANSWERS
+L168: 
+L169:     * 【67†Knowledge base】
+L170:     * 【69†Troubleshooting】
+L171:     * 【6†Courses†www.prusa3d.com】
+L172:     * 【29†Webinars†www.prusa3d.com】
+L173: 
+L174: GET HELP
+L175:     * 【70†Contact us†www.prusa3d.com】
+L176:     * 【71†Livechat†direct.lc.chat】
+L177:     * 【9†Shipping information】
+L178:     * 【12†Warranty】
+L179:     * 【10†Refunds & returns】
+L180:     * 【5†Spare parts†www.prusa3d.com】
+L181:     * 【72†Factory repair】
+L182: 
+L183: COMMUNITY
+L184: 
+L185:     * 【73†Forum†forum.prusa3d.com】
+L186:     * 【74†Reddit†www.reddit.com】
+L187:     * 【22†Printables†www.printables.com】
+L188: 
+L189:   * [Button: Trust Center]
+L190: 
+L191: TRUST CENTER
+L192: 
+L193:     * 【75†Trust Center overview†www.prusa3d.com】
+L194: 
+L195: BY TOPIC
+L196:     * 【76†GDPR†www.prusa3d.com】
+L197:     * 【77†Certificates】
+L198:     * 【78†Security†www.prusa3d.com】
+L199:     * 【79†Compliance†www.prusa3d.com】
+L200: 
+L201: COMMITMENTS
+L202: 
+L203:     * 【58†Sustainability report†www.prusa3d.com】
+L204: 
+L205: TALK TO US
+L206: 
+L207:     * 【80†Contact the security team】
+L208: 
+L209:   * [Button: Company]
+L210: 
+L211: COMPANY
+L212: 
+L213:     * 【81†About Prusa†www.prusa3d.com】
+L214: 
+L215: GET TO KNOW US
+L216: 
+L217:     * 【82†Our story†www.prusa3d.com】
+L218:     * 【83†How we make printers†blog.prusa3d.com】
+L219:     * 【84†Open source†www.prusa3d.com】
+L220: 
+L221:     * 【85†Brand & media kit†www.prusa3d.com】
+L222: 
+L223: NEWS
+L224:     * 【86†Blog†blog.prusa3d.com】
+L225:     * 【87†Newsroom†www.prusa3d.com】
+L226:     * 【88†Events†www.printables.com】
+L227: 
+L228: TRUST & PARTNERS
+L229: 
+L230:     * 【58†Sustainability†www.prusa3d.com】
+L231:     * 【89†Resellers & distributors†www.prusa3d.com】
+L232:     * 【90†Affiliate program†partner.prusa3d.com】
+L233:     * 【70†Contact†www.prusa3d.com】
+L234: 
+L235:   * Switch language EN
+L236: 
+L237:     * 【91†English】
+L238:     * 【91†Čeština】
+L239:     * 【91†Deutsch】
+L240:     * 【91†Español】
+L241:     * 【91†Français】
+L242:     * 【91†Italiano】
+L243:     * 【91†Polski】
+L244:     * 【91†日本語】
+L245: 
+L246:   * Signed in as
+L247:     * 【17†Orders†www.prusa3d.com】
+L248:     * 【92†Address†www.prusa3d.com】
+L249:     * 【93†In-stock Alerts†www.prusa3d.com】
+L250:     * 【94†My Courses†www.prusa3d.com】
+L251:     * 【95†Subscription†subscription.prusa3d.com】
+L252:     * 【96†Edit Account†account.prusa3d.com】
+L253:     * Logout
+L254: 
+L255: Log in to see orders, saved items
+L256: 
+L257: Search
+L258: 
+L259: Log in· EN
+L260: 
+L261: Signed in as
+--------------------------------------------------------------------------------
+Mechanical Properties of Specimens 3D Printed with Virgin and Recycled Polylactic Acid - Isabelle Anderson, 2017 (https://journals.sagepub.com/doi/10.1089/3dp.2016.0054)
+citeturn22view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://journals.sagepub.com/doi/10.1089/3dp.2016.0054","lineno":null}); Total lines: 717
+L0: 【0†iframe†analytics.sagepub.com】
+L1: 
+L2: 【1†Skip to main content】
+L3: 
+L4: 【2†Open Drawer MenuMenu】
+L5: 
+L6: #### Add email alerts
+L7: 
+L8: You are adding the following journal to your email alerts
+L9: 
+L10: [Input][Input]
+L11:  | New content
+L12: --- | ---
+L13: 3D Printing and Additive Manufacturing  | [Input]
+L14: [Button: Create email alert]
+L15: 
+L16: Open access
+L17: 
+L18: Research article
+L19: 
+L20: First published online June 1, 2017
+L21: # Mechanical Properties of Specimens 3D Printed with Virgin and Recycled Polylactic Acid
+L22: 
+L23: 【3†Isabelle Anderson】【4†View all authors and affiliations】
+L24: 
+L25: 【5†Volume 4, Issue 2】
+L26: 
+L27: 【6†https://doi.org/10.1089/3dp.2016.0054†doi.org】
+L28: ## Abstract
+L29: With the 26% annual growth rate of additive manufacturing, especially in the area of 3D polymer printing, the amount of waste is increasing at a rapid rate. Limited research in the area of recycling has been produced, yet there are several recycling machines being developed for home use. Despite this work there is no published mechanical data on components produced with filament recycled from 3D printed parts. There is very limited data on mechanical properties of any 3D printed materials.
+L30: This article compares the properties of parts 3D printed with virgin polylactic acid (PLA) to those printed with recycled PLA. Using commercially available PLA and an entry level 3D printer, tensile and shear specimens were produced and then tested for tensile yield strength, modulus of elasticity, shear yield strength, and hardness. The specimens were then ground up and re-extruded into filament, and a second set of specimens were produced and tested using this recycled PLA filament.
+L31: Mechanical testing showed that 3D printing with recycled PLA is a viable option. With the recycled filament, tensile strength decreased 10.9%, shear strength increased 6.8%, and hardness decreased 2.4%. The tensile modulus of elasticity was statistically unchanged. Although the average mechanical properties before and after recycling were similar, there was more variability in the results of the recycled filament.
+L32: Additionally, when printing with the recycled filament there was some nozzle clogging, while none occurred with the virgin filament. Overall, the mechanical properties of specimens 3D printed from recycled PLA filament were similar to virgin properties, encouraging further development in the area of recycling 3D printed filament.
+L33: ## Introduction
+L34: The field of 3 D printing, also called additive manufacturing, has been growing at an exponential rate in the last few years.
+L35: These terms refer to a range of processes that utilize various materials from thermoplastic filaments to powdered metals.^{【7†1】} The interest in these processes stems from their ability to produce components directly from a computer aided design model by digitally adding layer upon layer of material.^{【8†2】} This technology allows designers to quickly and inexpensively produce prototypes without tooling or machining.
+L36: Some economists have considered this a third industrial revolution following mechanization and assembly line production.^{【9†3】,【10†4】} This industry has grown quickly in recent years to an annual value of over $5 billion. Sales of 3D desktop printers were 160,000 in 2014 and grew to nearly 300,000 in 2015.^{【11†5】} Some predictions have the 3D printing total market revenue at between $7 and $23 billion per year by 2020.
+L37: This increase is impressive, yet it is still a small fraction of the injection molded plastic market: currently valued at over $200 billion.^{【12†6】} The amount of 3D printed plastic compared to injection molded plastic will continue to increase as additive technologies and production speeds improve. The volume of 3D printing will never approach the volume of injection molding due to its mass production abilities.
+L38: Although 3D printing is mostly used for prototypes and small production runs, there are some facilities that have the ability to produce runs of up to 5000 parts of certain shapes at competitive costs utilizing 3D printing.
+L39: Despite all of its benefits, 3D printing still creates a significant amount of waste. Some of the waste is due to failed prints and discarded support structures. Additionally, many parts are created as disposable prototypes and since 3D printing is quick and inexpensive to produce, many iterations are often produced and then scrapped.
+L40: In respect to thermoplastic 3D printed components, some materials such as acrylonitrile butadiene styrene (ABS) are produced using petroleum, whereas others, including polylactic acid (PLA), are based on plant materials.
+L41: Since PLA comes from plant materials such as corn starch and sugar cane, it is biodegradable. This allows several methods of managing scrap PLA including composting, combustion, recycling, and dumping in landfills. Of these methods recycling is by far the best in respect to environmental impact. Composting is not realistic due to the extreme conditions and time required to achieve full degradation. The environmental efficiency of combustion is limited by carbon dioxide production.
+L42: Some preliminary work indicates that the environmental impact of recycling PLA is 50 times better than composting, and 16 times better than combustion.^{【13†7】,【14†8】} Recycled PLA has even less environmental impact than petroleum-based plastics: due to corn being a locally produced nonpetroleum substrate. PLA's carbon footprint is 3000 times less than some petroleum-based plastics.^{【15†9】}
+L43: To address this waste in thermoplastic 3D printing, several corporations now offer recycled filament, produced from recycled consumer waste. Several companies even have home filament extruders that allow individuals to recycle materials using a benchtop system. When compared to centralized recycling, the concept of distributive recycling, where it is done at homes or businesses, has been found to potentially save over 100 million MJ of energy per year while reducing greenhouse gases.^{【16†10】}
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn22view3 [wordlim: 200] Source: open({"ref_id":"https://ascelibrary.org/doi/book/10.1061/9780784415641","lineno":null}); Total lines: 1
+L0: Failed to fetch https://ascelibrary.org/doi/book/10.1061/9780784415641: (403) Forbidden
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn22view4 [wordlim: 200] Source: open({"ref_id":"https://bpdb.gov.bd/pages/static-pages/6922df14933eb65569e1fb91","lineno":null}); Total lines: 1
+L0: Failed to fetch https://bpdb.gov.bd/pages/static-pages/6922df14933eb65569e1fb91: (400) Timeout fetching
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn22view5 [wordlim: 200] Source: open({"ref_id":"https://www.banglajol.info/index.php/DUJASE/article/view/59225","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.banglajol.info/index.php/DUJASE/article/view/59225: (400) Timeout fetching
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn22view6 [wordlim: 200] Source: open({"ref_id":"https://www.eeas.europa.eu/sites/default/files/documents/2023/Final%20report%2008022022_wind%20study.pdf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.eeas.europa.eu/sites/default/files/documents/2023/Final%20report%2008022022_wind%20study.pdf: (403) Forbidden
+

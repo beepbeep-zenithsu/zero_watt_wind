@@ -1,10 +1,10 @@
 import * as T from '../../vendor/three.module.js';
 import {addAssetInstances} from './assets.js';
-import {prepareTraffic,advanceTraffic,signalState,TRAFFIC_CRUISE} from './traffic.js';
-import {personLook,buildPedestrians,pedestrianPoses} from './people.js';
+import {prepareTraffic,advanceTraffic,signalState,trafficSignal,TRAFFIC_CRUISE} from './traffic.js';
+import {personLook,buildPedestrians,pedestrianPoses,updatePedestrianDemand} from './people.js';
 import {attachTrafficFleet,placeFleetCar,flushTrafficFleet} from '../cars/traffic-fleet.js';
 import {roadNetwork,seedRoadUsers} from './road-network.js';
-import {buildCyclists,updateCyclists} from './cyclists.js';
+import {buildCyclists,advanceCyclists,updateCyclists} from './cyclists.js';
 import {buildMobilityShadows,updateMobilityShadows} from './mobility-shadows.js';
 
 const ROAD=9.6,SIDEWALK=1.65;
@@ -133,7 +133,7 @@ export function buildCity(s){
     for(const sx of [-1,1])for(const sz of [-1,1]){
       const px=x+sx*(ROAD/2+.65),pz=z+sz*(ROAD/2+.65);
       put('site-street-lamp',[px,-.09,pz],Math.atan2(-sx,-sz));
-      signalPoses[sx===sz?0:1].push({position:[px,-.09,pz],rotation:sx===sz?(sz>0?Math.PI:0):(sx>0?-Math.PI/2:Math.PI/2)});
+      signalPoses[sx===sz?0:1].push({position:[px,-.09,pz],rotation:sx===sz?(sz>0?Math.PI:0):(sx>0?-Math.PI/2:Math.PI/2),junction:city.network.junctions.find(j=>j.x===x&&j.z===z)});
       if(Math.abs(x)===rx&&Math.abs(z)===rz)put('site-pedestrian',[px+sx*.75,-.09,pz+sz*.65],Math.atan2(-sx,-sz),.92+(sx+sz+2)*.025);
     }
   }
@@ -159,9 +159,9 @@ export function buildCity(s){
     if(name==='site-pedestrian'){city.walkers=batch;buildPedestrians(city,values);}
     if(name.startsWith('site-apartment')||name==='site-shopfront'||name==='site-canyon-tower'||name==='site-distant-block'||name.startsWith('site-skyline'))batch.userData.cityBuildings=true;
   }
-  city.signals=signalPoses.map(values=>addAssetInstances(root,'site-traffic-signal',values,{lighting:true}));
+  city.signals=signalPoses.map(values=>{const batch=addAssetInstances(root,'site-traffic-signal',values,{lighting:true});batch.userData.signalPoses=values;return batch;});
   city.paths=city.network.paths;
-  city.cars=seedRoadUsers(city.paths,city.paths.map(()=>3),i=>({kind:i%2,color:carColors[i%6]}));
+  city.cars=seedRoadUsers(city.paths,city.paths.map(()=>3),i=>({kind:i%2,color:carColors[i%6]}),{junctions:city.network.junctions});
   prepareTraffic(city);
   city.traffic=addAssetInstances(root,'site-city-sedan',city.cars.filter(c=>c.kind===0).map(()=>({position:[0,-.18,0]})),{lighting:true});
   city.crossovers=addAssetInstances(root,'site-city-crossover',city.cars.filter(c=>c.kind===1).map(()=>({position:[0,-.18,0]})),{lighting:true});
@@ -176,12 +176,27 @@ export function buildCity(s){
   updateCity(s,0);
 }
 
-export function updateCity(s,dt){
+/** Shared production simulation step; long audits can skip GPU pose uploads. */
+export function advanceCityMobility(s,dt){
   const city=s.city;if(!city||city.root.userData.retired)return;
   city.simulationTime=s.time||0;
+  city.network.time=city.simulationTime;
+  updatePedestrianDemand(city);
   const signals=signalState(s.time||0);city.signalState=signals;
   const speed=s.storm?TRAFFIC_CRUISE.stormCar:s.rainAmt>.1?TRAFFIC_CRUISE.wetCar:TRAFFIC_CRUISE.car;
-  if(!s.reducedMotion)advanceTraffic(city,dt,speed,(axis,car,distance)=>signals[axis]==='green'||(signals[axis]==='amber'&&distance<2.4+car.speed*car.speed/5.2));
+  // FieldScene already passes zero elapsed time while paused. Reduced-motion
+  // preference sets the initial pause in the app; an explicit Play must work.
+  advanceTraffic(city,dt,speed,(axis,car,distance,line)=>{
+    const signal=trafficSignal(city.network,city.simulationTime,line?.junction)[axis];
+    return signal==='green'||(signal==='amber'&&distance<(car.standOff||3.3)+car.speed*car.speed/5.2);
+  });
+  advanceCyclists(city,dt,signals,s.rainAmt>.1,s.storm);
+  pedestrianPoses(city,dt,false);
+}
+
+export function updateCity(s,dt){
+  const city=s.city;if(!city||city.root.userData.retired)return;
+  advanceCityMobility(s,dt);const signals=city.signalState;
   city.fleet.lamps.visible=!!s.night;
   const needsFallback=city.cars.some(c=>!c.model);
   const poses=needsFallback?[]:null;
@@ -197,18 +212,24 @@ export function updateCity(s,dt){
   city.traffic.visible=city.cars.some(c=>c.kind===0&&!c.model);
   city.crossovers.visible=city.cars.some(c=>c.kind===1&&!c.model);
   flushTrafficFleet(city,s.camera);
-  updateCyclists(city,dt,signals,s.reducedMotion,s.rainAmt>.1,s.storm);
-  city.walkers.setPoses(pedestrianPoses(city,dt,s.reducedMotion));
+  updateCyclists(city);
+  city.walkers.setPoses(city.pedestrianPoses);
   updateMobilityShadows(city);
   city.roadMaterial.roughness=.95-.76*(s.rainAmt||0);
   for(const batch of city.batches)for(const material of batch.userData.glowMaterials){
     material.emissiveIntensity=s.night?(material.userData.cityWindow?(material.userData.windowLevel??.20):1.7):.005;
   }
+  const signalColor=city.signalColor ||= new T.Color();
   city.signals.forEach((batch,axis)=>{
-    for(const m of batch.userData.glowMaterials){
-      const lit=m.name.endsWith(signals[axis]);
-      m.userData.signalColor??=m.color.clone();m.color.copy(m.userData.signalColor).multiplyScalar(lit?1:.11);
-      m.emissiveIntensity=lit?3:.005;
+    if(!batch.children.length)return;
+    const key=batch.userData.signalPoses.map(p=>trafficSignal(city.network,city.simulationTime,p.junction)[axis]).join('/');
+    if(batch.userData.signalKey===key)return;batch.userData.signalKey=key;
+    for(const mesh of batch.children){
+      if(!mesh.material.name.startsWith('City signal'))continue;
+      batch.userData.signalPoses.forEach((pose,i)=>{
+        const lit=mesh.material.name.endsWith(trafficSignal(city.network,city.simulationTime,pose.junction)[axis]);
+        mesh.setColorAt(i,signalColor.setScalar(lit?1:.055));
+      });mesh.instanceColor.needsUpdate=true;
     }
   });
   city.lights.forEach(l=>l.intensity=s.night?15:0);

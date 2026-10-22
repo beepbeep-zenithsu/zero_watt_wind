@@ -1,0 +1,31 @@
+﻿parameter,low,base,high,basis,reason
+FX BDT/USD,123.65,123.65,123.65,S,BB WAR 2026-10-19; not guaranteed transaction rate
+Site mean wind m/s,2.5,3.5,4.5,A,No hub-height time series; utility-height speeds not transferred to roof
+Mechanical availability,0.8,0.9,0.95,A,Includes maintenance/curtailment; prototype uptime unmeasured
+Wind distribution k,1.5,2.0,2.5,A,Only k=2 used in central scenarios; k bounds flagged for later data fitting
+Price multiplier,0.85,1.0,1.1,A,No willingness-to-pay survey
+Adoption multiplier,0.5,1.0,1.8,A,No orders or customer funnel
+Production cost multiplier,0.9,1.0,1.25,A,No comparable RFQs for custom production BOM
+Annual price/cost escalation,0.02,0.04,0.08,A,Common nominal escalation; no margin inflation benefit
+Tax reserve fraction,0.2,0.25,0.3,A,Entity-specific statutory taxes NOT FOUND; no tax advice
+Yearly churn,0.04,0.08,0.15,A,No retention observations
+Uncollected revenue,0.015,0.03,0.08,A,No payment histories
+Lease BDT/month,1000,1500,2000,A,Supplemental access tariff; not an energy-saving price quote
+Pay-per-use BDT/h,20,30,40,A,Metered delivery and collection untested
+Paid hours scheduled/month,60,120,180,A,Actual billable hours multiplied by energy-service fraction
+Installation fee BDT,2000,3000,5000,A,Unbundled sold units only
+AMC fee BDT/year,1000,1800,3000,A,After warranty; separate sold units only
+Grid benchmark BDT/kWh,9.05,15.36,20.0,A/S,2026 BERC LT-D1 and LT-E S; future tariff high A; VAT/fixed costs cancel for existing connection
+Electric field SAE kg/kWh,0.8,1.2,1.8,A,FAO and supplier standard ratings are not field delivery
+Wind field oxygen correction,0.3,0.5,0.7,A,No alpha/beta or site water test
+Wind standard SAE kg/kWh,0.4,0.8,1.2,A,"Site default base .8, prototype test NOT FOUND"
+Diesel BDT/litre,90,110,140,A,No verified current pump quote
+Generator litre/kWh,0.3,0.4,0.6,A,Part-load sharing; own set at tiny load could be much worse
+Embodied footprint multiplier,0.5,1.0,2.0,A,Foreground masses and factors not supplier EPDs
+Import landed uplift,0.15,0.35,0.65,A,Freight duties and broker reserve; not a statutory tariff
+Local lead time weeks,1,3,6,A,Custom RFQ not received
+Import lead time weeks,3,6,12,A,No shipment quote
+Discount rate nominal,0.12,0.18,0.25,A,Historical 10 percent BB policy benchmark plus project risk; not observed WACC
+AMC uptake,0.2,0.4,0.6,A,No service-contract demand study
+Customer mechanical annual maintenance share,0.02,0.04,0.08,A,Service visits can dominate low output
+Hybrid avoided energy fraction addition,0.25,0.45,0.6,A,"Applied to base wind fraction, capped .85; dispatch model NOT FOUND"

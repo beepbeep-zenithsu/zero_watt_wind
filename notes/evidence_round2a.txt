@@ -1,0 +1,569 @@
+Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products - National Laboratory of the Rockies (https://research-hub.nlr.gov/en/publications/assessing-the-wind-energy-potential-in-bangladesh-enabling-wind-e/)
+citeturn9view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://research-hub.nlr.gov/en/publications/assessing-the-wind-energy-potential-in-bangladesh-enabling-wind-e/","lineno":null}); Total lines: 154
+L0: 【0†Skip to main navigation】 【1†Skip to search】 【2†Skip to main content】
+L1: 
+L2: 【3†National Laboratory of the Rockies Hub Home】
+L3: 
+L4: Search content at National Laboratory of the Rockies [Input: Search]
+L5: # Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products
+L6: 
+L7:   * Mark Jacobson
+L8:   * , Caroline Draxl
+L9:   * , 【4†Antonio Jimenez】
+L10:   * , Barbara O'Neill
+L11:   * , Taj Capozzola
+L12:   * , Sue Haupt
+L13: 
+L14:   * 【5†National Wind Technology Center】
+L15:   * 【6†Accelerated Deployment and Decision Support】
+L16: 
+L17:   * Harness Energy
+L18:   * National Center for Atmospheric Research
+L19: 
+L20: Research output: NLR › Technical Report
+L21: ## Abstract
+L22: Assessing the Wind Energy Potential in Bangladesh -- Enabling Wind Energy Development with Data Products (2018); Authors, Mark Jacobson (NREL), Caroline Draxl (NREL), and Tony Jimenez (NREL); Taj Capozzola (Harness Energy); and Jared A. Lee (NCAR), Francois Vandenberghe (NCAR), and Sue Ellen Haupt (NCAR).
+L23: The purpose of this report is to detail the approaches and methodologies of a high-quality wind resource assessment including the measurement campaign, weather research forecasting (WRF) modeling and types of data products available.
+L24: A detailed discussion of the methodologies applied, instrumentation specified, meteorological station siting criteria, commissioning reports and data-collection quality-control techniques used are included to set the stage for the reader to understand all the required steps taken to achieve accurate results. The national wind resource assessment collected data across a wide geographic area including coastal and inland regions of the country of Bangladesh.
+L25: This data validated the national wind resource model and all data is published in an open and freely available format (i.e. https://www.re-explorer.org/). This approach of using a multi-year data-collection campaign (one to three and half years) to inform the model improves the accuracy of the results. The report also summarizes the Renewable Energy Data Explorer which is a GIS-based tool developed to graphically represent the data for varied audiences to ensure usability and accessibility to the public.
+L26: Original language  | American English
+L27: Number of pages  | 136
+L28: DOIs  |
+L29: 
+L30:   * 【7†https://doi.org/10.2172/1476253†doi.org】
+L31: State  | Published - 2018
+L32: ## NLR Publication Number
+L33: 
+L34:   * NREL/TP-5000-71077
+L35: 
+L36: ## Keywords
+L37: 
+L38:   * Bangladesh RE
+L39:   * Bangladesh wind energy
+L40:   * Bangladesh wind energy development
+L41:   * RE Data Explorer
+L42:   * wind resource assessment
+L43: 
+L44: ## Access to Document
+L45: 
+L46:   * 【7†10.2172/1476253†doi.org】
+L47: 
+L48:   * 【8†https://www.nlr.gov/docs/fy18osti/71077.pdf†www.nlr.gov】
+L49: 
+L50:   * 【9†https://www.nrel.gov/docs/fy18osti/71077.pdf†www.nrel.gov】
+L51: ## Fingerprint
+L52: 
+L53: Dive into the research topics of 'Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products'. Together they form a unique fingerprint.
+L54: 
+L55: 【10†View full fingerprint】
+L56: ## Cite this
+L57: 
+L58:   * APA
+L59:   * Author
+L60:   * BIBTEX
+L61:   * Harvard
+L62:   * Standard
+L63:   * RIS
+L64:   * Vancouver
+L65: 
+L66: Jacobson, M., Draxl, C.【4†, Jimenez, A.】, O'Neill, B., Capozzola, T., & Haupt, S. (2018). 【11†Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products】. 【7†https://doi.org/10.2172/1476253†doi.org】
+L67: Jacobson, Mark ; Draxl, Caroline 【4†; Jimenez, Antonio】 et al. / 【11†Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products】. 2018. 136 p.
+L68: 
+L69: @misc{729896a0025141babfb2b3a1d57dcbf8,
+L70: 
+L71: title = "Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products",
+L72: abstract = "Assessing the Wind Energy Potential in Bangladesh -- Enabling Wind Energy Development with Data Products (2018); Authors, Mark Jacobson (NREL), Caroline Draxl (NREL), and Tony Jimenez (NREL); Taj Capozzola (Harness Energy); and Jared A. Lee (NCAR), Francois Vandenberghe (NCAR), and Sue Ellen Haupt (NCAR).
+L73: The purpose of this report is to detail the approaches and methodologies of a high-quality wind resource assessment including the measurement campaign, weather research forecasting (WRF) modeling and types of data products available.
+L74: A detailed discussion of the methodologies applied, instrumentation specified, meteorological station siting criteria, commissioning reports and data-collection quality-control techniques used are included to set the stage for the reader to understand all the required steps taken to achieve accurate results. The national wind resource assessment collected data across a wide geographic area including coastal and inland regions of the country of Bangladesh.
+L75: This data validated the national wind resource model and all data is published in an open and freely available format (i.e. https://www.re-explorer.org/). This approach of using a multi-year data-collection campaign (one to three and half years) to inform the model improves the accuracy of the results.
+L76: The report also summarizes the Renewable Energy Data Explorer which is a GIS-based tool developed to graphically represent the data for varied audiences to ensure usability and accessibility to the public.",
+L77: keywords = "Bangladesh RE, Bangladesh wind energy, Bangladesh wind energy development, RE Data Explorer, wind resource assessment",
+L78: 
+L79: author = "Mark Jacobson and Caroline Draxl and Antonio Jimenez and Barbara O'Neill and Taj Capozzola and Sue Haupt",
+L80: 
+L81: year = "2018",
+L82: 
+L83: doi = "10.2172/1476253",
+L84: 
+L85: language = "American English",
+L86: 
+L87: type = "Other",
+L88: 
+L89: }
+L90: Jacobson, M, Draxl, C【4†, Jimenez, A】, O'Neill, B, Capozzola, T & Haupt, S 2018, 【11†Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products】. 【7†https://doi.org/10.2172/1476253†doi.org】
+L91: 
+L92: 【11†Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products.】 / Jacobson, Mark; Draxl, Caroline【4†; Jimenez, Antonio】 et al.
+L93: 136 p. 2018.
+L94: 
+L95: Research output: NLR › Technical Report
+L96: 
+L97: TY - GEN
+L98: T1 - Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products
+L99: 
+L100: AU - Jacobson, Mark
+L101: 
+L102: AU - Draxl, Caroline
+L103: 
+L104: AU - Jimenez, Antonio
+L105: 
+L106: AU - O'Neill, Barbara
+L107: 
+L108: AU - Capozzola, Taj
+L109: 
+L110: AU - Haupt, Sue
+L111: 
+L112: PY - 2018
+L113: 
+L114: Y1 - 2018
+L115: N2 - Assessing the Wind Energy Potential in Bangladesh -- Enabling Wind Energy Development with Data Products (2018); Authors, Mark Jacobson (NREL), Caroline Draxl (NREL), and Tony Jimenez (NREL); Taj Capozzola (Harness Energy); and Jared A. Lee (NCAR), Francois Vandenberghe (NCAR), and Sue Ellen Haupt (NCAR).
+L116: The purpose of this report is to detail the approaches and methodologies of a high-quality wind resource assessment including the measurement campaign, weather research forecasting (WRF) modeling and types of data products available.
+L117: A detailed discussion of the methodologies applied, instrumentation specified, meteorological station siting criteria, commissioning reports and data-collection quality-control techniques used are included to set the stage for the reader to understand all the required steps taken to achieve accurate results. The national wind resource assessment collected data across a wide geographic area including coastal and inland regions of the country of Bangladesh.
+L118: This data validated the national wind resource model and all data is published in an open and freely available format (i.e. https://www.re-explorer.org/). This approach of using a multi-year data-collection campaign (one to three and half years) to inform the model improves the accuracy of the results. The report also summarizes the Renewable Energy Data Explorer which is a GIS-based tool developed to graphically represent the data for varied audiences to ensure usability and accessibility to the public.
+L119: AB - Assessing the Wind Energy Potential in Bangladesh -- Enabling Wind Energy Development with Data Products (2018); Authors, Mark Jacobson (NREL), Caroline Draxl (NREL), and Tony Jimenez (NREL); Taj Capozzola (Harness Energy); and Jared A. Lee (NCAR), Francois Vandenberghe (NCAR), and Sue Ellen Haupt (NCAR).
+L120: The purpose of this report is to detail the approaches and methodologies of a high-quality wind resource assessment including the measurement campaign, weather research forecasting (WRF) modeling and types of data products available.
+L121: A detailed discussion of the methodologies applied, instrumentation specified, meteorological station siting criteria, commissioning reports and data-collection quality-control techniques used are included to set the stage for the reader to understand all the required steps taken to achieve accurate results. The national wind resource assessment collected data across a wide geographic area including coastal and inland regions of the country of Bangladesh.
+L122: This data validated the national wind resource model and all data is published in an open and freely available format (i.e. https://www.re-explorer.org/). This approach of using a multi-year data-collection campaign (one to three and half years) to inform the model improves the accuracy of the results. The report also summarizes the Renewable Energy Data Explorer which is a GIS-based tool developed to graphically represent the data for varied audiences to ensure usability and accessibility to the public.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view1 [wordlim: 200] Source: open({"ref_id":"https://www.nlr.gov/docs/fy18osti/71077.pdf","lineno":null}); Total lines: 1
+L0: URL https://www.nlr.gov/docs/fy18osti/71077.pdf is not accessible via this tool.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view2 [wordlim: 200] Source: open({"ref_id":"https://www.startupbangladesh.vc/contact/faqs/","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.startupbangladesh.vc/contact/faqs/: (500) Redirected to https://startupbangladesh.gov.bd/contact/faqs/ which is not accessible via this tool. (non-retryable error)
+--------------------------------------------------------------------------------
+ (https://apply.idea.gov.bd/SOP.pdf)
+citeturn9view3 [wordlim: 200] Crawled: today; Content type: application/pdf; Number of pages: 13; Source: open({"ref_id":"https://apply.idea.gov.bd/SOP.pdf","lineno":null}); Total lines: 0
+L0 is out of bounds--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view4 [wordlim: 200] Source: open({"ref_id":"https://doe.gov.bd/pages/biographies/6922dd50933eb65569e1473e","lineno":null}); Total lines: 1
+L0: Failed to fetch https://doe.gov.bd/pages/biographies/6922dd50933eb65569e1473e: (400) Timeout fetching
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view5 [wordlim: 200] Source: open({"ref_id":"https://customs.gov.bd/index.jsf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://customs.gov.bd/index.jsf: (400) Timeout fetching
+--------------------------------------------------------------------------------
+WEF1201N (12") (https://waltonbd.com/water-pump/electrical-appliances/fan/exhaust-fan/wef1201n-12)
+citeturn9view6 [wordlim: 200] Crawled: 1.3 years ago; Content type: text/html; Source: open({"ref_id":"https://waltonbd.com/water-pump/electrical-appliances/fan/exhaust-fan/wef1201n-12","lineno":null}); Total lines: 666
+L0: 【229†Image†waltonbd.com】
+L1:   * 【230†Image】 【231†Image】
+L2:     *     * Refrigerator & Freezer
+L3:       * 【0†No-Frost Refrigerator】
+L4:       * 【1†Direct Cool Refrigerator】
+L5:       * 【2†Freezer】
+L6:       * 【3†Beverage Cooler】
+L7:       * 【4†Upcoming Refrigerator & Freezer】
+L8:       * 【5†How to & Tips】
+L9:       * 【6†Catalogs】
+L10:     * Television
+L11:       * 【7†All TV】
+L12:       * 【8†4K Ultra HD TV】
+L13:       * 【9†SMART TV】
+L14:       * 【10†Basic LED TV】
+L15:       * 【11†TV Accessories】
+L16:       * 【12†Upcoming TV】
+L17:       * 【13†eAdvertising Display Software】
+L18:       * 【14†Limited】
+L19:       * 【15†Export Journey】
+L20:       * 【16†Video Tutorial】
+L21:       * 【17†Catalogs】
+L22:       * 【18†Exchange Offer TV】
+L23:       * 【19†Set Top Box】
+L24:       * 【20†Video Wall | Matrix Display】
+L25:     * Air Conditioner
+L26:       * 【21†Split AC】
+L27:       * 【22†Light Commercial AC】
+L28:       * 【23†Industrial HVAC】
+L29:       * 【24†AC Tips & Tricks】
+L30:       * 【25†Catalogue】
+L31:       * 【26†Archived】
+L32:       * 【27†Upcoming AC】
+L33:     * Mobile
+L34:       * 【28†Smart Phone】
+L35:       * 【29†Feature Phone】
+L36:       * 【30†Accessories】
+L37:       * 【31†Upcoming】
+L38:     * Computer
+L39:       * 【32†Access Control Device†waltondigitech.com】
+L40:       * 【33†All in One†waltondigitech.com】
+L41:       * 【34†Interactive Display†waltondigitech.com】
+L42:       * 【35†Mounting Bracket】
+L43:       * 【36†Laptop†waltondigitech.com】
+L44:       * 【37†Laptop Carrier†waltondigitech.com】
+L45:       * 【38†Desktop PC†waltondigitech.com】
+L46:       * 【39†WiFi Router†waltondigitech.com】
+L47:       * 【40†Card Reader†waltondigitech.com】
+L48:       * 【41†Keyboard†waltondigitech.com】
+L49:       * 【42†PCBA】
+L50:       * 【43†Power Bank†waltondigitech.com】
+L51:       * 【44†Digital Writing Pad†waltondigitech.com】
+L52:       * 【45†Tablet†waltondigitech.com】
+L53:       * 【46†Monitor†waltondigitech.com】
+L54:       * 【47†Liquid Cooler†waltondigitech.com】
+L55:       * 【48†Memory Devices†waltondigitech.com】
+L56:       * 【49†Mouse†waltondigitech.com】
+L57:       * 【50†Mouse Pad†waltondigitech.com】
+L58:       * 【51†Power Supply Unit†waltondigitech.com】
+L59:       * 【52†Printer†waltondigitech.com】
+L60:       * 【53†UPS†waltondigitech.com】
+L61:       * 【54†Networking Switch†waltondigitech.com】
+L62:       * 【55†Earphone†waltondigitech.com】
+L63:       * 【56†Projector†waltondigitech.com】
+L64:       * 【57†Webcam†waltondigitech.com】
+L65:       * 【58†Pendrive†waltondigitech.com】
+L66:       * 【59†HUB†waltondigitech.com】
+L67:       * 【60†Speaker†waltondigitech.com】
+L68:       * 【61†Upcoming】
+L69:       * 【62†Security】
+L70:       * 【63†Solar Hybrid IPS】
+L71:       * 【64†Smart Watch†waltondigitech.com】
+L72:       * 【65†Cable†waltondigitech.com】
+L73:       * 【66†CCTV†waltondigitech.com】
+L74:       * 【67†Headphone†waltondigitech.com】
+L75:       * 【68†Smart Fitness Scale†waltondigitech.com】
+L76:       * 【69†Windows PC Module (OPS)】
+L77:       * 【70†Digital Signage Display】
+L78:       * 【71†Archived】
+L79:     * E-Bike
+L80:       * 【72†Takyon†waltondigitech.com】
+L81:     * Microwave and Electric Oven
+L82:       * 【73†Microwave Oven】
+L83:       * 【74†Electric Oven】
+L84:       * 【75†Tutorial and Review Video】
+L85:     * Blender and Mixer Grinder
+L86:       * 【76†Blender and Juicer】
+L87:       * 【77†Mixer Grinder】
+L88:     * Washing Machine
+L89:       * 【78†Automatic Front Load】
+L90:       * 【79†Automatic Top load】
+L91:       * 【80†Semi-Automatic】
+L92:       * 【81†Tutorial and Review Video】
+L93:     * Home Appliances
+L94:       * 【82†Air Cooler】
+L95:       * 【83†Iron】
+L96:       * 【84†Kettle (Electric)】
+L97:       * 【85†Rechargeable Lamp & Torch】
+L98:       * 【86†Room Heater】
+L99:       * 【87†Toaster, Cake & Sandwich Maker】
+L100:       * 【88†Trimmer, Shaver & Hair Clipper】
+L101:       * 【89†Voltage Stabilizer & Protector】
+L102:       * 【90†Water Purifier & Dispenser】
+L103:     * Kitchen Appliances
+L104:       * 【91†Gas stove】
+L105:       * 【92†Rice Cooker (Electric)】
+L106:       * 【93†Induction, Infrared and Hot Plate Cooker】
+L107:       * 【94†Kitchen Cookware】
+L108:       * 【95†Pressure Cooker】
+L109:       * 【96†Air Fryer】
+L110:       * 【97†Kitchen Hood】
+L111:       * 【98†Multi Cooker ( Electric )】
+L112:       * 【99†Tutorial and Review Video】
+L113:     * Fan
+L114:       * 【100†BLDC Ceiling Fan】
+L115:       * 【101†Rechargeable Ceiling Fan】
+L116:       * 【102†Ceiling Fan】
+L117:       * 【103†Ceiling Fan (Mega)】
+L118:       * 【104†Rechargeable Fan】
+L119:       * 【105†Rechargeable Wall Fan】
+L120:       * 【106†Pedestal Fan】
+L121:       * 【107†Floor Fan】
+L122:       * 【108†Tornado Fan】
+L123:       * 【109†Wall Fan】
+L124:       * 【110†Table Fan】
+L125:       * 【111†Exhaust Fan】
+L126:       * 【112†Net Fan】
+L127:       * 【113†Ceiling Mounted Orbit Fan】
+L128:       * 【114†Electric Motor】
+L129:       * 【115†How to & Tips】
+L130:       * 【116†Catalogs】
+L131:       * 【117†New Arrival】
+L132:     * LED Light
+L133:       * 【118†LED Bulb】
+L134:       * 【119†Rechargeable LED】
+L135:       * 【120†Smart Light】
+L136:       * 【121†Solar Solution】
+L137:       * 【122†Portable Light】
+L138:       * 【123†Outdoor Light】
+L139:       * 【124†Catalogs】
+L140:       * 【125†New Arrival】
+L141:     * Electrical Accessories
+L142:       * 【126†Electrical Accessories Catalogue】
+L143:       * 【127†Gang Switches】
+L144:       * 【128†Piano Switches】
+L145:       * 【129†Circuit Breaker】
+L146:       * 【130†DB Box】
+L147:       * 【131†Smart Switch】
+L148:       * 【132†Extension Socket】
+L149:       * 【133†Fan Hook Box】
+L150:       * 【134†Holders & Ceiling Rose】
+L151:       * 【135†uPVC Electric Pipe and Fittings】
+L152:       * 【136†Accessories】
+L153:       * 【137†Hardware & Accessories】
+L154:       * 【138†Capacitor】
+L155:       * 【139†New Arrival】
+L156:     * Cables
+L157:       * 【140†Medium Voltage Cable (MV)】
+L158:       * 【141†Low Voltage Cable (LT)】
+L159:       * 【142†Fire Survival Cable】
+L160:       * 【143†Building Wire】
+L161:       * 【144†Submersible Cable】
+L162:       * 【145†DC Cable】
+L163:       * 【146†Communication Cable】
+L164:       * 【147†Instrumentation Cable】
+L165:       * 【148†Cables Master Catalogue†drive.google.com】
+L166:     * Lift
+L167:       * 【149†Lift Website†lift.waltonbd.com】
+L168:       * 【150†Passenger Lift】
+L169:       * 【151†Cargo Lift】
+L170:     * Compressor
+L171:       * 【152†Walpha Series】
+L172:       * 【153†Kappa Series】
+L173:     * Battery
+L174:       * 【154†Passenger Car Battery】
+L175:       * 【155†Online UPS Battery】
+L176:       * 【156†Small Size】
+L177:       * 【157†Medium Size】
+L178:       * 【158†Motorcycle Battery】
+L179:     * Hardware & Sanitary Solutions
+L180:       * 【159†Generator】
+L181:       * 【160†Water Pump】
+L182:       * 【161†Weight Machine】
+L183:       * 【162†Water Heater (Geyser)】
+L184:     * Industrial Solutions
+L185:       * 【163†Compressor】
+L186:       * 【164†Plastic & Chemical Components】
+L187:       * 【165†Fasteners】
+L188:       * 【166†Electric Component】
+L189:       * 【167†Light Guide & Diffuser Plate】
+L190:       * 【168†Mechanical Component】
+L191:       * 【169†Hot Melt Adhesive】
+L192:       * 【170†Masterbatches】
+L193:       * 【171†Mould & Die】
+L194:     * 【172†PCB】
+L195:     * Hardware Items
+L196:       * 【173†Fasteners】
+L197:   * 【232†Image】
+L198:   * 【233†Image】
+L199:   * 【234†Image】 【235†Image】
+L200:     * Help Line: 16267
+L201:     * Toll Free: 08000016267
+L202:     * 【174†About】
+L203:     * 【175†Accreditation】
+L204:     * 【176†Awards】
+L205:     * 【177†Certificates】
+L206:     * 【178†Global Operation】
+L207:     * 【179†Message from Chairman】
+L208:     * 【180†Store Locator】
+L209:     * 【181†Sales Outlet †waltonplaza.com.bd】
+L210:     * 【180†Customer Care】
+L211:     * 【182†Service Request】
+L212:     * 【183†Service Status】
+L213:     * 【184†Contact Us】
+L214:     * 【185†About Product Registration】
+L215:   * 【186† 】
+L216: Language (English)
+L217:     * English
+L218:     * Bangla
+L219: 
+L220:   * 【236†Image】
+L221: 
+L222: English Bangla
+L223: 
+L224:   * 【237†Image】
+L225:   * 【238†Image】
+L226: 
+L227:   * Products
+L228:     *     * 【187†Refrigerator & Freezer】
+L229: 
+L230:       * 【0†No-Frost Refrigerator】
+L231:       * 【1†Direct Cool Refrigerator】
+L232:       * 【2†Freezer】
+L233:       * 【3†Beverage Cooler】
+L234:       * 【4†Upcoming Refrigerator & Freezer】
+L235:       * 【5†How to & Tips】
+L236:       * 【6†Catalogs】
+L237: 
+L238: 【239†Image】
+L239: 
+L240:     * 【188†Television】
+L241:       * 【7†All TV】
+L242:       * 【8†4K Ultra HD TV】
+L243:       * 【9†SMART TV】
+L244:       * 【10†Basic LED TV】
+L245:       * 【11†TV Accessories】
+L246:       * 【12†Upcoming TV】
+L247:       * 【13†eAdvertising Display Software】
+L248:       * 【14†Limited】
+L249:       * 【15†Export Journey】
+L250:       * 【16†Video Tutorial】
+L251:       * 【17†Catalogs】
+L252:       * 【18†Exchange Offer TV】
+L253:       * 【19†Set Top Box】
+L254:       * 【20†Video Wall | Matrix Display】
+L255: 
+L256:     * 【189†Air Conditioner】
+L257:       * 【21†Split AC】
+L258:       * 【22†Light Commercial AC】
+L259:       * 【23†Industrial HVAC】
+L260:       * 【24†AC Tips & Tricks】
+L261:       * 【25†Catalogue】
+L262:       * 【26†Archived】
+L263:       * 【27†Upcoming AC】
+L264: 
+L265: 【240†Image】
+L266: 
+L267:     * 【190†Mobile】
+L268: 
+L269:       * 【28†Smart Phone】
+L270:       * 【29†Feature Phone】
+L271:       * 【30†Accessories】
+L272:       * 【31†Upcoming】
+L273: 
+L274:     * 【191†Computer†waltondigitech.com】
+L275:       * 【32†Access Control Device†waltondigitech.com】
+L276:       * 【33†All in One†waltondigitech.com】
+L277:       * 【34†Interactive Display†waltondigitech.com】
+L278:       * 【35†Mounting Bracket】
+L279:       * 【36†Laptop†waltondigitech.com】
+L280:       * 【37†Laptop Carrier†waltondigitech.com】
+L281:       * 【38†Desktop PC†waltondigitech.com】
+L282:       * 【39†WiFi Router†waltondigitech.com】
+L283:       * 【40†Card Reader†waltondigitech.com】
+L284:       * 【41†Keyboard†waltondigitech.com】
+L285:       * 【42†PCBA】
+L286:       * 【43†Power Bank†waltondigitech.com】
+L287:       * 【44†Digital Writing Pad†waltondigitech.com】
+L288:       * 【45†Tablet†waltondigitech.com】
+L289:       * 【46†Monitor†waltondigitech.com】
+L290:       * 【47†Liquid Cooler†waltondigitech.com】
+L291:       * 【48†Memory Devices†waltondigitech.com】
+L292:       * 【49†Mouse†waltondigitech.com】
+L293:       * 【50†Mouse Pad†waltondigitech.com】
+L294:       * 【51†Power Supply Unit†waltondigitech.com】
+L295:       * 【52†Printer†waltondigitech.com】
+L296:       * 【53†UPS†waltondigitech.com】
+--------------------------------------------------------------------------------
+ক্ষুদ্র ও মাঝারী উদ্যোক্তা অনুদানের আবেদন (https://idea.gov.bd/sme-apply.php)
+citeturn9view7 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://idea.gov.bd/sme-apply.php","lineno":null}); Total lines: 117
+L0: # ক্ষুদ্র ও মাঝারী (এসএমই) উদ্যোক্তা অনুদানের আবেদন
+L1: 
+L2: #### ফর্ম পূরণ সংক্রান্ত কোন প্রশ্ন থাকলে যোগাযোগ করতে পারেন এই নম্বরে -- 01810096500 (সকাল ৯টা - বিকাল ৫টা)
+L3: 
+L4: #### অফিসিয়াল ফেইসবুক পেজ - 【0†https://www.facebook.com/LetsStartupBD†www.facebook.com】
+L5: ## উদ্যোক্তার তথ্য
+L6: 
+L7: উদ্যোক্তার নাম (বাংলা):* [Input]
+L8: 
+L9: উদ্যোক্তার নাম (ইংরেজি):* [Input]
+L10: 
+L11: জন্ম তারিখ:* [Input]
+L12: 
+L13: এনআইডি/জন্মনিবন্ধন নম্বর:* [Input]
+L14: 
+L15: লিঙ্গ:* [Select]
+L16: 
+L17: বৈবাহিক অবস্থা:* [Select]
+L18: 
+L19: শারীরিক অবস্থা:* [Select]
+L20: 
+L21: পিতার নাম: [Input]
+L22: 
+L23: মাতার নাম: [Input]
+L24: 
+L25: মোবাইল নম্বর:* [Input]
+L26: 
+L27: ই-মেইল:* [Input]
+L28: 
+L29: স্থায়ী ঠিকানা:* [Input]
+L30: 
+L31: বিভাগ:* [Select]
+L32: 
+L33: জেলা:* [Select]
+L34: 
+L35: উপজেলা:* [Select]
+L36: 
+L37: বর্তমান ঠিকানা:* [Input]
+L38: 
+L39: বিভাগ:* [Select]
+L40: 
+L41: জেলা:* [Select]
+L42: 
+L43: উপজেলা:* [Select]
+L44: 
+L45: [Button: পরবর্তী ধাপ]
+L46: ## ব্যবসা সম্পর্কিত
+L47: 
+L48: ব্যবসার নাম:* [Input]
+L49: 
+L50: ব্যবসার সংক্ষিপ্ত বর্ণনা:* [Input]
+L51: 
+L52: ব্যবসার ভবিষ্যৎ পরিকল্পনা: [Input]
+L53: 
+L54: ব্যবসার সময়কাল:* [Select]
+L55: 
+L56: ব্যবসার মাধ্যম:* [Select]
+L57: 
+L58: ব্যবসার ধরণ:* [Select]
+L59: 
+L60: ব্যবসার বর্তমান মূলধন:* [Input]
+L61: 
+L62: কর্মীর সংখ্যা (না থাকলে ০ দিন):* [Input]
+L63: 
+L64: মাসিক বিক্রয়(টাকার সংখ্যায় ইংরেজিতে লিখুন):* [Input]
+L65: 
+L66: ব্যবসার মাসিক সঞ্চয় (টাকার সংখ্যায় ইংরেজিতে লিখুন): [Input]
+L67: 
+L68: ব্যবসার ঠিকানা:* [Input]
+L69: 
+L70: বিভাগ:* [Select]
+L71: 
+L72: জেলা:* [Select]
+L73: 
+L74: উপজেলা:* [Select]
+L75: 
+L76: ব্যবসার Website: [Input]
+L77: ব্যবসার Facebook Page:* [Input]
+L78: 
+L79: ব্যবসার অন্যান্য লিংক (Youtube/Instagram/Others): [Input]
+L80: 
+L81: [Button: পূর্ববর্তী ধাপ] [Button: পরবর্তী ধাপ]
+L82: ## অনুদানের সংক্রান্ত
+L83: 
+L84: ব্যাংক একাউন্ট নাম:* [Input]
+L85: 
+L86: ব্যাংক একাউন্ট নম্বর:* [Input]
+L87: 
+L88: ব্যাংকের নাম:* [Input]
+L89: 
+L90: একাউন্টের শাখা/শাখার নাম:* [Input]
+L91: 
+L92: আপনার কোনো ব্যাংক লোন আছে কিনা?* [Select]
+L93: 
+L94: লোন থাকলে তার সংক্ষিপ্ত বিবরণ [Input]
+L95: 
+L96: পূর্বে কোন সরকারি অনুদান পেয়েছেন কিনা?* [Select]
+L97: 
+L98: সরকারি অনুদান পেলে তার সংক্ষিপ্ত বিবরণ [Input]
+L99: 
+L100: অনুদানের অর্থ ব্যবহারের পরিকল্পনা:*
+L101: 
+L102: [Input] ইনভেন্টরি [Input] ট্রেনিং [Input] প্রযুক্তি [Input] প্রচার [Input] যন্ত্রপাতি ক্রয় [Input] কাঁচামাল ক্রয় [Input] অন্যান্য
+L103: অনুদানের অর্থ ব্যবহারের পরিকল্পনার বর্ণনা করুন:* [Input]
+L104: ### সংযুক্তি
+L105: 
+L106: ছবি:* [Input]
+L107: 
+L108: NID:* [Input]
+L109: 
+L110: ট্রেড লাইসেন্স* [Input]
+L111: 
+L112: ব্যাংক/bKash/Nagad স্টেটমেন্ট:(সর্বনিম্ন ১ বছর, সর্বোচ্চ ৪ বছর) [Input]
+L113: 
+L114: আমি প্রত্যয়ন করছি যে, আমি প্রাথমিক আবেদনকারী এবং আবেদননের সাথে প্রদত্ত তথ্য সত্য। আমি বুঝি যে, আবেদনকৃত উদ্যোক্তাদের পণ্য/সেবা এবং ব্যবসা পরিকল্পনা পর্যালোচনা করে তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ কর্তৃক গঠিত সিলেকশন কমিটির মাধ্যমে চূড়ান্ত করা হবে।
+L115: 
+L116: [Button: পূর্ববর্তী ধাপ] [Button: জমা দিন]
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view8 [wordlim: 200] Source: open({"ref_id":"https://www.iges.or.jp/en/pub/list-grid-emission-factor/en","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.iges.or.jp/en/pub/list-grid-emission-factor/en: (403) Forbidden
+

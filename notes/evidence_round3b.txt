@@ -1,0 +1,408 @@
+Internal Error ()
+citeturn19view0 [wordlim: 200] Source: open({"ref_id":"https://www.eeas.europa.eu/sites/default/files/documents/2023/Final%20report%2008022022_wind%20study.pdf","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.eeas.europa.eu/sites/default/files/documents/2023/Final%20report%2008022022_wind%20study.pdf: (403) Forbidden
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn19view1 [wordlim: 200] Source: open({"ref_id":"https://doi.org/10.3329/dujase.v6i2.59225","lineno":null}); Total lines: 1
+L0: URL https://doi.org/10.3329/dujase.v6i2.59225 is not accessible via this tool.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn19view2 [wordlim: 200] Source: open({"ref_id":"https://www.greenclimate.fund/access-funding/project-preparation-facility/process","lineno":null}); Total lines: 1
+L0: Failed to fetch https://www.greenclimate.fund/access-funding/project-preparation-facility/process: (403) Forbidden
+--------------------------------------------------------------------------------
+ক্রেডিট হোলসেলিং কার্যক্রম (https://wehelp.smef.gov.bd/blog-details/credit-wholeshelling)
+citeturn19view3 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://wehelp.smef.gov.bd/blog-details/credit-wholeshelling","lineno":null}); Total lines: 105
+L0: Women Entrepreneurship Hub for
+L1: Empowerment, Leading & Progress
+L2: (a one stop digital platform for
+L3: supporting women entrepreneurship)
+L4: 
+L5: Managed by
+L6: 
+L7: 【0†Image: govt_logo】
+L8: 
+L9: Ministry of Industries
+L10: Government of the People’s Republic of Bangladesh
+L11: 
+L12: Developed in Cooperation with
+L13: 
+L14: [Input]
+L15: 
+L16: ##### Password Edit
+L17: 
+L18: Old Password
+L19: 
+L20: [Input]
+L21: 
+L22: পোর্টাল প্রবেশের পাসওয়ার্ড দিন
+L23: 
+L24: [Input]
+L25: 
+L26: পাসওয়ার্ড নিশ্চিত করুন
+L27: 
+L28: [Input]
+L29: 
+L30: [Button: Close] [Button: Save changes]
+L31: ## ক্রেডিট হোলসেলিং কার্যক্রম
+L32: 
+L33: 【1†Image: ক্রেডিট হোলসেলিং কার্যক্রম】
+L34: 
+L35: সম্ভাবনাময় উৎপাদনশীল খাত, প্রযুক্তি উন্নয়ন ও সুনির্দিষ্ট সেবা খাতের ক্লাস্টার/ক্লায়েন্টে গ্রুপকে অর্থায়নের লক্ষ্যে এসএমই ফাউন্ডেশন ক্রেডিট হোলসেলিং কার্যক্রম পরিচালনা করছে। বিভিন্ন সীমাবদ্ধতার কারণে যে সকল ক্ষুদ্র শিল্প উদ্যোক্তাগণ ব্যাংকিং ব্যবস্থা থেকে ঋণ গ্রহণ করতে সমর্থ্য হচ্ছেন না বিশেষ করে তাঁদেরকে।
+L36: সহজ শর্তে, স্বল্প সূদে (সর্বোচ্চ ৯%) জামানত বিহীন ঋণ প্রদান করাই এ কার্যক্রমের উদ্দেশ্য। ক্রেডিট হোলসেলিং কার্যক্রম এসএমই ফাউন্ডেশনের একটি চলমান কার্যক্রম। এ কার্যক্রমের আওতায় ফাউন্ডেশন হতে সরাসরি ঋণ প্রদান করা হয় না। ফাউন্ডেশন হতে পার্টনার ব্যাংক অথবা নন-ব্যাংক আর্থিক প্রতিষ্ঠানকে প্রাক-অর্থায়ন (pre-financing) করা হয় এবং পরবর্তীতে তা উদ্যোক্তাদের মধ্যে বিতরণ করা হয়। ক্রেডিট হোলসেলিং কার্যক্রমে নারী উদ্যোক্তাদের বিশেষ অগ্রাধিকার প্রদান করা হয়।
+L37: এ কার্যক্রমের আওতায় সর্বনিম্ন ৫০,০০০/= টাকা থেকে সর্বোচ্চ ১০ লক্ষ টাকা এবং ক্ষেত্র বিশেষে ১৫ লক্ষ টাকা পর্যন্ত ঋণ প্রদান করা হয়। বর্তমানে ছয়টি বাণিজ্যিক ব্যাংক (এনসিসি ব্যাংক লিঃ, মিউচুয়াল ট্রাস্ট ব্যাংক লিঃ, ইষ্টার্ন ব‍্যাংক লিঃ, ট্রাষ্ট ব্যাংক লিঃ, ব্যাংক এশিয়া লিঃ, ঢাকা ব্যাংক লিঃ) এবং দুইটি নন-ব্যাংক আর্থিক প্রতিষ্ঠান (মাইডাস ফাইন্যান্সিং লিঃ, আইডিএলসি ফাইন্যান্স লিঃ) এর মাধ্যমে ক্রেডিট হোলসেলিং কার্যক্রম পরিচালিত হচ্ছে।
+L38: ### সর্বোচ্চ পঠিত ব্লগসমূহ>
+L39: 
+L40: 【2†ফেসবুক বুস্টিং কি । বুস্ট করার আগে যে বিষয়গুলো না জানলে আপনার পেইজের ক্ষতি হতে পারে !】
+L41: 
+L42: 【3†Digital Marketing এর জন্য সেরা ৮ টি মাধ্যম】
+L43: 
+L44: 【4†ঋণ গ্রহনের জন্য প্রয়োজনীয় কাগজপত্রের তালিকা সমূহ】
+L45: 
+L46: 【5†নারী উদ্যোক্তা সম্পর্কে প্রাথমিক ধারণা】
+L47: ### এই ক্যাটাগরির ব্লগসমূহ
+L48: 
+L49: 【6†কিভাবে আর্থিক ব্যবস্থাপনা পরিচালনা করবেন】
+L50: 
+L51: 【7†এক্যুইটি এন্ড অস্ট্র্যাপ্র্যানারশীপ ফান্ড (ইইএফ)】
+L52: 
+L53: 【4†ঋণ গ্রহনের জন্য প্রয়োজনীয় কাগজপত্রের তালিকা সমূহ】
+L54: 
+L55: 【8†ডিজিটাল প্ল্যাটফর্মের মাধ্যমে প্রাপ্তিযোগ্য অর্থায়ন】
+L56: 
+L57: 【9†Image】
+L58: 
+L59: * * *
+L60: 
+L61: ###### উইহেল্প (WEHelp) প্ল্যাটফর্ম
+L62: 
+L63: এটি একটি উদ্যোক্তা সহায়ক পোর্টাল। এই পোর্টাল থেকে উদ্যোক্তারা তাদের ব্যবসা পরিচালনার জন্য যাবতীয় তথ্য সহ ব্যবসা প্রসারে সহায়ক পরামর্শ পাবেন।
+L64: 
+L65: 【10†iframe†www.google.com】
+L66: 
+L67: ###### যোগাযোগ
+L68: ##### ক্ষুদ্র ও মাঝারি শিল্প ফাউন্ডেশন
+L69: 
+L70: পর্যটন ভবন (লেভেল: ৬-৭)
+L71: ই-৫/সি-১, আগারগাঁও প্রশাসনিক এলাকা,
+L72: শের-ই-বাংলা নগর, ঢাকা-১২০৭, বাংলাদেশ
+L73: ইমেইল: info@smef.gov.bd
+L74: ওয়েবসাইট: https://www.smef.gov.bd
+L75: ফোন: 41024108, 41024109, 41024110
+L76: 
+L77: ##### ইন্সটিটিউট অব এসএমই ফাউন্ডেশন
+L78: 
+L79: জহির স্মার্ট টাওয়ার (৪র্থ তালা), ২০৫/১/এ,
+L80: বেগম রোকেয়া সরণি, তালতলা, ঢাকা-১২০৭,
+L81: বাংলাদেশ ফোন: (+8802) 55025318
+L82: ###### প্রয়োজনীয় তথ্যসমূহ
+L83: 
+L84:   * 【11†এসএমই উদ্যোক্তা রিসোর্স】
+L85:   * 【12†চেম্বার অফ কমার্স তথ্য】
+L86:   * 【13†আর্থিক সংক্রান্ত তথ্য】
+L87:   * 【14†ট্রেড লাইসেন্স প্রাপ্তির স্থানসমূহ】
+L88: 
+L89:   * 【15†আন্তর্জাতিক মেলার তথ্য】
+L90:   * 【16†লোকাল মেলার তথ্য】
+L91:   * 【17†এসএমই ফাউন্ডেশন মেলার তথ্য】
+L92: 
+L93:   * 【18†পণ্য রপ্তানি সহায়তা】
+L94:   * 【19†ক্রেতা বিক্রেতা সম্মেলন】
+L95:   * 【20†এসএমই পরামর্শ নিন】
+L96:   * 【11†প্রশিক্ষণ সংক্রান্ত তথ্য】
+L97: 
+L98: Knowledge Partner
+L99: 
+L100: Powered by
+L101: 
+L102: Knowledge Partner
+L103: 
+L104: © কপিরাইট 2023 【21†এসএমই ফাউন্ডেশন】 সর্বস্বত্ব সংরক্ষিত।
+--------------------------------------------------------------------------------
+www.bb.org.bd (https://www.bb.org.bd/en/index.php/mediaroom/circular)
+citeturn19view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bb.org.bd/en/index.php/mediaroom/circular","lineno":null}); Total lines: 10120
+L0: ﻿﻿ Bangladesh Bank
+L1: 
+L2: [Input: Search]
+L3: 
+L4: 【0†বাংলা】
+L5: 
+L6:   * 【1†About us】
+L7: 
+L8: 【2†Image: titleToAlt】
+L9: 
+L10:     * 【3†Department and Offices】
+L11:     * 【4†Vision and Mission】
+L12:     * 【5†Citizen Charter】
+L13:     * 【6†Organogram/hierarchy】
+L14:     * 【7†Foreign tours & visit】
+L15: 
+L16:     * 【8†Board Of Directors】
+L17:     * 【9†Monetary Policy Committee】
+L18:     * 【10†Governors】
+L19:     * 【11†Deputy Governors】
+L20:     * 【12†Advisers】
+L21:     * 【13†Executives】
+L22:     * 【14†Directors】
+L23: 
+L24:   * 【15†Monetary Policy】
+L25: 
+L26: 【16†Image: titleToAlt】
+L27:     * 【17†Monetary Policy Statements】
+L28:     * 【9†Monetary Policy Committee】
+L29:     * 【18†MPC Resolution】
+L30: 
+L31:     * 【19†Monetary Policy Tools】
+L32:     * 【20†SMART】
+L33: 
+L34:   * 【21†Financial System】
+L35: 
+L36: 【22†Image: titleToAlt】
+L37: 
+L38:     * 【21†Overview】
+L39:     * 【23†Financial Markets】
+L40:     * 【24†Financial Stability】
+L41:     * 【25†Payment Systems】
+L42: 
+L43:     * 【26†Inter Bank Money Market】
+L44:     * 【27†Money Market Reference Rate】
+L45:     * 【28†Deposit Insurance】
+L46:     * 【29†Regulators】
+L47:     * 【30†Credit Rating Of Banks】
+L48:     * 【31†Schedule Of Charges Of Banks】
+L49:     * 【32†Banks & FCs】
+L50:     * 【33†Insurance】
+L51:     * 【34†MFIS】
+L52: 
+L53:   * 【35†FX Market】
+L54: 
+L55: 【36†Image: titleToAlt】
+L56: 
+L57:     * 【35†Overview of the FX Market】
+L58:     * 【37†Interbank FX Market】
+L59:     * 【38†Exchange Rates】
+L60:     * 【39†FX Reference Rate】
+L61:     * 【40†FX Auction Result】
+L62:     * 【41†ACU Payment】
+L63: 
+L64:     * 【42†Export Development Fund (EDF)】
+L65:     * 【43†FC Clearing】
+L66:     * 【44†Foreign Exchange Reserve】
+L67:     * 【45†Remittances】
+L68:     * 【46†BOP, Export & Import】
+L69:     * 【47†Macroeconomic and Financial Data】
+L70: 
+L71:   * 【48†G-Sec Market】
+L72: 【49†Image: titleToAlt】
+L73: 
+L74:     * 【48†Government Securities Market】
+L75:     * 【50†Primary Auction of Treasury Bill & Bond】
+L76:     * 【51†Secondary Trading of Treasury Bills and Bonds】
+L77:     * 【52†91 Days BCR】
+L78: 
+L79:     * 【53†G-Sec Investment Process】
+L80:     * 【54†BD Govt Investment Sukuk (BGIS)】
+L81:     * 【55†FAQ on Government Securities Market】
+L82: 
+L83:   * 【56†Publication】
+L84: 
+L85: 【57†Image: titleToAlt】
+L86: 
+L87:     * 【58†Weekly】
+L88:     * 【59†Fortnightly】
+L89:     * 【60†Monthly】
+L90:     * 【61†Quarterly】
+L91:     * 【62†Half Yearly】
+L92:     * 【63†Annual】
+L93:     * 【64†Research Work】
+L94:     * 【65†Special Publication】
+L95:     * 【66†Others】
+L96: ### search circular/letter
+L97: 
+L98: [Select]
+L99: 
+L100: [Input]
+L101: 
+L102: [Input]
+L103: 
+L104: [Input]
+L105: 
+L106: Circulars/Circulars letters published from Bangladesh Bank
+L107: Date  | Title  | English  | Bangla
+L108: --- | --- | --- | ---
+L109: 19/10/26  | BFIU Circular No. 34: Instructions to be followed by Insurance Companies for the prevention of money laundering, terrorist financing and proliferation financing  | Not Available  | Bangla
+L110: 【67†Download】
+L111: 18/10/26  | FEPD-1 Circular Letter No. 19: Suspension of the requirement to obtain prior approval from the Chief Inspector of Boilers for the import of boilers  | Not Available  | Bangla
+L112: 【68†Download】
+L113: 17/10/26  | FEPD-2 Circular No. 07: Consolidated Circular-Licences for Authorized Dealers, Money Changers and Gold Dealers  | English
+L114: 【69†Download】  | Not Available
+L115: 14/10/26  | SDAD Circular Letter No. 17: Temporary Intermission of Banking Operations of Standard Islami Bank PLC.for the purpose of Core Banking system upgradation.  | Not Available  | Bangla
+L116: 【70†Download】
+L117: 14/10/26  | SDAD Circular Letter No. 16: Temporary Intermission of Banking Operations of Sonali Bank PLC.for the purpose of Core Banking system upgradation.  | Not Available  | Bangla
+L118: 【71†Download】
+L119: 12/10/26  | FCRPD Circular Letter No. 17: Closure and Opening of Finance Companies on the occasion of Sharadiya Durga Puja 2026  | Not Available  | Bangla
+L120: 【72†Download】
+L121: 12/10/26  | BRPD-2 Circular Letter No. 15: Exemption from the provision of section 27KaKa(3) of Bank-Company Act 1991 (amended up to 2023) for renewal of working capital facilities by Sonali Bank PLC. in favor of Shinepukur Ceramics Limited.  | Not Available  | Bangla
+L122: 【73†Download】
+L123: 12/10/26  | BRPD-2 Circular Letter No. 16: Exemption from the provision of Section 23(1)(kakaka) of the Bank Company Act, 1991 (amended up to 2023) for BRAC Bank PLC.  | Not Available  | Bangla
+L124: 【74†Download】
+L125: 12/10/26  | BRPD-2 Circular Letter No. 14: Exemption from the provision of section 27KaKa(3) of Bank-Company Act 1991 (amended up to 2023) for opening Import LC keeping 100% margin/providing working capital facilities by National Bank Plc. in favour of Beximco LPG Unit-1 Ltd.  | Not Available  | Bangla
+L126: 【75†Download】
+L127: 11/10/26  | SDAD Circular Letter No. 15: Closure and Opening of Scheduled Banks on the Occasion of Sharadiya Durga Puja 2026  | Not Available  | Bangla
+L128: 【76†Download】
+L129: 11/10/26  | BRPD-1 Circular Letter No. 36: Taking Measures to Prevent Dengue.  | Not Available  | Bangla
+L130: 【77†Download】
+L131: 11/10/26  | BRPD-1 Circular Letter No. 35: Maintenance of Business Identification Number (BIN) Certificates for Opening Current Accounts and STD Accounts for Business Entities.  | Not Available  | Bangla
+L132: 【78†Download】
+L133: 08/10/26  | BRPD-2 Circular Letter No. 13: Exemption from the provision of section 27KaKa(3) of Bank-Company Act 1991 (amended upto 2023) for renewal of bank guarantees by Sammilito Islami Bank Plc. (Ex EXIM Bank Plc.) in favour of Beximco Computers Ltd.  | Not Available  | Bangla
+L134: 【79†Download】
+L135: 08/10/26  | IBRPD Circular Letter No. 01: Regarding S.R.O. No.-126-Law/2026/331-Excise  | Not Available  | Bangla
+L136: 【80†Download】
+L137: 08/10/26  | FEPD-1 Circular No. 41: Opening and Operation of Non-Resident Convertible Taka Accounts (NRCTA)  | English
+L138: 【81†Download】  | Not Available
+L139: 08/10/26  | FEPD-2 Circular Letter No. 02: Release of foreign currency against private travel entitlement by licensed Money Changers  | English
+L140: 【82†Download】  | Not Available
+L141: 07/10/26  | FEPD-2 Circular No 06: Opening and maintenance of foreign currency accounts for the retention of approved external loan proceeds  | English
+L142: 【83†Download】  | Not Available
+L143: 01/10/26  | BRPD-1 Circular Letter No. 34: Re-fixation of the Interest Rate and Amount of the Pre-Shipment Credit Refinancing Scheme.  | Not Available  | Bangla
+L144: 【84†Download】
+L145: 30/09/26  | FEPD-1 Circular No. 40: Consolidated circular on foreign exchange regulations - outward remittances on account of current account transactions other than imports and transportation services  | English
+L146: 【85†Download】  | Not Available
+L147: 28/09/26  | FEPD-1 Circular No. 39: Use of international cards for purchase of air tickets from airlines operating in Bangladesh.  | English
+L148: 【86†Download】  | Not Available
+L149: 27/09/26  | IBRPD Circular No. 01: Guidelines on Islamic Credit Card Operations of Banks.  | English
+L150: 【87†Download】  | Not Available
+L151: 27/09/26  | PSD-2 Circular No. 05: Guidelines on Dispute Resolution for Bangla QR (Merchant Payment) Transactions  | Not Available  | Bangla
+L152: 【88†Download】
+L153: 27/09/26  | PSD-2 Circular Letter No. 07: Regarding Incentives for Promoting Bangla QR Code-Based Transactions  | Not Available  | Bangla
+L154: 【89†Download】
+L155: 24/09/26  | BRPD-1 Circular Letter No. 33: Resolving Existing Difficulties of Raw Jute Exporters.  | Not Available  | Bangla
+L156: 【90†Download】
+L157: 23/09/26  | FEPD-2 Circular No. 05: Deposit of Wage Earners Remittances Received through Exchange Houses/IMTOs to Foreign Currency Accounts  | English
+L158: 【91†Download】  | Not Available
+L159: 23/09/26  | SDAD Circular Letter No. 14: Hajj activities related scheduled bank branches remain open on 25-26 September 2026.  | Not Available  | Bangla
+L160: 【92†Download】
+L161: 23/09/26  | FEPD-1 Circular No. 38: Settlement of payments in Taka against cross-border transactions  | English
+L162: 【93†Download】  | Not Available
+L163: 21/09/26  | AMLD Circular No. 01: Regarding the Submission of Compliance Report, Financial Statement, Explanation and Letters by Bank, Finance Company and MFS  | Not Available  | Bangla
+L164: 【94†Download】
+L165: 21/09/26  | FEPD-1 Circular No. 37: Outright purchase and sale of foreign currency and cross-currency swap transactions by Offshore Banking Units  | English
+L166: 【95†Download】  | Not Available
+L167: 20/09/26  | STD Circular Letter No. 01 Regarding the Submission of Islamic Financial Transactions-Related Data through the Updated Data Template for Banks and NBFCs  | Not Available  | Bangla
+L168: 【96†Download】
+L169: 20/09/26  | SMESPD Circular Letter No. 04: CMSME Working Capital Refinance Fund  | Not Available  | Bangla
+L170: 【97†Download】
+L171: 17/09/26  | BRPD-2 Circular No. 06: Regarding shareholding in a bank-company by a company and nomination of a "Representative Director" to the Board of Directors of the bank-company on behalf of the shareholder company  | Not Available  | Bangla
+L172: 【98†Download】
+L173: 17/09/26  | PSD-1 Circular No. 05: Expansion of Bangla QR Code Based Transaction  | Not Available  | Bangla
+L174: 【99†Download】
+L175: 17/09/26  | BRPD-1 Circular Letter No. 32: Pre-Finance Scheme to support the closed industry and service sectors.  | Not Available  | Bangla
+L176: 【100†Download】
+L177: 17/09/26  | FEPD-1 Circular Letter No. 18: Regarding the Notice for Hajj-2027 Registration  | Not Available  | Bangla
+L178: 【101†Download】
+L179: 16/09/26  | FEPD-1 Circular No. 36: Determination of overdue status against local deliveries under back-to-back LC  | English
+L180: 【102†Download】  | Not Available
+L181: 14/09/26  | FEPD-1 Circular No. 35: Medium/long-term external borrowing by industrial enterprises in specialized zones  | English
+L182: 【103†Download】  | Not Available
+L183: 13/09/26  | FEPD-1 Circular No. 34: Hedging of Commodity Price Risk for Import Trades in International Markets  | English
+L184: 【104†Download】  | Not Available
+L185: 13/09/26  | BRPD-2 Circular No. 5: Key Performance Indicators (KPIs) Framework for Managing Director (MD)/Chief Executive Officer (CEO) of Bank-Companies  | Not Available  | Bangla
+L186: 【105†Download】
+L187: 13/09/26  | SMESPD Circular No. 05: Circular regarding UDYOG: Upazila-Driven Youth Opportunity for Growth  | Not Available  | Bangla
+L188: 【106†Download】
+L189: 13/09/26  | FEPD-1 Circular Letter No. 17: Import Policy Order, 2026-2029  | Not Available  | Bangla
+L190: 【107†Download】
+L191: 07/09/26  | BRPD-1 Circular No. 18:Formulating/Updating Human Resources Management Policies and Recruitment and Regularization of Officers/Employees  | Not Available  | Bangla
+L192: 【108†Download】
+L193: 07/09/26  | BRPD-1 Circular Letter No. 31: List of Eligible Collateral Valuation Firms or Companies  | Not Available  | Bangla
+L194: 【109†Download】
+L195: 06/09/26  | BRPD-1 Circular No. 17: Launching the 'e-Payment Credit' Facility  | English
+L196: 【110†Download】  | Bangla
+L197: 【111†Download】
+L198: 06/09/26  | FEPD-1 Circular No. 33: Release of foreign exchange for travel abroad  | English
+L199: 【112†Download】  | Not Available
+L200: 03/09/26  | FEPD-1 Circular Letter No. 16: Access to finance against funds held in OBUs as collateral  | English
+L201: 【113†Download】  | Not Available
+L202: 03/09/26  | FEPD-1 Circular Letter No. 15: Remittance on account of royalty, technical know-how, technical assistance fees and other expenses for industrial enterprises in HTPs  | English
+L203: 【114†Download】  | Not Available
+L204: 02/09/26  | FEPD-1 Circular No. 32: Consolidated circular on foreign exchange regulations-loans, overdrafts, guarantees and external borrowings  | English
+L205: 【115†Download】  | Not Available
+L206: 01/09/26  | PSD-2 Circular No. 04: Regarding the setting of the lower limit for transactions of Chittagong Port Authority (CPA) in the BD-RTGS System.  | Not Available  | Bangla
+L207: 【116†Download】
+L208: 31/08/26  | BRD Circular Letter No. 02: Regarding Withdrawal Facilities of Non-Institutional Deposits under Bank Resolution Scheme, 2025  | Not Available  | Bangla
+L209: 【117†Download】
+L210: 31/08/26  | BRPD-1 Circular Letter No. 30: Policy support for restructuring the business and financial condition of the affected borrowers.  | Not Available  | Bangla
+L211: 【118†Download】
+L212: 31/08/26  | FRTMD Circular No. 01: Regarding the Commencement of Live Operations of the Foreign Exchange Market (FXM) Module  | English
+L213: 【119†Download】  | Not Available
+L214: 30/08/26  | FEPD-1 Circular Letter No. 14: Transfer of fund upto 0.03% against export proceeds of 100% export oriented garment industries to Central Fund (RMG sector) A/C maintained at Sonali Bank Ltd, Ramna Corporate Branch  | Not Available  | Bangla
+L215: 【120†Download】
+L216: 30/08/26  | BRPD-1 Circular No. 16: Pre-Finance Scheme for Export-oriented Frozen Food Sector  | Not Available  | Bangla
+L217: 【121†Download】
+L218: 30/08/26  | ACD-1 Circular Letter No. 04: Refinance Scheme for Agricultural and Rural Sector to Increase Agricultural Production and Employment Generation  | Not Available  | Bangla
+L219: 【122†Download】
+L220: 30/08/26  | ACD-1 Circular Letter No. 03: Refinance Scheme of Tk 3,000 Crore for Creating Agricultural Based Economic Hub in North Bengal of the Country  | Not Available  | Bangla
+L221: 【123†Download】
+L222: 27/08/26  | FEPD-1 Circular No. 31: Issuance of bank guarantees/SBLCs on behalf of resident entities in favor of local project authorities  | English
+L223: 【124†Download】  | Not Available
+L224: 20/08/26  | BRPD-2 Circular No. 04: Guidelines on the Enlistment of Mediation Institutions for Alternative Dispute Resolution (ADR), 2026  | Not Available  | Bangla
+L225: 【125†Download】
+L226: 19/08/26  | BFIU Circular Letter No. 5: Reporting of Related Accounts Following BFIU Freezing Order  | Not Available  | Bangla
+L227: 【126†Download】
+L228: 19/08/26  | BRPD-2 Circular Letter No. 12: Exemption from the provision of section 27KaKa(3) of Bank-Company Act 1991 (amended upto 2023) for disbursement of the remaining syndicated foreign currency loan portion (USD 3,197,651.28) of Rupali Bank Plc. and opening Import LC of SS Power 1 Ltd.  | Not Available  | Bangla
+L229: 【127†Download】
+L230: 18/08/26  | BFIU Circular No. 30: Instructions to be followed by Money Changers to comply with the provisions contained in MLPA, 2012 & ATA, 2009  | Not Available  | Bangla
+L231: 【128†Download】
+L232: 18/08/26  | BRPD-1 Circular Letter No. 29: Bank Account Opening for Foreign Nationals Working in Bangladesh under the E-Visa Category  | Not Available  | Bangla
+L233: 【129†Download】
+L234: 17/08/26  | DMD Circular Letter No. 12: Regarding Sukuk Allotment Quota  | Not Available  | Bangla
+L235: 【130†Download】
+L236: 17/08/26  | FCRPD Circular Letter No. 16: Customer Complaint to be withdrawn before receiving Policy Support.  | Not Available  | Bangla
+L237: 【131†Download】
+L238: 16/08/26  | ACD-1 Circular No. 03: Agricultural and Rural Credit Policy and Program for the FY 2026-2027  | Not Available  | Bangla
+L239: 【132†Download】
+L240: 16/08/26  | BRPD-2 Circular Letter No. 11: Exemption from the provision of section 27KaKa(3) of Bank-Company Act 1991 (amended upto 2023)for opening Import LC of SS Power 1 Ltd. by Rupali Bank Plc. Keeping 100% Margin.  | Not Available  | Bangla
+L241: 【133†Download】
+L242: 16/08/26  | BRPD-1 Circular Letter No. 28: L/C Margin for Importing Fruits  | Not Available  | Bangla
+L243: 【134†Download】
+L244: 13/08/26  | FEPD-1 Circular No. 30: Consolidated circular on foreign exchange regulations - import transactions  | English
+L245: 【135†Download】  | Bangla
+L246: 【136†Download】
+L247: 11/08/26  | PSD-1 Circular No. 04: Issuance of PSP License to "NEO PSP Limited"  | Not Available  | Bangla
+L248: 【137†Download】
+L249: 10/08/26  | BRPD-1 Circular Letter No. 27: Deduction of source tax at the applicable rate on interest/profit paid on deposits in accordance with the Income Tax Act, 2023 and timely deposit thereof into the Government Treasury.  | Not Available  | Bangla
+L250: 【138†Download】
+L251: 10/08/26  | PSD-2 Circular No. 03: Regarding the provision of Incentive for promoting Bangla QR Transactions  | Not Available  | Bangla
+L252: 【139†Download】
+L253: 10/08/26  | PSD-2 Circular Letter No. 06: Determination of Fees/Charges for Bangla QR Transactions  | Not Available  | Bangla
+L254: 【140†Download】
+L255: 10/08/26  | BRPD-2 Circular Letter No. 10: Exemption from the provision of section 47(2) of Bank Company Act, 1991.  | Not Available  | Bangla
+L256: 【141†Download】
+L257: 10/08/26  | FEPD-1 Circular No. 29: Release of foreign exchange for study abroad through international cards  | English
+L258: 【142†Download】  | Not Available
+L259: 09/08/26  | BRD Circular No. 03: Regarding Placement of Four Finance Companies Under Resolution Process.  | Not Available  | Bangla
+L260: 【143†Download】
+L261: 09/08/26  | BRD Circular Letter No. 01: Bank Resolution Scheme, 2025 (Amended upto 09 August, 2026)  | Not Available  | Bangla
+L262: 【144†Download】
+L263: 09/08/26  | FEPD-1 Circular No. 28: Remittance against overseas tour packages  | English
+L264: 【145†Download】  | Not Available
+L265: 06/08/26  | BRD Circular No. 02: Temporary Administration Regulations, 2026 Under Bank Resolution Act, 2026  | Not Available  | Bangla
+L266: 【146†Download】
+L267: 06/08/26  | BRD Order No. 01: Application of the Provisions of the Bank Resolution Act, 2026 to the Finance Companies  | Not Available  | Bangla
+L268: 【147†Download】
+L269: 04/08/26  | FEPD-1 Circular Letter No. 13: Regarding the publication of the first list of authorized Umrah agencies for Hijri 1448 (2026-2027)  | Not Available  | Bangla
+L270: 【148†Download】
+L271: 04/08/26  | FEPD-1 Circular No. 27: Import declaration requirements for intercompany dealings  | English
+L272: 【149†Download】  | Not Available
+L273: 04/08/26  | SDAD Circular Letter No. 13: Temporary Intermission of Banking Operations of Shimanto Bank PLC.for the purpose of Core Banking system upgradation.  | Not Available  | Bangla
+L274: 【150†Download】
+L275: 03/08/26  | BRPD-1 Circular Letter No. 26: Regarding the Lien on Current Account Balances Maintained with Bangladesh Bank Against TT Discounting Facilities Granted to Scheduled Banks.  | Not Available  | Bangla
+L276: 【151†Download】
+L277: 02/08/26  | MPD Circular No. 02: MPD Circular No. 02: Re-fixation of Interest Rate Corridor (IRC)  | Not Available  | Bangla
+L278: 【152†Download】
+L279: 30/07/26  | DID Circular Letter No. 01:Regarding sending information of Customer Deposit Composition as per amended slabs  | Not Available  | Bangla
+L280: 【153†Download】
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn19view5 [wordlim: 200] Source: open({"ref_id":"https://doi.org/10.1088/1748-9326/ac1bd8","lineno":null}); Total lines: 1
+L0: Failed to fetch https://doi.org/10.1088/1748-9326/ac1bd8: (robots.txt) Fetch denied by robots.txt (OAI-SearchBot)
+

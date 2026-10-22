@@ -1,0 +1,52 @@
+﻿check,status
+Three scenario cash flows each contain month 0 plus 120 operating months,PASS
+conservative: monthly/annual revenue reconciliation,PASS
+conservative: monthly/annual ebitda reconciliation,PASS
+conservative: monthly/annual net_profit reconciliation,PASS
+conservative: monthly/annual tax reconciliation,PASS
+conservative: monthly/annual fcf reconciliation,PASS
+conservative: monthly/annual fleet_capex reconciliation,PASS
+conservative: monthly/annual tool_capex reconciliation,PASS
+conservative: monthly/annual delta_nwc reconciliation,PASS
+conservative: revenue channels reconcile,PASS
+conservative: FCF accounting identity,PASS
+conservative: no negative tax credits,PASS
+conservative: terminal working capital released,PASS
+conservative: finite cash flows,PASS
+base: monthly/annual revenue reconciliation,PASS
+base: monthly/annual ebitda reconciliation,PASS
+base: monthly/annual net_profit reconciliation,PASS
+base: monthly/annual tax reconciliation,PASS
+base: monthly/annual fcf reconciliation,PASS
+base: monthly/annual fleet_capex reconciliation,PASS
+base: monthly/annual tool_capex reconciliation,PASS
+base: monthly/annual delta_nwc reconciliation,PASS
+base: revenue channels reconcile,PASS
+base: FCF accounting identity,PASS
+base: no negative tax credits,PASS
+base: terminal working capital released,PASS
+base: finite cash flows,PASS
+base: IRR NPV residual,PASS
+optimistic: monthly/annual revenue reconciliation,PASS
+optimistic: monthly/annual ebitda reconciliation,PASS
+optimistic: monthly/annual net_profit reconciliation,PASS
+optimistic: monthly/annual tax reconciliation,PASS
+optimistic: monthly/annual fcf reconciliation,PASS
+optimistic: monthly/annual fleet_capex reconciliation,PASS
+optimistic: monthly/annual tool_capex reconciliation,PASS
+optimistic: monthly/annual delta_nwc reconciliation,PASS
+optimistic: revenue channels reconcile,PASS
+optimistic: FCF accounting identity,PASS
+optimistic: no negative tax credits,PASS
+optimistic: terminal working capital released,PASS
+optimistic: finite cash flows,PASS
+optimistic: IRR NPV residual,PASS
+Combined BOM duplicates A and B cores,PASS
+Combined component-level totals reconcile,PASS
+Product and channel shares total unity,PASS
+Wind probability integrates to unity,PASS
+Full-service probability differs from energy displacement,PASS
+Zero wind yields no mean shaft power,PASS
+Break-even price residual,PASS
+Break-even adoption residual,PASS
+Allocated profit reconciles,PASS

@@ -1,0 +1,36 @@
+{
+  "passed_checks": 34,
+  "messages": [],
+  "unmet_evidence_threshold_tasks": [
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "19",
+    "20",
+    "Finance"
+  ],
+  "base_case": {
+    "npv_bdt": -11181078.003929747,
+    "npv_usd": -90425.2163682147,
+    "irr": -0.4771436404096737,
+    "irr_root_count": 1,
+    "simple_payback_years": null,
+    "discounted_payback_years": null,
+    "initial_investment_bdt": 2240000.0,
+    "peak_funding_need_bdt": 21769905.726454593,
+    "terminal_cash_bdt": -19133568.1636546,
+    "discount_rate": 0.18
+  }
+}

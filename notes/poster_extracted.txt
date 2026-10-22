@@ -1,0 +1,58 @@
+                                          ZeroWatt Wind
+                                                      HARVEST THE WIND.
+                                                     DELIVER THE MOTION.
+                                                A WIND-DRIVEN MECHANICAL CONCEPT
+                                             FOR URBAN VENTILATION AND POND AERATION
+
+                     Mohammad Rafiul Islam                             • Tasnia Basharat Mahi                      • Masrura Sara Mohima
+                                                    Islamic University of Technology , IUT-OIC, Bangladesh
+
+
+  PROBLEM STATEMENT                                                                 OBJECTIVE
+Airtight urban buildings depend entirely on electric HVAC, which fails
+whenever load shedding hits. Without airflow, indoor CO₂ and particulate           To design and fabricate a passive, wind-driven mechanical prototype that
+levels climb, and Harvard's COGfx study linked a 500 ppm rise in CO₂ to a          uses a spiral rotor, shafts and bevel gears to power either a ventilation fan or
+15% drop in cognitive performance. The same neglect shows up outdoors.             a surface paddle wheel, enabling air exchange in small enclosed spaces or
+Stagnant urban ponds lose dissolved oxygen, which leads to algal blooms, foul      surface mixing in urban ponds without electrical input, with affordability as a
+odor and mosquito breeding. Conventional electric aerators need underwater         design goal.
+cabling and add a constant load to the grid.
+
+                                                                                                           PROTOTYPE AND
+                                                                                                            FABRICATION
+
+                                                                                                      The prototype was designed in SolidWorks and 3D-
+                                                                                                      printed in PLA. Airfoil geometry was generated using
+                                                                                                      Python and SciPy.
+
+                                                                                                      Starting wind speed, shaft torque, airflow, drivetrain
+                                                                                                      efficiency and oxygen-transfer performance remain to be
+                                                                                                      measured.
+
+
+
+
+                                                                         wind
+
+
+
+
+                                                                                                                                                      wind
+
+
+
+
+NACA 65-810 fan blades exhaust hot air pooling near the ceiling. Resulting           A surface paddle wheel increases air-water exchange and raises dissolved
+negative pressure draws fresh air into the occupied zone and removes humidity,       oxygen. Intermittent, gust-driven operation is intended to disrupt thermal
+reducing mould risk.                                                                 stratification that causes stagnation.
+
+   DESIGN FEATURES                                                                INTENDED IMPACT
+                                                                                 • Operation during power outages when sufficient wind is available.
+     Fibonacci spiral rotor for wind-energy capture.
+                                                                                 • No electrical input during wind-driven operation.
+     Shafts and bevel gears for mechanical transmission through 90°.
+                                                                                 • Designed for affordability, suited to dense urban and low-income communities
+     NACA 65-810 fan profile selected for the ventilation design.
+                                                                                 • Improved indoor air quality and healthier urban water bodies
+     PLA components for prototyping and design iteration
+                                                                                 • Potential for local fabrication and repair.
+

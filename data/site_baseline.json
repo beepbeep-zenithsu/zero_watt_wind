@@ -1,0 +1,643 @@
+{
+  "defaults": {
+    "wind": 3.5,
+    "diameter": 1,
+    "units": 1,
+    "cp": 0.18,
+    "drive": 0.75,
+    "cutin": 2,
+    "cutout": 25,
+    "stormCutout": 16,
+    "ratedPower": 250,
+    "brake": false,
+    "boats": 1,
+    "upb": 1,
+    "mount": "boat",
+    "rain": 0,
+    "ratio": 2,
+    "tsr": 0.9,
+    "profile": "steady",
+    "ambient": 32,
+    "room": 150,
+    "people": 8,
+    "outdoorCO2": 420,
+    "backgroundACH": 0.5,
+    "pressure": 20,
+    "fanEfficiency": 0.35,
+    "co2Target": 1200,
+    "pond": 100,
+    "temp": 28,
+    "oxygenDemand": 0.25,
+    "sae": 0.8,
+    "backgroundK": 0.01,
+    "doTarget": 4,
+    "windSensor": "none",
+    "qualitySensor": "none",
+    "envSensor": "none",
+    "mcu": "none",
+    "enclosure": "none"
+  },
+  "hardware": {
+    "windSensor": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "cup_hobby",
+        "name": "Cup anemometer · hobby plastic",
+        "tmin": -10,
+        "tmax": 50,
+        "wet": 3,
+        "maxWind": 30,
+        "acc": 0.06,
+        "watts": 0.01,
+        "note": "Reed/pulse output. Cheap, moving parts, weak against heavy rain."
+      },
+      {
+        "id": "cup_ind",
+        "name": "Cup anemometer · industrial IP67",
+        "tmin": -35,
+        "tmax": 70,
+        "wet": 7,
+        "maxWind": 60,
+        "acc": 0.03,
+        "watts": 0.1,
+        "note": "Sealed bearings and heated body options."
+      },
+      {
+        "id": "ultra",
+        "name": "Ultrasonic anemometer · no moving parts",
+        "tmin": -40,
+        "tmax": 80,
+        "wet": 6,
+        "maxWind": 60,
+        "acc": 0.02,
+        "watts": 0.4,
+        "note": "Best for storms and dust. Needs a stable supply."
+      },
+      {
+        "id": "hall",
+        "name": "Rotor RPM sensor · Hall effect",
+        "tmin": -40,
+        "tmax": 105,
+        "wet": 5,
+        "maxWind": 99,
+        "acc": 0.04,
+        "watts": 0.02,
+        "note": "Reads rotor speed, not true wind. Blind below cut-in.",
+        "rpmBased": true
+      }
+    ],
+    "qualityAir": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "mq135",
+        "name": "MQ-135 gas module (metal-oxide)",
+        "tmin": -10,
+        "tmax": 40,
+        "wet": 0,
+        "acc": 0.3,
+        "watts": 0.75,
+        "indoor": true,
+        "note": "Cheap, hot heater, humidity-sensitive."
+      },
+      {
+        "id": "mhz19",
+        "name": "MH-Z19B · NDIR CO₂",
+        "tmin": 0,
+        "tmax": 50,
+        "wet": 0,
+        "acc": 0.06,
+        "watts": 0.1,
+        "indoor": true,
+        "note": "Real CO₂ measurement, indoor use only."
+      },
+      {
+        "id": "scd41",
+        "name": "SCD41 · photoacoustic CO₂",
+        "tmin": -10,
+        "tmax": 60,
+        "wet": 0,
+        "acc": 0.05,
+        "watts": 0.06,
+        "indoor": true,
+        "note": "Small, accurate, I²C."
+      },
+      {
+        "id": "ndir_duct",
+        "name": "Industrial NDIR duct probe · IP65",
+        "tmin": -20,
+        "tmax": 60,
+        "wet": 5,
+        "acc": 0.03,
+        "watts": 0.5,
+        "indoor": true,
+        "note": "Built for hot, dusty ducts."
+      }
+    ],
+    "qualityWater": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "do_cheap",
+        "name": "Low-cost analog DO kit",
+        "tmin": 0,
+        "tmax": 35,
+        "wet": 7,
+        "acc": 0.1,
+        "watts": 0.05,
+        "submerged": true,
+        "note": "Needs frequent calibration."
+      },
+      {
+        "id": "do_galv",
+        "name": "Galvanic DO probe",
+        "tmin": 0,
+        "tmax": 40,
+        "wet": 8,
+        "acc": 0.05,
+        "watts": 0.02,
+        "submerged": true,
+        "note": "No warm-up, membrane wears."
+      },
+      {
+        "id": "do_opt",
+        "name": "Optical DO probe · IP68",
+        "tmin": 0,
+        "tmax": 50,
+        "wet": 8,
+        "acc": 0.02,
+        "watts": 0.15,
+        "submerged": true,
+        "note": "Low drift, best for hot ponds."
+      }
+    ],
+    "envAir": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "rain_res",
+        "name": "Resistive rain board (YL-83 type)",
+        "tmin": -10,
+        "tmax": 60,
+        "wet": 2,
+        "acc": 0.2,
+        "watts": 0.05,
+        "note": "Corrodes quickly outdoors."
+      },
+      {
+        "id": "rain_opt",
+        "name": "Optical (IR) rain sensor",
+        "tmin": -40,
+        "tmax": 85,
+        "wet": 6,
+        "acc": 0.1,
+        "watts": 0.2,
+        "note": "Sealed, no moving parts."
+      },
+      {
+        "id": "rain_tip",
+        "name": "Tipping-bucket rain gauge",
+        "tmin": -30,
+        "tmax": 70,
+        "wet": 5,
+        "acc": 0.05,
+        "watts": 0,
+        "note": "Passive reed switch."
+      }
+    ],
+    "envWater": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "ntc",
+        "name": "NTC thermistor probe",
+        "tmin": -40,
+        "tmax": 125,
+        "wet": 7,
+        "acc": 0.04,
+        "watts": 0.001,
+        "submerged": true,
+        "note": "Needs an ADC and calibration."
+      },
+      {
+        "id": "ds18",
+        "name": "DS18B20 waterproof probe",
+        "tmin": -55,
+        "tmax": 125,
+        "wet": 8,
+        "acc": 0.01,
+        "watts": 0.005,
+        "submerged": true,
+        "note": "Digital, ±0.5 °C."
+      }
+    ],
+    "mcu": [
+      {
+        "id": "none",
+        "name": "— none —"
+      },
+      {
+        "id": "attiny",
+        "name": "ATtiny85 · ultra-low power",
+        "tmin": -40,
+        "tmax": 85,
+        "bits": 10,
+        "watts": 0.02,
+        "note": "Tiny, very little power."
+      },
+      {
+        "id": "uno",
+        "name": "Arduino Uno · ATmega328P",
+        "tmin": -40,
+        "tmax": 85,
+        "bits": 10,
+        "watts": 0.25,
+        "note": "Easy to prototype; open board."
+      },
+      {
+        "id": "pico",
+        "name": "Raspberry Pi Pico · RP2040",
+        "tmin": -20,
+        "tmax": 85,
+        "bits": 12,
+        "watts": 0.1,
+        "note": "Fast, cheap, 12-bit ADC."
+      },
+      {
+        "id": "esp32",
+        "name": "ESP32 · Wi-Fi + 12-bit ADC",
+        "tmin": -40,
+        "tmax": 85,
+        "bits": 12,
+        "watts": 0.4,
+        "note": "Adds telemetry, but draws most power."
+      },
+      {
+        "id": "stm32",
+        "name": "STM32 Nucleo · industrial range",
+        "tmin": -40,
+        "tmax": 85,
+        "bits": 12,
+        "watts": 0.15,
+        "note": "Robust, low power per ADC bit."
+      }
+    ],
+    "enclosure": [
+      {
+        "id": "none",
+        "name": "Open board · no box",
+        "wet": 0,
+        "solar": 20
+      },
+      {
+        "id": "ip54",
+        "name": "Plastic box · IP54",
+        "wet": 5,
+        "solar": 15
+      },
+      {
+        "id": "ip67",
+        "name": "Sealed IP67 box + sun shield",
+        "wet": 7,
+        "solar": 5
+      }
+    ]
+  },
+  "scenarios": {
+    "air": [
+      {
+        "id": "breeze",
+        "name": "Rooftop breeze",
+        "glyph": "☀",
+        "weather": "clear",
+        "environment": "roof",
+        "p": {
+          "wind": 4.5,
+          "profile": "steady",
+          "people": 8,
+          "room": 150,
+          "rain": 0,
+          "ambient": 32
+        }
+      },
+      {
+        "id": "canyon",
+        "name": "Urban canyon",
+        "glyph": "≋",
+        "weather": "clear",
+        "environment": "canyon",
+        "p": {
+          "wind": 2.8,
+          "profile": "lull",
+          "people": 12,
+          "room": 150,
+          "rain": 0,
+          "ambient": 34
+        }
+      },
+      {
+        "id": "heat",
+        "name": "Heatwave",
+        "glyph": "♨",
+        "weather": "heat",
+        "environment": "roof",
+        "p": {
+          "wind": 2.3,
+          "profile": "gusts",
+          "people": 18,
+          "room": 150,
+          "rain": 0,
+          "ambient": 46
+        }
+      },
+      {
+        "id": "rain",
+        "name": "Monsoon",
+        "glyph": "☂",
+        "weather": "rain",
+        "environment": "roof",
+        "p": {
+          "wind": 7,
+          "profile": "gusts",
+          "people": 10,
+          "room": 150,
+          "rain": 0.8,
+          "ambient": 30
+        }
+      },
+      {
+        "id": "storm",
+        "name": "Cyclone",
+        "glyph": "ϟ",
+        "weather": "storm",
+        "environment": "roof",
+        "p": {
+          "wind": 19,
+          "profile": "storm",
+          "people": 8,
+          "room": 150,
+          "rain": 1,
+          "ambient": 28
+        }
+      }
+    ],
+    "water": [
+      {
+        "id": "breeze",
+        "name": "Park breeze",
+        "glyph": "☀",
+        "weather": "clear",
+        "environment": "park",
+        "p": {
+          "wind": 4.5,
+          "profile": "steady",
+          "pond": 100,
+          "temp": 25,
+          "oxygenDemand": 0.25,
+          "rain": 0,
+          "ambient": 30
+        }
+      },
+      {
+        "id": "lull",
+        "name": "Sheltered lull",
+        "glyph": "≋",
+        "weather": "clear",
+        "environment": "canyon",
+        "p": {
+          "wind": 2.8,
+          "profile": "lull",
+          "pond": 100,
+          "temp": 28,
+          "oxygenDemand": 0.35,
+          "rain": 0,
+          "ambient": 33
+        }
+      },
+      {
+        "id": "night",
+        "name": "Hot night",
+        "glyph": "☾",
+        "weather": "night",
+        "environment": "park",
+        "p": {
+          "wind": 2.2,
+          "profile": "gusts",
+          "pond": 100,
+          "temp": 30,
+          "oxygenDemand": 0.55,
+          "rain": 0,
+          "ambient": 31
+        }
+      },
+      {
+        "id": "rain",
+        "name": "Monsoon",
+        "glyph": "☂",
+        "weather": "rain",
+        "environment": "park",
+        "p": {
+          "wind": 7,
+          "profile": "gusts",
+          "pond": 150,
+          "temp": 26,
+          "oxygenDemand": 0.4,
+          "rain": 0.8,
+          "ambient": 29
+        }
+      },
+      {
+        "id": "storm",
+        "name": "Storm surge",
+        "glyph": "ϟ",
+        "weather": "storm",
+        "environment": "park",
+        "p": {
+          "wind": 19,
+          "profile": "storm",
+          "pond": 180,
+          "temp": 27,
+          "oxygenDemand": 0.35,
+          "rain": 1,
+          "ambient": 27
+        }
+      }
+    ]
+  },
+  "definitions": {
+    "wind": [
+      "Wind speed",
+      0,
+      60,
+      0.1,
+      "m/s"
+    ],
+    "diameter": [
+      "Rotor diameter",
+      0.3,
+      2,
+      0.1,
+      "m"
+    ],
+    "units": [
+      "Installed units",
+      1,
+      10,
+      1,
+      ""
+    ],
+    "ratio": [
+      "Gear reduction",
+      1,
+      5,
+      0.5,
+      ": 1"
+    ],
+    "ambient": [
+      "Air temperature",
+      10,
+      55,
+      1,
+      "°C"
+    ],
+    "rain": [
+      "Rain intensity",
+      0,
+      1,
+      0.1,
+      ""
+    ],
+    "room": [
+      "Room volume",
+      30,
+      500,
+      10,
+      "m³"
+    ],
+    "people": [
+      "Occupants",
+      0,
+      30,
+      1,
+      ""
+    ],
+    "backgroundACH": [
+      "Background ventilation",
+      0.2,
+      2,
+      0.1,
+      "ACH"
+    ],
+    "pressure": [
+      "Duct pressure",
+      5,
+      80,
+      1,
+      "Pa"
+    ],
+    "pond": [
+      "Pond volume",
+      20,
+      500,
+      10,
+      "m³"
+    ],
+    "temp": [
+      "Water temperature",
+      10,
+      30,
+      0.5,
+      "°C"
+    ],
+    "oxygenDemand": [
+      "Oxygen demand",
+      0,
+      1,
+      0.05,
+      "mg/L/h"
+    ]
+  },
+  "steppers": {
+    "units": [
+      "ZeroWatt units on the roof",
+      1,
+      10
+    ],
+    "boats": [
+      "Boats on the pond",
+      1,
+      6
+    ],
+    "upb": [
+      "ZeroWatt units per boat",
+      1,
+      2
+    ]
+  },
+  "mounts": [
+    [
+      "boat",
+      "Pontoon boats · moving"
+    ],
+    [
+      "anchored",
+      "Pontoon boats · moored"
+    ]
+  ],
+  "profiles": [
+    [
+      "steady",
+      "Steady wind"
+    ],
+    [
+      "gusts",
+      "Gusts"
+    ],
+    [
+      "lull",
+      "Repeating lull"
+    ],
+    [
+      "storm",
+      "Storm gusts"
+    ]
+  ],
+  "advancedDefaults": {
+    "wind": 4.5,
+    "irradiance": 1000,
+    "soc": 72,
+    "targetRPM": 240,
+    "speed": 1,
+    "sunHour": 10,
+    "weather": "sunny",
+    "night": false,
+    "fault": false,
+    "control": "auto",
+    "quality": "auto",
+    "pvWatts": 180,
+    "batteryWh": 240,
+    "motorMaxW": 95,
+    "motorEfficiency": 0.78,
+    "controllerEfficiency": 0.94,
+    "transmissionEfficiency": 0.84,
+    "fanRatedW": 60,
+    "ratedFlow": 850,
+    "assistOn": 0.9,
+    "assistOff": 1.05,
+    "verifySeconds": 1.5,
+    "lowSOC": 12,
+    "recoverSOC": 20,
+    "maxChargeW": 75
+  }
+}

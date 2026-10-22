@@ -13,9 +13,9 @@ async function run(){
  const stats=meshSnapshot(s,path.join(folder,'workstation-review.json'));
  fs.writeFileSync(path.join(folder,'mobility-validation.json'),JSON.stringify({
    cars:s.city.cars.length,carTypes:[...new Set(s.city.cars.filter(c=>c.model).map(c=>c.modelId))],allCarsUseRealModels:s.city.cars.every(c=>c.model),
-   cyclists:s.city.cyclists.length,routes:s.city.paths.length,junctions:s.city.network.junctions.length,
+   cyclists:s.city.cyclists.length,pedestrians:s.city.pedestrians.length,routes:s.city.paths.length,junctions:s.city.network.junctions.length,
    computerOperators:s.people.filter(p=>p.userData.seatRole==='computer-operator').length,occupants:30,reviewGeometry:stats,
-   limitation:'Offline geometry and deterministic motion checks. No measured browser FPS or GPU performance.'
+   limitation:'Offline geometry snapshot; actual browser timings and movement are recorded separately in citywide-browser-review.json and live-traffic-motion.json.'
  },null,2)+'\n');
  console.log('MOBILITY_REVIEW_CAPTURED',stats);
 }

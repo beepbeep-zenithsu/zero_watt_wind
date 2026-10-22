@@ -1,0 +1,14 @@
+﻿metric,value,basis,source_id
+pond_area_ha,424168,S,dof
+pond_count,2543869,S,dof
+pond_production_tonnes,2368741,S,dof
+pollution_deaths_all_causes,272000,S lower bound,wb
+pollution_illness_days,5200000000,S,wb
+air_pollution_GDP_pct_2019,8.32,S,wb
+site_fish_stock_kg,1000,A,
+site_fish_price_bdt_kg,200,A,
+site_loss_fraction_low,0.02,A,
+site_loss_fraction_base,0.1,A,
+site_loss_fraction_high,0.3,A,
+site_base_stock_exposure_bdt,20000.0,"D from A, not avoided loss",
+clinic_baseline_electric_bdt_year,2180.1450000000004,D current hospital tariff S plus A hours,tarifforder

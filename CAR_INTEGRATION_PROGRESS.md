@@ -36,12 +36,13 @@ The user has explicitly chosen to use the three available types and stop searchi
 ## Verification
 
 - npm run build passed for both bundles.
-- npm test passed 76/76, including all 36 real replacements, every street segment, 12 car/bike routes, four minutes of protected pedestrian crossings, high-refresh continuity, shared buffers and active LOD counts, car spacing, signal restart, weather/pause behavior, rider articulation and 30-person workstation clearance.
+- npm test passed 77/77, including all 36 real replacements, every street segment, 12 car/bike routes, four minutes of protected pedestrian crossings, high-refresh continuity, shared buffers/LOD counts, weather/pause behavior, rider articulation, 30-person workstation clearance and explicit Play with reduced-motion preferences.
 - Actual nine vehicle GLBs passed independent hash, geometry, world-bounds, grounding, decoder, texture-size and embedded-credit validation.
 - Blender 5.2.2 LTS was actually run headlessly for source inspection, disconnected wheel extraction, material refinement, LOD exports, the rider asset and final visual reviews. No Blender MCP was used.
 - The separate original technical-fixture LOD regression also passed through the real GLTFLoader. It is not presented as any of the requested cars and is excluded from the ZIP.
 - Blender review images show the actual installed car GLBs, the actual room layout at 30 occupants and the bicycle/rider. These are geometry/PBR reviews, not browser screenshots.
 - A real headless Edge/WebGL review checks basic, pond and advanced scenes, weather variants and actual website mode switches. Browser images, GPU and frame/draw measurements are recorded in docs/cars/citywide-browser-review.json. Timings apply to that machine and viewport. Offline geometry tests use placeholder image decoding; the browser renders actual textures.
+- A separate live-page movement check reproduces and verifies the reduced-motion Play freeze fix. Initial reduced-motion pause remains respected; pressing Play now moves cars, bicycles and walkers. Actual car positions are measured before/after in basic, advanced and pond modes with both motion preferences: docs/cars/live-traffic-motion.json. The main bundle URL is versioned so refreshing fetches the new code.
 
 ## Previous work preserved
 
@@ -54,3 +55,6 @@ Complete updated text files and binary asset links: deliveries/citywide-traffic-
 Run npm run build, npm test and npm start; open http://127.0.0.1:5500/ . Vehicle sources/credits: assets/cars/SOURCES.md. Rebuild commands: docs/cars/TRAFFIC-PIPELINE.md. Cyclist regeneration: node tools/run-blender.cjs scripts/blender/build_city_cyclists.py .
 
 The current scope uses the three available types. No additional source hunt or account is needed. Preserve the city movement, source credits and corner workstation in subsequent changes.
+# Latest delivery: traffic safety and red P72 shape
+
+The red P72 now keeps its original mesh at every camera distance instead of switching to the coarse body. Junction reservations, car/bicycle body clearance and pavement queues have been repaired. The latest ten-minute audit records zero collisions across 36 cars, 24 riders and 80 walkers; every actor makes repeated progress. All 77 existing tests passed before the final compatible-movement adjustment, followed by targeted mobility/environment checks. See `docs/cars/traffic-safety-audit.json` and `docs/cars/CITY-MOBILITY.md` for measured distances, waits and limitations. Updated full files: `deliveries/traffic-safety-20261022/` and `ZeroWatt-Premium-City.zip`.

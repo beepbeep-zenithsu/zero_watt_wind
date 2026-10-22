@@ -1,0 +1,365 @@
+[
+  {
+    "task": 1,
+    "title": "Production component specification",
+    "draft": "A production assembly needs a weatherproof rotor/hub, load-rated shafts, two bevel stages, thrust/radial supports, guards, overspeed brake, mounting and corrosion protection. A adds an axial fan, sealed shaft sleeve, plenum, duct, cowl, screened intake and waterproof roof interface. B adds paddles, float frame, compartmented HDPE pontoons, mooring, guards and retrieval provisions. Two-site combined installation duplicates the core. PLA is retained for patterns and noncritical parts, not assumed safe as rooftop gears or permanent pontoons.",
+    "sources": [
+      "project",
+      "poster",
+      "windguide",
+      "bearing3"
+    ],
+    "objections": [
+      "A printed assembly does not specify full-scale fatigue or cyclone loads.",
+      "Bearing bore, shaft tolerance and gear modules may not match.",
+      "Axial thrust support is easy to omit.",
+      "Roof leakage, guarding and moorings are hidden components.",
+      "A rooftop and a pond cannot share one rotor without an uncosted transmission."
+    ]
+  },
+  {
+    "task": 2,
+    "title": "Market prices and uncertainty",
+    "draft": "Collect exact visible retail offers with currency, stock caveats and observation date. Compute comparable-family low/median/high only when legitimate independent offers exist. Filament has several Bangladesh offers. Bearings span local generic and foreign branded options; do not call these interchangeable quotes. Custom rotor, structural frame, guards and production gear sets need RFQs; model them as assumptions. A price interval is not three sourced observations.",
+    "sources": [
+      "filament1",
+      "filament2",
+      "bearing1",
+      "bearing2",
+      "bearing3",
+      "gear",
+      "fanweb",
+      "aerator1"
+    ],
+    "objections": [
+      "Three pages may be one seller or one brand network.",
+      "A hobby gear price is not a load-rated gearbox price.",
+      "Foreign list prices exclude freight, customs and brokerage.",
+      "Cached stock and date may be stale.",
+      "Ranges must not masquerade as independent quotations."
+    ]
+  },
+  {
+    "task": 3,
+    "title": "Sustainable build methods",
+    "draft": "Use a printed pattern and locally formed sheet-metal rotor, machined steel shafts and purchased sealed bearings. Recycled aluminium needs alloy traceability and fatigue inspection. PETG/ASA parts need UV and creep tests; recycled filament needs moisture control, coupon tests and batch traceability. Bamboo can be a replaceable noncritical support or jig only after load/rot treatment checks. Use recoverable HDPE floats, mechanical fasteners, replaceable wear parts and a take-back agreement.",
+    "sources": [
+      "filament1",
+      "windguide"
+    ],
+    "objections": [
+      "Bio-based does not imply ambient biodegradation or low total emissions.",
+      "Recycled feedstock can fail fatigue or print consistency.",
+      "Bamboo treatment and replacement add impacts.",
+      "Printed structural parts creep in hot sunlight.",
+      "Cheap material can increase scrap, labour and warranty expense."
+    ]
+  },
+  {
+    "task": 4,
+    "title": "Build from scratch versus assemble",
+    "draft": "Compare a workshop-fabricated rotor and frame with purchased drive elements against a largely outsourced assembly. Allocate setup/tooling over actual batches, not over speculative lifetime sales. Model batch quantities and crossover algebra in Python. No economical case is assumed for manufacturing bearing balls or precision gear teeth in-house. Setup capacity and quality rejects matter at scale.",
+    "sources": [
+      "filament1",
+      "filament2",
+      "gear",
+      "bearing3"
+    ],
+    "objections": [
+      "DIY savings may ignore tooling and metrology.",
+      "Batch-volume discounts are unquoted.",
+      "A scale curve does not demonstrate customer demand.",
+      "Labour time and scrap may erase the crossover.",
+      "Different quality specifications invalidate cost comparisons."
+    ]
+  },
+  {
+    "task": 5,
+    "title": "Equivalent-service lifetime comparison",
+    "draft": "Define the airflow/pressure or net oxygen transfer first. Wind-only equipment cannot guarantee continuous service, so compare an electric baseline to wind plus the same backup, while also disclose wind-only unmet demand. Use measured pressure-flow and oxygen-transfer curves when available; currently NOT FOUND. Published/supplier aerator SAE is standard-condition oxygen transfer, not field oxygen delivery. Diesel is a generator-fed electric reference with part-load fuel and capital included.",
+    "sources": [
+      "fao",
+      "fanweb",
+      "aerator1",
+      "tariff"
+    ],
+    "objections": [
+      "Equal purchase cost is not equal ventilation or oxygen service.",
+      "Average wind output hides calm critical hours.",
+      "Standard SAE overstates oxygen transfer near saturation.",
+      "Backup, replacement and fuel logistics can reverse savings.",
+      "Using a large electric aerator against a tiny wind rotor exaggerates benefit."
+    ]
+  },
+  {
+    "task": 6,
+    "title": "Prototype-to-market investment",
+    "draft": "Budget engineering, metrology, fabrication tools, pilot units, independent testing, registration, launch and working capital with a contingency. Keep prelaunch sunk expenditure in year-zero project cash flow. Separate inventory/receivables from expense; do not count the same pilot or tool twice. A staged validation programme precedes commercial ramp.",
+    "sources": [
+      "filament2",
+      "idea",
+      "windguide"
+    ],
+    "objections": [
+      "Prototype cost omits certification, failures and redesign.",
+      "Free university labour is not a sustainable company budget.",
+      "Working capital is not the same as OPEX.",
+      "Contingency can conceal duplicated line items.",
+      "Market readiness needs evidence beyond a polished simulation."
+    ]
+  },
+  {
+    "task": 7,
+    "title": "Monthly and annual operating cost",
+    "draft": "Use paid labour, rent, utilities, logistics, maintenance, marketing, administration, insurance and warranty reserve. Variable manufacturing/installation costs are separate from fixed overhead. Fleet maintenance belongs to recurring-service models; sold-unit warranty is included in sale economics. Tax is a scenario reserve until entity-specific legal advice and latest rules are verified.",
+    "sources": [
+      "tariff",
+      "rate"
+    ],
+    "objections": [
+      "Founder labour cannot remain free indefinitely.",
+      "Travel and warranty claims correlate with remote-site failures.",
+      "Insurance and roof liability quotes are unavailable.",
+      "Fleet servicing must not also be charged in COGS.",
+      "Statutory turnover/minimum taxes may differ from a simple profit reserve."
+    ]
+  },
+  {
+    "task": 8,
+    "title": "Commercial models, demand and revenue",
+    "draft": "No business models or tariffs were found in supplied PDFs/current site. Proposed alternatives are hardware sale, lease, metered use, installation and maintenance. Combined business assigns mutually exclusive assets to sale/lease/use; installation only to sales and AMC only to eligible sold units. Price, adoption, willingness to pay and retention are assumptions. Fisheries hectares are context, not customers. Sponsor-funded pilots and educational sites are more credible initial customers than critical-care substitution.",
+    "sources": [
+      "poster",
+      "project",
+      "fanweb",
+      "aerator1",
+      "idea"
+    ],
+    "objections": [
+      "Evidence for willingness to pay is missing.",
+      "All five models can double-count the same asset.",
+      "National pond area does not equal an accessible paying market.",
+      "Wind-limited usage reduces revenue during calm hours.",
+      "A revenue forecast is not a purchase order or market survey."
+    ]
+  },
+  {
+    "task": 9,
+    "title": "Profit by model and consolidated",
+    "draft": "Reconcile sales, direct costs, overhead, depreciation, tax reserve and free cash flow monthly. Allocate fixed costs explicitly for alternative model comparisons; combined rows use a shared overhead pool once. Provider-owned fleet capex is not COGS and its depreciation is not an additional cash payment. Report losses and negative NPV honestly.",
+    "sources": [
+      "rate",
+      "tariff"
+    ],
+    "objections": [
+      "EBITDA hides replacement and fleet capital.",
+      "Fleet depreciation and capex may be counted twice.",
+      "Revenue growth can hide negative working capital cash flow.",
+      "Tax losses cannot automatically be refunded.",
+      "A consolidated total cannot sum full-overhead standalone alternatives."
+    ]
+  },
+  {
+    "task": 10,
+    "title": "Funding strategy",
+    "draft": "Prioritise university facilities, CSR pilots and a pre-seed grant; keep them outside operating revenue and project NPV. iDEA supports grants but eligibility needs confirmation for a mechanical-first project. Startup Bangladesh equity terms and IDCOL project lending are possibilities, not awards. Bank refinance is mediated by eligible lenders; GCF is normally accessed via accredited entities. BCCRF legacy programme is not assumed an open startup grant. Probability/timeline estimates are analyst judgement, not observed acceptance rates.",
+    "sources": [
+      "idea",
+      "startup",
+      "idcol",
+      "ideasm"
+    ],
+    "objections": [
+      "A programme pool is not a cheque available to this team.",
+      "Mechanical-only hardware may not meet an ICT call.",
+      "Loans require repayment and may need collateral.",
+      "Grant success probabilities are not published.",
+      "Old competitions and climate funds may have no current call."
+    ]
+  },
+  {
+    "task": 11,
+    "title": "Problem sizing without over-attribution",
+    "draft": "Use Bangladesh pollution and fisheries evidence to establish context, then distinguish the addressable mechanism. National air-pollution losses are not losses caused solely by stale-room CO2 and cannot be claimed as ZeroWatt savings. Fish oxygen deficits are especially dangerous before dawn; news fish kills can have multiple causes. Use a transparent site-level energy/time/yield exposure example and leave monetised health/yield benefits at zero until measured.",
+    "sources": [
+      "wb",
+      "harvard",
+      "fao",
+      "clinic"
+    ],
+    "objections": [
+      "National air-pollution burden is not a ventilation market.",
+      "Observational cognition effects are not a guaranteed productivity gain.",
+      "A fish-kill headline may involve toxins and flooding.",
+      "No local time-use or avoided-mortality trial was supplied.",
+      "Yield benefits can double-count energy and feed savings."
+    ]
+  },
+  {
+    "task": 12,
+    "title": "Complete simulation interpretation",
+    "draft": "Audit basic ventilation, pond and advanced hybrid source, all named weather cases, controls, hardware and equations. Preserve all coefficients in JSON/CSV. Basic and pond are steady-state, perfectly mixed illustrations; advanced integrates battery energy with a simplified fan curve. Storm rotation is a deliberate display behaviour, not safe cut-out. Scene graphics, sun tracking and RPM animations are explanatory only.",
+    "sources": [
+      "site",
+      "project",
+      "poster",
+      "windguide"
+    ],
+    "objections": [
+      "A dynamic animation is not CFD or a field test.",
+      "Declared cutout thresholds are not applied.",
+      "Basic and advanced have different assumed rotor geometry.",
+      "Battery animation may conceal inadequate autonomy.",
+      "Removing metric panels does not validate underlying numbers."
+    ]
+  },
+  {
+    "task": 13,
+    "title": "Basic and advanced ventilation costing",
+    "draft": "Compare basic wind plus electric backup with advanced wind/PV/battery and a conventional electric exhaust. Use the same explicit room-volume/flow service for the cost model, with a costed backup for residual hybrid shortfall. A household wall fan retail listing lacks a duct pressure curve. The advanced prototype is an expanded site concept, not present in the physical PDF prototype.",
+    "sources": [
+      "fanweb",
+      "whoweb",
+      "clinic",
+      "windguide"
+    ],
+    "objections": [
+      "Airflow at free air differs from a ducted pressure point.",
+      "Hybrid power is not zero-electric operation.",
+      "A small battery cannot cover an entire still night.",
+      "Solar yield and wind can be correlated seasonally.",
+      "A fan identifier does not demonstrate infection-control compliance."
+    ]
+  },
+  {
+    "task": 14,
+    "title": "Ventilation versus pond opportunity",
+    "draft": "Ventilation supports a small instrumented trial with measurable flow and intake controls; oxygen-critical aquaculture needs more conservative standby and pre-dawn DO verification. Pond moorings, corrosion and retrieval add costs. Neither sector has a validated paying-market survey. Prefer noncritical supplemental deployments and establish service performance before scale.",
+    "sources": [
+      "fao",
+      "clinic",
+      "windguide",
+      "aerator1"
+    ],
+    "objections": [
+      "Fish mortality liability exceeds electricity savings.",
+      "Lowland pond wind may be weaker than rooftop wind.",
+      "Rooftop turbulence raises fatigue and noise risk.",
+      "Market size and adoption are assumptions.",
+      "Co-benefits must not be used to conceal poor payback."
+    ]
+  },
+  {
+    "task": 15,
+    "title": "Complete BOM for separate and combined cases",
+    "draft": "Export component-level quantities and low/base/high extended costs for A, B and two-site A+B; include optional advanced components separately. The combined case shares procurement/tooling allocations only where explicitly stated and duplicates installed machinery. Production materials and functions are itemised; ancillary installation labour is separate from ex-works BOM.",
+    "sources": [
+      "project",
+      "poster",
+      "fanweb",
+      "bearing3"
+    ],
+    "objections": [
+      "Combined-case rotor costs may be incorrectly shared.",
+      "Optional telemetry must not be in the zero-electric core.",
+      "Fasteners, seals and guards are easily omitted.",
+      "Floats need reserve buoyancy and flooding compartments.",
+      "A costed BOM is not fabrication CAD or a safety certificate."
+    ]
+  },
+  {
+    "task": 16,
+    "title": "Bangladesh sourcing and imports",
+    "draft": "Use named online sources for traceable indications; solicit equivalent-specification written RFQs from local workshops for rotor, shaft, frame and duct. TechShopBD/Costareen for printing, local electrical distribution for fans, NSC/Leading Agro for conventional pond hardware, and Motion/MISUMI as foreign specification benchmarks. Nawabpur and Dholaikhal are candidate market districts, not verified specific fabricators. Freight/lead-time/duty reserves remain assumptions until classification and quotations.",
+    "sources": [
+      "filament1",
+      "filament2",
+      "gear",
+      "bearing3",
+      "aerator1",
+      "customs"
+    ],
+    "objections": [
+      "Marketplace district names are not supplier quotes.",
+      "Import HS classification can alter total tax incidence.",
+      "Used shafts/gears may lack material traceability.",
+      "Cached dispatch claims are not Bangladesh landed lead times.",
+      "Supplier environmental claims require verification."
+    ]
+  },
+  {
+    "task": 17,
+    "title": "Future scope and incremental cost",
+    "draft": "Prioritise calibrated test instrumentation, passive fail-safe overspeed control, durability/material substitution, a fixed-PV hybrid pilot and modular fleet deployment. Telemetry and solar tracking add electrical/maintenance burdens and need a measured value case. Grain grinding from the hand sketch remains deferred because torque and food-contact performance are not demonstrated. Stage costs before benefits.",
+    "sources": [
+      "windguide",
+      "spiral",
+      "spiral2026",
+      "fanweb",
+      "idea"
+    ],
+    "objections": [
+      "Future features can inflate a weak core business.",
+      "A tracker may cost more than the PV energy gained.",
+      "More units do not solve simultaneous wind lulls.",
+      "Sensor readings require calibration and maintenance.",
+      "Grain grinding is not an implemented validated application."
+    ]
+  },
+  {
+    "task": 18,
+    "title": "References for future work",
+    "draft": "Map each future item to the specific test or engineering principle its source supports. Spiral-turbine studies justify a test methodology, not borrowed Cp. DO manuals justify oxygen monitoring; WHO/clinic evidence supports measuring ventilation. Published materials/LCA and small-wind guidance justify durability/siting work. Any exact improvement percentage, component life or cost without a matching source stays an assumption.",
+    "sources": [
+      "spiral",
+      "spiral2026",
+      "windguide",
+      "fao",
+      "whoweb",
+      "clinic"
+    ],
+    "objections": [
+      "A paper on another rotor is not validation of this rotor.",
+      "Simulation-only claims must not be called experimental evidence.",
+      "Old guidance may be technologically outdated.",
+      "Foreign studies may not transfer to Bangladesh climate.",
+      "A bibliography entry does not support every statement nearby."
+    ]
+  },
+  {
+    "task": 19,
+    "title": "Affordability and subsidy-free value",
+    "draft": "Report customer economics separately from the manufacturer business. Compare total cost of equal service, cost per ACH-hour and field kg oxygen, incremental saving and incremental payback. No subsidy or health/fish-yield premium rescues the base case silently. Negative net savings means no finite payback. A service tariff must fit the customer avoided-cost ceiling, not merely recover provider cost.",
+    "sources": [
+      "fanweb",
+      "aerator1",
+      "tariff",
+      "fao"
+    ],
+    "objections": [
+      "A cheap purchase can have expensive maintenance.",
+      "Ignoring backup makes intermittent equipment look affordable.",
+      "Customer and manufacturer payback differ.",
+      "Cost per ACH needs room volume and operating hours.",
+      "A kg oxygen denominator must be actual delivered oxygen."
+    ]
+  },
+  {
+    "task": 20,
+    "title": "Environmental screening and end of life",
+    "draft": "Use an explicitly bounded materials/transport/maintenance estimate and credit only grid energy actually displaced at equal service. The DoE factor is dated and not a prediction of future grids. Embodied factors, material masses and recovery rates are assumptions until supplier data exist. Do not claim zero carbon, zero noise or zero wildlife harm. Design for mechanical separation, lubricant containment, battery take-back and no release of printed fragments to ponds.",
+    "sources": [
+      "gef",
+      "wb",
+      "windguide",
+      "filament1"
+    ],
+    "objections": [
+      "Bio-based PLA is not automatically compostable in a pond.",
+      "Lifetime energy displacement may not repay embodied emissions.",
+      "Avoided grid factor is historical, not future marginal emissions.",
+      "Noise, vibration and wildlife interactions are unmeasured.",
+      "Replacement parts and transport may dominate small output."
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-22",
+  "endpoint": "https://api.sketchfab.com/v3/models/ab85c302e652492196b600ee1eb7106a/download",
+  "authenticated": false,
+  "status": 401,
+  "response": {
+    "detail": "Authentication credentials were not provided."
+  },
+  "documentation": "https://sketchfab.com/developers/download-api/downloading-models",
+  "result": "No model downloaded. User confirmed no Sketchfab account is available.",
+  "context": "Historical API-only attempt. Three real models were subsequently downloaded without accounts from licensed public archives; see acquisition-receipts.json."
+}

@@ -1,10 +1,11 @@
 /* Complete source copies and binary inventory for the installed city upgrade. */
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const root=path.resolve(__dirname,'..'),folder=path.join(root,'deliveries/city-mobility-20261022');
+const root=path.resolve(__dirname,'..'),folder=path.join(root,'deliveries/traffic-safety-20261022');
 const files=[
   'CAR_INTEGRATION_PROGRESS.md','package.json','index.html','scene.js','app.bundle.js','car-showcase.bundle.js',
   'src/cars/car-catalog.js','src/cars/traffic-fleet.js','src/cars/installed-fleet.js',
   'src/graphics/city.js','src/graphics/traffic.js','src/graphics/assets.js','src/graphics/road-network.js','src/graphics/cyclists.js','src/graphics/occupant-layout.js',
+  'src/graphics/people.js','src/graphics/motion-route.js','src/graphics/mobility-shadows.js','tools/review-citywide-browser.cjs','tools/check-live-traffic.cjs',
   'scripts/blender/prepare_car.py','scripts/blender/make_traffic_lods.py','scripts/blender/test_traffic_lods.py',
   'scripts/blender/build_city_cyclists.py','scripts/blender/prepare_downloaded_traffic.py','scripts/blender/refine_traffic_materials.py','scripts/blender/inspect_traffic_sources.py','scripts/blender/render_mobility_review.py',
   'tools/run-blender.cjs','tools/build-environment.cjs','tools/download-traffic-models.cjs','tools/download-traffic-models.ps1','tools/make-traffic-lods.ps1',
@@ -12,16 +13,19 @@ const files=[
   'tools/deliver-city-mobility.cjs','tools/package-city.ps1','tools/fetch-car-candidate-metadata.cjs','tools/inspect-public-car-repositories.cjs','tools/research-account-free-cars.cjs','tools/search-car-repositories.cjs',
   'tests/fleet.test.cjs','tests/environment.test.cjs','tests/city-mobility.test.cjs','assets/environment/manifest.json',
   'assets/cars/SOURCES.md','assets/cars/CREDITS.html','assets/cars/traffic-sources.json',
-  'docs/cars/TRAFFIC-PIPELINE.md','docs/cars/CITY-MOBILITY.md','docs/cars/installed-asset-validation.json','docs/cars/mobility-validation.json','docs/cars/fixture-validation.json'
+  'docs/cars/TRAFFIC-PIPELINE.md','docs/cars/CITY-MOBILITY.md','docs/cars/installed-asset-validation.json','docs/cars/mobility-validation.json','docs/cars/fixture-validation.json','docs/cars/citywide-browser-review.json','docs/cars/live-traffic-motion.json'
 ];
 for(const name of fs.readdirSync(path.join(root,'assets/cars/metadata')).filter(n=>n.endsWith('.json')))files.push('assets/cars/metadata/'+name);
 for(const id of ['jaguar-e-type','porsche-taycan','de-tomaso-p72'])files.push(`assets/cars/traffic/${id}.report.json`);
 const binary=[];
+files.push('tools/audit-city-traffic.cjs','docs/cars/traffic-safety-audit.json','docs/cars/traffic-safety-water-rain.json');
 for(const id of ['jaguar-e-type','porsche-taycan','de-tomaso-p72'])for(const suffix of ['-lod0.glb','-lod1.glb','-lod2.glb','.blend'])binary.push(`assets/cars/traffic/${id}${suffix}`);
 binary.push('assets/environment/site-cyclist.glb','assets/environment/city-cyclists.blend');
 for(const name of ['installed-cars-review.png','cyclist-review.png','workstation-review.png'])binary.push('docs/cars/'+name);
+for(const name of ['citywide-clear.png','citywide-rain.png','citywide-night.png','citywide-water-clear.png','citywide-advanced-clear.png','citywide-advanced-rain.png'])binary.push('docs/cars/'+name);
 const created=new Set(['src/cars/installed-fleet.js','src/graphics/road-network.js','src/graphics/cyclists.js','src/graphics/occupant-layout.js','scripts/blender/build_city_cyclists.py','scripts/blender/prepare_downloaded_traffic.py','scripts/blender/refine_traffic_materials.py','scripts/blender/inspect_traffic_sources.py','scripts/blender/render_mobility_review.py','tools/deliver-city-mobility.cjs','tools/capture-mobility-review.cjs','tools/update-car-source-report.cjs','tests/city-mobility.test.cjs','assets/cars/CREDITS.html','assets/cars/metadata/acquisition-receipts.json','docs/cars/CITY-MOBILITY.md','docs/cars/installed-asset-validation.json','docs/cars/mobility-validation.json']);
 const hash=data=>crypto.createHash('sha256').update(data).digest('hex');
+for(const file of ['src/graphics/motion-route.js','src/graphics/mobility-shadows.js','tools/review-citywide-browser.cjs','tools/check-live-traffic.cjs','docs/cars/citywide-browser-review.json','docs/cars/live-traffic-motion.json'])created.add(file);
 const manifest=[];
 for(const file of files){
   const data=fs.readFileSync(path.join(root,file)),copy=path.join(folder,'files',file+'.txt');
@@ -34,17 +38,17 @@ fs.writeFileSync(path.join(folder,'manifest.json'),JSON.stringify(manifest,null,
 const link=file=>path.join(root,file).replaceAll('\\','/');
 const rows=manifest.filter(m=>m.textCopy).map(m=>`| ${m.action} | ${m.path} | [Full contents](<${path.join(folder,m.textCopy).replaceAll('\\','/')}>) |`).join('\n');
 const assets=manifest.filter(m=>!m.textCopy).map(m=>`- [${m.path}](<${link(m.path)}>) (${m.bytes.toLocaleString('en-US')} bytes)`).join('\n');
-fs.writeFileSync(path.join(folder,'DELIVERY.md'),`# City traffic, bicycles and workstation delivery
+fs.writeFileSync(path.join(folder,'DELIVERY.md'),`# Whole-city movement and Play fix — complete files
 
-Actual Jaguar E-Type, Porsche Taycan and De Tomaso P72 models are installed across all 18 moving cars. Each type includes three headless Blender-generated LODs and a packed editable Blender source. These are downloaded creator meshes, credited under CC BY 4.0, obtained without an account through the public Objaverse archive. Original source URLs, licenses, modifications and SHA-256 receipts are included.
+Thirty-six actual Jaguar E-Type, Porsche Taycan and De Tomaso P72 cars, 24 cycling riders and 80 pedestrians populate the city in basic, advanced and pond modes. All 12 vehicle routes carry the three installed types and cover every street segment between all nine blocks. Pedestrians choose destinations across the city and use protected marked crossings at all 16 junctions. The user has chosen these three car types; no further sourcing is needed.
 
-**The eight-car request remains partially complete: 3/8 car types are installed.** Ferrari Roma, McLaren GT, Pininfarina Battista, McLaren Elva and Lotus Evija still lack an accepted account-free, redistributable download. No other car is labeled as one of these five. See [source evidence](<${link('assets/cars/SOURCES.md')}>).
+**Fixed the stationary-traffic bug:** a reduced-motion preference previously kept city movement disabled even after Play started the simulation clock. Initial pause remains respected; pressing Play now starts cars, riders and walkers. Refresh the page to fetch the versioned bundle, then press Play if the simulation starts paused. Actual car position changes are verified in all three modes with both motion preferences: [live movement results](<${link('docs/cars/live-traffic-motion.json')}>).
 
-Ten animated riders pedal bicycles. Cars and bikes use eight routes across the district, share junction reservations and accelerate smoothly. Dry-weather cruising speeds are 7.2 m/s for cars and 4.2 m/s for bicycles; wet and storm conditions slow traffic. The computer now occupies a rear corner with exactly one operator. The other seats stay clear of the desk up to 30 occupants, including the smallest room.
+Dry-weather cruise is 8.4 m/s for cars, 5 m/s for bicycles and 1.75–2.11 m/s for walkers. Traffic slows for curves, queues, signals and weather. Fair junction requests prevent cyclist starvation; vehicles check exit space before entering. Fixed 120 Hz physics and fractional-step render poses keep motion smooth on high-refresh displays. Instanced car/LOD parts, cached routes and reused matrices/colors/bounds reduce CPU work and draw overhead. The corner workstation still has one operator and remains clear at 30 occupants.
 
-[Download the complete updated project](<${link('ZeroWatt-Premium-City.zip')}>). Extract it, then use the existing server or run npm install and npm start. The ZIP contains all website files, binary assets and these complete source copies under ZeroWatt-City/. The previous full project remains in checkpoints/city-before-mobility-20261022.zip.
+[Download the complete updated project](<${link('ZeroWatt-Premium-City.zip')}>). Extract it, then use the existing server or run npm install and npm start. The ZIP contains all website files, binary assets and these complete source copies under ZeroWatt-City/. The previous full project remains in checkpoints/city-before-citywide-20261022.zip. All three car types include three Blender-generated LODs and packed editable sources. Preserve [creator credits and licenses](<${link('assets/cars/SOURCES.md')}>).
 
-Validation: npm run build; 73/73 tests; headless Blender source preparation, nine production LOD exports and fixture round trip; real GLTFLoader placement and wheel checks. Geometry/motion checks and Blender review renders passed. Browser FPS and GPU performance have not been measured. [Validation report](<${link('docs/cars/mobility-validation.json')}>) and [asset checks](<${link('docs/cars/installed-asset-validation.json')}>) are included.
+Validation: npm run build; 77/77 tests; protected crossings throughout the whole grid; high-refresh continuity, pause, queues and actual car loading. A real headless Edge/WebGL review renders sunlight/rain/night, pond and advanced scenes, and switches modes in the actual website without page errors. [Timing/hardware report](<${link('docs/cars/citywide-browser-review.json')}>) records measured frame intervals, render work and draw/triangle counts. Timings apply to that machine and viewport. [Geometry report](<${link('docs/cars/mobility-validation.json')}>) and [car asset checks](<${link('docs/cars/installed-asset-validation.json')}>) are included. No new mesh generation was needed for this runtime movement fix; the existing editable Blender assets and credits are preserved.
 
 ## Actual assets and review images
 
@@ -59,3 +63,6 @@ ${files.length} byte-identical full text copies follow. CREATE means add the lis
 ${rows}
 `);
 console.log(`${files.length} complete source copies and ${binary.length} binary assets inventoried: ${path.join(folder,'DELIVERY.md')}`);
+const report=JSON.parse(fs.readFileSync(path.join(root,'docs/cars/traffic-safety-audit.json')));
+const delivery=path.join(folder,'DELIVERY.md');
+fs.writeFileSync(delivery,`# Traffic safety and red car shape fix\n\nThe red De Tomaso P72 now retains its original 21,495-triangle mesh at every distance, avoiding the silhouette distortion from aggressive reduction. Wheel articulation and uniform model proportions remain intact.\n\nJunction reservations expire if a vehicle never enters, committed vehicles finish crossing, and reservation release no longer extends into the next short city block. Cars and riders can share compatible movements. A final oriented-body clearance check protects turning bumpers and merging queues. Pedestrians queue at corners and request protected crossings only when they can depart.\n\nLatest deterministic run: ${report.seconds} simulated seconds, 36 cars, 24 cyclists and 80 pedestrians; ${JSON.stringify(report.collisions)} collision samples. Every car travelled at least ${report.minimumCarDistance.toFixed(1)} m; every cyclist ${report.minimumBicycleDistance.toFixed(1)} m; every pedestrian completed at least ${report.minimumPedestrianCrossings} crossings. Signals and congestion still cause deliberate stops; this is a finite regression run, not a guarantee for every possible duration or machine. See the included audit JSON for maximum waits and full diagnostics.\n\n`+fs.readFileSync(delivery,'utf8'));

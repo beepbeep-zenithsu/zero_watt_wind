@@ -1,0 +1,324 @@
+{
+  "mode": "air",
+  "weather": "clear",
+  "large": false,
+  "seconds": 600,
+  "cars": 36,
+  "cyclists": 24,
+  "pedestrians": 80,
+  "collisions": {
+    "vehicle": 0,
+    "pedestrian": 0,
+    "mixed": 0
+  },
+  "examples": [],
+  "longestCarWait": 597.5000000000673,
+  "longestBicycleWait": 596.300000000067,
+  "longestPedestrianWait": 598.2000000000675,
+  "stationaryUsers": [
+    {
+      "id": 0,
+      "kind": "car",
+      "maxWait": 544.3000000000552
+    },
+    {
+      "id": 1,
+      "kind": "car",
+      "maxWait": 592.8000000000662
+    },
+    {
+      "id": 2,
+      "kind": "car",
+      "maxWait": 548.2000000000561
+    },
+    {
+      "id": 3,
+      "kind": "car",
+      "maxWait": 459.00000000003587
+    },
+    {
+      "id": 4,
+      "kind": "car",
+      "maxWait": 508.60000000004715
+    },
+    {
+      "id": 5,
+      "kind": "car",
+      "maxWait": 534.2000000000529
+    },
+    {
+      "id": 6,
+      "kind": "car",
+      "maxWait": 525.4000000000509
+    },
+    {
+      "id": 7,
+      "kind": "car",
+      "maxWait": 567.5000000000605
+    },
+    {
+      "id": 8,
+      "kind": "car",
+      "maxWait": 509.3000000000473
+    },
+    {
+      "id": 9,
+      "kind": "car",
+      "maxWait": 538.900000000054
+    },
+    {
+      "id": 10,
+      "kind": "car",
+      "maxWait": 503.80000000004605
+    },
+    {
+      "id": 11,
+      "kind": "car",
+      "maxWait": 510.2000000000475
+    },
+    {
+      "id": 12,
+      "kind": "car",
+      "maxWait": 511.6000000000478
+    },
+    {
+      "id": 13,
+      "kind": "car",
+      "maxWait": 593.3000000000663
+    },
+    {
+      "id": 14,
+      "kind": "car",
+      "maxWait": 591.1000000000658
+    },
+    {
+      "id": 15,
+      "kind": "car",
+      "maxWait": 466.5000000000376
+    },
+    {
+      "id": 16,
+      "kind": "car",
+      "maxWait": 579.0000000000631
+    },
+    {
+      "id": 17,
+      "kind": "car",
+      "maxWait": 544.3000000000552
+    },
+    {
+      "id": 18,
+      "kind": "car",
+      "maxWait": 594.9000000000667
+    },
+    {
+      "id": 19,
+      "kind": "car",
+      "maxWait": 544.8000000000553
+    },
+    {
+      "id": 20,
+      "kind": "car",
+      "maxWait": 531.5000000000523
+    },
+    {
+      "id": 21,
+      "kind": "car",
+      "maxWait": 464.20000000003705
+    },
+    {
+      "id": 22,
+      "kind": "car",
+      "maxWait": 471.30000000003866
+    },
+    {
+      "id": 23,
+      "kind": "car",
+      "maxWait": 460.9000000000363
+    },
+    {
+      "id": 24,
+      "kind": "car",
+      "maxWait": 569.3000000000609
+    },
+    {
+      "id": 25,
+      "kind": "car",
+      "maxWait": 514.1000000000483
+    },
+    {
+      "id": 26,
+      "kind": "car",
+      "maxWait": 550.7000000000567
+    },
+    {
+      "id": 27,
+      "kind": "car",
+      "maxWait": 597.5000000000673
+    },
+    {
+      "id": 28,
+      "kind": "car",
+      "maxWait": 595.3000000000668
+    },
+    {
+      "id": 29,
+      "kind": "car",
+      "maxWait": 591.1000000000658
+    },
+    {
+      "id": 30,
+      "kind": "car",
+      "maxWait": 569.800000000061
+    },
+    {
+      "id": 31,
+      "kind": "car",
+      "maxWait": 594.3000000000666
+    },
+    {
+      "id": 32,
+      "kind": "car",
+      "maxWait": 596.300000000067
+    },
+    {
+      "id": 33,
+      "kind": "car",
+      "maxWait": 593.2000000000663
+    },
+    {
+      "id": 34,
+      "kind": "car",
+      "maxWait": 596.6000000000671
+    },
+    {
+      "id": 35,
+      "kind": "car",
+      "maxWait": 575.7000000000623
+    },
+    {
+      "id": 36,
+      "kind": "bicycle",
+      "maxWait": 548.6000000000562
+    },
+    {
+      "id": 37,
+      "kind": "bicycle",
+      "maxWait": 530.200000000052
+    },
+    {
+      "id": 38,
+      "kind": "bicycle",
+      "maxWait": 493.60000000004374
+    },
+    {
+      "id": 39,
+      "kind": "bicycle",
+      "maxWait": 558.1000000000583
+    },
+    {
+      "id": 40,
+      "kind": "bicycle",
+      "maxWait": 569.1000000000608
+    },
+    {
+      "id": 41,
+      "kind": "bicycle",
+      "maxWait": 548.6000000000562
+    },
+    {
+      "id": 42,
+      "kind": "bicycle",
+      "maxWait": 469.50000000003826
+    },
+    {
+      "id": 43,
+      "kind": "bicycle",
+      "maxWait": 531.0000000000522
+    },
+    {
+      "id": 44,
+      "kind": "bicycle",
+      "maxWait": 595.5000000000668
+    },
+    {
+      "id": 45,
+      "kind": "bicycle",
+      "maxWait": 542.7000000000548
+    },
+    {
+      "id": 46,
+      "kind": "bicycle",
+      "maxWait": 544.2000000000552
+    },
+    {
+      "id": 47,
+      "kind": "bicycle",
+      "maxWait": 509.90000000004744
+    },
+    {
+      "id": 48,
+      "kind": "bicycle",
+      "maxWait": 527.6000000000514
+    },
+    {
+      "id": 49,
+      "kind": "bicycle",
+      "maxWait": 528.7000000000517
+    },
+    {
+      "id": 50,
+      "kind": "bicycle",
+      "maxWait": 466.40000000003755
+    },
+    {
+      "id": 51,
+      "kind": "bicycle",
+      "maxWait": 502.40000000004574
+    },
+    {
+      "id": 52,
+      "kind": "bicycle",
+      "maxWait": 596.300000000067
+    },
+    {
+      "id": 53,
+      "kind": "bicycle",
+      "maxWait": 592.3000000000661
+    },
+    {
+      "id": 54,
+      "kind": "bicycle",
+      "maxWait": 510.2000000000475
+    },
+    {
+      "id": 55,
+      "kind": "bicycle",
+      "maxWait": 535.2000000000531
+    },
+    {
+      "id": 56,
+      "kind": "bicycle",
+      "maxWait": 575.2000000000622
+    },
+    {
+      "id": 57,
+      "kind": "bicycle",
+      "maxWait": 495.2000000000441
+    },
+    {
+      "id": 58,
+      "kind": "bicycle",
+      "maxWait": 535.2000000000531
+    },
+    {
+      "id": 59,
+      "kind": "bicycle",
+      "maxWait": 544.1000000000552
+    }
+  ],
+  "pedestrianCrossings": 16,
+  "minimumCarDistance": 2.879871291506571,
+  "minimumBicycleDistance": 2.3430484080686034,
+  "minimumPedestrianCrossings": 0
+}

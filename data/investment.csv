@@ -1,0 +1,9 @@
+﻿item,low_bdt,base_bdt,high_bdt,treatment,basis
+Engineering and redesign,250000,500000,1000000,prelaunch,A
+Tools printer jigs metrology,200000,450000,900000,capex,A
+Pilot fabrication and failed trials,150000,300000,600000,prelaunch,A
+Independent performance and structural tests,150000,350000,800000,prelaunch,A
+Registration legal and launch,50000,100000,200000,prelaunch,A
+low total incl contingency and working capital,1060000.0,,,D total,D from A
+base total incl contingency and working capital,,2240000.0,,D total,D from A
+high total incl contingency and working capital,,,4600000.0,D total,D from A

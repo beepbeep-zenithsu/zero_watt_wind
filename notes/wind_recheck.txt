@@ -1,0 +1,281 @@
+Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products (Technical Report) | OSTI.GOV (https://www.osti.gov/biblio/1476253)
+citeturn18search0 [wordlim: 200] Published: 8.1 years ago; Crawled: last month; # Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products ... DOI:https://doi.org/10.2172/1476253· OSTI ID:1476253 ... The Renewable Energy (RE) Data Explorer allows users to access and download the Bangladesh wind resource assessment data and related geographic information system (GIS) data sets and perform customized technical potential analyses.
+
+U.S. Department of Energy
+Office of Scientific and Technical Information
+
+Submit Research Results Search Tools Public Access Policy PIDs Services & Dev Tools About FAQs News Sign In Create Account
+
+# Assessing the Wind Energy Potential in Bangladesh: Enabling Wind Energy Development with Data Products
+
+Technical Report · Fri Sep 28 00:00:00 EDT 2018
+
+DOI:https://doi.org/10.2172/1476253· OSTI ID:1476253
+
+Jacobson, Mark ^{[1]}; Draxl, Caroline ^{[1]}; Jimenez, Tony ^{[1]}; O’Neill, Barbara ^{[1]}; Capozzola, Taj ^{[2]}; Lee, Jared A. ^{[3]}; Vandenberghe, Francois ^{[3]}; Haupt, Sue Ellen ^{[3]}
+
+  1. National Renewable Energy Lab. (NREL), Golden, CO (United States)
+  2. Harness Energy, Denver, CO (United States)
+  3. National Center for Atmospheric Research, Boulder, CO (United States)
+
+USAID Bangladesh and the U.S. Department of Energy’s National Renewable Energy Laboratory partnered with the Government of Bangladesh to develop a national wind resource assessment. The assessment used sophisticated resource modeling that was validated by a ground measurement campaign. Results from the project included a long-term, correlated wind data set; validated high-resolution wind resource maps; and publicly available data accessible through the RE Data Explorer (https://www.re-explorer.org/). The Renewable Energy (RE) Data Explorer allows users to access and download the Bangladesh wind resource assessment data and related geographic information system (GIS) data sets and perform customized technical potential analyses. Figure ES-1 is an example wind resource map for Bangladesh that can be created with the RE Data Explorer. This project improved upon existing global data sets by using best-in-class modeling techniques and analysis. Global models are good first steps in predicting wind resources in various parts of the world, but they do not generate the accuracy needed to reduce project risk and stimulate renewable investment. This project improved the quality of modeled wind resource data for Bangladesh. In addition to the modeling effort, the project team used a multi-year, local data-collection campaign to validate the model and further improve the accuracy of the data sets. The measurement campaign consisted of nine meteorological sites representing all geographical regions of the country. Seven meteorological towers and one remote-sensing, sonic detection and ranging unit (deployed at two sites) collected the data. Site-selection criteria focused on geographic diversity and proximity to existing transmission lines. Figure ES-1 shows measurement locations. The measurement campaign spanned June 2014 through December 2017. The results of the Bangladesh wind resource assessment will help Bangladesh overcome significant energy challenges. Its energy sector suffers from power shortages, increasing demand, decreasing domestic natural gas reserves, and inadequate transmission infrastructure. As part of a comprehensive plan to overcome these challenges, Bangladesh has committed that 10% of the total generation capacity will be renewable energy by 2021 (Power Division 2016). High-quality renewable energy resource data and other GIS data, such as those developed in this assessment, are important if Bangladesh wishes to reach its 10% renewable energy capacity target. These data support informed decision making, ranging from policy and investment decisions to reliable power sector planning. Specifically, the Bangladesh wind resource assessment will help reduce technical risk and encourage private-sector interest in the nascent wind market in Bangladesh. In addition, the Government of Bangladesh may use the results of the wind resource assessment to develop well-designed policies that could encourage investment in wind energy. This report provides a comprehensive description of the Bangladesh wind resource assessment, including details on the modeling approach and methods, instrumentation, data quality-control techniques, and resulting data sets.
+
+Research Organization:
+    National Renewable Energy Lab. (NREL), Golden, CO (United States)
+
+Sponsoring Organization:
+    USDOE; United States Agency for International Development (USAID)
+
+DOE Contract Number:
+    AC36-08GO28308;
+
+Other Award/Contract Number:
+    IAG-17-2050
+
+OSTI ID:
+    1476253
+
+Report Number(s):
+    NREL/TP-5000-71077
+
+Country of Publication:
+    United States
+
+Language:
+    English
+
+## Related Subjects
+
+17 WIND ENERGY
+29 ENERGY PLANNING, POLICY, AND ECONOMY
+Bangladesh wind energy
+Bangladesh wind energy development
+RE Data Explorer
+wind resource assessment
+--------------------------------------------------------------------------------
+Appendix 4: Data Collection Summary for Wind Data Analysis (https://www.eeas.europa.eu/sites/default/files/documents/2023/Final%20report%2008022022_wind%20study.pdf)
+citeturn18search12 [wordlim: 200] Published: 4.7 years ago; Crawled: 4.7 years ago; <td><u>Project Name:</u><br>Assessing the Wind Energy Potential in Bangladesh (by NREL)<br><br><u>Funding Source:</u><br>USAID</td> ... <td>Not commercially relevant.<br><br>• The Bangladesh Power Development Corporation (BPDB) has floated a tender in November 2020 for the setting up of a 50 MW grid connected wind farm at Kachin in Chandpur.<br>• BPDB has a plan to set up a few MW Wind Power Projects near Kachua 132/33 kV Grid Substation, Chandpur.</td>
+Appendix 4: Data Collection Summary for Wind Data Analysis
+
+<table id="e1">
+<tr>
+<th>Location</th>
+<th>Project Name/ Funding Agency</th>
+<th>Data collection period</th>
+<th colspan="2">Average wind speed at a specific height</th>
+<th>Current Status</th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th>Height(m)</th>
+<th>Speed(m/s)</th>
+<th></th>
+</tr>
+<tr>
+<td><strong>Rajshahi</strong></td>
+<td><u>Project Name:</u><br>Assessing the Wind Energy Potential in Bangladesh (by NREL)<br><br><u>Funding Source:</u><br>USAID</td>
+<td>2014-2017</td>
+<td>80</td>
+<td>4.11</td>
+<td>Not commercially relevant.</td>
+</tr>
+<tr>
+<td><strong>Chandpur</strong></td>
+<td><u>Project Name:</u><br>Assessing the Wind Energy Potential in Bangladesh (by NREL)<br><br><u>Funding Source:</u><br>USAID</td>
+<td>2014-2017</td>
+<td>60</td>
+<td>4.11</td>
+<td>Not commercially relevant.<br><br>• The Bangladesh Power Development Corporation (BPDB) has floated a tender in November 2020 for the setting up of a 50 MW grid connected wind farm at Kachin in Chandpur.<br>• BPDB has a plan to set up a few MW Wind Power Projects near Kachua 132/33 kV Grid Substation, Chandpur.</td>
+</tr>
+<tr>
+<td><strong>Sitakunda, Chattagram</strong></td>
+<td><u>Project Name:</u><br>Assessing the Wind Energy Potential in Bangladesh (by NREL)</td>
+<td>2014-2017</td>
+<td>80</td>
+<td>4.01</td>
+<td>Feasibility was assessed under EU Study. The site was found a tariff of 20 US cents</td>
+</tr>
+</table>
+
+FINAL REPORT  
+FEBRUARY 2022--------------------------------------------------------------------------------
+Assessing the Wind Energy Potential (https://www.nrel.gov/docs/fy18osti/71077.pdf)
+citeturn18search13 [wordlim: 200] Published: 2.2 years ago; To generate a preliminary estimate of the wind potential in Bangladesh at the beginning of the project, ... local climate specificities and wind energy applications.
+6 Modeling the Wind Resource in Bangladesh 
+As stated in Section 2, wind resource estimates are usually created using a combination of observations 
+and simulated data. Although observations can be regarded as the most accurate descriptions of a location 
+if their quality is sufficient, observation locations are sparse and available only at certain sites that might 
+or might not be representative of the regional wind climate. Therefore, model simulations of wind speeds 
+and other atmospheric parameters typically are used to describe the wind climate over a given region. 
+This section describes how numerical weather prediction (NWP) models work and provides information 
+on reanalysis data sets, followed by a discussion of our modeling methods and a sensitivity study of 
+various model parameters. 
+6.1 Numerical Weather Prediction Simulations 
+To generate a preliminary estimate of the wind potential in Bangladesh at the beginning of the project, 
+NREL conducted the NWP simulations described in this section. The NWP simulations calculate 
+--------------------------------------------------------------------------------
+BIISS JOURNAL, VOL. 42, NO. 1, JANUARY  2021:  27-54 (https://www.biiss.org/public/index.php/article/836/download)
+citeturn18search14 [wordlim: 200] Published: 6 months ago; NREL’s report styled “Assessing the Wind Energy Potential in Bangladesh: Enabling ... Vandenberghe, and Sue Ellen Haupt, Assessing the Wind Energy Potential in Bangladesh: Enabling Wind
+Renewable energy resource assessment 
+and mapping can provide this information. Resource assessment for wind energy 
+was carried out in Bangladesh to some extent over the last few decades. Assessments 
+conducted at lower hub heights (≤50m) suggested that Bangladesh belonged to a 
+low wind regime. The latest systematic wind resource assessment was done by the 
+U.S. Department of Energy’s National Renewable Energy Laboratory (NREL). The 
+NREL’s report styled “Assessing the Wind Energy Potential in Bangladesh: Enabling 
+Wind Energy Development with Data Products”, identified potential windy areas of 
+the country.5 However, the data of the the report is not bankable, thus, necessitating 
+further study for commercial project development as wind is an intermittent and site-
+specific source of energy. Lack of bankable data and land constraints limit massive 
+expansion of utility scale onshore wind power.                        
+Against this backdrop, evolution of offshore wind power technology opens 
+up opportunities for Bangladesh to complement onshore wind power generation 
+--------------------------------------------------------------------------------
+100% RENEWABLE ENERGY FOR (https://www.uts.edu.au/sites/default/files/2019-08/Bangladesh%20Report-2019-8-17.pdf)
+citeturn18search15 [wordlim: 200] Published: last year; Further research is required to locate the exact offshore wind areas ... 115 Assessing the Wind Energy Potential  in Bangladesh ... 1077; September 2018; https://www.nrel.gov/docs/fy18osti/71077.pdf
+Current electricity prices from diesel or furnace oil-based plants cost around Tk 14-18/kWh (USD 17-21 
+cents/kW)117. The total capacity of all installed solar photovoltaic systems in Bangladesh adds up to 326 MW 
+(PV-M 2019)118. 
+ 
+ 
+                                                 
+115 Assessing the Wind Energy Potential  in Bangladesh  
+Enabling Win d Energy Development With Data Products; Mark Jacobson, Caroline Draxl, Tony Jimenez, and Barbara O’Neill; National Renewable Energy Laboratory;  Taj 
+Capozzola, Harness Energy; Jared A. Lee, Francois Vandenberghe, and Sue Ellen Haupt, National Center for Atmospheric Research; Technical Report NREL/TP-5 007 
+1077; September 2018; https://www.nrel.gov/docs/fy18osti/71077.pdf  
+116 Dhaka Times, 20th March 2019, Three wind power plants with 150MW capacity by 2021, https://www.dhakatribune.com/business/2019/03/20/three-wind-power-plants-
+with-150mw-capacity-by-2021  
+117 SUNTRACE, Economics and Finance / Electricity Markets / Solar Energy / Bangladesh Country Report 2018, Suntrace GmbH, Hamburg, Germany; 
+https://suntrace.de/fileadmin/user_upload/Suntrace_Solar_Market_Brief_Bangladesh.pdf  
+118 PV-M 2019, PV-Magazine, Bangladesh to complete 7.4 MW of solar capacity in April, Syful Islam, 20th March 2019; https://www.pv-
+magazine.com/2019/03/20/bangladesh-to-complete-7-4-mw-of-solar-capacity-in-april/  
+ 
+60--------------------------------------------------------------------------------
+EXAMENSARBETE INOM TECHNOLOGY, (https://www.diva-portal.org/smash/get/diva2%3A1445329/FULLTEXT01.pdf)
+citeturn18search16 [wordlim: 200] Published: 6 months ago; Assessing the Wind Energy Potential in Bangladesh. ... https://www.nrel.gov/docs/fy18osti/71077.pdf (Accessed 2020-04-23)Karim, M., Karim R., Toriqul Islam., Muhammad-Sukki, F., Bani, N.A, Muhtazaruddin, M, N. ... Renewable energy in Bangladesh: current situation and future prospect.
+(2018). Assessing the Wind Energy Potential in Bangladesh. National Renewable Energy  
+Laboratory (NREL).  
+https://www.nrel.gov/docs/fy18osti/71077.pdf (Accessed 2020-04-23)Karim, M., Karim R., Toriqul Islam., Muhammad-Sukki, F., Bani, N.A, Muhtazaruddin, M, N. (2019)
+Renewable Energy for Sustainable Growth and Development: An Evaluation of Law and Policy of
+Bangladesh. Sustainability. Volume 11.
+https://www.mdpi.com/2071-1050/11/20/5774/htm (Accessed 2020-02-24)Market Forces. (2019). Choked by coal.
+https://www.marketforces.org.au/wp-content/uploads/2019/11/Choked-by-Coal_The-Carbon-Catastrophe-in-Bangladesh-FULL.pdf (Accessed 2020-04-23)Masud, M.H., Nuruzzaman, M., Ahamed, R., Ananno, A.A. Amanullah Tomal, A.N.M. (2019).
+Renewable energy in Bangladesh: current situation and future prospect. *International Journal of
+Sustainable Energy*, Volume 39 (2020). Pages 132-175.
+https://www.tandfonline.com/doi/abs/10.1080/14786451.2019.1659270 (Accessed 2020-03-04)MOEF (Ministry of Environment and Forests), 2015. Intended nationally determined contributions
+(INDC). Government of the People’s Republic of Bangladesh.
+https://www4.unfccc.int/sites/ndcstaging/PublishedDocuments/Bangladesh%20First/
+INDC_2015_of_Bangladesh.pdf (Accessed 2020-02-24)37--------------------------------------------------------------------------------
+Wind energy in Bangladesh: recent developments, challenges and policy recommendations | Discover Sustainability | Springer Nature Link (https://link.springer.com/article/10.1007/s43621-025-02096-7)
+citeturn18search1 [wordlim: 200] Published: 10 months ago; Crawled: 2 weeks ago; To thoroughly assess wind resources, wind monitoring stations are erected at sites such as Inani Beach in Cox’s Bazar, Parky Beach in Anwara, Sitakunda in Chittagong, and Chandpur [15, 18, 19]. ... To realise this potential, Bangladesh must: (1) enact a dedicated wind energy policy with auctions and fast-track clearance; (2) mobilise finance through PPPs, concessional loans, and green bonds; (3) strengthen grid capacity and storage; (4) invest in R&D and skills training; and (5) implement rigorous environmental and social impact assessment and stakeholder engagement to protect ecosystems like the Sundarbans and hilsa fishery.
+BPDB has identified 22 wind potential locations with an emphasis on offshore islands, coastal regions, and other locations with robust wind regimes. To thoroughly assess wind resources, wind monitoring stations are erected at sites such as Inani Beach in Cox’s Bazar, Parky Beach in Anwara, Sitakunda in Chittagong, and Chandpur [15, 18, 19]. The resource mapping indicates that the coastal region, encompassing regions such as Cox’s Bazar, Chattogram, Barisal, and offshore islands, exhibits average wind speeds ranging from 5.5 to 7.2 m/s at a hub height of 100 m, rendering them appropriate for utility-scale wind power generation with theoretical wind potential of 30,000 MW in the coastal region [23].
+
+Recent evaluations reveal that wind velocities at 80-m hub heights in some coastal and offshore regions fluctuate between 6.5 and 7.5 m/s, deemed suitable for utility-scale wind energy production [15]. Nonetheless, the onshore area typically has lower wind velocities, constraining its feasibility for extensive projects. --------------------------------------------------------------------------------
+(PDF) Wind speed Weibull distribution and wind energy potential of Chandpur, Bangladesh (https://www.researchgate.net/publication/361332246_Wind_speed_Weibull_distribution_and_wind_energy_potential_of_Chandpur_Bangladesh)
+citeturn18search2 [wordlim: 200] Published: 4.4 years ago; Crawled: 6 months ago; reveals that Chandpur is not suitable for wind energy exploration in near future until a high technical improvement ... Wind speed Weibull distribution and wind energy potential of Chandpur, Bangladesh 107
+
+Wind speed Weibull distribution and wind energy potential of Chandpur, Banglade
+
+sh.pdf
+
+Available via license: CC BY-NC 4.0
+
+Content may be subject to copyright.
+
+DUJASE Vol. 6 (2) 99-108, 2021 (July) https://doi.org/10.3329/dujase.v6i2.59225
+
+Wind speed Weibull distribution and wind energy potential of Chandpur,
+
+Bangladesh
+
+Himangshu Ranjan Ghosh
+
+1 Institute of Energy, University of Dhaka, Dhaka-1000, Bangladesh
+
+E-mail: hrghosh@du.ac.bd
+
+Received on 14 June 2021, Accepted for publication on 16 October 2021
+
+ABSTRACT
+
+Weibull distribution goes particularly well with wind speed data and is necessary to assess wind energy harnessing
+
+potential at a site. For the best estimation of the statistical distribution parameters at Chandpur (23.21116° N;
+
+90.64237° E), located at the southern part of Bangladesh, six models: graphical method, method of moments, power
+
+density method, Justus method, Lysen method and maximum likelihood method have been analyzed for 18.8 m, 40.2
+
+m and 59.9 m above ground level (AGL) using measured wind speed data for 2014-2017. --------------------------------------------------------------------------------
+(PDF) A critical analysis of wind energy generation potential in different regions of Bangladesh (https://www.researchgate.net/publication/377927256_A_critical_analysis_of_wind_energy_generation_potential_in_different_regions_of_Bangladesh)
+citeturn18search3 [wordlim: 200] Published: 2.7 years ago; Crawled: last month; factor and wind power class clearly show that Chandpur is not appro- ... •The wind energy potential in Bangladesh is critically investigated in ... Energy Reports 11 (2024) 2152–2173
+level (AGL) in order to determine the best estimate of the statistical
+
+distribution parameters for Chandpur, which is located in Southern
+
+Bangladesh. With an average RMSE of 0.0082 and a R
+
+2
+
+of 0.9650, EJM
+
+demonstrated the best results among the six models for the estimate of
+
+Weibull parameters at all AGL heights. The lower value of capacity
+
+factor and wind power class clearly show that Chandpur is not appro-
+
+priate for wind energy exploration in the near future unless wind tur-
+
+bines are highly technically improved and related expenses are reduced
+
+(Ghosh, 2022).
+
+The specic contributions of this paper are as follows:
+
+•The wind energy potential in Bangladesh is critically investigated in
+
+this article applying Weibull function and using the previous ve
+
+years of wind speed data (2017-2021) at a height of 50 m at fty
+
+different locations.
+
+•The monthly and yearly wind speeds data are thoroughly analyzed
+
+and after close inspection, it is found that Sandwip has the greatest
+
+average wind speed among the best four probable sites in
+--------------------------------------------------------------------------------
+Sustainable energy transition in Bangladesh: Challenges and pathways for the future - Mohazzem Hossain - 2024 - Engineering Reports - Wiley Online Library (https://doi.org/10.1002/eng2.12752)
+citeturn18search4 [wordlim: 200] Published: 3.2 years ago; Crawled: 2 weeks ago; It illustrates 20 meteorological stations, from which only 9 encompassed each of the country's four main geographic regions that participated in the measurement period from June 2014 to December 2017. ... ^{46} However, recent data depicted in Figure 15 from Bangladesh Meteorological Department forecasts a more significant wind power potential than previously, especially in four coastal areas: Mongla, Patuakhali, Kutubdia, and Bhola. ... It explored a convenient wind potential at nine distinct locations in six districts, including Natore (Lalpur), Chattogram (Sitakunda, Chandpur, and Parki Beach), Mymensingh (Gouripur), Habigonj (Madhupur), Khulna (Dacop), Cox's Bazar (Inani Beach), and Rangpur (Badarganj).
+--------------------------------------------------------------------------------
+Climate finance in Bangladesh (https://en.wikipedia.org/wiki/Climate_finance_in_Bangladesh)
+citeturn18search17 [wordlim: 200] Crawled: 4 months ago; The National Bureau of Asian Research (NBR). ... "Impact of Climate Change on Agricultural Production in Bangladesh: A Review". ... "Different Forms of Solar Energy Progress: The Fast-Growing Eco-Friendly Energy Source in Bangladesh for a Sustainable Future". ... Solar and Wind Energy Resource Assessment (SWERA) - Bangladesh. ... Assessing the Wind Energy Potential in Bangladesh (PDF).
+--------------------------------------------------------------------------------
+Bangladesh Offshore Wind Development - Global Energy Monitor (https://www.gem.wiki/Bangladesh_Offshore_Wind_Development)
+citeturn18search5 [wordlim: 200] Published: 2 weeks ago; Crawled: 2 weeks ago; Wind resource map of Bangladesh and measurement locations, Assessing the Wind Energy Potential in Bangladesh, NREL/TP-5000-71077 September 2018
+--------------------------------------------------------------------------------
+Bangladesh Institute of International and Strategic Studies (https://archive.biiss.org/article/unlocking-the-potential-of-offshore-wind-power-for-renewable-energy-in-bangladesh)
+citeturn18search6 [wordlim: 200] Published: 5.8 years ago; Crawled: last month; The BMD data, showing an average wind speed below 2.5 meters per second (m/s), were meant for weather forecasting and hence, can hardly be the basis for assessing wind power potential. ... The baseline study titled “Wind Energy Potential Bangladesh”, commissioned by the Netherlands’
+--------------------------------------------------------------------------------
+(PDF) EVALUATION OF WIND RESOURCE POTENTIAL IN BANGLADESH (https://www.researchgate.net/publication/340922169_EVALUATION_OF_WIND_RESOURCE_POTENTIAL_IN_BANGLADESH)
+citeturn18search7 [wordlim: 200] Published: 9.9 years ago; Crawled: 2 months ago; Chandpur ... while assessing the electric potential of prospective sites. ... [4] Final Report of Solar and Wind Energy Resource Assessment (SWERA) - Bangladesh,
+--------------------------------------------------------------------------------
+Financiamento climático em Bangladesh (https://pt.wikipedia.org/wiki/Financiamento_clim%C3%A1tico_em_Bangladesh)
+citeturn18search18 [wordlim: 200] Crawled: 6 days ago; *  «Building Renewable Energy in Bangladesh | The National Bureau of Asian Research (NBR)» (em inglês). ... Solar and Wind Energy Resource Assessment (SWERA) - Bangladesh. ... Assessing the Wind Energy Potential in Bangladesh (PDF).
+--------------------------------------------------------------------------------
+Assessing Wind Farm Site Suitability in Bangladesh: A GIS-AHP Approach (https://www.mdpi.com/2071-1050/14/22/14819)
+citeturn18search8 [wordlim: 200] Published: 4.0 years ago; Crawled: 2 weeks ago; The high and suitable locations, which account for 24.12% of land, would be considered candidate zones for wind energy projects, necessitating investment development and policies in these regions. ... ### 3.4. ... The SREDA is currently engaged in ten wind farm projects in Bangladesh, the locations of which are depicted in Table 8.
+--------------------------------------------------------------------------------
+Bangladesh Wind Energy Assessment Report | PDF | Wind Power | Computer Simulation (https://www.scribd.com/document/410798490/71077-pdf)
+citeturn18search9 [wordlim: 200] Published: 8.1 years ago; Crawled: 7.4 years ago; Bangladesh Measurement Sites ... ## 60-m wind speed Average of the 60-mE and 60-mW sensors
+--------------------------------------------------------------------------------
+Building Renewable Energy in Bangladesh | The National Bureau of Asian Research (NBR) (https://www.nbr.org/publication/building-renewable-energy-in-bangladesh/)
+citeturn18search10 [wordlim: 200] Published: 3.6 years ago; Crawled: 4 days ago; The research, supported by Hybrid Optimization of Multiple Energy Resources software, further estimated the wind power potential to be 4,614 MW while still factoring in the limited grid access and wind resource potential.[ ... 4] Moreover, the NREL determined that Bangladesh could exploit 30,000 MW of wind power based on the results of 3.5 years of wind resource assessment, as supported by a customized GIS tool.[
+--------------------------------------------------------------------------------
+Integrated life cycle sustainability assessment of the electricity generation sector in Bangladesh: Towards sustainable electricity generation - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S2352484723014762)
+citeturn18search11 [wordlim: 200] Published: 3.0 years ago; Crawled: 2 months ago; There has been no increase in hydropower capacity since 1988, but it is planned to enhance the capacity by 100 MW at the existing plant in the future (Miskat et al., 2020). ... Wind energy is still a pessimistic source in the context of Bangladesh though there are a few uncorroborated claims of huge potential.
+

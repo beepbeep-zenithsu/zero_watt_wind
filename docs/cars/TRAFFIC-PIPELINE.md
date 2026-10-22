@@ -1,10 +1,11 @@
 # Vehicle acquisition and headless Blender pipeline
 
 Current status: **three actual car types are installed**, with nine validated LOD
-GLBs and three editable Blender sources. All 18 moving cars use the real Jaguar
+GLBs and three editable Blender sources. All 36 moving cars use the real Jaguar
 E-Type, Porsche Taycan or De Tomaso P72. Ferrari Roma, McLaren GT, Pininfarina
 Battista, McLaren Elva and Lotus Evija remain uninstalled. See `assets/cars/SOURCES.md`.
-There are also ten pedalling cyclists and eight routes across the street grid.
+The current scope uses these three types; no additional car sourcing is needed.
+There are 24 pedalling cyclists, 80 crossing pedestrians and 12 vehicle routes.
 
 ## Acquire genuine source files
 

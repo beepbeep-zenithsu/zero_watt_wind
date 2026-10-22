@@ -1,0 +1,2421 @@
+ZeroWatt Wind
+RESEARCH AND INVESTMENT SCREENING
+
+
+
+
+Evidence-backed feasibility
+and business report
+
+
+
+
+Wind-driven mechanical ventilation and supplemental pond aeration in Bangladesh
+
+
+
+Decision: fund a gated validation pilot; commercial rollout is not yet supported.
+
+
+
+
+Prepared for renewable-energy judges, investors and university evaluators.
+
+Research cut-o: 22 October 2026 (Asia/Dhaka).
+
+Baseline: supplied project submission, poster and audited repository source.
+
+
+
+
+Reading the evidence. [S] is an attributed observation or published value; [D] is a reproducible
+calculation; [A] is an explicit scenario assumption.   A source that describes a prototype does not
+validate its output. Low, base and high allowances are not supplier quotations. Values marked NOT
+FOUND remain unresolved. All gures are vector drawings embedded in this single le.
+ZeroWatt Wind                                                           Feasibility and business evidence
+
+
+Executive summary
+Verdict. The printed prototype demonstrates a mechanical idea, while the poster expressly leaves
+airow, starting wind speed, torque, drivetrain loss and oxygen transfer unmeasured. [35, 36] The
+business should purchase evidence before purchasing scale. A limited, supervised supplemental-use
+pilot is defensible; a claim of guaranteed clinical ventilation or sh-survival protection is not.
+
+
+   Base case headline               Result                           Basis
+   Project NPV, nominal BDT         =11,181,078                      [D] monthly FCF, assumed
+                                                                     required return
+   Project NPV, USD equivalent      =90,425                          [D] dated conversion
+   Annual eective project IRR      =47.7%                           [D] negative; unique bracketed
+                                                                     root
+   Simple / discounted payback      Not reached within model         [D] cumulative cash ow
+                                    horizon                          remains negative
+   Initial investment / peak        2,240,000 / 21,769,906           [D] no grant or exit-value rescue
+   cumulative funding need
+   Basic A / pond B / combined      40,000 / 43,200 / 83,200         [D] from [A] production
+   A+B ex-works BOM                                                  allowances
+
+
+The base screening assumes a site mean wind of 3.5 [A] m/s. It predicts full additional-ow per-
+formance for 29.2% [D] of time after mechanical availability, distinct from an energy displacement
+fraction of 47.1% [D]. These probabilities come from an assumed distribution, not a Bangladesh
+rooftop measurement.
+
+The NPV discount rate is 18% [A], tested alongside 12% [A] and 25% [A]. The historical Bangladesh
+Bank policy benchmark was 10% [S]; the project risk premium is an analyst assumption. [37]
+
+Commercial taris, willingness to pay, adoption, component quotations and durability remain weakly
+evidenced.   The optimistic scenario is conditional and protable; it is not a probability-weighted
+forecast.   Currency: 123.65 [S] BDT/USD, Bangladesh Bank weighted average dated 2026-10-19,
+accessed 2026-10-22. [25]
+
+
+
+
+                                                   1
+ZeroWatt Wind                                           Feasibility and business evidence
+
+
+Contents
+Executive summary                                                                      1
+
+1 Problem sizing and the addressable need                                              3
+
+2 Solution, engineering boundary and simulation audit                                  4
+
+3 Components, market evidence and production costs                                     7
+
+4 Sustainable fabrication and build-versus-assemble                                   13
+
+5 Equivalent-service comparison and customer aordability                             15
+
+6 Wind resource, performance availability and market boundary                         17
+
+7 Investment, OPEX, revenue and prot                                                 18
+
+8 Cash ow, NPV, IRR and payback                                                      24
+
+9 Sensitivity and break-even conditions                                               27
+
+10 Funding strategy and stage gates                                                   28
+
+11 Bangladesh sourcing, assembly and import exposure                                  30
+
+12 Future scope with costed evidence gates                                            31
+
+13 Environmental screening and end of life                                            33
+
+14 Risks, limitations and decision gates                                              34
+
+15 Conclusion                                                                         35
+
+16 Assumptions and unresolved-evidence register                                       36
+
+17 Gauntlet log summary and reproducibility                                           38
+
+
+
+
+                                           2
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+1 Problem sizing and the addressable need
+Poor indoor air and pond oxygen matter, but their national consequences must not be attributed
+wholesale to this device. World Bank estimates combine outdoor and household pollution, unsafe
+water, sanitation and lead; they are not a ventilation-only loss estimate. [46]
+
+
+   Evidence / boundary          Value                          Basis
+   National pond area           424,168 ha                     [S] DoF, reporting period 2023-24 [15]
+   Number of ponds              2,543,869                      [S] DoF table on culture intensity; not
+                                                               paying customers [15]
+   Annual pond sh production 2,368,741 tonnes                 [S] DoF [15]
+   National combined pollution Over 272,000 premature          [S] Context only [46]
+   burden                      deaths; 5,200,000,000 illness
+                               days/year
+   Household and outdoor air   8.32% of GDP (2019)             [S] Historical national burden [46]
+   pollution health cost
+
+
+The project repeats a claim linking 500 [S] ppm additional CO2 with a 15 [S]% cognitive-performance
+reduction. The institutional description and primary-study record concern specic observational test
+endpoints. A general causal productivity loss at this exact percentage was NOT VERIFIED and is
+excluded from revenue, health savings and NPV. [35, 29, 13]
+
+FAO describes oxygen depletion and reduced growth in Bangladesh ponds, including warm calm
+nights and cloudy monsoon conditions. A Bangladesh heatwave report corroborates the mechanism
+but does not quantify national losses attributable only to low DO. These sources do not establish
+this prototype prevents sh kills. [18, 30]
+
+
+
+1.1 A site-level loss exposure, not an avoided-loss promise
+An illustrative 1,000 [A] kg stock at 200 [A] BDT/kg and a 10% [A] event loss exposes 20,000 [D]
+BDT. Low/high loss fractions are 2% [A] / 30% [A]. The event probability and avoidable fraction
+are NOT FOUND; no expected-value benet is booked. Time spent manually splashing, fetching
+fuel or servicing the unit is likewise NOT FOUND; travel/labour allowances are in OPEX.
+
+Using the illustrative room duty, clinic electricity costs 2,180 [D] BDT/year before xed fees and
+taxes. This modest energy bill constrains an energy-only product price. Load-shedding coincidence
+with useful wind is NOT FOUND. Neither a mortality-reduction total nor a sh-yield uplift is
+fabricated.
+
+
+
+
+                                                   3
+ZeroWatt Wind                                                                    Feasibility and business evidence
+
+
+2 Solution, engineering boundary and simulation audit
+The mechanical core captures wind with a spiral rotor and transmits rotation through shafts and
+bevel gears to either a fan or paddles.         The combined physical case in this report is a separate
+roof installation plus a separate pond installation; their energy is not counted twice. The advanced
+website adds PV, battery, motor, controls and freewheels; it is not an electricity-free extension.
+[35, 36, 39]
+
+
+                                                                                             A: fan, plenum
+                                                                                            and exhaust duct
+
+
+                                     Spiral rotor                Shafts, bearings
+      Ambient wind
+                                      and hub                    and bevel gears
+
+
+                                                                                             B: paddle wheel,
+                                                                                            oats and mooring
+
+                                Advanced A: PV,
+                                battery and motor
+
+
+
+
+                Each deployment also needs guards, a tested fail-safe
+                 brake, corrosion protection and site-specic mount-
+               ing. Fan and pond branches are separate applications.
+
+Figure 1: System pathways [S] project concept, with [A] production protection and advanced assistance
+boundary.
+
+
+
+2.1 What the code computes
+For   the   basic   geometry,   Ps      =   min( 12 ρAv 3 Cp ηd , Pr )   above   the   assumed   starting     speed;
+Q = Ps ηf 3600/∆p.         The room model is a perfectly mixed equilibrium CO2 balance.                         The
+pond model applies standard oxygen transfer, a temperature/saturation correction, background
+reaeration and constant oxygen demand. It does not integrate a whole-night oxygen budget. [39]
+
+
+  Parameter               Basic / pond default               Advanced default              Basis
+  Swept rotor size        1.0 m diameter                     3.46 m2 area               [A] Dierent
+                                                                                        geometries
+  Power coecient /       0.18 / 0.75                        0.23 / 0.84                [A] Untested
+  drivetrain eciency                                                                   coecients
+  Fan model               20 Pa; 0.35 eciency               60 W at 240 RPM            [A] Not a certied
+                                                                                        curve
+  Room / pond volume 150 / 100 m3                            Same scene; separate model [A] Default sizes
+  CO2 / DO targets     1,200 ppm / 4 mg/L                    No clinical certication   [A] Demo targets
+  Pond standard SAE / 0.80 kg/kWh; 0.25 mg/L/h               Not implemented            [A] Transfer model
+  demand
+  PV / battery / motor None for uninstrumented               180 W / 240 Wh / 95 W         [A] Site concept
+                       core                                  input
+  Battery lock /       No battery                            12% / 20%                     [A] Control
+  recovery                                                                                 thresholds
+
+
+                                                         4
+ZeroWatt Wind                                                              Feasibility and business evidence
+
+
+
+  Parameter               Basic / pond default         Advanced default              Basis
+  Assistance on/o /      No motor                     0.90 / 1.05 target; 1.5 s     [A] Hysteresis
+  verication
+
+
+
+2.2 Every weather case and operating demonstration
+
+ Mode         Case               Wind / pattern        What it does not establish              Basis
+ Basic A      Rooftop breeze     4.5 m/s; steady       Steady illustrative operation; no       [A] [39]
+                                                       measured power curve.
+ Basic A      Urban canyon       2.8 m/s; lull         Shelter/lulls; no urban turbulence or   [A] [39]
+                                                       fatigue validation.
+ Basic A      Heatwave           2.3 m/s; gusts        Heat exposure warnings; no              [A] [39]
+                                                       refrigeration or humidity guarantee.
+ Basic A      Monsoon            7.0 m/s; gusts        Rain eects and optional damper;        [A] [39]
+                                                       not waterproof certication.
+ Basic A      Cyclone            19.0 m/s; storm       Display continues spinning; no          [A] [39]
+                                                       automatic safe cut-out.
+ Pond B       Park breeze        4.5 m/s; steady       Steady illustrative operation; no       [A] [39]
+                                                       measured power curve.
+ Pond B       Sheltered lull     2.8 m/s; lull         Repeating lull is synthetic, not a      [A] [39]
+                                                       weather time series.
+ Pond B       Hot night          2.2 m/s; gusts        Pre-dawn oxygen risk; no survival or    [A] [39]
+                                                       transient DO proof.
+ Pond B       Monsoon            7.0 m/s; gusts        Rain eects and optional damper;        [A] [39]
+                                                       not waterproof certication.
+ Pond B       Storm surge        19.0 m/s; storm       Display continues spinning; no          [A] [39]
+                                                       automatic safe cut-out.
+
+
+
+  Advanced control Demonstration                            Limit                              Basis
+  / state
+  Sunny / sun position PV drives or charges while the   No measured tracking gain,             [A] [39]
+                       illustrated tracker follows sun  shading or thermal model.
+                       position.
+  Canyon               Sheltered wind with solar        No site-specic solar/wind joint       [A]
+                       assistance.                      distribution.
+  Monsoon              PV and motor assistance are      Physical PV is not inherently          [A]
+                       disabled by policy.              zero in every overcast condition.
+  Adequate / weak /    Wind-only, shared torque, or     No clutch durability or measured       [A]
+  no wind              motor-driven fan through         torque curve.
+                       freewheels.
+  Low battery / night Hysteretic motor lockout; battery Short autonomy; no guaranteed          [A]
+                       drains with no PV at night.      night service.
+  Injected fault /     Motor inhibited, mechanical wind No certied functional-safety          [A]
+  wind-only            path remains.                    system.
+  Pause / speed /      Presentation and inspection      No fabrication geometry or             [A]
+  section / explode /  controls; exploded ow paths     independent engineering proof.
+  tour                 hidden.
+
+
+
+
+                                                   5
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+
+  Advanced control Demonstration                           Limit                                Basis
+  / state
+  Moving / moored        Changes visual mounting and       No mooring loads, navigation,        [A]
+  pond boats             unit count.                       capsize or hydrodynamic
+                                                           validation.
+
+
+Wind prole selectors include steady, gusts, repeating lull and storm.            Hardware choices cover
+cup/ultrasonic   or   Hall   wind   sensing;   MQ-135,   MH-Z19B,   SCD41    or    industrial   CO2;      ana-
+log/galvanic/optical DO; rain and water-temperature probes; ATtiny, Uno, Pico, ESP32 or STM32;
+and open, IP54 or IP67 enclosures. The code applies temperature, ingress and power assumptions.
+Sensor ratings are not veried datasheets.         Electronics require an external power supply, and
+warnings do not replace a mechanical brake. A complete literal/parameter inventory is retained in
+the repository audit. [39]
+
+                                                                                   3
+At the basic rooftop breeze preset, the code gives 5.92 [D] W and 372.8 [D] m /h, or 2.49 [D] added
+ACH. These are calculated examples, not measurements. The advanced rated-ow assumption yields
+5.67 [D] added ACH. The illustrative battery from its default charge to lockout supplies only 1.87
+[D] hours at nominal motor demand without wind, PV or parasitic loads.
+
+Older naturally ventilated clinic guidance discussed in the clinic study implies 1,728 [D] m /h for
+                                                                                                      3
+
+the default occupancy. The nancial example below targets a smaller incremental ow; it cannot
+be represented as compliance with that guidance. Real intake pollution, thermal comfort, ltration
+pressure loss and room mixing require assessment. [12, 47]
+
+
+
+
+                                                     6
+ZeroWatt Wind                                                             Feasibility and business evidence
+
+
+3 Components, market evidence and production costs
+The baseline prototype uses PLA, but a production candidate uses supported metal shafts/gears,
+protected structure and inspectable oats. Proposed dimensions and quantities are design assump-
+tions pending stress, thermal and water tests. Catalogue gear selection depends on module, ratio,
+material, bore and permitted loads; a cheap model gear is not an equivalent part. [36, 33, 48]
+
+
+
+3.1 Observed prices and the three-quote test
+
+  Family / supplier               Visible price   BDT / USD            Caveat and basis
+  PLA lament kg / HTE            1,287.00 BDT    1,287.00 / 10.41     open text; out of stock on recheck;
+  Bangladesh                                                           [S] indication, [D] FX [23]
+  PLA lament kg / Costareen      1,550.00 BDT    1,550.00 / 12.54     dated guide starting price; [S]
+                                                                       indication, [D] FX [21]
+  PLA lament kg /                1,999.00 BDT    1,999.00 / 16.17     open text; [S] indication, [D] FX
+  Electronics.Com.BD                                                   [24]
+  PLA lament kg /                1,950.04 BDT    1,950.04 / 15.77     open marketplace; [S] indication,
+  TechShopBD                                                           [D] FX [22]
+  UCP204 bearing / Daraz/Fair     450.00 BDT      450.00 / 3.64        cached stock conicting; [S]
+  Enterprise                                                           indication, [D] FX [9]
+  UCP204 bearing / MISUMI         15.65 SGD       1,511.56 / 12.22     search-index only; open 429; [S]
+                                                                       indication, [D] FX [10]
+  UCP204 bearing / Motion         52.70 USD       6,516.36 / 52.70     open text; [S] indication, [D] FX
+                                                                       [11]
+  Electric exhaust fan / Walton   1,250.00 BDT    1,250.00 / 10.11     open full text; index showed 1310;
+                                                                       [S] indication, [D] FX [17]
+  Hobby bevel gear /              245.00 BDT      245.00 / 1.98        search-index only; open failed; [S]
+  ZerOneTech                                                           indication, [D] FX [27]
+  Conventional aerator / NSC      50,000.00 BDT   50,000.00 / 404.37   open text; [S] indication, [D] FX [1]
+  BD
+  Conventional aerator / Bangla   40,000.00 BDT   40,000.00 / 323.49   open text; inconsistent transfer
+  Ltd.                                                                 claims; [S] indication, [D] FX [4]
+  Conventional aerator /          40,000.00 BDT   40,000.00 / 323.49   open text; seller independence not
+  BDStall single seller                                                established; [S] indication, [D] FX
+                                                                       [8]
+  Battery 12V20Ah /               1,845.00 BDT    1,845.00 / 14.92     open text; suspicious outlier; [S]
+  CityTechBD                                                           indication, [D] FX [5]
+  Battery 12V20Ah / Teexla        8,200.00 BDT    8,200.00 / 66.32     open text; [S] indication, [D] FX [6]
+
+
+
+Prices were observed on 2026-10-22.        Listings without publication dates are undated; stock and
+cached prices can dier. The Walton full page displayed a lower price than its indexed result; the
+opened full-page price is used. Foreign prices are not landed Bangladesh quotes. MISUMI and the
+hobby-gear price remain index-only and low-condence. The low battery listing is an outlier and is
+excluded from the warranted production battery allowance.
+
+
+  Family                     Seller    Low / median / high BDT Basis / limitation
+                             count
+  Battery 12V20Ah            2         1,845.00 / 5,022.50 / 8,200.00 Three comparable independent
+                                                                      landed quotes NOT FOUND; [D]
+                                                                      indication summary
+  Conventional aerator       2         40,000.00 / 40,000.00 /        Three comparable independent
+                                       50,000.00                      landed quotes NOT FOUND; [D]
+                                                                      indication summary
+
+
+
+                                                      7
+ZeroWatt Wind                                                                 Feasibility and business evidence
+
+
+
+  Family                     Seller      Low / median / high BDT Basis / limitation
+                             count
+  Electric exhaust fan       1           1,250.00 / 1,250.00 / 1,250.00 Three comparable independent
+                                                                        landed quotes NOT FOUND; [D]
+                                                                        indication summary
+  Hobby bevel gear           1           245.00 / 245.00 / 245.00       Three comparable independent
+                                                                        landed quotes NOT FOUND; [D]
+                                                                        indication summary
+  PLA lament kg             4           1,287.00 / 1,750.02 / 1,999.00 Family-level comparison only;
+                                                                        brands dier; [D] indication
+                                                                        summary
+  UCP204 bearing             3           450.00 / 1,511.56 / 6,516.36   Three comparable independent
+                                                                        landed quotes NOT FOUND; [D]
+                                                                        indication summary
+
+
+Only lament has multiple independent, broadly comparable local price observations. Generic and
+branded bearing grades dier. Three current, independent production quotations for each bespoke
+component are NOT FOUND. The BOM low/base/high columns below are allowances [A], not a
+substituted quotation median. Supplier statements about oxygen output also dier internally; they
+are not accepted as eld SAE. [4, 19]
+
+
+
+3.2 Costed production BOM for each application
+3.3 A: basic rooftop ventilation
+
+  Component, material/specication             Qty   Low / base / high BDT          Function / basis
+  Spiral rotor and balanced hub. Formed       1      3,500 / 6,000 / 10,000         Capture wind; [A],
+  aluminium; 1 m nominal basic / 2.1 m                                              production quotes NOT
+  hybrid                                                                            FOUND
+  Shaft stock and machining. Steel, nominal 3        1,500 / 2,700 / 4,800          Transmit torque; [A],
+  20 mm; three axes for two stages, two for H                                       production quotes NOT
+                                                                                    FOUND
+  Production bevel gear pair. Steel, two       2     1,400 / 3,000 / 6,000          Redirect rotation; [A],
+  right-angle stages; module and rating RFQ                                         production quotes NOT
+                                                                                    FOUND
+  Radial bearing blocks. 20 mm sealed          6     2,700 / 5,400 / 12,000         Support shaft; [A],
+  UCP-type; two radial supports per shaft;                                          production quotes NOT
+  axial separate                                                                    FOUND
+  Thrust bearing and collar set. Matched       1     500 / 1,000 / 2,000            Carry fan/gear thrust;
+  axial load and positive retention                                                 [A], production quotes
+                                                                                    NOT FOUND
+  Couplings keys collars. Keyed steel;         3     600 / 1,200 / 2,100            Locate and couple
+  fastener locking                                                                  shafts; [A], production
+                                                                                    quotes NOT FOUND
+  Frame mounting and isolators. Coated local 1       2,500 / 4,500 / 7,500          Structural support; [A],
+  steel; engineered anchor plates                                                   production quotes NOT
+                                                                                    FOUND
+  Fail-safe brake and storm restraint.         1     1,000 / 2,500 / 5,000          Overspeed protection;
+  Mechanical brake/furling concept; test                                            [A], production quotes
+  required                                                                          NOT FOUND
+  Rotor and gear guards. Corrosion-resistant   1     1,000 / 1,800 / 3,500          Entanglement
+  mesh with access covers                                                           protection; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+
+
+
+
+                                                      8
+ZeroWatt Wind                                                                 Feasibility and business evidence
+
+
+
+  Component, material/specication             Qty   Low / base / high BDT          Function / basis
+  Seals grease fasteners coating. Gaskets,     1     700 / 1,200 / 2,200            Weather and service kit;
+  compatible lubricant, corrosion isolation                                         [A], production quotes
+                                                                                    NOT FOUND
+  Mechanical axial fan and hub. NACA           1     1,200 / 2,200 / 4,000          Exhaust room air; [A],
+  65-810 concept; needs pressure-ow test                                           production quotes NOT
+                                                                                    FOUND
+  Sleeve plenum duct and cowl. Sheet metal;    1     1,800 / 3,500 / 6,500          Air pathway; [A],
+  screened intake, access and rain drain                                            production quotes NOT
+                                                                                    FOUND
+  Roof ashing and backdraft damper.           1     800 / 1,500 / 3,000            Weatherproof building
+  Waterproof penetration and service access                                         interface; [A], production
+                                                                                    quotes NOT FOUND
+  Assembly balancing and inspection. Paid      1     2,000 / 3,500 / 6,000          Deliver inspected
+  shop labour and acceptance test                                                   ex-works unit; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+
+
+
+3.4 B: pond aeration
+
+  Component, material/specication             Qty   Low / base / high BDT          Function / basis
+  Spiral rotor and balanced hub. Formed       1      3,500 / 6,000 / 10,000         Capture wind; [A],
+  aluminium; 1 m nominal basic / 2.1 m                                              production quotes NOT
+  hybrid                                                                            FOUND
+  Shaft stock and machining. Steel, nominal 3        1,500 / 2,700 / 4,800          Transmit torque; [A],
+  20 mm; three axes for two stages, two for H                                       production quotes NOT
+                                                                                    FOUND
+  Production bevel gear pair. Steel, two       2     1,400 / 3,000 / 6,000          Redirect rotation; [A],
+  right-angle stages; module and rating RFQ                                         production quotes NOT
+                                                                                    FOUND
+  Radial bearing blocks. 20 mm sealed          6     2,700 / 5,400 / 12,000         Support shaft; [A],
+  UCP-type; two radial supports per shaft;                                          production quotes NOT
+  axial separate                                                                    FOUND
+  Thrust bearing and collar set. Matched       1     500 / 1,000 / 2,000            Carry fan/gear thrust;
+  axial load and positive retention                                                 [A], production quotes
+                                                                                    NOT FOUND
+  Couplings keys collars. Keyed steel;         3     600 / 1,200 / 2,100            Locate and couple
+  fastener locking                                                                  shafts; [A], production
+                                                                                    quotes NOT FOUND
+  Frame mounting and isolators. Coated local 1       2,500 / 4,500 / 7,500          Structural support; [A],
+  steel; engineered anchor plates                                                   production quotes NOT
+                                                                                    FOUND
+  Fail-safe brake and storm restraint.         1     1,000 / 2,500 / 5,000          Overspeed protection;
+  Mechanical brake/furling concept; test                                            [A], production quotes
+  required                                                                          NOT FOUND
+  Rotor and gear guards. Corrosion-resistant   1     1,000 / 1,800 / 3,500          Entanglement
+  mesh with access covers                                                           protection; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+  Seals grease fasteners coating. Gaskets,     1     700 / 1,200 / 2,200            Weather and service kit;
+  compatible lubricant, corrosion isolation                                         [A], production quotes
+                                                                                    NOT FOUND
+  Paddle wheel and wet shaft guards. HDPE      1     1,800 / 3,500 / 6,000          Surface aeration; [A],
+  paddles on corrosion-resistant hub                                                production quotes NOT
+                                                                                    FOUND
+
+
+
+
+                                                      9
+ZeroWatt Wind                                                                  Feasibility and business evidence
+
+
+
+  Component, material/specication             Qty   Low / base / high BDT           Function / basis
+  Compartmented pontoons.                      2     2,400 / 4,400 / 8,000           Flotation with reserve
+  Recovered/rotomoulded HDPE, two                                                    buoyancy; [A],
+  separate oats                                                                     production quotes NOT
+                                                                                     FOUND
+  Mooring anchor retrieval and wet seals.     1      1,200 / 2,500 / 5,000           Retain and retrieve pond
+  Two lines, anchors and dry access provision                                        assembly; [A],
+                                                                                     production quotes NOT
+                                                                                     FOUND
+  Assembly balancing and inspection. Paid      1     2,000 / 3,500 / 6,000           Deliver inspected
+  shop labour and acceptance test                                                    ex-works unit; [A],
+                                                                                     production quotes NOT
+                                                                                     FOUND
+
+
+
+3.5 Combined A+B: two separate installed assemblies
+
+  Component, material/specication             Qty   Low / base / high BDT           Function / basis
+  Spiral rotor and balanced hub. Formed       2      7,000 / 12,000 / 20,000         Capture wind; [A],
+  aluminium; 1 m nominal basic / 2.1 m                                               production quotes NOT
+  hybrid                                                                             FOUND
+  Shaft stock and machining. Steel, nominal 6        3,000 / 5,400 / 9,600           Transmit torque; [A],
+  20 mm; three axes for two stages, two for H                                        production quotes NOT
+                                                                                     FOUND
+  Production bevel gear pair. Steel, two       4     2,800 / 6,000 / 12,000          Redirect rotation; [A],
+  right-angle stages; module and rating RFQ                                          production quotes NOT
+                                                                                     FOUND
+  Radial bearing blocks. 20 mm sealed          12    5,400 / 10,800 / 24,000         Support shaft; [A],
+  UCP-type; two radial supports per shaft;                                           production quotes NOT
+  axial separate                                                                     FOUND
+  Thrust bearing and collar set. Matched       2     1,000 / 2,000 / 4,000           Carry fan/gear thrust;
+  axial load and positive retention                                                  [A], production quotes
+                                                                                     NOT FOUND
+  Couplings keys collars. Keyed steel;         6     1,200 / 2,400 / 4,200           Locate and couple
+  fastener locking                                                                   shafts; [A], production
+                                                                                     quotes NOT FOUND
+  Frame mounting and isolators. Coated local 2       5,000 / 9,000 / 15,000          Structural support; [A],
+  steel; engineered anchor plates                                                    production quotes NOT
+                                                                                     FOUND
+  Fail-safe brake and storm restraint.         2     2,000 / 5,000 / 10,000          Overspeed protection;
+  Mechanical brake/furling concept; test                                             [A], production quotes
+  required                                                                           NOT FOUND
+  Rotor and gear guards. Corrosion-resistant   2     2,000 / 3,600 / 7,000           Entanglement
+  mesh with access covers                                                            protection; [A],
+                                                                                     production quotes NOT
+                                                                                     FOUND
+  Seals grease fasteners coating. Gaskets,     2     1,400 / 2,400 / 4,400           Weather and service kit;
+  compatible lubricant, corrosion isolation                                          [A], production quotes
+                                                                                     NOT FOUND
+  Mechanical axial fan and hub. NACA           1     1,200 / 2,200 / 4,000           Exhaust room air; [A],
+  65-810 concept; needs pressure-ow test                                            production quotes NOT
+                                                                                     FOUND
+  Sleeve plenum duct and cowl. Sheet metal;    1     1,800 / 3,500 / 6,500           Air pathway; [A],
+  screened intake, access and rain drain                                             production quotes NOT
+                                                                                     FOUND
+  Roof ashing and backdraft damper.           1     800 / 1,500 / 3,000             Weatherproof building
+  Waterproof penetration and service access                                          interface; [A], production
+                                                                                     quotes NOT FOUND
+
+
+
+
+                                                     10
+ZeroWatt Wind                                                                 Feasibility and business evidence
+
+
+
+  Component, material/specication             Qty   Low / base / high BDT          Function / basis
+  Paddle wheel and wet shaft guards. HDPE      1     1,800 / 3,500 / 6,000          Surface aeration; [A],
+  paddles on corrosion-resistant hub                                                production quotes NOT
+                                                                                    FOUND
+  Compartmented pontoons.                      2     2,400 / 4,400 / 8,000          Flotation with reserve
+  Recovered/rotomoulded HDPE, two                                                   buoyancy; [A],
+  separate oats                                                                    production quotes NOT
+                                                                                    FOUND
+  Mooring anchor retrieval and wet seals.     1      1,200 / 2,500 / 5,000          Retain and retrieve pond
+  Two lines, anchors and dry access provision                                       assembly; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+  Assembly balancing and inspection. Paid      2     4,000 / 7,000 / 12,000         Deliver inspected
+  shop labour and acceptance test                                                   ex-works unit; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+
+
+
+3.6 H: advanced hybrid ventilation
+
+  Component, material/specication             Qty   Low / base / high BDT          Function / basis
+  Spiral rotor and balanced hub. Formed       1      3,500 / 6,000 / 10,000         Capture wind; [A],
+  aluminium; 1 m nominal basic / 2.1 m                                              production quotes NOT
+  hybrid                                                                            FOUND
+  Shaft stock and machining. Steel, nominal 2        1,000 / 1,800 / 3,200          Transmit torque; [A],
+  20 mm; three axes for two stages, two for H                                       production quotes NOT
+                                                                                    FOUND
+  Production bevel gear pair. Steel, two       1     700 / 1,500 / 3,000            Redirect rotation; [A],
+  right-angle stages; module and rating RFQ                                         production quotes NOT
+                                                                                    FOUND
+  Radial bearing blocks. 20 mm sealed          4     1,800 / 3,600 / 8,000          Support shaft; [A],
+  UCP-type; two radial supports per shaft;                                          production quotes NOT
+  axial separate                                                                    FOUND
+  Thrust bearing and collar set. Matched       1     500 / 1,000 / 2,000            Carry fan/gear thrust;
+  axial load and positive retention                                                 [A], production quotes
+                                                                                    NOT FOUND
+  Couplings keys collars. Keyed steel;         3     600 / 1,200 / 2,100            Locate and couple
+  fastener locking                                                                  shafts; [A], production
+                                                                                    quotes NOT FOUND
+  Frame mounting and isolators. Coated local 1       2,500 / 4,500 / 7,500          Structural support; [A],
+  steel; engineered anchor plates                                                   production quotes NOT
+                                                                                    FOUND
+  Fail-safe brake and storm restraint.         1     1,000 / 2,500 / 5,000          Overspeed protection;
+  Mechanical brake/furling concept; test                                            [A], production quotes
+  required                                                                          NOT FOUND
+  Rotor and gear guards. Corrosion-resistant   1     1,000 / 1,800 / 3,500          Entanglement
+  mesh with access covers                                                           protection; [A],
+                                                                                    production quotes NOT
+                                                                                    FOUND
+  Seals grease fasteners coating. Gaskets,     1     700 / 1,200 / 2,200            Weather and service kit;
+  compatible lubricant, corrosion isolation                                         [A], production quotes
+                                                                                    NOT FOUND
+  Mechanical axial fan and hub. NACA           1     1,200 / 2,200 / 4,000          Exhaust room air; [A],
+  65-810 concept; needs pressure-ow test                                           production quotes NOT
+                                                                                    FOUND
+  Sleeve plenum duct and cowl. Sheet metal;    1     1,800 / 3,500 / 6,500          Air pathway; [A],
+  screened intake, access and rain drain                                            production quotes NOT
+                                                                                    FOUND
+
+
+
+
+                                                     11
+ZeroWatt Wind                                                                                   Feasibility and business evidence
+
+
+
+  Component, material/specication                              Qty   Low / base / high BDT           Function / basis
+  Roof ashing and backdraft damper.                            1     800 / 1,500 / 3,000             Weatherproof building
+  Waterproof penetration and service access                                                           interface; [A], production
+                                                                                                      quotes NOT FOUND
+  PV module and xed rack. 180-200 W                            1     6,000 / 9,000 / 15,000          Electrical assistance
+  class; roof area/structure assessment                                                               energy; [A], production
+                                                                                                      quotes NOT FOUND
+  Battery pack and BMS. 24 V nominal, 240                       1     8,000 / 14,000 / 22,000         Short duration
+  Wh class; warranted matched pack                                                                    assistance; [A],
+                                                                                                      production quotes NOT
+                                                                                                      FOUND
+  Motor PWM belt pulleys dual freewheels.                       1     5,000 / 9,000 / 15,000          Assist common shaft;
+  95 W input class, compatible ratios                                                                 [A], production quotes
+                                                                                                      NOT FOUND
+  Controller fuses disconnect cabling.                          1     3,500 / 6,000 / 10,000          Protected DC bus; [A],
+  Weatherproof DC controls and two                                                                    production quotes NOT
+  tachometers                                                                                         FOUND
+  Sun tracker structure and actuators.                          1     2,500 / 5,000 / 10,000          Illustrative solar
+  Optional site depiction; costed only in H                                                           tracking; [A], production
+                                                                                                      quotes NOT FOUND
+  Assembly balancing and inspection. Paid                       1     2,000 / 3,500 / 6,000           Deliver inspected
+  shop labour and acceptance test                                                                     ex-works unit; [A],
+                                                                                                      production quotes NOT
+                                                                                                      FOUND
+
+
+
+  Case                              Low BDT          Base BDT         High BDT              Base USD / basis
+  A                                 21,200           40,000           74,600                323.49; [D] from [A] BOM
+  B                                 22,800           43,200           80,100                349.37; [D] from [A] BOM
+  H                                 44,100           78,800           138,000               637.28; [D] from [A] BOM
+  A+B                               44,000           83,200           154,700               672.87; [D] from [A] BOM
+
+
+Ex-works totals include assembly/balancing/inspection. Sold-unit on-site installation is a separate
+fee and direct cost; pond access and dicult roofs may exceed that allowance. Optional monitoring
+is excluded from the uninstrumented core and costed in future scope.                                 Two-site A+B duplicates
+rotors, shafts, gears, bearings, brakes and frames. No electrical generation revenue is assumed.
+
+
+
+                                6
+      Base cost, thousand BDT
+
+
+
+
+                                4
+
+
+
+                                2
+
+
+
+                                        1    2   3     4      5   6    7    8     9  10         11    12    13    14
+                                                              Component index in A BOM
+
+Figure 2: Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom
+rotor, structure and safety costs matter alongside gears.
+
+
+
+
+                                                                      12
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+4 Sustainable fabrication and build-versus-assemble
+A low-cost process should preserve predictable failure behaviour and repair access. Print patterns and
+noncritical covers; fabricate balanced rotor sections and structural steel locally; purchase matched
+bearings and rated drive parts. Recycled aluminium needs traceable alloy and fatigue checks. Re-
+covered HDPE requires contamination and leak inspection.          Bamboo is a replaceable noncritical
+jig/support candidate rather than an assumed structural roof anchor. Material choices require eld
+tests, and neither PLA nor PETG is assumed to harmlessly degrade in a pond. [34, 2, 38, 33]
+
+
+  Method / process                   Low / base / high Tooling / boundary                 Basis
+                                     BDT
+  Printed pattern + formed           3,000 / 6,000 /        Shared jigs; alloy and fatigue [A]
+  recycled aluminium rotor. Print    11,000                 evidence required              Alternative
+  segmented pattern, roll/form                                                             process
+  sheet, rivet, balance                                                                    budgets;
+                                                                                           overlap
+                                                                                           BOM
+  Purchased gears / local steel shaft 5,000 / 10,000 /      Lathe, welding, alignment      [A]
+  and frame. Machine/key shaft,       19,000                jig; paid labour and scrap     Alternative
+  weld and coat frame, align                                                               process
+  purchased bearings                                                                       budgets;
+                                                                                           overlap
+                                                                                           BOM
+  Recycled PLA / PETG                 800 / 1,800 / 3,500   Reuse existing printer; no     [A]
+  noncritical parts per unit. Dry,                          critical strength inferred     Alternative
+  lter, print coupons then                                                                process
+  ducts/covers only                                                                        budgets;
+                                                                                           overlap
+                                                                                           BOM
+  Reclaimed HDPE oat pair.           2,400 / 4,400 / 8,000 No toxic drums, no glued       [A]
+  Inspect contamination, leak-test                          untested seams                 Alternative
+  compartments, mechanically                                                               process
+  cradle                                                                                   budgets;
+                                                                                           overlap
+                                                                                           BOM
+  Bamboo replaceable noncritical      500 / 1,500 / 3,000   No untested roof anchor        [A]
+  xtures. Dry, treat appropriately,                        substitution                   Alternative
+  bolt and inspect for rot                                                                 process
+                                                                                           budgets;
+                                                                                           overlap
+                                                                                           BOM
+  Recovered metal and polymer         300 / 700 / 1,500     Recovery target, recycler      [A]
+  take-back per unit. Label                                 agreement NOT FOUND            Alternative
+  material, separate fasteners,                                                            process
+  recover at end of life                                                                   budgets;
+                                                                                           overlap
+                                                                                           BOM
+
+
+Recycled-polymer research found altered properties and greater variability after reprocessing.           It
+supports coupon testing rather than a blanket claim of equal lifetime. Supplier material guidance
+supports screening for outdoor UV/temperature suitability; it is not structural qualication for this
+application. These sources are foreign, and the recycling paper exceeds the age threshold. [38, 34, 2]
+
+
+
+
+                                                   13
+ZeroWatt Wind                                                                              Feasibility and business evidence
+
+
+4.1 Batch economics
+                                                                         ∗ = ⌈(F
+Per-unit cost is C(q) = V + F/q and the crossover is q                          make − Fassemble )/(Vassemble − Vmake )⌉.
+Here make means locally fabricate the custom rotor/frame while still buying precision drive ele-
+ments. Making bearing balls or cutting all gears in-house is not assumed economical. Setup, variable
+savings, scale capability and rejects are assumptions; crossover is not a sales forecast.
+
+
+  Mode Batch                               Make BDT/unit     Assemble                Crossover / basis
+       units                                                 BDT/unit
+  A                          1             212,800           70,000                  21 units; [D] from [A] setup/rates
+  A                          10            50,800            43,000                  21 units; [D] from [A] setup/rates
+  A                          100           34,600            40,300                  21 units; [D] from [A] setup/rates
+  A                          1,000         32,980            40,030                  21 units; [D] from [A] setup/rates
+  B                          1             215,424           73,200                  20 units; [D] from [A] setup/rates
+  B                          10            53,424            46,200                  20 units; [D] from [A] setup/rates
+  B                          100           37,224            43,500                  20 units; [D] from [A] setup/rates
+  B                          1,000         35,604            43,230                  20 units; [D] from [A] setup/rates
+  A+B                        1             428,224           143,200                 21 units; [D] from [A] setup/rates
+  A+B                        10            104,224           89,200                  21 units; [D] from [A] setup/rates
+  A+B                        100           71,824            83,800                  21 units; [D] from [A] setup/rates
+  A+B                        1,000         68,584            83,260                  21 units; [D] from [A] setup/rates
+  H                          1             364,616           128,800                 18 units; [D] from [A] setup/rates
+  H                          10            94,616            83,800                  18 units; [D] from [A] setup/rates
+  H                          100           67,616            79,300                  18 units; [D] from [A] setup/rates
+  H                          1,000         64,916            78,850                  18 units; [D] from [A] setup/rates
+
+
+
+                                                                                                Local fabrication
+                             200                                                               Outsourced assembly
+     Thousand BDT per unit
+
+
+
+
+                             150
+
+
+                             100
+
+
+                             50
+
+
+                                     100                   101                       102                     103
+                                                                 Batch size, units
+
+Figure 3: Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain
+purchased in both options.
+
+
+
+
+                                                                   14
+ZeroWatt Wind                                                                                       Feasibility and business evidence
+
+
+5 Equivalent-service comparison and customer aordability
+The cost test holds the useful service boundary explicit. Basic ventilation supplies 300 [A] m /h of
+                                                                                                                               3
+
+added ow to a 150 [A] m
+                                                   3 room for 4,380 [A] h/year; the conventional fan draw is 55 [S] W, but the
+
+required pressure-ow duty is unmeasured. The pond example needs 0.025 [D] kg O2/h continuously.
+Electric eld SAE 1.2 [A] kg/kWh and wind eld correction 0.5 [A] remain assumptions. [17, 19, 39]
+
+FAO historical foreign tests show example paddlewheel specic oxygen transfer from 0.91 [S] to 1.41
+[S] kg/kWh under their stated conditions; modern supplier nameplates dier.                                        Neither is a clean
+substitute for a measured eld oxygen-transfer curve.                                  The commercial aerator used as a capex
+reference is larger than the small example demand; energy is duty-normalised, with mixing and
+start/stop feasibility unresolved. A smaller conventional unit could be cheaper, further weakening
+the wind case. [19, 1, 4]
+
+Wind-only systems have an unmet-service fraction. Equal-service costs therefore retain the conven-
+tional machine for backup and charge wind equipment maintenance and replacements on top. The
+cost of the existing grid connection is common to both alternatives. These totals assume available
+backup power; outage resilience still needs a generator/battery dispatch and simultaneous-weather
+assessment. Wind/PV substitution is not a guaranteed hourly service.
+
+
+  Base                            Electric, BDT          Wind + backup,           Diesel-fed, BDT Basis
+  case                                                   BDT
+  A                               50,002                 106,569                  198,996             [D] undiscounted horizon
+                                                                                                      totals from [A/S]
+  H                               50,002                 211,770                  198,996             [D] undiscounted horizon
+                                                                                                      totals from [A/S]
+  B                               153,032                236,983                  285,300             [D] undiscounted horizon
+                                                                                                      totals from [A/S]
+
+
+The veried commercial at tari is 15.36 [S] BDT/kWh and clinic LT-D1 is 9.05 [S] BDT/kWh
+under the June revision. The scanned ocial order and correction were inspected visually. Future
+taris are not forecast. VAT and xed demand charges are not credited as avoidable energy savings
+on an existing connection. [44, 45]
+
+
+
+                                200               Electric
+      Cumulative thousand BDT
+
+
+
+
+                                              Wind + backup
+                                            Generator-fed electric
+                                150
+
+
+                                100
+
+
+                                 50
+
+
+                                  0
+                                  −1        0     1        2         3   4        5         6   7      8       9       10     11
+                                                                              Year
+
+Figure 4: Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assump-
+tions are weak; wind operation alone has unmet demand.
+
+
+
+5.1 Basic A versus advanced H, and ventilation versus aeration
+
+                                                                             15
+ZeroWatt Wind                                                                Feasibility and business evidence
+
+
+
+  Criterion         Basic A                       Advanced H                 Pond B / basis
+  Principal         Room air exchange          Wind/PV/battery room          Supplemental oxygen/mixing;
+  service                                      air exchange                  [S/A] concepts
+  Failure during    Fan backup required        Limited battery; backup       Dangerous pre-dawn DO gap;
+  calm                                         still required                [A] risk
+  Environmental     Intake pollution, rain and Electrical protection and     Corrosion, leaks, mooring,
+  controls          pressure                   battery replacement           aquatic fragments; [A]
+  Market entry      Supervised noncritical     More capital and service      Noncritical ornamental pond
+                    test room                  skills                        before stocked aquaculture;
+                                                                             [A] judgement
+  Health/yield      Not monetised                 Not monetised              Not monetised; measurements
+  value                                                                      NOT FOUND
+  Wind              Rooftop turbulence            Solar can assist subject   Pond-height shelter and
+  dependency                                      to weather/storage         correlated night lulls; [A]
+
+
+
+ Case Wind               Annual net energy            Incremental             Basis
+      energy             saving, BDT                  payback
+      fraction
+ A       47.1%           143.4                        334.8                   [D] after wind maintenance,
+                                                                              before health/yield value
+ H       85.0%           =6.8                         No nite / beyond       [D] after wind maintenance,
+                                                      decision horizon        before health/yield value
+ B       7.6%            =1,515.1                     No nite / beyond       [D] after wind maintenance,
+                                                      decision horizon        before health/yield value
+
+
+
+  Case / denominator                     Electric cost        Wind +         Basis
+                                                              backup cost
+  A / BDT per added ACH-hour             0.571                1.217          [D] total cost / total service,
+                                                                             same room volume or oxygen
+                                                                             demand
+  H / BDT per added ACH-hour             0.571                2.417          [D] total cost / total service,
+                                                                             same room volume or oxygen
+                                                                             demand
+  B / BDT per eld kg O2                 69.878               108.212        [D] total cost / total service,
+                                                                             same room volume or oxygen
+                                                                             demand
+
+
+This is an unsubsidised customer comparison. The additional-ow target is not a full clinic safety
+specication.    Producer prot can coexist with poor customer economics if taris are set above
+avoided energy cost; the report does not call that aordability. Subsidies or sponsor purchases may
+fund demonstration value, but are not evidence of a sustainable mass-market saving.
+
+
+
+
+                                                       16
+ZeroWatt Wind                                                           Feasibility and business evidence
+
+
+6 Wind resource, performance availability and market boundary
+The national NREL campaign establishes a credible measurement/model framework, not a power
+curve for this prototype. The EU study indexed appendix reports Chandpur at 4.11 [S] m/s at 60
+[S] m, based on the older campaign. Full access to that PDF was blocked, so this contextual number
+is low-condence and not used as a rooftop input. Roof turbulence and pond-height shelter need
+local measurement. [49, 16, 48]
+
+The screening uses a Weibull wind distribution with shape k = 2 [A], c = v/Γ(1 + 1/k) [D], an
+assumed cut-in and a real-operation cut-out absent from the display model. Numerical integration
+evaluates both the probability of meeting required shaft power and E[min(Ps /Pneeded , 1)]. Mechan-
+ical availability multiplies both.   A capacity factor relative to the displayed rating is a separate
+quantity. These are illustrative scenario integrals, not bankable wind-resource forecasts.
+
+
+ Scenario           Mean     Full service Energy               Rated CF Basis
+                    wind m/s time         fraction
+ conservative       2.5          8.8%           24.1%          0.6%     [D] from [A] distribution,
+                                                                        coecients and uptime
+ base               3.5          29.2%          47.1%          1.9%     [D] from [A] distribution,
+                                                                        coecients and uptime
+ optimistic         4.5          48.1%          63.6%          4.3%     [D] from [A] distribution,
+                                                                        coecients and uptime
+
+
+The required wind threshold for the airow example is 4.19 [D] m/s under the assumed geometry
+and losses. The fraction of time real hardware delivers this output remains NOT FOUND. Published
+high-tower data cannot supply a measured rooftop/pond availability percentage. The simple annual
+hybrid energy allowance is separate from the website battery simulation and does not prove hourly
+adequacy.
+
+
+   Serviceable-market search funnel             Low / base / high       Basis
+                                                sites
+   Qualied roof sites in rst service territory 100 / 500 / 1,500      [A] No local qualication or
+                                                                        willingness-to-pay survey
+   Qualied supplemental pond sites in rst     50 / 250 / 1,000        [A] No local qualication or
+   territory                                                            willingness-to-pay survey
+
+
+National sheries area and pond count are broad context. A qualied site must pass wind, access,
+safety, maintenance and payment checks.         First customers should be a university demonstration
+facility, a sponsor-funded community test room or a municipal ornamental-pond pilot. No clinical
+provider, farmer or sponsor has supplied a purchase commitment in this task. Adoption is a scenario,
+not a percentage inferred from national hectares.
+
+
+
+
+                                                    17
+ZeroWatt Wind                                                                   Feasibility and business evidence
+
+
+7 Investment, OPEX, revenue and prot
+7.1 Prototype-to-market investment
+
+ Investment item                         Low BDT        Base BDT High BDT Treatment / basis
+ Engineering and redesign                250,000        500,000       1,000,000       prelaunch; [A] lines, [D]
+                                                                                      total
+ Tools printer jigs metrology            200,000        450,000       900,000         capex; [A] lines, [D]
+                                                                                      total
+ Pilot fabrication and failed trials     150,000        300,000       600,000         prelaunch; [A] lines, [D]
+                                                                                      total
+ Independent performance and             150,000        350,000       800,000         prelaunch; [A] lines, [D]
+ structural tests                                                                     total
+ Registration legal and launch           50,000         100,000       200,000         prelaunch; [A] lines, [D]
+                                                                                      total
+ low total incl contingency and          1,060,000                                  D total; [A] lines, [D]
+ working capital                                                                      total
+ base total incl contingency and                       2,240,000                    D total; [A] lines, [D]
+ working capital                                                                      total
+ high total incl contingency and                                    4,600,000       D total; [A] lines, [D]
+ working capital                                                                      total
+
+
+Totals include an explicitly budgeted contingency and working capital. Prelaunch engineering, pilots,
+tests, legal/launch and contingency are cash outows at inception; tools are capitalised, working
+capital is an asset released at the horizon. Post-launch eet growth and later tool renewal can raise
+the nancing need far above the initial budget. No government grant is included in project FCF.
+
+
+
+7.2 Fixed OPEX, monthly and annual
+
+  Item                                 Low / base / high            Base annual          Basis
+                                       monthly BDT                  BDT
+  Engineering and founder              40,000 / 60,000 / 100,000    720,000              [A] paid resources;
+  salaries                                                                               no assumption of
+                                                                                         permanently free
+                                                                                         labour
+  Technician salary                    18,000 / 25,000 / 40,000     300,000              [A] paid resources;
+                                                                                         no assumption of
+                                                                                         permanently free
+                                                                                         labour
+  Rent                                 8,000 / 12,000 / 20,000      144,000              [A] paid resources;
+                                                                                         no assumption of
+                                                                                         permanently free
+                                                                                         labour
+  Utilities and workshop energy        2,000 / 3,500 / 6,000        42,000               [A] paid resources;
+                                                                                         no assumption of
+                                                                                         permanently free
+                                                                                         labour
+  Logistics and eld travel            4,000 / 8,000 / 15,000       96,000               [A] paid resources;
+                                                                                         no assumption of
+                                                                                         permanently free
+                                                                                         labour
+
+
+
+                                                        18
+ZeroWatt Wind                                                                Feasibility and business evidence
+
+
+
+  Item                               Low / base / high              Base annual        Basis
+                                     monthly BDT                    BDT
+  Marketing and customer             3,000 / 7,000 / 14,000         84,000             [A] paid resources;
+  development                                                                          no assumption of
+                                                                                       permanently free
+                                                                                       labour
+  Administration accounting          3,000 / 6,000 / 10,000         72,000             [A] paid resources;
+  telecom                                                                              no assumption of
+                                                                                       permanently free
+                                                                                       labour
+  Insurance and liability            1,000 / 3,000 / 8,000          36,000             [A] paid resources;
+  allowance                                                                            no assumption of
+                                                                                       permanently free
+                                                                                       labour
+  Tool maintenance and               2,000 / 4,000 / 8,000          48,000             [A] paid resources;
+  calibration                                                                          no assumption of
+                                                                                       permanently free
+                                                                                       labour
+
+
+Manufacturing direct cost,       sold-unit installation,      warranty reserve,   provider-eet service and
+maintenance-contract delivery are variable costs outside this xed pool.               The base xed pool
+escalates with costs and adds a capacity allowance as the calendar ramp grows. Extra headcount
+required for very high break-even volumes is not validated. Insurance, roof liability and audited tax
+treatment require quotations/advice. Tax is an explicit prot reserve, with no refund for losses.
+
+
+
+7.3 Proposed commercial models and taris
+No sale, lease, pay-per-use, installation or maintenance business model was found in the supplied
+PDFs or current source. The following are analyst-proposed models requested for appraisal. Com-
+petitor prices anchor the opportunity cost but do not substantiate ZeroWatt willingness to pay.
+[36, 35, 39, 17, 1]
+
+
+  Model               Base tari /               Customer and billing boundary                 Basis
+                      transaction
+  Hardware sale       A 45,000; B 55,000; H      Site owner buys unit; installation            [A]
+                      125,000 BDT                unbundled; warranty cost retained             unvalidated
+                                                                                               WTP
+  Lease               1,500 BDT/unit/month       Provider owns eet; supplemental access,      [A] includes
+                                                 no guaranteed critical service                eet service
+  Pay-per-use         30 BDT/delivered hour      Scheduled 120 h/month times wind              [A] provider
+                                                 energy-service fraction;                      owns eet
+                                                 metering/collection untested
+  Installation        3,000 BDT/sold unit        Separate charge only on sold units; no        [A] direct
+                                                 duplicate leased-asset billing                labour
+                                                                                               allowance
+  Maintenance         1,800 BDT/year             Eligible sold units after warranty;           [A] not also
+  contract                                       assumed uptake 40%                            billed to
+                                                                                               lease/use
+                                                                                               eet
+
+
+Combined deployments allocate 70% [A] to sale, 20% [A] to lease and 10% [A] to metered use.
+Product mix is 60% [A] A, 30% [A] B and 10% [A] H. These are mutually exclusive asset channels.
+
+
+
+
+                                                      19
+ZeroWatt Wind                                                              Feasibility and business evidence
+
+
+Installation and post-warranty service attach only under the stated rules. Assets are not sold and
+leased simultaneously.
+
+
+ Year      New base               Conservative         Optimistic          Basis
+           deployments
+ 1         30                     15                   54                  [A] ramp; [D] scenario scaling
+ 2         45                     22                   81                  [A] ramp; [D] scenario scaling
+ 3         65                     32                   117                 [A] ramp; [D] scenario scaling
+ 4         90                     45                   162                 [A] ramp; [D] scenario scaling
+ 5         120                    60                   216                 [A] ramp; [D] scenario scaling
+ 6         150                    75                   270                 [A] ramp; [D] scenario scaling
+ 7         180                    90                   324                 [A] ramp; [D] scenario scaling
+ 8         210                    105                  378                 [A] ramp; [D] scenario scaling
+ 9         240                    120                  432                 [A] ramp; [D] scenario scaling
+ 10        270                    135                  486                 [A] ramp; [D] scenario scaling
+
+
+Expected deployments can be fractional in monthly/scenario outputs; actual orders must be integers.
+New units are spread uniformly across months and are not front-loaded to improve NPV. Cohort
+churn, collection loss and useful eet life limit recurring revenue. There is no terminal enterprise
+multiple or unproven licence revenue.
+
+
+
+7.4 Monthly and annual consolidated results
+
+Year Revenue BDT           EBITDA BDT       Depreciation       Tax reserve Net prot BDT             Basis
+0       0                  =1,590,000       0                  0                =1,590,000           [D]
+1       1,288,441          =1,277,878       135,474            0                =1,413,352           [D]
+2       2,174,375          =1,050,380       244,891            0                =1,295,272           [D]
+3       3,439,540          =690,246         411,484            0                =1,101,730           [D]
+4       5,145,112          =372,399         655,112            0                =1,027,511           [D]
+5       7,361,558          132,656          997,752            0                =865,096             [D]
+6       9,827,825          747,380          1,428,463          0                =681,082             [D]
+7       12,532,690         1,455,905        1,898,352          0                =442,447             [D]
+8       15,509,036         2,279,737        2,442,766          0                =163,029             [D]
+9       18,745,335         3,202,539        3,051,453          37,772           113,315              [D]
+10      22,228,920         4,206,666        3,712,604          123,515          370,546              [D]
+
+
+
+ Year    Average monthly     Average monthly     Average monthly         Average monthly     Basis
+         revenue             EBITDA              net prot               FCF
+ 1       107,370             =106,490            =117,779                =141,470            [D] annual /
+                                                                                             months
+ 2       181,198             =87,532             =107,939                =148,291            [D] annual /
+                                                                                             months
+ 3       286,628             =57,521             =91,811                 =152,644            [D] annual /
+                                                                                             months
+ 4       428,759             =31,033             =85,626                 =166,775            [D] annual /
+                                                                                             months
+ 5       613,463             11,055              =72,091                 =175,590            [D] annual /
+                                                                                             months
+
+
+
+
+                                                  20
+ZeroWatt Wind                                                        Feasibility and business evidence
+
+
+
+ Year      Average monthly   Average monthly   Average monthly     Average monthly      Basis
+           revenue           EBITDA            net prot           FCF
+ 6         818,985           62,282            =56,757             =220,982             [D] annual /
+                                                                                        months
+ 7         1,044,391         121,325           =36,871             =171,801             [D] annual /
+                                                                                        months
+ 8         1,292,420         189,978           =13,586             =162,409             [D] annual /
+                                                                                        months
+ 9         1,562,111         266,878           9,443               =151,906             [D] annual /
+                                                                                        months
+ 10        1,852,410         350,555           30,879              84,070               [D] annual /
+                                                                                        months
+
+
+
+Average monthly rows are annual results divided by operating months; they do not claim every
+month has equal revenue. The repository includes the full inception-to-horizon monthly schedule for
+all scenarios, so eet, working-capital and renewal timing can be inspected.
+
+
+
+7.5 Revenue and prot by model
+
+     Year / business model      Annual revenue Average monthly Basis
+                                BDT            BDT
+     1 / sale                   1,140,720         95,060              [D] from [A] taris, cohort
+                                                                      and collection inputs
+     1 / lease                  55,329            4,611               [D] from [A] taris, cohort
+                                                                      and collection inputs
+     1 / pay_per_use            31,282            2,607               [D] from [A] taris, cohort
+                                                                      and collection inputs
+     1 / installation           61,110            5,092               [D] from [A] taris, cohort
+                                                                      and collection inputs
+     1 / maintenance            0                 0                   [D] from [A] taris, cohort
+                                                                      and collection inputs
+     5 / sale                   5,337,924         444,827             [D] from [A] taris, cohort
+                                                                      and collection inputs
+     5 / lease                  1,053,308         87,776              [D] from [A] taris, cohort
+                                                                      and collection inputs
+     5 / pay_per_use            595,521           49,627              [D] from [A] taris, cohort
+                                                                      and collection inputs
+     5 / installation           285,960           23,830              [D] from [A] taris, cohort
+                                                                      and collection inputs
+     5 / maintenance            88,844            7,404               [D] from [A] taris, cohort
+                                                                      and collection inputs
+     10 / sale                  14,612,402        1,217,700           [D] from [A] taris, cohort
+                                                                      and collection inputs
+     10 / lease                 4,107,889         342,324             [D] from [A] taris, cohort
+                                                                      and collection inputs
+     10 / pay_per_use           2,322,526         193,544             [D] from [A] taris, cohort
+                                                                      and collection inputs
+     10 / installation          782,807           65,234              [D] from [A] taris, cohort
+                                                                      and collection inputs
+     10 / maintenance           403,296           33,608              [D] from [A] taris, cohort
+                                                                      and collection inputs
+
+
+
+
+                                                21
+ZeroWatt Wind                                                          Feasibility and business evidence
+
+
+
+ Year / model           EBITDA            Net annual       EBITDA / net monthly Basis
+                        annual
+ 1 / sale               =1,200,350        =1,280,031       =100,029 / =106,669        [D] allocation
+                                                                                      below
+ 1 / lease              =17,993           =52,174          =1,499 / =4,348            [D] allocation
+                                                                                      below
+ 1 / pay_per_use        =9,708            =27,052          =809 / =2,254              [D] allocation
+                                                                                      below
+ 1 / installation       =49,826           =54,095          =4,152 / =4,508            [D] allocation
+                                                                                      below
+ 1 / maintenance        0                 0                0/0                        [D] allocation
+                                                                                      below
+ 5 / sale               =850,523          =915,783         =70,877 / =76,315          [D] allocation
+                                                                                      below
+ 5 / lease              598,000           =20,046          49,833 / =1,670            [D] allocation
+                                                                                      below
+ 5 / pay_per_use        346,941           37,076           28,912 / 3,090             [D] allocation
+                                                                                      below
+ 5 / installation       22,187            18,690           1,849 / 1,558              [D] allocation
+                                                                                      below
+ 5 / maintenance        16,052            14,966           1,338 / 1,247              [D] allocation
+                                                                                      below
+ 10 / sale              =542,835          =696,009         =45,236 / =58,001          [D] allocation
+                                                                                      below
+ 10 / lease             2,834,123         388,992          236,177 / 32,416           [D] allocation
+                                                                                      below
+ 10 / pay_per_use       1,636,849         411,468          136,404 / 34,289           [D] allocation
+                                                                                      below
+ 10 / installation      156,384           148,178          13,032 / 12,348            [D] allocation
+                                                                                      below
+ 10 / maintenance       122,145           117,917          10,179 / 9,826             [D] allocation
+                                                                                      below
+
+
+
+Direct costs follow each actual channel. Shared overhead, tools and consolidated tax are allocated
+by revenue; provider-eet depreciation follows lease/use deployment shares. These rows reconcile to
+the combined company but do not prove independent viability of installation or AMC. Separate sale-
+plus-installation/service, all-lease and all-use alternatives each carry the full overhead and launch
+budget; they must not be summed.
+
+
+ Standalone                 Annual            Annual          Annual net          Basis
+ alternative / year         revenue           EBITDA          prot
+ sale / 1                   1,716,900         =1,273,188      =1,363,188          [D] full common
+                                                                                  overhead per
+                                                                                  alternative
+ sale / 5                   8,161,041         =917,478        =1,007,478          [D] full common
+                                                                                  overhead per
+                                                                                  alternative
+ sale / 10                  22,569,294        =315,745        =425,244            [D] full common
+                                                                                  overhead per
+                                                                                  alternative
+ lease / 1                  276,645           =1,300,879      =1,542,459          [D] full common
+                                                                                  overhead per
+                                                                                  alternative
+
+
+
+
+                                                    22
+ZeroWatt Wind                                                                                   Feasibility and business evidence
+
+
+
+  Standalone                                    Annual            Annual              Annual net           Basis
+  alternative / year                            revenue           EBITDA              prot
+  lease / 5                                     5,266,540         2,353,412           =762,429             [D] full common
+                                                                                                           overhead per
+                                                                                                           alternative
+  lease / 10                                    20,539,447        13,863,687          1,307,878            [D] full common
+                                                                                                           overhead per
+                                                                                                           alternative
+  use / 1                                       312,820           =1,264,704          =1,506,284           [D] full common
+                                                                                                           overhead per
+                                                                                                           alternative
+  use / 5                                       5,955,211         3,042,083           =87,669              [D] full common
+                                                                                                           overhead per
+                                                                                                           alternative
+  use / 10                                      23,225,256        16,549,497          3,322,235            [D] full common
+                                                                                                           overhead per
+                                                                                                           alternative
+
+
+
+                                    15       sale
+      Annual revenue, million BDT
+
+
+
+
+                                            lease
+                                         pay per use
+                                         installation
+                                    10
+                                         maintenance
+
+
+                                    5
+
+
+
+                                    0
+                                         1      2         3   4        5          6     7         8       9        10
+                                                                           Year
+
+Figure 5: Base revenue by proposed model [D] from [A] taris and demand. Sales, leases and use have
+distinct asset cohorts; no double billing.
+
+
+
+
+                                                                      23
+ZeroWatt Wind                                                                         Feasibility and business evidence
+
+
+8 Cash ow, NPV, IRR and payback
+The model computes F CF = N etP rof it + Depreciation − F leetCapex − T oolCapex − ∆N W C and
+           PM                   m/12 . The IRR is an annual eective rate solving the same monthly
+NPV =         m=0 F CFm /(1 + r)
+timing equation. Annual summaries are sums of monthly cash ow, not a claim of identical year-end
+timing. A negative IRR is meaningful when a unique root exists; no root is reported as undened.
+Payback is a durable interpolated crossing that subsequent capital outlays do not reverse.
+
+
+ Scenario           NPV BDT / USD               IRR           Simple / discounted Peak funding            Basis
+                                                              payback years       BDT
+ conservative       =21,129,346 / =170,880 Undened;          Not reached / Not         49,339,229        [D], [A/S]
+                                                no root       reached                                     inputs
+ base               =11,181,078 / =90,425       =47.7%        Not reached / Not         21,769,906        [D], [A/S]
+                                                              reached                                     inputs
+ optimistic         605,233 / 4,895             19.6%         7.85 / 9.96               6,799,321         [D], [A/S]
+                                                                                                          inputs
+
+
+
+ Base         FCF BDT                 Fleet capex         Tool capex              Change in              Basis
+ year                                                                             working capital
+ 0            =2,240,000              0                   450,000                 200,000                [D] monthly
+                                                                                                         sum
+ 1            =1,697,638              419,760             0                       0                      [D] monthly
+                                                                                                         sum
+ 2            =1,779,494              654,826             0                       74,288                 [D] monthly
+                                                                                                         sum
+ 3            =1,831,730              983,694             0                       157,790                [D] monthly
+                                                                                                         sum
+ 4            =2,001,297              1,416,519           0                       212,379                [D] monthly
+                                                                                                         sum
+ 5            =2,107,080              1,964,239           0                       275,497                [D] monthly
+                                                                                                         sum
+ 6            =2,651,787              2,553,511           547,494                 298,163                [D] monthly
+                                                                                                         sum
+ 7            =2,061,613              3,186,782           0                       330,736                [D] monthly
+                                                                                                         sum
+ 8            =1,948,906              3,866,629           0                       362,014                [D] monthly
+                                                                                                         sum
+ 9            =1,822,866              4,595,764           0                       391,870                [D] monthly
+                                                                                                         sum
+ 10           1,008,843               5,377,044           0                       =2,302,737             [D] monthly
+                                                                                                         sum
+
+
+
+     Scenario              Nominal                 NPV BDT                            Basis
+                           discount rate
+     conservative          12%                     =26,789,579                        [D] monthly discounting
+     conservative          18%                     =21,129,346                        [D] monthly discounting
+     conservative          25%                     =16,757,317                        [D] monthly discounting
+     base                  12%                     =13,020,405                        [D] monthly discounting
+     base                  18%                     =11,181,078                        [D] monthly discounting
+     base                  25%                     =9,622,555                         [D] monthly discounting
+
+
+
+                                                          24
+ZeroWatt Wind                                                        Feasibility and business evidence
+
+
+
+  Scenario             Nominal           NPV BDT                      Basis
+                       discount rate
+  optimistic           12%               3,733,465                    [D] monthly discounting
+  optimistic           18%               605,233                      [D] monthly discounting
+  optimistic           25%               =1,463,703                   [D] monthly discounting
+
+
+The base and conservative cases fail the required return. The optimistic case assumes more adoption,
+higher price, cheaper components and stronger wind simultaneously; no probabilities are attached.
+The initial nancing mix below funds only a validation budget and cannot fund the full base-case
+burn without repeated additional capital. Continuing the base plan would be a nancing decision,
+not evidence that it is feasible.
+
+
+
+
+                                                25
+ZeroWatt Wind                                                                                     Feasibility and business evidence
+
+
+
+
+   Cumulative FCF, million BDT
+
+
+
+
+                                  20
+
+
+                                   0
+
+
+                                 −20
+                                                    conservative
+                                                        base
+                                 −40                  optimistic
+                                             Optimistic monthly payback
+
+                                   −1       0      1      2      3        4         5     6   7       8      9      10        11
+                                                                                   Year
+
+Figure 6: Cumulative company cash ow [D]. The star marks optimistic monthly interpolated payback; the
+base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+
+
+
+
+                                   0
+           NPV, million BDT
+
+
+
+
+                                  −5
+
+                                 −10
+
+                                 −15
+
+                                 −20
+
+                                        Conservative                               Base                          Optimistic
+
+Figure 7: Scenario NPV [D] at the assumed base discount rate; positive optimistic results are conditional,
+not a tuned base forecast.
+
+
+
+
+                                                                              26
+ZeroWatt Wind                                                                Feasibility and business evidence
+
+
+9 Sensitivity and break-even conditions
+
+  Input                Low / high setting           NPV at low        NPV at high         Basis
+  Price                {'price': 0.8} / {'price':   =17,524,684       =5,821,504          [D] one at a time;
+                       1.2}                                                               [A] ranges
+  Adoption             {'adoption': 0.6} /          =11,833,030       =10,832,513         [D] one at a time;
+                       {'adoption': 1.4}                                                  [A] ranges
+  Wind availability    {'wind_factor': 0.6} /       =12,263,177       =10,194,117         [D] one at a time;
+                       {'wind_factor': 1.4}                                               [A] ranges
+  Component cost       {'cost': 0.8} / {'cost':     =5,679,524        =17,369,983         [D] one at a time;
+                       1.2}                                                               [A] ranges
+  Discount rate        .12 / .25                    =13,020,405       =9,622,555          [D] one at a time;
+                                                                                          [A] ranges
+
+
+
+    Discount rate
+
+ Component cost
+
+Wind availability
+
+          Adoption
+                                                                                                  Low input
+             Price                                                                                High input
+
+                      −7   −6     −5     −4     −3     −2    −1   0      1     2      3      4      5     6
+                                               Change from base NPV, million BDT
+
+Figure 8: Tornado sensitivity [D]. Low/high describe the input, not necessarily the nancial outcome. Wind
+variation aects metered-use hours; sale and supplemental-access lease prices are xed.
+
+Within the model, uniformly scaling all taris by 1.435 [D] makes project NPV zero; the corre-
+sponding hardware weighted price is 80,360 [D] BDT. This is a portfolio tari condition, not a
+hardware-only price recommendation.           Holding tari and assumed cost capacity xed, adoption
+would need 774.17 [D] times the base ramp, including 23,225.1 [D] expected rst-year deployments.
+That scale is outside the validated stang/customer envelope and is not a credible sales forecast.
+
+Wind does not directly create sales or guarantee lease uptime in the proposed contracts. Accordingly
+the nancial wind tornado is modest because it changes metered-use revenue only. A severe low-
+wind reality could also impair adoption, retention, warranty and liability; the one-at-a-time chart
+does not quantify those interactions. Capacity factor, full-service probability and billable equivalent
+hours are not used interchangeably.
+
+
+
+
+                                                        27
+ZeroWatt Wind                                                                      Feasibility and business evidence
+
+
+10 Funding strategy and stage gates
+Pursue non-dilutive pilot support and university facilities rst, while keeping project viability sep-
+arate from fundraising.        Government programme amounts are ceilings/indications, not awarded
+money. No message or application has been sent to any organisation. Probabilities below are sub-
+jective low/base/high planning assumptions; published approval probabilities were NOT FOUND.
+
+
+  Route / eligibility         Amount low /       Cost and timing months Success low / Basis / limitation
+                              base / high                               base / high
+                              BDT
+  University / incubator.     100,000 / 400,000 Grant or in-kind, no           0% / 50% /      A; No specic award/call
+  University aliation and    / 700,000          assumed equity; 1 / 3 / 6     80%             veried [39]
+  supervised test plan
+  CSR / sponsor.              200,000 / 700,000 Restricted pilot grant;        0% / 25% /      A; Target, not an oer
+  Instrumented community      / 1,500,000        reporting and branding; 2 / 50%               [46]
+  benet and safeguarding                        4/9
+  agreement
+  iDEA / BCC / ICT            200,000 / 700,000 Non-dilutive grant if          0% / 15% /      A/S; S ceiling 1000000, A
+  Division. Conrm            / 1,000,000        selected; 3 / 6 / 12          30%             request/time/chance [32]
+  innovative hardware
+  eligibility and current
+  application session
+  Competition. Published      50,000 / 200,000 / Prize; event-specic rules; 1 0% / 10% /      A; Current prize
+  call, judged prototype and 500,000             / 4 / 12                      25%             amount/deadline NOT
+  IP terms                                                                                     FOUND [32]
+  Angel / impact VC. Paid     1,000,000 /        A equity dilution 10-30       0% / 5% / 15%   A; No investor
+  pilots, unit margin and     3,000,000 /        percent; no valuation                         commitment or term
+  defensible product          7,000,000          evidence; 3 / 6 / 12                          sheet [43]
+  Startup Bangladesh.         2,500,000 /        Indexed FAQ:                  0% / 3% / 10%   A/S-index; FAQ indexed
+  Registered company,         5,000,000 /        equity/quasi-equity, at                       terms; full open blocked
+  tax/VAT records and         50,000,000         most 49 percent; conrm; 1                    [43]
+  diligence                                      /4/9
+  SME Foundation.             50,000 / 1,000,000 Published up to 9 percent; 0% / 10% /         A/S; S indicative
+  Productive enterprise and / 1,500,000          current partner terms         30%             amount/interest; A
+  participating lender                           required; 2 / 5 / 9                           approval time/chance
+  underwriting                                                                                 [40]
+  Bank / BB green renance. 500,000 /            A borrower rate 8-16          0% / 5% / 20%   A; Programme exists;
+  Trade licence, accounts,    1,500,000 /        percent until current oer;                   product eligibility and
+  eligible use and repayment 5,000,000           3 / 6 / 12                                    rate NOT FOUND [7]
+  capacity
+  IDCOL. Project sponsor,     500,000 /          Project lending or R&D        0% / 3% / 10%   A; Solar terms are not
+  technical review and        2,000,000 /        route; product-specic oer                   passive-wind eligibility
+  eligible nancing window    5,000,000          NOT FOUND; 4 / 9 / 18                         [31]
+  a2i / ICT innovation.       100,000 / 500,000 Grant, call-specic; 3 / 6 / 0% / 5% / 20%     A; Current matching call
+  Public service innovation   / 1,000,000        12                                            NOT FOUND [32]
+  and published eligibility
+  GCF / accredited partner. 0 / 0 / 2,000,000 No budgeted receipt;             0% / 1% / 5%    A; Direct startup
+  Accredited entity or                           AE/PSAA project route; 9                      allocation NOT FOUND
+  accepted project-specic                       / 18 / 36                                     [26]
+  route
+  BCCRF legacy. Do not        0/0/0              Excluded from                 0% / 0% / 0%    A; Current actionable
+  assume legacy programme                        recommended cash plan; 0                      call NOT FOUND [46]
+  is open                                        /0/0
+  Crowdfunding / preorders. 100,000 / 300,000 A 5-15 percent                   0% / 15% /      A; Platform access and
+  Evidence, delivery plan and / 700,000          platform/fullment reserve, 35%               legal/FX terms NOT
+  clear refund terms                             refunds possible; 2 / 4 / 8                   FOUND [39]
+
+
+iDEA criteria and grant cap were checked in its ocial SOP; the SME route is via participating
+lenders. The ocial Bangladesh Bank listing conrms a green-factory renance circular, but product-
+specic eligibility, borrower terms and credit approval remain unresolved. Startup Bangladesh FAQ
+terms are available in indexed text but full-page access failed. IDCOL solar terms must not be trans-
+ferred to passive mechanical wind, and GCF support generally requires an accredited or accepted
+project-specic entity route. Current matching BCCRF/a2i/competition calls were NOT FOUND.
+[32, 40, 7, 43, 31, 26]
+
+
+
+
+                                                          28
+ZeroWatt Wind                                                                                Feasibility and business evidence
+
+
+
+  Pilot funding target                            BDT              USD              Share           Basis
+  Founder cash                                    440,000          3,558            19.6%           [A] none committed
+  University contribution                         400,000          3,235            17.9%           [A] none committed
+  CSR pilot                                       700,000          5,661            31.2%           [A] none committed
+  iDEA grant target                               700,000          5,661            31.2%           [A] none committed
+
+
+
+                                  700
+     Pilot target, thousand BDT
+
+
+
+
+                                  600
+
+
+                                  500
+
+
+                                  400
+                                        Founder             University              CSR                       iDEA
+
+Figure 9: Recommended initial funding targets [A], not expected receipts. In-kind contributions oset the
+relevant budget item, and must not be counted again as unrestricted cash.
+
+Release funds against gates: rst conrm structural safety and a calibrated rotor/load curve; then
+demonstrate useful airow or oxygen transfer in supervised conditions; then obtain written customer
+and supplier commitments.                          Pause scale spending if a gate fails.    Debt should follow evidence of
+repayment capacity; a lower loan rate cannot turn a structurally negative product value proposition
+into a sound one.
+
+
+
+
+                                                                         29
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+11 Bangladesh sourcing, assembly and import exposure
+
+  Component          Named source / assembly Lead time and landed-cost                    Basis
+  group              option                  boundary
+  Patterns and      TechShopBD, HTE                   Local stock indication; custom      [S] observed
+  lament           Bangladesh, Costareen,            printed work requires quote         oers [21, 22,
+                    Electronics.Com.BD                                                    23, 24]
+  Gears and         ZerOneTech hobby sample;          Production-equivalent matched       [S/A] not in-
+  supports          KHK specication catalogue;       bores and torque ratings require    terchangeable
+                    Motion/MISUMI bearing             RFQ                                 [27, 33, 9, 10,
+                    references                                                            11]
+  Fan and ducts     Walton distributor for            No veried workshop quote for       [S/A] [17]
+                    conventional comparator; local    plenum/roof works
+                    sheet-metal workshop RFQ
+  Wet hardware /    NSC BD and Bangla Ltd. as         Complete machines show            [S/A] [1, 4]
+  oats             commercial aerator                materials; separate oat/paddle
+                    benchmarks                        supply RFQ needed
+  Custom shafts and Candidate                         No named, vetted fabricator quote [A] sourcing
+  frames            Nawabpur/Dholaikhal               found; do not imply a purchase    route
+                    workshops; IUT facilities for     agreement
+                    supervised R&D
+  Imports           Authorised dealer / freight       Freight, CD, VAT, advance taxes     [A] exact
+                    forwarder; NBR classication      and broker charges depend on        current duty
+                                                      exact HS/SRO                        NOT
+                                                                                          FOUND [14]
+
+
+Assumed local lead time is 1 [A] / 3 [A] / 6 [A] weeks; import lead time 3 [A] / 6 [A] / 12 [A] weeks.
+A landed uplift reserve of 15% [A] / 35% [A] / 65% [A] is only a stress range.           It is not a tari
+ruling and is not applied again to BOM allowances already intended as domestic purchase budgets.
+Classied landed quotes are required before procurement.
+
+Assembly acceptance should record rotor balance, shaft alignment, free play, axial retention, brake
+stop response, guard fasteners, roof water ingress and oat leak/stability checks.        Keep serialised
+service records and replaceable wear parts. Production tooling, inspection time and rejected parts
+are paid costs, not assumed free university support.
+
+
+
+
+                                                 30
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+12 Future scope with costed evidence gates
+
+  Future item / test                     Low / base / high Timing      Source and decision boundary
+                                         BDT               months
+  Calibrated performance rig.            100,000 / 250,000 /   03     Core validated curves; no revenue
+  Torque-speed, static-pressure/ow,     500,000                       booked; [A] budget [48, 3, 12, 19]
+  DO transfer and brake-stop data
+  Structural and overspeed redesign.     100,000 / 250,000 /   16     Independent review before
+  Guard retention, fatigue, anchor       600,000                       occupied/public installation; [A]
+  uplift and mechanical fail-safe                                      budget [48, 33]
+  Durable and recycled material pilot.   50,000 / 150,000 /    26     Lower lifecycle cost must exceed
+  UV, salt exposure, creep, leaks and    350,000                       rework cost; [A] budget [34, 2, 38]
+  recycled-lot coupons
+  Monitoring kit per air site.           7,000 / 18,000 /      36     Optional electrical load; no
+  Calibrated CO2, anemometer, RPM        40,000                        measured value premium; [A]
+  and enclosure                                                        budget [47, 12]
+  Monitoring kit per pond site.          12,000 / 35,000 /     36     Pre-dawn oxygen trend, sensor
+  DO/temperature logging and             80,000                        maintenance required; [A] budget
+  reference calibration                                                [20, 3]
+  Fixed PV hybrid incremental kit.       20,000 / 38,000 /     612    Compare xed PV against costly
+  Matched module, motor, charge          70,000                        tracking; no autonomy guarantee;
+  control and battery autonomy                                         [A] budget [39, 48]
+  Regional service and modular eet      100,000 / 300,000 /   918    Separate additive power from
+  trial. Multiple independently          700,000                       correlated wind availability; [A]
+  metered assets and response-time                                     budget [19, 48]
+  records
+  Grain grinding feasibility study.      50,000 / 150,000 /    1224   Deferred; not a current business
+  Torque requirement, gearing,           300,000                       model; [A] budget [36, 33]
+  food-contact and guarding tests
+
+
+
+Each citation supports a method or engineering principle, not an asserted benet percentage. Spiral-
+turbine literature concerns other geometries and operating points; no published Cp is copied into
+a claim about this prototype.        Clean-water oxygen-transfer standards and FAO oxygen budgets
+support testing, while clinic/WHO material supports measurement and intake design.                Costs are
+independent planning alternatives and can overlap the launch test budget; they are not all added to
+the nancial projection. [41, 42, 3, 19, 12, 47]
+
+
+
+
+                                                       31
+ZeroWatt Wind                                                          Feasibility and business evidence
+
+
+12.1 Roadmap and staged expansion
+The proposed sequence below requires evidence before each expansion step. Test infrastructure, an
+independent safety review and durability data precede optional monitoring and eet growth. Costs
+and dates remain assumptions; an unsuccessful test should delay the next stage rather than trigger
+automatic deployment.
+
+
+                                      0    6            12           18            24
+                                                                                        Months [A]
+
+                   Performance rig
+
+                Overspeed safety
+
+                    Materials trial
+
+                   Air monitoring
+
+                Pond monitoring
+
+                Fixed-PV hybrid
+
+                      Service eet
+
+                      Grain study
+
+ Figure 10: Future-scope sequence [A]. Advancement depends on evidence gates, not elapsed time alone.
+
+Solar tracking shown in the site adds moving parts; a xed-panel pilot should establish whether
+assistance value justies the extra cost. More pond units add potential transfer but remain exposed
+to shared lulls.    Grain grinding appears only in a submission sketch and remains deferred until
+torque, food-contact, guarding and economics are tested. No future-feature revenue is included in
+NPV.
+
+
+
+
+                                                 32
+ZeroWatt Wind                                                           Feasibility and business evidence
+
+
+13 Environmental screening and end of life
+The mechanical core uses no operating electricity, but it has embodied materials, fabrication, lo-
+gistics, lubricant and replacement impacts. A transparent screening calculation is preferable to a
+zero-carbon claim.    The DoE published factor is 0.62 [S] kg CO2/kWh for the stated older scal
+periods, published in its January notice. This historical average factor is not a prediction of future
+marginal displacement or a veried carbon-credit methodology. [28]
+
+Gross avoided emissions equal displaced grid kWh times the grid factor.          Net screening benet
+subtracts assumed embodied emissions. Foreground masses are 15 [A] kg steel, 4 [A] kg aluminium
+and 3 [A] kg polymer for A, or 8 [A] kg for B. Assumed factors are 2.0 [A], 8.0 [A] and 3.0 [A]
+kgCO2e/kg respectively.       These are screening placeholders, not supplier EPDs; bounds span half
+to double the resulting embodied estimate.       Hybrid PV/battery/electronics receive an additional
+lifecycle reserve, not a complete LCA.
+
+
+  Case Embodied low / base Gross avoided over             Net screening       Carbon payback
+       / high kgCO2e       horizon kgCO2                  kgCO2e              years / basis
+  A       60 / 121 / 242            703.7                 582.7               1.7; [D], not veried
+                                                                              LCA
+  H       210 / 421 / 842           1,269.5               848.5               3.3; [D], not veried
+                                                                              LCA
+  B       68 / 136 / 272            85.9                  =50.1               15.8; [D], not veried
+                                                                              LCA
+
+
+Negative net screening values are retained. Metal recovery is plausible in principle, but no supplier
+take-back or local recycling recovery rate has been veried.      The recovery target in the model is
+a design target only.      Keep material labels, demountable joints, drainable housings and captured
+lubricants. Recover printed fragments and damaged oats; do not permit pond disposal. Batteries
+require a dedicated recycler/take-back arrangement.
+
+Noise, structure-borne vibration, wildlife strike/entanglement, corrosion products and aquatic dis-
+turbance are NOT MEASURED. Small size and a spiral shape do not prove silence or ecological
+safety.   Use guards and setbacks, survey the site, log vibration/noise at occupied locations, and
+inspect water impacts.       Increasing airow can introduce outdoor PM and moisture; ltration or
+damper changes can consume the small pressure budget. [48, 34, 20]
+
+
+
+
+                                                   33
+ZeroWatt Wind                                                            Feasibility and business evidence
+
+
+14 Risks, limitations and decision gates
+
+  Risk                  Evidence consequence            Action / owner                     Basis
+  Unknown loaded        Core performance cannot be    Engineering team: measured           NOT
+  startup and torque    certied                      torque-speed/load curve before       FOUND
+                                                      commercial claims
+  Wind lulls and site Neither time availability nor   Independent site assessor:           [S/A]
+  turbulence           outage coincidence veried     hub-height logging and               [48, 49]
+                                                      demand/wind joint analysis
+  Storm and            Code rotates in storms; no     Qualied engineer: fatigue,          NOT
+  structural safety    hardware cut-out proof         anchorage, guarding and fail-safe    FOUND
+                                                      test
+  Critical clinic /    Energy example is not safe     Site owner and expert: dene         [S/A]
+  stocked pond         service delivery               service demand, backup and alarm     [12, 18]
+  liability                                           response
+  Custom quotations BOM bands may miss costs          Procurement: equivalent-spec         NOT
+  and warranty                                        written RFQs and pilot failure       FOUND
+                                                      records
+  Demand and tari     Proposed revenue may not be Commercial team: paid pilot,            NOT
+  acceptance           realisable                     competing oers and customer         FOUND
+                                                      interviews
+  Tax, customs and     Scenario reserves may dier    Accountant/broker/insurer:           NOT
+  insurance            from actual cash outlays       current entity and                   FOUND
+                                                      classication-specic advice
+  Future-source access Indexed or dated sources limit Maintain date/access ags and        [S] source
+  and age              condence                      replace with primary full text       register
+
+
+Discount-rate sensitivities are not a substitute for modelling correlated failure, supplier escalation or
+market rejection. The project has no veried production CAD, independent lifetime tests, customer
+orders or guaranteed grant.      All recommendations remain conditional on the explicitly recorded
+assumptions.    A failure to meet an evidence score threshold is reported rather than repaired by
+raising a self-assigned score.
+
+
+
+
+                                                   34
+ZeroWatt Wind                                                       Feasibility and business evidence
+
+
+15 Conclusion
+ZeroWatt Wind is a credible student mechanical concept with an honest poster boundary, but
+current evidence does not support commercial-scale claims. The base project NPV is   =11,181,078
+[D] BDT and its annual eective IRR is   =47.7% [D]; payback is not reached. The appropriate next
+investment is a gated measurement and durability pilot. Product redesign, substantially lower cost
+or independently demonstrated non-energy value would be required before broad rollout. No health,
+sh-yield, resilience or carbon premium should be promised in advance of evidence.
+
+
+
+
+                                                35
+ZeroWatt Wind                                                                Feasibility and business evidence
+
+
+16 Assumptions and unresolved-evidence register
+
+ Input                        Low         Base             High        Basis / reason
+ FX BDT/USD                   123.650     123.650          123.650     S: BB WAR 2026-10-19; not
+                                                                       guaranteed transaction rate
+ Site mean wind m/s           2.500       3.500            4.500       A: No hub-height time series;
+                                                                       utility-height speeds not transferred to
+                                                                       roof
+ Mechanical availability      0.800       0.900            0.950       A: Includes maintenance/curtailment;
+                                                                       prototype uptime unmeasured
+ Wind distribution k          1.500       2.000            2.500       A: Only k=2 used in central scenarios;
+                                                                       k bounds agged for later data tting
+ Price multiplier             0.850       1.000            1.100       A: No willingness-to-pay survey
+ Adoption multiplier          0.500       1.000            1.800       A: No orders or customer funnel
+ Production cost multiplier   0.900       1.000            1.250       A: No comparable RFQs for custom
+                                                                       production BOM
+ Annual price/cost escalation 0.020       0.040            0.080       A: Common nominal escalation; no
+                                                                       margin ination benet
+ Tax reserve fraction         0.200       0.250            0.300       A: Entity-specic statutory taxes
+                                                                       NOT FOUND; no tax advice
+ Yearly churn                 0.040       0.080            0.150       A: No retention observations
+ Uncollected revenue          0.015       0.030            0.080       A: No payment histories
+ Lease BDT/month              1,000.000   1,500.000        2,000.000   A: Supplemental access tari; not an
+                                                                       energy-saving price quote
+ Pay-per-use BDT/h            20.000      30.000           40.000      A: Metered delivery and collection
+                                                                       untested
+ Paid hours scheduled/month 60.000        120.000          180.000     A: Actual billable hours multiplied by
+                                                                       energy-service fraction
+ Installation fee BDT         2,000.000   3,000.000        5,000.000   A: Unbundled sold units only
+ AMC fee BDT/year             1,000.000   1,800.000        3,000.000   A: After warranty; separate sold units
+                                                                       only
+ Grid benchmark BDT/kWh       9.050       15.360           20.000      A/S: 2026 BERC LT-D1 and LT-E S;
+                                                                       future tari high A; VAT/xed costs
+                                                                       cancel for existing connection
+ Electric eld SAE kg/kWh     0.800       1.200            1.800       A: FAO and supplier standard ratings
+                                                                       are not eld delivery
+ Wind eld oxygen correction 0.300        0.500            0.700       A: No alpha/beta or site water test
+ Wind standard SAE kg/kWh 0.400           0.800            1.200       A: Site default base .8, prototype test
+                                                                       NOT FOUND
+ Diesel BDT/litre             90.000      110.000          140.000     A: No veried current pump quote
+ Generator litre/kWh          0.300       0.400            0.600       A: Part-load sharing; own set at tiny
+                                                                       load could be much worse
+ Embodied footprint           0.500       1.000            2.000       A: Foreground masses and factors not
+ multiplier                                                            supplier EPDs
+ Import landed uplift         0.150       0.350            0.650       A: Freight duties and broker reserve;
+                                                                       not a statutory tari
+ Local lead time weeks        1.000       3.000            6.000       A: Custom RFQ not received
+ Import lead time weeks       3.000       6.000            12.000      A: No shipment quote
+ Discount rate nominal        0.120       0.180            0.250       A: Historical 10 percent BB policy
+                                                                       benchmark plus project risk; not
+                                                                       observed WACC
+ AMC uptake                 0.200         0.400            0.600       A: No service-contract demand study
+ Customer mechanical annual 0.020         0.040            0.080       A: Service visits can dominate low
+ maintenance share                                                     output
+ Hybrid avoided energy      0.250         0.450            0.600       A: Applied to base wind fraction,
+ fraction addition                                                     capped .85; dispatch model NOT
+                                                                       FOUND
+
+
+
+                                                      36
+ZeroWatt Wind                                                           Feasibility and business evidence
+
+
+Base assumptions are used as written, not selected to produce a positive outcome. Scenario input
+combinations are neither statistical condence intervals nor independent probabilities. Ranges with-
+out direct evidence are labelled [A] and should be replaced with measured distributions or written
+quotations before investment.
+
+
+   NOT FOUND /             Required evidence
+   low-condence item
+   Measured core           Starting wind speed, loaded torque/RPM, Cp, drivetrain loss,
+   performance             airow/static pressure, eld and standard oxygen transfer.
+   Durability and safety   Production stress/fatigue design, safe storm shutdown, anchor/mooring
+                           loads, oat reserve buoyancy, weathering and service life.
+   Hub-height wind         Bangladesh rooftop/pond distribution, fraction meeting demand, longest
+                           lulls and coincidence with outages/pre-dawn DO need.
+   Commercial proof        Current baseline business models/prices in supplied materials, purchase
+                           commitments, willingness to pay, retention, collections and market funnel.
+   Component quotations    Three independent comparable production price points for every custom
+                           rotor/frame/gear/guard/oat/duct and warranted hybrid subsystem.
+   Supplier execution      Veried custom Bangladesh fabricator RFQs, production lead times,
+                           landed freight and current HS/SRO tax incidence.
+   Operating/legal costs   Actual insurance, entity-specic tax, minimum/turnover taxes, VAT
+                           recoverability, warranty incidence and eet loss rates.
+   Funding                 Programme-specic eligibility, current matching
+                           BCCRF/a2i/competition calls, grant success probabilities, committed
+                           awards, investor terms and crowdfunding access.
+   Attributable benets    Local avoided health cost/time, cognitive productivity gain, sh
+                           mortality/yield improvement and monetary resilience value.
+   Environmental proof     Supplier EPDs, material masses, recycler recovery rates, audited lifecycle
+                           inventory, noise/vibration and wildlife/aquatic impact.
+   Future scope            Measured tracking gain, safe grain-grinding output, validated regional
+                           eet operation and service economics.
+   Blocked source          Several ocial/vendor full texts were blocked or index-only; those records
+   verication             carry explicit access limitations.
+   Gauntlet suciency      Evidence-dependent tasks and the nancial model may remain below the
+                           requested evidence threshold after the maximum rounds; no score is
+                           fabricated.
+
+
+
+
+                                                 37
+ZeroWatt Wind                                                         Feasibility and business evidence
+
+
+17 Gauntlet log summary and reproducibility
+The repository preserves a draft, ve task-specic objections and successive source/model repairs
+for each requested task, plus nance.   This is one analyst self-review using investor, judge and
+fact-checker perspectives; it is not an independent expert review. Evidence suciency, arithmetic,
+realism and completeness are scored separately. Transparent assumptions do not turn an evidence
+gap into a sourced measurement.
+
+
+  Task      Passes   Scores E / N / R / C      Remaining limitation / Basis
+  01        3        8/9/9/9                   Requested evidence threshold met for bounded
+                                               description; physical validation still separate. [A]
+                                               self-assessment
+  02        6        6/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  03        6        7/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  04        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  05        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  06        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  07        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  08        6        5 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  09        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  10        6        7/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  11        6        7/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  12        3        9 / 10 / 9 / 9            Requested evidence threshold met for bounded
+                                               description; physical validation still separate. [A]
+                                               self-assessment
+  13        6        6 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  14        6        7/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  15        6        7 / 10 / 9 / 9            NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+  16        6        6/9/9/9                   NOT FOUND: task-specic eld data, comparable
+                                               quotes or commercial proof; Evidence <8 after maximum
+                                               rounds. [A] self-assessment
+
+
+
+
+                                               38
+ZeroWatt Wind                                                           Feasibility and business evidence
+
+
+
+  Task       Passes   Scores E / N / R / C       Remaining limitation / Basis
+  17         6        7/9/9/9                    NOT FOUND: task-specic eld data, comparable
+                                                 quotes or commercial proof; Evidence <8 after maximum
+                                                 rounds. [A] self-assessment
+  18         3        8/9/9/9                    Requested evidence threshold met for bounded
+                                                 description; physical validation still separate. [A]
+                                                 self-assessment
+  19         6        6 / 10 / 9 / 9             NOT FOUND: task-specic eld data, comparable
+                                                 quotes or commercial proof; Evidence <8 after maximum
+                                                 rounds. [A] self-assessment
+  20         6        6 / 10 / 9 / 9             NOT FOUND: task-specic eld data, comparable
+                                                 quotes or commercial proof; Evidence <8 after maximum
+                                                 rounds. [A] self-assessment
+  Finance    6        6 / 10 / 9 / 9             Unvalidated demand, WTP, resource and production
+                                                 quote inputs; negative base economics retained. [A]
+                                                 self-assessment
+
+
+
+Reproduction order: run the site audit with Node, run the standard-library Python nancial model,
+then run the report generator.     Monetary calculations originate in the model exports; all display
+rounding and embedded chart data are registered.       The standalone TeX uses no external image,
+bibliography or data le. Source IDs in every citation are checked against the opened-source register.
+Full monthly/annual tables, assumptions, price observations, BOM, customer comparison, sensitivity
+and self-check outputs accompany the report.
+
+The nancial run passes 51 [D] accounting, physical-bound and root-residual self-checks. Compila-
+tion and visual QA are documented separately in the repository; arithmetic tests do not validate
+commercial assumptions.
+
+
+
+
+                                                  39
+ZeroWatt Wind                                                                  Feasibility and business evidence
+
+
+References
+ [1] NSC BD. 4 paddle wheel aerator 2HP. undated. https://nscbd.com/4- paddle- wheel- aerator-
+    2hp- price- in- bangladesh/. Accessed 2026-10-22. opened content. Bangladesh/project or insti-
+    tutional process. date not established or within 5 years.
+
+
+ [2] Prusa Research. ASA material guidance. undated. https://help.prusa3d.com/article/asa_1809?
+    product=mk4s. Accessed 2026-10-22. opened content. not Bangladesh-specic. date not estab-
+    lished or within 5 years.
+
+
+ [3] ASCE. Measurement of Oxygen Transfer in Clean Water ASCE/EWRI 2-22. 2022. https:
+    //ascelibrary.org/doi/book/10.1061/9780784415641. Accessed 2026-10-22. open attempted;
+    blocked or indexed extract only. not Bangladesh-specic. date not established or within 5 years.
+
+
+ [4] Bangla   Ltd..   Aerator   machine.    undated.    https : / / www . banglaltd . com / product / aerator -
+    machine/. Accessed 2026-10-22. opened content. Bangladesh. date not established.
+
+
+ [5] CityTechBD.      12V20Ah      LiFePO4      battery     pack.   undated.     https : / / www . citytechbd .
+    com / 12v - 20ah - lifepo4 - rechargeable - battery - pack.     Accessed    2026-10-22.    opened    content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+ [6] Teexla. Battery pack category. undated. https://teexla.com/product-category/battery-pack/.
+    Accessed 2026-10-22. opened content. Bangladesh/project or institutional process. date not
+    established or within 5 years.
+
+
+ [7] Bangladesh Bank. Circular listing. 2026. https://www.bb.org.bd/en/index.php/mediaroom/
+    circular. Accessed 2026-10-22. opened content. Bangladesh/project or institutional process. date
+    not established or within 5 years.
+
+
+ [8] BDStall single seller. SG-PW2-1HP two-paddle aerator. undated. https://www.bdstall.com/
+    details / sg - pw2 - 1hp - 2 - paddle - wheel - aerator - for - sh - pond - shrimp - farm - 172138/. Accessed
+    2026-10-22. opened content. Bangladesh. undated.
+
+
+ [9] Daraz / The Fair Enterprise. UCP204 pillow block housed bearing. undated. https://www.
+    daraz.com.bd/products/ucp-204-pillow-block-housed-bearing-i235701366.html. Accessed 2026-
+    10-22. opened content. Bangladesh/project or institutional process. date not established or
+    within 5 years.
+
+
+[10] MISUMI South East Asia. UCP204 ASAHI SEIKO. undated. https://sg.misumi-ec.com/vona2/
+    detail/221000611249/?HissuCode=UCP204. Accessed 2026-10-22. open attempted; blocked or
+    indexed extract only. not Bangladesh-specic. date not established or within 5 years.
+
+
+[11] Motion. AMI UCP204. undated. https://www.motion.com/products/sku/00561782. Accessed
+    2026-10-22. opened content. not Bangladesh-specic. date not established or within 5 years.
+
+
+[12] PLOS Global Public Health / PMC. Direct estimates of absolute ventilation and estimated
+    tuberculosis transmission risk in clinics in South Africa. 2022-11-02. https://pmc.ncbi.nlm.nih.
+    gov/articles/PMC10021606/. Accessed 2026-10-22. opened content. not Bangladesh-specic.
+    date not established or within 5 years.
+
+
+[13] Environmental Research Letters / Cedeno Laurent et al.. Associations between acute PM2.5 and
+    carbon dioxide exposure and cognition. 2021-09-09. https://doi.org/10.1088/1748-9326/ac1bd8.
+    Accessed 2026-10-22. open attempted; blocked or indexed extract only. not Bangladesh-specic.
+    OLDER THAN 5 YEARS.
+
+
+[14] National   Board   of   Revenue.   Bangladesh      Customs     tari   portal.   2026.   https : / / customs .
+    gov . bd / index . jsf . Accessed 2026-10-22. open attempted;           blocked or indexed extract only.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+
+                                                       40
+ZeroWatt Wind                                                                   Feasibility and business evidence
+
+
+[15] Department of Fisheries. Yearbook of Fisheries Statistics Bangladesh 2023-24. 2024-12. https:
+    //objectstorage.ap- dcc- gazipur- 1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/oce-
+    sheries/2024/12/4c64d1e387d446ec97430228bcc06ddc.pdf . Accessed 2026-10-22. opened con-
+    tent. Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[16] European Union Delegation to Bangladesh. Wind energy study Bangladesh nal report.
+    2022-02. https://www.eeas.europa.eu/sites/default/les/documents/2023/Final%20report%
+    2008022022_wind%20study.pdf . Accessed 2026-10-22. open attempted; blocked or indexed ex-
+    tract only. Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[17] Walton. WEF1201N 12 inch exhaust fan. undated. https : / / waltonbd . com / water - pump /
+    electrical - appliances / fan / exhaust - fan / wef1201n - 12. Accessed 2026-10-22. opened content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[18] FAO. Manual on polyculture and integrated sh farming in Bangladesh. unknown; legacy.
+    https : / / www . fao . org / 4 / AC375E / AC375E05 . htm. Accessed 2026-10-22. opened content.
+    Bangladesh/project or institutional process. OLDER THAN 5 YEARS / legacy underlying
+    evidence.
+
+
+[19] FAO. Aeration and Oxygenation in Aquaculture chapter 21. legacy; underlying trials 1982.
+    https://www.fao.org/4/X5744E/x5744e0m.htm. Accessed 2026-10-22. opened content. not
+    Bangladesh-specic. OLDER THAN 5 YEARS / legacy underlying evidence.
+
+
+[20] FAO. Improving Pond Water Quality. legacy; date not stated. https://www.fao.org/shery/
+    static/FAO_Training/FAO_Training/General/x6709e/x6709e02.htm. Accessed 2026-10-22.
+    opened content. not Bangladesh-specic. OLDER THAN 5 YEARS / legacy underlying evi-
+    dence.
+
+
+[21] Costareen. Filament price guide. 2026-10-01. https://costareen.com/2026/10/01/lament-
+    price- in- bangladesh- guide/. Accessed 2026-10-22. opened content. Bangladesh/project or in-
+    stitutional process. date not established or within 5 years.
+
+
+[22] TechShopBD. Marketplace lament oers. undated. https://techshopbd.com/marketplace. Ac-
+    cessed 2026-10-22. opened content. Bangladesh/project or institutional process. date not estab-
+    lished or within 5 years.
+
+
+[23] HTE Bangladesh. PLA lament 1 kg. undated. https://www.htebd.com/3d-printing-lament-
+    pla- 1kg/. Accessed 2026-10-22. opened content. Bangladesh/project or institutional process.
+    date not established or within 5 years.
+
+
+[24] Electronics.Com.BD.      PLA    lament     white     1kg.   undated.     https : / / electronics . com . bd /
+    pla - 3d - printer - lament - 1 - 75mm - 1kg2 - 2lb - white.   Accessed    2026-10-22.    opened    content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[25] Bangladesh Bank. Exchange Rate of Taka. 2026-10-19. https://www.bb.org.bd/en/index.php/
+    econdata/exchangerate. Accessed 2026-10-22. opened content. Bangladesh/project or institu-
+    tional process. date not established or within 5 years.
+
+
+[26] Green Climate Fund. Project Preparation Facility process. 2026. https://www.greenclimate.
+    fund / access - funding / project - preparation - facility / process.    Accessed    2026-10-22.    open   at-
+    tempted; blocked or indexed extract only. Bangladesh/project or institutional process. date
+    not established or within 5 years.
+
+
+[27] ZerOneTech BD. Bevel gear 8mm hole 20 teeth CNA015. undated. https://www.zeronetechbd.
+    com / product / details / bevel - gear - 8mm - hole - model - gear - 90 - degree - transmission - steering -
+    20 - teethcna015. Accessed 2026-10-22. open attempted;              blocked or indexed extract only.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+
+                                                      41
+ZeroWatt Wind                                                                 Feasibility and business evidence
+
+
+[28] Department of Environment. Grid Emission Factor for Bangladesh. 2025-01-23. https : / /
+    objectstorage . ap - dcc - gazipur - 1 . oraclecloud15 . com / n / axvjbnqprylg / b / V2Ministry / o / oce -
+    doe / 2024 / 12 / ea2411221c1f449805bb7ac39c66fa . pdf . Accessed 2026-10-22. opened content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[29] Harvard T.H. Chan School. Oce air quality may aect employees cognition productivity.
+    2021-09-09. https://hsph.harvard.edu/news/oce-air-quality-may-aect-employees-cognition-
+    productivity/. Accessed 2026-10-22. opened content. not Bangladesh-specic. OLDER THAN
+    5 YEARS.
+
+
+[30] Bangladesh    Sangbad    Sangstha.    Scorching    heat   wave   aecting    aquatic    species   livestock.
+    2024.   https : / / www . bssnews . net / news / 184834.     Accessed     2026-10-22.    opened     content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[31] IDCOL. Fees and charges. undated. https://www.idcol.org/idcol_new/public/fees-charge. Ac-
+    cessed 2026-10-22. opened content. Bangladesh/project or institutional process. date not estab-
+    lished or within 5 years.
+
+
+[32] iDEA / Bangladesh Computer Council. Selection procedures for pre-seed grant. undated. https:
+    //apply.idea.gov.bd/SOP.pdf . Accessed 2026-10-22. opened content. Bangladesh/project or
+    institutional process. date not established or within 5 years.
+
+
+[33] KHK Gears. Bevel gears catalogue. 2025. https://khkgears.net/pdf/2025/bevel-gears.pdf . Ac-
+    cessed 2026-10-22. opened content. not Bangladesh-specic. within 5 years.
+
+
+[34] Prusa Research. Filament Material Guide. undated. https : / / help . prusa3d . com / lament -
+    material-guide. Accessed 2026-10-22. opened content. not Bangladesh-specic. date not estab-
+    lished or within 5 years.
+
+
+[35] Project team. ZeroWatt Wind poster. 2026; undated. le:///G:/new_8/zerowatt- wind- v8/
+    inputs/poster.pdf . Accessed 2026-10-22. opened content. Bangladesh/project or institutional
+    process. date not established or within 5 years.
+
+
+[36] Project team. ZeroWatt Wind CezeriFest submission. 2026-09-15. le:///G:/new_8/zerowatt-
+    wind-v8/inputs/project.pdf . Accessed 2026-10-22. opened content. Bangladesh/project or in-
+    stitutional process. date not established or within 5 years.
+
+
+[37] Bangladesh Bank. Monetary Policy Review FY2024-25. 2025. https : / / www . bb . org . bd /
+    pub / halfyearly / monetaryprev / mpr _ 2024 _ 25 . pdf .      Accessed    2026-10-22.    opened    content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[38] 3D Printing and Additive Manufacturing / Anderson. Mechanical Properties of Specimens 3D
+    Printed with Virgin and Recycled Polylactic Acid. 2017. https://journals.sagepub.com/doi/10.
+    1089/3dp.2016.0054. Accessed 2026-10-22. opened content. not Bangladesh-specic. OLDER
+    THAN 5 YEARS.
+
+
+[39] Project repository. ZeroWatt simulation engineering source audit. 2026-10-22 audit. le:///G:
+    /new _ 8 / zerowatt - wind - v8 / data / site _ baseline . json. Accessed 2026-10-22. opened content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[40] SME Foundation. Credit wholesaling programme. undated. https://wehelp.smef.gov.bd/blog-
+    details/credit-wholeshelling. Accessed 2026-10-22. opened content. Bangladesh/project or insti-
+    tutional process. date not established or within 5 years.
+
+
+[41] Energies / Jang et al.. Analysis of Archimedes Spiral Wind Turbine Performance by Simulation
+    and Field Test. 2019. https://www.mdpi.com/1996- 1073/12/24/4624. Accessed 2026-10-22.
+    open attempted; blocked or indexed extract only. Bangladesh/project or institutional process.
+    OLDER THAN 5 YEARS.
+
+
+
+                                                      42
+ZeroWatt Wind                                                             Feasibility and business evidence
+
+
+[42] Energy Reports. Design optimization and performance evaluation of a 3D-printed Archimedes
+    Spiral Wind Turbine for renewable energy generation in Bangladesh. 2026-06. https : / /
+    www.sciencedirect.com/science/article/pii/S2352484726000946. Accessed 2026-10-22. open at-
+    tempted; blocked or indexed extract only. Bangladesh/project or institutional process. date not
+    established or within 5 years.
+
+
+[43] Startup    Bangladesh   Limited.   Frequently     asked   questions.    undated.    https : / / www .
+    startupbangladesh.vc/contact/faqs/. Accessed 2026-10-22. open attempted; blocked or indexed
+    extract only. Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[44] BERC via Power Division. Retail electricity tari and correction orders. 2026-06-03; correc-
+    tion 2026-06-04. https://objectstorage.ap- dcc- gazipur- 1.oraclecloud15.com/n/axvjbnqprylg/
+    b/V2Ministry/o/oce-powerdivision/2026/5/73ea43ec-d2a1-4856-a3be-6c6b93e6ae76.pdf . Ac-
+    cessed 2026-10-22. opened content. Bangladesh/project or institutional process. date not estab-
+    lished or within 5 years.
+
+
+[45] Power Division Bangladesh. Retail electricity rates. 2026-06-09. https://powerdivision.gov.
+    bd / pages / static - pages / 694032a035ce18e1c055f992.    Accessed   2026-10-22.   opened    content.
+    Bangladesh/project or institutional process. date not established or within 5 years.
+
+
+[46] World Bank. Addressing Environmental Pollution is Critical for Bangladesh Growth and
+    Development. 2024-03-28. https://www.worldbank.org/en/news/press- release/2024/03/28/
+    addressing- environmental- pollution- is- critical- for- bangladesh- s- growth- and- development. Ac-
+    cessed 2026-10-22. opened content. Bangladesh/project or institutional process. date not estab-
+    lished or within 5 years.
+
+
+[47] WHO. Ventilation roadmap publication page. 2021-03-01. https://www.who.int/publications/
+    i/item/9789240021280. Accessed 2026-10-22. opened content. not Bangladesh-specic. OLDER
+    THAN 5 YEARS.
+
+
+[48] US Department of Energy. Small Wind Guidebook. 2025. https://www.energy.gov/cmei/
+    systems / windexchange / small - wind - guidebook. Accessed 2026-10-22. opened content. not
+    Bangladesh-specic. date not established or within 5 years.
+
+
+[49] NREL / NLR research hub. Assessing the Wind Energy Potential in Bangladesh. 2018. https:
+    //research- hub.nlr.gov/en/publications/assessing- the- wind- energy- potential- in- bangladesh-
+    enabling- wind- e/. Accessed 2026-10-22. opened content. Bangladesh/project or institutional
+    process. OLDER THAN 5 YEARS.
+
+
+
+
+                                                  43
+

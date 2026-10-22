@@ -80,6 +80,21 @@ test('high-refresh rendering moves between deterministic simulation ticks and fr
   const pose=[car.renderPhase,car.renderWheelAngle];advanceTraffic(controller,0,8.4,()=>true);assert.deepEqual([car.renderPhase,car.renderWheelAngle],pose);
 });
 
+test('explicit Play animates the city even when reduced motion was requested initially',async()=>{
+  for(const mode of ['air','water']){
+    const s=makeScene(mode),p={...M.defaults,_mode:mode,units:1,boats:1,upb:1};
+    s.setEnvironment({weather:'clear',environment:'park'},p);await ready(s);s.reducedMotion=true;
+    const sample=M.steady(p,p.wind,M.evaluateHardware(p));
+    const start=s.city.cars.map(c=>c.phase),walkStart=s.city.pedestrianTime;
+    s.render(.1,sample,false);assert.deepEqual(s.city.cars.map(c=>c.phase),start,'initial pause remains respected');
+    for(let i=0;i<60;i++)s.render(1/30,sample,true);
+    assert.ok(s.city.cars.filter((c,i)=>c.phase!==start[i]).length>=18,'Play advances actual moving traffic');
+    assert.ok(s.city.cyclists.some(c=>c.wheelAngle>0),'Play starts riders');
+    assert.ok(s.city.pedestrianTime>walkStart,'Play starts walkers');
+    const paused=s.city.cars.map(c=>c.renderPhase);s.render(.1,sample,false);assert.deepEqual(s.city.cars.map(c=>c.renderPhase),paused,'Pause freezes render poses too');
+  }
+});
+
 test('rider legs keep fixed lengths and feet remain attached to the moving pedals',async()=>{
   const {cycleLeg}=await import(url('src/graphics/cyclists.js'));
   for(let i=0;i<60;i++)for(const side of [-1,1]){
@@ -107,7 +122,7 @@ test('people travel between all city blocks using protected painted crossings',a
       if(e.crossing){
         const j=s.city.network.junctions.find(j=>j.id===e.crossing);
         const acrossX=Math.abs(e.tx)>.5;
-        assert.ok(Math.abs(Math.abs(acrossX?z-j.z:x-j.x)-5.7)<.25,'crossing follows zebra stripes');
+        assert.ok(Math.abs(Math.abs(acrossX?z-j.z:x-j.x)-5.7)<.36,'both walking lanes remain within the zebra stripes');
       }
       for(const corner of p.visited)corners.add(corner);
     }
@@ -136,4 +151,9 @@ test('whole-city cars share instanced draws and dynamic populations keep stable 
       const matrix=new T.Matrix4();part.mesh.getMatrixAt(i,matrix);assert.ok(matrix.elements.every(Number.isFinite));
     }
   }
+  s.camera.position.set(500,500,500);s.camera.updateMatrixWorld();
+  for(let i=0;i<4;i++)updateCity(s,0);
+  const red=s.city.fleet.types.get('de-tomaso-p72');
+  assert.ok(red.cars.every(c=>c.renderLod===0),'red P72 retains its original curved body at every camera distance');
+  assert.equal(red.levels[0].count,red.cars.length);
 });

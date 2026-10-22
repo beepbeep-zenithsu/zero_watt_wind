@@ -1,0 +1,75 @@
+{
+  "id": "jaguar-e-type",
+  "source": {
+    "uid": "32aa25ea6e1b40f395b2aff33ca0a279",
+    "title": "Jaguar E_TYPE",
+    "author": "Nommoc",
+    "url": "https://sketchfab.com/3d-models/32aa25ea6e1b40f395b2aff33ca0a279",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "verified": true,
+    "verifiedAt": "2026-10-22",
+    "status": "downloaded",
+    "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-144/32aa25ea6e1b40f395b2aff33ca0a279.glb",
+    "originalSha256": "9ababf1542c24a0676cc9dfda6fd822516492088c4af41d840677fc3b95dbf3b",
+    "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Creator describes modelling with Blender 2.93.",
+    "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures.",
+    "warnings": [],
+    "originalFile": "jaguar-e-type-nommoc.glb"
+  },
+  "sourceSha256": "9a31edbcbe22380a1bf041168bff961f08d49217e3b228f3b4c2c31280860189",
+  "front": "-Y",
+  "length": 4.45,
+  "trianglesBefore": 125527,
+  "warnings": [],
+  "levels": [
+    {
+      "level": 0,
+      "file": "jaguar-e-type-lod0.glb",
+      "triangles": 58196,
+      "trianglesBeforeExport": 58196,
+      "budget": 60000,
+      "materialPrimitives": 15,
+      "textureLimit": 1024,
+      "sizeBlenderXYZ": [
+        1.71284,
+        4.44799,
+        1.25419
+      ],
+      "bytes": 4006976,
+      "sha256": "48d0805497b71452414b69ab9afa07f30b3ec2620d85619a9743a650e4654dbf"
+    },
+    {
+      "level": 1,
+      "file": "jaguar-e-type-lod1.glb",
+      "triangles": 15516,
+      "trianglesBeforeExport": 15516,
+      "budget": 16000,
+      "materialPrimitives": 15,
+      "textureLimit": 512,
+      "sizeBlenderXYZ": [
+        1.71151,
+        4.44809,
+        1.25383
+      ],
+      "bytes": 1226664,
+      "sha256": "2e7b08377cab384cfa92602fa50e20371655b9e76553489b56097fecef0d827c"
+    },
+    {
+      "level": 2,
+      "file": "jaguar-e-type-lod2.glb",
+      "triangles": 3877,
+      "trianglesBeforeExport": 3877,
+      "budget": 4000,
+      "materialPrimitives": 15,
+      "textureLimit": 256,
+      "sizeBlenderXYZ": [
+        1.71233,
+        4.45,
+        1.25312
+      ],
+      "bytes": 329668,
+      "sha256": "79bd9d83a6ab3083017ac8f5e7ed59cc07e2d57efab94384eeb32312ea45f97d"
+    }
+  ]
+}

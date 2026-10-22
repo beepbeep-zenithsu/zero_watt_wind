@@ -1,0 +1,456 @@
+{
+  "mode": "air",
+  "weather": "clear",
+  "large": false,
+  "seconds": 240,
+  "cars": 36,
+  "cyclists": 24,
+  "pedestrians": 80,
+  "collisions": {
+    "vehicle": 0,
+    "pedestrian": 0,
+    "mixed": 0
+  },
+  "examples": [],
+  "longestCarWait": 146.19999999999598,
+  "longestBicycleWait": 125.99999999999712,
+  "longestPedestrianWait": 148.79999999999583,
+  "stationaryUsers": [
+    {
+      "id": 0,
+      "kind": "car",
+      "maxWait": 87.89999999999928
+    },
+    {
+      "id": 3,
+      "kind": "car",
+      "maxWait": 96.3999999999988
+    },
+    {
+      "id": 9,
+      "kind": "car",
+      "maxWait": 136.39999999999654
+    },
+    {
+      "id": 10,
+      "kind": "car",
+      "maxWait": 104.99999999999831
+    },
+    {
+      "id": 11,
+      "kind": "car",
+      "maxWait": 81.59999999999964
+    },
+    {
+      "id": 12,
+      "kind": "car",
+      "maxWait": 146.19999999999598
+    },
+    {
+      "id": 13,
+      "kind": "car",
+      "maxWait": 93.79999999999895
+    },
+    {
+      "id": 14,
+      "kind": "car",
+      "maxWait": 131.49999999999682
+    },
+    {
+      "id": 15,
+      "kind": "car",
+      "maxWait": 111.89999999999792
+    },
+    {
+      "id": 20,
+      "kind": "car",
+      "maxWait": 112.2999999999979
+    },
+    {
+      "id": 22,
+      "kind": "car",
+      "maxWait": 144.0999999999961
+    },
+    {
+      "id": 23,
+      "kind": "car",
+      "maxWait": 90.9999999999991
+    },
+    {
+      "id": 27,
+      "kind": "car",
+      "maxWait": 93.39999999999897
+    },
+    {
+      "id": 28,
+      "kind": "car",
+      "maxWait": 135.99999999999656
+    },
+    {
+      "id": 29,
+      "kind": "car",
+      "maxWait": 128.69999999999698
+    },
+    {
+      "id": 40,
+      "kind": "bicycle",
+      "maxWait": 105.1999999999983
+    },
+    {
+      "id": 42,
+      "kind": "bicycle",
+      "maxWait": 102.19999999999847
+    },
+    {
+      "id": 43,
+      "kind": "bicycle",
+      "maxWait": 99.49999999999862
+    },
+    {
+      "id": 44,
+      "kind": "bicycle",
+      "maxWait": 125.99999999999712
+    },
+    {
+      "id": 46,
+      "kind": "bicycle",
+      "maxWait": 96.49999999999879
+    },
+    {
+      "id": 51,
+      "kind": "bicycle",
+      "maxWait": 120.19999999999744
+    },
+    {
+      "id": 55,
+      "kind": "bicycle",
+      "maxWait": 123.59999999999725
+    }
+  ],
+  "pedestrianCrossings": 16,
+  "minimumCarDistance": 51.876366396914854,
+  "minimumBicycleDistance": 78.89890887522341,
+  "minimumPedestrianCrossings": 2,
+  "blockedWalkers": [
+    {
+      "id": 4,
+      "wait": 107.79999999999815,
+      "edge": 23,
+      "distance": 22.82683730830029,
+      "length": 24.800000000000004,
+      "from": 7,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 24,
+          "d": 23.548653807941882
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "wait": 124.4999999999972,
+      "edge": 82,
+      "distance": 13.90571178423673,
+      "length": 16.599999999999994,
+      "from": 24,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 23,
+          "d": 14.626773416526142
+        },
+        {
+          "id": 62,
+          "d": 15.348709142457714
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "wait": 108.39999999999812,
+      "edge": 15,
+      "distance": 23.54910698387257,
+      "length": 24.800000000000004,
+      "from": 5,
+      "to": 8,
+      "destinationOwner": -1,
+      "next": 28,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 12,
+      "wait": 107.89999999999814,
+      "edge": 15,
+      "distance": 22.82717532631897,
+      "length": 24.800000000000004,
+      "from": 5,
+      "to": 8,
+      "destinationOwner": -1,
+      "next": 28,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 10,
+          "d": 23.54910698387257
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "wait": 112.99999999999785,
+      "edge": 46,
+      "distance": 15.349282848961394,
+      "length": 16.599999999999998,
+      "from": 14,
+      "to": 11,
+      "destinationOwner": -1,
+      "next": 39,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 23,
+      "wait": 124.69999999999719,
+      "edge": 82,
+      "distance": 14.626773416526142,
+      "length": 16.599999999999994,
+      "from": 24,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 34,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 62,
+          "d": 15.348709142457714
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "wait": 141.99999999999622,
+      "edge": 23,
+      "distance": 23.548653807941882,
+      "length": 24.800000000000004,
+      "from": 7,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 31,
+      "wait": 108.39999999999812,
+      "edge": 86,
+      "distance": 15.348254320061114,
+      "length": 16.599999999999994,
+      "from": 25,
+      "to": 11,
+      "destinationOwner": -1,
+      "next": 39,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 32,
+      "wait": 75.59999999999998,
+      "edge": 40,
+      "distance": 13.185252899128512,
+      "length": 16.599999999999998,
+      "from": 12,
+      "to": 9,
+      "destinationOwner": -1,
+      "next": 30,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 35,
+          "d": 13.906817263779839
+        },
+        {
+          "id": 53,
+          "d": 15.349181891940349
+        },
+        {
+          "id": 77,
+          "d": 14.628309042465773
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "wait": 68.90000000000036,
+      "edge": 90,
+      "distance": 26.20871165936308,
+      "length": 27.460254037844393,
+      "from": 26,
+      "to": 40,
+      "destinationOwner": -1,
+      "next": 144,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 35,
+      "wait": 108.89999999999809,
+      "edge": 40,
+      "distance": 13.906817263779839,
+      "length": 16.599999999999998,
+      "from": 12,
+      "to": 9,
+      "destinationOwner": -1,
+      "next": 31,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 53,
+          "d": 15.349181891940349
+        },
+        {
+          "id": 77,
+          "d": 14.628309042465773
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "wait": 114.99999999999774,
+      "edge": 82,
+      "distance": 13.18422202891786,
+      "length": 16.599999999999994,
+      "from": 24,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 7,
+          "d": 13.90571178423673
+        },
+        {
+          "id": 23,
+          "d": 14.626773416526142
+        },
+        {
+          "id": 62,
+          "d": 15.348709142457714
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "wait": 114.99999999999774,
+      "edge": 40,
+      "distance": 15.349181891940349,
+      "length": 16.599999999999998,
+      "from": 12,
+      "to": 9,
+      "destinationOwner": -1,
+      "next": 31,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 54,
+      "wait": 70.40000000000028,
+      "edge": 15,
+      "distance": 22.10612820743286,
+      "length": 24.800000000000004,
+      "from": 5,
+      "to": 8,
+      "destinationOwner": -1,
+      "next": 28,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 10,
+          "d": 23.54910698387257
+        },
+        {
+          "id": 12,
+          "d": 22.82717532631897
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "wait": 124.89999999999718,
+      "edge": 82,
+      "distance": 15.348709142457714,
+      "length": 16.599999999999994,
+      "from": 24,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": []
+    },
+    {
+      "id": 67,
+      "wait": 69.40000000000033,
+      "edge": 23,
+      "distance": 22.106207688004062,
+      "length": 24.800000000000004,
+      "from": 7,
+      "to": 10,
+      "destinationOwner": -1,
+      "next": 35,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 4,
+          "d": 22.82683730830029
+        },
+        {
+          "id": 24,
+          "d": 23.548653807941882
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "wait": 110.99999999999797,
+      "edge": 40,
+      "distance": 14.628309042465773,
+      "length": 16.599999999999998,
+      "from": 12,
+      "to": 9,
+      "destinationOwner": -1,
+      "next": 31,
+      "held": false,
+      "pending": null,
+      "leaders": [
+        {
+          "id": 53,
+          "d": 15.349181891940349
+        }
+      ]
+    }
+  ]
+}

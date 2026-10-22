@@ -1,0 +1,155 @@
+{
+  "generator": "Blender 5.2.2 LTS",
+  "assets": {
+    "site-apartment-low": {
+      "meshes": 9,
+      "triangles": 8212,
+      "bytes": 367428
+    },
+    "site-apartment-mid": {
+      "meshes": 9,
+      "triangles": 9612,
+      "bytes": 452492
+    },
+    "site-apartment-tall": {
+      "meshes": 8,
+      "triangles": 11012,
+      "bytes": 536560
+    },
+    "site-corner-pier": {
+      "meshes": 2,
+      "triangles": 384,
+      "bytes": 29168
+    },
+    "site-window-trim": {
+      "meshes": 2,
+      "triangles": 564,
+      "bytes": 41784
+    },
+    "site-downpipe": {
+      "meshes": 2,
+      "triangles": 2300,
+      "bytes": 67640
+    },
+    "site-entry-canopy": {
+      "meshes": 4,
+      "triangles": 300,
+      "bytes": 23548
+    },
+    "site-bench": {
+      "meshes": 2,
+      "triangles": 1548,
+      "bytes": 106872
+    },
+    "site-bollard": {
+      "meshes": 4,
+      "triangles": 472,
+      "bytes": 35872
+    },
+    "site-deck-cleat": {
+      "meshes": 3,
+      "triangles": 2304,
+      "bytes": 67876
+    },
+    "site-lifebuoy": {
+      "meshes": 3,
+      "triangles": 1456,
+      "bytes": 55520
+    },
+    "site-seated-person": {
+      "meshes": 19,
+      "triangles": 7436,
+      "bytes": 249492
+    },
+    "site-fish": {
+      "meshes": 3,
+      "triangles": 1256,
+      "bytes": 39036
+    },
+    "site-canyon-tower": {
+      "meshes": 8,
+      "triangles": 6996,
+      "bytes": 479572
+    },
+    "site-shopfront": {
+      "meshes": 8,
+      "triangles": 1100,
+      "bytes": 77336
+    },
+    "site-distant-block": {
+      "meshes": 9,
+      "triangles": 8740,
+      "bytes": 608476
+    },
+    "site-city-car": {
+      "meshes": 7,
+      "triangles": 2656,
+      "bytes": 167292
+    },
+    "site-street-lamp": {
+      "meshes": 4,
+      "triangles": 496,
+      "bytes": 34032
+    },
+    "site-bus-shelter": {
+      "meshes": 7,
+      "triangles": 588,
+      "bytes": 47124
+    },
+    "site-bicycle": {
+      "meshes": 6,
+      "triangles": 6788,
+      "bytes": 267224
+    },
+    "site-cycle-rack": {
+      "meshes": 2,
+      "triangles": 396,
+      "bytes": 21444
+    },
+    "site-traffic-signal": {
+      "meshes": 4,
+      "triangles": 720,
+      "bytes": 45420
+    },
+    "site-street-bin": {
+      "meshes": 4,
+      "triangles": 864,
+      "bytes": 63840
+    },
+    "site-hydrant": {
+      "meshes": 3,
+      "triangles": 224,
+      "bytes": 12664
+    },
+    "site-pedestrian": {
+      "meshes": 19,
+      "triangles": 7436,
+      "bytes": 251800
+    },
+    "site-city-sedan": {
+      "meshes": 19,
+      "triangles": 9100,
+      "bytes": 376088
+    },
+    "site-city-crossover": {
+      "meshes": 19,
+      "triangles": 9124,
+      "bytes": 376708
+    },
+    "site-skyline-glass": {
+      "meshes": 9,
+      "triangles": 10492,
+      "bytes": 730848
+    },
+    "site-skyline-brick": {
+      "meshes": 9,
+      "triangles": 10180,
+      "bytes": 709288
+    },
+    "site-cyclist": {
+      "meshes": 32,
+      "triangles": 12300,
+      "bytes": 454120
+    }
+  }
+}

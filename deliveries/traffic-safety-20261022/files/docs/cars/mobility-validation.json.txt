@@ -1,0 +1,21 @@
+{
+  "cars": 36,
+  "carTypes": [
+    "jaguar-e-type",
+    "porsche-taycan",
+    "de-tomaso-p72"
+  ],
+  "allCarsUseRealModels": true,
+  "cyclists": 24,
+  "pedestrians": 80,
+  "routes": 12,
+  "junctions": 16,
+  "computerOperators": 1,
+  "occupants": 30,
+  "reviewGeometry": {
+    "visibleMeshObjects": 646,
+    "visibleTriangles": 255132,
+    "materialBatches": 325
+  },
+  "limitation": "Offline geometry snapshot; actual browser timings and movement are recorded separately in citywide-browser-review.json and live-traffic-motion.json."
+}

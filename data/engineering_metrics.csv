@@ -1,0 +1,17 @@
+﻿metric,value,unit,basis,source_id,formula
+basic_default_shaft_4_5ms,5.917895394198803,W,D,site,P=0.5 rho A v^3 Cp eta
+basic_default_airflow_4_5ms,372.8274098345246,m3/h,D,site,Q=Pshaft etafan/dp*3600
+basic_default_ACH_4_5ms,2.4855160655634974,ACH,D,site,Q/room
+advanced_battery_autonomy_72_to_12,1.872,hours,D,site,Wh usable / motor W; no PV/wind or parasitic load
+advanced_target_ACH,5.666666666666667,ACH,D,site,"850/150, untested fan coefficient"
+clinic_older_guidance_flow_8people,1728.0,m3/h,D,clinic,"Older 60 L/s/person context, not current certification"
+pond_demand_100m3,0.025,kg/h,D,site,mg/L/h *m3 =g/h; divide1000
+commercial_tariff,15.36,BDT/kWh,S,tarifforder,Scan PDF p3 LT-E flat
+clinic_tariff,9.05,BDT/kWh,S,tarifforder,Scan PDF p2 LT-D1
+fan_nameplate,55,W,S,fanweb,Nameplate is not delivered pressure-flow
+cognition_claim_CO2,500,ppm,S,poster,Project claim; exact generalized effect not accepted
+cognition_claim_effect,15,percent,S,poster,Project claim; endpoint/causality NOT verified
+EU_Chandpur_speed,4.11,m/s,S-index,euwind,"Appendix4,60m,2014-17 indexed extract; full PDF blocked"
+EU_Chandpur_height,60,m,S-index,euwind,Not rooftop or pond height
+FAO_example_SAE_low,0.91,kg/kWh,S,faoaer,"Historical table7 experiment, foreign"
+FAO_example_SAE_high,1.41,kg/kWh,S,faoaer,"Historical table7 experiment, foreign"

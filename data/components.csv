@@ -1,0 +1,65 @@
+﻿mode,component,name,specification,function,quantity,low_unit_bdt,base_unit_bdt,high_unit_bdt,low_total_bdt,base_total_bdt,high_total_bdt,base_total_usd,basis,source_ids,three_production_quotes
+A,rotor,Spiral rotor and balanced hub,Formed aluminium; 1 m nominal basic / 2.1 m hybrid,Capture wind,1,3500,6000,10000,3500,6000,10000,48.52405984634048,A,windguide;poster,NOT FOUND
+B,rotor,Spiral rotor and balanced hub,Formed aluminium; 1 m nominal basic / 2.1 m hybrid,Capture wind,1,3500,6000,10000,3500,6000,10000,48.52405984634048,A,windguide;poster,NOT FOUND
+H,rotor,Spiral rotor and balanced hub,Formed aluminium; 1 m nominal basic / 2.1 m hybrid,Capture wind,1,3500,6000,10000,3500,6000,10000,48.52405984634048,A,windguide;poster,NOT FOUND
+A+B,rotor,Spiral rotor and balanced hub,Formed aluminium; 1 m nominal basic / 2.1 m hybrid,Capture wind,2,3500,6000,10000,7000,12000,20000,97.04811969268096,A,windguide;poster,NOT FOUND
+A,shafts,Shaft stock and machining,"Steel, nominal 20 mm; three axes for two stages, two for H",Transmit torque,3,500,900,1600,1500,2700,4800,21.835826930853212,A,bearing3,NOT FOUND
+B,shafts,Shaft stock and machining,"Steel, nominal 20 mm; three axes for two stages, two for H",Transmit torque,3,500,900,1600,1500,2700,4800,21.835826930853212,A,bearing3,NOT FOUND
+H,shafts,Shaft stock and machining,"Steel, nominal 20 mm; three axes for two stages, two for H",Transmit torque,2,500,900,1600,1000,1800,3200,14.557217953902143,A,bearing3,NOT FOUND
+A+B,shafts,Shaft stock and machining,"Steel, nominal 20 mm; three axes for two stages, two for H",Transmit torque,6,500,900,1600,3000,5400,9600,43.671653861706424,A,bearing3,NOT FOUND
+A,bevel,Production bevel gear pair,"Steel, two right-angle stages; module and rating RFQ",Redirect rotation,2,700,1500,3000,1400,3000,6000,24.26202992317024,A,gear,NOT FOUND
+B,bevel,Production bevel gear pair,"Steel, two right-angle stages; module and rating RFQ",Redirect rotation,2,700,1500,3000,1400,3000,6000,24.26202992317024,A,gear,NOT FOUND
+H,bevel,Production bevel gear pair,"Steel, two right-angle stages; module and rating RFQ",Redirect rotation,1,700,1500,3000,700,1500,3000,12.13101496158512,A,gear,NOT FOUND
+A+B,bevel,Production bevel gear pair,"Steel, two right-angle stages; module and rating RFQ",Redirect rotation,4,700,1500,3000,2800,6000,12000,48.52405984634048,A,gear,NOT FOUND
+A,bearings,Radial bearing blocks,20 mm sealed UCP-type; two radial supports per shaft; axial separate,Support shaft,6,450,900,2000,2700,5400,12000,43.671653861706424,A,bearing1;bearing3,NOT FOUND
+B,bearings,Radial bearing blocks,20 mm sealed UCP-type; two radial supports per shaft; axial separate,Support shaft,6,450,900,2000,2700,5400,12000,43.671653861706424,A,bearing1;bearing3,NOT FOUND
+H,bearings,Radial bearing blocks,20 mm sealed UCP-type; two radial supports per shaft; axial separate,Support shaft,4,450,900,2000,1800,3600,8000,29.114435907804285,A,bearing1;bearing3,NOT FOUND
+A+B,bearings,Radial bearing blocks,20 mm sealed UCP-type; two radial supports per shaft; axial separate,Support shaft,12,450,900,2000,5400,10800,24000,87.34330772341285,A,bearing1;bearing3,NOT FOUND
+A,thrust,Thrust bearing and collar set,Matched axial load and positive retention,Carry fan/gear thrust,1,500,1000,2000,500,1000,2000,8.087343307723412,A,windguide,NOT FOUND
+B,thrust,Thrust bearing and collar set,Matched axial load and positive retention,Carry fan/gear thrust,1,500,1000,2000,500,1000,2000,8.087343307723412,A,windguide,NOT FOUND
+H,thrust,Thrust bearing and collar set,Matched axial load and positive retention,Carry fan/gear thrust,1,500,1000,2000,500,1000,2000,8.087343307723412,A,windguide,NOT FOUND
+A+B,thrust,Thrust bearing and collar set,Matched axial load and positive retention,Carry fan/gear thrust,2,500,1000,2000,1000,2000,4000,16.174686615446824,A,windguide,NOT FOUND
+A,couplers,Couplings keys collars,Keyed steel; fastener locking,Locate and couple shafts,3,200,400,700,600,1200,2100,9.704811969268095,A,gear,NOT FOUND
+B,couplers,Couplings keys collars,Keyed steel; fastener locking,Locate and couple shafts,3,200,400,700,600,1200,2100,9.704811969268095,A,gear,NOT FOUND
+H,couplers,Couplings keys collars,Keyed steel; fastener locking,Locate and couple shafts,3,200,400,700,600,1200,2100,9.704811969268095,A,gear,NOT FOUND
+A+B,couplers,Couplings keys collars,Keyed steel; fastener locking,Locate and couple shafts,6,200,400,700,1200,2400,4200,19.40962393853619,A,gear,NOT FOUND
+A,frame,Frame mounting and isolators,Coated local steel; engineered anchor plates,Structural support,1,2500,4500,7500,2500,4500,7500,36.393044884755355,A,windguide,NOT FOUND
+B,frame,Frame mounting and isolators,Coated local steel; engineered anchor plates,Structural support,1,2500,4500,7500,2500,4500,7500,36.393044884755355,A,windguide,NOT FOUND
+H,frame,Frame mounting and isolators,Coated local steel; engineered anchor plates,Structural support,1,2500,4500,7500,2500,4500,7500,36.393044884755355,A,windguide,NOT FOUND
+A+B,frame,Frame mounting and isolators,Coated local steel; engineered anchor plates,Structural support,2,2500,4500,7500,5000,9000,15000,72.78608976951071,A,windguide,NOT FOUND
+A,brake,Fail-safe brake and storm restraint,Mechanical brake/furling concept; test required,Overspeed protection,1,1000,2500,5000,1000,2500,5000,20.21835826930853,A,windguide,NOT FOUND
+B,brake,Fail-safe brake and storm restraint,Mechanical brake/furling concept; test required,Overspeed protection,1,1000,2500,5000,1000,2500,5000,20.21835826930853,A,windguide,NOT FOUND
+H,brake,Fail-safe brake and storm restraint,Mechanical brake/furling concept; test required,Overspeed protection,1,1000,2500,5000,1000,2500,5000,20.21835826930853,A,windguide,NOT FOUND
+A+B,brake,Fail-safe brake and storm restraint,Mechanical brake/furling concept; test required,Overspeed protection,2,1000,2500,5000,2000,5000,10000,40.43671653861706,A,windguide,NOT FOUND
+A,guard,Rotor and gear guards,Corrosion-resistant mesh with access covers,Entanglement protection,1,1000,1800,3500,1000,1800,3500,14.557217953902143,A,windguide,NOT FOUND
+B,guard,Rotor and gear guards,Corrosion-resistant mesh with access covers,Entanglement protection,1,1000,1800,3500,1000,1800,3500,14.557217953902143,A,windguide,NOT FOUND
+H,guard,Rotor and gear guards,Corrosion-resistant mesh with access covers,Entanglement protection,1,1000,1800,3500,1000,1800,3500,14.557217953902143,A,windguide,NOT FOUND
+A+B,guard,Rotor and gear guards,Corrosion-resistant mesh with access covers,Entanglement protection,2,1000,1800,3500,2000,3600,7000,29.114435907804285,A,windguide,NOT FOUND
+A,seals,Seals grease fasteners coating,"Gaskets, compatible lubricant, corrosion isolation",Weather and service kit,1,700,1200,2200,700,1200,2200,9.704811969268095,A,windguide,NOT FOUND
+B,seals,Seals grease fasteners coating,"Gaskets, compatible lubricant, corrosion isolation",Weather and service kit,1,700,1200,2200,700,1200,2200,9.704811969268095,A,windguide,NOT FOUND
+H,seals,Seals grease fasteners coating,"Gaskets, compatible lubricant, corrosion isolation",Weather and service kit,1,700,1200,2200,700,1200,2200,9.704811969268095,A,windguide,NOT FOUND
+A+B,seals,Seals grease fasteners coating,"Gaskets, compatible lubricant, corrosion isolation",Weather and service kit,2,700,1200,2200,1400,2400,4400,19.40962393853619,A,windguide,NOT FOUND
+A,fan,Mechanical axial fan and hub,NACA 65-810 concept; needs pressure-flow test,Exhaust room air,1,1200,2200,4000,1200,2200,4000,17.792155276991508,A,poster;fanweb,NOT FOUND
+H,fan,Mechanical axial fan and hub,NACA 65-810 concept; needs pressure-flow test,Exhaust room air,1,1200,2200,4000,1200,2200,4000,17.792155276991508,A,poster;fanweb,NOT FOUND
+A+B,fan,Mechanical axial fan and hub,NACA 65-810 concept; needs pressure-flow test,Exhaust room air,1,1200,2200,4000,1200,2200,4000,17.792155276991508,A,poster;fanweb,NOT FOUND
+A,plenum,Sleeve plenum duct and cowl,"Sheet metal; screened intake, access and rain drain",Air pathway,1,1800,3500,6500,1800,3500,6500,28.305701577031943,A,poster,NOT FOUND
+H,plenum,Sleeve plenum duct and cowl,"Sheet metal; screened intake, access and rain drain",Air pathway,1,1800,3500,6500,1800,3500,6500,28.305701577031943,A,poster,NOT FOUND
+A+B,plenum,Sleeve plenum duct and cowl,"Sheet metal; screened intake, access and rain drain",Air pathway,1,1800,3500,6500,1800,3500,6500,28.305701577031943,A,poster,NOT FOUND
+A,roof,Roof flashing and backdraft damper,Waterproof penetration and service access,Weatherproof building interface,1,800,1500,3000,800,1500,3000,12.13101496158512,A,windguide,NOT FOUND
+H,roof,Roof flashing and backdraft damper,Waterproof penetration and service access,Weatherproof building interface,1,800,1500,3000,800,1500,3000,12.13101496158512,A,windguide,NOT FOUND
+A+B,roof,Roof flashing and backdraft damper,Waterproof penetration and service access,Weatherproof building interface,1,800,1500,3000,800,1500,3000,12.13101496158512,A,windguide,NOT FOUND
+B,paddles,Paddle wheel and wet shaft guards,HDPE paddles on corrosion-resistant hub,Surface aeration,1,1800,3500,6000,1800,3500,6000,28.305701577031943,A,faoaer;poster,NOT FOUND
+A+B,paddles,Paddle wheel and wet shaft guards,HDPE paddles on corrosion-resistant hub,Surface aeration,1,1800,3500,6000,1800,3500,6000,28.305701577031943,A,faoaer;poster,NOT FOUND
+B,floats,Compartmented pontoons,"Recovered/rotomoulded HDPE, two separate floats",Flotation with reserve buoyancy,2,1200,2200,4000,2400,4400,8000,35.584310553983016,A,poster,NOT FOUND
+A+B,floats,Compartmented pontoons,"Recovered/rotomoulded HDPE, two separate floats",Flotation with reserve buoyancy,2,1200,2200,4000,2400,4400,8000,35.584310553983016,A,poster,NOT FOUND
+B,mooring,Mooring anchor retrieval and wet seals,"Two lines, anchors and dry access provision",Retain and retrieve pond assembly,1,1200,2500,5000,1200,2500,5000,20.21835826930853,A,faoquality,NOT FOUND
+A+B,mooring,Mooring anchor retrieval and wet seals,"Two lines, anchors and dry access provision",Retain and retrieve pond assembly,1,1200,2500,5000,1200,2500,5000,20.21835826930853,A,faoquality,NOT FOUND
+H,pv,PV module and fixed rack,180-200 W class; roof area/structure assessment,Electrical assistance energy,1,6000,9000,15000,6000,9000,15000,72.78608976951071,A,site,NOT FOUND
+H,battery,Battery pack and BMS,"24 V nominal, 240 Wh class; warranted matched pack",Short duration assistance,1,8000,14000,22000,8000,14000,22000,113.22280630812777,A,battery1;battery2,NOT FOUND
+H,motor,Motor PWM belt pulleys dual freewheels,"95 W input class, compatible ratios",Assist common shaft,1,5000,9000,15000,5000,9000,15000,72.78608976951071,A,site,NOT FOUND
+H,control,Controller fuses disconnect cabling,Weatherproof DC controls and two tachometers,Protected DC bus,1,3500,6000,10000,3500,6000,10000,48.52405984634048,A,site,NOT FOUND
+H,tracking,Sun tracker structure and actuators,Optional site depiction; costed only in H,Illustrative solar tracking,1,2500,5000,10000,2500,5000,10000,40.43671653861706,A,site,NOT FOUND
+A,qa,Assembly balancing and inspection,Paid shop labour and acceptance test,Deliver inspected ex-works unit,1,2000,3500,6000,2000,3500,6000,28.305701577031943,A,filament2,NOT FOUND
+B,qa,Assembly balancing and inspection,Paid shop labour and acceptance test,Deliver inspected ex-works unit,1,2000,3500,6000,2000,3500,6000,28.305701577031943,A,filament2,NOT FOUND
+H,qa,Assembly balancing and inspection,Paid shop labour and acceptance test,Deliver inspected ex-works unit,1,2000,3500,6000,2000,3500,6000,28.305701577031943,A,filament2,NOT FOUND
+A+B,qa,Assembly balancing and inspection,Paid shop labour and acceptance test,Deliver inspected ex-works unit,2,2000,3500,6000,4000,7000,12000,56.611403154063886,A,filament2,NOT FOUND

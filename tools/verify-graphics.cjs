@@ -13,7 +13,7 @@ const build=buildSync({stdin:{contents:`export {FieldScene} from './scene.js';ex
   export {GLTFLoader} from './vendor/addons/loaders/GLTFLoader.js';export {createWaterMaterial,applySurfaceDetail,applyVentilationMaterials} from './src/graphics/surfaces.js';
   export {VentilationVFX} from './src/graphics/ventilation-vfx.js';export {advanceCamera} from './src/graphics/camera.js';
   export {assetStatus} from './src/graphics/assets.js';
-  export {updateCity} from './src/graphics/city.js';
+  export {updateCity,advanceCityMobility} from './src/graphics/city.js';
   export {AdvancedScene} from './src/advanced/advanced-scene.js';
   export * from './src/advanced/hybrid-model.js';`,resolveDir:root},bundle:true,platform:'node',format:'cjs',write:false});
 const compiled=new Module(path.join(root,'verify-runtime.cjs'),module);compiled._compile(build.outputFiles[0].text,compiled.id);

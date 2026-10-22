@@ -124,9 +124,12 @@ export function addAssetInstances(parent,name,poses,{lighting=false,surfaceNorma
     template.traverse(source=>{
       if(!source.isMesh)return;
       let material=source.material;
+      if(lighting&&material.name.startsWith('City signal')){
+        const original=material;material=new T.MeshBasicMaterial({color:original.color,toneMapped:false});material.name=original.name;material.userData.sharedAsset=false;
+      }
       const facade=name.startsWith('site-')&&/apartment|tower|shopfront|distant-block|skyline/.test(name)&&/Limestone render|Terracotta brick|Sage ceramic cladding/.test(material.name);
       const window=lighting&&/apartment|tower|shopfront|distant-block|skyline/.test(name)&&/glazing|architectural glass/.test(material.name);
-      if(facade||window||(lighting&&!Array.isArray(material)&&/^City (glow|signal)/.test(material.name))){
+      if(facade||window||(lighting&&!Array.isArray(material)&&/^City glow/.test(material.name))){
         material=material.clone();material.userData.sharedAsset=false;
         if(window){material.emissive.set('#e2bf89');material.userData.cityWindow=true;material.userData.windowLevel=material.name==='Interior shadow glazing'?.04:material.name==='Smoked architectural glass'?.14:.30;}
         if(facade){material.color.set('#ffffff');if(!material.normalMap)material.normalMap=surfaceNormal;}else group.userData.glowMaterials.push(material);

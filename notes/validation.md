@@ -1,0 +1,48 @@
+# Final validation
+
+{
+  "passed_checks": 34,
+  "messages": [],
+  "unmet_evidence_threshold_tasks": [
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "19",
+    "20",
+    "Finance"
+  ],
+  "base_case": {
+    "npv_bdt": -11181078.003929747,
+    "npv_usd": -90425.2163682147,
+    "irr": -0.4771436404096737,
+    "irr_root_count": 1,
+    "simple_payback_years": null,
+    "discounted_payback_years": null,
+    "initial_investment_bdt": 2240000.0,
+    "peak_funding_need_bdt": 21769905.726454593,
+    "terminal_cash_bdt": -19133568.1636546,
+    "discount_rate": 0.18
+  },
+  "compile": "PASS: two sequential release passes, zero errors/warnings/overfull boxes/undefined citations",
+  "pdf_pages": 44,
+  "financial_self_checks": 51,
+  "sources_opened_or_attempted": 73,
+  "registered_report_citations": 49,
+  "visual_qa": "All final rendered pages inspected via four contact sheets; detailed system/summary/roadmap review. No clipping or overlap detected.",
+  "standalone_tex_sha256": "d1f92302fd70f335066b1920293e597e99fed34d4b32d359fc23581af166ff32",
+  "strict_definition_of_done": "NOT FULLY MET: Evidence scores below8 for17 tasks plus finance after maximum rounds; missing measurements/quotes/customer data are not invented."
+}
+
+Visual artefacts: tmp/pdfs/report/contact-01.png through contact-04.png; all final pages rendered. The executive summary occupies one page. Table/figure repairs were checked in the final render. Compilation proof: report/compile-release1.txt, report/compile-release2.txt and report/main.log.

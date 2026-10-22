@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-22",
+  "note": "Exact requested fleet. Source verification does not mean a mesh has been downloaded or installed. Local input and front axis must be set after inspecting the original.",
+  "cars": [
+    {
+      "id": "jaguar-e-type",
+      "name": "Jaguar E-Type",
+      "length": 4.45,
+      "input": "assets/cars/traffic/jaguar-e-type.blend",
+      "front": "-Y",
+      "wheels": [
+        {
+          "id": "FL",
+          "objects": [
+            "Traffic_FL"
+          ]
+        },
+        {
+          "id": "FR",
+          "objects": [
+            "Traffic_FR"
+          ]
+        },
+        {
+          "id": "RL",
+          "objects": [
+            "Traffic_RL"
+          ]
+        },
+        {
+          "id": "RR",
+          "objects": [
+            "Traffic_RR"
+          ]
+        }
+      ],
+      "source": {
+        "uid": "32aa25ea6e1b40f395b2aff33ca0a279",
+        "title": "Jaguar E_TYPE",
+        "author": "Nommoc",
+        "url": "https://sketchfab.com/3d-models/32aa25ea6e1b40f395b2aff33ca0a279",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-144/32aa25ea6e1b40f395b2aff33ca0a279.glb",
+        "originalSha256": "9ababf1542c24a0676cc9dfda6fd822516492088c4af41d840677fc3b95dbf3b",
+        "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Creator describes modelling with Blender 2.93.",
+        "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures.",
+        "warnings": [],
+        "originalFile": "jaguar-e-type-nommoc.glb"
+      }
+    },
+    {
+      "id": "porsche-taycan",
+      "name": "Porsche Taycan",
+      "length": 4.96,
+      "input": "assets/cars/traffic/porsche-taycan.blend",
+      "front": "-Y",
+      "wheels": [
+        {
+          "id": "FL",
+          "objects": [
+            "Traffic_FL"
+          ]
+        },
+        {
+          "id": "FR",
+          "objects": [
+            "Traffic_FR"
+          ]
+        },
+        {
+          "id": "RL",
+          "objects": [
+            "Traffic_RL"
+          ]
+        },
+        {
+          "id": "RR",
+          "objects": [
+            "Traffic_RR"
+          ]
+        }
+      ],
+      "source": {
+        "uid": "875072396ef541e3b106152e6dea6978",
+        "title": "2020 Porsche Taycan",
+        "author": "martin002",
+        "url": "https://sketchfab.com/3d-models/875072396ef541e3b106152e6dea6978",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-014/875072396ef541e3b106152e6dea6978.glb",
+        "originalSha256": "b93347425d0c30c55647742dc77d0a4e9bec7ec8c423a8214a655928a213d0c6",
+        "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Public creator attribution/license retained.",
+        "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures. Restored missing material colors with semantic PBR materials.",
+        "warnings": [],
+        "originalFile": "porsche-taycan-martin.glb"
+      }
+    },
+    {
+      "id": "ferrari-roma",
+      "name": "Ferrari Roma",
+      "length": 4.66,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": {
+        "uid": "d830f729e0e64450b8dbe0ad16443ea5",
+        "title": "Low Poly Ferrari Roma",
+        "author": "kulonee",
+        "url": "https://sketchfab.com/3d-models/low-poly-ferrari-roma-d830f729e0e64450b8dbe0ad16443ea5",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "provenance": "Creator describes Blender materials; 6000 triangles. This is a traffic candidate, not a cinematic high-detail mesh.",
+        "status": "authentication-required",
+        "evidence": "assets/cars/metadata/ferrari-roma.json",
+        "verifiedAt": "2026-10-22"
+      }
+    },
+    {
+      "id": "mclaren-gt",
+      "name": "McLaren GT",
+      "length": 4.68,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "pininfarina-battista",
+      "name": "Automobili Pininfarina Battista",
+      "length": 4.91,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "de-tomaso-p72",
+      "name": "De Tomaso P72",
+      "length": 4.55,
+      "input": "assets/cars/traffic/de-tomaso-p72.blend",
+      "front": "-Y",
+      "wheels": [
+        {
+          "id": "FL",
+          "objects": [
+            "Traffic_FL"
+          ]
+        },
+        {
+          "id": "FR",
+          "objects": [
+            "Traffic_FR"
+          ]
+        },
+        {
+          "id": "RL",
+          "objects": [
+            "Traffic_RL"
+          ]
+        },
+        {
+          "id": "RR",
+          "objects": [
+            "Traffic_RR"
+          ]
+        }
+      ],
+      "source": {
+        "uid": "ab85c302e652492196b600ee1eb7106a",
+        "title": "Low Poly Car - De Tomaso P72 2020",
+        "author": "ROH3D",
+        "url": "https://sketchfab.com/3d-models/ab85c302e652492196b600ee1eb7106a",
+        "license": "CC-BY-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": true,
+        "verifiedAt": "2026-10-22",
+        "status": "downloaded",
+        "downloadUrl": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-122/ab85c302e652492196b600ee1eb7106a.glb",
+        "originalSha256": "cc55ceab81ed64ee03f05becc35e9357b4361c77a0277ca1c3ce7d5c226018f1",
+        "provenance": "CC-BY creator listing; exact UID distributed by Allen Institute Objaverse under the original object license. Public creator attribution/license retained.",
+        "changes": "Normalized scale/orientation; extracted disconnected wheel geometry where possible; reduced LODs/textures.",
+        "warnings": [],
+        "originalFile": "de-tomaso-p72.glb"
+      }
+    },
+    {
+      "id": "mclaren-elva",
+      "name": "McLaren Elva",
+      "length": 4.61,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    },
+    {
+      "id": "lotus-evija",
+      "name": "Lotus Evija",
+      "length": 4.69,
+      "input": null,
+      "front": null,
+      "wheels": [],
+      "source": null
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://sketchfab.com/3d-models/2020-ferrari-roma-cbc0c13c0fb54fc8bbfa79a9ff99e3aa",
+      "reason": "Description explicitly credits a CSR2 game model; uploader's CC label does not establish rights to redistribute the game asset."
+    },
+    {
+      "url": "https://sketchfab.com/3d-models/2020-pininfarina-battista-anniversario-edition-a34a93d53c894c80bc4d54c973cafe40",
+      "reason": "Description explicitly credits a CSR2 game model; provenance not cleared."
+    },
+    {
+      "url": "https://www.3dcadbrowser.com/3d-model/mclaren-gt-2020",
+      "reason": "Listing prohibits redistribution of source files. Account also required."
+    },
+    {
+      "url": "https://sketchfab.com/3d-models/nfs-unbound-lotus-evija-criterion-edition-f424ad6f28284d1d89d9136b0ad0b905",
+      "reason": "Game-derived model; creator also prohibits reposting."
+    }
+  ]
+}

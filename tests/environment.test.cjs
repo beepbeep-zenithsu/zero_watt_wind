@@ -1,4 +1,4 @@
-const {test}=require('node:test'),assert=require('node:assert/strict');
+const {test}=require('node:test'),assert=require('node:assert/strict'),path=require('node:path'),{pathToFileURL}=require('node:url');
 const {makeScene,ready,T,updateCity}=require('../tools/verify-graphics.cjs');
 const M=require('../model.js');
 
@@ -123,21 +123,35 @@ test('vehicle integration accelerates smoothly, articulates wheels and is stable
 test('complete traffic cycle includes amber, clearance and actual red-light stopping',async()=>{
   const s=makeScene('air'),p={...M.defaults,_mode:'air',units:1};
   s.setEnvironment({weather:'clear',environment:'roof'},p);await ready(s);s.reducedMotion=false;
-  const colors=new Set(),car=s.city.cars[0],line=s.city.stops[0].find(l=>l.axis===1),length=s.city.paths[0].getLength();
+  const colors=new Set(),car=s.city.cars[0],line=s.city.stops[0].find(l=>l.axis===1&&!l.junction.offset),length=s.city.paths[0].getLength();
   s.city.cars=[car]; // Isolate the signal stop from the separate queue-spacing test.
+  s.city.cycleTraffic.cars=[];s.city.pedestrians=[];
+  s.city.network.owners.clear();s.city.network.crossings.clear();
   car.phase=(line.phase-7/length+1)%1;
   for(let i=0;i<600;i++){
     s.time=i/60;updateCity(s,1/60);colors.add(s.city.signalState.join('/'));
   }
   assert.ok(car.speed<.1,'car has braked at a red signal');
   const remaining=(line.phase-car.phase+1)%1*length;
-  assert.ok(remaining>=2.39&&remaining<3,'front bumper remains behind the stop line');
+  assert.ok(remaining>=3.29&&remaining<3.8,'extra front-bumper clearance protects turning traffic');
   const stopped=car.phase;
   for(let i=0;i<1800;i++){s.time=10+i/60;updateCity(s,1/60);colors.add(s.city.signalState.join('/'));}
   assert.ok(car.phase!==stopped,'car resumes when permitted');
   for(const state of ['green/red','amber/red','red/red','red/green','red/amber'])assert.ok(colors.has(state),state);
   assert.ok(!colors.has('green/green'));
-  for(const batch of s.city.signals)assert.equal(batch.userData.glowMaterials.filter(m=>m.emissiveIntensity>1).length,1);
+  const {trafficSignal}=await import(pathToFileURL(path.join(__dirname,'../src/graphics/traffic.js')).href);
+  s.city.signals.forEach((batch,axis)=>{
+    const lenses=batch.children.filter(mesh=>mesh.material.name.startsWith('City signal'));
+    batch.userData.signalPoses.forEach((pose,i)=>{
+      let lit=0;
+      for(const mesh of lenses){
+        const color=new T.Color();mesh.getColorAt(i,color);
+        const expected=mesh.material.name.endsWith(trafficSignal(s.city.network,s.city.simulationTime,pose.junction)[axis]);
+        assert.ok(Math.abs(color.r-(expected?1:.055))<.00001);if(color.r>.9)lit++;
+      }
+      assert.equal(lit,1,'exactly one active lens on each physical signal');
+    });
+  });
 });
 
 test('pedestrians walk, converse, gesture, resume and pause without route jumps',async()=>{

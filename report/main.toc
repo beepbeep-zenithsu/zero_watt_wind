@@ -1,0 +1,35 @@
+\contentsline {section}{Executive summary}{1}{section*.1}%
+\contentsline {section}{\numberline {1}Problem sizing and the addressable need}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}A site-level loss exposure, not an avoided-loss promise}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Solution, engineering boundary and simulation audit}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}What the code computes}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Every weather case and operating demonstration}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Components, market evidence and production costs}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Observed prices and the three-quote test}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Costed production BOM for each application}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}A: basic rooftop ventilation}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}B: pond aeration}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Combined A+B: two separate installed assemblies}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}H: advanced hybrid ventilation}{11}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Sustainable fabrication and build-versus-assemble}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Batch economics}{14}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Equivalent-service comparison and customer affordability}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Basic A versus advanced H, and ventilation versus aeration}{15}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Wind resource, performance availability and market boundary}{17}{section.6}%
+\contentsline {section}{\numberline {7}Investment, OPEX, revenue and profit}{18}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Prototype-to-market investment}{18}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Fixed OPEX, monthly and annual}{18}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Proposed commercial models and tariffs}{19}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Monthly and annual consolidated results}{20}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Revenue and profit by model}{21}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Cash flow, NPV, IRR and payback}{24}{section.8}%
+\contentsline {section}{\numberline {9}Sensitivity and break-even conditions}{27}{section.9}%
+\contentsline {section}{\numberline {10}Funding strategy and stage gates}{28}{section.10}%
+\contentsline {section}{\numberline {11}Bangladesh sourcing, assembly and import exposure}{30}{section.11}%
+\contentsline {section}{\numberline {12}Future scope with costed evidence gates}{31}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Roadmap and staged expansion}{32}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Environmental screening and end of life}{33}{section.13}%
+\contentsline {section}{\numberline {14}Risks, limitations and decision gates}{34}{section.14}%
+\contentsline {section}{\numberline {15}Conclusion}{35}{section.15}%
+\contentsline {section}{\numberline {16}Assumptions and unresolved-evidence register}{36}{section.16}%
+\contentsline {section}{\numberline {17}Gauntlet log summary and reproducibility}{38}{section.17}%

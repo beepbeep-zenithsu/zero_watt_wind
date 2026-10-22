@@ -1,0 +1,32 @@
+(node:19964) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/occupant-layout.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ thirty seats fit the smallest room with one corner computer operator and a clear desk (1107.948ms)
+✔ cars and bicycles cover every block using twelve connected circuits on the asphalt (12479.25ms)
+✔ high-refresh rendering moves between deterministic simulation ticks and freezes when paused (113.2046ms)
+✔ explicit Play animates the city even when reduced motion was requested initially (1417.4206ms)
+✔ rider legs keep fixed lengths and feet remain attached to the moving pedals (16.4415ms)
+✔ people travel between all city blocks using protected painted crossings (29554.6128ms)
+✔ whole-city cars share instanced draws and dynamic populations keep stable buffers (207.1201ms)
+(node:16176) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/new_8/zerowatt-wind-v8/src/graphics/traffic.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\new_8\zerowatt-wind-v8\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Blender neighborhood and detailed site are installed in both applications (2317.5212ms)
+✔ Urban Canyon uses detailed Blender towers and keeps the inspection camera clear (316.6976ms)
+✔ city traffic pauses with the simulation, responds to weather and has independent night lighting (4558.9931ms)
+✔ city rebuilds fit large installations and retire instances without disposing cached models (663.9704ms)
+✔ vehicle integration accelerates smoothly, articulates wheels and is stable across frame rates (2865.856ms)
+✔ complete traffic cycle includes amber, clearance and actual red-light stopping (3046.3208ms)
+✔ pedestrians walk, converse, gesture, resume and pause without route jumps (17040.4941ms)
+✔ entrance ray selection toggles a smoothly hinged door and ignores an empty click (419.0042ms)
+✔ traffic starts with bounded jerk and smoothly eases its heading (654.3061ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 47492.1564

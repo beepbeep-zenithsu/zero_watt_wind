@@ -1,0 +1,17 @@
+﻿mode,quantity,build_unit_bdt,assemble_unit_bdt,build_total_bdt,assemble_total_bdt,break_even_quantity,basis
+A,1,212800.0,70000.0,212800.0,70000,21,A setup and variable rates; D crossover
+A,10,50800.0,43000.0,508000.0,430000,21,A setup and variable rates; D crossover
+A,100,34600.0,40300.0,3460000.0,4030000,21,A setup and variable rates; D crossover
+A,1000,32980.0,40030.0,32980000.0,40030000,21,A setup and variable rates; D crossover
+B,1,215424.0,73200.0,215424.0,73200,20,A setup and variable rates; D crossover
+B,10,53424.0,46200.0,534240.0,462000,20,A setup and variable rates; D crossover
+B,100,37224.0,43500.0,3722400.0,4350000,20,A setup and variable rates; D crossover
+B,1000,35604.0,43230.0,35604000.0,43230000,20,A setup and variable rates; D crossover
+A+B,1,428224.0,143200.0,428224.0,143200,21,A setup and variable rates; D crossover
+A+B,10,104224.0,89200.0,1042240.0,892000,21,A setup and variable rates; D crossover
+A+B,100,71824.0,83800.0,7182400.0,8380000,21,A setup and variable rates; D crossover
+A+B,1000,68584.0,83260.0,68584000.0,83260000,21,A setup and variable rates; D crossover
+H,1,364616.0,128800.0,364616.0,128800,18,A setup and variable rates; D crossover
+H,10,94616.0,83800.0,946159.9999999999,838000,18,A setup and variable rates; D crossover
+H,100,67616.0,79300.0,6761599.999999999,7930000,18,A setup and variable rates; D crossover
+H,1000,64915.99999999999,78850.0,64915999.99999999,78850000,18,A setup and variable rates; D crossover

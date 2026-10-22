@@ -1,0 +1,1511 @@
+﻿id,raw_value,formatted,percent,basis,origin
+1,-11181078.003929747,-11181078,False,D,scenario_results base npv
+2,-90425.2163682147,-90425,False,D,scenario_results base USD
+3,-0.4771436404096737,-47.7,True,D,scenario_results base IRR
+4,2240000.0,2240000,False,D,base initial
+5,21769905.726454593,21769906,False,D,base peak funding
+6,40000.0,40000,False,D,bom_summary A
+7,43200.0,43200,False,D,bom_summary B
+8,83200.0,83200,False,D,bom_summary A+B
+9,3.5,3.5,False,A,wind mean
+10,0.29201339838523227,29.2,True,D,full service
+11,0.4711514453681903,47.1,True,D,energy fraction
+12,0.18,18,True,A,discount rate
+13,0.12,12,True,A,discount low
+14,0.25,25,True,A,discount high
+15,0.1,10,True,S,rate policy
+16,123.65,123.65,False,S,fx WAR
+17,424168.0,424168,False,S,problem pond area
+18,2543869.0,2543869,False,S,problem pond count
+19,2368741.0,2368741,False,S,problem pond tonnes
+20,272000.0,272000,False,S,WB deaths
+21,5200000000.0,5200000000,False,S,WB illness days
+22,8.32,8.32,False,S,WB GDP
+23,500.0,500,False,S,poster cognition claim
+24,15.0,15,False,S,poster cognition effect
+25,1000.0,1000,False,A,assumed fish stock
+26,200.0,200,False,A,fish price reserve
+27,0.1,10,True,A,loss fraction
+28,20000.0,20000,False,D,stock exposure
+29,0.02,2,True,A,loss low
+30,0.3,30,True,A,loss high
+31,2180.1450000000004,2180,False,D,clinic baseline electricity
+32,1.0,1.0,False,A,site diameter
+33,3.46,3.46,False,A,advanced area
+34,0.18,0.18,False,A,cp
+35,0.75,0.75,False,A,drive
+36,0.23,0.23,False,A,hybrid Cp
+37,0.84,0.84,False,A,hybrid drive
+38,20.0,20,False,A,pressure
+39,0.35,0.35,False,A,fan eff
+40,60.0,60,False,A,fan power
+41,240.0,240,False,A,fan RPM
+42,150.0,150,False,A,room
+43,100.0,100,False,A,pond
+44,1200.0,1200,False,A,co2 target
+45,4.0,4,False,A,DO target
+46,0.8,0.80,False,A,sae
+47,0.25,0.25,False,A,DO demand
+48,180.0,180,False,A,PV
+49,240.0,240,False,A,battery
+50,95.0,95,False,A,motor max
+51,12.0,12,False,A,lock
+52,20.0,20,False,A,recover
+53,0.9,0.90,False,A,assistOn
+54,1.05,1.05,False,A,assistOff
+55,1.5,1.5,False,A,verifyseconds
+56,4.5,4.5,False,A,site preset airbreeze
+57,2.8,2.8,False,A,site preset aircanyon
+58,2.3,2.3,False,A,site preset airheat
+59,7.0,7.0,False,A,site preset airrain
+60,19.0,19.0,False,A,site preset airstorm
+61,4.5,4.5,False,A,site preset waterbreeze
+62,2.8,2.8,False,A,site preset waterlull
+63,2.2,2.2,False,A,site preset waternight
+64,7.0,7.0,False,A,site preset waterrain
+65,19.0,19.0,False,A,site preset waterstorm
+66,5.917895394198803,5.92,False,D,engineering basic shaft
+67,372.8274098345246,372.8,False,D,engineering airflow
+68,2.4855160655634974,2.49,False,D,engineering ACH
+69,5.666666666666667,5.67,False,D,engineering hybrid ACH
+70,1.872,1.87,False,D,engineering autonomy
+71,1728.0,1728,False,D,clinic guidance flow
+72,1287.0,1287.00,False,S,price_observations HTE Bangladesh
+73,1287.0,1287.00,False,D,converted price
+74,10.408410837040032,10.41,False,D,converted USD
+75,1550.0,1550.00,False,S,price_observations Costareen
+76,1550.0,1550.00,False,D,converted price
+77,12.535382126971289,12.54,False,D,converted USD
+78,1999.0,1999.00,False,S,price_observations Electronics.Com.BD
+79,1999.0,1999.00,False,D,converted price
+80,16.166599272139102,16.17,False,D,converted USD
+81,1950.04,1950.04,False,S,price_observations TechShopBD
+82,1950.04,1950.04,False,D,converted price
+83,15.770642943792962,15.77,False,D,converted USD
+84,450.0,450.00,False,S,price_observations Daraz/Fair Enterprise
+85,450.0,450.00,False,D,converted price
+86,3.6393044884755357,3.64,False,D,converted USD
+87,15.65,15.65,False,S,price_observations MISUMI
+88,1511.556815,1511.56,False,D,converted price
+89,12.224478892033966,12.22,False,D,converted USD
+90,52.7,52.70,False,S,price_observations Motion
+91,6516.3550000000005,6516.36,False,D,converted price
+92,52.7,52.70,False,D,converted USD
+93,1250.0,1250.00,False,S,price_observations Walton
+94,1250.0,1250.00,False,D,converted price
+95,10.109179134654266,10.11,False,D,converted USD
+96,245.0,245.00,False,S,price_observations ZerOneTech
+97,245.0,245.00,False,D,converted price
+98,1.9813991103922362,1.98,False,D,converted USD
+99,50000.0,50000.00,False,S,price_observations NSC BD
+100,50000.0,50000.00,False,D,converted price
+101,404.3671653861706,404.37,False,D,converted USD
+102,40000.0,40000.00,False,S,price_observations Bangla Ltd.
+103,40000.0,40000.00,False,D,converted price
+104,323.4937323089365,323.49,False,D,converted USD
+105,40000.0,40000.00,False,S,price_observations BDStall single seller
+106,40000.0,40000.00,False,D,converted price
+107,323.4937323089365,323.49,False,D,converted USD
+108,1845.0,1845.00,False,S,price_observations CityTechBD
+109,1845.0,1845.00,False,D,converted price
+110,14.921148402749695,14.92,False,D,converted USD
+111,8200.0,8200.00,False,S,price_observations Teexla
+112,8200.0,8200.00,False,D,converted price
+113,66.31621512333199,66.32,False,D,converted USD
+114,2.0,2,False,D,price seller count
+115,1845.0,1845.00,False,D,price_statistics Battery 12V20Ah
+116,5022.5,5022.50,False,D,price_statistics Battery 12V20Ah
+117,8200.0,8200.00,False,D,price_statistics Battery 12V20Ah
+118,2.0,2,False,D,price seller count
+119,40000.0,40000.00,False,D,price_statistics Conventional aerator
+120,40000.0,40000.00,False,D,price_statistics Conventional aerator
+121,50000.0,50000.00,False,D,price_statistics Conventional aerator
+122,1.0,1,False,D,price seller count
+123,1250.0,1250.00,False,D,price_statistics Electric exhaust fan
+124,1250.0,1250.00,False,D,price_statistics Electric exhaust fan
+125,1250.0,1250.00,False,D,price_statistics Electric exhaust fan
+126,1.0,1,False,D,price seller count
+127,245.0,245.00,False,D,price_statistics Hobby bevel gear
+128,245.0,245.00,False,D,price_statistics Hobby bevel gear
+129,245.0,245.00,False,D,price_statistics Hobby bevel gear
+130,4.0,4,False,D,price seller count
+131,1287.0,1287.00,False,D,price_statistics PLA filament kg
+132,1750.02,1750.02,False,D,price_statistics PLA filament kg
+133,1999.0,1999.00,False,D,price_statistics PLA filament kg
+134,3.0,3,False,D,price seller count
+135,450.0,450.00,False,D,price_statistics UCP204 bearing
+136,1511.556815,1511.56,False,D,price_statistics UCP204 bearing
+137,6516.3550000000005,6516.36,False,D,price_statistics UCP204 bearing
+138,1.0,1,False,A,BOM Arotor
+139,3500.0,3500,False,A,BOM Arotor
+140,6000.0,6000,False,A,BOM Arotor
+141,10000.0,10000,False,A,BOM Arotor
+142,3.0,3,False,A,BOM Ashafts
+143,1500.0,1500,False,A,BOM Ashafts
+144,2700.0,2700,False,A,BOM Ashafts
+145,4800.0,4800,False,A,BOM Ashafts
+146,2.0,2,False,A,BOM Abevel
+147,1400.0,1400,False,A,BOM Abevel
+148,3000.0,3000,False,A,BOM Abevel
+149,6000.0,6000,False,A,BOM Abevel
+150,6.0,6,False,A,BOM Abearings
+151,2700.0,2700,False,A,BOM Abearings
+152,5400.0,5400,False,A,BOM Abearings
+153,12000.0,12000,False,A,BOM Abearings
+154,1.0,1,False,A,BOM Athrust
+155,500.0,500,False,A,BOM Athrust
+156,1000.0,1000,False,A,BOM Athrust
+157,2000.0,2000,False,A,BOM Athrust
+158,3.0,3,False,A,BOM Acouplers
+159,600.0,600,False,A,BOM Acouplers
+160,1200.0,1200,False,A,BOM Acouplers
+161,2100.0,2100,False,A,BOM Acouplers
+162,1.0,1,False,A,BOM Aframe
+163,2500.0,2500,False,A,BOM Aframe
+164,4500.0,4500,False,A,BOM Aframe
+165,7500.0,7500,False,A,BOM Aframe
+166,1.0,1,False,A,BOM Abrake
+167,1000.0,1000,False,A,BOM Abrake
+168,2500.0,2500,False,A,BOM Abrake
+169,5000.0,5000,False,A,BOM Abrake
+170,1.0,1,False,A,BOM Aguard
+171,1000.0,1000,False,A,BOM Aguard
+172,1800.0,1800,False,A,BOM Aguard
+173,3500.0,3500,False,A,BOM Aguard
+174,1.0,1,False,A,BOM Aseals
+175,700.0,700,False,A,BOM Aseals
+176,1200.0,1200,False,A,BOM Aseals
+177,2200.0,2200,False,A,BOM Aseals
+178,1.0,1,False,A,BOM Afan
+179,1200.0,1200,False,A,BOM Afan
+180,2200.0,2200,False,A,BOM Afan
+181,4000.0,4000,False,A,BOM Afan
+182,1.0,1,False,A,BOM Aplenum
+183,1800.0,1800,False,A,BOM Aplenum
+184,3500.0,3500,False,A,BOM Aplenum
+185,6500.0,6500,False,A,BOM Aplenum
+186,1.0,1,False,A,BOM Aroof
+187,800.0,800,False,A,BOM Aroof
+188,1500.0,1500,False,A,BOM Aroof
+189,3000.0,3000,False,A,BOM Aroof
+190,1.0,1,False,A,BOM Aqa
+191,2000.0,2000,False,A,BOM Aqa
+192,3500.0,3500,False,A,BOM Aqa
+193,6000.0,6000,False,A,BOM Aqa
+194,1.0,1,False,A,BOM Brotor
+195,3500.0,3500,False,A,BOM Brotor
+196,6000.0,6000,False,A,BOM Brotor
+197,10000.0,10000,False,A,BOM Brotor
+198,3.0,3,False,A,BOM Bshafts
+199,1500.0,1500,False,A,BOM Bshafts
+200,2700.0,2700,False,A,BOM Bshafts
+201,4800.0,4800,False,A,BOM Bshafts
+202,2.0,2,False,A,BOM Bbevel
+203,1400.0,1400,False,A,BOM Bbevel
+204,3000.0,3000,False,A,BOM Bbevel
+205,6000.0,6000,False,A,BOM Bbevel
+206,6.0,6,False,A,BOM Bbearings
+207,2700.0,2700,False,A,BOM Bbearings
+208,5400.0,5400,False,A,BOM Bbearings
+209,12000.0,12000,False,A,BOM Bbearings
+210,1.0,1,False,A,BOM Bthrust
+211,500.0,500,False,A,BOM Bthrust
+212,1000.0,1000,False,A,BOM Bthrust
+213,2000.0,2000,False,A,BOM Bthrust
+214,3.0,3,False,A,BOM Bcouplers
+215,600.0,600,False,A,BOM Bcouplers
+216,1200.0,1200,False,A,BOM Bcouplers
+217,2100.0,2100,False,A,BOM Bcouplers
+218,1.0,1,False,A,BOM Bframe
+219,2500.0,2500,False,A,BOM Bframe
+220,4500.0,4500,False,A,BOM Bframe
+221,7500.0,7500,False,A,BOM Bframe
+222,1.0,1,False,A,BOM Bbrake
+223,1000.0,1000,False,A,BOM Bbrake
+224,2500.0,2500,False,A,BOM Bbrake
+225,5000.0,5000,False,A,BOM Bbrake
+226,1.0,1,False,A,BOM Bguard
+227,1000.0,1000,False,A,BOM Bguard
+228,1800.0,1800,False,A,BOM Bguard
+229,3500.0,3500,False,A,BOM Bguard
+230,1.0,1,False,A,BOM Bseals
+231,700.0,700,False,A,BOM Bseals
+232,1200.0,1200,False,A,BOM Bseals
+233,2200.0,2200,False,A,BOM Bseals
+234,1.0,1,False,A,BOM Bpaddles
+235,1800.0,1800,False,A,BOM Bpaddles
+236,3500.0,3500,False,A,BOM Bpaddles
+237,6000.0,6000,False,A,BOM Bpaddles
+238,2.0,2,False,A,BOM Bfloats
+239,2400.0,2400,False,A,BOM Bfloats
+240,4400.0,4400,False,A,BOM Bfloats
+241,8000.0,8000,False,A,BOM Bfloats
+242,1.0,1,False,A,BOM Bmooring
+243,1200.0,1200,False,A,BOM Bmooring
+244,2500.0,2500,False,A,BOM Bmooring
+245,5000.0,5000,False,A,BOM Bmooring
+246,1.0,1,False,A,BOM Bqa
+247,2000.0,2000,False,A,BOM Bqa
+248,3500.0,3500,False,A,BOM Bqa
+249,6000.0,6000,False,A,BOM Bqa
+250,2.0,2,False,A,BOM A+Brotor
+251,7000.0,7000,False,A,BOM A+Brotor
+252,12000.0,12000,False,A,BOM A+Brotor
+253,20000.0,20000,False,A,BOM A+Brotor
+254,6.0,6,False,A,BOM A+Bshafts
+255,3000.0,3000,False,A,BOM A+Bshafts
+256,5400.0,5400,False,A,BOM A+Bshafts
+257,9600.0,9600,False,A,BOM A+Bshafts
+258,4.0,4,False,A,BOM A+Bbevel
+259,2800.0,2800,False,A,BOM A+Bbevel
+260,6000.0,6000,False,A,BOM A+Bbevel
+261,12000.0,12000,False,A,BOM A+Bbevel
+262,12.0,12,False,A,BOM A+Bbearings
+263,5400.0,5400,False,A,BOM A+Bbearings
+264,10800.0,10800,False,A,BOM A+Bbearings
+265,24000.0,24000,False,A,BOM A+Bbearings
+266,2.0,2,False,A,BOM A+Bthrust
+267,1000.0,1000,False,A,BOM A+Bthrust
+268,2000.0,2000,False,A,BOM A+Bthrust
+269,4000.0,4000,False,A,BOM A+Bthrust
+270,6.0,6,False,A,BOM A+Bcouplers
+271,1200.0,1200,False,A,BOM A+Bcouplers
+272,2400.0,2400,False,A,BOM A+Bcouplers
+273,4200.0,4200,False,A,BOM A+Bcouplers
+274,2.0,2,False,A,BOM A+Bframe
+275,5000.0,5000,False,A,BOM A+Bframe
+276,9000.0,9000,False,A,BOM A+Bframe
+277,15000.0,15000,False,A,BOM A+Bframe
+278,2.0,2,False,A,BOM A+Bbrake
+279,2000.0,2000,False,A,BOM A+Bbrake
+280,5000.0,5000,False,A,BOM A+Bbrake
+281,10000.0,10000,False,A,BOM A+Bbrake
+282,2.0,2,False,A,BOM A+Bguard
+283,2000.0,2000,False,A,BOM A+Bguard
+284,3600.0,3600,False,A,BOM A+Bguard
+285,7000.0,7000,False,A,BOM A+Bguard
+286,2.0,2,False,A,BOM A+Bseals
+287,1400.0,1400,False,A,BOM A+Bseals
+288,2400.0,2400,False,A,BOM A+Bseals
+289,4400.0,4400,False,A,BOM A+Bseals
+290,1.0,1,False,A,BOM A+Bfan
+291,1200.0,1200,False,A,BOM A+Bfan
+292,2200.0,2200,False,A,BOM A+Bfan
+293,4000.0,4000,False,A,BOM A+Bfan
+294,1.0,1,False,A,BOM A+Bplenum
+295,1800.0,1800,False,A,BOM A+Bplenum
+296,3500.0,3500,False,A,BOM A+Bplenum
+297,6500.0,6500,False,A,BOM A+Bplenum
+298,1.0,1,False,A,BOM A+Broof
+299,800.0,800,False,A,BOM A+Broof
+300,1500.0,1500,False,A,BOM A+Broof
+301,3000.0,3000,False,A,BOM A+Broof
+302,1.0,1,False,A,BOM A+Bpaddles
+303,1800.0,1800,False,A,BOM A+Bpaddles
+304,3500.0,3500,False,A,BOM A+Bpaddles
+305,6000.0,6000,False,A,BOM A+Bpaddles
+306,2.0,2,False,A,BOM A+Bfloats
+307,2400.0,2400,False,A,BOM A+Bfloats
+308,4400.0,4400,False,A,BOM A+Bfloats
+309,8000.0,8000,False,A,BOM A+Bfloats
+310,1.0,1,False,A,BOM A+Bmooring
+311,1200.0,1200,False,A,BOM A+Bmooring
+312,2500.0,2500,False,A,BOM A+Bmooring
+313,5000.0,5000,False,A,BOM A+Bmooring
+314,2.0,2,False,A,BOM A+Bqa
+315,4000.0,4000,False,A,BOM A+Bqa
+316,7000.0,7000,False,A,BOM A+Bqa
+317,12000.0,12000,False,A,BOM A+Bqa
+318,1.0,1,False,A,BOM Hrotor
+319,3500.0,3500,False,A,BOM Hrotor
+320,6000.0,6000,False,A,BOM Hrotor
+321,10000.0,10000,False,A,BOM Hrotor
+322,2.0,2,False,A,BOM Hshafts
+323,1000.0,1000,False,A,BOM Hshafts
+324,1800.0,1800,False,A,BOM Hshafts
+325,3200.0,3200,False,A,BOM Hshafts
+326,1.0,1,False,A,BOM Hbevel
+327,700.0,700,False,A,BOM Hbevel
+328,1500.0,1500,False,A,BOM Hbevel
+329,3000.0,3000,False,A,BOM Hbevel
+330,4.0,4,False,A,BOM Hbearings
+331,1800.0,1800,False,A,BOM Hbearings
+332,3600.0,3600,False,A,BOM Hbearings
+333,8000.0,8000,False,A,BOM Hbearings
+334,1.0,1,False,A,BOM Hthrust
+335,500.0,500,False,A,BOM Hthrust
+336,1000.0,1000,False,A,BOM Hthrust
+337,2000.0,2000,False,A,BOM Hthrust
+338,3.0,3,False,A,BOM Hcouplers
+339,600.0,600,False,A,BOM Hcouplers
+340,1200.0,1200,False,A,BOM Hcouplers
+341,2100.0,2100,False,A,BOM Hcouplers
+342,1.0,1,False,A,BOM Hframe
+343,2500.0,2500,False,A,BOM Hframe
+344,4500.0,4500,False,A,BOM Hframe
+345,7500.0,7500,False,A,BOM Hframe
+346,1.0,1,False,A,BOM Hbrake
+347,1000.0,1000,False,A,BOM Hbrake
+348,2500.0,2500,False,A,BOM Hbrake
+349,5000.0,5000,False,A,BOM Hbrake
+350,1.0,1,False,A,BOM Hguard
+351,1000.0,1000,False,A,BOM Hguard
+352,1800.0,1800,False,A,BOM Hguard
+353,3500.0,3500,False,A,BOM Hguard
+354,1.0,1,False,A,BOM Hseals
+355,700.0,700,False,A,BOM Hseals
+356,1200.0,1200,False,A,BOM Hseals
+357,2200.0,2200,False,A,BOM Hseals
+358,1.0,1,False,A,BOM Hfan
+359,1200.0,1200,False,A,BOM Hfan
+360,2200.0,2200,False,A,BOM Hfan
+361,4000.0,4000,False,A,BOM Hfan
+362,1.0,1,False,A,BOM Hplenum
+363,1800.0,1800,False,A,BOM Hplenum
+364,3500.0,3500,False,A,BOM Hplenum
+365,6500.0,6500,False,A,BOM Hplenum
+366,1.0,1,False,A,BOM Hroof
+367,800.0,800,False,A,BOM Hroof
+368,1500.0,1500,False,A,BOM Hroof
+369,3000.0,3000,False,A,BOM Hroof
+370,1.0,1,False,A,BOM Hpv
+371,6000.0,6000,False,A,BOM Hpv
+372,9000.0,9000,False,A,BOM Hpv
+373,15000.0,15000,False,A,BOM Hpv
+374,1.0,1,False,A,BOM Hbattery
+375,8000.0,8000,False,A,BOM Hbattery
+376,14000.0,14000,False,A,BOM Hbattery
+377,22000.0,22000,False,A,BOM Hbattery
+378,1.0,1,False,A,BOM Hmotor
+379,5000.0,5000,False,A,BOM Hmotor
+380,9000.0,9000,False,A,BOM Hmotor
+381,15000.0,15000,False,A,BOM Hmotor
+382,1.0,1,False,A,BOM Hcontrol
+383,3500.0,3500,False,A,BOM Hcontrol
+384,6000.0,6000,False,A,BOM Hcontrol
+385,10000.0,10000,False,A,BOM Hcontrol
+386,1.0,1,False,A,BOM Htracking
+387,2500.0,2500,False,A,BOM Htracking
+388,5000.0,5000,False,A,BOM Htracking
+389,10000.0,10000,False,A,BOM Htracking
+390,1.0,1,False,A,BOM Hqa
+391,2000.0,2000,False,A,BOM Hqa
+392,3500.0,3500,False,A,BOM Hqa
+393,6000.0,6000,False,A,BOM Hqa
+394,21200.0,21200,False,D,bom low
+395,40000.0,40000,False,D,bom base
+396,74600.0,74600,False,D,bom high
+397,323.4937323089365,323.49,False,D,bom usd
+398,22800.0,22800,False,D,bom low
+399,43200.0,43200,False,D,bom base
+400,80100.0,80100,False,D,bom high
+401,349.3732308936514,349.37,False,D,bom usd
+402,44100.0,44100,False,D,bom low
+403,78800.0,78800,False,D,bom base
+404,138000.0,138000,False,D,bom high
+405,637.2826526486049,637.28,False,D,bom usd
+406,44000.0,44000,False,D,bom low
+407,83200.0,83200,False,D,bom base
+408,154700.0,154700,False,D,bom high
+409,672.866963202588,672.87,False,D,bom usd
+410,6.0,6.00000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+411,2.7,2.70000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+412,3.0,3.00000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+413,5.4,5.40000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+414,1.0,1.00000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+415,1.2,1.20000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+416,4.5,4.50000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+417,2.5,2.50000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+418,1.8,1.80000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+419,1.2,1.20000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+420,2.2,2.20000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+421,3.5,3.50000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+422,1.5,1.50000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+423,3.5,3.50000000,False,D,"Base A cost breakdown [D] from [A] component allowances. Indices follow the BOM order; custom rotor, structure and safety costs matter alongside gears."
+424,3000.0,3000,False,A,fabrication Printed pattern + formed recycled aluminium rotor
+425,6000.0,6000,False,A,fabrication Printed pattern + formed recycled aluminium rotor
+426,11000.0,11000,False,A,fabrication Printed pattern + formed recycled aluminium rotor
+427,5000.0,5000,False,A,fabrication Purchased gears / local steel shaft and frame
+428,10000.0,10000,False,A,fabrication Purchased gears / local steel shaft and frame
+429,19000.0,19000,False,A,fabrication Purchased gears / local steel shaft and frame
+430,800.0,800,False,A,fabrication Recycled PLA / PETG noncritical parts per unit
+431,1800.0,1800,False,A,fabrication Recycled PLA / PETG noncritical parts per unit
+432,3500.0,3500,False,A,fabrication Recycled PLA / PETG noncritical parts per unit
+433,2400.0,2400,False,A,fabrication Reclaimed HDPE float pair
+434,4400.0,4400,False,A,fabrication Reclaimed HDPE float pair
+435,8000.0,8000,False,A,fabrication Reclaimed HDPE float pair
+436,500.0,500,False,A,fabrication Bamboo replaceable noncritical fixtures
+437,1500.0,1500,False,A,fabrication Bamboo replaceable noncritical fixtures
+438,3000.0,3000,False,A,fabrication Bamboo replaceable noncritical fixtures
+439,300.0,300,False,A,fabrication Recovered metal and polymer take-back per unit
+440,700.0,700,False,A,fabrication Recovered metal and polymer take-back per unit
+441,1500.0,1500,False,A,fabrication Recovered metal and polymer take-back per unit
+442,1.0,1,False,A,batch quantity
+443,212800.0,212800,False,D,build unit
+444,70000.0,70000,False,D,assemble unit
+445,21.0,21,False,D,crossover
+446,10.0,10,False,A,batch quantity
+447,50800.0,50800,False,D,build unit
+448,43000.0,43000,False,D,assemble unit
+449,21.0,21,False,D,crossover
+450,100.0,100,False,A,batch quantity
+451,34600.0,34600,False,D,build unit
+452,40300.0,40300,False,D,assemble unit
+453,21.0,21,False,D,crossover
+454,1000.0,1000,False,A,batch quantity
+455,32980.0,32980,False,D,build unit
+456,40030.0,40030,False,D,assemble unit
+457,21.0,21,False,D,crossover
+458,1.0,1,False,A,batch quantity
+459,215424.0,215424,False,D,build unit
+460,73200.0,73200,False,D,assemble unit
+461,20.0,20,False,D,crossover
+462,10.0,10,False,A,batch quantity
+463,53424.0,53424,False,D,build unit
+464,46200.0,46200,False,D,assemble unit
+465,20.0,20,False,D,crossover
+466,100.0,100,False,A,batch quantity
+467,37224.0,37224,False,D,build unit
+468,43500.0,43500,False,D,assemble unit
+469,20.0,20,False,D,crossover
+470,1000.0,1000,False,A,batch quantity
+471,35604.0,35604,False,D,build unit
+472,43230.0,43230,False,D,assemble unit
+473,20.0,20,False,D,crossover
+474,1.0,1,False,A,batch quantity
+475,428224.0,428224,False,D,build unit
+476,143200.0,143200,False,D,assemble unit
+477,21.0,21,False,D,crossover
+478,10.0,10,False,A,batch quantity
+479,104224.0,104224,False,D,build unit
+480,89200.0,89200,False,D,assemble unit
+481,21.0,21,False,D,crossover
+482,100.0,100,False,A,batch quantity
+483,71824.0,71824,False,D,build unit
+484,83800.0,83800,False,D,assemble unit
+485,21.0,21,False,D,crossover
+486,1000.0,1000,False,A,batch quantity
+487,68584.0,68584,False,D,build unit
+488,83260.0,83260,False,D,assemble unit
+489,21.0,21,False,D,crossover
+490,1.0,1,False,A,batch quantity
+491,364616.0,364616,False,D,build unit
+492,128800.0,128800,False,D,assemble unit
+493,18.0,18,False,D,crossover
+494,10.0,10,False,A,batch quantity
+495,94616.0,94616,False,D,build unit
+496,83800.0,83800,False,D,assemble unit
+497,18.0,18,False,D,crossover
+498,100.0,100,False,A,batch quantity
+499,67616.0,67616,False,D,build unit
+500,79300.0,79300,False,D,assemble unit
+501,18.0,18,False,D,crossover
+502,1000.0,1000,False,A,batch quantity
+503,64915.99999999999,64916,False,D,build unit
+504,78850.0,78850,False,D,assemble unit
+505,18.0,18,False,D,crossover
+506,212.8,212.80000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+507,50.8,50.80000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+508,34.6,34.60000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+509,32.98,32.98000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+510,70.0,70.00000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+511,43.0,43.00000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+512,40.3,40.30000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+513,40.03,40.03000000,False,D,Build versus assemble for A [D] from [A] setup/variable allowances. Precision parts remain purchased in both options.
+514,300.0,300,False,A,comparison flow
+515,150.0,150,False,A,comparison room
+516,4380.0,4380,False,A,comparison hours
+517,55.0,55,False,S,fan nameplate
+518,0.025,0.025,False,D,pond demand
+519,1.2,1.2,False,A,electric field SAE
+520,0.5,0.5,False,A,oxygen field correction
+521,0.91,0.91,False,S,FAO SAE low
+522,1.41,1.41,False,S,FAO SAE high
+523,50002.24000000001,50002,False,D,customer electric
+524,106568.5811421393,106569,False,D,customer wind
+525,198996.00000000006,198996,False,D,customer diesel
+526,50002.24000000001,50002,False,D,customer electric
+527,211770.33599999995,211770,False,D,customer wind
+528,198996.00000000006,198996,False,D,customer diesel
+529,153032.00000000003,153032,False,D,customer electric
+530,236983.34468208073,236983,False,D,customer wind
+531,285300.0,285300,False,D,customer diesel
+532,15.36,15.36,False,S,tariff LT E
+533,9.05,9.05,False,S,tariff LT D1
+534,5.0,5.00000000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+535,9.000224,9.00022400,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+536,13.000448,13.00044800,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+537,17.000671999999998,17.00067200,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+538,21.000896,21.00089600,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+539,30.001120000000004,30.00112000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+540,34.001344,34.00134400,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+541,38.001568000000006,38.00156800,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+542,42.00179200000001,42.00179200,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+543,46.00201600000001,46.00201600,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+544,50.002240000000015,50.00224000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+545,53.0,53.00000000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+546,56.85685811421393,56.85685811,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+547,60.71371622842786,60.71371623,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+548,64.57057434264179,64.57057434,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+549,68.42743245685573,68.42743246,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+550,87.28429057106965,87.28429057,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+551,91.14114868528358,91.14114869,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+552,94.99800679949752,94.99800680,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+553,98.85486491371144,98.85486491,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+554,102.71172302792537,102.71172303,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+555,106.5685811421393,106.56858114,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+556,35.0,35.00000000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+557,47.89960000000001,47.89960000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+558,60.79920000000001,60.79920000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+559,73.69880000000002,73.69880000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+560,86.59840000000003,86.59840000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+561,104.49800000000003,104.49800000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+562,117.39760000000004,117.39760000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+563,130.29720000000003,130.29720000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+564,173.19680000000005,173.19680000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+565,186.09640000000005,186.09640000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+566,198.99600000000007,198.99600000,False,D,Equal-service cumulative ventilation cost [D] using [A/S] inputs. Generator sharing/fuel assumptions are weak; wind operation alone has unmet demand.
+567,0.4711514453681903,47.1,True,D,customer wind fraction
+568,143.36588578606666,143.4,False,D,customer net saving
+569,334.807682712096,334.8,False,D,customer payback
+570,0.85,85.0,True,D,customer wind fraction
+571,-6.809600000000501,-6.8,False,D,customer net saving
+572,0.07593661950340087,7.6,True,D,customer wind fraction
+573,-1515.1344682080667,-1515.1,False,D,customer net saving
+574,0.5708018264840184,0.571,False,D,servicecost electric
+575,1.2165363144079828,1.217,False,D,servicecost wind
+576,0.5708018264840184,0.571,False,D,servicecost electric
+577,2.4174695890410955,2.417,False,D,servicecost wind
+578,69.87762557077627,69.878,False,D,servicecost electric
+579,108.21157291419212,108.212,False,D,servicecost wind
+580,4.11,4.11,False,S,EU indexed wind
+581,60.0,60,False,S,EU measurement height
+582,2.5,2.5,False,A,wind input
+583,0.08809744777168466,8.8,True,D,wind full
+584,0.24126377954958023,24.1,True,D,wind displaced
+585,0.005966752031982444,0.6,True,D,wind CF
+586,3.5,3.5,False,A,wind input
+587,0.29201339838523227,29.2,True,D,wind full
+588,0.4711514453681903,47.1,True,D,wind displaced
+589,0.01898415487585022,1.9,True,D,wind CF
+590,4.5,4.5,False,A,wind input
+591,0.48079960843988734,48.1,True,D,wind full
+592,0.6363875569521596,63.6,True,D,wind displaced
+593,0.042781446936524185,4.3,True,D,wind CF
+594,4.185528666989757,4.19,False,D,threshold
+595,100.0,100,False,A,market funnel
+596,500.0,500,False,A,market funnel
+597,1500.0,1500,False,A,market funnel
+598,50.0,50,False,A,market funnel
+599,250.0,250,False,A,market funnel
+600,1000.0,1000,False,A,market funnel
+601,250000.0,250000,False,A,investment low
+602,500000.0,500000,False,A,investment base
+603,1000000.0,1000000,False,A,investment high
+604,200000.0,200000,False,A,investment low
+605,450000.0,450000,False,A,investment base
+606,900000.0,900000,False,A,investment high
+607,150000.0,150000,False,A,investment low
+608,300000.0,300000,False,A,investment base
+609,600000.0,600000,False,A,investment high
+610,150000.0,150000,False,A,investment low
+611,350000.0,350000,False,A,investment base
+612,800000.0,800000,False,A,investment high
+613,50000.0,50000,False,A,investment low
+614,100000.0,100000,False,A,investment base
+615,200000.0,200000,False,A,investment high
+616,1060000.0,1060000,False,A,investment low
+617,2240000.0,2240000,False,A,investment base
+618,4600000.0,4600000,False,A,investment high
+619,40000.0,40000,False,A,OPEX Engineering and founder salaries
+620,60000.0,60000,False,A,OPEX Engineering and founder salaries
+621,100000.0,100000,False,A,OPEX Engineering and founder salaries
+622,720000.0,720000,False,D,OPEX annual
+623,18000.0,18000,False,A,OPEX Technician salary
+624,25000.0,25000,False,A,OPEX Technician salary
+625,40000.0,40000,False,A,OPEX Technician salary
+626,300000.0,300000,False,D,OPEX annual
+627,8000.0,8000,False,A,OPEX Rent
+628,12000.0,12000,False,A,OPEX Rent
+629,20000.0,20000,False,A,OPEX Rent
+630,144000.0,144000,False,D,OPEX annual
+631,2000.0,2000,False,A,OPEX Utilities and workshop energy
+632,3500.0,3500,False,A,OPEX Utilities and workshop energy
+633,6000.0,6000,False,A,OPEX Utilities and workshop energy
+634,42000.0,42000,False,D,OPEX annual
+635,4000.0,4000,False,A,OPEX Logistics and field travel
+636,8000.0,8000,False,A,OPEX Logistics and field travel
+637,15000.0,15000,False,A,OPEX Logistics and field travel
+638,96000.0,96000,False,D,OPEX annual
+639,3000.0,3000,False,A,OPEX Marketing and customer development
+640,7000.0,7000,False,A,OPEX Marketing and customer development
+641,14000.0,14000,False,A,OPEX Marketing and customer development
+642,84000.0,84000,False,D,OPEX annual
+643,3000.0,3000,False,A,OPEX Administration accounting telecom
+644,6000.0,6000,False,A,OPEX Administration accounting telecom
+645,10000.0,10000,False,A,OPEX Administration accounting telecom
+646,72000.0,72000,False,D,OPEX annual
+647,1000.0,1000,False,A,OPEX Insurance and liability allowance
+648,3000.0,3000,False,A,OPEX Insurance and liability allowance
+649,8000.0,8000,False,A,OPEX Insurance and liability allowance
+650,36000.0,36000,False,D,OPEX annual
+651,2000.0,2000,False,A,OPEX Tool maintenance and calibration
+652,4000.0,4000,False,A,OPEX Tool maintenance and calibration
+653,8000.0,8000,False,A,OPEX Tool maintenance and calibration
+654,48000.0,48000,False,D,OPEX annual
+655,45000.0,45000,False,A,sale price A
+656,55000.0,55000,False,A,sale price B
+657,125000.0,125000,False,A,sale price H
+658,1500.0,1500,False,A,lease rate
+659,30.0,30,False,A,use tariff
+660,120.0,120,False,A,use schedule
+661,3000.0,3000,False,A,install tariff
+662,1800.0,1800,False,A,AMC rate
+663,0.4,40,True,A,AMC fraction
+664,0.7,70,True,A,sale channel
+665,0.2,20,True,A,lease channel
+666,0.1,10,True,A,use channel
+667,0.6,60,True,A,A product share
+668,0.3,30,True,A,B product share
+669,0.1,10,True,A,H product share
+670,1.0,1,False,D,ramp year
+671,30.0,30,False,A,base new units
+672,15.0,15,False,D,conservative ramp
+673,54.0,54,False,D,optimistic ramp
+674,2.0,2,False,D,ramp year
+675,45.0,45,False,A,base new units
+676,22.5,22,False,D,conservative ramp
+677,81.0,81,False,D,optimistic ramp
+678,3.0,3,False,D,ramp year
+679,65.0,65,False,A,base new units
+680,32.5,32,False,D,conservative ramp
+681,117.0,117,False,D,optimistic ramp
+682,4.0,4,False,D,ramp year
+683,90.0,90,False,A,base new units
+684,45.0,45,False,D,conservative ramp
+685,162.0,162,False,D,optimistic ramp
+686,5.0,5,False,D,ramp year
+687,120.0,120,False,A,base new units
+688,60.0,60,False,D,conservative ramp
+689,216.0,216,False,D,optimistic ramp
+690,6.0,6,False,D,ramp year
+691,150.0,150,False,A,base new units
+692,75.0,75,False,D,conservative ramp
+693,270.0,270,False,D,optimistic ramp
+694,7.0,7,False,D,ramp year
+695,180.0,180,False,A,base new units
+696,90.0,90,False,D,conservative ramp
+697,324.0,324,False,D,optimistic ramp
+698,8.0,8,False,D,ramp year
+699,210.0,210,False,A,base new units
+700,105.0,105,False,D,conservative ramp
+701,378.0,378,False,D,optimistic ramp
+702,9.0,9,False,D,ramp year
+703,240.0,240,False,A,base new units
+704,120.0,120,False,D,conservative ramp
+705,432.0,432,False,D,optimistic ramp
+706,10.0,10,False,D,ramp year
+707,270.0,270,False,A,base new units
+708,135.0,135,False,D,conservative ramp
+709,486.0,486,False,D,optimistic ramp
+710,0.0,0,False,D,year
+711,0.0,0,False,D,annual revenue
+712,-1590000.0,-1590000,False,D,annual ebitda
+713,0.0,0,False,D,annual depreciation
+714,0.0,0,False,D,annual tax
+715,-1590000.0,-1590000,False,D,annual net
+716,1.0,1,False,D,year
+717,1288440.8660337897,1288441,False,D,annual revenue
+718,-1277877.7286016557,-1277878,False,D,annual ebitda
+719,135474.0,135474,False,D,annual depreciation
+720,0.0,0,False,D,annual tax
+721,-1413351.7286016557,-1413352,False,D,annual net
+722,2.0,2,False,D,year
+723,2174374.51425167,2174375,False,D,annual revenue
+724,-1050380.2329079616,-1050380,False,D,annual ebitda
+725,244891.43999999997,244891,False,D,annual depreciation
+726,0.0,0,False,D,annual tax
+727,-1295271.6729079615,-1295272,False,D,annual net
+728,3.0,3,False,D,year
+729,3439540.2391145253,3439540,False,D,annual revenue
+730,-690246.1330442687,-690246,False,D,annual ebitda
+731,411483.92319999984,411484,False,D,annual depreciation
+732,0.0,0,False,D,annual tax
+733,-1101730.0562442685,-1101730,False,D,annual net
+734,4.0,4,False,D,year
+735,5145111.953211436,5145112,False,D,annual revenue
+736,-372399.4166896461,-372399,False,D,annual ebitda
+737,655112.0302079996,655112,False,D,annual depreciation
+738,0.0,0,False,D,annual tax
+739,-1027511.4468976457,-1027511,False,D,annual net
+740,5.0,5,False,D,year
+741,7361557.686145698,7361558,False,D,annual revenue
+742,132656.3189337775,132656,False,D,annual ebitda
+743,997752.1738137597,997752,False,D,annual depreciation
+744,0.0,0,False,D,annual tax
+745,-865095.8548799822,-865096,False,D,annual net
+746,6.0,6,False,D,year
+747,9827824.642178554,9827825,False,D,annual revenue
+748,747380.3950457445,747380,False,D,annual ebitda
+749,1428462.5761351683,1428463,False,D,annual depreciation
+750,0.0,0,False,D,annual tax
+751,-681082.181089424,-681082,False,D,annual net
+752,7.0,7,False,D,year
+753,12532689.762436919,12532690,False,D,annual revenue
+754,1455905.0052165487,1455905,False,D,annual ebitda
+755,1898351.690310428,1898352,False,D,annual depreciation
+756,0.0,0,False,D,annual tax
+757,-442446.68509387935,-442447,False,D,annual net
+758,8.0,8,False,D,year
+759,15509035.603710616,15509036,False,D,annual revenue
+760,2279736.9483042387,2279737,False,D,annual ebitda
+761,2442765.6503753574,2442766,False,D,annual depreciation
+762,0.0,0,False,D,annual tax
+763,-163028.70207111875,-163029,False,D,annual net
+764,9.0,9,False,D,year
+765,18745335.32204326,18745335,False,D,annual revenue
+766,3202539.372011438,3202539,False,D,annual ebitda
+767,3051452.976362449,3051453,False,D,annual depreciation
+768,37771.59891224721,37772,False,D,annual tax
+769,113314.79673674163,113315,False,D,annual net
+770,10.0,10,False,D,year
+771,22228920.462965406,22228920,False,D,annual revenue
+772,4206665.52406938,4206666,False,D,annual ebitda
+773,3712604.3643511334,3712604,False,D,annual depreciation
+774,123515.28992956161,123515,False,D,annual tax
+775,370545.8697886848,370546,False,D,annual net
+776,1.0,1,False,D,year
+777,107370.07216948248,107370,False,D,monthly revenue
+778,-106489.81071680464,-106490,False,D,monthly ebitda
+779,-117779.31071680464,-117779,False,D,monthly net
+780,-141469.81071680464,-141470,False,D,monthly FCF
+781,2.0,2,False,D,year
+782,181197.87618763917,181198,False,D,monthly revenue
+783,-87531.68607566347,-87532,False,D,monthly ebitda
+784,-107939.30607566347,-107939,False,D,monthly net
+785,-148291.14583675703,-148291,False,D,monthly FCF
+786,3.0,3,False,D,year
+787,286628.3532595438,286628,False,D,monthly revenue
+788,-57520.511087022394,-57521,False,D,monthly ebitda
+789,-91810.83802035572,-91811,False,D,monthly net
+790,-152644.18174430262,-152644,False,D,monthly FCF
+791,4.0,4,False,D,year
+792,428759.32943428634,428759,False,D,monthly revenue
+793,-31033.284724137175,-31033,False,D,monthly ebitda
+794,-85625.95390813715,-85626,False,D,monthly net
+795,-166774.73080156825,-166775,False,D,monthly FCF
+796,5.0,5,False,D,year
+797,613463.1405121415,613463,False,D,monthly revenue
+798,11054.69324448146,11055,False,D,monthly ebitda
+799,-72091.32123999852,-72091,False,D,monthly net
+800,-175590.00663563292,-175590,False,D,monthly FCF
+801,6.0,6,False,D,year
+802,818985.3868482128,818985,False,D,monthly revenue
+803,62281.69958714538,62282,False,D,monthly ebitda
+804,-56756.84842411866,-56757,False,D,monthly net
+805,-220982.27459309148,-220982,False,D,monthly FCF
+806,7.0,7,False,D,year
+807,1044390.8135364099,1044391,False,D,monthly revenue
+808,121325.41710137906,121325,False,D,monthly ebitda
+809,-36870.55709115661,-36871,False,D,monthly net
+810,-171801.07260174872,-171801,False,D,monthly FCF
+811,8.0,8,False,D,year
+812,1292419.6336425513,1292420,False,D,monthly revenue
+813,189978.07902535322,189978,False,D,monthly ebitda
+814,-13585.72517259323,-13586,False,D,monthly net
+815,-162408.8179333479,-162409,False,D,monthly FCF
+816,9.0,9,False,D,year
+817,1562111.2768369382,1562111,False,D,monthly revenue
+818,266878.28100095317,266878,False,D,monthly ebitda
+819,9442.899728061802,9443,False,D,monthly net
+820,-151905.5385018817,-151906,False,D,monthly FCF
+821,10.0,10,False,D,year
+822,1852410.0385804505,1852410,False,D,monthly revenue
+823,350555.460339115,350555,False,D,monthly ebitda
+824,30878.822482390402,30879,False,D,monthly net
+825,84070.23239391852,84070,False,D,monthly FCF
+826,1140720.0,1140720,False,D,model annual revenue
+827,95060.0,95060,False,D,model monthly revenue
+828,55328.91059615734,55329,False,D,model annual revenue
+829,4610.742549679778,4611,False,D,model monthly revenue
+830,31281.955437632292,31282,False,D,model annual revenue
+831,2606.829619802691,2607,False,D,model monthly revenue
+832,61110.0,61110,False,D,model annual revenue
+833,5092.5,5092,False,D,model monthly revenue
+834,0.0,0,False,D,model annual revenue
+835,0.0,0,False,D,model monthly revenue
+836,5337924.226252801,5337924,False,D,model annual revenue
+837,444827.0188544001,444827,False,D,model monthly revenue
+838,1053307.9309148144,1053308,False,D,model annual revenue
+839,87775.66090956786,87776,False,D,model monthly revenue
+840,595521.0648819512,595521,False,D,model annual revenue
+841,49626.75540682927,49627,False,D,model monthly revenue
+842,285960.22640640003,285960,False,D,model annual revenue
+843,23830.018867200004,23830,False,D,model monthly revenue
+844,88844.23768973112,88844,False,D,model annual revenue
+845,7403.68647414426,7404,False,D,model monthly revenue
+846,14612402.255988926,14612402,False,D,model annual revenue
+847,1217700.1879990771,1217700,False,D,model monthly revenue
+848,4107889.311656077,4107889,False,D,model annual revenue
+849,342324.1093046731,342324,False,D,model monthly revenue
+850,2322525.5839191615,2322526,False,D,model annual revenue
+851,193543.79865993012,193544,False,D,model monthly revenue
+852,782807.2637136923,782807,False,D,model annual revenue
+853,65233.93864280769,65234,False,D,model monthly revenue
+854,403296.04768755054,403296,False,D,model annual revenue
+855,33608.00397396254,33608,False,D,model monthly revenue
+856,-1200349.9587000029,-1200350,False,D,channel EBITDA
+857,-1280031.3804140107,-1280031,False,D,channel net
+858,-100029.16322500024,-100029,False,D,channel EBITDA monthly
+859,-106669.28170116757,-106669,False,D,channel net monthly
+860,-17993.13381789929,-17993,False,D,channel EBITDA
+861,-52173.96152162067,-52174,False,D,channel net
+862,-1499.427818158274,-1499,False,D,channel EBITDA monthly
+863,-4347.830126801723,-4348,False,D,channel net monthly
+864,-9708.474010539365,-9708,False,D,channel EBITDA
+865,-27051.57700098819,-27052,False,D,channel net
+866,-809.0395008782804,-809,False,D,channel EBITDA monthly
+867,-2254.2980834156824,-2254,False,D,channel net monthly
+868,-49826.16207321442,-49826,False,D,channel EBITDA
+869,-54094.80966503627,-54095,False,D,channel net
+870,-4152.1801727678685,-4152,False,D,channel EBITDA monthly
+871,-4507.900805419689,-4508,False,D,channel net monthly
+872,0.0,0,False,D,channel EBITDA
+873,0.0,0,False,D,channel net
+874,0.0,0,False,D,channel EBITDA monthly
+875,0.0,0,False,D,channel net monthly
+876,-850523.2832906442,-850523,False,D,channel EBITDA
+877,-915783.0015248543,-915783,False,D,channel net
+878,-70876.94027422035,-70877,False,D,channel EBITDA monthly
+879,-76315.2501270712,-76315,False,D,channel net monthly
+880,597999.6679862314,598000,False,D,channel EBITDA
+881,-20045.8466445948,-20046,False,D,channel net
+882,49833.305665519285,49833,False,D,channel EBITDA monthly
+883,-1670.4872203829,-1670,False,D,channel net monthly
+884,346941.1614696556,346941,False,D,channel EBITDA
+885,37076.45748854248,37076,False,D,channel net
+886,28911.76345580463,28912,False,D,channel EBITDA monthly
+887,3089.7047907118736,3090,False,D,channel net monthly
+888,22186.505437850326,22187,False,D,channel EBITDA
+889,18690.449103874784,18690,False,D,channel net
+890,1848.8754531541938,1849,False,D,channel EBITDA monthly
+891,1557.5374253228986,1558,False,D,channel net monthly
+892,16052.267330684692,16052,False,D,channel EBITDA
+893,14966.086697050037,14966,False,D,channel net
+894,1337.6889442237243,1338,False,D,channel EBITDA monthly
+895,1247.1738914208365,1247,False,D,channel net monthly
+896,-542834.9934168938,-542835,False,D,channel EBITDA
+897,-696009.1006484737,-696009,False,D,channel net
+898,-45236.24945140781,-45236,False,D,channel EBITDA monthly
+899,-58000.75838737281,-58001,False,D,channel net monthly
+900,2834122.937373295,2834123,False,D,channel EBITDA
+901,388991.69785921695,388992,False,D,channel net
+902,236176.9114477746,236177,False,D,channel EBITDA monthly
+903,32415.974821601412,32416,False,D,channel net monthly
+904,1636849.2251596856,1636849,False,D,channel EBITDA
+905,411468.2131653486,411468,False,D,channel net
+906,136404.10209664048,136404,False,D,channel EBITDA monthly
+907,34289.017763779055,34289,False,D,channel net monthly
+908,156383.77264813267,156384,False,D,channel EBITDA
+909,148178.01690358375,148178,False,D,channel net
+910,13031.981054011056,13032,False,D,channel EBITDA monthly
+911,12348.168075298645,12348,False,D,channel net monthly
+912,122144.5823051585,122145,False,D,channel EBITDA
+913,117917.04250900714,117917,False,D,channel net
+914,10178.715192096543,10179,False,D,channel EBITDA monthly
+915,9826.420209083928,9826,False,D,channel net monthly
+916,1716900.0,1716900,False,D,standalone revenue
+917,-1273188.0,-1273188,False,D,standalone EBITDA
+918,-1363188.0,-1363188,False,D,standalone net
+919,8161040.986212759,8161041,False,D,standalone revenue
+920,-917477.5943667906,-917478,False,D,standalone EBITDA
+921,-1007477.5943667906,-1007478,False,D,standalone net
+922,22569293.667700242,22569294,False,D,standalone revenue
+923,-315745.2176844841,-315745,False,D,standalone EBITDA
+924,-425243.97890048404,-425244,False,D,standalone net
+925,276644.5529807867,276645,False,D,standalone revenue
+926,-1300878.762470698,-1300879,False,D,standalone EBITDA
+927,-1542458.762470698,-1542459,False,D,standalone net
+928,5266539.654574072,5266540,False,D,standalone revenue
+929,2353411.7852199543,2353412,False,D,standalone EBITDA
+930,-762428.7941592458,-762429,False,D,standalone net
+931,20539446.55828038,20539447,False,D,standalone revenue
+932,13863687.494524635,13863687,False,D,standalone EBITDA
+933,1307877.542143638,1307878,False,D,standalone net
+934,312819.55437632295,312820,False,D,standalone revenue
+935,-1264703.7610751619,-1264704,False,D,standalone EBITDA
+936,-1506283.7610751619,-1506284,False,D,standalone net
+937,5955210.648819513,5955211,False,D,standalone revenue
+938,3042082.7794653955,3042083,False,D,standalone EBITDA
+939,-87669.34234429627,-87669,False,D,standalone net
+940,23225255.839191608,23225256,False,D,standalone revenue
+941,16549496.775435865,16549497,False,D,standalone EBITDA
+942,3322234.502827059,3322235,False,D,standalone net
+943,1.14072,1.14072000,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+944,5.337924226252801,5.33792423,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+945,14.612402255988926,14.61240226,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+946,0.055328910596157334,0.05532891,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+947,1.0533079309148143,1.05330793,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+948,4.107889311656077,4.10788931,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+949,0.03128195543763229,0.03128196,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+950,0.5955210648819512,0.59552106,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+951,2.3225255839191616,2.32252558,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+952,0.06111,0.06111000,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+953,0.2859602264064,0.28596023,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+954,0.7828072637136924,0.78280726,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+955,0.0,0.00000000,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+956,0.08884423768973111,0.08884424,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+957,0.40329604768755056,0.40329605,False,D,"Base revenue by proposed model [D] from [A] tariffs and demand. Sales, leases and use have distinct asset cohorts; no double billing."
+958,-21129345.84412533,-21129346,False,D,NPV conservative
+959,-170880.27370906048,-170880,False,D,NPV USD conservative
+960,49339229.41180238,49339229,False,D,peak conservative
+961,-11181078.003929747,-11181078,False,D,NPV base
+962,-90425.2163682147,-90425,False,D,NPV USD base
+963,-0.4771436404096737,-47.7,True,D,IRR base
+964,21769905.726454593,21769906,False,D,peak base
+965,605232.7458829731,605233,False,D,NPV optimistic
+966,4894.724997031727,4895,False,D,NPV USD optimistic
+967,0.19647817161958822,19.6,True,D,IRR optimistic
+968,7.847912975519264,7.85,False,D,simple payback optimistic
+969,9.95984481784375,9.96,False,D,discount payback optimistic
+970,6799321.321617942,6799321,False,D,peak optimistic
+971,0.0,0,False,D,FCF year
+972,-2240000.0,-2240000,False,D,annual FCF
+973,0.0,0,False,D,fleetcapex
+974,450000.0,450000,False,D,toolcapex
+975,200000.0,200000,False,D,deltaNWC
+976,1.0,1,False,D,FCF year
+977,-1697637.7286016557,-1697638,False,D,annual FCF
+978,419760.0,419760,False,D,fleetcapex
+979,0.0,0,False,D,toolcapex
+980,0.0,0,False,D,deltaNWC
+981,2.0,2,False,D,FCF year
+982,-1779493.7500410844,-1779494,False,D,annual FCF
+983,654825.6000000001,654826,False,D,fleetcapex
+984,0.0,0,False,D,toolcapex
+985,74287.9171331228,74288,False,D,deltaNWC
+986,3.0,3,False,D,FCF year
+987,-1831730.1809316315,-1831730,False,D,annual FCF
+988,983693.5680000004,983694,False,D,fleetcapex
+989,0.0,0,False,D,toolcapex
+990,157790.47988736245,157790,False,D,deltaNWC
+991,4.0,4,False,D,FCF year
+992,-2001296.769618819,-2001297,False,D,annual FCF
+993,1416518.7379200002,1416519,False,D,fleetcapex
+994,0.0,0,False,D,toolcapex
+995,212378.6150091727,212379,False,D,deltaNWC
+996,5.0,5,False,D,FCF year
+997,-2107080.079627595,-2107080,False,D,annual FCF
+998,1964239.3165824004,1964239,False,D,fleetcapex
+999,0.0,0,False,D,toolcapex
+1000,275497.08197897207,275497,False,D,deltaNWC
+1001,6.0,6,False,D,FCF year
+1002,-2651787.295117098,-2651787,False,D,annual FCF
+1003,2553511.11155712,2553511,False,D,fleetcapex
+1004,547493.80608,547494,False,D,toolcapex
+1005,298162.7725257223,298163,False,D,deltaNWC
+1006,7.0,7,False,D,FCF year
+1007,-2061612.8712209845,-2061613,False,D,annual FCF
+1008,3186781.867223286,3186782,False,D,fleetcapex
+1009,0.0,0,False,D,toolcapex
+1010,330736.0092142469,330736,False,D,deltaNWC
+1011,8.0,8,False,D,FCF year
+1012,-1948905.8152001747,-1948906,False,D,annual FCF
+1013,3866628.6655642544,3866629,False,D,fleetcapex
+1014,0.0,0,False,D,toolcapex
+1015,362014.0979401588,362014,False,D,deltaNWC
+1016,9.0,9,False,D,FCF year
+1017,-1822866.4620225804,-1822866,False,D,annual FCF
+1018,4595764.356784943,4595764,False,D,fleetcapex
+1019,0.0,0,False,D,toolcapex
+1020,391869.87833682867,391870,False,D,deltaNWC
+1021,10.0,10,False,D,FCF year
+1022,1008842.7887270222,1008843,False,D,annual FCF
+1023,5377044.297438382,5377044,False,D,fleetcapex
+1024,0.0,0,False,D,toolcapex
+1025,-2302736.8520255866,-2302737,False,D,deltaNWC
+1026,-2.75,-2.75000000,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1027,-4.821712023817185,-4.82171202,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1028,-7.133516996911455,-7.13351700,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1029,-9.754342429294791,-9.75434243,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1030,-13.028646070899002,-13.02864607,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1031,-17.063640903404007,-17.06364090,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1032,-22.529121495120727,-22.52912150,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1033,-28.100107958770476,-28.10010796,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1034,-34.5024837780612,-34.50248378,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1035,-41.78555880693056,-41.78555881,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1036,-49.010116361872065,-49.01011636,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1037,-2.24,-2.24000000,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1038,-3.937637728601656,-3.93763773,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1039,-5.71713147864274,-5.71713148,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1040,-7.548861659574372,-7.54886166,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1041,-9.550158429193191,-9.55015843,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1042,-11.657238508820788,-11.65723851,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1043,-14.309025803937885,-14.30902580,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1044,-16.37063867515887,-16.37063868,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1045,-18.319544490359046,-18.31954449,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1046,-20.142410952381624,-20.14241095,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1047,-19.1335681636546,-19.13356816,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1048,-2.036,-2.03600000,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1049,-3.6134854275563675,-3.61348543,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1050,-4.87098242126424,-4.87098242,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1051,-5.7163611283638325,-5.71636113,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1052,-6.172654830099023,-6.17265483,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1053,-5.959232986349824,-5.95923299,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1054,-5.256766381212346,-5.25676638,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1055,-2.934385145890973,-2.93438515,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1056,0.7511460561649204,0.75114606,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1057,5.998160955883948,5.99816096,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1058,18.829020807425408,18.82902081,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1059,0.0,0.00000000,False,D,Cumulative company cash flow [D]. The star marks optimistic monthly interpolated payback; the base and conservative cases do not recover within the horizon. Lines join annual snapshots.
+1060,-21.129345844125332,-21.12934584,False,D,"Scenario NPV [D] at the assumed base discount rate; positive optimistic results are conditional, not a tuned base forecast."
+1061,-11.181078003929747,-11.18107800,False,D,"Scenario NPV [D] at the assumed base discount rate; positive optimistic results are conditional, not a tuned base forecast."
+1062,0.605232745882973,0.60523275,False,D,"Scenario NPV [D] at the assumed base discount rate; positive optimistic results are conditional, not a tuned base forecast."
+1063,0.12,12,True,A,rate sensitivity
+1064,-26789578.73223124,-26789579,False,D,NPV rate
+1065,0.18,18,True,A,rate sensitivity
+1066,-21129345.84412533,-21129346,False,D,NPV rate
+1067,0.25,25,True,A,rate sensitivity
+1068,-16757317.228545588,-16757317,False,D,NPV rate
+1069,0.12,12,True,A,rate sensitivity
+1070,-13020404.912625443,-13020405,False,D,NPV rate
+1071,0.18,18,True,A,rate sensitivity
+1072,-11181078.003929747,-11181078,False,D,NPV rate
+1073,0.25,25,True,A,rate sensitivity
+1074,-9622554.994994443,-9622555,False,D,NPV rate
+1075,0.12,12,True,A,rate sensitivity
+1076,3733464.8178016194,3733465,False,D,NPV rate
+1077,0.18,18,True,A,rate sensitivity
+1078,605232.7458829731,605233,False,D,NPV rate
+1079,0.25,25,True,A,rate sensitivity
+1080,-1463702.9177689538,-1463703,False,D,NPV rate
+1081,-17524683.8587477,-17524684,False,D,tornado low
+1082,-5821503.958163444,-5821504,False,D,tornado high
+1083,-11833030.39583647,-11833030,False,D,tornado low
+1084,-10832513.182570463,-10832513,False,D,tornado high
+1085,-12263176.57537623,-12263177,False,D,tornado low
+1086,-10194116.667030526,-10194117,False,D,tornado high
+1087,-5679524.3966470575,-5679524,False,D,tornado low
+1088,-17369982.834774904,-17369983,False,D,tornado high
+1089,-13020404.912625443,-13020405,False,D,tornado low
+1090,-9622554.994994443,-9622555,False,D,tornado high
+1091,1.0,1.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1092,2.0,2.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1093,3.0,3.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1094,4.0,4.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1095,5.0,5.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1096,1.0,1.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1097,2.0,2.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1098,3.0,3.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1099,4.0,4.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1100,5.0,5.00000000,False,D,"Tornado sensitivity [D]. Low/high describe the input, not necessarily the financial outcome. Wind variation affects metered-use hours; sale and supplemental-access lease prices are fixed."
+1101,1.434995620181831,1.435,False,D,price breakeven multiplier
+1102,80359.75473018254,80360,False,D,break even weighted price
+1103,774.1691622230983,774.17,False,D,adoption break even
+1104,23225.07486669295,23225.1,False,D,firstyear break even units
+1105,100000.0,100000,False,A,funding request University / incubator
+1106,400000.0,400000,False,A,funding request University / incubator
+1107,700000.0,700000,False,A,funding request University / incubator
+1108,1.0,1,False,A,funding timing
+1109,3.0,3,False,A,funding timing
+1110,6.0,6,False,A,funding timing
+1111,0.0,0,True,A,subjective funding chance
+1112,0.5,50,True,A,subjective funding chance
+1113,0.8,80,True,A,subjective funding chance
+1114,200000.0,200000,False,A,funding request CSR / sponsor
+1115,700000.0,700000,False,A,funding request CSR / sponsor
+1116,1500000.0,1500000,False,A,funding request CSR / sponsor
+1117,2.0,2,False,A,funding timing
+1118,4.0,4,False,A,funding timing
+1119,9.0,9,False,A,funding timing
+1120,0.0,0,True,A,subjective funding chance
+1121,0.25,25,True,A,subjective funding chance
+1122,0.5,50,True,A,subjective funding chance
+1123,200000.0,200000,False,A,funding request iDEA / BCC / ICT Division
+1124,700000.0,700000,False,A,funding request iDEA / BCC / ICT Division
+1125,1000000.0,1000000,False,A,funding request iDEA / BCC / ICT Division
+1126,3.0,3,False,A,funding timing
+1127,6.0,6,False,A,funding timing
+1128,12.0,12,False,A,funding timing
+1129,0.0,0,True,A,subjective funding chance
+1130,0.15,15,True,A,subjective funding chance
+1131,0.3,30,True,A,subjective funding chance
+1132,50000.0,50000,False,A,funding request Competition
+1133,200000.0,200000,False,A,funding request Competition
+1134,500000.0,500000,False,A,funding request Competition
+1135,1.0,1,False,A,funding timing
+1136,4.0,4,False,A,funding timing
+1137,12.0,12,False,A,funding timing
+1138,0.0,0,True,A,subjective funding chance
+1139,0.1,10,True,A,subjective funding chance
+1140,0.25,25,True,A,subjective funding chance
+1141,1000000.0,1000000,False,A,funding request Angel / impact VC
+1142,3000000.0,3000000,False,A,funding request Angel / impact VC
+1143,7000000.0,7000000,False,A,funding request Angel / impact VC
+1144,3.0,3,False,A,funding timing
+1145,6.0,6,False,A,funding timing
+1146,12.0,12,False,A,funding timing
+1147,0.0,0,True,A,subjective funding chance
+1148,0.05,5,True,A,subjective funding chance
+1149,0.15,15,True,A,subjective funding chance
+1150,2500000.0,2500000,False,A,funding request Startup Bangladesh
+1151,5000000.0,5000000,False,A,funding request Startup Bangladesh
+1152,50000000.0,50000000,False,A,funding request Startup Bangladesh
+1153,1.0,1,False,A,funding timing
+1154,4.0,4,False,A,funding timing
+1155,9.0,9,False,A,funding timing
+1156,0.0,0,True,A,subjective funding chance
+1157,0.03,3,True,A,subjective funding chance
+1158,0.1,10,True,A,subjective funding chance
+1159,50000.0,50000,False,A,funding request SME Foundation
+1160,1000000.0,1000000,False,A,funding request SME Foundation
+1161,1500000.0,1500000,False,A,funding request SME Foundation
+1162,2.0,2,False,A,funding timing
+1163,5.0,5,False,A,funding timing
+1164,9.0,9,False,A,funding timing
+1165,0.0,0,True,A,subjective funding chance
+1166,0.1,10,True,A,subjective funding chance
+1167,0.3,30,True,A,subjective funding chance
+1168,500000.0,500000,False,A,funding request Bank / BB green refinance
+1169,1500000.0,1500000,False,A,funding request Bank / BB green refinance
+1170,5000000.0,5000000,False,A,funding request Bank / BB green refinance
+1171,3.0,3,False,A,funding timing
+1172,6.0,6,False,A,funding timing
+1173,12.0,12,False,A,funding timing
+1174,0.0,0,True,A,subjective funding chance
+1175,0.05,5,True,A,subjective funding chance
+1176,0.2,20,True,A,subjective funding chance
+1177,500000.0,500000,False,A,funding request IDCOL
+1178,2000000.0,2000000,False,A,funding request IDCOL
+1179,5000000.0,5000000,False,A,funding request IDCOL
+1180,4.0,4,False,A,funding timing
+1181,9.0,9,False,A,funding timing
+1182,18.0,18,False,A,funding timing
+1183,0.0,0,True,A,subjective funding chance
+1184,0.03,3,True,A,subjective funding chance
+1185,0.1,10,True,A,subjective funding chance
+1186,100000.0,100000,False,A,funding request a2i / ICT innovation
+1187,500000.0,500000,False,A,funding request a2i / ICT innovation
+1188,1000000.0,1000000,False,A,funding request a2i / ICT innovation
+1189,3.0,3,False,A,funding timing
+1190,6.0,6,False,A,funding timing
+1191,12.0,12,False,A,funding timing
+1192,0.0,0,True,A,subjective funding chance
+1193,0.05,5,True,A,subjective funding chance
+1194,0.2,20,True,A,subjective funding chance
+1195,0.0,0,False,A,funding request GCF / accredited partner
+1196,0.0,0,False,A,funding request GCF / accredited partner
+1197,2000000.0,2000000,False,A,funding request GCF / accredited partner
+1198,9.0,9,False,A,funding timing
+1199,18.0,18,False,A,funding timing
+1200,36.0,36,False,A,funding timing
+1201,0.0,0,True,A,subjective funding chance
+1202,0.01,1,True,A,subjective funding chance
+1203,0.05,5,True,A,subjective funding chance
+1204,0.0,0,False,A,funding request BCCRF legacy
+1205,0.0,0,False,A,funding request BCCRF legacy
+1206,0.0,0,False,A,funding request BCCRF legacy
+1207,0.0,0,False,A,funding timing
+1208,0.0,0,False,A,funding timing
+1209,0.0,0,False,A,funding timing
+1210,0.0,0,True,A,subjective funding chance
+1211,0.0,0,True,A,subjective funding chance
+1212,0.0,0,True,A,subjective funding chance
+1213,100000.0,100000,False,A,funding request Crowdfunding / preorders
+1214,300000.0,300000,False,A,funding request Crowdfunding / preorders
+1215,700000.0,700000,False,A,funding request Crowdfunding / preorders
+1216,2.0,2,False,A,funding timing
+1217,4.0,4,False,A,funding timing
+1218,8.0,8,False,A,funding timing
+1219,0.0,0,True,A,subjective funding chance
+1220,0.15,15,True,A,subjective funding chance
+1221,0.35,35,True,A,subjective funding chance
+1222,440000.0,440000,False,A,funding mix
+1223,3558.4310553983014,3558,False,D,funding mix USD
+1224,0.19642857142857142,19.6,True,A,funding share
+1225,400000.0,400000,False,A,funding mix
+1226,3234.937323089365,3235,False,D,funding mix USD
+1227,0.17857142857142858,17.9,True,A,funding share
+1228,700000.0,700000,False,A,funding mix
+1229,5661.140315406389,5661,False,D,funding mix USD
+1230,0.3125,31.2,True,A,funding share
+1231,700000.0,700000,False,A,funding mix
+1232,5661.140315406389,5661,False,D,funding mix USD
+1233,0.3125,31.2,True,A,funding share
+1234,440.0,440.00000000,False,D,"Recommended initial funding targets [A], not expected receipts. In-kind contributions offset the relevant budget item, and must not be counted again as unrestricted cash."
+1235,400.0,400.00000000,False,D,"Recommended initial funding targets [A], not expected receipts. In-kind contributions offset the relevant budget item, and must not be counted again as unrestricted cash."
+1236,700.0,700.00000000,False,D,"Recommended initial funding targets [A], not expected receipts. In-kind contributions offset the relevant budget item, and must not be counted again as unrestricted cash."
+1237,700.0,700.00000000,False,D,"Recommended initial funding targets [A], not expected receipts. In-kind contributions offset the relevant budget item, and must not be counted again as unrestricted cash."
+1238,1.0,1,False,A,lead local low
+1239,3.0,3,False,A,lead local base
+1240,6.0,6,False,A,lead local high
+1241,3.0,3,False,A,lead import low
+1242,6.0,6,False,A,lead import base
+1243,12.0,12,False,A,lead import high
+1244,0.15,15,True,A,import low
+1245,0.35,35,True,A,import base
+1246,0.65,65,True,A,import high
+1247,100000.0,100000,False,A,future Calibrated performance rig
+1248,250000.0,250000,False,A,future Calibrated performance rig
+1249,500000.0,500000,False,A,future Calibrated performance rig
+1250,0.0,0,False,A,roadmap start
+1251,3.0,3,False,A,roadmap end
+1252,100000.0,100000,False,A,future Structural and overspeed redesign
+1253,250000.0,250000,False,A,future Structural and overspeed redesign
+1254,600000.0,600000,False,A,future Structural and overspeed redesign
+1255,1.0,1,False,A,roadmap start
+1256,6.0,6,False,A,roadmap end
+1257,50000.0,50000,False,A,future Durable and recycled material pilot
+1258,150000.0,150000,False,A,future Durable and recycled material pilot
+1259,350000.0,350000,False,A,future Durable and recycled material pilot
+1260,2.0,2,False,A,roadmap start
+1261,6.0,6,False,A,roadmap end
+1262,7000.0,7000,False,A,future Monitoring kit per air site
+1263,18000.0,18000,False,A,future Monitoring kit per air site
+1264,40000.0,40000,False,A,future Monitoring kit per air site
+1265,3.0,3,False,A,roadmap start
+1266,6.0,6,False,A,roadmap end
+1267,12000.0,12000,False,A,future Monitoring kit per pond site
+1268,35000.0,35000,False,A,future Monitoring kit per pond site
+1269,80000.0,80000,False,A,future Monitoring kit per pond site
+1270,3.0,3,False,A,roadmap start
+1271,6.0,6,False,A,roadmap end
+1272,20000.0,20000,False,A,future Fixed PV hybrid incremental kit
+1273,38000.0,38000,False,A,future Fixed PV hybrid incremental kit
+1274,70000.0,70000,False,A,future Fixed PV hybrid incremental kit
+1275,6.0,6,False,A,roadmap start
+1276,12.0,12,False,A,roadmap end
+1277,100000.0,100000,False,A,future Regional service and modular fleet trial
+1278,300000.0,300000,False,A,future Regional service and modular fleet trial
+1279,700000.0,700000,False,A,future Regional service and modular fleet trial
+1280,9.0,9,False,A,roadmap start
+1281,18.0,18,False,A,roadmap end
+1282,50000.0,50000,False,A,future Grain grinding feasibility study
+1283,150000.0,150000,False,A,future Grain grinding feasibility study
+1284,300000.0,300000,False,A,future Grain grinding feasibility study
+1285,12.0,12,False,A,roadmap start
+1286,24.0,24,False,A,roadmap end
+1287,0.62,0.62,False,S,gridEF
+1288,15.0,15,False,A,steel mass
+1289,4.0,4,False,A,aluminium mass
+1290,3.0,3,False,A,polymer mass A
+1291,8.0,8,False,A,polymer mass B
+1292,2.0,2.0,False,A,steel factor
+1293,8.0,8.0,False,A,aluminium factor
+1294,3.0,3.0,False,A,polymer factor
+1295,60.5,60,False,A,embodied band
+1296,121.0,121,False,A,embodied band
+1297,242.0,242,False,A,embodied band
+1298,703.7023757730218,703.7,False,D,avoided CO2
+1299,582.7023757730218,582.7,False,D,net CO2
+1300,1.719476928965611,1.7,False,D,carbon payback
+1301,210.5,210,False,A,embodied band
+1302,421.0,421,False,A,embodied band
+1303,842.0,842,False,A,embodied band
+1304,1269.543,1269.5,False,D,avoided CO2
+1305,848.5429999999999,848.5,False,D,net CO2
+1306,3.3161539231046135,3.3,False,D,carbon payback
+1307,68.0,68,False,A,embodied band
+1308,136.0,136,False,A,embodied band
+1309,272.0,272,False,A,embodied band
+1310,85.9222849680981,85.9,False,D,avoided CO2
+1311,-50.0777150319019,-50.1,False,D,net CO2
+1312,15.828256901046702,15.8,False,D,carbon payback
+1313,-11181078.003929747,-11181078,False,D,conclusion NPV
+1314,-0.4771436404096737,-47.7,True,D,conclusion IRR
+1315,123.65,123.650,False,S,assumption low
+1316,123.65,123.650,False,S,assumption base
+1317,123.65,123.650,False,S,assumption high
+1318,2.5,2.500,False,A,assumption low
+1319,3.5,3.500,False,A,assumption base
+1320,4.5,4.500,False,A,assumption high
+1321,0.8,0.800,False,A,assumption low
+1322,0.9,0.900,False,A,assumption base
+1323,0.95,0.950,False,A,assumption high
+1324,1.5,1.500,False,A,assumption low
+1325,2.0,2.000,False,A,assumption base
+1326,2.5,2.500,False,A,assumption high
+1327,0.85,0.850,False,A,assumption low
+1328,1.0,1.000,False,A,assumption base
+1329,1.1,1.100,False,A,assumption high
+1330,0.5,0.500,False,A,assumption low
+1331,1.0,1.000,False,A,assumption base
+1332,1.8,1.800,False,A,assumption high
+1333,0.9,0.900,False,A,assumption low
+1334,1.0,1.000,False,A,assumption base
+1335,1.25,1.250,False,A,assumption high
+1336,0.02,0.020,False,A,assumption low
+1337,0.04,0.040,False,A,assumption base
+1338,0.08,0.080,False,A,assumption high
+1339,0.2,0.200,False,A,assumption low
+1340,0.25,0.250,False,A,assumption base
+1341,0.3,0.300,False,A,assumption high
+1342,0.04,0.040,False,A,assumption low
+1343,0.08,0.080,False,A,assumption base
+1344,0.15,0.150,False,A,assumption high
+1345,0.015,0.015,False,A,assumption low
+1346,0.03,0.030,False,A,assumption base
+1347,0.08,0.080,False,A,assumption high
+1348,1000.0,1000.000,False,A,assumption low
+1349,1500.0,1500.000,False,A,assumption base
+1350,2000.0,2000.000,False,A,assumption high
+1351,20.0,20.000,False,A,assumption low
+1352,30.0,30.000,False,A,assumption base
+1353,40.0,40.000,False,A,assumption high
+1354,60.0,60.000,False,A,assumption low
+1355,120.0,120.000,False,A,assumption base
+1356,180.0,180.000,False,A,assumption high
+1357,2000.0,2000.000,False,A,assumption low
+1358,3000.0,3000.000,False,A,assumption base
+1359,5000.0,5000.000,False,A,assumption high
+1360,1000.0,1000.000,False,A,assumption low
+1361,1800.0,1800.000,False,A,assumption base
+1362,3000.0,3000.000,False,A,assumption high
+1363,9.05,9.050,False,A,assumption low
+1364,15.36,15.360,False,A,assumption base
+1365,20.0,20.000,False,A,assumption high
+1366,0.8,0.800,False,A,assumption low
+1367,1.2,1.200,False,A,assumption base
+1368,1.8,1.800,False,A,assumption high
+1369,0.3,0.300,False,A,assumption low
+1370,0.5,0.500,False,A,assumption base
+1371,0.7,0.700,False,A,assumption high
+1372,0.4,0.400,False,A,assumption low
+1373,0.8,0.800,False,A,assumption base
+1374,1.2,1.200,False,A,assumption high
+1375,90.0,90.000,False,A,assumption low
+1376,110.0,110.000,False,A,assumption base
+1377,140.0,140.000,False,A,assumption high
+1378,0.3,0.300,False,A,assumption low
+1379,0.4,0.400,False,A,assumption base
+1380,0.6,0.600,False,A,assumption high
+1381,0.5,0.500,False,A,assumption low
+1382,1.0,1.000,False,A,assumption base
+1383,2.0,2.000,False,A,assumption high
+1384,0.15,0.150,False,A,assumption low
+1385,0.35,0.350,False,A,assumption base
+1386,0.65,0.650,False,A,assumption high
+1387,1.0,1.000,False,A,assumption low
+1388,3.0,3.000,False,A,assumption base
+1389,6.0,6.000,False,A,assumption high
+1390,3.0,3.000,False,A,assumption low
+1391,6.0,6.000,False,A,assumption base
+1392,12.0,12.000,False,A,assumption high
+1393,0.12,0.120,False,A,assumption low
+1394,0.18,0.180,False,A,assumption base
+1395,0.25,0.250,False,A,assumption high
+1396,0.2,0.200,False,A,assumption low
+1397,0.4,0.400,False,A,assumption base
+1398,0.6,0.600,False,A,assumption high
+1399,0.02,0.020,False,A,assumption low
+1400,0.04,0.040,False,A,assumption base
+1401,0.08,0.080,False,A,assumption high
+1402,0.25,0.250,False,A,assumption low
+1403,0.45,0.450,False,A,assumption base
+1404,0.6,0.600,False,A,assumption high
+1405,3.0,3,False,D,round count
+1406,8.0,8,False,A,selfscore
+1407,9.0,9,False,A,selfscore
+1408,9.0,9,False,A,selfscore
+1409,9.0,9,False,A,selfscore
+1410,6.0,6,False,D,round count
+1411,6.0,6,False,A,selfscore
+1412,9.0,9,False,A,selfscore
+1413,9.0,9,False,A,selfscore
+1414,9.0,9,False,A,selfscore
+1415,6.0,6,False,D,round count
+1416,7.0,7,False,A,selfscore
+1417,9.0,9,False,A,selfscore
+1418,9.0,9,False,A,selfscore
+1419,9.0,9,False,A,selfscore
+1420,6.0,6,False,D,round count
+1421,6.0,6,False,A,selfscore
+1422,10.0,10,False,A,selfscore
+1423,9.0,9,False,A,selfscore
+1424,9.0,9,False,A,selfscore
+1425,6.0,6,False,D,round count
+1426,6.0,6,False,A,selfscore
+1427,10.0,10,False,A,selfscore
+1428,9.0,9,False,A,selfscore
+1429,9.0,9,False,A,selfscore
+1430,6.0,6,False,D,round count
+1431,6.0,6,False,A,selfscore
+1432,10.0,10,False,A,selfscore
+1433,9.0,9,False,A,selfscore
+1434,9.0,9,False,A,selfscore
+1435,6.0,6,False,D,round count
+1436,6.0,6,False,A,selfscore
+1437,10.0,10,False,A,selfscore
+1438,9.0,9,False,A,selfscore
+1439,9.0,9,False,A,selfscore
+1440,6.0,6,False,D,round count
+1441,5.0,5,False,A,selfscore
+1442,10.0,10,False,A,selfscore
+1443,9.0,9,False,A,selfscore
+1444,9.0,9,False,A,selfscore
+1445,6.0,6,False,D,round count
+1446,6.0,6,False,A,selfscore
+1447,10.0,10,False,A,selfscore
+1448,9.0,9,False,A,selfscore
+1449,9.0,9,False,A,selfscore
+1450,6.0,6,False,D,round count
+1451,7.0,7,False,A,selfscore
+1452,9.0,9,False,A,selfscore
+1453,9.0,9,False,A,selfscore
+1454,9.0,9,False,A,selfscore
+1455,6.0,6,False,D,round count
+1456,7.0,7,False,A,selfscore
+1457,9.0,9,False,A,selfscore
+1458,9.0,9,False,A,selfscore
+1459,9.0,9,False,A,selfscore
+1460,3.0,3,False,D,round count
+1461,9.0,9,False,A,selfscore
+1462,10.0,10,False,A,selfscore
+1463,9.0,9,False,A,selfscore
+1464,9.0,9,False,A,selfscore
+1465,6.0,6,False,D,round count
+1466,6.0,6,False,A,selfscore
+1467,10.0,10,False,A,selfscore
+1468,9.0,9,False,A,selfscore
+1469,9.0,9,False,A,selfscore
+1470,6.0,6,False,D,round count
+1471,7.0,7,False,A,selfscore
+1472,9.0,9,False,A,selfscore
+1473,9.0,9,False,A,selfscore
+1474,9.0,9,False,A,selfscore
+1475,6.0,6,False,D,round count
+1476,7.0,7,False,A,selfscore
+1477,10.0,10,False,A,selfscore
+1478,9.0,9,False,A,selfscore
+1479,9.0,9,False,A,selfscore
+1480,6.0,6,False,D,round count
+1481,6.0,6,False,A,selfscore
+1482,9.0,9,False,A,selfscore
+1483,9.0,9,False,A,selfscore
+1484,9.0,9,False,A,selfscore
+1485,6.0,6,False,D,round count
+1486,7.0,7,False,A,selfscore
+1487,9.0,9,False,A,selfscore
+1488,9.0,9,False,A,selfscore
+1489,9.0,9,False,A,selfscore
+1490,3.0,3,False,D,round count
+1491,8.0,8,False,A,selfscore
+1492,9.0,9,False,A,selfscore
+1493,9.0,9,False,A,selfscore
+1494,9.0,9,False,A,selfscore
+1495,6.0,6,False,D,round count
+1496,6.0,6,False,A,selfscore
+1497,10.0,10,False,A,selfscore
+1498,9.0,9,False,A,selfscore
+1499,9.0,9,False,A,selfscore
+1500,6.0,6,False,D,round count
+1501,6.0,6,False,A,selfscore
+1502,10.0,10,False,A,selfscore
+1503,9.0,9,False,A,selfscore
+1504,9.0,9,False,A,selfscore
+1505,6.0,6,False,D,round count
+1506,6.0,6,False,A,selfscore
+1507,10.0,10,False,A,selfscore
+1508,9.0,9,False,A,selfscore
+1509,9.0,9,False,A,selfscore
+1510,51.0,51,False,D,selfcheck count
