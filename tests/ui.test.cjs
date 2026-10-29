@@ -13,6 +13,42 @@ function fixture(reduced=false){
   const w=dom.window;w.WindModel=M;w.matchMedia=()=>({matches:reduced});w.requestAnimationFrame=()=>0;w.eval(code);
   return {w,d:w.document,api:w.ZW,close:()=>dom.window.close()};
 }
+test('contact button opens three contacts without field labels and supports modal controls',()=>{
+  const f=fixture();
+  try {
+    // jsdom does not implement native dialog methods.
+    f.w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
+    f.w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+    const dialog=f.d.getElementById('contact-dialog'),button=f.d.getElementById('contact-open');
+    assert.equal(dialog.open,false);
+    assert.equal(f.d.querySelector('.contact-strip'),null);
+    assert.equal(button.closest('header').className,'topbar');
+    button.click();
+    assert.equal(dialog.open,true);
+    assert.equal(f.api.dialogOpen(),true);
+    const people=dialog.querySelectorAll('.contact-person');
+    assert.equal(people.length,3);
+    for(const person of people){
+      assert.ok(person.querySelector('h3').textContent.trim());
+      assert.equal(person.querySelector('dt, dd'),null);
+      assert.doesNotMatch(person.textContent,/Person [123]|Contact no\./);
+      for(const scheme of ['tel:','mailto:']){
+        const link=person.querySelector(`a[href^="${scheme}"]`);
+        assert.equal(link.getAttribute('href'),scheme+link.textContent);
+      }
+    }
+    people[0].querySelector('h3').click();
+    assert.equal(dialog.open,true);
+    dialog.querySelector('.dialog-close').click();
+    assert.equal(f.api.dialogOpen(),false);
+    button.click();f.api.closeDialog();assert.equal(dialog.open,false);
+    button.click();
+    dialog.getBoundingClientRect=()=>({left:10,right:100,top:10,bottom:100});
+    dialog.dispatchEvent(new f.w.MouseEvent('click',{clientX:0,clientY:0}));
+    assert.equal(dialog.open,false);
+  } finally { f.close(); }
+});
+
 test('all original inputs and weather cases remain usable without bottom readout panels',()=>{
   const f=fixture();
   for(const mode of ['air','water']){

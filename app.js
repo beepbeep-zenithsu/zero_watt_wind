@@ -213,10 +213,19 @@ const dlg = $('#reference-dialog'); $('#reference-open').addEventListener('click
 $('.dialog-close', dlg).addEventListener('click', () => dlg.close());
 dlg.addEventListener('click', e => { if (e.target === dlg) { const r = dlg.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dlg.close(); } });
 dlg.addEventListener('close', () => $$('video', dlg).forEach(v => v.pause()));
+const contactDlg = $('#contact-dialog');
+$('#contact-open').addEventListener('click', () => contactDlg.showModal());
+$('.dialog-close', contactDlg).addEventListener('click', () => contactDlg.close());
+contactDlg.addEventListener('click', e => {
+  if (e.target === contactDlg) {
+    const r = contactDlg.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) contactDlg.close();
+  }
+});
 switchMode('air');
 
 function frame(now) {
-  const dt = Math.min(.1, (now - lastFrame)/1000 || 0); lastFrame = now; const s = states[active], running = s.running && !document.hidden && !dlg.open;
+  const dt = Math.min(.1, (now - lastFrame)/1000 || 0); lastFrame = now; const s = states[active], running = s.running && !document.hidden && !dlg.open && !contactDlg.open;
   if (running) s.t += dt;
   if(s.ventilationMode==='advanced')s.hybrid.tick(dt,running);
   uiElapsed += dt; if (uiElapsed > .1) { refresh(s);if(s.ventilationMode==='advanced')s.hybrid.render(); uiElapsed = 0; }
@@ -230,5 +239,5 @@ requestAnimationFrame(frame);
 window.ZW = {
   mode: () => active, state: () => states[active], states, scenarios, definitions, steppers, profiles,
   switchMode, selectScenario, toggleFit, recompute,
-  dialogOpen: () => dlg.open, closeDialog: () => dlg.close()
+  dialogOpen: () => dlg.open || contactDlg.open, closeDialog: () => { dlg.close(); contactDlg.close(); }
 };

@@ -12,7 +12,7 @@
 <body>
 <header class="topbar">
   <a class="brand" href="#" aria-label="ZeroWatt Wind home"><img src="assets/zerowatt-logo.jpg" alt="ZeroWatt Wind logo" width="76" height="92"><span>ZeroWatt<span> Wind</span><small>Harvest the wind. Deliver the motion.</small></span></a>
-  <div class="top-links"><button class="quiet" id="cars-open" aria-haspopup="dialog">Cars</button> <a class="quiet" href="assets/cars/CREDITS.html" target="_blank" rel="noopener">Credits</a> <button class="quiet" id="reference-open">Prototype ↗</button></div>
+  <div class="top-links"><button class="quiet" id="contact-open" aria-haspopup="dialog" aria-controls="contact-dialog">Contact us</button> <button class="quiet" id="cars-open" aria-haspopup="dialog">Cars</button> <a class="quiet" href="assets/cars/CREDITS.html" target="_blank" rel="noopener">Credits</a> <button class="quiet" id="reference-open">Prototype ↗</button></div>
 </header>
 <main>
   <div class="lab-heading"><div><p>WIND FIRST. REAL POSSIBILITY.</p><h1>Let the wind do the work.</h1></div><span>Interactive engineering lab <i aria-hidden="true"></i></span></div>
@@ -27,6 +27,27 @@
     </div>
   </section>
 </main>
+<dialog id="contact-dialog" aria-labelledby="contact-heading">
+  <div class="dialog-heading"><h2 id="contact-heading">Contact us</h2><button class="dialog-close quiet" aria-label="Close contacts">✕</button></div>
+  <!-- Edit the contact data and the matching tel: / mailto: links below. -->
+  <div class="contact-people">
+    <article class="contact-person" aria-labelledby="contact-person-1">
+      <h3 id="contact-person-1">Mohammad Rafiul Islam</h3>
+      <a href="tel:01814924640">01814924640</a>
+      <a href="mailto:rafiulmicrosoft2025@gmail.com">rafiulmicrosoft2025@gmail.com</a>
+    </article>
+    <article class="contact-person" aria-labelledby="contact-person-2">
+      <h3 id="contact-person-2">Masrura Sara Mohima</h3>
+      <a href="tel:01990903241">01990903241</a>
+      <a href="mailto:saramohima02@gmail.com">saramohima02@gmail.com</a>
+    </article>
+    <article class="contact-person" aria-labelledby="contact-person-3">
+      <h3 id="contact-person-3">Tasnia Basharat Mahi</h3>
+      <a href="tel:01521765286">01521765286</a>
+      <a href="mailto:tasniabasharat@gmail.com">tasniabasharat@gmail.com</a>
+    </article>
+  </div>
+</dialog>
 <dialog id="reference-dialog">
   <div class="dialog-heading"><div><p class="eyebrow">THE STARTING POINT</p><h2>From your workbench.</h2></div><button class="dialog-close quiet" aria-label="Close prototype">✕</button></div>
   <div class="reference-grid"><img src="assets/prototype-white.jpg" alt="White spiral turbine, right-angle bevel gears and fan on black and white supports"><img src="assets/prototype-black.jpg" alt="Black spiral rotor driving the prototype shafts and fan"></div>
@@ -34,7 +55,7 @@
 </dialog>
 <noscript>This simulation requires JavaScript.</noscript>
 <script src="model.js"></script>
-  <script src="app.bundle.js?v=20261022-traffic-safety-3"></script>
+  <script src="app.bundle.js?v=20261029-contact-dialog"></script>
 <script src="offline-voice.js"></script>
 <script src="breath-input.js"></script>
 <script src="jarvis.js"></script>
