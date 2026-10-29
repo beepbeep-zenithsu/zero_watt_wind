@@ -2,6 +2,7 @@ import * as T from './vendor/three.module.js';
 import {GLTFLoader} from './vendor/addons/loaders/GLTFLoader.js';
 import {RoomEnvironment} from './vendor/addons/environments/RoomEnvironment.js';
 import {CARS} from './src/cars/car-catalog.js';
+import {prepareCarMaterials} from './src/cars/car-materials.js';
 
 /* Standalone car showcase: its own small renderer, created on first open and
    paused while the dialog is closed, so the main simulation is not affected. */
@@ -137,6 +138,7 @@ function select(i) {
   statusBox.className = 'cars-status'; statusBox.hidden = false; statusBox.textContent = 'LOADING ' + car.name.toUpperCase() + '…';
   loader.loadAsync(car.file).then(gltf => {
     if (mine !== token) { gltf.scene.traverse(o => o.geometry?.dispose()); return; }
+    prepareCarMaterials(gltf.scene, car);
     const aniso = Math.min(8, renderer.capabilities.getMaxAnisotropy());
     gltf.scene.traverse(o => {
       if (!o.isMesh) return;

@@ -1,0 +1,22 @@
+Tool: built-in image_gen.
+Input: output/imagegen/ZeroWatt_Wind_Comparative_Visual.png
+Price reference checked 27 October 2026: https://www.bdstall.com/listingDetail/index/5910/
+The listing is a generic 20-inch wind-driven roof turbine at BDT 6,000, sold out, with no current seller. It is not a Lomanco Whirlybird quotation or proof of equivalent ventilation performance. BDT 4,500 is the user's ventilation component estimate from the supplied final PPTX, not a finished installed product price.
+
+Edit the supplied comparative infographic. Add ONE additional aligned comparison row about cost, preserving the green-and-gold poster style, recognizable product illustrations, main title, column headers and all existing four comparison rows and wording.
+Keep landscape 16:9. Make space for five comparison rows by modestly reducing the illustration area's height, without shrinking the text excessively. All five rows should remain crisp, large, correctly aligned and easy to read at poster size.
+The NEW final row must say exactly:
+Category: "COST (BDT)"
+Under ZeroWatt Wind: "4,500 (estimated components)"
+Under Conventional Whirlybird: "6,000 (listed unit price)*"
+Do not add a savings percentage or an equal-performance claim.
+Retain existing exact rows:
+USES: "Ventilation or pond aeration" versus "Roof ventilation".
+POWER TRANSFER: "Drives a separate fan or paddle" versus "No external drive".
+PLACEMENT: "Separate rotor and fan" versus "Extraction at roof turbine".
+DESIGN: "Adaptable components" versus "Integrated assembly".
+Add a small but readable two-line cost-source note above the bottom green-and-gold ribbon, verbatim:
+"*Generic 20-inch turbine: BDStall listing, sold out. Not a Lomanco quotation."
+"ZeroWatt cost covers estimated components only. Installed cost and equal airflow are not established."
+Keep "Concept illustration" in the bottom-right corner. The 6,000 BDT figure comes from https://www.bdstall.com/listingDetail/index/5910/ . Do not print this long URL in the image. It is a listed example, not a current in-stock market quote.
+Keep the left white SPIRAL wind rotor, shafts, gear pair, dark supports, slender-bladed FAN, and small separate paddle option recognizable. Keep the right silver curved-vane roof ventilator. Keep all spelling exact and all text fully within the image. No added prices, electricity generators, solar panels, badges, percentages or logos. This is a focused image edit: preserve everything else as closely as possible.

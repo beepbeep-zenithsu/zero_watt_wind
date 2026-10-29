@@ -1,0 +1,84 @@
+{
+  "status": "Proposed planning schedule",
+  "basis": "Current demonstrator; a limited launch is conditional on validation, pilot evidence, and funding.",
+  "months": 12,
+  "phases": [
+    {
+      "name": "User needs & site selection",
+      "start": 1,
+      "end": 2
+    },
+    {
+      "name": "Engineering redesign",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "name": "Build field-ready prototypes",
+      "start": 3,
+      "end": 4
+    },
+    {
+      "name": "Performance & safety testing",
+      "start": 4,
+      "end": 5
+    },
+    {
+      "name": "Building & pond field trials",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "name": "Design refinement & costing",
+      "start": 8,
+      "end": 9
+    },
+    {
+      "name": "Supplier setup & pilot batch",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "name": "Pilot feedback & improvements",
+      "start": 10,
+      "end": 11
+    },
+    {
+      "name": "Launch & after-sales support",
+      "start": 12,
+      "end": 12
+    }
+  ],
+  "milestones": [
+    {
+      "month": 5,
+      "label": "Lab tests passed"
+    },
+    {
+      "month": 8,
+      "label": "Field trials reviewed"
+    },
+    {
+      "month": 10,
+      "label": "Pilot batch ready"
+    },
+    {
+      "month": 12,
+      "label": "Limited launch target"
+    }
+  ],
+  "validationScope": {
+    "ventilation": [
+      "Starting wind speed under load",
+      "Airflow against system pressure",
+      "Gear losses and endurance",
+      "Guarding, mounting and weather exposure"
+    ],
+    "pond": [
+      "Mixing and oxygen transfer",
+      "Dissolved oxygen under field conditions",
+      "Weather durability and mounting",
+      "Supplementary operation with an emergency backup plan"
+    ]
+  }
+}

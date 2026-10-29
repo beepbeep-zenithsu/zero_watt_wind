@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+<title id="title">ZeroWatt Wind product development Gantt chart</title>
+<desc id="desc">Proposed twelve-month schedule from the existing demonstrator through site selection, engineering redesign, field-ready prototypes, lab testing, building and pond trials, design refinement, a pilot batch, user feedback and limited launch. Timings are planning estimates, not confirmed commitments.</desc>
+<rect width="1920" height="1080" fill="#F4F3EB"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#14382B}.title{font-size:55px;font-weight:700}.sub{font-size:27px;fill:#52665B}.phase{font-size:25px}.month{font-size:23px;fill:#F7F6EE;font-weight:700}.range{font-size:21px;fill:#F7F6EE;font-weight:700}.quarter{font-size:21px;fill:#52665B;font-weight:700}.checkpoint{font-size:23px;font-weight:700}.detail{font-size:22px;fill:#52665B}</style>
+<text x="80" y="95" class="title">ZeroWatt Wind: Product Roadmap</text>
+<text x="82" y="145" class="sub">Proposed 12-month plan from the current demonstrator to a limited launch</text>
+<text x="80" y="200" class="quarter">DEVELOPMENT PHASE</text>
+<text x="781.25" y="200" text-anchor="middle" class="quarter">QUARTER 1</text>
+<text x="1083.75" y="200" text-anchor="middle" class="quarter">QUARTER 2</text>
+<text x="1386.25" y="200" text-anchor="middle" class="quarter">QUARTER 3</text>
+<text x="1688.75" y="200" text-anchor="middle" class="quarter">QUARTER 4</text>
+<rect x="80" y="218" width="1760" height="52" fill="#14382B"/>
+<text x="104" y="252" class="month">Phases and activities</text>
+<text x="680.4166666666666" y="252" text-anchor="middle" class="month">M1</text>
+<text x="781.25" y="252" text-anchor="middle" class="month">M2</text>
+<text x="882.0833333333333" y="252" text-anchor="middle" class="month">M3</text>
+<text x="982.9166666666666" y="252" text-anchor="middle" class="month">M4</text>
+<text x="1083.75" y="252" text-anchor="middle" class="month">M5</text>
+<text x="1184.5833333333333" y="252" text-anchor="middle" class="month">M6</text>
+<text x="1285.4166666666665" y="252" text-anchor="middle" class="month">M7</text>
+<text x="1386.25" y="252" text-anchor="middle" class="month">M8</text>
+<text x="1487.0833333333333" y="252" text-anchor="middle" class="month">M9</text>
+<text x="1587.9166666666665" y="252" text-anchor="middle" class="month">M10</text>
+<text x="1688.75" y="252" text-anchor="middle" class="month">M11</text>
+<text x="1789.5833333333333" y="252" text-anchor="middle" class="month">M12</text>
+<rect x="80" y="270" width="1760" height="62" fill="#E9EDE2"/>
+<line x1="80" y1="332" x2="1840" y2="332" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="309" font-size="23" fill="#52665B">01</text>
+<text x="150" y="309" class="phase">User needs &amp; site selection</text>
+<line x1="80" y1="394" x2="1840" y2="394" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="371" font-size="23" fill="#52665B">02</text>
+<text x="150" y="371" class="phase">Engineering redesign</text>
+<rect x="80" y="394" width="1760" height="62" fill="#E9EDE2"/>
+<line x1="80" y1="456" x2="1840" y2="456" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="433" font-size="23" fill="#52665B">03</text>
+<text x="150" y="433" class="phase">Build field-ready prototypes</text>
+<line x1="80" y1="518" x2="1840" y2="518" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="495" font-size="23" fill="#52665B">04</text>
+<text x="150" y="495" class="phase">Performance &amp; safety testing</text>
+<rect x="80" y="518" width="1760" height="62" fill="#E9EDE2"/>
+<line x1="80" y1="580" x2="1840" y2="580" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="557" font-size="23" fill="#52665B">05</text>
+<text x="150" y="557" class="phase">Building &amp; pond field trials</text>
+<line x1="80" y1="642" x2="1840" y2="642" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="619" font-size="23" fill="#52665B">06</text>
+<text x="150" y="619" class="phase">Design refinement &amp; costing</text>
+<rect x="80" y="642" width="1760" height="62" fill="#E9EDE2"/>
+<line x1="80" y1="704" x2="1840" y2="704" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="681" font-size="23" fill="#52665B">07</text>
+<text x="150" y="681" class="phase">Supplier setup &amp; pilot batch</text>
+<line x1="80" y1="766" x2="1840" y2="766" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="743" font-size="23" fill="#52665B">08</text>
+<text x="150" y="743" class="phase">Pilot feedback &amp; improvements</text>
+<rect x="80" y="766" width="1760" height="62" fill="#E9EDE2"/>
+<line x1="80" y1="828" x2="1840" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<text x="103" y="805" font-size="23" fill="#52665B">09</text>
+<text x="150" y="805" class="phase">Launch &amp; after-sales support</text>
+<line x1="630" y1="270" x2="630" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="730.8333333333334" y1="270" x2="730.8333333333334" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="831.6666666666666" y1="270" x2="831.6666666666666" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="932.5" y1="270" x2="932.5" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1033.3333333333333" y1="270" x2="1033.3333333333333" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1134.1666666666665" y1="270" x2="1134.1666666666665" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1235" y1="270" x2="1235" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1335.8333333333333" y1="270" x2="1335.8333333333333" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1436.6666666666665" y1="270" x2="1436.6666666666665" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1537.5" y1="270" x2="1537.5" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1638.3333333333333" y1="270" x2="1638.3333333333333" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1739.1666666666665" y1="270" x2="1739.1666666666665" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<line x1="1840" y1="270" x2="1840" y2="828" stroke="#CED7CA" stroke-width="1"/>
+<rect x="638" y="282" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="730.8333333333334" y="308" text-anchor="middle" class="range">M1–M2</text>
+<rect x="738.8333333333334" y="344" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="831.6666666666667" y="370" text-anchor="middle" class="range">M2–M3</text>
+<rect x="839.6666666666666" y="406" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="932.5" y="432" text-anchor="middle" class="range">M3–M4</text>
+<rect x="940.5" y="468" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="1033.3333333333333" y="494" text-anchor="middle" class="range">M4–M5</text>
+<rect x="1142.1666666666665" y="530" width="286.5" height="38" fill="#246048"/>
+<text x="1285.4166666666665" y="556" text-anchor="middle" class="range">M6–M8</text>
+<rect x="1343.8333333333333" y="592" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="1436.6666666666665" y="618" text-anchor="middle" class="range">M8–M9</text>
+<rect x="1444.6666666666665" y="654" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="1537.4999999999998" y="680" text-anchor="middle" class="range">M9–M10</text>
+<rect x="1545.5" y="716" width="185.66666666666666" height="38" fill="#246048"/>
+<text x="1638.3333333333333" y="742" text-anchor="middle" class="range">M10–M11</text>
+<rect x="1747.1666666666665" y="778" width="84.83333333333333" height="38" fill="#BA912D"/>
+<text x="1789.5833333333333" y="804" text-anchor="middle" class="range" style="fill:#14382B">M12</text>
+<text x="80" y="898" class="quarter">KEY CHECKPOINTS</text>
+<path d="M 90 935 l 10 10 l -10 10 l -10 -10 Z" fill="#BA912D"/>
+<text x="114" y="952" class="checkpoint">Month 5</text>
+<text x="114" y="986" class="detail">Lab tests passed</text>
+<path d="M 545 935 l 10 10 l -10 10 l -10 -10 Z" fill="#BA912D"/>
+<text x="569" y="952" class="checkpoint">Month 8</text>
+<text x="569" y="986" class="detail">Field trials reviewed</text>
+<path d="M 1000 935 l 10 10 l -10 10 l -10 -10 Z" fill="#BA912D"/>
+<text x="1024" y="952" class="checkpoint">Month 10</text>
+<text x="1024" y="986" class="detail">Pilot batch ready</text>
+<path d="M 1455 935 l 10 10 l -10 10 l -10 -10 Z" fill="#BA912D"/>
+<text x="1479" y="952" class="checkpoint">Month 12</text>
+<text x="1479" y="986" class="detail">Limited launch target</text>
+<text x="80" y="1042" class="detail">M1 is the project start. Timings depend on test results, pilot feedback and funding.</text>
+<rect x="0" y="1064" width="1920" height="16" fill="#14382B"/>
+<rect x="0" y="1058" width="1920" height="6" fill="#BA912D"/>
+</svg>

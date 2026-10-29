@@ -1,0 +1,22 @@
+Tool: built-in image_gen.
+Price example checked 27 October 2026: Lomanco Whirlybird BIB12, silver, US retail USD 87.99, McCoy's San Marcos listing. The opened listing differs from the search snippet's USD 98.99, so the opened listing's lower USD 87.99 was used.
+Retail source: https://mccoys-website.useast01.umbraco.io/shop/c/103112111104106000?availability=1&brand=Lomanco&shopping=2
+FX source: https://wise.com/us/currency-converter/usd-to-bdt-rate
+FX used: USD 1 = BDT 123.90.
+Calculation: 87.99 * 123.90 = BDT 10,901.961, rounded to approximately BDT 10,900. Not a Bangladesh installed quote. Shipping, taxes and installation extra. ZeroWatt BDT 4,500 is estimated mechanical component cost only. No equal airflow or lifecycle savings claim.
+Input image: output/imagegen/ZeroWatt_Wind_Comparison_With_Cost.png
+
+Edit the supplied comparative poster image with a focused text update. Preserve the same landscape composition, machinery illustrations, layout, typography, forest-green/sage/cream/gold palette, aligned five comparison rows and bottom ribbon.
+Remove ALL parenthesized wording everywhere:
+- Change "Fan (option)" to "Fan".
+- Change "Paddle (option)" to "Paddle".
+- Change "COST (BDT)" to "COST IN BDT".
+- In the ZeroWatt cost cell show ONLY "4,500".
+- In the Whirlybird cost cell show ONLY "Approx. 10,900*".
+The new Whirlybird figure is a sourced price for a specific branded model, not an inflated generic figure. Change the upper-right column header from "Conventional Whirlybird" to "Lomanco Whirlybird" to identify this comparison example. Leave main title "ZeroWatt Wind vs Whirlybird" unchanged.
+Keep all the four existing non-cost comparison rows and wording exactly as they are. Keep "OR" between the two output options.
+REPLACE the entire existing small cost-source note with these two exact lines, without parentheses:
+"*Lomanco BIB12: US retail price converted to BDT. Shipping, tax and installation extra."
+"Sources: McCoy's USD 87.99 and Wise USD/BDT 123.90. ZeroWatt: estimated components only; airflow not matched."
+The calculation is 87.99 x 123.90 = 10,901.961 BDT, rounded to approximately 10,900 BDT. Use no other Whirlybird price. This is NOT an installed Bangladesh market quotation, so the note must remain legible.
+Keep "Concept illustration" at bottom right. No parentheses anywhere in the revised image. No savings claim or percentage. Preserve all device geometry and imagery from the source, including white spiral rotor, separate slender-bladed fan, small paddle alternative, and silver roof ventilator. Ensure all text fits cleanly and is spelled correctly.

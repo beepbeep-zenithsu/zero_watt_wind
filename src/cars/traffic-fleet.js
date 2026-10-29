@@ -1,6 +1,7 @@
 import * as T from '../../vendor/three.module.js';
 import {GLTFLoader} from '../../vendor/addons/loaders/GLTFLoader.js';
 import {TRAFFIC_CARS, TRAFFIC_LOD_DISTANCES, TRAFFIC_LOD_HYSTERESIS} from './car-catalog.js';
+import {prepareCarMaterials} from './car-materials.js';
 
 /**
  * Premium traffic fleet.
@@ -84,6 +85,7 @@ function loadGlb(url) {
 
 /** Fits one template to the catalog length and sits its wheels on y=0. Shared resources are flagged so retireShell never disposes them. */
 function prepareTemplate(input, spec, level, frame) {
+  prepareCarMaterials(input, spec);
   // Canonical wrapper lets explicit wheel pivots use X axles and Y steering,
   // even when the imported mesh nodes carry Blender's axis conversion.
   const scene = new T.Group();

@@ -1,0 +1,23 @@
+Tool: built-in image_gen.
+
+Initial generation prompt:
+Use case: infographic-diagram.
+Asset type: final academic engineering poster illustration, landscape 16:9, high resolution.
+Create a NEW COMPARATIVE INFOGRAPHIC for ZeroWatt Wind versus a conventional wind-only Whirlybird. This must compare differences visually and with aligned very short text, not just show two products next to each other.
+References: Image 1 is the actual ZeroWatt Wind prototype. Preserve its distinctive white spiral rotor, shafts, a pair of bevel gears redirecting rotation through 90 degrees, dark support frames and separate white fan. The fan has narrow radial blades. Do not substitute a conventional three-bladed wind turbine for the spiral rotor. Image 2 supplies only the existing poster's forest-green, muted sage, cream and gold style.
+Composition: large title "ZeroWatt Wind vs Whirlybird". Under it, two balanced columns with matching large column headers. Left header "ZeroWatt Wind" and a clean realistic 3D engineering illustration of the prototype mechanism with the spiral rotor and separate geared fan. Alongside the main left mechanism, a small clearly separate pond paddle option at the water surface, linked by a subtle "OR" label to indicate alternative output configurations rather than simultaneously driving both loads. Right header "Conventional Whirlybird" with an equally clear silver curved-vane roof turbine above a small cutaway roof. Use modest green airflow arrows for both. Keep machinery compact in the upper half so comparison text has ample room below.
+Lower half: four precisely ALIGNED comparison rows spanning the two columns. Thin gold horizontal rules and an unobtrusive central divider. Each row has a very small central or left-aligned category label with large legible left and right statements. Do not use ornamental cards, checkmarks or red crosses.
+Exact comparison copy:
+Row category "USES"; left "Ventilation or pond aeration"; right "Roof ventilation".
+Row category "POWER TRANSFER"; left "Drives a separate fan or paddle"; right "No external drive".
+Row category "PLACEMENT"; left "Separate rotor and fan"; right "Extraction at roof turbine".
+Row category "DESIGN"; left "Adaptable components"; right "Integrated assembly".
+Give the ZeroWatt Wind text restrained bold green emphasis while keeping the Whirlybird text dark neutral and fully readable. The visual should emphasize the team's versatility without distorting or damaging the Whirlybird depiction.
+Style: clean, sophisticated, human-designed scientific infographic, large Arial-like sans-serif text, warm ivory/sage background, deep forest green headings, restrained gold lines, subtle green-and-gold ribbon at the bottom, crisp 3D illustrated mechanisms with soft realistic studio shadows, generous whitespace, accurate spelling.
+Small unobtrusive footer "Concept illustration".
+Constraints: no made-up airflow numbers, efficiency, starting-wind-speed, savings or price claims. No claim that one has more power or airflow. No solar panels or batteries. No electricity generators. No tall thin windmill towers. No logos or watermark. All required words must fit and remain readable. This is a concept comparison, not an installation drawing.
+
+Refinement prompt:
+Edit Image 1, the new comparative infographic. Image 2 is the actual prototype reference.
+CHANGE ONLY the upper-left ZeroWatt Wind mechanical assembly. Keep the entire infographic layout, all exact wording, title, column headers, table rows, pond paddle option, Whirlybird illustration, palette, bottom ribbon, resolution and small concept illustration footer unchanged.
+Correct the mechanical assembly to closely match the real prototype in Image 2. The output FAN must be a real white axial fan with six long slender smooth radial blades on a central hub, clearly recognizable like the fan in Image 2, NOT a toothed gear or serrated disk. The SPIRAL ROTOR remains the large white curved spiral wind-capture component. These are separate components with shafts oriented at 90 degrees, connected by a pair of bevel gears whose teeth mesh at 90 degrees. Use an oblique viewpoint to clearly reveal the perpendicular shafts and meshing gears, preserving dark bearing supports and white shafts. Airflow arrows should come from the actual fan blades. Keep the "Fan (option)" label beside the corrected fan. Do not add any new text or replace any existing comparison wording. Prioritize faithful prototype geometry while keeping the machinery entirely within its existing upper-left illustration area. Everything else stays exactly as it is.
